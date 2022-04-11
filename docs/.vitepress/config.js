@@ -37,28 +37,25 @@ const config = {
     sidebar: {
       "/": getSidebar(),
     },
-    editLinks: true,
-    // 默认为 "Edit this page"
-    editLinkText: '帮助我们改善此页面！'
+    // editLinks: true, // 得有repo等信息才有用
+    // editLinkText: "在 GitHub 上编辑此页 ！",
   },
-
-  plugins: [
-    "@vuepress/active-header-links", // 页面滚动时自动激活侧边栏链接的插件
-  ],
 }
 
 function getSidebar() {
   return [
     {
       text: "foo",
+      link: "/foo/",
       children: [
         { text: "one", link: "/foo/one" },
         { text: "two", link: "/foo/two" },
       ],
-      sidebarDepth: 3,
+      sidebarDepth: 0,
     },
     {
       text: "bar",
+      link: "/bar/",
       children: [
         { text: "基础", link: "/bar/three" },
         { text: "进阶", link: "/bar/four" },
@@ -68,7 +65,7 @@ function getSidebar() {
 }
 export default config
 
-// import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress"
 
 // export default defineConfig({
 //   // ...
