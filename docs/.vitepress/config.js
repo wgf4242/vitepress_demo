@@ -36,6 +36,18 @@ export default defineConfig({
     // use more markdown-it plugins!
     // md.use(require('markdown-it-xxx'))
     // }
+
+    // only show region comments
+    config: md => {
+      const fenceRender = md.renderer.rules.fence
+      md.renderer.rules.fence = (...args) => {
+        return fenceRender(...args)
+          .replace(/\/\/ ?#?((?:end)?region) ([\w*-]+)/g, "__REMOVED__")
+          .split('<span class="token comment">__REMOVED__</span>')
+          .join("__REMOVED__")
+          .replace(/[ \t]*__REMOVED__\s*?\n/g, "")
+      }
+    },
   },
   // 主题配置
   themeConfig: {

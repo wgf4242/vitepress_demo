@@ -90,8 +90,8 @@ export default { // Highlighted
 
 ### Import code form file
 
-<<< @/assets/foo.js
+<<< @/snippets/foo.js
 
-<<< @/assets/foo.js{2}
+<<< @/snippets/foo.js{2}
 
-<<< @/snippets/snippet-with-region.js{1}
+<<< @/snippets/snippet-with-region.js#snippet{1}
