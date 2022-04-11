@@ -5,8 +5,18 @@
 /**
  * @type {import('vitepress').UserConfig}
  */
-const config = {
+// const config = {
+//   // ...
+// }
+
+// export default config
+
+import { defineConfig } from "vitepress"
+import { getSidebar } from "./getSidebar"
+
+export default defineConfig({
   // ...
+
   title: "HiTitle",
   description: "Just playing around.",
   markdown: {
@@ -40,34 +50,4 @@ const config = {
     // editLinks: true, // 得有repo等信息才有用
     // editLinkText: "在 GitHub 上编辑此页 ！",
   },
-}
-
-function getSidebar() {
-  return [
-    {
-      text: "foo",
-      link: "/foo/",
-      children: [
-        { text: "one", link: "/foo/one" },
-        { text: "two", link: "/foo/two" },
-      ],
-      sidebarDepth: 0,
-    },
-    {
-      text: "bar",
-      link: "/bar/",
-      children: [
-        { text: "基础", link: "/bar/three" },
-        { text: "进阶", link: "/bar/four" },
-      ],
-    },
-  ]
-}
-export default config
-
-import { defineConfig } from "vitepress"
-
-// export default defineConfig({
-//   // ...
-
-// })
+})
