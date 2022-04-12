@@ -14,6 +14,10 @@ https://zhuanlan.zhihu.com/p/402505562
 
 https://miyauchi.dev/posts/start-vitepress/
 
-https://github.com/xinlei3166/vitepress-theme-demoblock
+plugin https://github.com/xinlei3166/vitepress-theme-demoblock
 
 https://github.com/dewfall123/vitepress-for-component
+
+[awesome-vuepress](https://github.com/vuepress/awesome-vuepress)
+
+# [PowerShell](/powershell/)

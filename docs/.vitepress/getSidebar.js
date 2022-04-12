@@ -22,7 +22,12 @@ export function getSidebar() {
       children: [
         {
           text: "Web",
+          link: "/CTF/Web/",
           children: [{ text: "xxe", link: "/CTF/Web/xxe" }],
+        },
+        {
+          text: "Misc",
+          link: "/CTF/Misc/",
         },
         { text: "进阶", link: "/bar/four" },
       ],

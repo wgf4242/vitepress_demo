@@ -22,7 +22,7 @@ export default defineConfig({
   markdown: {
     // options for markdown-it-anchor
 
-    lineNumbers: true,
+    // lineNumbers: true,
     // toc: { includeLevel: [1, 2] },
     dest: "./dist",
     head: [["link", { rel: "icon", href: "/favicon.ico" }]],
