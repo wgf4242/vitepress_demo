@@ -40,3 +40,30 @@
 |                mov                 |              6D6F6F76              |
 |                asf                 |          3026B2758E66CF11          |
 |                mid                 |              4D546864              |
+
+
+## 流量取证
+
+### misc_live
+
+涉及协议 直播流协议：RTMP、RTSP、MPEG-DASH
+
+[手撕rtmp协议专项](https://mp.weixin.qq.com/mp/homepage?__biz=MzAwODM5OTM2Ng==&hid=7&sn=0192ad4506003b7b13d5efde0ff15312)
+
+工具
+
+[rtmp2flv 流量包转换为 flv 视频](https://github.com/quo/rtmp2flv)
+
+https://github.com/irtlab/rtptools
+
+解题流程:
+
+tcpflow -T %T_%A%C%c.rtmp -r Live.pcapng -o out
+
+RTMP协议中 可以还原出一段音频 一个画面  分别为flag1  flag2  
+
+RTSP协议过滤出来之后 会找到比较特殊的包  RTSP/SDP协议的  
+
+把SDP协议提取出来  导出魔改SDP之后可以拿到 flag3  flag4 
+
+MPEG-DASH 协议 导出文件归类  然后写个脚本  开个服务器  可以得到flag5 flag6
