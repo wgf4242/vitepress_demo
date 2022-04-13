@@ -44,7 +44,9 @@
 
 ## 流量取证
 
-### misc_live
+### misc_live/RTMP/RTSP/MPEG-DASH
+
+题目: 2021中石油集团公司第二届网络安全攻防赛团体赛预赛 - Misc - Live
 
 涉及协议 直播流协议：RTMP、RTSP、MPEG-DASH
 
@@ -52,13 +54,15 @@
 
 工具
 
-[rtmp2flv 流量包转换为 flv 视频](https://github.com/quo/rtmp2flv)
+1.[rtmp2flv 流量包转换为 flv 视频](https://github.com/quo/rtmp2flv)
 
-https://github.com/irtlab/rtptools
+2.[rtptools](https://github.com/irtlab/rtptools)
 
 解题流程:
 
 tcpflow -T %T_%A%C%c.rtmp -r Live.pcapng -o out
+
+./rtmp2flv.py 最大的文件.rtmp
 
 RTMP协议中 可以还原出一段音频 一个画面  分别为flag1  flag2  
 
