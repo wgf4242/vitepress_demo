@@ -4,6 +4,26 @@
 
 [[toc]]
 
+## 加密编码/古典密码
+
+### 看不出来
+
+|                enc                 |             algorithm              |               plain                |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- |
+|             SSQ8SSR000             |               rot13                |             FFD8FFE00              |
+|58s4vb6rt4pt5r32yd6ht5u656555r6796524vi69r2yd5om6w0|[TwinHex](https://www.calcresult.com/misc/cyphers/twin-hex.html)| `flag{I_am_Guwanneme_servant_Gulf}`  |
+|          Q5R2Ln3nLqUnQaIV          |            base64(itoa)            |            pwD_1s_h3re!            |
+
+
+### Caesar
+
+套路总结
+
+1. 逐位对比ascii值, 对比flag/ctf/**主办方**名字 ascii值
+2. %128
+3. 每个 - n 再对比, 构成等差数列 对比flag/ctf/**主办方**名字 ascii值 参考 NISACTF2022 funnycaeser， key为5
+
+
 ## 文件头
 字符串 PK是 zip的开头,  5d480506xxxxx 为尾部
 
@@ -42,6 +62,7 @@
 |                mid                 |              4D546864              |
 
 
+
 ## 流量取证
 
 ### misc_live/RTMP/RTSP/MPEG-DASH
@@ -71,3 +92,7 @@ RTSP协议过滤出来之后 会找到比较特殊的包  RTSP/SDP协议的
 把SDP协议提取出来  导出魔改SDP之后可以拿到 flag3  flag4 
 
 MPEG-DASH 协议 导出文件归类  然后写个脚本  开个服务器  可以得到flag5 flag6
+
+## 网络识图/位置
+
+国外 https://lens.google/
