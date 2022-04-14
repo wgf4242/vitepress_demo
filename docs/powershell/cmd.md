@@ -9,3 +9,13 @@ JS:
 VBS:
 > mshta javascript:window.execScript("msgBox('hello world!'):window.close","vbs")
 
+
+## Windows Control
+
+
+Reset Pin
+```
+icacls C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc /T /Q /C /RESET
+::set password
+net user pcname P@ssw0rd1
+```
