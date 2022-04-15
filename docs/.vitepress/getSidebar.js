@@ -25,10 +25,8 @@ export function getSidebar() {
           link: "/CTF/Web/",
           children: [{ text: "xxe", link: "/CTF/Web/xxe" }],
         },
-        {
-          text: "Misc",
-          link: "/CTF/Misc/",
-        },
+        { text: "Misc", link: "/CTF/Misc/" },
+        { text: "Reverse", link: "/CTF/Reverse/" },
         { text: "进阶", link: "/bar/four" },
       ],
     },
