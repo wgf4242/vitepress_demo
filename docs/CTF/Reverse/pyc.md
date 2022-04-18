@@ -2,6 +2,7 @@
 
 ## bytecode disassembly
 
+### STORE
 STORE_FAST
 ```
 0 LOAD_CONST               1 (10)
@@ -31,6 +32,14 @@ Disassembly of foo:
 ```
 
 ```
+nD = []
+ 51     >>  120 BUILD_LIST               0
+            122 STORE_FAST               5 (nD)
+```
+
+### Method
+
+```
 82      LOAD_FAST               0: self
 84      LOAD_METHOD             5: write
 86      LOAD_FAST               3: eP
@@ -38,7 +47,6 @@ Disassembly of foo:
 90      BINARY_SUBSCR           
 self.write(eP[0])
 ```
-
 
 ```
 88         668 LOAD_FAST                0 (self)
@@ -55,6 +63,7 @@ self.write(eP[0])
            690 POP_TOP                  # 退缩进
 self.write(cP[0], cP[1], 2, 3)
 ```
+### Tuple
 
 ```
 89         692 LOAD_FAST                4 (cP)
@@ -70,6 +79,7 @@ self.write(cP[0], cP[1], 2, 3)
 cP = (cP[0], cP[1] + 1)
 ```
 
+### try except
 ```
 def try_test():
 13    try:
@@ -118,3 +128,63 @@ def try_test():
              56 STORE_FAST               2 (c)
              58 RERAISE                  0
 ```
+
+### if/if and
+if
+```
+12def try_test():
+13    cp=[]
+14    if cp[0]==0:
+15        a = 1
+16    b = 1
+ 13           0 BUILD_LIST               0
+              2 STORE_FAST               0 (cp)
+
+ 14           4 LOAD_FAST                0 (cp)
+              6 LOAD_CONST               1 (0)
+              8 BINARY_SUBSCR
+             10 LOAD_CONST               1 (0)
+             12 COMPARE_OP               2 (==)
+             14 POP_JUMP_IF_FALSE       10 (to 20)
+
+ 15          16 LOAD_CONST               2 (1)
+             18 STORE_FAST               1 (a)
+
+ 16     >>   20 LOAD_CONST               2 (1)
+             22 STORE_FAST               2 (b)
+             24 LOAD_CONST               0 (None)
+             26 RETURN_VALUE
+```
+if and
+```
+13def try_test():
+14    a = 8
+15    c = 9
+16    if not a and c==9:
+17        b = 1
+18    d = 1
+ 13           0 LOAD_CONST               1 (8)
+              2 STORE_FAST               0 (a)
+
+ 14           4 LOAD_CONST               2 (9)
+              6 STORE_FAST               1 (c)
+
+ 15           8 LOAD_FAST                0 (a)      # if not a , goto 24
+             10 POP_JUMP_IF_TRUE        12 (to 24)
+             12 LOAD_FAST                1 (c)      # if not c==9, goto 24
+             14 LOAD_CONST               2 (9)
+             16 COMPARE_OP               2 (==)
+             18 POP_JUMP_IF_FALSE       12 (to 24)
+
+ 16          20 LOAD_CONST               3 (1)
+             22 STORE_FAST               2 (b)
+
+ 17     >>   24 LOAD_CONST               3 (1)
+             26 STORE_FAST               3 (d)
+             28 LOAD_CONST               0 (None)
+             30 RETURN_VALUE
+```
+
+[extended_arg](https://docs.python.org/3/library/dis.html#opcode-EXTENDED_ARG)
+EXTENDED_ARG(ext)
+为任意带有大到无法放入默认的单字节的参数的操作码添加前缀。 ext 存放一个附加字节作为参数中的高比特位。 对于每个操作码，最多允许三个 EXTENDED_ARG 前缀，构成两字节到三字节的参数。
