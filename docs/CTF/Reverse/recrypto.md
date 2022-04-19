@@ -10,6 +10,9 @@ https://qianfei11.github.io/2019/08/22/Python%E5%AE%9E%E7%8E%B0TEA%E3%80%81XTEA%
 ```
 32轮 0x9e3779b9 0xC6EF3720 <<4 >>5
 ```
+
+### xxtea
+delta 可能  0x33445566
 ## 国密SM
 
 ```
