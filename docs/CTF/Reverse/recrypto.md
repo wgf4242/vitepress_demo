@@ -17,6 +17,11 @@ delta 可能  0x33445566
 
 ```
 32轮 4Bytes Key,  轮密钥
+
+  v5[0] = _byteswap_ulong(*a2);
+  v5[1] = _byteswap_ulong(a2[1]);
+  v5[2] = _byteswap_ulong(a2[2]);
+  v5[3] = _byteswap_ulong(a2[3]);
 ```
 
 ## AES
