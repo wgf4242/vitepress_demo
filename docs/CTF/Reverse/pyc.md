@@ -1,4 +1,4 @@
-
+有时uncompyle和pycdc还原的效果不一致。需要手动还原
 
 ## bytecode disassembly
 
