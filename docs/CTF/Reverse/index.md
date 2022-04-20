@@ -3,6 +3,8 @@
 [Frida](./frida)
 
 [相关加密](./recrypto.md)
+## TODO
+https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
 1.smc
 2.搜索++ 当作索引 找关键信息
