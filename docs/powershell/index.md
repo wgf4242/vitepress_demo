@@ -51,21 +51,18 @@ System.Collections.Generic.HashSet        去重数组。和python的set对象�
 ```
 1命令输出。如dir，get-process。
 ```
+
 ## 网络
+
 ```powershell
 $默认网关 = (get-netroute -DestinationPrefix 0.0.0.0/0).NextHop
 & ping.exe $默认网关
 ```
 
-## Environment Varaiables
 
-```
-$PSVersionTable
-```
 ## Help
 
 ```
-get-module -ListAvailable
 问：不知道模块，如何查找？
 答：get-module -ListAvailable
 
@@ -82,8 +79,6 @@ show-command write-host
 问：知道参数，但不知道哪个命令有此参数，如何查找命令？
 答：get-command -ParameterName encoding
 
-
-
 问：如何从命令行获取某命令帮助？
 答：get-help get-date
 
@@ -95,10 +90,19 @@ show-command write-host
 "abc"  | get-member
 get-date | get-member
 
-
-
 问：中文的.net类的手册在哪？
 答：
 msdn。最基本的字符串的属性和方法，的手册在。
 https://msdn.microsoft.com/zh-cn/library/system.string.aspx
 ```
+
+
+## Environment Varaiables
+
+```
+$PSVersionTable
+gci env:* | sort-object name
+echo $env:Appdata
+```
+
+### 替代  Out-File [path]
