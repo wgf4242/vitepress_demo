@@ -8,7 +8,8 @@
       "type": "pwa-chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      "url": "http://localhost:3000/${relativeFileDirname}/${input:chooseArgs}",
+      "url": "http://localhost:3000/${fileBasenameNoExtension}",
+      // "url": "http://localhost:3000/${relativeFileDirname}/${input:chooseArgs}",
       "webRoot": "${workspaceFolder}/docs/",
       "args": [
         "${input:fileContentKey}"

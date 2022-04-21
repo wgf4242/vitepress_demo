@@ -42,5 +42,8 @@ ida 调试时  watch view 怎样计算地址值比如 *(Map+1100+1)
 idapython怎样通过变量名获取变量地址
 
 
+## objective-c
+https://blog.trackonyou.top/2021/06/26/a1aab78dc414/
+
 ## Book
 逆向工程核心原理
