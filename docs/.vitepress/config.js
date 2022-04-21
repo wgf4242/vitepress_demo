@@ -47,6 +47,7 @@ export default defineConfig({
           .join("__REMOVED__")
           .replace(/[ \t]*__REMOVED__\s*?\n/g, "")
       }
+      md.use(require("markdown-it-katex"))
     },
   },
   // 主题配置
