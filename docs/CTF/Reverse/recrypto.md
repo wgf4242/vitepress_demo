@@ -29,6 +29,7 @@
 | MD5                                             | (X&Y)\|((-X)&Z1<br> (X&Z)\|(Y&(~Z))<br> X^Y^Z<br> Y(X\|(~Z))                | F函数<br> G函数<br> H函数<br> I函数<br> |
 | AES                                             | x[j]=s[j][(j+i) %4]<br> 循环4次<br> s[i][j]=x[j]<br> 循环4次<br> 整体循环4次 | 行移位                  |
 | DES                                             | L=R<br>R=F(R, K) ^L                                             | Feistel结构             |
+| XXTEA  | v71 = encode[a1 - 1];<br>v133 = v71 >> 5;<br>v180 = (v71 >> 5) ^ (4 * v123);<br>v71 = encode[w300];<br>v347 = (v301 >> 3) ^ (16 * v71) + ((v71 >> 5) ^ (4 * v301));<br>v347 = (v301 >> 3) ^ (16 * v71) + ((v71 >> 5) ^ (4 * v301));<br>v377 = dword140007038[w367] ^ r71;<br>v71 = encode[a1 - 1];  | * 16 == << 4<br> * 2 == << 2
 ## 混淆
 ### 指令替换
 
@@ -56,12 +57,17 @@ jmp ecx
 https://qianfei11.github.io/2019/08/22/Python%E5%AE%9E%E7%8E%B0TEA%E3%80%81XTEA%E3%80%81XXTEA%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95/
 
 ### 1-TEA
+![](https://gitee.com/wgf4242/imgs/raw/master/imgs/1.png)
 
 ```
 32轮 0x9e3779b9 0xC6EF3720 <<4 >>5
 ```
+### 2-XTEA
+![](https://gitee.com/wgf4242/imgs/raw/master/imgs/2.png)
 
-### xxtea
+### 3-XXTEA
+![](https://gitee.com/wgf4242/imgs/raw/master/imgs/3.png)
+
 delta 可能  0x33445566
 ## 国密SM4
 

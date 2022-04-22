@@ -6,6 +6,7 @@
 ## TODO
 https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
+1.搜到关键字如 0x33445566, 先google/baidu ctf 0x33445566
 1.smc
 2.搜索++ 当作索引 找关键信息
 3.两串密文先猜异或

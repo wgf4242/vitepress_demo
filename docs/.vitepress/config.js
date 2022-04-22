@@ -19,6 +19,7 @@ export default defineConfig({
 
   title: "HiTitle",
   description: "Just playing around.",
+  head: [["meta", { name: "referrer", content: "no-referrer" }]],
   markdown: {
     // options for markdown-it-anchor
 
