@@ -1,5 +1,7 @@
 有时uncompyle和pycdc还原的效果不一致。需要手动还原
 
+https://docs.python.org/3/library/dis.html
+
 ## bytecode disassembly
 
 ### STORE
@@ -63,6 +65,28 @@ self.write(eP[0])
            690 POP_TOP                  # 退缩进
 self.write(cP[0], cP[1], 2, 3)
 ```
+### CALL_FUCTION
+```
+13  i = 0
+14  c = '1234'
+15  if i < len(c):
+16      return 1
+ 13           0 LOAD_CONST               1 (0)
+              2 STORE_FAST               0 (i)
+ 14           4 LOAD_CONST               2 ('1234')
+              6 STORE_FAST               1 (c)
+ 15           8 LOAD_FAST                0 (i)
+             10 LOAD_GLOBAL              0 (len)
+             12 LOAD_FAST                1 (c)
+             14 CALL_FUNCTION            1
+             16 COMPARE_OP               0 (<)
+             18 POP_JUMP_IF_FALSE       12 (to 24)
+ 16          20 LOAD_CONST               3 (1)
+             22 RETURN_VALUE
+ 15     >>   24 LOAD_CONST               0 (None)
+             26 RETURN_VALUE
+
+```
 ### Tuple
 
 ```
@@ -78,7 +102,56 @@ self.write(cP[0], cP[1], 2, 3)
            710 STORE_FAST               4 (cP)
 cP = (cP[0], cP[1] + 1)
 ```
+### For loop
+示例1
+```
+19    c=2
+20    for i in range(1,5,c+1):
+21        pass
+ 19           0 LOAD_CONST               1 (2)
+              2 STORE_FAST               0 (c)
+ 20           4 LOAD_GLOBAL              0 (range)
+              6 LOAD_CONST               2 (1)
+              8 LOAD_CONST               3 (5)
+             10 LOAD_FAST                0 (c)
+             12 LOAD_CONST               2 (1)
+             14 BINARY_ADD                         # 前俩加 c+1    
+             16 CALL_FUNCTION            3
+             18 GET_ITER
+        >>   20 FOR_ITER                 2 (to 26)
+             22 STORE_FAST               1 (i)
+ 21          24 JUMP_ABSOLUTE           10 (to 20)
+ 20     >>   26 LOAD_CONST               0 (None)
+             28 RETURN_VALUE
+```
+示例2
+```
+    for ii in lst:
+        ii
+    return 'done'
 
+ 20           0 LOAD_GLOBAL              0 (lst)
+              2 GET_ITER
+        >>    4 FOR_ITER                 4 (to 14)
+              6 STORE_FAST               0 (ii)
+ 21           8 LOAD_FAST                0 (ii)
+             10 POP_TOP
+             12 JUMP_ABSOLUTE            2 (to 4)
+```                 
+### Slice
+```
+      c = '123'
+      i = 2
+15    c[i:i+4]
+
+ 15           8 LOAD_FAST                0 (c)
+             10 LOAD_FAST                1 (i)
+             12 LOAD_FAST                1 (i)
+             14 LOAD_CONST               3 (4)
+             16 BINARY_ADD
+             18 BUILD_SLICE              2
+             20 BINARY_SUBSCR
+```
 ### try except
 ```
 def try_test():

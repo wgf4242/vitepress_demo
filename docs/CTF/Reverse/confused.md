@@ -7,3 +7,8 @@
 .text:0040105A                 adc     [edx], esp                       
 ```
 .text:00401056   修改为 jmp loc_40105C
+
+去花后，如果有指错误
+- 1.找到末尾 Delete Function
+- 2.Edit - Function - Set FunctionEnd来指定结束位置
+6:55  https://www.bilibili.com/video/BV1br4y127eM/?spm_id_from=333.788
