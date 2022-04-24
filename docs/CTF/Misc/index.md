@@ -6,7 +6,17 @@
 
 ## 解题思路
 波形图 高为1 低为0 转二进制
+k 数字 超大数, tupper自指 https://article.itxueyuan.com/7DyrkD
 
+##  图片题 
+
+arnold置乱
+
+![](https://gitee.com/wgf4242/imgs/raw/master/imgs/Snipaste_2022-04-25_00-10-31.jpg)
+
+jpg 隐写 一般国外喜欢用steghide，而国内喜欢用jphs05 , jphs05 打开图片后 seek - 填2次相同密码
+## pyc 文件
+stegosaurus 隐写  python3 stegosaurus.py -x QAQ.pyc   -- 3.6及以下版本
 ## 加密编码/古典密码
 
 ### 看不出来
