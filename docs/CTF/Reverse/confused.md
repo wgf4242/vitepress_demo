@@ -12,3 +12,10 @@
 - 1.找到末尾 Delete Function
 - 2.Edit - Function - Set FunctionEnd来指定结束位置
 6:55  https://www.bilibili.com/video/BV1br4y127eM/?spm_id_from=333.788
+
+
+## 垃圾代码
+
+GKCTF2021 SoMuchCode
+https://blog.csdn.net/m0_51911432/article/details/123120168
+https://tianyu.xin/index.php/rev/Somuchcode.html
