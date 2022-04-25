@@ -7,6 +7,7 @@
 https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
 1.搜到关键字如 0x33445566, 先google/baidu ctf 0x33445566
+4.没去符号 函数调用少 C代码复制出来改一改爆破更快的
 6.调试时
 - 1. scanf如果没变量 断点动调 可能不一样
 - 2. 在 flag 查交叉引用
@@ -18,6 +19,11 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 5.迷宫题多观察迷宫
 * 1.可能暴露起点和终点位置
 * 2.直接找到上下左右字母。DFS解题
+## C/IDA相关
+
+```
+plugins\hexrays_sdk\include\defs.h  包含各种类型
+```
 
 ## 程序头修改
 1. 55 48 89 E5

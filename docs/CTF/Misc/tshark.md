@@ -6,7 +6,9 @@ docs https://www.wireshark.org/docs/dfref/
 
 -r readfile
 
-列名导出用 `_ws.col.[name]` 例 `_ws.col.info` https://www.wireshark.org/docs/man-pages/tshark.html
+列名导出
+1.右击 - 复制 - 字段名称
+2.用 `_ws.col.[name]` 例 `_ws.col.info` https://www.wireshark.org/docs/man-pages/tshark.html
 导出info某部分，右击信息，过滤字段参考
 ### tshark 常用
 tshark怎样确定协议字段?

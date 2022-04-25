@@ -7,7 +7,25 @@
 ## 解题思路
 波形图 高为1 低为0 转二进制
 k 数字 超大数, tupper自指 https://article.itxueyuan.com/7DyrkD
+4. virustotal扫程序和IP。  分析出程序有连接IP。扫IP。  见 网刃杯2022 FindMe 
+5. a3ed97e25583291767054a6a6b533a1c  hash解密
+## 流量题
 
+追踪流注意单个 66 6c 61 67 -> flag
+
+modbus.data 过滤 : tshark -r a.pcapng -T fields -Y "modbus.data > 0" -e frame.number -e modbus.data  | sed "/^\s*$/d" > data.txt     网刃杯2022 喜欢移动的黑客
+
+s7comm 1. 追踪流,  2.看数据  tshark -r .\设备药剂间数据采集.pcap -T fields -e s7comm.resp.data -Y s7comm > pic.txt
+
+注意字符串 U2FsdGVkX
+
+## 取证题 
+
+1. Magnet AXIOM/FTK/DiskGenius打开 vmdk
+2. 看桌面
+2.1 Magnet AXIOM收集信息
+3。 Firefox key3.db恢复密码
+4 浏览历史
 ##  图片题 
 
 关键字:猫/猫脸变换/arnold置乱
