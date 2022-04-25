@@ -10,7 +10,7 @@ k 数字 超大数, tupper自指 https://article.itxueyuan.com/7DyrkD
 
 ##  图片题 
 
-arnold置乱
+关键字:猫/猫脸变换/arnold置乱
 
 ![](https://gitee.com/wgf4242/imgs/raw/master/imgs/Snipaste_2022-04-25_00-10-31.jpg)
 
