@@ -38,7 +38,36 @@ rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容
 2. 看桌面
    2.1 Magnet AXIOM 收集信息
    3。 Firefox key3.db 恢复密码
+   3. Firefox浏览器记录 places.sqlite
    4 浏览历史
+4. [profile找不到详下 ](#profile找不到)
+
+### profile找不到
+1. https://blog.bi0s.in/2021/08/20/Forensics/InCTFi21-TheBigScore/
+2. 团队赛决赛 Xiaoming
+
+1.strings the_big_score.lime | grep 'Linux version'
+找到version和kernel 为 Ubuntu 18.04，linux 内核版本为 5.4.0-42-generic
+
+2.官网下载对应镜像安装 自己制作 volatility 的 profile
+
+3.安装依赖
+```bash
+sudo apt install linux-image-4.4.0-72-lowlatency linux-headers-4.4.0-72-lowlatency
+sudo apt install build-essential dwarfdump git
+```
+4.安装 volatility
+
+git clone https://github.com/volatilityfoundation/volatility
+
+5.制作 profile
+```
+cd volatility/tools/linux
+make
+sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.map-$(uname -r)
+```
+多出的 zip 文件就是 profile，把它放在 volatility/volatility/plugins/overlays/linux/ 目录下即可
+
 
 ## 图片题
 
@@ -103,6 +132,13 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
     -- 小文件爆破 (原始)大小 <=6 可以考虑CRC32爆破攻击
            压缩包里是4b 就是4个字母, 3b就是3个字母。
                       python crc32.py reverse 0x1b2e6194
+```
+### 爆破 crunch/hashcat
+
+crunch 生成字典
+```bash
+crunch 5 5 0123456789 -o password.txt
+hashcat -m 13400 keepass.txt -a 0 password.txt --force
 ```
 
 ## 加密编码/古典密码
