@@ -10,7 +10,8 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 4.没去符号 函数调用少 C代码复制出来改一改爆破更快的
 5.或者  asm 改成 call puts
 6.调试时
-- 1. scanf如果没变量 断点动调 可能不一样
+- 1. 通过%s搜scanf scanf如果没变量 断点动调, 切汇编再F5 可能不一样
+- 3.考虑给内存地址打硬件断点
 - 2. 在 flag 查交叉引用
 - 3. 经常看图, 看汇编, encflag通常在分叉前一点
 1.smc
@@ -94,9 +95,36 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#more
 ## objective-c
 https://blog.trackonyou.top/2021/06/26/a1aab78dc414/
 
+## Go语言
+入口 main_main
+os_stdout, fmt_Fprint fmt_Fprintln fmt_Fscanf
+## vm 虚拟机系统
+
+go:VNCTF2022 CM狗   main__ptr_MzVm_init
 ## 反调试
 
 https://ctf-wiki.org/reverse/windows/anti-debug/zwsetinformationthread/
 ZwSetInformationThread 第 2 个参数为 ThreadHideFromDebugger，若为 0x11 修改为其他值
-## Book
+
+
+# APK
+1.PKID查壳、BlackDex脱壳、jadx打开(报用gda)
+2.adb pull /storage/emulated/0/Android/data/top.niunaijun.blackdexa32/dump
+2-2 
+```
+frida-ps -Ua
+frida-dexdump -p 27815
+```
+## 模拟器配置
+
+## apk/壳
+https://bbs.pediy.com/thread-271372.htm
+
+脱壳 https://github.com/CodingGay/BlackDex
+
+示例 
+https://gift1a.github.io/2022/02/13/hgame2022-week3-re/
+https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
+
+# Book
 逆向工程核心原理
