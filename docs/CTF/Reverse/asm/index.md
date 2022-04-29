@@ -7,6 +7,8 @@ adc是带进位加法指令，它利用了CF位上记录的进位值。
 
 功能：操作对象1 = 操作对象1 + 操作对象2 + CF
 :::
+# visual studio asm
+https://stackoverflow.com/questions/20078021/how-to-enable-assembly-language-support-in-visual-studio-2013
 
 # nasm 编译 asm文件
 
@@ -32,6 +34,8 @@ len	equ	$ - msg			;length of our dear string
 
 ```bash
 $nasm -f elf *.asm; ld -m elf_i386 -s -o demo *.o
+$nasm -f win64 *.asm; ld -m elf_i386 -s -o demo *.o
+win64
 $demo
 Hello, world!
 ```

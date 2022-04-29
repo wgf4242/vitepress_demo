@@ -106,16 +106,34 @@ go:VNCTF2022 CM狗   main__ptr_MzVm_init
 https://ctf-wiki.org/reverse/windows/anti-debug/zwsetinformationthread/
 ZwSetInformationThread 第 2 个参数为 ThreadHideFromDebugger，若为 0x11 修改为其他值
 
+## 花指令
+
+[RE - Anti IDA 反反编译与反反反编译](http://note.youdao%2ecom/noteshare?id=3eb748f7bc67698d08107f963af77ab4&sub=6DC9E91DB3B24EC98DFA09E3AC3D6857)
+
 
 # APK
 1.PKID查壳、BlackDex脱壳、jadx打开(报用gda)
+2.看资源文件  看dex
 2.adb pull /storage/emulated/0/Android/data/top.niunaijun.blackdexa32/dump
 2-2 
 ```
 frida-ps -Ua
-frida-dexdump -p 27815
+frida-dexdump -p 27815 -U
 ```
 ## 模拟器配置
+```
+#adb connect 127.0.0.1:7555 # 雷电不用
+adb push frida-server-15.1.17-android-x86 /data/local/tmp
+adb shell
+cd /data/local/tmp
+chmod +x frida-server-15.1.17-android-x86
+./frida-server-15.1.17-android-x86
+
+新窗口
+adb forward tcp:27043 tcp:27043
+adb forward tcp:27042 tcp:27042
+frida-dexdump -p <pid> -U
+```
 
 ## apk/壳
 https://bbs.pediy.com/thread-271372.htm
