@@ -35,3 +35,12 @@ $nasm -f elf *.asm; ld -m elf_i386 -s -o demo *.o
 $demo
 Hello, world!
 ```
+
+
+## 指令解读
+
+var_18 通常是 stack-18
+```asm
+.text:0000000000295837 mov     [rsp+18h+var_18], r8d           ; push
+.text:000000000029583B mov     [rsp+18h+var_14], esi           ; push,arg2
+```
