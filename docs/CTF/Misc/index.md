@@ -140,7 +140,9 @@ crunch 生成字典
 crunch 5 5 0123456789 -o password.txt
 hashcat -m 13400 keepass.txt -a 0 password.txt --force
 ```
-
+## android backup
+java -jar abe.jar unpack androidbackup  androidbackup.tar
+abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 ## 加密编码/古典密码
 
 | enc                                                 | algorithm                                                        | plain                               |
@@ -257,6 +259,7 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
     -- 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
     -- PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html
 
+LSB隐写 用 uint8 读取 wav 然后提取每一个帧的 LSB
 ### 音频隐写 sstv
 
 https://www.cnblogs.com/LEOGG321/p/13731156.html

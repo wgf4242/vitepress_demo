@@ -10,6 +10,13 @@ frida-ps
 
 frida-ps -h
 
+```
+frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
+% resume
+```
+
+frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
+
 ## Quick Start
 
 Attach程序启动
@@ -84,6 +91,17 @@ NativeCallback() 可以用的数据类型有
 void, pointer, int, uint, long, ulong, char, uchar, size_t, ssize_t, float,
 double, int8, uint8, int16, uint16, int32, uint32, int64, uint64, bool
 ```
+### List all class
+```js
+  Java.enumerateLoadedClasses({
+    onMatch: function (className) {
+      if (className.includes("com.example.mobilea")) {
+        console.log(className)
+      }
+    },
+    onComplete: function () {},
+  })
+```
 ## Frida 调试
 https://github.com/frida/frida-python/issues/134
 
@@ -96,3 +114,12 @@ frida fib_print.exe --runtime=v8 --debug
 Chrome中F12, 点击绿色nodejs, 选中端口, 进入可下断点了。
 
 // Thread.sleep(3)
+
+
+
+##  入门文章
+[_[原创]初识Frida--Android逆向之Java层hook (一) ](https://bbs.pediy.com/thread-227232.htm)
+[初识Frida--Android逆向之Java层hook (二)](https://bbs.pediy.com/thread-227233.htm)
+## Brida
+[[原创]Frida配合BurpSuite的Brida插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
+[Android渗透测试frida——Brida插件加解密实战演示](https://xz.aliyun.com/t/7562?page=34)

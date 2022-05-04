@@ -9,6 +9,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 1.搜到关键字如 0x33445566, 先google/baidu ctf 0x33445566
 4.没去符号 函数调用少 C代码复制出来改一改爆破更快的
 5.或者  asm 改成 call puts
+6.已知算法未成功执行，检查有符号 还是无符号，可能有改变。
 6.调试时
 - 1. 通过%s搜scanf scanf如果没变量 断点动调, 切汇编再F5 可能不一样
 - 3.考虑给内存地址打硬件断点
@@ -120,21 +121,47 @@ ZwSetInformationThread 第 2 个参数为 ThreadHideFromDebugger，若为 0x11 �
 frida-ps -Ua
 frida-dexdump -p 27815 -U
 ```
-## 模拟器配置
+## frida 模拟器配置
+pc端直接
+手机端 root后
+```
+adb shell
+su
+setenforce 0
+```
+
 ```
 #adb connect 127.0.0.1:7555 # 雷电不用
+
+# x86
 adb push frida-server-15.1.17-android-x86 /data/local/tmp
 adb shell
 cd /data/local/tmp
 chmod +x frida-server-15.1.17-android-x86
 ./frida-server-15.1.17-android-x86
 
+
+# arm64
+adb push frida-server-15.1.17-android-arm64 /data/local/tmp
+adb shell
+cd /data/local/tmp
+chmod +x frida-server-15.1.17-android-arm64
+./frida-server-15.1.17-android-arm64
+
+/data/local/tmp/frida-server-15.1.17-android-arm64
+
+
 新窗口
 adb forward tcp:27043 tcp:27043
 adb forward tcp:27042 tcp:27042
 frida-dexdump -p <pid> -U
 ```
-
+### 追踪app
+```
+adb devices -l
+frida-ps -Ua
+frida-trace -U -i open rock_paper_scissors
+```
 ## apk/壳
 https://bbs.pediy.com/thread-271372.htm
 
