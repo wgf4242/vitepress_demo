@@ -121,6 +121,8 @@ ZwSetInformationThread 第 2 个参数为 ThreadHideFromDebugger，若为 0x11 �
 frida-ps -Ua
 frida-dexdump -p 27815 -U
 ```
+## adb commands
+adb -s "emulator-5554" install attachment-16.apk
 ## frida 模拟器配置
 pc端直接
 手机端 root后
@@ -134,6 +136,7 @@ setenforce 0
 #adb connect 127.0.0.1:7555 # 雷电不用
 
 # x86
+mkdir /data/local/tmp
 adb push frida-server-15.1.17-android-x86 /data/local/tmp
 adb shell
 cd /data/local/tmp
@@ -144,6 +147,7 @@ chmod +x frida-server-15.1.17-android-x86
 # arm64
 adb push frida-server-15.1.17-android-arm64 /data/local/tmp
 adb shell
+mkdir /data/local/tmp
 cd /data/local/tmp
 chmod +x frida-server-15.1.17-android-arm64
 ./frida-server-15.1.17-android-arm64
@@ -156,6 +160,12 @@ adb forward tcp:27043 tcp:27043
 adb forward tcp:27042 tcp:27042
 frida-dexdump -p <pid> -U
 ```
+### frida-commands
+```
+frida-ls-devices
+frida-ps -D 458f4aa5 -a
+```
+
 ### 追踪app
 ```
 adb devices -l
