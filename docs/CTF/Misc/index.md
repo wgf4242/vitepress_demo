@@ -78,6 +78,9 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
 
 Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
+
+### 二维码
+https://cli.im/deqr/   有可能零宽隐写
 ## pyc 文件
 
 stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
