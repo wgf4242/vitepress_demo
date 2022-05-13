@@ -12,6 +12,7 @@ nc
 [lcx](https://github.com/UndefinedIdentifier/LCX)
 
 [内网渗透中隧道渗透技术](https://blog.csdn.net/qq_17204441/article/details/88834324)
+[内网渗透之主机出网OR不出网隧道搭建](https://www.freebuf.com/articles/web/255801.html)
 ### lcx
 ```bash
 靶机执行
