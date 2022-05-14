@@ -7,7 +7,7 @@ cracer_log.ldf
 
 两个文件都要备份提取。
 
-Path: C:\Progran Files\Microsoft SQL Server\MSSQL10_50.HSSOLSERVER\MSSQL\DATA
+数据库Path: C:\Progran Files\Microsoft SQL Server\MSSQL10_50.HSSOLSERVER\MSSQL\DATA
 
 ## 数据库权限
 ```
