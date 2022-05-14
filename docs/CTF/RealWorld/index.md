@@ -203,9 +203,11 @@ AWVS常见功能
 ## xray
 https://github.com/chaitin/xray
 
+awvs+xray https://www.cnblogs.com/zzjdbk/p/13195955.html
 
 ```
 xray webscan --basic-crawler http://example.com --html-output vuln.html
+xray webscan --listen 0.0.0.0:7001 --html-output awvs.html
 xray webscan --listen 127.0.0.1:7777 --html-output proxy.html
 ```
 

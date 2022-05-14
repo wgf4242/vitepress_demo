@@ -49,3 +49,8 @@ netsh interface portproxy add v4tov4 listenport=4546 connectaddress=1.1.58.59 co
 netsh interface portproxy delete v4tov4 listenport=4546 listenaddress=1.1.58.58
 netsh interface portproxy reset
 ```
+
+
+## 注册表添加删除程序
+x64
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\
