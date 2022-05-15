@@ -27,8 +27,12 @@ netstat -aon
 或cmd `mstsc /admin /v:1.1.58.58:65535` ,  此方式不能操作剪贴版
 ### 终端操作
 ```
+# 查询
 qwinsta 查询连接
 query session
+query user
+# kill
+log off <id>
 tsdiscon rdp-tcp#946
 rwinsta <id>关闭连接
 ```

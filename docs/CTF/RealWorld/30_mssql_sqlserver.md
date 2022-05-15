@@ -1,5 +1,7 @@
 # SqlServer
 端口 1433
+## 转义
+sqlsserver 用"" 来转义 "
 
 ## 删除/备份/导入导出
 cracer.mdf

@@ -1,3 +1,6 @@
+https://github.com/Threekiii/Awesome-Redteam
+https://github.com/CnHack3r/Penetration_PoC
+
 Web漏洞分析
 * 我们要挖掘什么漏洞?
 * 应该从哪里挖掘?
@@ -200,6 +203,7 @@ AWVS常见功能
 * 认证测试
 * 网络服务扫描器
 
+linux 版本安装后。访问时用https://xxx:3443/
 ## xray
 https://github.com/chaitin/xray
 
@@ -209,6 +213,22 @@ awvs+xray https://www.cnblogs.com/zzjdbk/p/13195955.html
 xray webscan --basic-crawler http://example.com --html-output vuln.html
 xray webscan --listen 0.0.0.0:7001 --html-output awvs.html
 xray webscan --listen 127.0.0.1:7777 --html-output proxy.html
+```
+### crawergo联动
+https://www.freebuf.com/sectool/252790.html
+
+```sh
+crawlergo -c YourChromiumPath -t 标签页数 Url
+./xray webscan --listen 127.0.0.1:7777 --html-output vulnerability.html
+./crawlergo -c chrome-mac/Chromium.app/Contents/MacOS/Chromium -t 10--request-proxy http://127.0.0.1:7777 http://testphp.vulnweb.com/
+```
+
+> 如果想半⾃动化⼀点，比如测试多个url可以参考：https://github.com/timwhitez/crawlergo_x_XRAY
+
+与 w13scan 联动：
+```sh
+python3 w13scan.py -s 127.0.0.1 --html   # 会监听7778
+/crawlergo -c chrome-mac/Chromium.app/Contents/MacOS/Chromium -t 10 --request-proxy http://127.0.0.1:7778 http://testphp.vulnweb.com/
 ```
 
 ## 存在目录时，返回403响应码
