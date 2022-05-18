@@ -73,8 +73,7 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 
 关键字:猫/猫脸变换/arnold 置乱
 
-![](https://gitee.com/wgf4242/imgs/raw/master/imgs/Snipaste_2022-04-25_00-10-31.jpg)
-
+![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
 jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
 
 Stegsolve - Analyse - Sterogram Sovler , "眼神得好"

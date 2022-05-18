@@ -78,7 +78,7 @@ path %AppData%\Roaming\Wireshark\
 docs https://www.wireshark.org/docs/dfref/
 
 contains 是指文本部分。
-![](https://gitee.com/wgf4242/imgs/raw/master/imgs/Snipaste_2021-03-23_21-33-48.png)
+![](https://s2.loli.net/2022/05/18/Nd1OwpZXW2G5nDQ.png)
 
 ```
 http contains "GET / foo.cgi?a=bar"

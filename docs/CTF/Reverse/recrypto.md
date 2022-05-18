@@ -57,16 +57,14 @@ jmp ecx
 https://qianfei11.github.io/2019/08/22/Python%E5%AE%9E%E7%8E%B0TEA%E3%80%81XTEA%E3%80%81XXTEA%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95/
 
 ### 1-TEA
-![](https://gitee.com/wgf4242/imgs/raw/master/imgs/1.png)
-
+![](https://s2.loli.net/2022/05/18/Mn5XdAHLhVa73fk.png)
 ```
 32轮 0x9e3779b9 0xC6EF3720 <<4 >>5
 ```
 ### 2-XTEA
-![](https://gitee.com/wgf4242/imgs/raw/master/imgs/2.png)
-
+![](https://s2.loli.net/2022/05/18/kr2463VPDwdSQWu.png)
 ### 3-XXTEA
-![](https://gitee.com/wgf4242/imgs/raw/master/imgs/3.png)
+![](https://s2.loli.net/2022/05/18/gIBKAtZMHhWOGNF.png)
 
 delta 可能  0x33445566
 ## 国密SM4

