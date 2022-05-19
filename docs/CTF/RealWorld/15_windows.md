@@ -64,6 +64,7 @@ win7以上
 ```bash
 netsh interface portproxy add v4tov4 listenport=4546 connectaddress=1.1.58.59 connectport=1521
 netsh interface portproxy delete v4tov4 listenport=4546 listenaddress=1.1.58.58
+netsh interface portproxy show all
 netsh interface portproxy reset
 ```
 
