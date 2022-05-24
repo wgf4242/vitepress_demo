@@ -204,6 +204,9 @@ AWVS常见功能
 * 网络服务扫描器
 
 linux 版本安装后。访问时用https://xxx:3443/
+
+[AWVS13批量添加目标脚本](https://blog.csdn.net/weixin_45382656/article/details/118565077)
+
 ## xray
 https://github.com/chaitin/xray
 
