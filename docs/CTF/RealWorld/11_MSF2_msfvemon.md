@@ -13,6 +13,13 @@ msfvenom -p windows/meterpreter/reverse_tcp --list-options
 类似可用 msfvenom--list 命令查看的还有payloads,encoders,nops,platforms,archs,
 encrypt,formats
 
+## filter payloads list
+```bash
+# filter php
+msfvenom -l payloads | grep "php" | awk '{print $1}'
+```
+
+
 ## payload的可持续化
 - 自动迁移到进程
 ```bash

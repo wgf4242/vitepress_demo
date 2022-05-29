@@ -121,6 +121,9 @@ ZwSetInformationThread 第 2 个参数为 ThreadHideFromDebugger，若为 0x11 �
 frida-ps -Ua
 frida-dexdump -p 27815 -U
 ```
+## 资源
+https://github.com/MiDuoKi/AndroidSafeStudy
+
 ## adb commands
 adb -s "emulator-5554" install attachment-16.apk
 ## frida 模拟器配置
@@ -183,3 +186,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 # Book
 逆向工程核心原理
+
+# 逆向分类
+## CEF Chromium Embedded Framework
+
+[将js代码注入到第三方CEF应用程序的一点浅见 ](https://bbs.pediy.com/thread-268570.htm)
