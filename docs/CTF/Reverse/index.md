@@ -22,6 +22,8 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 5.迷宫题多观察迷宫
 * 1.可能暴露起点和终点位置
 * 2.直接找到上下左右字母。DFS解题
+
+1. mrb文件 - ruby字节码 16进制显示 RITE0300
 ## C/IDA相关
 
 ```
