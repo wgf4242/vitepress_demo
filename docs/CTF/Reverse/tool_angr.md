@@ -5,3 +5,4 @@ https://github.com/search?q=angrctf
 
 [doc html](https://docs.angr.io/)
 [doc api](https://angr.io/api-doc/)
+[video](https://space.bilibili.com/386563875/video)
