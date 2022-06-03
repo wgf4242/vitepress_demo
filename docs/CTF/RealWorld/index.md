@@ -264,3 +264,6 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 - 计划任务
 
 `schtasks /create /sc MINUTE /mo 1 /tr C:\Users\Administrator\Desktop\mx\5555.exe /tn test`
+
+# 痕迹清理
+[入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
