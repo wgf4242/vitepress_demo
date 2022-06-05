@@ -70,6 +70,8 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 
 
 ## 图片题
+有图像, Google/baidu搜图 可能是提示
+zsteg -a x.png
 
 关键字:猫/猫脸变换/arnold 置乱
 
