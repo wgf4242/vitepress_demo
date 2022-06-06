@@ -1,4 +1,6 @@
 # 制作木马
+## vs2019修改exe图标 
+[记一次拿图书馆小姐姐微信的全过程](https://mp.weixin.qq.com/s/LB_UrYMYYY7M3Ryhv8quFw)
 
 ## 打包木马和Chrome打包
 1.选中Chrome安装包和 木马.exe
