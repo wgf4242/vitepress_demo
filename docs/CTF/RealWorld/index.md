@@ -33,7 +33,7 @@ Web漏洞分析
 
 主机探测(二)
 * 如果你想看到你扫描的所有主机的列表,用以下命令:
-* nmap-sL 192.168.1.1/24
+* nmap -sL 192.168.1.1/24
 * 扫描除过某一个ip外的所有子网主机,命令:
 * nmap 192.168.1.1/24-exclude 192.168.1.1
 * 扫描除过某一个文件中的ip外的子网主机命令
@@ -56,10 +56,11 @@ Client端主动断开连接.
 
 端口扫描
 * 使用UDP ping探测主机:
-* nmap-PU 192.168.1.0/ 24 服务版本探测
-* nmap-sV 192.168.1.1
+* nmap -PU 192.168.1.0/ 24 服务版本探测
+* nmap -sV 192.168.1.1
 * 精准地确认端口上运行的服务
-* nmap-sV--script unusual-port 192.168.1.1
+* nmap -sV --script unusual-port 192.168.1.1
+* nmap -sV --script unusual-port 192.168.1.1 -p 9527
 
 
 常见扫描方式
@@ -74,8 +75,8 @@ disable port scan:-sn
 
 
 探测目标主机的操作系统
-* nmap-O 192.168.1.19
-* nmap-A 192.168.1.19
+* nmap -O 192.168.1.19
+* nmap -A 192.168.1.19
 * -oN导出扫描结果
 * -oX导出扫描结果xml格式
 
@@ -102,38 +103,38 @@ nmap 信息脚本收集
 * 对目标进行IP反查
 * nmap -sn --script hostmap-ip2hosts www.hao123.com
 * 对目标DNS信息的收集
-* nmap--script dns-brute www.test.com
+* nmap --script dns-brute www.test.com
 * nmap --script dns-brute dns-brute.threads=10 www.test.com
 * 了解目标系统的详细信息
-* nmap-p 445 192.168.23.1 --script membase-http-info
+* nmap -p 445 192.168.23.1 --script membase-http-info
 
 
 * 检查打印服务漏洞
-* nmap--script smb-security-mode.nse -p 445 192.168.21.3
+* nmap --script smb-security-mode.nse -p 445 192.168.21.3
 * 扫描目标的xss漏洞
-* nmap-p80--script http-stored-xss.nse www.test.com
+* nmap -p80--script http-stored-xss.nse www.test.com
 * 扫描目标的SQL注入漏洞
-* nmap-p8001--script http-sql-injection.nse 192.168.0.200
+* nmap -p8001--script http-sql-injection.nse 192.168.0.200
 
 
 漏洞探测
 * 扫描系统漏洞
-* nmap--script vuln 192.168.1.1
+* nmap --script vuln 192.168.1.1
 * IIS 短文件泄露
-* nmap-p 8080--script http-iis-short-name-brute 192.168.1.1
+* nmap -p 8080--script http-iis-short-name-brute 192.168.1.1
 * 拒绝服务
-* nmap--max-parallelism 800--script http-slowloris www.cracer.com
+* nmap --max-parallelism 800--script http-slowloris www.cracer.com
 * 验证http 中开启了put方法
 * nmap --script http-put--script-args http-put.url=/uploads/testput.txt,http-
 put.file=/root/put.txt 218.19.141.16
 * 验证MySQL匿名访问
-* nmap--script mysql-empty-password 203.195.139.153
+* nmap --script mysql-empty-password 203.195.139.153
 
 
 防火墙躲避
 * -f分片绕过
 * -D使用诱饵隐蔽扫描
-* NMAP-D1.1.1.1,222.222.222.222www.cracer.com
+* NMAP -D1.1.1.1,222.222.222.222www.cracer.com
 * --source-port源端口欺骗
 
 ## MSF
