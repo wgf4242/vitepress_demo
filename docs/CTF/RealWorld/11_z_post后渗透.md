@@ -40,3 +40,5 @@ https://github.com/breenmachine/RottenPotatoNG
 https://github.com/antonioCoco/RoguePotato2
 https://github.com/CCob/SweetPotato
 SweetPotato -a "whoami"
+## getSystem
+getSystem "whoami"
