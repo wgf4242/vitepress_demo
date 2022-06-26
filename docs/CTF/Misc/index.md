@@ -16,6 +16,8 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 10 进制数中有16进制 可能有问题
 16 行文字 --> 16 进制 0-0xf
 异或 xor。或及使用 xortools `xor file`, `xortool -l 13 -c 00 file` , 13 是显示最大可能数
+### 密码类
+3替换z  yihr{Pfit3bf_Q3_NQM}  中 quipquip不支持数字 3改成z  -- yihr{Pfitzbf_Qz_NQM}，用quipquip解得 flag{Welcome_To_RTS} => flag{Welcome_To_CTF}
 
 ## 流量题
 

