@@ -6,6 +6,17 @@ https://www.itsvse.com/thread-3650-1-1.html
 
 https://www.cnblogs.com/lsgxeva/p/9309217.html
 
+## 符号 
+`&` is the call operator which allows you to execute a command, a script, or a function.
+For more details:
+```
+Syntax
+      & "[path] command" [arguments]
+
+$LocalComputerName = & $ENV:windir\System32\HostName.exe
+
+https://stackoverflow.com/questions/22074507/what-does-the-symbol-in-powershell-mean
+```
 ## For
 问题：每天我吃2.2个苹果，17天我吃多少个苹果？
 
