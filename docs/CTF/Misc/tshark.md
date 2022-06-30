@@ -122,6 +122,10 @@ Leftover Capture Data: 00 00 06 00
 ```bash
 tshark -r flag.pcap -T fields -e usb.capdata > usbdata.txt 
 tshark -r flag.pcap -T fields -e usb.capdata|sed /^$/d > usbdata.txt 
+
+# 有多个时分别过滤提取
+tshark -r "ez_usb.pcapng" -Y "usb.src==\"2.8.1\" && usb.dst==host" -T fields -e usbhid.data > keyboarda.txt
+tshark -r "ez_usb.pcapng" -Y "usb.src==\"2.10.1\" && usb.dst==host" -T fields -e usbhid.data > keyboardb.txt
 ```
 
 键盘数据包的数据长度为8个字节，击键信息集中在第3个字节以后

@@ -104,6 +104,10 @@ os_stdout, fmt_Fprint fmt_Fprintln fmt_Fscanf
 ## vm 虚拟机系统
 
 go:VNCTF2022 CM狗   main__ptr_MzVm_init
+## Javascript/js
+js -- decodeObfuscator
+### uniapp
+
 ## 反调试
 
 https://ctf-wiki.org/reverse/windows/anti-debug/zwsetinformationthread/
