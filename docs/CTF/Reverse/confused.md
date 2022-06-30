@@ -24,3 +24,8 @@ https://tianyu.xin/index.php/rev/Somuchcode.html
 # Ollvm
 
 [deflat](https://github.com/cq674350529/deflat)
+
+
+# 多线程
+
+[WaitForSingleObject](https://blog.csdn.net/LL596214569/article/details/81088862)
