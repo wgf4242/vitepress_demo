@@ -197,3 +197,23 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ## CEF Chromium Embedded Framework
 
 [将js代码注入到第三方CEF应用程序的一点浅见 ](https://bbs.pediy.com/thread-268570.htm)
+
+
+
+
+# Article
+[精品连载丨安卓 App 逆向课程之五 frida 注入 Okhttp 抓包下](https://cloud.tencent.com/developer/article/1669631?from=article.detail.1758879)篇
+[**精品连载丨安卓 App 逆向课程之三 frida 注入 Okhttp 抓包上篇**](https://mp.weixin.qq.com/s/_nSs3yGCll0_B6OZBTU5Bg)
+ [**精品连载丨安卓 App 逆向课程之四 frida 注入 Okhttp 抓包中篇**](https://mp.weixin.qq.com/s/7-HRRV2i2lX9-t62jYI0ig)
+[[原创]Frida实现okhttp3.Interceptor ](https://bbs.pediy.com/thread-252129.htm) 
+[[原创] 如何实现 Https拦截进行 非常规“抓包”（20.9.13-代码更新） ](https://bbs.pediy.com/thread-252100.htm) 
+
+[6.frida全自动HOOK解密](https://www.bilibili.com/video/BV1kg411N7Zj)
+[【安卓逆向hook第四节课 安卓逆向Hook分析  frida  Hook神器   过Root检测-哔哩哔哩】](https://www.bilibili.com/video/BV1qS4y1X75V)
+[frida真机HOOK解密_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1sR4y147SP)
+[巧用Frida与Unidbg快速在CTF中解题](https://mp.weixin.qq.com/s/LB37_0wBms9UrtiYJ3MpaQ)
+[【技术分享】FRIDA-API使用篇：rpc、Process、Module、Memory使用方法及示例](https://mp.weixin.qq.com/s/-LN2wCj7Vdx65gzeqpjgQw)
+[原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
+## 地址计算
+so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地址 -800为base
+看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)

@@ -70,6 +70,9 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 ```
 多出的 zip 文件就是 profile，把它放在 volatility/volatility/plugins/overlays/linux/ 目录下即可
 
+### scap
+sysdig文件
+sudo sysdig -r sysdig-trace-file.scap
 
 ## 图片题
 有图像, Google/baidu搜图 可能是提示

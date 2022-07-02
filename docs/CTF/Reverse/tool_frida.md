@@ -15,7 +15,11 @@ frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
 % resume
 ```
 
+```s
 frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
+# 程序前台 -F
+frida -UF -l hook.js
+```
 
 ## Quick Start
 
