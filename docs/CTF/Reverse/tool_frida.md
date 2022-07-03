@@ -20,6 +20,9 @@ frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
 # 程序前台 -F
 frida -UF -l hook.js
 ```
+### frida-trace
+frida-ps -Ua
+frida-trace -U createSo -a libcreateso.so!0x2000
 
 ## Quick Start
 
@@ -119,11 +122,19 @@ Chrome中F12, 点击绿色nodejs, 选中端口, 进入可下断点了。
 
 // Thread.sleep(3)
 
-
+## api
+https://www.anquanke.com/post/id/195869
+https://www.zhangkunzhi.com/index.php/archives/191/
+https://www.jianshu.com/p/a36f49ed666b
+Frida常用方法汇总 https://www.996station.com/1030
+https://www.anquanke.com/post/id/195215
 
 ##  入门文章
+[frida-snippets](https://github.com/iddoeldor/frida-snippets)
+
 [_[原创]初识Frida--Android逆向之Java层hook (一) ](https://bbs.pediy.com/thread-227232.htm)
 [初识Frida--Android逆向之Java层hook (二)](https://bbs.pediy.com/thread-227233.htm)
+
 ## Brida
 [[原创]Frida配合BurpSuite的Brida插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
 [Android渗透测试frida——Brida插件加解密实战演示](https://xz.aliyun.com/t/7562?page=34)
