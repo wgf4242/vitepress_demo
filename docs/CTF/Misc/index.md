@@ -48,6 +48,7 @@ rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容
 ### bitlocker
 bitlocker加密的起止时间会被存储在注册表中 ROOT\ControlSet001\Control\FVEStats里的OsvEncryptInit和OsvEncryptComplete, 
 用Windows Registry Recovery查看注册表备份，例: 鹏城杯2022 babybit
+如果用 Registry Explorer 看注意时间默认是UTC+0 ，要转成UTC+8加8小时
 
 ### profile找不到
 1. https://blog.bi0s.in/2021/08/20/Forensics/InCTFi21-TheBigScore/

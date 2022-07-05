@@ -24,6 +24,9 @@ Alt+D  修改变量类型
 diaphora,可以将函数名、注释、结构体等的先前版本移植到新版本
 BinDiff（程序本体需手动安装） 和 ret-sync 插件
 BinCAT 插件，需要手动导入脚本安装
+## keypatch//assemble
+16进制keypatch 要用0x33, 不能33h
+
 
 ## FAQ
 ### 1. graph is too big , more than 1000 nodes

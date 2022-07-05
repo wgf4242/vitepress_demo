@@ -1,0 +1,1 @@
+[CVE-2022-28346：Django SQL注入漏洞](https://mp.weixin.qq.com/s/w8OSjA3rBxIZGKtIiIGbKw)
