@@ -90,6 +90,24 @@ BOOL CryptEncrypt(
   [in, out] DWORD      *pdwDataLen,
   [in]      DWORD      dwBufLen
 );
+### VirtualProtect()
+https://zhuanlan.zhihu.com/p/66797526
+https://www.google.com/search?q=ctf+virtualprotect
+
+在 Windows 程序中使用了VirtualProtect()函数来改变虚拟内存区域的属性。
+
+```ts
+#include <Memoryapi.h>
+BOOL VirtualProtect(
+  LPVOID lpAddress,
+  SIZE_T dwSize,
+  DWORD  flNewProtect,
+  PDWORD lpflOldProtect
+);
+``
+VirtualProtect()函数有4个参数，lpAddress是要改变属性的内存起始地址，dwSize是要改变属性的内存区域大小，flAllocationType是内存新的属性类型，lpflOldProtect内存原始属性类型保存地址。而flAllocationType部分值如下表。在 SMC 中常用的是 0x40。
+
+
 ## MFC
 https://blog.csdn.net/Sanky0u/article/details/81568483
 https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#more
