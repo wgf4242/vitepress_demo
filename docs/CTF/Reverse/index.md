@@ -107,6 +107,17 @@ BOOL VirtualProtect(
 ``
 VirtualProtect()函数有4个参数，lpAddress是要改变属性的内存起始地址，dwSize是要改变属性的内存区域大小，flAllocationType是内存新的属性类型，lpflOldProtect内存原始属性类型保存地址。而flAllocationType部分值如下表。在 SMC 中常用的是 0x40。
 
+#### VirtualProtect  dump出的程序无法执行，可能是32位。64位问题。
+https://mp.weixin.qq.com/s/lGPtsd8hPJnltZ8OJqOCiw
+loader题目 
+
+010 editor 可修改32位，64位。
+```
+struct IMAGE_FILE_HEADER FileHeader
+ -- enum IMAGE_MACHINE Machine  : I386 (14Ch)  改 amd64
+struct IMAGE_OPTIONAL_HEADER32 OptionalHeader
+ -- enum OPTIONAL_MAGIC Magic   : PE32 (10Bh) 改 PE64
+```
 
 ## MFC
 https://blog.csdn.net/Sanky0u/article/details/81568483
