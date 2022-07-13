@@ -42,3 +42,10 @@ options - general - graph
 ### Decompilation failure: 83A: too big function
 [ACTF新生赛2020]SoulLike
 解决办法是将ida /ctg目录下的hexrays.cfg文件中的MAX_FUNCSIZE=64 改为 MAX_FUNCSIZE=1024。
+
+### View XMM registers
+https://reverseengineering.stackexchange.com/questions/20035/view-xmm-registers-in-ida-pro-while-debugging
+
+Debugger -> Debugger Windows -> XMM Registers子窗口
+### ida python 调试
+https://github.com/ioncodes/idacode
