@@ -1,3 +1,5 @@
+[在IDA pro下调试DLL的方法](http://www.360doc.com/content/15/0524/14/12129652_472898279.shtml)
+
 ## 环境配置
 1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
 
