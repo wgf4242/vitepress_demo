@@ -81,10 +81,15 @@ sysdig文件
 sudo sysdig -r sysdig-trace-file.scap
 
 ## 图片题
-有图像, Google/baidu搜图 可能是提示
-zsteg -a x.png
-关键字:猫/猫脸变换/arnold 置乱
-做fourier变换。
+* 看文件末尾、文件头
+* https://www.aperisolve.com/
+* Stegsolve 看各通道有没奇怪的点
+* lsb -- cloacked-pixel
+* png丢失宽高crc32, 修改为.data文件gimp打开
+* 有图像, Google/baidu搜图 可能是提示
+* zsteg -a x.png
+* 关键字:猫/猫脸变换/arnold 置乱
+* 做fourier变换。
 
 ![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
 jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码

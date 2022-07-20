@@ -23,7 +23,8 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 * 1.可能暴露起点和终点位置
 * 2.直接找到上下左右字母。DFS解题
 
-1. mrb文件 - ruby字节码 16进制显示 RITE0300
+1. mrb文件 - ruby字节码 16进制显示 RITE0300  , CISCN2022 babycode   https://docs.qq.com/doc/DRmhseWVMV1dJbUR1
+2. swift ast https://docs.qq.com/doc/DRmhseWVMV1dJbUR1 CISCN2022 babytree
 ## C/IDA相关
 
 ```
