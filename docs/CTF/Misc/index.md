@@ -90,6 +90,8 @@ sudo sysdig -r sysdig-trace-file.scap
 * zsteg -a x.png
 * 关键字:猫/猫脸变换/arnold 置乱
 * 做fourier变换。
+* 读像素
+  * 1.r,g,b中b一直是255，有时不是255，非255输出chr尝试
 
 ![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
 jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
