@@ -97,9 +97,25 @@ sudo sysdig -r sysdig-trace-file.scap
 jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
 
 Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
+* png文件
+  * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
 
 ### 二维码
 https://cli.im/deqr/   有可能零宽隐写
+## PDF文件
+1.顺序重排 -- 2022春秋杯 Capture Radiate Chart  https://mp.weixin.qq.com/s/uT42XKAvNOjEOzlBUbZoUQ
+```ts
+1.010 Editor打开后, struct PDFXref sPDFXref 展开，
+2.按struct PDFXrefItem展开
+3.看BYTE OFFSET 按大小重排序 标出 新index 
+4.修改struct PDFObj sPDFObj[x]中的index为 新index
+
+-- 或者用苹果设备打开pdf
+```
+
+![图片](https://mmbiz.qpic.cn/mmbiz_png/ohCVuC2ZHGfCgbIWhDia5W79oALfBctKQpUXxLJa8EwiaVs9wk9g11e02oAibf9dmoes7gb1RZq5gFspC79nzN5aQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
 ## pyc 文件
 
 stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
