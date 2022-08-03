@@ -234,7 +234,7 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 | mov     | 6D6F6F76                     |
 | asf     | 3026B2758E66CF11             |
 | mid     | 4D546864                     |
-
+| dll     | 4D5A90000300000004           |
 ## 流量取证
 
 ### misc_live/RTMP/RTSP/MPEG-DASH
