@@ -34,6 +34,13 @@ s7comm 1. 追踪流, 2.看数据 tshark -r .\设备药剂间数据采集.pcap -T
 
 rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容 
 
+### 工控类
+* 1.故障分析/PLC故障,  科来网络分析系统（技术交流版）
+* 2.Trailer导出, 根据序号，wireshark完整信息。  
+> tshark -r 04.pcap -T fields -e frame.number -e eth.trailer | sed -e "/^[0-9]*\s*$/d" -e "s/://g" >ac
+* 3.111
+* 4.11
+
 ## 取证题
 
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
