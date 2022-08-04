@@ -1,5 +1,5 @@
 
-1. xspy查看
+1. xspy查看, 最下方的消息, 关注点击按钮地址 OnCommand
 2. ressource hacker查看
 3. 隐藏窗口 
 4. 断点 用OD打开，bp MessageBoxW，运行，栈回溯调用源
