@@ -75,6 +75,7 @@ https://mp.weixin.qq.com/s/mjR9RoxbJBkTfaXB2ao2_A
 
 ##  过滤规则 Filter
 path %AppData%\Roaming\Wireshark\
+语法 https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
 docs https://www.wireshark.org/docs/dfref/
 
 contains 是指文本部分。
@@ -84,11 +85,17 @@ contains 是指文本部分。
 http contains "GET / foo.cgi?a=bar"
 tcp contains "TP"
 tcp and frame contains "secret"
+!(ip.src == 192.168.43.103) && s7comm
+!(ip.src == 192.0.0.0/8) && s7comm
+tcp.port == 5000
+
+http.host matches "acme\\.(org|com|net)"
 ```
 
 实例1 检查出来有哪些端口是开放的 | `[V&N2020 公开赛]拉胯的三条命令`
 
 方法1: wireshark过滤: `tcp`查看到ACK的。手动排序, 复制成csv再excel过滤。
+
 ```
 tcp.flags.ack eq 1
 tcp.ack_raw gt 0
