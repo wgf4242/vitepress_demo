@@ -117,3 +117,15 @@ echo $env:Appdata
 ```
 
 ### 替代  Out-File [path]
+
+
+### 常用命令
+
+删除空行
+```powershell
+(gc file.txt) | ? {$_.trim() -ne "" } | sc file.txt
+(gc file.txt) | ? { -not $_.IsNullOrWhiteSpace() } | sc file.txt
+
+# gc Get-Content
+# sc Set-Content
+```

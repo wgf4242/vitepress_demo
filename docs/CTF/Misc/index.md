@@ -38,7 +38,7 @@ rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容
 * 1.故障分析/PLC故障,  科来网络分析系统（技术交流版）
 * 2.Trailer导出, 根据序号，wireshark完整信息。  
 > tshark -r 04.pcap -T fields -e frame.number -e eth.trailer | sed -e "/^[0-9]*\s*$/d" -e "s/://g" >ac
-* 3.111
+* 3.过滤modbus , 查看 Write Single Register 的流量数据包并找到传输的数据data
 * 4.11
 
 ## 取证题
@@ -51,6 +51,10 @@ rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容
    4 浏览历史
 4. [profile找不到详下 ](#profile找不到)
 
+### veracrypt
+挂载后, winhex 工具 - 打开磁盘。提取隐藏文件。
+
+passware kit 爆破或 https://security.stackexchange.com/questions/202946/bruteforce-veracrypt
 
 ### bitlocker
 bitlocker加密的起止时间会被存储在注册表中 ROOT\ControlSet001\Control\FVEStats里的OsvEncryptInit和OsvEncryptComplete, 
@@ -106,7 +110,8 @@ jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 �
 Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 * png文件
   * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
-
+* bmp图片
+  * 注意文件格式, 对比其他图 06h 08h 必须为0 否则有信息
 ### 二维码
 https://cli.im/deqr/   有可能零宽隐写
 ## PDF文件
