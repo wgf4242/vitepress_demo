@@ -6,6 +6,7 @@
 ## TODO
 https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
+1.简单题目 patch调试 set EIP到后面执行一下
 1.搜到关键字如 0x33445566, 先google/baidu ctf 0x33445566
 4.没去符号 函数调用少 C代码复制出来改一改爆破更快的
 5.或者  asm 改成 call puts
