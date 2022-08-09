@@ -12,14 +12,53 @@ BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
 k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virustotal 扫程序和 IP。 分析出程序有连接 IP。扫 IP。 见 网刃杯 2022 FindMe 5. a3ed97e25583291767054a6a6b533a1c hash 解密
 
 ## unknown
-
+2  进制数 0101 2进制数 转二维码
 10 进制数中有16进制 可能有问题
 16 行文字 --> 16 进制 0-0xf
 异或 xor。或及使用 xortools `xor file`, `xortool -l 13 -c 00 file` , 13 是显示最大可能数
 ### 密码类
 3替换z  yihr{Pfit3bf_Q3_NQM}  中 quipquip不支持数字 3改成z  -- yihr{Pfitzbf_Qz_NQM}，用quipquip解得 flag{Welcome_To_RTS} => flag{Welcome_To_CTF}
 
-## 流量题
+
+## 图片题
+* 看文件末尾、文件头
+* https://www.aperisolve.com/
+* Stegsolve 看各通道有没奇怪的点
+* lsb -- cloacked-pixel
+* png丢失宽高crc32, 修改为.data文件gimp打开
+* 有图像, Google/baidu搜图 可能是提示
+* zsteg -a x.png
+* 关键字:猫/猫脸变换/arnold 置乱
+* 做fourier变换。
+* 读像素
+  * 1.r,g,b中b一直是255，有时不是255，非255输出chr尝试
+
+![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
+jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
+
+Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
+* png文件
+  * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
+* bmp图片
+  * 注意文件格式, 对比其他图 06h 08h 必须为0 否则有信息
+### 二维码
+https://cli.im/deqr/   有可能零宽隐写
+## PDF文件
+1.顺序重排 -- 2022春秋杯 Capture Radiate Chart  https://mp.weixin.qq.com/s/uT42XKAvNOjEOzlBUbZoUQ
+```ts
+1.010 Editor打开后, struct PDFXref sPDFXref 展开，
+2.按struct PDFXrefItem展开
+3.看BYTE OFFSET 按大小重排序 标出 新index 
+4.修改struct PDFObj sPDFObj[x]中的index为 新index
+
+-- 或者用苹果设备打开pdf
+```
+
+![图片](https://mmbiz.qpic.cn/mmbiz_png/ohCVuC2ZHGfCgbIWhDia5W79oALfBctKQpUXxLJa8EwiaVs9wk9g11e02oAibf9dmoes7gb1RZq5gFspC79nzN5aQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+## 流量取证题
 
 1.搜索 flag
 
@@ -34,7 +73,35 @@ s7comm 1. 追踪流, 2.看数据 tshark -r .\设备药剂间数据采集.pcap -T
 
 rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容 
 
-### 工控类
+### misc_live/RTMP/RTSP/MPEG-DASH
+
+题目: 2021 中石油集团公司第二届网络安全攻防赛团体赛预赛 - Misc - Live
+
+涉及协议 直播流协议：RTMP、RTSP、MPEG-DASH
+
+[手撕 rtmp 协议专项](https://mp.weixin.qq.com/mp/homepage?__biz=MzAwODM5OTM2Ng==&hid=7&sn=0192ad4506003b7b13d5efde0ff15312)
+
+工具
+
+1.[rtmp2flv 流量包转换为 flv 视频](https://github.com/quo/rtmp2flv)
+
+2.[rtptools](https://github.com/irtlab/rtptools)
+
+解题流程:
+
+tcpflow -T %T\_%A%C%c.rtmp -r Live.pcapng -o out
+
+./rtmp2flv.py 最大的文件.rtmp
+
+RTMP 协议中 可以还原出一段音频 一个画面 分别为 flag1 flag2
+
+RTSP 协议过滤出来之后 会找到比较特殊的包 RTSP/SDP 协议的
+
+把 SDP 协议提取出来 导出魔改 SDP 之后可以拿到 flag3 flag4
+
+MPEG-DASH 协议 导出文件归类 然后写个脚本 开个服务器 可以得到 flag5 flag6
+
+### 工控类ICS
 * 1.故障分析/PLC故障,  科来网络分析系统（技术交流版）
 * 2.Trailer导出, 根据序号，wireshark完整信息。  
 > tshark -r 04.pcap -T fields -e frame.number -e eth.trailer | sed -e "/^[0-9]*\s*$/d" -e "s/://g" >ac
@@ -91,42 +158,6 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 sysdig文件
 sudo sysdig -r sysdig-trace-file.scap
 
-## 图片题
-* 看文件末尾、文件头
-* https://www.aperisolve.com/
-* Stegsolve 看各通道有没奇怪的点
-* lsb -- cloacked-pixel
-* png丢失宽高crc32, 修改为.data文件gimp打开
-* 有图像, Google/baidu搜图 可能是提示
-* zsteg -a x.png
-* 关键字:猫/猫脸变换/arnold 置乱
-* 做fourier变换。
-* 读像素
-  * 1.r,g,b中b一直是255，有时不是255，非255输出chr尝试
-
-![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
-jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
-
-Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
-* png文件
-  * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
-* bmp图片
-  * 注意文件格式, 对比其他图 06h 08h 必须为0 否则有信息
-### 二维码
-https://cli.im/deqr/   有可能零宽隐写
-## PDF文件
-1.顺序重排 -- 2022春秋杯 Capture Radiate Chart  https://mp.weixin.qq.com/s/uT42XKAvNOjEOzlBUbZoUQ
-```ts
-1.010 Editor打开后, struct PDFXref sPDFXref 展开，
-2.按struct PDFXrefItem展开
-3.看BYTE OFFSET 按大小重排序 标出 新index 
-4.修改struct PDFObj sPDFObj[x]中的index为 新index
-
--- 或者用苹果设备打开pdf
-```
-
-![图片](https://mmbiz.qpic.cn/mmbiz_png/ohCVuC2ZHGfCgbIWhDia5W79oALfBctKQpUXxLJa8EwiaVs9wk9g11e02oAibf9dmoes7gb1RZq5gFspC79nzN5aQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
-
 
 ## pyc 文件
 
@@ -134,7 +165,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 ## 压缩包/zip/rar
 使用unzip或者winrar打开 逐个解压，因为包里可能有不需要密码的。
 ```
-    -- 7z解压, 不要光用winrar
+    -- 7z解压, 不要光用winrar(如果有不用密码的, rar不会解压出来)
     -- 查看注释, 有右侧就是有注释
     -- 伪加密  -- zip  ZipCenOp.jar r filename
                        或手动修改所有0900伪0000
@@ -247,35 +278,6 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 | asf     | 3026B2758E66CF11             |
 | mid     | 4D546864                     |
 | dll     | 4D5A90000300000004           |
-## 流量取证
-
-### misc_live/RTMP/RTSP/MPEG-DASH
-
-题目: 2021 中石油集团公司第二届网络安全攻防赛团体赛预赛 - Misc - Live
-
-涉及协议 直播流协议：RTMP、RTSP、MPEG-DASH
-
-[手撕 rtmp 协议专项](https://mp.weixin.qq.com/mp/homepage?__biz=MzAwODM5OTM2Ng==&hid=7&sn=0192ad4506003b7b13d5efde0ff15312)
-
-工具
-
-1.[rtmp2flv 流量包转换为 flv 视频](https://github.com/quo/rtmp2flv)
-
-2.[rtptools](https://github.com/irtlab/rtptools)
-
-解题流程:
-
-tcpflow -T %T\_%A%C%c.rtmp -r Live.pcapng -o out
-
-./rtmp2flv.py 最大的文件.rtmp
-
-RTMP 协议中 可以还原出一段音频 一个画面 分别为 flag1 flag2
-
-RTSP 协议过滤出来之后 会找到比较特殊的包 RTSP/SDP 协议的
-
-把 SDP 协议提取出来 导出魔改 SDP 之后可以拿到 flag3 flag4
-
-MPEG-DASH 协议 导出文件归类 然后写个脚本 开个服务器 可以得到 flag5 flag6
 
 ## 网络识图/位置
 
