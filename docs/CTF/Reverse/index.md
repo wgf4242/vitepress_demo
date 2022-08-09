@@ -196,11 +196,14 @@ chmod +x frida-server-15.1.17-android-arm64
 
 
 新窗口
+```
 adb forward tcp:27043 tcp:27043
 adb forward tcp:27042 tcp:27042
 frida-dexdump -p <pid> -U
 ```
+
 ### frida-commands
+
 ```
 frida-ls-devices
 frida-ps -D 458f4aa5 -a
@@ -229,7 +232,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 [将js代码注入到第三方CEF应用程序的一点浅见 ](https://bbs.pediy.com/thread-268570.htm)
 
-
+## 反调试
+[反调试技术整理](https://www.cnblogs.com/hed10ne/p/anti-debug-techs.html)
 
 
 # Article
