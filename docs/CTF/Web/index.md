@@ -58,4 +58,22 @@ select USER_NAME();
 
 -- functions
 ascii,char,charindex,concat,concat with +,concat_ws,datalength,difference,format,left,len,lower,ltrim,nchar,patindex,quotename,replace,replicate,reverse,right,rtrim,soundex,space,str,stuff,substring,translate,trim,unicode,upper
+
+
+-- sa passwords
+select *  FROM master.sys.sql_logins
+select *  FROM [master].[sys].[sql_logins]
+SELECT HOST_NAME()  -- 主机名
+SELECT HOST_NAME() AS HostName, SUSER_NAME() LoggedInUser -- SUSER_NAME sa
+-- 在master - 视图里
+```
+
+启动 xp_cmdshell
+```
+sp_configure 'show advanced options',1
+reconfigure
+go
+sp_configure 'xp_cmdshell',1
+reconfigure
+go
 ```

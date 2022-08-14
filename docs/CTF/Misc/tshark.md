@@ -20,12 +20,17 @@ tshark怎样确定协议字段?
 参数
 ```
 -R 过滤器 相当于 Ctrl+/
+-Y "Something_UDP.field1 or Something_UDP.field2"
 ```
+过滤协议
+tshark -Y http
+tshark -Y modbus -r 3.pcapng
 
 #### 导出http文件
 ```
 path D:\Program Files\Wireshark;%path%
 tshark -r ctf.pcapng --export-objects "http,F:/Fshare/"
+
 ```
 #### 导出http uri
 tshark -r x.pcap -T fields -e http.request.full_uri | sed "/^\s*$/d" > usbdata.txt

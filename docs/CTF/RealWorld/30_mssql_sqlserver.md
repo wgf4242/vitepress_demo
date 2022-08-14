@@ -1,5 +1,12 @@
 # SqlServer
+
 端口 1433
+
+## SqlServer 2000 在win7x64安装条件
+
+1.计算机名更改为全用大写字符就可以了。
+2.设置SETUPSQL.exe 兼容性为winxp, 管理员身份证运行
+
 ## 转义
 sqlsserver 用"" 来转义 "
 

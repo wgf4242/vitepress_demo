@@ -5,6 +5,14 @@
 [[toc]]
 
 ## 解题思路
+grep -r "flag"
+strings ./file | grep flag
+* 不明16进制/字符串
+  * fromhex - to binary - reverse - from binary - reverse
+* 不明文件
+  * 二进制数据 大端|小端 都要看
+  * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
+
 
 波形图 高为 1 低为 0 转二进制
 BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
@@ -60,18 +68,20 @@ https://cli.im/deqr/   有可能零宽隐写
 
 ## 流量取证题
 
-1.搜索 flag
+* 追踪流注意单个 66 6c 61 67 -> flag
+* 过滤关键协议如websocket，整体导出为csv, countif过滤length, 找少的比如只有2个的数据。定位查看。
 
-追踪流注意单个 66 6c 61 67 -> flag
+* modbus.data 过滤 : tshark -r a.pcapng -T fields -Y "modbus.data > 0" -e frame.number -e modbus.data | sed "/^\s\*$/d" > data.txt 网刃杯 2022 喜欢移动的黑客
 
-modbus.data 过滤 : tshark -r a.pcapng -T fields -Y "modbus.data > 0" -e frame.number -e modbus.data | sed "/^\s\*$/d" > data.txt 网刃杯 2022 喜欢移动的黑客
-
-s7comm 1. 追踪流, 2.看数据 tshark -r .\设备药剂间数据采集.pcap -T fields -e s7comm.resp.data -Y s7comm > pic.txt
+* s7comm 1. 追踪流, 2.看数据 tshark -r .\设备药剂间数据采集.pcap -T fields -e s7comm.resp.data -Y s7comm > pic.txt
 -------3. 尝试 Ctrl+/过滤 cotp && cotp.type == 0x0f && s7comm.header.rosctr == 1 && s7comm.param.func == 0x05
 
-注意字符串 U2FsdGVkX
+* 通过VT 行为分析 | 找IP直接丢进去看 BEHAVIOR
+* 注意字符串 U2FsdGVkX
 
 rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容 
+### wifi
+aircrack-ng -w ./dict.txt ./01.cap
 
 ### misc_live/RTMP/RTSP/MPEG-DASH
 
@@ -177,8 +187,9 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
     -- 修补文件头 文件头顺序被打乱,添加文件头504B并 按504B0304...504B0102....504B0506的顺序调整，  BMZCTF2022 游戏秘籍
     -- 爆破
+            -- 可见字符1-6位, 仅数字 开始字符0
+            -- 可见字符1-4位, 大小写+数字
             -- 可见字符1-4位, 全部字符
-            -- 可见字符1-6位, 开始字符0
             -- 可见字符6-6位, 小字母加数字
             -- 给了password 爆破
             -- 时间戳时间可能靠近 用掩码爆破,  1558012728.00|1558052728.99|155???????.??      -- [GUET-CTF2019]zips
@@ -278,6 +289,7 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 | asf     | 3026B2758E66CF11             |
 | mid     | 4D546864                     |
 | dll     | 4D5A90000300000004           |
+| 7z      | 377ABCAF271C                 |
 
 ## 网络识图/位置
 

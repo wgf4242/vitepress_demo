@@ -6,6 +6,8 @@ https://www.itsvse.com/thread-3650-1-1.html
 
 https://www.cnblogs.com/lsgxeva/p/9309217.html
 
+升级 https://github.com/PowerShell/PowerShell/releases/tag/v7.2.6
+
 ## 符号 
 `&` is the call operator which allows you to execute a command, a script, or a function.
 For more details:
@@ -108,6 +110,13 @@ https://msdn.microsoft.com/zh-cn/library/system.string.aspx
 ```
 
 
+## Symbols
+
+```ts
+$_表示循环变量
+?: `? {}` 问号(?)其实就是Where-Object的符号别名 在 alias中也可看到
+```
+
 ## Environment Varaiables
 
 ```
@@ -128,4 +137,28 @@ echo $env:Appdata
 
 # gc Get-Content
 # sc Set-Content
+```
+
+## 文件操作
+
+写入文件 Out-File
+```ts
+Get-Process | Out-File -FilePath .\Process.txt
+```
+
+## FAQ
+###  Linux < 如何在windows下做同样的效果
+```sh
+python3 <(curl -sSL https://wmctf.wm-team.cn/pow.py) solve s.ACxJ.AABi17sGZ2TxvXrsHd/D9y0O
+
+# oss: Out-String -Stream  https://bbs.et8.net/bbs/showthread.php?t=1404895
+curl.exe -sSL  https://wmctf.wm-team.cn/pow.py | oss | python - solve s.ACxJ.AABi17sGZ2TxvXrsHd/D9y0O
+curl.exe -sSL  https://wmctf.wm-team.cn/pow.py | python - solve s.ACxJ.AABi17sGZ2TxvXrsHd/D9y0O
+```
+
+* remove blank lines
+```powershell
+(gc file.txt) | ? {$_.trim() -ne "" } | set-content file.txt
+(gc file.txt) | ? { -not [String]::IsNullOrWhiteSpace($_) } | set-content file.txt
+(gc file.txt) | ? { -not [System.String]::IsNullOrWhiteSpace($_) } | set-content file.txt
 ```
