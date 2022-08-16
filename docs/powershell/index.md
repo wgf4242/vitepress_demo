@@ -8,17 +8,38 @@ https://www.cnblogs.com/lsgxeva/p/9309217.html
 
 升级 https://github.com/PowerShell/PowerShell/releases/tag/v7.2.6
 
-## 符号 
-`&` is the call operator which allows you to execute a command, a script, or a function.
-For more details:
-```
-Syntax
-      & "[path] command" [arguments]
+## whatif
+模拟操作 提示运行会产生什么影响
 
-$LocalComputerName = & $ENV:windir\System32\HostName.exe
-
-https://stackoverflow.com/questions/22074507/what-does-the-symbol-in-powershell-mean
+```ps1
+Get-ChildItem "D:\" -Recurse | Remove-Item -WhatIf
+Get-ChildItem "D:\" -Recurse | Remove-Item -Confirm
 ```
+
+
+## Environment Varaiables
+
+```
+$PSVersionTable
+gci env:* | sort-object name
+echo $env:Appdata
+```
+
+### 替代  Out-File [path]
+
+
+### 常用命令
+
+删除空行
+```powershell
+(gc file.txt) | ? {$_.trim() -ne "" } | sc file.txt
+(gc file.txt) | ? { -not $_.IsNullOrWhiteSpace() } | sc file.txt
+
+# gc Get-Content
+# sc Set-Content
+```
+
+
 ## For
 问题：每天我吃2.2个苹果，17天我吃多少个苹果？
 
@@ -71,9 +92,7 @@ System.Collections.Generic.HashSet        去重数组。和python的set对象�
 $默认网关 = (get-netroute -DestinationPrefix 0.0.0.0/0).NextHop
 & ping.exe $默认网关
 ```
-
-
-## Help
+## Help/FAQ
 
 ```
 问：不知道模块，如何查找？
@@ -111,32 +130,22 @@ https://msdn.microsoft.com/zh-cn/library/system.string.aspx
 
 
 ## Symbols
+`&` is the call operator which allows you to execute a command, a script, or a function.
+For more details:
+```
+Syntax
+      & "[path] command" [arguments]
+
+$LocalComputerName = & $ENV:windir\System32\HostName.exe
+
+https://stackoverflow.com/questions/22074507/what-does-the-symbol-in-powershell-mean
+```
+
+`?`:
 
 ```ts
 $_表示循环变量
 ?: `? {}` 问号(?)其实就是Where-Object的符号别名 在 alias中也可看到
-```
-
-## Environment Varaiables
-
-```
-$PSVersionTable
-gci env:* | sort-object name
-echo $env:Appdata
-```
-
-### 替代  Out-File [path]
-
-
-### 常用命令
-
-删除空行
-```powershell
-(gc file.txt) | ? {$_.trim() -ne "" } | sc file.txt
-(gc file.txt) | ? { -not $_.IsNullOrWhiteSpace() } | sc file.txt
-
-# gc Get-Content
-# sc Set-Content
 ```
 
 ## 文件操作

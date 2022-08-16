@@ -58,11 +58,19 @@ select USER_NAME();
 
 -- functions
 ascii,char,charindex,concat,concat with +,concat_ws,datalength,difference,format,left,len,lower,ltrim,nchar,patindex,quotename,replace,replicate,reverse,right,rtrim,soundex,space,str,stuff,substring,translate,trim,unicode,upper
-
+select case when 1=1 then 0 else 2 end  -- if else 
+if (1<0) Begin select 'true' End Else Begin select 'false' End -- if else 2
 
 -- sa passwords
 select *  FROM master.sys.sql_logins
 select *  FROM [master].[sys].[sql_logins]
+SELECT name, CAST(CONVERT(varchar(max), password_hash, 1) AS varchar)  FROM master.sys.sql_logins -- 0x0102  https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver16
+SELECT name, CAST(CONVERT(varchar(max), password_hash, 2) AS varchar)  FROM master.sys.sql_logins -- 0102
+
+select case when  ascii(SUBSTRING(CAST(CONVERT(varchar(max), password_hash, 2) AS varchar), 1, 1))=48  then 1 else 2 end FROM master.sys.sql_logins -- 判断第二位是否为0
+select case when  ascii(SUBSTRING(CAST(CONVERT(varchar(max), password_hash, 2) AS varchar), 2, 1))=49  then 1 else 2 end FROM master.sys.sql_logins -- 判断第二位是否为1
+
+
 SELECT HOST_NAME()  -- 主机名
 SELECT HOST_NAME() AS HostName, SUSER_NAME() LoggedInUser -- SUSER_NAME sa
 -- 在master - 视图里
