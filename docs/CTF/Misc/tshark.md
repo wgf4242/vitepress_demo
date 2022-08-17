@@ -21,6 +21,7 @@ tshark怎样确定协议字段?
 ```
 -R 过滤器 相当于 Ctrl+/
 -Y "Something_UDP.field1 or Something_UDP.field2"
+-Y "modbus && ip.dst==192.168.111.138"
 ```
 过滤协议
 tshark -Y http
