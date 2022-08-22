@@ -175,7 +175,8 @@ setenforce 0
 ```
 #adb connect 127.0.0.1:7555 # 雷电不用
 
-# x86
+## frida
+### x86
 mkdir /data/local/tmp
 adb push frida-server-15.1.17-android-x86 /data/local/tmp
 adb shell
@@ -184,7 +185,9 @@ chmod +x frida-server-15.1.17-android-x86
 ./frida-server-15.1.17-android-x86
 
 
-# arm64
+### arm64
+
+```shell
 adb push frida-server-15.1.17-android-arm64 /data/local/tmp
 adb shell
 mkdir /data/local/tmp
@@ -193,12 +196,14 @@ chmod +x frida-server-15.1.17-android-arm64
 ./frida-server-15.1.17-android-arm64
 
 /data/local/tmp/frida-server-15.1.17-android-arm64
-
+```
 
 新窗口
 ```
-adb forward tcp:27043 tcp:27043
+# 手机和电脑通过adb 通信
 adb forward tcp:27042 tcp:27042
+# 测试
+frida-ps -U
 frida-dexdump -p <pid> -U
 ```
 

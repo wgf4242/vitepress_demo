@@ -10,7 +10,8 @@
 * modbus 协议
 * goose 协议
 * s7comm plus , 1.安装插件 2. s7comm-plus.data.function == createobject && s7comm-plus.data.opcode == 0x31
-
+* .S7S .s7p 文件用 Simens step7
+* .mwp 文件用 STEP 7-MicroWIN SMART
 
 AutoThink 打开 .gvi .hpf .iec 
 STEP 7 MicroWIN SMART V2.5 打开 .smart

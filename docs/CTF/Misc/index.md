@@ -12,6 +12,7 @@ strings ./file | grep flag
 * 不明文件
   * 二进制数据 大端|小端 都要看
   * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
+* DTMF http://dialabc.com/sound/detect/index.html
 
 
 波形图 高为 1 低为 0 转二进制
@@ -182,6 +183,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
                -- rar  F9 81 74 85 改成 F9 81 74 80
     -- 报错/文件头串改 核对rar和zip文件头
             -- rar 52 61 72 21 1A 07 00 CF 90 73 00 00 0D 00 00 00 00 00 00 00 XX XX 74 A0 90 2C
+            -- 修复 winrar - 工具 - 修复压缩文件
     -- 密码，先看题目提示，图片文件用010 editor搜索设置 Unicode型, 搜pass, 4位试下。不行再看总结。
 
 

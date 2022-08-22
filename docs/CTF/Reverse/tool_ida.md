@@ -20,7 +20,14 @@ Java.perform(function(){
 
 Ctrl+N  调试中 set ip, 设置下一步走到哪个位置。
 Alt+D  修改变量类型
+## Debug
 
+### gdb server
+
+```shell
+gdbserver *:23946 ./elf
+gdbserver 0.0.0.0:23946 ./elf
+```
 
 ## Plugins
 diaphora,可以将函数名、注释、结构体等的先前版本移植到新版本
