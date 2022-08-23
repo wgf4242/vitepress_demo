@@ -7,8 +7,11 @@
 ## 解题思路
 grep -r "flag"
 strings ./file | grep flag
+* 32位长度 AES的秘钥
 * 不明16进制/字符串
   * fromhex - to binary - reverse - from binary - reverse
+* 多个相同文件
+  * 观察创建时间差 巅峰极客2022\Misc\Lost
 * 不明文件
   * 二进制数据 大端|小端 都要看
   * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
@@ -122,7 +125,8 @@ MPEG-DASH 协议 导出文件归类 然后写个脚本 开个服务器 可以得
 ## 取证题
 
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
-2. 看桌面
+2. 看桌面 
+   2.0 Filter: Desktop\
    2.1 Magnet AXIOM 收集信息
    3。 Firefox key3.db 恢复密码
    3. Firefox浏览器记录 places.sqlite
@@ -169,63 +173,65 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 sysdig文件
 sudo sysdig -r sysdig-trace-file.scap
 
-
 ## pyc 文件
 
 stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
+
 ## 压缩包/zip/rar
+
 使用unzip或者winrar打开 逐个解压，因为包里可能有不需要密码的。
+
 ```
-    -- 7z解压, 不要光用winrar(如果有不用密码的, rar不会解压出来)
-    -- 查看注释, 有右侧就是有注释
-    -- 伪加密  -- zip  ZipCenOp.jar r filename
-                       或手动修改所有0900伪0000
-               -- rar  F9 81 74 85 改成 F9 81 74 80
-    -- 报错/文件头串改 核对rar和zip文件头
-            -- rar 52 61 72 21 1A 07 00 CF 90 73 00 00 0D 00 00 00 00 00 00 00 XX XX 74 A0 90 2C
-            -- 修复 winrar - 工具 - 修复压缩文件
-    -- 密码，先看题目提示，图片文件用010 editor搜索设置 Unicode型, 搜pass, 4位试下。不行再看总结。
+-- 解压密码 空格 转 _
+-- 1.7z解压, 2. winrar修复解压: - 工具 - 修复压缩文件
+-- 查看注释, 有右侧就是有注释
+-- 伪加密  -- zip  ZipCenOp.jar r filename
+                    或手动修改所有0900伪0000
+            -- rar  F9 81 74 85 改成 F9 81 74 80
+-- 报错/文件头串改 核对rar和zip文件头
+        -- rar 52 61 72 21 1A 07 00 CF 90 73 00 00 0D 00 00 00 00 00 00 00 XX XX 74 A0 90 2C
+        -- 修复 winrar - 工具 - 修复压缩文件
+-- 密码，先看题目提示，图片文件用010 editor搜索设置 Unicode型, 搜pass, 4位试下。不行再看总结。
+-- 修补文件头 文件头顺序被打乱,添加文件头504B并 按504B0304...504B0102....504B0506的顺序调整，  BMZCTF2022 游戏秘籍
+-- 爆破
+  -- 可见字符1-6位, 仅数字 开始字符0
+  -- 可见字符1-4位, 大小写+数字
+  -- 可见字符1-4位, 全部字符
+  -- 可见字符6-6位, 小字母加数字
+  -- 给了password 爆破
+  -- 时间戳时间可能靠近 用掩码爆破,  1558012728.00|1558052728.99|155???????.??      -- [GUET-CTF2019]zips
+  -- zip Advanced Archive Password Recovery 
+  -- rar hashcat + rar2john 
+  -- zip 掩码爆破 NCTF2018-havefun, 用ARCH, 开始wcy00000 结束wcy00000, 长度8, 暴力
+
+-- 明文攻击, 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
+  https://blog.csdn.net/q851579181q/article/details/109767425
+  AES256-Deflate/AES256-Store加密的文件不适用于明文攻击。
+  zip同名txt接用文件名作为明文攻击。 #见@list.md 第四届2021美团网络安全高校挑战赛
 
 
-    -- 修补文件头 文件头顺序被打乱,添加文件头504B并 按504B0304...504B0102....504B0506的顺序调整，  BMZCTF2022 游戏秘籍
-    -- 爆破
-            -- 可见字符1-6位, 仅数字 开始字符0
-            -- 可见字符1-4位, 大小写+数字
-            -- 可见字符1-4位, 全部字符
-            -- 可见字符6-6位, 小字母加数字
-            -- 给了password 爆破
-            -- 时间戳时间可能靠近 用掩码爆破,  1558012728.00|1558052728.99|155???????.??      -- [GUET-CTF2019]zips
-            -- zip Advanced Archive Password Recovery 
-            -- rar hashcat + rar2john 
-            -- zip 掩码爆破 NCTF2018-havefun, 用ARCH, 开始wcy00000 结束wcy00000, 长度8, 暴力
-    -- 明文攻击, 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
-           https://blog.csdn.net/q851579181q/article/details/109767425
-           AES256-Deflate/AES256-Store加密的文件不适用于明文攻击。
-           zip同名txt接用文件名作为明文攻击。 #见@list.md 第四届2021美团网络安全高校挑战赛
+  压缩工具要相同，如果产生CRC32不同。换工具试， 算法也要相同
+  1.压缩方式要选 1存储 2zip
+  pkcrack.exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
+  Advanced Archive Password Recovery 比上面慢。提示尝试找回口令的时候---停止。然后用3个密钥解密。
+  
+  bkcrack
+  -- bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt
+  -- bkcrack -C test5.zip -c 2.png -k b21e5df4 ab9a9430 8c336475  -d 2.png # 解密非破解文件, 用inflate.py 2次处理
+  -- python3 inflate.py < 2.png > 2_out.png 
+  
+  rbkcrack只需要知道加密压缩包内容的连续12个字节， .exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
+  -- 文件开头有可能存在\r\n+10个连续空格，可以进行尝试
+  -- rbkcrack.exe -C ecryptedzip.zip -c LICENSE -p LICENCE.txt
+  -- zip文件名攻击
+    -- rbkcrack.exe -C ecryptedzip.zip -c flagornot.zip -p plain.txt -o 30 # plain.txt内容为 flagornot.txt
+  -- 3组key解密 rbkcrack.exe -C ecryptedzip.zip -c README.md -k 32cc3495 7f955ff5 58291af3 -d README.md
+    -- 所以解密后注意得到的out.png是deflate的数据流，用rbkcrack/tools里 python inflate.py < out.png > out1.png
+  github搜索文件, advance search - Code options 处可搜索文件名, 文件大小。
 
-
-           压缩工具要相同，如果产生CRC32不同。换工具试， 算法也要相同
-           1.压缩方式要选 1存储 2zip
-           pkcrack.exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
-           Advanced Archive Password Recovery 比上面慢。提示尝试找回口令的时候---停止。然后用3个密钥解密。
-           
-           bkcrack
-           -- bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt
-           -- bkcrack -C test5.zip -c 2.png -k b21e5df4 ab9a9430 8c336475  -d 2.png # 解密非破解文件, 用inflate.py 2次处理
-           -- python3 inflate.py < 2.png > 2_out.png 
-           
-           rbkcrack只需要知道加密压缩包内容的连续12个字节， .exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
-           -- 文件开头有可能存在\r\n+10个连续空格，可以进行尝试
-           -- rbkcrack.exe -C ecryptedzip.zip -c LICENSE -p LICENCE.txt
-           -- zip文件名攻击
-              -- rbkcrack.exe -C ecryptedzip.zip -c flagornot.zip -p plain.txt -o 30 # plain.txt内容为 flagornot.txt
-           -- 3组key解密 rbkcrack.exe -C ecryptedzip.zip -c README.md -k 32cc3495 7f955ff5 58291af3 -d README.md
-              -- 所以解密后注意得到的out.png是deflate的数据流，用rbkcrack/tools里 python inflate.py < out.png > out1.png
-           github搜索文件, advance search - Code options 处可搜索文件名, 文件大小。
-
-    -- 小文件爆破 (原始)大小 <=6 可以考虑CRC32爆破攻击
-           压缩包里是4b 就是4个字母, 3b就是3个字母。
-                      python crc32.py reverse 0x1b2e6194
+-- 小文件爆破 (原始)大小 <=6 可以考虑CRC32爆破攻击
+  压缩包里是4b 就是4个字母, 3b就是3个字母。
+    python crc32.py reverse 0x1b2e6194
 ```
 ### 爆破 crunch/hashcat
 

@@ -4,22 +4,17 @@
 1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
 
 ## 入门 
-### 第一个示例
-1.jadx打开apk，右击函数 `复制为frida片段`
-2.新建foo.js粘贴
-```js
-Java.perform(function(){
-  // 这里粘贴
-}
-```
-3.frida -UF -l foo.js
-
-在手机上点击对应按钮即可
 
 ## 快捷键 
 
 Ctrl+N  调试中 set ip, 设置下一步走到哪个位置。
 Alt+D  修改变量类型
+## 窗口介绍
+
+### 相对偏移查看
+![](https://s2.loli.net/2022/08/23/wojXVv4NC9n3MQc.png)
+或  Option - General Disassembly - Function Offsets
+
 ## Debug
 
 ### gdb server

@@ -4,6 +4,21 @@
 ## 环境
 安装 x64 的python
 
+
+
+### 第一个示例
+1.jadx打开apk，右击函数 `复制为frida片段`
+2.新建foo.js粘贴
+```js
+Java.perform(function(){
+  // 这里粘贴
+}
+```
+3.frida -UF -l foo.js
+
+在手机上点击对应按钮即可
+
+
 ## Commands
 
 frida-ps
