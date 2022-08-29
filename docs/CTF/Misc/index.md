@@ -8,10 +8,19 @@
 grep -r "flag"
 strings ./file | grep flag
 * 32位长度 AES的秘钥
+* Base64 解出来看不懂
+  * to hex 然后16进制查md5
+* 多组颜色(8组), 7进制加分隔符, -- 2022长城杯办公室爱情
+* unknown数据
+  * To Hex, 16位可能是md5
+  * 外文, 使用Cyberchef Text Encoding Brute Force 选Decode
 * 不明16进制/字符串
-  * fromhex - to binary - reverse - from binary - reverse
-* 多个相同文件
-  * 观察创建时间差 巅峰极客2022\Misc\Lost
+  * 1.fromhex - to binary - reverse - from binary - reverse
+  * 2.to binary, 去掉前面的1，再from binary, - iscc 隐秘的信息
+* 多文件
+  * 涉及顺序, 不用rglob(1 10 2 顺序有问题), 多用range
+  * 多个不同文件： 数量/8是否能整除, 时间戳隐写, 某值之上为1之下为0 iscc2022擂台-弱雪
+  * 多个相同文件: 比较二进制 差值转ascii, 如时间差 巅峰极客2022\Misc\Lost
 * 不明文件
   * 二进制数据 大端|小端 都要看
   * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
@@ -44,6 +53,8 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 * 做fourier变换。
 * 读像素
   * 1.r,g,b中b一直是255，有时不是255，非255输出chr尝试
+* BMP文件
+  * 010 修改位深 WORD biBitCount 16 为 24 再看
 
 ![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
 jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
@@ -132,6 +143,7 @@ MPEG-DASH 协议 导出文件归类 然后写个脚本 开个服务器 可以得
    3. Firefox浏览器记录 places.sqlite
    4 浏览历史
 4. [profile找不到详下 ](#profile找不到)
+5. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL查看器
 
 ### veracrypt
 挂载后, winhex 工具 - 打开磁盘。提取隐藏文件。
@@ -177,12 +189,13 @@ sudo sysdig -r sysdig-trace-file.scap
 
 stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
-## 压缩包/zip/rar
+## 压缩包/zip/rar/gzip
 
 使用unzip或者winrar打开 逐个解压，因为包里可能有不需要密码的。
 
 ```
 -- 解压密码 空格 转 _
+-- file gzip, 有comment用010看一下comment
 -- 1.7z解压, 2. winrar修复解压: - 工具 - 修复压缩文件
 -- 查看注释, 有右侧就是有注释
 -- 伪加密  -- zip  ZipCenOp.jar r filename
@@ -195,6 +208,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 -- 修补文件头 文件头顺序被打乱,添加文件头504B并 按504B0304...504B0102....504B0506的顺序调整，  BMZCTF2022 游戏秘籍
 -- 爆破
   -- 可见字符1-6位, 仅数字 开始字符0
+  -- 文件小,1-8数字
   -- 可见字符1-4位, 大小写+数字
   -- 可见字符1-4位, 全部字符
   -- 可见字符6-6位, 小字母加数字
@@ -206,13 +220,14 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 -- 明文攻击, 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
   https://blog.csdn.net/q851579181q/article/details/109767425
+  压缩为ZipCrypto 的压缩才能明文攻击
   AES256-Deflate/AES256-Store加密的文件不适用于明文攻击。
   zip同名txt接用文件名作为明文攻击。 #见@list.md 第四届2021美团网络安全高校挑战赛
 
 
   压缩工具要相同，如果产生CRC32不同。换工具试， 算法也要相同
   1.压缩方式要选 1存储 2zip
-  pkcrack.exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
+  pkcrack.exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d decrypt_file.zip -a
   Advanced Archive Password Recovery 比上面慢。提示尝试找回口令的时候---停止。然后用3个密钥解密。
   
   bkcrack

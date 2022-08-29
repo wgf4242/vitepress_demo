@@ -128,6 +128,10 @@ http.content_type == “text/html”
 http.content_length == 279
 http.content_length_header == “279″
 //根据content_length的数值过滤
+
+// http response
+http.response
+
 ```
 
 过滤从192.168.0.9发往192.168.0.99并且是icmp协议

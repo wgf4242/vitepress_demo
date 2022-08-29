@@ -7,6 +7,7 @@
 https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
 1.简单题目 patch调试 set EIP到后面执行一下
+2.多用调试直接过逻辑看结果。
 1.搜到关键字如 0x33445566, 先google/baidu ctf 0x33445566
 4.没去符号 函数调用少 C代码复制出来改一改爆破更快的
 5.或者  asm 改成 call puts
@@ -175,6 +176,18 @@ setenforce 0
 ```
 #adb connect 127.0.0.1:7555 # 雷电不用
 
+## PE/UPX壳
+
+### UPX
+https://www.52pojie.cn/thread-326995-1-1.html
+
+检查是UPX，但无法脱壳。
+
+1.段头部(Section Header) 错误。如 2022网鼎杯青龙-fakeshell, 010搜索 FUK替换为UPX。
+* 可用die查看 全部节确认, 16进制模式 ×只读 可修改
+### VMP
+https://bbs.pediy.com/thread-271546-1.htm
+
 ## frida
 ### x86
 mkdir /data/local/tmp
@@ -240,7 +253,20 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ## 反调试
 [反调试技术整理](https://www.cnblogs.com/hed10ne/p/anti-debug-techs.html)
 
+1.简单花 E9 ED  2022赣政杯.re2
+.text:00401395 E9 ED 58 E9 8C 00 00 00        jmp     near ptr 8D296C87h
+E9 ED 是 jmp某地址 E9 8C是 jmp 下跳0x0000008C, 第一个跳有问题nop掉。
+E9 - jmp， 读取到E9时，读四个字节的数据作为跳转地址的偏移，所以才会看到错误的汇编代码。
 
+2.[破坏堆栈](https://blog.csdn.net/Captain_RB/article/details/123858864)
+```
+		test eax,0         // 构造必然条件实现跳转，绕过破坏堆栈平衡的指令
+		jz label           
+		add esp,0x1        // 这里不会执行，但反编译器报错，nop掉。
+		label:
+```
+
+[制作花1](https://www.anquanke.com/post/id/208682)
 # Article
 [精品连载丨安卓 App 逆向课程之五 frida 注入 Okhttp 抓包下](https://cloud.tencent.com/developer/article/1669631?from=article.detail.1758879)篇
 [**精品连载丨安卓 App 逆向课程之三 frida 注入 Okhttp 抓包上篇**](https://mp.weixin.qq.com/s/_nSs3yGCll0_B6OZBTU5Bg)

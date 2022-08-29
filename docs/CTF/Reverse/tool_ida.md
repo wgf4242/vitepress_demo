@@ -1,5 +1,7 @@
 [在IDA pro下调试DLL的方法](http://www.360doc.com/content/15/0524/14/12129652_472898279.shtml)
-
+TODO: 
+19:00 tracing使用 - 2022强网杯Reverse——find_basic.mp4
+Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebase Programme: 0
 ## 环境配置
 1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
 
@@ -9,11 +11,20 @@
 
 Ctrl+N  调试中 set ip, 设置下一步走到哪个位置。
 Alt+D  修改变量类型
+Ctrl+S, Go to Segments
 ## 窗口介绍
 
 ### 相对偏移查看
 ![](https://s2.loli.net/2022/08/23/wojXVv4NC9n3MQc.png)
 或  Option - General Disassembly - Function Offsets
+
+### 搜索二进制 Search Binary
+如ff f8 ff 56, 定位f8 ff, Alt+B搜索 "f8 ff", 或反序无空格 "fff8"
+
+### 技巧:变量转数组导出
+1.按d切换到dword
+2.按Y修改为数组 int dword_14001D000[44];
+3.再Shift+E => initialized C Variable
 
 ## Debug
 
@@ -30,7 +41,8 @@ BinDiff（程序本体需手动安装） 和 ret-sync 插件
 BinCAT 插件，需要手动导入脚本安装
 ## keypatch//assemble
 16进制keypatch 要用0x33, 不能33h
-
+## d810 反混淆
+Ctrl-Shift-D, 点击start, 再F5
 
 ## FAQ
 ### 1. graph is too big , more than 1000 nodes

@@ -21,7 +21,9 @@ systeminfo>micropoor.txt&(for %i in (   KB2160329 KB2503665 KB2592799 KB2707511 
 https://github.com/SecWiki/windows-kernel-exploits
 https://github.com/WindowsExploits/Exploits
 
-
+## ssh 相关
+1.密钥篡改 authorized_keys 
+2.重装覆盖 openssh-backdoor https://github.com/Psmths/openssh-backdoor
 ## RottenPotato
 https://github.com/foxglovesec/RottenPotato
 ```bash
