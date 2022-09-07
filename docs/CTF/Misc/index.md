@@ -7,13 +7,20 @@
 ## 解题思路
 grep -r "flag"
 strings ./file | grep flag
+* 文件名 hxcode 汉信码
 * 32位长度 AES的秘钥
 * Base64 解出来看不懂
   * to hex 然后16进制查md5
 * 多组颜色(8组), 7进制加分隔符, -- 2022长城杯办公室爱情
+* 2种数据/2进制
+  * 分成8个一组，尝试前后补0, 以及 python int(011, 2)
+  * 转二维码
 * unknown数据
+  * 查md5
   * To Hex, 16位可能是md5
   * 外文, 使用Cyberchef Text Encoding Brute Force 选Decode
+* 不明数字+字母
+  * Caesar 后过滤 16进制。
 * 不明16进制/字符串
   * 1.fromhex - to binary - reverse - from binary - reverse
   * 2.to binary, 去掉前面的1，再from binary, - iscc 隐秘的信息
@@ -22,8 +29,10 @@ strings ./file | grep flag
   * 多个不同文件： 数量/8是否能整除, 时间戳隐写, 某值之上为1之下为0 iscc2022擂台-弱雪
   * 多个相同文件: 比较二进制 差值转ascii, 如时间差 巅峰极客2022\Misc\Lost
 * 不明文件
+  * 按pk头异或尝试
   * 二进制数据 大端|小端 都要看
   * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
+  * veracrypt
 * DTMF http://dialabc.com/sound/detect/index.html
 
 
@@ -33,7 +42,6 @@ BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
 k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virustotal 扫程序和 IP。 分析出程序有连接 IP。扫 IP。 见 网刃杯 2022 FindMe 5. a3ed97e25583291767054a6a6b533a1c hash 解密
 
 ## unknown
-2  进制数 0101 2进制数 转二维码
 10 进制数中有16进制 可能有问题
 16 行文字 --> 16 进制 0-0xf
 异或 xor。或及使用 xortools `xor file`, `xortool -l 13 -c 00 file` , 13 是显示最大可能数
@@ -42,22 +50,30 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 
 
 ## 图片题
-* 看文件末尾、文件头
 * https://www.aperisolve.com/
+* 看文件末尾、文件头
 * Stegsolve 看各通道有没奇怪的点
 * lsb -- cloacked-pixel
-* png丢失宽高crc32, 修改为.data文件gimp打开
+* png
+  * 丢失宽高crc32, 修改为.data文件gimp打开
 * 有图像, Google/baidu搜图 可能是提示
 * zsteg -a x.png
 * 关键字:猫/猫脸变换/arnold 置乱
 * 做fourier变换。
-* 读像素
+* pixel 像素题
   * 1.r,g,b中b一直是255，有时不是255，非255输出chr尝试
+  * https://sekao.net/pixeljihad/   https://github.com/oakes/PixelJihad
+  * 1.r,g,b数字可能是字符串，加起来转ascii
 * BMP文件
   * 010 修改位深 WORD biBitCount 16 为 24 再看
+* 多图片问题
+  * stegsove - image combiner
 
 ![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
-jpg 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
+
+JPG 
+* 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
+* 有key: outguess  -- outguess -k 'abc' -r mmm.jpg -t 1.txt 
 
 Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 * png文件
@@ -195,12 +211,13 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 ```
 -- 解压密码 空格 转 _
--- file gzip, 有comment用010看一下comment
--- 1.7z解压, 2. winrar修复解压: - 工具 - 修复压缩文件
--- 查看注释, 有右侧就是有注释
 -- 伪加密  -- zip  ZipCenOp.jar r filename
                     或手动修改所有0900伪0000
             -- rar  F9 81 74 85 改成 F9 81 74 80
+-- file gzip, 有comment用010看一下comment
+-- 1.7z解压, 2. winrar修复解压: - 工具 - 修复压缩文件
+-- 查看注释, 有右侧就是有注释
+-- 7z查看文件列表中的文件注释
 -- 报错/文件头串改 核对rar和zip文件头
         -- rar 52 61 72 21 1A 07 00 CF 90 73 00 00 0D 00 00 00 00 00 00 00 XX XX 74 A0 90 2C
         -- 修复 winrar - 工具 - 修复压缩文件
@@ -260,11 +277,11 @@ java -jar abe.jar unpack androidbackup  androidbackup.tar
 abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 ## 加密编码/古典密码
 
-| enc                                                 | algorithm                                                        | plain                               |
-| --------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------- |
-| SSQ8SSR000                                          | rot13                                                            | FFD8FFE00                           |
+| enc                                                 | algorithm                                                    | plain                               |
+| --------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------- |
+| SSQ8SSR000                                          | rot13                                                        | FFD8FFE00                           |
 | 58s4vb6rt4pt5r32yd6ht5u656555r6796524vi69r2yd5om6w0 | [TwinHex](https://www.calcresult.com/misc/cyphers/twin-hex.html) | `flag{I_am_Guwanneme_servant_Gulf}` |
-| Q5R2Ln3nLqUnQaIV                                    | base64(itoa)                                                     | pwD_1s_h3re!                        |
+| Q5R2Ln3nLqUnQaIV                                    | base64(itoa)                                                 | pwD_1s_h3re!                        |
 
 ### Caesar
 
@@ -284,35 +301,39 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 | png     | 89504E47                     | 0000000049454E44AE426082 |
 | zlib    | 789C                         |                          |
 | zip     | 504B0304                     | 00000000                 |
-| rar     | 52617221                     |
-| gif     | 47494638                     |
-| tif     | 49492A00                     |
-| bmp     | 424D                         |
-| dwg     | 41433130                     |
-| psd     | 38425053                     |
-| rtf     | 7B5C727466                   |
-| xml     | 3C3F786D6C                   |
-| html    | 68746D6C3E                   |
-| eml     | 44656C69766572792D646174653A |
-| dbx     | CFAD12FEC5FD746F             |
-| pst     | 2142444E                     |
-| xls/doc | D0CF11E0                     |
-| mdb     | 5374616E64617264204A         |
-| wpd     | FF575043                     |
-| pdf     | 255044462D312E               |
-| qdf     | AC9EBD8F                     |
-| pwl     | E3828596                     |
-| wav     | 57415645                     |
-| avi     | 41564920                     |
-| ram     | 2E7261FD                     |
-| rm      | 2E524D46                     |
-| mpg     | 000001BA                     |
-| mpg     | 000001B3                     |
-| mov     | 6D6F6F76                     |
-| asf     | 3026B2758E66CF11             |
-| mid     | 4D546864                     |
-| dll     | 4D5A90000300000004           |
-| 7z      | 377ABCAF271C                 |
+| rar     | 52617221                     |                          |
+| gif     | 47494638                     |                          |
+| tif     | 49492A00                     |                          |
+| bmp     | 424D                         |                          |
+| dwg     | 41433130                     |                          |
+| psd     | 38425053                     |                          |
+| rtf     | 7B5C727466                   |                          |
+| xml     | 3C3F786D6C                   |                          |
+| html    | 68746D6C3E                   |                          |
+| eml     | 44656C69766572792D646174653A |                          |
+| dbx     | CFAD12FEC5FD746F             |                          |
+| pst     | 2142444E                     |                          |
+| xls/doc | D0CF11E0                     |                          |
+| mdb     | 5374616E64617264204A         |                          |
+| wpd     | FF575043                     |                          |
+| pdf     | 255044462D312E               |                          |
+| qdf     | AC9EBD8F                     |                          |
+| pwl     | E3828596                     |                          |
+| wav     | 57415645                     |                          |
+| avi     | 41564920                     |                          |
+| ram     | 2E7261FD                     |                          |
+| rm      | 2E524D46                     |                          |
+| mpg     | 000001BA                     |                          |
+| mpg     | 000001B3                     |                          |
+| mov     | 6D6F6F76                     |                          |
+| asf     | 3026B2758E66CF11             |                          |
+| mid     | 4D546864                     |                          |
+| dll     | 4D5A90000300000004           |                          |
+| 7z      | 377ABCAF271C                 |                          |
+
+| ext     |  ascii     | Desc
+| ------- | ---------  | ---
+| mrb     |  RITEXXXX  | mruby 字节码       
 
 ## 网络识图/位置
 
@@ -323,7 +344,7 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 多个相同音频, 通过导入后反相识图。链接如下。
 https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
 
-11. wav/音频隐写 https://www.sqlsec.com/2018/01/ctfwav.html
+11. wav/音频隐写 https://www.sqlsec.com/2018/01/ctfwav.html https://blog.csdn.net/qq_51652400/article/details/123504708
     -- 1.Audition/Audacity 看 多是摩斯码,
     -- 2.看频谱 spectrogram(视图-频谱)/ audacity 轨道左侧文件名箭头-频谱
     -- DB 波谱: 右击 左侧刻度 -> db
@@ -333,18 +354,19 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
     -- 效果-反向 听声音。
     -- 删除多余文件头，可能有 2 段 riff
     -- SilentEye
+    -- Deepsound , deepsound2john.py 可爆破
     -- MP3Stego: decode.exe -X target.mp3
-    -- decode.exe -P password -X target.mp3
-    -- decode.exe -P pass -X target.mp3
-    -- decode.exe -P 主办单位 -X target.mp3
+              -- decode.exe -P password -X target.mp3
+              -- decode.exe -P pass -X target.mp3
+              -- decode.exe -P 主办单位 -X target.mp3
     -- 摩斯码音频 自动解码：
-    -- 1.Audition 禁用 其他声道, 将目标声道提高
-    -- 2.右击声道，提取为单声道， 导出 mp3
-    -- 3. https://morsecode.world/international/decoder/audio-decoder-adaptive.html 上传解码 play
+              -- 1.Audition 禁用 其他声道, 将目标声道提高
+              -- 2.右击声道，提取为单声道， 导出 mp3
+              -- 3. https://morsecode.world/international/decoder/audio-decoder-adaptive.html 上传解码 play
     -- SSTV 扫描, 频谱图比较平均 dididi 的声音 见 ### sstv
     -- PT2242 信号： 用短的一段表示是 0，长的一段表示是 1 前面 4bit 表示同步码，中间的 20bit 表示地址码，后面的 4bit 表示功能码，最后一位是停止码。
-    -- 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
-    -- PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html
+              -- 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
+              -- PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html
 
 LSB隐写 用 uint8 读取 wav 然后提取每一个帧的 LSB
 ### 音频隐写 sstv

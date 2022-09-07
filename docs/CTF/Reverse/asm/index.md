@@ -48,3 +48,20 @@ var_18 通常是 stack-18
 .text:0000000000295837 mov     [rsp+18h+var_18], r8d           ; push
 .text:000000000029583B mov     [rsp+18h+var_14], esi           ; push,arg2
 ```
+
+
+## 汇编指令还原
+
+```
+if(x)     |  test eax,eax 
+          |  je/jne/jxx
+
+if(x>2)   |  cmp a,b
+          |  je/jne/jxx
+
+a = b + c | mov eax, dword ptr[c]  eax=c;
+          | mov ecx, dword ptr[b]
+          | add ecx, eax
+          | mov ecx,eax
+          | mov dword ptr[a], eax
+```

@@ -31,11 +31,16 @@ hashcat --help 查看所有模式
 |       6       |Hybrid Wordlist + Mask（字典+掩码破解）|
 |       7       |Hybrid Mask + Wordlist（掩码+字典破解）|
 
-### HashId
+### HashId/HashMode
+https://hashcat.net/wiki/doku.php?id=example_hashes
+
 ```
 12500    RAR3-hp    $RAR3$*0*45109af8ab5f297a*adbf6c5385d7a40373e8f77d7b89d317
 13000    RAR5       $rar5$16$74575567518807622265582327032280$15$f8b4064de34ac02ecabfe
 100      SHA1      
+17220 | PKZIP (Compressed Multi-File)                       | Archives
+17200 | PKZIP (Compressed)                                  | Archives
+
 ```
 ### 掩码设置
 
@@ -86,8 +91,12 @@ hashcat64.exe -a 3 -m 0 --force 4488cec2aea535179e085367d8a17d75 --increment --i
 1-8位小写字母+数字破解
 hashcat64.exe -a 3 -m 0 --force ab65d749cba1656ca11dfa1cc2383102 --increment --increment-min 1 --increment-max 8 ?h?h?h?h?h?h?h?h
 
+
 特定字符集: 123456abcdf!@+-
 hashcat64.exe -a 3 -1 123456abcdf!@+- 8b78ba5089b11326290bc15cf0b9a07d ?1?1?1?1?1
+
+zip攻击 7位大小写+数字
+hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
 
 rar5攻击
 ```

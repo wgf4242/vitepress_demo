@@ -9,9 +9,13 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 
 ## 快捷键 
 
-Ctrl+N  调试中 set ip, 设置下一步走到哪个位置。
-Alt+D  修改变量类型
-Ctrl+S, Go to Segments
+| 快捷键          | 描述                              |
+| -------------- | -------------------------------- |
+| Ctrl+N         | Set ip, 设置下一步走到哪个位置。 |
+| Alt+D          | 修改变量类型                     |
+| Go to Segments | Ctrl+S,                          |
+| %              | 跳转括号                         |
+
 ## 窗口介绍
 
 ### 相对偏移查看

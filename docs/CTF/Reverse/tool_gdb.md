@@ -1,5 +1,3 @@
-
-
 ## 常用命令
 
 ```
@@ -47,6 +45,7 @@ p /x value 16进制输出
 ```
 
 find 命令查找"/bin/sh" 字符串
+
 ## breakpoint
 
 ```sh
@@ -57,5 +56,3 @@ d  # Delete breakpoint）
 d * // 删除全部
 dis(able) # // 禁用端点
 ```
-
-

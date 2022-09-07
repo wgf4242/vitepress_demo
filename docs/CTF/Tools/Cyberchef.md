@@ -3,8 +3,18 @@ https://github.com/mattnotmax/cyberchef-recipes
 
 复制时使用Output按钮, Copy raw output to the clipboard      -- 不要手动复制
 
+### Caesar
 
-Magic 支持递归解码
+用rot13
+
+### 循环
+
+5次base64
+
+https://gchq.github.io/CyberChef/#recipe=Label('loop')From_Base64('A-Za-z0-9%2B/%3D',true,false)Jump('loop',5)&input=Vm0xNFUxRXlSWGhYV0d4VlYwZDRWVmxVU205VlZsVjNWbFJHVkUxV1dqQlVWbHBQVkcxS1NHUkVWbFZXYkVwVVdWVmtVMDVyTVVWaGVqQTk
+
+
+###  Magic 支持递归解码
 
 - [Decode a Base64-encoded string](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)&input=VTI4Z2JHOXVaeUJoYm1RZ2RHaGhibXR6SUdadmNpQmhiR3dnZEdobElHWnBjMmd1)
 - [Convert a date and time to a different time zone](https://gchq.github.io/CyberChef/#recipe=Translate_DateTime_Format('Standard date and time','DD/MM/YYYY HH:mm:ss','UTC','dddd Do MMMM YYYY HH:mm:ss Z z','Australia/Queensland')&input=MTUvMDYvMjAxNSAyMDo0NTowMA)

