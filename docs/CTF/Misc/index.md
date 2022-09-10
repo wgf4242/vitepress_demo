@@ -101,6 +101,11 @@ https://cli.im/deqr/   有可能零宽隐写
 
 * 追踪流注意单个 66 6c 61 67 -> flag
 * 过滤关键协议如websocket，整体导出为csv, countif过滤length, 找少的比如只有2个的数据。定位查看。
+* http
+  * url查看有没 file=
+  * Sql 数据库最终获取的结果
+  * redis.conf
+    * 有没 requirepass
 
 * modbus.data 过滤 : tshark -r a.pcapng -T fields -Y "modbus.data > 0" -e frame.number -e modbus.data | sed "/^\s\*$/d" > data.txt 网刃杯 2022 喜欢移动的黑客
 

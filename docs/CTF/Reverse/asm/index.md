@@ -53,15 +53,18 @@ var_18 通常是 stack-18
 ## 汇编指令还原
 
 ```
-if(x)     |  test eax,eax 
-          |  je/jne/jxx
+if(x)       | test eax,eax 
+            | je/jne/jxx
 
-if(x>2)   |  cmp a,b
-          |  je/jne/jxx
+if(x>2)     | cmp a,b
+            | je/jne/jxx
 
-a = b + c | mov eax, dword ptr[c]  eax=c;
-          | mov ecx, dword ptr[b]
-          | add ecx, eax
-          | mov ecx,eax
-          | mov dword ptr[a], eax
+a = b + c   | mov eax, dword ptr[c]  eax=c;
+            | mov ecx, dword ptr[b]
+            | add ecx, eax
+            | mov ecx,eax
+            | mov dword ptr[a], eax
+
+if(arr[i])  | mov al,byte ptr ds:[ebx+40211A]
+            | cmp al,0                       
 ```

@@ -203,7 +203,7 @@ setenforce 0
 ```
 
 
-## PE/UPX壳
+## PE/壳
 
 ### UPX/ESP定律
 https://www.52pojie.cn/thread-326995-1-1.html
@@ -211,7 +211,8 @@ https://www.52pojie.cn/thread-326995-1-1.html
 检查是UPX，但无法脱壳。
 
 1.段头部(Section Header) 错误。如 2022网鼎杯青龙-fakeshell, 010搜索 FUK替换为UPX。
-* 可用die查看 全部节确认, 16进制模式 ×只读 可修改
+* Functions 向右拉也看得到 Segments不对
+* 可用die查看 全部节, 找到FUK节, 双击 ×只读 可修改值
 ### VMP
 https://bbs.pediy.com/thread-271546-1.htm
 

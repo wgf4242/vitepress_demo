@@ -29,6 +29,13 @@ Kali中 strings easy.pcap | grep flag
 ### FAQ
 #### Wireshark打开后不显示彩色流量，或者不显示HTTP2
 删除  %AppData%\Roaming\Wireshark 重启wireshark好了
+### Documents
+
+**xbox 360**
+[XBox 360 Controller > Wired Controller Information](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/UsbInfo)
+https://www.google.com/search?q=XBox+360+Controller+usb+info
+http://euc.jp/periphs/xbox-controller.ja.html
+
 ### 流量分析 
 #### 用Wireshark轻松解密TLS浏览器流量
 http://bobao.360.cn/learning/detail/249.html

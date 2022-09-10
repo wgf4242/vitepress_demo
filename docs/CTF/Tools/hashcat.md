@@ -97,6 +97,8 @@ hashcat64.exe -a 3 -1 123456abcdf!@+- 8b78ba5089b11326290bc15cf0b9a07d ?1?1?1?1?
 
 zip攻击 7位大小写+数字
 hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
+hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d  --increment --increment-min 1 --increment-max 8  ?1?1?1?1?1?1?1?1
+hashcat -m 17200 -O -a 3 test.hash --custom-charset1=?l?u?d  --increment --increment-min 1 --increment-max 8  ?1?1?1?1?1?1?1?1
 
 rar5攻击
 ```

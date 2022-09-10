@@ -6,6 +6,8 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
 
 ## 入门 
+连续的内存可设置 struct
+import 可看到 GetMessageBoxA, 在import处双击跳转
 
 ## 快捷键 
 
@@ -15,6 +17,10 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 | Alt+D          | 修改变量类型                     |
 | Go to Segments | Ctrl+S,                          |
 | %              | 跳转括号                         |
+| ins            |  Insert anterior comment        | 
+| shift + ins    |  Insert posterior comment       | 
+| :              |  Insert inline comment           |
+| ;              |  Insert repeatable comment       |
 
 ## 窗口介绍
 
