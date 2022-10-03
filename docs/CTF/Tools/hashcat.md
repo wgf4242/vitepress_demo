@@ -3,6 +3,7 @@ windows用6.2.3
 
 https://www.cnblogs.com/chk141/p/12220288.html
 
+不支持 rar4 文件。
 ### 参数
 
 ```
@@ -78,22 +79,27 @@ https://hashcat.net/wiki/doku.php?id=example_hashes
 
 ### 实例
 -O 速度快
+爆破多尝试admin/root + 数字
+wifi最多爆到root12222
 
 7位数字破解
-hashcat64.exe -a 3 -m 0 --force 25c3e88f81b4853f2a8faacad4c871b6 ?d?d?d?d?d?d?d
+hashcat.exe -a 3 -O -m 0 --force 25c3e88f81b4853f2a8faacad4c871b6 ?d?d?d?d?d?d?d
+
+7位掩码破解
+hashcat.exe -a 3 -O -m 0 --force 6f73684294324280a40c053404133bec  flag{?d?d?d?d?d?d?d}
 
 7位小写字母破解: 
-hashcat64.exe -a 3 -m 0 --force 7a47c6db227df60a6d67245d7d8063f3 
+hashcat.exe -a 3 -O -m 0 --force 7a47c6db227df60a6d67245d7d8063f3 
 
 1-8位数字破解: 
-hashcat64.exe -a 3 -m 0 --force 4488cec2aea535179e085367d8a17d75 --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
+hashcat.exe -a 3 -O -m 0 --force 4488cec2aea535179e085367d8a17d75 --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
 
 1-8位小写字母+数字破解
-hashcat64.exe -a 3 -m 0 --force ab65d749cba1656ca11dfa1cc2383102 --increment --increment-min 1 --increment-max 8 ?h?h?h?h?h?h?h?h
+hashcat.exe -a 3 -O -m 0 --force ab65d749cba1656ca11dfa1cc2383102 --increment --increment-min 1 --increment-max 8 ?h?h?h?h?h?h?h?h
 
 
 特定字符集: 123456abcdf!@+-
-hashcat64.exe -a 3 -1 123456abcdf!@+- 8b78ba5089b11326290bc15cf0b9a07d ?1?1?1?1?1
+hashcat.exe -a 3 -1 123456abcdf!@+- 8b78ba5089b11326290bc15cf0b9a07d ?1?1?1?1?1
 
 zip攻击 7位大小写+数字
 hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
@@ -104,8 +110,14 @@ rar5攻击
 ```
 rar2john @list.rar | sed 's/^.*://g'>test.hash
 $rar5$16$db3d60d27258f6210cc73f57c0f40e65$15$d8e6585d8f8d4843e21c3ca16160c6cb$8$6bba2cbd2b0120d8
-hashcat -m 13000 -a 3 test.hash --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
-hashcat -m 13000 -a 0 test.hash pwd.txt
+hashcat -m 13000 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
+hashcat -m 13000 -O -a 0 test.hash pwd.txt
+```
+
+deepsound
+```s
+deepsound2john.py file > 1.hash
+john 1.hash
 ```
 
 7z
@@ -125,11 +137,25 @@ hashcat -m 13400 keepass.txt -a 0 password.txt --force  # 字典方式
 sha1
 hashcat -m 100 -a 3 test.hash ?d?d?d?d?d?d
 6位字符+@DBApp
-hashcat -m 100 -a 3 test.hash ?d?d?d?d?d?d@DBApp
-hashcat -m 100 -a 3 test.hash --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
+hashcat -m 100 -O -a 3 test.hash ?d?d?d?d?d?d@DBApp
+hashcat -m 100 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
 
-WPA/PCAP
+sha256
+avytGP+4位字符
+hashcat -m 1400 -O -a 3 26d601e47a170bf796f0c1568febbc6fd40ba7a894668c2829e31dfccd35e34f avytGP?1?1?1?1  --custom-charset1=?l?u?d
+
+WPA/CAP/Wifi
 hashcat -m 2500 test.hccap pass.txt
+hashcat -a 0 -O -m 2500 hashcat.hccapx dic.txt
+hashcat -O -a 3 -m 2500 hashcat.hccapx --increment --increment-min 1 --increment-max 9 root?d?d?d?d?d?d?d?d?d
+hashcat -O -a 3 -m 2500 hashcat.hccapx --increment --increment-min 1 --increment-max 9 ?d?d?d?d?d?d?d?d?d
+hashcat -O -a 3 -m 2500 hashcat.hccapx --increment --increment-min 1 --increment-max 8 ?1?1?1?1?1?1?1?1  --custom-charset1=?l?u?d
+hashcat -O -a 3 -m 2500 hashcat.hccapx  ?1?1?1?1?1?1?1  --custom-charset1=?l?u?d
+hashcat -O -a 3 -m 2500 hashcat.hccapx 1391040?d?d?d?d #跑4位数字密码
+
+
+$pkzip2$ -m 17225
+hashcat -a 3 -O -m 17225 111.hash --increment  --increment-min 1 --increment-max=9 ?d?d?d?d?d?d?d?d?d
 
 keepass
 ```

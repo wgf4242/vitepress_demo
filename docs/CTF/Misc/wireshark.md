@@ -1,5 +1,6 @@
 [[toc]]
-
+## 环境配置
+视图 - 着色规则
 ## Wireshark - 浏量数据分析
 1.改成zip解压
 1.foremost filename
@@ -24,7 +25,8 @@ Kali中 strings easy.pcap | grep flag
 方法 5. 过滤并追踪TCP流和HTTP流。 TCP要每个流都看, HTTP要注意POST请求
 
 技巧
-添加列: 右击字段 - 应用为列
+* 添加列: 右击字段 - 应用为列
+* TCP 显示html (Ctrl+Shift+O): 右击 TCP segment data - 显示分组字节 - 显示为HTML
 
 ### FAQ
 #### Wireshark打开后不显示彩色流量，或者不显示HTTP2
@@ -244,4 +246,11 @@ http.request.method in {"HEAD" "GET"}
 
 eth.dst == aa:00
 eth.src eq aa:00
+
+# 其他技巧
+## 根据MAC查找厂家
+
+Wireshark\manuf 文件
+## 显示TCP报文绝对序号/排序
+Edit-----preference------protocols----tcp---relative sequence numbers
 

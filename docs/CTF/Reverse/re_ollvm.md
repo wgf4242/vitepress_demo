@@ -1,4 +1,8 @@
 ## Article
+[【reverse】虚假控制流入门：Ubuntu20.04安装ollvm4.0踩坑记+用IDApython去除BCF](https://www.52pojie.cn/thread-1692596-1-1.html)
+[利用angr符号执行去除控制流平坦化](https://bluesadi.github.io/0x401RevTrain-Tools/angr/10_利用angr符号执行去除控制流平坦化/)
+[CTF逆向-[SUCTF2019]hardcpp](https://blog.csdn.net/m0_37157335/article/details/124505286)
+[ollvm 学习笔记](https://blog.csdn.net/qq_45323960/article/details/124440184)
 [利用unicron去除ollvm混淆](https://www.cnblogs.com/revercc/p/16339476.html)
 [Unicorn反混淆：恢复被OLLVM保护的程序(一)](https://blog.51cto.com/u_15527932/5218378)
 [[原创]你所需要的对抗ollvm的知识都在这里](https://bbs.pediy.com/thread-272414.htm) 
@@ -7,8 +11,36 @@
 [利用符号执行去除控制流平坦化](https://security.tencent.com/index.php/blog/msg/112)
 [利用angr还原ollvm指令流平坦化](https://github.com/pcy190/deflat)
 [android逆向奇技淫巧十：OLLVM原理、常见破解思路和hook代码](https://www.cnblogs.com/theseventhson/p/14861940.html)
-[[原创]ARM64 OLLVM反混淆 ](https://bbs.pediy.com/thread-252321.htm)
 
+看雪
+[p.z【ACTF2022】Inflated（C++异常处理控制流下的OLLVM混淆） ](https://bbs.pediy.com/thread-273764.htm)
+[『直播中』从unidbg trace log中还原被ollvm混淆的非标准算法](https://mp.weixin.qq.com/s/LZyDuCKIrH4bQQZgoNuvCA)
+[[原创]使用unidbg还原标准ollvm的fla控制流程平坦化 ](https://bbs.pediy.com/thread-267687.htm) 
+[[原创]使用unidbg去ollvm虚假分支反混淆 ](https://bbs.pediy.com/thread-267499.htm) 
+[[原创]使用ollvm自定义简单的字符串加密 ](https://bbs.pediy.com/thread-264497.htm) 
+[[原创]使用unicorn来trace还原ollvm混淆的非标准算法 ](https://bbs.pediy.com/thread-264498.htm) 
+[[原创]2w班8月份第二题hook init_array中函数解密ollvm加密字符串](https://bbs.pediy.com/thread-264405.htm) 
+[[原创]对ollvm的算法进行逆向分析和还原 ](https://bbs.pediy.com/thread-270529.htm) 
+[[原创]记使用Trace还原ollvm混淆的函数 #30天写作挑战# ](https://bbs.pediy.com/thread-261773.htm) 
+[[原创] ollvm CrackMe算法分析 ](https://bbs.pediy.com/thread-258585.htm) 
+[[原创]使用Binary Ninja去除ollvm流程平坦混淆 ](https://bbs.pediy.com/thread-256299.htm) 
+[使用IDA trace来还原ollvm混淆的非标准算法](https://bbs.pediy.com/thread-264981.htm)
+[[原创]使用unicorn来trace还原ollvm混淆的非标准算法 ](https://bbs.pediy.com/thread-264498.htm) 
+[[原创]一道简单的ollvm算法题还原 ](https://bbs.pediy.com/thread-268258.htm) 
+[[原创]ollvm算法还原案例分享 看雪3W班5月题](https://bbs.pediy.com/thread-260655.htm) 
+[[原创]ollvm算法还原案例分享 8月ollvm题](https://bbs.pediy.com/thread-263211.htm) 
+[ollvm算法还原案例分享 看雪3W班12月ollvm](https://mp.weixin.qq.com/s/lCH_4CzfvLWLVpUJpGl7Xw)
+
+[基于Unicorn 的ARM64 OLLVM反混淆](https://bbs.pediy.com/thread-252321.htm) 
+[[原创]细说arm反类ollvm混淆-基本思想 ](https://bbs.pediy.com/thread-257878.htm) 
+[[原创]对ollvm的算法进行逆向分析和还原 ](https://bbs.pediy.com/thread-270529.htm) 
+[[原创]OLLVM虚假控制流源码学习笔记](https://bbs.pediy.com/thread-266201.htm) 
+[ollvm算法还原案例分享 安卓高研3w班（8月班）](https://mp.weixin.qq.com/s/tbWaCy41kVSegGd6Sqi3EA)
+[浅尝ollvm轻度混淆后的加密算法分析](https://mp.weixin.qq.com/s/f_faZEZo9qxwRxkF2qiA9A)
+[ollvm反混淆学习](https://mp.weixin.qq.com/s/4Wyyaa14CHWyKhqLPPIsqw)
+
+
+字符串
 [字符串混淆 | 2020-06-05-Frida辅助分析OLLVM混淆的算法](https://huhu0706.github.io/2020/06/05/2020-06-05-Frida%E8%BE%85%E5%8A%A9%E5%88%86%E6%9E%90OLLVM%E6%B7%B7%E6%B7%86%E7%9A%84%E7%AE%97%E6%B3%95/)
 [字符串混淆 | AndroidNativeEmu和unidbg对抗ollvm的字符串混淆](http://www.yxfzedu.com/rs_show/1211)
 [字符串混淆 | 某右 so层ollvm字符串混淆 libnet_crypto.so](https://bbs.pediy.com/thread-266583.htm)
@@ -17,6 +49,11 @@
 [字符串加密 | 使用unicorn engin还原Armariris字符串混淆](https://www.anquanke.com/post/id/181051#h3-8)
 
 [安卓 so文件在linux下能调用么](https://www.baidu.com/s?wd=%E5%AE%89%E5%8D%93+so%E6%96%87%E4%BB%B6%E5%9C%A8linux%E4%B8%8B%E8%83%BD%E8%B0%83%E7%94%A8%E4%B9%88)
+
+[OLLVM 之控制流平坦化源码学习](http://www.qfrost.com/LLVM/【LLVM】Flattening源码分析/)
+[OLLVM 之全局变量间接访问源码学习](http://www.qfrost.com/LLVM/%E3%80%90LLVM%E3%80%91%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E9%97%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
+[OLLVM Pluto 之平坦化增强源码学习](http://www.qfrost.com/LLVM/【LLVM】FlatteningEnhanced/)
+
 ## ollvm字符串加密
 // 或者直接用修复后的内存so?
 ida 加载
@@ -67,3 +104,19 @@ adb pull /data/local/tmp/dump.so
 ## ollvm控制流程平坦化
 ## ollvm指令替换
 ## ollvm虚假控制流
+
+## 环境配置
+```sh
+git clone -b llvm-4.0 https://github.com/obfuscator-llvm/obfuscator.git --depth=1
+# https://github.com/heroims/obfuscator/tree/llvm-4.0
+mkdir build  
+cd build  
+cmake -DCMAKE_BUILD_TYPE=Release ../obfuscator/
+cmake -DCMAKE_BUILD_TYPE=Release ../obfuscator/
+cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_INCLUDE_TESTS=OFF ../obfuscator/    # 有错用这条
+make -j7
+编译好的二进制程序都存在在build/bin目录下
+```
+docker 版
+https://www.bilibili.com/read/cv13148903/
+https://blog.csdn.net/qq_37507251/article/details/118530954

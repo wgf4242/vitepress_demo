@@ -4,7 +4,49 @@
 ## 环境
 安装 x64 的python
 
+1.**雷电模拟器环境**
 
+> 1.软件设置 - 其他设置 - root权限 <br>
+> 2.软件设置 - 其他设置 - Adb调试 - 开启本地连接
+
+2.下载 [sdktools](https://developer.android.com/studio/releases/platform-tools)
+3.解压添加到环境变量Path
+
+```
+adb devices
+adb -s emulator-5554 shell
+```
+
+4.[Download Frida](https://github.com/frida/frida/releases) <br>
+
+```
+adb push frida-server /data/local/tmp/
+adb shell
+su
+setprop persist.device_config.runtime_native.usap_pool_enabled false
+
+cd /data/local/tmp
+chmod +x frida_server
+./frida_server & 
+```
+
+5.下载python <br>
+```
+pip3 install -U objection
+```
+
+6.安装hello-app (随便一个apk)
+```
+frida-ps -Uai
+#  2568  Hello App com.example.helloapp
+# 启动app后
+frida -U -n "Hello App"
+exit
+
+objection --gadget com.example.helloapp explore
+# 可能要切到桌面再回来才进入交互
+exit
+```
 
 ### 第一个示例
 1.jadx打开apk，右击函数 `复制为frida片段`
@@ -18,26 +60,83 @@ Java.perform(function(){
 
 在手机上点击对应按钮即可
 
-
 ## Commands
-
+```sh
 frida-ps
-
 frida-ps -h
+frida-ps -Ua
+frida-ps -Uai # 包括未运行的
 
-```
-frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
-% resume
-```
-
-```s
-frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
-# 程序前台 -F
+# 前台 -F
 frida -UF -l hook.js
+
+# 只启动进程
+frida -U -f owasp.mstg.uncrackable1 --no-pause
+# 加载脚本
+frida -U -f owasp.mstg.uncrackable1 --no-pause -l del1.js
+
+frida -U -l [SCRIPT-NAME] --no-pause -f [APP-IDENTIFIER]
+# use app name to attach,use package name to spawn,try it.
+% resume
+%load my_script.js
 ```
-### frida-trace
+
+* frida-ls-devices
+
+* frida-trace
+```sh
+# https://www.bilibili.com/read/cv17470944
 frida-ps -Ua
 frida-trace -U createSo -a libcreateso.so!0x2000
+
+# Trace Java methods with "certificate" in their signature, ignoring case (i) and only searching in user-defined classes(u)
+frida-trace -U -f com.google.android.youtube --runtime=v8 -j '*!*certificate*/isu'
+# Trace all JNI functions
+frida-trace -U -i "Java_*" com.samsung.faceservice
+```
+
+
+* frida-kill
+```sh
+frida-kill -D <DEVICE-ID> <PID>
+```
+
+### objection
+```sh
+pip install objection
+
+# 例1 将objection注入应用
+objection -g com.ss.android.auto explore
+objection -g 5216 explore  # frida-ps -Ua
+# Hook, jadx查看方法
+android hooking watch class_method com.hfdcxy.android.by.test.a.a --dump-args --dump-backtrace --dump-return
+# 提取内存
+memory list modules
+android heap serach instances com.hfdcxy.android.by.test.a
+memory dump all from_base
+
+# 修改返回值
+android hooking set return_value com.example.test.rootUtils.isRooted false
+```
+
+```
+# 例2 xctf app3 https://bbs.pediy.com/thread-273733.htm
+
+# hook 数据库拿密码
+objection -g com.example.yaphetshan.tencentwelcome explore
+android hooking watch class_method net.sqlcipher.database.SQLiteOpenHelper.getWritableDatabase --dump-args --dump-backtrace --dump-return
+# 堆中查找实例
+android heap search instances com.example.yaphetshan.tencentwelcome.MainActivity --dump-args --dump-backtrace --dump-return
+# 0x60042a com.example.yaphetshan.tencentwelcome.MainActivity com.example.yaphetshan.tencentwelcome.MainActivity@734a4a2
+# 调用a方法
+android heap execute 0x60042a a
+
+
+# 启动activity或者服务
+android intent launch_activity com.droidlearn.activity_travel.FlagActivity
+
+
+```
 
 ## Quick Start
 
@@ -55,6 +154,9 @@ frida process_name/pid
 frida .\TestAdd.exe
 %resume
 ```
+
+
+frida-ls-devices
 
 三种方式加载脚本
 1. `frida [target] -l script.ts/js`
@@ -76,11 +178,11 @@ linux中监听其它端口
 ./frida-server-15.1.17-linux-x86_64 -l 0.0.0.0:23333
 frida -H 127.0.0.1:23333 -R testAdd
 ```
+
+
 ## frida-trace
 
-
 ## Function API
-
 
 ### NativeFunction
 
@@ -124,16 +226,20 @@ double, int8, uint8, int16, uint16, int32, uint32, int64, uint64, bool
     onComplete: function () {},
   })
 ```
-## Frida 调试
+## Frida - Debug/调试
 https://github.com/frida/frida-python/issues/134
 
 ```
 frida -p 0 --runtime=v8 --debug
 frida fib_print.exe --runtime=v8 --debug
 %load <script>
+
+# android
+frida -p 0 --runtime=v8 --debug -UF -l a.js
 ```
 
 Chrome中F12, 点击绿色nodejs, 选中端口, 进入可下断点了。
+Webstorm 新建调试即可
 
 // Thread.sleep(3)
 
@@ -146,10 +252,25 @@ https://www.anquanke.com/post/id/195215
 
 ##  入门文章
 [frida-snippets](https://github.com/iddoeldor/frida-snippets)
+[Frida学习笔记](https://zyzling.gitee.io/2020/05/12/Frida学习笔记/)
+[实用FRIDA进阶：内存漫游、hook anywhere、抓包/objection](https://www.anquanke.com/post/id/197657)
 
 [_[原创]初识Frida--Android逆向之Java层hook (一) ](https://bbs.pediy.com/thread-227232.htm)
 [初识Frida--Android逆向之Java层hook (二)](https://bbs.pediy.com/thread-227233.htm)
+[【实战篇】Frida-objection 基础使用获取FLAG ](https://bbs.pediy.com/thread-273733.htm)
+[某汽车社区App 签名和加解密分析 (二) : Frida Dump so](https://blog.51cto.com/u_15527932/5205322)
 
 ## Brida
 [[原创]Frida配合BurpSuite的Brida插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
 [Android渗透测试frida——Brida插件加解密实战演示](https://xz.aliyun.com/t/7562?page=34)
+## FAQ
+
+1. app Failed to spawn: unexpectedly timed out while waiting for app to launch
+
+```
+https://blog.csdn.net/Androidbye/article/details/113609679
+https://bbs.pediy.com/thread-268240.htm
+
+su
+setprop persist.device_config.runtime_native.usap_pool_enabled true
+```

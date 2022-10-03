@@ -10,20 +10,27 @@ strings ./file | grep flag
 * 文件名 hxcode 汉信码
 * 32位长度 AES的秘钥
 * Base64 解出来看不懂
-  * to hex 然后16进制查md5
+  * To Hex, 16位可能是md5, 如果是2层md5, flag可能是一层md5
+  * 尝试rot13, 尝试 base32
 * 多组颜色(8组), 7进制加分隔符, -- 2022长城杯办公室爱情
 * 2种数据/2进制
   * 分成8个一组，尝试前后补0, 以及 python int(011, 2)
   * 转二维码
 * unknown数据
   * 查md5
-  * To Hex, 16位可能是md5
+  * To Hex, 16位可能是md5, 如果是2层md5, flag可能是一层md5
   * 外文, 使用Cyberchef Text Encoding Brute Force 选Decode
+  * 每行字符的第一个/最后一个 组合提取密码
+  * 观察文件尾 文件头 50 4b 03 04 正序反序
+  * 拆成2段base64 例 enlyZ2h3eXlmeHc0ezhpMAMX1tMzk3amNpNXZqdDRrZg==== 
+  * Fence Code
+  
 * 不明数字+字母
   * Caesar 后过滤 16进制。
 * 不明16进制/字符串
   * 1.fromhex - to binary - reverse - from binary - reverse
   * 2.to binary, 去掉前面的1，再from binary, - iscc 隐秘的信息
+
 * 多文件
   * 涉及顺序, 不用rglob(1 10 2 顺序有问题), 多用range
   * 多个不同文件： 数量/8是否能整除, 时间戳隐写, 某值之上为1之下为0 iscc2022擂台-弱雪
@@ -33,6 +40,7 @@ strings ./file | grep flag
   * 二进制数据 大端|小端 都要看
   * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
   * veracrypt
+* 爆破密码 考虑 root+数字  admin+数字 的组合加快速度
 * DTMF http://dialabc.com/sound/detect/index.html
 
 
@@ -40,22 +48,40 @@ strings ./file | grep flag
 BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
 
 k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virustotal 扫程序和 IP。 分析出程序有连接 IP。扫 IP。 见 网刃杯 2022 FindMe 5. a3ed97e25583291767054a6a6b533a1c hash 解密
+## RCE绕过类题目
+* unicode绕过
+* py绕过类
+```py
+__import__('os').system('cat /fl*')
+```
+* bash
+```sh
+arr[$(cat /flag)]
+[[ "( homo++ * (114*514*1919*810) + yarimasune - 514 )" -gt 0 ]]
+见docs/20.13. If, Elif and Else Statements
+```
 
 ## unknown
 10 进制数中有16进制 可能有问题
 16 行文字 --> 16 进制 0-0xf
 异或 xor。或及使用 xortools `xor file`, `xortool -l 13 -c 00 file` , 13 是显示最大可能数
-### 密码类
-3替换z  yihr{Pfit3bf_Q3_NQM}  中 quipquip不支持数字 3改成z  -- yihr{Pfitzbf_Qz_NQM}，用quipquip解得 flag{Welcome_To_RTS} => flag{Welcome_To_CTF}
+* xortools: `xortools -o file` 输出全部异或
 
+### 密码类
+
+3替换z  yihr{Pfit3bf_Q3_NQM}  中 quipquip不支持数字 3改成z  -- yihr{Pfitzbf_Qz_NQM}，用quipquip解得 flag{Welcome_To_RTS} => flag{Welcome_To_CTF}
 
 ## 图片题
 * https://www.aperisolve.com/
 * 看文件末尾、文件头
 * Stegsolve 看各通道有没奇怪的点
-* lsb -- cloacked-pixel
+  * File Format - 1.从下向上翻全看, 如palette隐写 2.复制到word再到txt, 过滤{看
+* stegsolve 
+  * 切换 __仔细看__ 边缘有没有小点, 有则是lsb
+  * lsb -- cloacked-pixel
 * png
   * 丢失宽高crc32, 修改为.data文件gimp打开
+  * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
 * 有图像, Google/baidu搜图 可能是提示
 * zsteg -a x.png
 * 关键字:猫/猫脸变换/arnold 置乱
@@ -72,17 +98,19 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 ![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
 
 JPG 
-* 隐写 一般国外喜欢用 steghide，而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
+* 隐写 一般国外喜欢用 steghide, 而国内喜欢用 jphs05 , jphs05 打开图片后 seek - 填 2 次相同密码
 * 有key: outguess  -- outguess -k 'abc' -r mmm.jpg -t 1.txt 
+* SilentEye
+BMP
+* SilentEye
 
 Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
-* png文件
-  * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
 * bmp图片
   * 注意文件格式, 对比其他图 06h 08h 必须为0 否则有信息
 ### 二维码
 https://cli.im/deqr/   有可能零宽隐写
 ## PDF文件
+1.删除图片
 1.顺序重排 -- 2022春秋杯 Capture Radiate Chart  https://mp.weixin.qq.com/s/uT42XKAvNOjEOzlBUbZoUQ
 ```ts
 1.010 Editor打开后, struct PDFXref sPDFXref 展开，
@@ -98,8 +126,8 @@ https://cli.im/deqr/   有可能零宽隐写
 
 
 ## 流量取证题
-
 * 追踪流注意单个 66 6c 61 67 -> flag
+* 科来网络分析系统 - 查一下包
 * 过滤关键协议如websocket，整体导出为csv, countif过滤length, 找少的比如只有2个的数据。定位查看。
 * http
   * url查看有没 file=
@@ -116,8 +144,17 @@ https://cli.im/deqr/   有可能零宽隐写
 * 注意字符串 U2FsdGVkX
 
 rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容 
-### wifi
-aircrack-ng -w ./dict.txt ./01.cap
+### SMP/蓝牙
+crackle -i ble.pcapng -o decode.pcapng #解密流量包再看
+### wifi 密码破解 aircrack, airdecap-ng
+> kali下
+aircrack-ng -w ./dict.txt ./01.cap   # 可看到ssid
+
+kali下 转hashcat爆破
+aircrack-ng 01.cap -j hashcat
+
+解密流量包
+airdecap-ng shipin.cap -e 0719(前面的essid) -p 88888888
 
 ### misc_live/RTMP/RTSP/MPEG-DASH
 
@@ -155,6 +192,7 @@ MPEG-DASH 协议 导出文件归类 然后写个脚本 开个服务器 可以得
 * 4.11
 
 ## 取证题
+取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt 
 
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
 2. 看桌面 
@@ -205,6 +243,7 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 ### scap
 sysdig文件
 sudo sysdig -r sysdig-trace-file.scap
+[doc ByteCTF2022 ](https://bytedance.feishu.cn/docx/doxcnWmtkIItrGokckfo1puBtCh)
 
 ## pyc 文件
 
@@ -219,6 +258,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 -- 伪加密  -- zip  ZipCenOp.jar r filename
                     或手动修改所有0900伪0000
             -- rar  F9 81 74 85 改成 F9 81 74 80
+            -- rar4 24 90 -> 20 90 , 用010看  FileHeadFlags HEAD_FLAGS - PASSWORD_ENCRYPTED。
 -- file gzip, 有comment用010看一下comment
 -- 1.7z解压, 2. winrar修复解压: - 工具 - 修复压缩文件
 -- 查看注释, 有右侧就是有注释
@@ -352,6 +392,7 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
 11. wav/音频隐写 https://www.sqlsec.com/2018/01/ctfwav.html https://blog.csdn.net/qq_51652400/article/details/123504708
     -- 1.Audition/Audacity 看 多是摩斯码,
     -- 2.看频谱 spectrogram(视图-频谱)/ audacity 轨道左侧文件名箭头-频谱
+    ---------- 频谱完整视图, 右击 - Zoom to fit
     -- DB 波谱: 右击 左侧刻度 -> db
     -- 3.听歌
     -- 4. misc_dtmf / http://dialabc.com/sound/detect/index.html
@@ -383,4 +424,8 @@ ctfshow 未知信号
 https://software.muzychenko.net/trials/vac460.zip
 https://www.qsl.net/on6mu/download/Setup_RXSSTV.exe 1.先安装 Virtual Audio Cable, 启动 Audio Repeater 将 wave out 设置 扬声器 2.将 rxsstv 切换到 Robot36 模式下播放音频
 或者 Linux 下用 sudo apt install qsstv
--- Options->Configuration->Sound 勾选 From file, 再点击播放按钮
+-- 1.Options->Configuration->Sound 勾选 From file, 2.点击播放按钮
+
+
+# Article
+[数位板流量分析探索](https://www.cnblogs.com/zysgmzb/p/16667154.html)

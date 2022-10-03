@@ -5,16 +5,33 @@
 * wincc
 
 解题思路
+* 科来网络分析系统 查一下包
+* common
+  * 1.筛选协议 
+  * 2.看长度 
+  * 3.宽字节和普通字节都搜索
+  * 4.TCP追踪字节流
+  * 5.提示异常：1.找异常 2.用科来
+  * 6.提示2次: 看length, 2次相同长度
+  * 6.停机： 找停止功能码为 0x29
+  * 7.数据可能是浮点数, 可能是整数, 比如2000.0
+
 * 多观察底部数据 可读字符
 * 特殊协议过滤  协议分级后过滤, 如 iec60870_104  查看Info列
 * modbus 协议
 * goose 协议
 * s7comm plus , 1.安装插件 2. s7comm-plus.data.function == createobject && s7comm-plus.data.opcode == 0x31
-* .S7S .s7p 文件用 Simens step7
-* .mwp 文件用 STEP 7-MicroWIN SMART
+* mms 协议 Wireshark配置 Edit->preferences->protocol->PRES ，添加一项：context: 3,  OID: 1.0.9506.2.3，
 
-AutoThink 打开 .gvi .hpf .iec 
-STEP 7 MicroWIN SMART V2.5 打开 .smart
+| 扩展名         | 软件                                                     |
+| -------------- | -------------------------------------------------------- |
+| .gvi .hpf .iec | AutoThink                                                |
+| .S7S .s7p      | Simens step7                                             |
+| .ap16          | TIA Portal V16 打开                                      |
+| .mwp .smart    | STEP 7-MicroWIN SMART                                    |
+| .pcz           | 力控ForceControl,                                        |
+|                | 恢复 - 开发 - 忽略, 可解压看图片(恢复后找工程路径也可以) |
+| .cmp           | 组太王                                                   |
 
 ## pcap 包 Trailer导出
 
@@ -22,10 +39,18 @@ STEP 7 MicroWIN SMART V2.5 打开 .smart
 
 tshark -r 04.pcap -T fields -e eth.trailer | sed -e "/^\s*$/d" -e "s/://g" >aa
 
-
 ## AutoThink使用
+工控编程题:
+IW: Word
+IB: BYTE
+ID: DWORD
+
+计算时从上向下，从左向右算。 右侧值不能改。
+
+双击IW2值修改。再点空白处。
+
 ### 运行仿真
-在线 - 仿真， 在线 - 运行。
+在线 - 仿真， 在线 - 运行。(可点图标)
 ## s7comm
 Ethernet - Trailer 字段,要注意有时有信息
 ## Wincc

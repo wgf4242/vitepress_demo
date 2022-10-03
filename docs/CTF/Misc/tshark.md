@@ -3,6 +3,7 @@
 ## Wireshark/tshark 使用
 https://mymanfile.com/?p=1973
 docs https://www.wireshark.org/docs/dfref/
+https://mymanfile.com/?p=1973
 
 -r readfile
 
@@ -158,3 +159,9 @@ BYTE3–BYTE8 – 这六个为普通按键
 表示同时按下了Left Shift + k，即大写K。
 https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf 第53页
 
+## tshark 抓包
+
+mkdir tmp
+chmod o+w tmp # 文件夹需要root权限
+cd tmp
+sudo tshrak -w out.pcapng
