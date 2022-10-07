@@ -75,6 +75,43 @@ Ctrl+B, smali代码下断点
 
 ![](https://s2.loli.net/2022/09/07/hVu6cdH2oClzFBA.jpg)
 
+## gdb 远程调试 so, dump内存,rebase so file
+
+https://web.archive.org/web/20210124162744/http://sh3llc0d3r.com/owasp-uncrackable-android-level2/
+
+```sh
+# 手机中
+ps | grep uncrackable
+# u0_a142 32231 611 1517556 46252 SyS_epol_ 7f7c2511b4 S sg.vantagepoint.uncrackable2
+
+gdbserver :8888 –attach <PID>
+# 主机转发端口
+adb forward tcp:8888 tcp:8888
+./gdb
+(gdb) target remote :8888
+
+cat /proc/<PID>/maps
+
+# 7f77d59000-7f77d5a000 r-xp 00000000 fd:00 327124  /data/app/sg.vantagepoint.uncrackable2-1/lib/arm64/libfoo.so
+# 7f77d5a000-7f77d6a000 ---p 00000000 00:00 0
+# 7f77d6a000-7f77d6b000 r--p 00001000 fd:00 327124 /data/qpp/sg,vantagepoint.uncrackable2-1/Lib/arm64/Libfoo.so
+# 7f77d6b000-7f77d6c000 rw-p 00002000 fd:00 327124 /data/app/sg,vantagepoint,uncrackable2-1/lib/arm64/Libfoo.so
+# 7f77d6c000-7f77da4000 r--s 0009b000 fd:00 327089 /data/app/sg.vantagepoint.uncrackable2-1/base.apk /data/app/sg.vantagepoint.uncrackable2-1/base.apk
+# 7f77da4000-7f77dae000 r--s 000d2000 fd:00 327089 /data/app/sg,vantagepoint,uncrackable2-1/oat/arm64base.odex 
+# 7f77dae000-7f77eb1000 r--p 00000000 fd:00 327127
+# 7f77eb1000-7f77fd2000 r-xp 00103000 fd:00 327127 /data/app/sg,vantagepoint,uncrackable2-1/oat/arm64base.odex 
+# 7f77fd2000-7f77fd3000 rw-p 00224000 fd:00 327127 /data/app/sg,vantagepoint.uncrackable2-1/oat/arm64base.odex 
+# 7f77fd3000-7f77fd5000 rw-p 00000000 00:04 744381 /dev/ashmem/dalvik-indirect ref table (deleted)
+# 7f77fd5000-7f77fd6000----0 00000000 00:00 00
+# 目标函数在ida中看为 c88 .strcmp, 加上7f77d59000为 7f77d59c88
+
+(gdb) b *0x7f77d59c88
+(gdb) c
+# 断下后看register
+```
+
+
+
 ## APKlab
 https://github.com/APKLab/APKLab
 

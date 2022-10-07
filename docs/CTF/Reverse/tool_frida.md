@@ -67,11 +67,12 @@ frida-ps -h
 frida-ps -Ua
 frida-ps -Uai # 包括未运行的
 
+frida -U uncrackable1 -l hook.js  # attach 模式，APP 启动后注入 frida 代码；
 # 前台 -F
 frida -UF -l hook.js
 
 # 只启动进程
-frida -U -f owasp.mstg.uncrackable1 --no-pause
+frida -U -f owasp.mstg.uncrackable1 --no-pause # spawn 模式
 # 加载脚本
 frida -U -f owasp.mstg.uncrackable1 --no-pause -l del1.js
 
@@ -274,3 +275,11 @@ https://bbs.pediy.com/thread-268240.htm
 su
 setprop persist.device_config.runtime_native.usap_pool_enabled true
 ```
+
+2. adb连接手机启动frida server，手机会自动重启是什么原因
+
+ro.debuggable 
+
+root一下挂system分区然后就可以改了我记得
+
+https://www.baidu.com/s?wd=ro.debuggable
