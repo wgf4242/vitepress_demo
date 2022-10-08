@@ -268,5 +268,9 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 # Article
 [漏洞挖掘 | 例会分享之漏洞挖掘杂谈](https://www.bilibili.com/video/BV1bd4y1M7SY)
 
+## 横向移动 
+
+[『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
+
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
