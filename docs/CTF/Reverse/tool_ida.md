@@ -71,6 +71,7 @@ BinCAT 插件，需要手动导入脚本安装
 
 ### Finger 符号还原
 [Link](https://sec-lab.aliyun.com/2021/10/15/Finger：一款函数符号识别神器/)
+[Finger加速](https://github.com/Holit/Finger-Multi-threading)
 
 ```bat
 IDA_Pro\python38\python -m pip install finger_sdk
