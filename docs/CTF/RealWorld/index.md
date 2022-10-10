@@ -120,6 +120,7 @@ nmap 信息脚本收集
 漏洞探测
 * 扫描系统漏洞
 * nmap --script vuln 192.168.1.1
+* nmap --script=vuln www.xxxxxx.com
 * IIS 短文件泄露
 * nmap -p 8080--script http-iis-short-name-brute 192.168.1.1
 * 拒绝服务
