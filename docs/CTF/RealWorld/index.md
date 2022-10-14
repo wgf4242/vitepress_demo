@@ -272,6 +272,8 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 ## 横向移动 
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
+## 域/Domain
+[域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
 
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
