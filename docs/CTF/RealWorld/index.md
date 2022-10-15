@@ -59,7 +59,7 @@ Client端主动断开连接.
 * nmap -PU 192.168.1.0/ 24 服务版本探测
 * nmap -sV 192.168.1.1
 * 精准地确认端口上运行的服务
-* nmap -sV --script unusual-port 192.168.1.1
+* nmap -Pn -sV --script unusual-port 192.168.1.1
 * nmap -sV --script unusual-port 192.168.1.1 -p 9527
 
 
@@ -120,7 +120,8 @@ nmap 信息脚本收集
 漏洞探测
 * 扫描系统漏洞
 * nmap --script vuln 192.168.1.1
-* nmap --script=vuln www.xxxxxx.com
+* nmap --script=vuln www.xxxxxx.com -Pn
+* nmap -A 192.168.0.2 -Pn
 * IIS 短文件泄露
 * nmap -p 8080--script http-iis-short-name-brute 192.168.1.1
 * 拒绝服务
