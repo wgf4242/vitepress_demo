@@ -12,6 +12,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 2. 看FindCrypt
 3. 恢复符号
 2. 见 ## 程序执行顺序, 有没SEH
+3. ida打不开/ghidra/cutter
 
 1.简单题目 patch调试 set EIP到后面执行一下
 2.多用调试直接过逻辑看结果。

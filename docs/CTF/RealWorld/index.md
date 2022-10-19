@@ -60,7 +60,7 @@ Client端主动断开连接.
 * nmap -sV 192.168.1.1
 * 精准地确认端口上运行的服务
 * nmap -Pn -sV --script unusual-port 192.168.1.1
-* nmap -sV --script unusual-port 192.168.1.1 -p 9527
+* nmap -Pn -sV --script unusual-port 192.168.1.1 -p 9527
 
 
 常见扫描方式
@@ -273,8 +273,12 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 ## 横向移动 
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
+[内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
 ## 域/Domain
 [域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
+## Exploit
+[泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
+[ThinkPHP框架漏洞总结+Thinkphp自动化武器](https://mp.weixin.qq.com/s/OWmFjra3oZfth0rifK-kYg)
 
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)

@@ -40,6 +40,9 @@ strings ./file | grep flag
   * 二进制数据 大端|小端 都要看
   * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
   * veracrypt
+* 隐写
+  * key | OurSecret隐写 - 提示:我们的秘密
+
 * 爆破密码 考虑 root+数字  admin+数字 的组合加快速度
 * DTMF http://dialabc.com/sound/detect/index.html
 
@@ -257,6 +260,8 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 -- 解压密码 空格 转 _
 -- 伪加密  -- zip  ZipCenOp.jar r filename
                     或手动修改所有0900伪0000
+            -- rar  直接拖出来/或解压, 提示密码点确定
+            -- rar修复 Ctrl+G, 22回车, 7A改为74
             -- rar  F9 81 74 85 改成 F9 81 74 80
             -- rar4 24 90 -> 20 90 , 用010看  FileHeadFlags HEAD_FLAGS - PASSWORD_ENCRYPTED。
 -- file gzip, 有comment用010看一下comment
