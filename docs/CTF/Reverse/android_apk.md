@@ -1,6 +1,6 @@
+[函数搜索](http://androidxref.com/)
 [练习 | UnCrackable Mobile Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)
 [Android NDK开发](https://gift1a.github.io/2022/09/06/Android-Learning/#Android-NDK%E5%BC%80%E5%8F%91)
-
 
 # 执行流程
 1.dex脱壳 - blackdex

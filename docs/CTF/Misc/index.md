@@ -316,12 +316,6 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
     python crc32.py reverse 0x1b2e6194
 ```
 ### 爆破 crunch/hashcat
-
-crunch 生成字典
-```bash
-crunch 5 5 0123456789 -o password.txt
-hashcat -m 13400 keepass.txt -a 0 password.txt --force
-```
 ## android backup
 java -jar abe.jar unpack androidbackup  androidbackup.tar
 abe.jar 或者用 https://github.com/lclevy/ab_decrypt

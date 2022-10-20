@@ -66,6 +66,8 @@ frida-ps
 frida-ps -h
 frida-ps -Ua
 frida-ps -Uai # 包括未运行的
+# 当前应用包名
+adb shell dumpsys window | grep -i mcurrentfocus
 
 frida -U uncrackable1 -l hook.js  # attach 模式，APP 启动后注入 frida 代码；
 # 前台 -F
@@ -94,6 +96,7 @@ frida-trace -U createSo -a libcreateso.so!0x2000
 frida-trace -U -f com.google.android.youtube --runtime=v8 -j '*!*certificate*/isu'
 # Trace all JNI functions
 frida-trace -U -i "Java_*" com.samsung.faceservice
+frida-trace -U -f com.wodi.who -i dlopen             # trace dlopen
 ```
 
 
