@@ -40,3 +40,7 @@ chomd 777 teamserver
 java -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -jar cobaltstrike.jar
 # jdk11 启动
 ```
+
+# Article
+[全网最全的Cobalt Strike使用教程系列-基础篇](https://mp.weixin.qq.com/s/4KvmV9cdyzPsYHtBlEKGFQ)
+[干货|两个超实用的上线Cobaltstrike技巧！](https://mp.weixin.qq.com/s/jGwrVr0iotelS4KivC8pwA)

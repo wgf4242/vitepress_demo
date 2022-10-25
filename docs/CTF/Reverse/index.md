@@ -272,6 +272,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 
 # Article
+[Debugging Tips](https://blog.wjhwjhn.com/archives/838/)
+
 [精品连载丨安卓 App 逆向课程之五 frida 注入 Okhttp 抓包下](https://cloud.tencent.com/developer/article/1669631?from=article.detail.1758879)篇
 [**精品连载丨安卓 App 逆向课程之三 frida 注入 Okhttp 抓包上篇**](https://mp.weixin.qq.com/s/_nSs3yGCll0_B6OZBTU5Bg)
  [**精品连载丨安卓 App 逆向课程之四 frida 注入 Okhttp 抓包中篇**](https://mp.weixin.qq.com/s/7-HRRV2i2lX9-t62jYI0ig)

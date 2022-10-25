@@ -117,6 +117,8 @@ https://github.com/APKLab/APKLab
 
 
 # Article
+[入门 | 《安卓逆向这档事》三、初识smali，vip终结者](https://mp.weixin.qq.com/s/Kb8DbEXcthvRfakBRRXHTg)
+[入门 | Android逆向之smali语法宝典](https://www.jianshu.com/p/ba9b374346dd) 
 
 [Android渗透07：安卓CTF系列-案例1](https://mp.weixin.qq.com/s/oY_W5Nt3SrY9OGuK1KGb_g)
 [Android渗透07：安卓CTF系列-案例2](https://mp.weixin.qq.com/s/RdvphrCCEVjPbUqmgcPMaQ)
@@ -127,8 +129,8 @@ https://github.com/APKLab/APKLab
 [【APP 逆向百例】Frida 初体验，root 检测与加密字符串定位](https://mp.weixin.qq.com/s/WfvTA9MJh-NS86LYDVTBzg)
 
 
-[Android逆向之smali语法宝典](https://www.jianshu.com/p/ba9b374346dd) 
 [吾爱破解安卓逆向入门教程--导航帖（2018-06）](https://www.52pojie.cn/thread-408645-1-1.html) 
+[【Android 逆向】ART 函数抽取加壳 ② ( 禁用 dex2oat 简介 | TurboDex 中禁用 dex2oat 参考示例 )](https://blog.csdn.net/han1202012/article/details/127416953)
 
 
 

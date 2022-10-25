@@ -87,7 +87,7 @@ crunch 3 3 0123456789 -o START -z gzip
 crunch 0 0 -p a b c
 crunch 0 0 -p abc
 
-# 小明生日
+# 社工 - 小明生日
 crunch 0 0 -p xiaoming 0101 .
 # .0101xiaoming
 # .xiaoming0101
@@ -95,6 +95,15 @@ crunch 0 0 -p xiaoming 0101 .
 # 0101xiaoming.
 # xiaoming.0101
 # xiaoming0101.
+
+sandrex198526        # ..社工 账号加生日
+Xjiabao@             # 拼音加任意字符
+xcj$19680308         # 拼音缩写+特殊字符+生日
+Xbj+13359839551      # 拼音缩写+特殊字符+电话
+WANGXUEping123       # 全拼大小写+数字
+Wanggui2@2022        # 首字母大写+特殊字符+年
+Wanggui123456@       # 首字母大写+123456+特殊字符
+
 
 -r参数 生成字典过程中异常中断，-r可以从上次中断的位置继续生成字典 -- 必须和-o一起用
 crunch 0 6 0123456789 -o pwd.txt

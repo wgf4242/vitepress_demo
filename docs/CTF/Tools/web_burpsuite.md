@@ -187,3 +187,6 @@ payload 选项卡 中有 Payload Encoding √要去掉 （否则会编码/符号
 start attack
 在结果列表， Filter 只勾2xx
 ```
+
+# Article
+[实现 BurpSuite 多级代理的两种常用方法](https://mp.weixin.qq.com/s/x4_ZlE8H01ULjXrknIpKxg)

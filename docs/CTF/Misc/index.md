@@ -5,8 +5,9 @@
 [[toc]]
 
 ## 解题思路
-grep -r "flag"
-strings ./file | grep flag
+* 1.不要路径有空格, 不要中文路径
+* grep -r "flag"
+* strings ./file | grep flag
 * 文件名 hxcode 汉信码
 * 32位长度 AES的秘钥
 * Base64 解出来看不懂
@@ -85,6 +86,8 @@ arr[$(cat /flag)]
 * png
   * 丢失宽高crc32, 修改为.data文件gimp打开
   * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
+* gif
+  * ScreenToGif 查看时间帧, 以及差
 * 有图像, Google/baidu搜图 可能是提示
 * zsteg -a x.png
 * 关键字:猫/猫脸变换/arnold 置乱
@@ -97,6 +100,9 @@ arr[$(cat /flag)]
   * 010 修改位深 WORD biBitCount 16 为 24 再看
 * 多图片问题
   * stegsove - image combiner
+* poi/qoi
+  * https://www.aconvert.com/image/qoi-to-png/
+  * https://floooh.github.io/qoiview/qoiview.html
 
 ![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
 
@@ -199,11 +205,12 @@ MPEG-DASH 协议 导出文件归类 然后写个脚本 开个服务器 可以得
 
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
 2. 看桌面 
-   2.0 Filter: Desktop\
-   2.1 Magnet AXIOM 收集信息
-   3。 Firefox key3.db 恢复密码
-   3. Firefox浏览器记录 places.sqlite
-   4 浏览历史
+   - 2.0 Filter: Desktop\
+   - 2.1 Magnet AXIOM 收集信息
+   - 3.Firefox key3.db 恢复密码
+   - 3.Firefox浏览器记录 places.sqlite
+   - 4.浏览历史
+   - 4.进程信息
 4. [profile找不到详下 ](#profile找不到)
 5. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL查看器
 
@@ -258,12 +265,13 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 ```
 -- 解压密码 空格 转 _
--- 伪加密  -- zip  ZipCenOp.jar r filename
-                    或手动修改所有0900伪0000
+-- 伪加密   
+            -- zip ZipCenOp.jar r filename
+            -- zip 010 -> Ctrl+G -> 6, 奇数加密，偶数未加密。改为偶数尝试
             -- rar  直接拖出来/或解压, 提示密码点确定
-            -- rar修复 Ctrl+G, 22回车, 7A改为74
-            -- rar  F9 81 74 85 改成 F9 81 74 80
-            -- rar4 24 90 -> 20 90 , 用010看  FileHeadFlags HEAD_FLAGS - PASSWORD_ENCRYPTED。
+               -- 修复 Ctrl+G, 22回车, 7A改为74
+               -- F9 81 74 85 改成 F9 81 74 80
+               -- rar4 24 90 -> 20 90 , 用010看  FileHeadFlags HEAD_FLAGS - PASSWORD_ENCRYPTED。
 -- file gzip, 有comment用010看一下comment
 -- 1.7z解压, 2. winrar修复解压: - 工具 - 修复压缩文件
 -- 查看注释, 有右侧就是有注释
@@ -286,10 +294,11 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
   -- zip 掩码爆破 NCTF2018-havefun, 用ARCH, 开始wcy00000 结束wcy00000, 长度8, 暴力
 
 -- 明文攻击, 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
-  https://blog.csdn.net/q851579181q/article/details/109767425
-  压缩为ZipCrypto 的压缩才能明文攻击
-  AES256-Deflate/AES256-Store加密的文件不适用于明文攻击。
-  zip同名txt接用文件名作为明文攻击。 #见@list.md 第四届2021美团网络安全高校挑战赛
+  -- arch 尝试 winrar/7z/bandizip 压缩尝试明文攻击
+  -- https://blog.csdn.net/q851579181q/article/details/109767425
+  -- 压缩为ZipCrypto 的压缩才能明文攻击
+  -- AES256-Deflate/AES256-Store加密的文件不适用于明文攻击。
+  -- zip同名txt接用文件名作为明文攻击。 #见@list.md 第四届2021美团网络安全高校挑战赛
 
 
   压缩工具要相同，如果产生CRC32不同。换工具试， 算法也要相同
@@ -399,6 +408,8 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
     -- 效果-反向 听声音。
     -- 删除多余文件头，可能有 2 段 riff
     -- SilentEye
+       -- 1.参数调整 low,normal,high
+       -- 2.参数调整 去掉Compressed data: low,normal,high
     -- Deepsound , deepsound2john.py 可爆破
     -- MP3Stego: decode.exe -X target.mp3
               -- decode.exe -P password -X target.mp3
@@ -408,23 +419,32 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
               -- 1.Audition 禁用 其他声道, 将目标声道提高
               -- 2.右击声道，提取为单声道， 导出 mp3
               -- 3. https://morsecode.world/international/decoder/audio-decoder-adaptive.html 上传解码 play
-    -- SSTV 扫描, 频谱图比较平均 dididi 的声音 见 ### sstv
+    -- SSTV 扫描
+       -- 1.频谱图比较平均 dididi 的声音 见 ### sstv
+       -- 2.长度36秒 Robot36
     -- PT2242 信号： 用短的一段表示是 0，长的一段表示是 1 前面 4bit 表示同步码，中间的 20bit 表示地址码，后面的 4bit 表示功能码，最后一位是停止码。
               -- 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
               -- PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html
 
 LSB隐写 用 uint8 读取 wav 然后提取每一个帧的 LSB
 ### 音频隐写 sstv
+长度36秒 Robot36
 
 https://www.cnblogs.com/LEOGG321/p/13731156.html
 ctfshow 未知信号
 
-工具下载
-https://software.muzychenko.net/trials/vac460.zip
-https://www.qsl.net/on6mu/download/Setup_RXSSTV.exe 1.先安装 Virtual Audio Cable, 启动 Audio Repeater 将 wave out 设置 扬声器 2.将 rxsstv 切换到 Robot36 模式下播放音频
-或者 Linux 下用 sudo apt install qsstv
+方式1.
+1. 安装 [Virtual Audio Cable](https://vac.muzychenko.net/en/download.htm) 或 [Voicemeeter](https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup.exe)
+2. windows声音 - 录制 - Line1 设置为默认
+3. 安装 [mmsstv](https://hamsoft.ca/pages/mmsstv.php)
+4. 用播放器播放音频文件
+<!-- [rxsstv](https://www.qsl.net/on6mu/download/Setup_RXSSTV.exe) 设置如下: 3. in设置启动 Audio Repeater 将 wave out 设置 扬声器 2.将 rxsstv 切换到 Robot36 模式下播放音频 -->
+
+方式2. Linux 下用 sudo apt install qsstv
 -- 1.Options->Configuration->Sound 勾选 From file, 2.点击播放按钮
 
+方式3.
+安卓 Droidsstv
 
 # Article
 [数位板流量分析探索](https://www.cnblogs.com/zysgmzb/p/16667154.html)

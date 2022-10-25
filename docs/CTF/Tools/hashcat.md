@@ -86,7 +86,7 @@ wifi最多爆到root12222
 hashcat.exe -a 3 -O -m 0 --force 25c3e88f81b4853f2a8faacad4c871b6 ?d?d?d?d?d?d?d
 
 7位掩码破解
-hashcat.exe -a 3 -O -m 0 --force 6f73684294324280a40c053404133bec  flag{?d?d?d?d?d?d?d}
+hashcat.exe -a 3 -O -m 0 --force 6f73684294324280a40c053404133bec  flag{?d?d?d?d?d?d?d}       # powershell {}要转义
 
 7位小写字母破解: 
 hashcat.exe -a 3 -O -m 0 --force 7a47c6db227df60a6d67245d7d8063f3 

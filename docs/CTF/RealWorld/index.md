@@ -269,16 +269,28 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 `schtasks /create /sc MINUTE /mo 1 /tr C:\Users\Administrator\Desktop\mx\5555.exe /tn test`
 # Article
 [漏洞挖掘 | 例会分享之漏洞挖掘杂谈](https://www.bilibili.com/video/BV1bd4y1M7SY)
-
+[网络安全实战之靶场渗透技术](https://blog.csdn.net/kali_Ma/article/details/127429832)
+[记录一种新的绕过403的tip](https://mp.weixin.qq.com/s/o00V2a3kAEHB5leIIWAZKA)
 ## 横向移动 
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
 [内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
+## Sql/Database
+[sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)
 ## 域/Domain
 [域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
 ## Exploit
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
 [ThinkPHP框架漏洞总结+Thinkphp自动化武器](https://mp.weixin.qq.com/s/OWmFjra3oZfth0rifK-kYg)
+## 钓鱼
+[公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
+## Wifi
+[WiFi密码安全工具wifite](https://www.bilibili.com/video/BV1jK411X7w8/)
+
+## 渗透测试
 
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
+
+# Tools
+LogParser 日志分析
