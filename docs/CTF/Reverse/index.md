@@ -288,6 +288,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 [原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
 
 [易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
+## 模拟运行
+[Qiling框架模拟运行固件配合IDA动态调试](https://mp.weixin.qq.com/s/PsWTcazrgj0Lv-6ZNNkx3g)
 ## 地址计算
 so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地址 -800为base
 看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)
