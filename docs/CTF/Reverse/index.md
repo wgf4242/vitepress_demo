@@ -292,6 +292,9 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 [原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
 
 [易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
+## PE
+[详解二进制PE文件 | 导入表技术](https://mp.weixin.qq.com/s/eu14EHuNup0Y504qY3rsDg)
+
 ## 模拟运行
 [Qiling框架模拟运行固件配合IDA动态调试](https://mp.weixin.qq.com/s/PsWTcazrgj0Lv-6ZNNkx3g)
 ## 地址计算

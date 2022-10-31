@@ -49,3 +49,7 @@ web.config
 exec master..xp_cmdshell "whoami"默认执行是关闭 
 
 https://blog.csdn.net/weixin_30654583/article/details/97225375
+
+# Article
+[一篇搞定，窃取MSSQL 各版本密码 HASH](https://mp.weixin.qq.com/s/w9NqP4AqDth6sLbHAPF4AQ)
+
