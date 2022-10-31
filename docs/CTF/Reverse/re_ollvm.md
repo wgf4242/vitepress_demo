@@ -11,6 +11,8 @@
 [利用符号执行去除控制流平坦化](https://security.tencent.com/index.php/blog/msg/112)
 [利用angr还原ollvm指令流平坦化](https://github.com/pcy190/deflat)
 [android逆向奇技淫巧十：OLLVM原理、常见破解思路和hook代码](https://www.cnblogs.com/theseventhson/p/14861940.html)
+[[原创]OLLVM控制流平坦化的改进 ](https://bbs.pediy.com/thread-274778.htm)
+[[原创]MRCTF2022 llvmvm出题以及解题](https://bbs.pediy.com/user-home-948449.htm)
 
 看雪
 [p.z【ACTF2022】Inflated（C++异常处理控制流下的OLLVM混淆） ](https://bbs.pediy.com/thread-273764.htm)

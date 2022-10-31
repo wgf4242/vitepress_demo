@@ -275,6 +275,11 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
 [内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
+### 后渗透/post
+[远程下载的通用替代方案 ｜ 红队攻防](https://mp.weixin.qq.com/s/qXAspIaMzBXN8f5ViO4AOA)
+[windows隐藏账户](https://blog.csdn.net/weixin_42282189/article/details/120770787)
+
+
 ## Sql/Database
 [sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)
 ## 域/Domain
@@ -286,11 +291,19 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
 ## Wifi
 [WiFi密码安全工具wifite](https://www.bilibili.com/video/BV1jK411X7w8/)
+## 社会工程学/Social Engineering
+[攻防红队技能篇：社会工程学](https://mp.weixin.qq.com/s/62Bf7fb2kqP7v3AtL6R74Q)
+## Shellcode
+[使用C++的 shellcode 注入技术（附工具）](https://mp.weixin.qq.com/s/t6MsLHzMKEFPm8aH-gT8sg)
+## 提权
+[2022蓝帽杯遇见的 SUID 提权 总结篇](https://mp.weixin.qq.com/s/q7W8xNNGjuJ_Uxbet8VkVw)
 
 ## 渗透测试
 
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
+## 溯源
+[HVV蓝队溯源流程](https://mp.weixin.qq.com/s/uYZDW2aB0Xo_wi-h1YzVsQ)
 
 # Tools
 LogParser 日志分析

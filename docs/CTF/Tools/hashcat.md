@@ -86,7 +86,7 @@ wifi最多爆到root12222
 hashcat.exe -a 3 -O -m 0 --force 25c3e88f81b4853f2a8faacad4c871b6 ?d?d?d?d?d?d?d
 
 7位掩码破解
-hashcat.exe -a 3 -O -m 0 --force 6f73684294324280a40c053404133bec  flag{?d?d?d?d?d?d?d}       # powershell {}要转义
+hashcat.exe -a 3 -O -m 0 --force 6f73684294324280a40c053404133bec  flag{?d?d?d?d?d?d?d}       # powershell {}要转义加`
 
 7位小写字母破解: 
 hashcat.exe -a 3 -O -m 0 --force 7a47c6db227df60a6d67245d7d8063f3 
@@ -162,4 +162,21 @@ keepass
 keepass2john file # 去掉文件名保留这种 $keepass$*2*6000*222*15b6b685bae998f2f608c90, 
 hashcat -m 13400 -a 3 -w 1 hash.txt --increment --increment-min 1 --increment-max 8 ?h?h?h?h?h?h?h?h
 hashcat -m 13400 -a 3 -w 1 hash.txt --custom-charset3 ?h!@-+ --increment --increment-min 1 --increment-max 8 ?3?3?3?3?3?3?3?3
+```
+
+shadow
+```sh
+cat hashes.txt # 下面可以直接在线破解
+$1$Bg1H/4mz$X89TqH7tpi9dX1B9j5YsF.
+
+hashcat -m 500 -a 0 -o cracked.txt hashes.txt /usr/share/wordlists/sqlmap.txt -O
+hashcat -O -m 500 -a 3 -o cracked.txt shadow ?l?l?l?l
+```
+
+# john
+
+## shadow
+```sh
+unshadow passwd.txt shadow.txt > passwords.txt
+john --wordlist=/usr/share/wordlists/sqlmap.txt passwords.txt
 ```

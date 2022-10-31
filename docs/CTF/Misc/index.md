@@ -36,7 +36,8 @@
   * 涉及顺序, 不用rglob(1 10 2 顺序有问题), 多用range
   * 多个不同文件： 数量/8是否能整除, 时间戳隐写, 某值之上为1之下为0 iscc2022擂台-弱雪
   * 多个相同文件: 比较二进制 差值转ascii, 如时间差 巅峰极客2022\Misc\Lost
-* 不明文件
+* 不明文件/扩展名
+  * 修改后面的ino例 pptx https://m33.wiki/extension/ino.html 
   * 按pk头异或尝试
   * 二进制数据 大端|小端 都要看
   * 魔改文件头 对比搜索文件头前1-2Bytes，中3-4Bytes，有无对应文件头
@@ -44,7 +45,13 @@
 * 隐写
   * key | OurSecret隐写 - 提示:我们的秘密
 
-* 爆破密码 考虑 root+数字  admin+数字 的组合加快速度
+* 爆破密码 考虑 
+  * root+数字
+  * admin+数字
+  * KEY+大写字母
+  * 1-8 数字
+  * 1-8 大写
+  * 1-8 小写
 * DTMF http://dialabc.com/sound/detect/index.html
 
 
@@ -85,7 +92,8 @@ arr[$(cat /flag)]
   * lsb -- cloacked-pixel
 * png
   * 丢失宽高crc32, 修改为.data文件gimp打开
-  * 10000+个IDAT块，可能IDAT LENGTH隐写或CRC隐写。tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
+  * 10000+个IDAT块，可能IDAT LENGTH隐写
+  * CRC隐写 - tweakpng查看 -- 2022春秋杯 Capture Radiate Chart
 * gif
   * ScreenToGif 查看时间帧, 以及差
 * 有图像, Google/baidu搜图 可能是提示
@@ -200,55 +208,62 @@ MPEG-DASH 协议 导出文件归类 然后写个脚本 开个服务器 可以得
 * 3.过滤modbus , 查看 Write Single Register 的流量数据包并找到传输的数据data
 * 4.11
 
-## 取证题
-取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt 
 
-1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
-2. 看桌面 
-   - 2.0 Filter: Desktop\
-   - 2.1 Magnet AXIOM 收集信息
-   - 3.Firefox key3.db 恢复密码
-   - 3.Firefox浏览器记录 places.sqlite
-   - 4.浏览历史
-   - 4.进程信息
-4. [profile找不到详下 ](#profile找不到)
-5. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL查看器
 
 ### veracrypt
 挂载后, winhex 工具 - 打开磁盘。提取隐藏文件。
 
 passware kit 爆破或 https://security.stackexchange.com/questions/202946/bruteforce-veracrypt
 
-### bitlocker
+### bitlocker, vmem, vhdx
 bitlocker加密的起止时间会被存储在注册表中 ROOT\ControlSet001\Control\FVEStats里的OsvEncryptInit和OsvEncryptComplete, 
 用Windows Registry Recovery查看注册表备份，例: 鹏城杯2022 babybit
 如果用 Registry Explorer 看注意时间默认是UTC+0 ，要转成UTC+8加8小时
 
+参见  网鼎杯2020白虎组 密码柜
+windows挂载后, 有密钥情况下。
+manage-bde -unlock G: -RecoveryPassword 294173-189123-573023-455081-459382-434610-344091-286275
+
 ### profile找不到
-1. https://blog.bi0s.in/2021/08/20/Forensics/InCTFi21-TheBigScore/
+kali 中 autopsy 可以取证一部分
+1. https://blog.bi0s.in/2021/08/20/Forensics/InCTFi21-TheBigScore/  
 2. 团队赛决赛 Xiaoming
+3. [Linux新版内核下内存取证分析附CTF题](http://tttang.com/archive/1762/) https://mp.weixin.qq.com/s/dbHGBzjcMoF8aPqIkCN_Fg
 
-1.strings the_big_score.lime | grep 'Linux version'
-找到version和kernel 为 Ubuntu 18.04，linux 内核版本为 5.4.0-42-generic
-
-2.官网下载对应镜像安装 自己制作 volatility 的 profile
-
-3.安装依赖
-```bash
-sudo apt install linux-image-4.4.0-72-lowlatency linux-headers-4.4.0-72-lowlatency
-sudo apt install build-essential dwarfdump git
 ```
-4.安装 volatility
+方式1.strings the_big_score.lime | grep 'Linux version'
+找到version和kernel 为 Ubuntu 18.04，linux 内核版本为 5.4.0-42-generic
+方式2 vol3
+python3 vol.py -f 1.mem banners.Banners
+```
+2.下载对应镜像安装 自己制作 volatility 的 profile
+
+```bash
+sudo apt install -y linux-headers-5.4.0-84-generic linux-image-5.4.0-84-generic dwarfdump build-essential git zip
 
 git clone https://github.com/volatilityfoundation/volatility
-
-5.制作 profile
-```
 cd volatility/tools/linux
 make
 sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.map-$(uname -r)
 ```
+
 多出的 zip 文件就是 profile，把它放在 volatility/volatility/plugins/overlays/linux/ 目录下即可
+/usr/lib/python2.7/dist-packages/volatility/plugins/overlays/linux/
+/usr/local/lib/python2.7/dist-packages/volatility-2.6.1-py2.7.egg/volatility/plugins/overlays/linux/
+
+```sh
+python vol.py --info | grep Linux  # 查看是否已经制作了目标系统的profile
+python vol.py -f the_big_score.lime --profile=LinuxUbuntu1804x64 linux_bash
+```
+
+ubuntu如何更换 kernel启动, 下面文件修改
+vi /boot/grub/grub.cfg
+
+4.volatility.exe 添加自定义profile的使用
+```
+1.将profile文件放到 plugins\overlays\linux\Ubuntu_5.4.0-84-generic_profile.zip
+2.volatility.exe --plugins=plugins --info
+```
 
 ### scap
 sysdig文件
@@ -272,6 +287,11 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
                -- 修复 Ctrl+G, 22回车, 7A改为74
                -- F9 81 74 85 改成 F9 81 74 80
                -- rar4 24 90 -> 20 90 , 用010看  FileHeadFlags HEAD_FLAGS - PASSWORD_ENCRYPTED。
+-- 伪解密, 文件报错, 是加密位去掉了, 用101手动恢复多处
+   -- 010查看有 dataDescr, 有加密?
+   -- 1.Ctrl+G, 6的全局加密位
+   -- 2.每个文件有, 单个文件的加密位
+
 -- file gzip, 有comment用010看一下comment
 -- 1.7z解压, 2. winrar修复解压: - 工具 - 修复压缩文件
 -- 查看注释, 有右侧就是有注释
@@ -383,6 +403,7 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 | mid     | 4D546864                     |                          |
 | dll     | 4D5A90000300000004           |                          |
 | 7z      | 377ABCAF271C                 |                          |
+[hex | Intel hex](https://blog.csdn.net/unsv29/article/details/47828821)
 
 | ext     |  ascii     | Desc
 | ------- | ---------  | ---

@@ -6,3 +6,21 @@ sudo apt-get install liblzo2-dev liblzma-dev
 pip3 install git+https://github.com/sviehb/jefferson.git
 binwalk -Me rootfs.img
 方式2.取证大师
+
+## stm32
+[一个简单的STM32固件分析](https://mp.weixin.qq.com/s/2XeF67Rz8Tz5jPVevSHhpg)
+
+## ardruino hex
+https://stackoverflow.com/questions/17919704/arduino-disassemble-sketch-from-flash
+
+[基于纯软件环境的AVR逆向分析](https://www.anquanke.com/post/id/202256)
+[PolishDuck HCTF 2018]( https://www.secpulse.com/archives/82690.html#PolishDuck)
+[虎符2020 密码机器(Misc)](https://0xffff.one/d/584/6)
+Tool https://www.avrfreaks.net/projects/reavr?skey=ReAVR
+
+```sh
+avr-objdump -j .sec1 -d -m avr5 light.ino.hex 
+avr-objdump -Dx -m avr5 light.ino.hex 
+# 转bin, 用010也行自动的
+avr-objcopy -I ihex -O binary light.ino.hex c9.bin
+```

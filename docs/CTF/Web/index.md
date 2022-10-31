@@ -132,3 +132,8 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 ## SRC
 [Java代码分析工具Tabby在CTF中的运用](https://mp.weixin.qq.com/s/u7RuSmBHy76R7_PqL8WJww)
 [挖洞思路：前端源码泄露漏洞并用source map文件还原](https://blog.csdn.net/qq_44930903/article/details/124257571)
+## 免杀
+[免杀学习——PHP免杀](https://blog.csdn.net/ZxC789456302/article/details/127473366): 白白白无-免杀学习——PHP免杀----🔥 热度:9113 
+
+## SQLi
+[2022 年最佳 SQL 注入检测工具【文末抽书】](https://mp.weixin.qq.com/s/2clT1zX9s8RXpMPsRK5zyg)

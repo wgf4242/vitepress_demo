@@ -18,7 +18,7 @@
 
 * 多观察底部数据 可读字符
 * 特殊协议过滤  协议分级后过滤, 如 iec60870_104  查看Info列
-* modbus 协议
+* modbus 协议 https://mp.weixin.qq.com/s/FP13NWwUUjPqF8WHlmEGiw
 * goose 协议
 * s7comm plus , 1.安装插件 2. s7comm-plus.data.function == createobject && s7comm-plus.data.opcode == 0x31
 * mms 协议 Wireshark配置 Edit->preferences->protocol->PRES ，添加一项：context: 3,  OID: 1.0.9506.2.3，

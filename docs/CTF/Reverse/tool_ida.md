@@ -3,7 +3,10 @@ TODO:
 19:00 tracing使用 - 2022强网杯Reverse——find_basic.mp4
 Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebase Programme: 0
 ## 环境配置
-1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
+
+* 1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
+  - Option - General - Strings - Default8bit - cp936 , 一定要在Shift+F12之前这样做。否则不要保存数据，重来
+  - Shift+F12, 右击 Rebuild
 
 ## 入门 
 * 连续的内存可设置 struct
@@ -53,6 +56,10 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 00000043 db ?            // 按d添加名称
 00000044 d2 dd 15 dup(?) // 
 0000007F keys ends
+```
+### 已有类型
+```
+_BYTE
 ```
 
 ## Debug

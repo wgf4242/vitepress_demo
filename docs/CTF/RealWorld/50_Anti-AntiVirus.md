@@ -34,3 +34,4 @@ out PowerShellCodeASCII.ps1
 
 # 免杀工具
 1.Themida
+2.掩日免杀
