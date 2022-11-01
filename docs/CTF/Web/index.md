@@ -132,6 +132,8 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 ## SRC
 [Java代码分析工具Tabby在CTF中的运用](https://mp.weixin.qq.com/s/u7RuSmBHy76R7_PqL8WJww)
 [挖洞思路：前端源码泄露漏洞并用source map文件还原](https://blog.csdn.net/qq_44930903/article/details/124257571)
+## 工具/马
+[java 内存马](https://github.com/su18/ysoserial)
 ## 免杀
 [免杀学习——PHP免杀](https://blog.csdn.net/ZxC789456302/article/details/127473366): 白白白无-免杀学习——PHP免杀----🔥 热度:9113 
 

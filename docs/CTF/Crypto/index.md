@@ -18,3 +18,4 @@ $$
 # Article
 
 [密码学｜第五章 组合学、概率论与信息论](https://mp.weixin.qq.com/s/qQFsfCwKtK-GIL-l50EZdg)
+[密码学｜5.2 维吉尼亚密码](https://mp.weixin.qq.com/s/CKheGMHMUNgWyk_NUH_JIQ)
