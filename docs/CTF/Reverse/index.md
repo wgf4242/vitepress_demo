@@ -300,3 +300,5 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ## 地址计算
 so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地址 -800为base
 看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)
+## vm
+[记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)

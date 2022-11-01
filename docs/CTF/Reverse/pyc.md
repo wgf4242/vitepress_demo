@@ -1,6 +1,7 @@
 有时uncompyle和pycdc还原的效果不一致。需要手动还原
 
 https://docs.python.org/3/library/dis.html
+[Python3 字节码详解](https://blog.csdn.net/weixin_46263782/article/details/120930191)
 
 ## bytecode disassembly
 
