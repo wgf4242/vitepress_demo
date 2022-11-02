@@ -79,6 +79,7 @@ https://hashcat.net/wiki/doku.php?id=example_hashes
 
 ### 实例
 -O 速度快
+测试rockyou.txt字典
 爆破多尝试admin/root + 数字
 wifi最多爆到root12222
 
