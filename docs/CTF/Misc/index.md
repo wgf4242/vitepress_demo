@@ -403,6 +403,7 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 | mid     | 4D546864                     |                          |
 | dll     | 4D5A90000300000004           |                          |
 | 7z      | 377ABCAF271C                 |                          |
+| heic    | ftypheic
 [hex | Intel hex](https://blog.csdn.net/unsv29/article/details/47828821)
 
 | ext     |  ascii     | Desc
