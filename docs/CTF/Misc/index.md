@@ -470,6 +470,8 @@ ctfshow 未知信号
 
 # Article
 [数位板流量分析探索](https://www.cnblogs.com/zysgmzb/p/16667154.html)
+## 协议
+[Bluetooth 蓝牙协议栈技术初探](https://mp.weixin.qq.com/s/1pG6jnvt3aqPrz5Vl6FIqg)
 
 ## eth
 [区块链--合约题入门操作 区块链题型简介 水龙头的对比 remixIDE的基本使用 1——NewStarCTF ](https://www.bilibili.com/video/BV1Xe4y1e7sQ/)

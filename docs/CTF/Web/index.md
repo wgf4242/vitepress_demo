@@ -136,6 +136,7 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [java 内存马](https://github.com/su18/ysoserial)
 ## 免杀
 [免杀学习——PHP免杀](https://blog.csdn.net/ZxC789456302/article/details/127473366): 白白白无-免杀学习——PHP免杀----🔥 热度:9113 
+[jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
 
 ## SQLi
 [2022 年最佳 SQL 注入检测工具【文末抽书】](https://mp.weixin.qq.com/s/2clT1zX9s8RXpMPsRK5zyg)
