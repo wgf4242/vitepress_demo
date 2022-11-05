@@ -190,3 +190,4 @@ start attack
 
 # Article
 [实现 BurpSuite 多级代理的两种常用方法](https://mp.weixin.qq.com/s/x4_ZlE8H01ULjXrknIpKxg)
+[Burpsuite双层代理的抓包小技巧](https://mp.weixin.qq.com/s/udmke_48dgg82awRnMNIXg)

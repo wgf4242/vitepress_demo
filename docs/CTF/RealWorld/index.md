@@ -282,29 +282,42 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 
 ## Sql/Database
 [sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)
+
+## Web
+[SOAP注入的介绍与实战](https://mp.weixin.qq.com/s/FV6eyLdtZ6oIS52O1CWpaQ)
+
 ## 域/Domain
 [域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
+
 ## Exploit
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
 [ThinkPHP框架漏洞总结+Thinkphp自动化武器](https://mp.weixin.qq.com/s/OWmFjra3oZfth0rifK-kYg)
+
 ## 钓鱼
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
+
 ## Wifi
 [WiFi密码安全工具wifite](https://www.bilibili.com/video/BV1jK411X7w8/)
+
 ## 社会工程学/Social Engineering
 [攻防红队技能篇：社会工程学](https://mp.weixin.qq.com/s/62Bf7fb2kqP7v3AtL6R74Q)
+
 ## Shellcode
 [使用C++的 shellcode 注入技术（附工具）](https://mp.weixin.qq.com/s/t6MsLHzMKEFPm8aH-gT8sg)
+
 ## 提权
 [2022蓝帽杯遇见的 SUID 提权 总结篇](https://mp.weixin.qq.com/s/q7W8xNNGjuJ_Uxbet8VkVw)
 
 ## 渗透测试
 [干货 | Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
+
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
+
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
+
 ## 溯源
 [HVV蓝队溯源流程](https://mp.weixin.qq.com/s/uYZDW2aB0Xo_wi-h1YzVsQ)
 

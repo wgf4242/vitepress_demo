@@ -76,7 +76,7 @@ arr[$(cat /flag)]
 10 进制数中有16进制 可能有问题
 16 行文字 --> 16 进制 0-0xf
 异或 xor。或及使用 xortools `xor file`, `xortool -l 13 -c 00 file` , 13 是显示最大可能数
-* xortools: `xortools -o file` 输出全部异或
+* xortools: `xortool -o file` 输出全部异或
 
 ### 密码类
 
