@@ -644,11 +644,13 @@ yarascan                   - Scan process or kernel memory with Yara signatures
 ## Linux Profile
 [doc](https://github.com/volatilityfoundation/volatility/wiki/Linux-Command-Reference)
 ```sh
-python vol.py -f 1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_banner
-python vol.py -f 1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_bash >02_bash
-python vol.py -f 1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_enumerate_files >01files
-python vol.py -f 1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_find_file -F "/home/bob/Desktop/app.py"
-python vol.py -f ../1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_find_file -i 0xffff97ce724a7038 -O log
-python vol.py -f ../1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_find_file -i 0xffff97ce55ca2328 -O app
-python vol.py -f ../1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_find_file -i 0xffff97ce3448dad0 -O sth
+export file=../mem.vmem
+export profile=LinuxUbuntu1804x64 linux_bash
+python vol.py -f $file --profile=$profile linux_banner
+python vol.py -f $file --profile=$profile linux_bash >02_bash
+python vol.py -f $file --profile=$profile linux_enumerate_files >01files
+python vol.py -f $file --profile=$profile linux_find_file -F "/home/bob/Desktop/app.py"
+python vol.py -f $file --profile=$profile linux_find_file -i 0xffff97ce724a7038 -O log
+python vol.py -f $file --profile=$profile linux_find_file -i 0xffff97ce55ca2328 -O app
+python vol.py -f $file --profile=$profile linux_find_file -i 0xffff97ce3448dad0 -O sth
 ```

@@ -4,12 +4,32 @@
 [长安杯2021 从一道ctf题目浅析WebAssembly逆向](https://www.anquanke.com/post/id/254427)
 NSSCTF ROUND 4 wasm
 [DEF CON CTF 2019 Quals | 一种Wasm逆向静态分析方法](https://www.52pojie.cn/thread-962068-1-1.html)
+[minil2022](https://hzlg.github.io/2022/05/04/game/minil2022/wasm/)
 
-kali
+方式0
+[ghidra-wasm-plugin](https://github.com/nneonneo/ghidra-wasm-plugin)
 ```sh
+# 方式1 linux
 sudo apt install wabt
 wasm-decompile wasm.wasm -o 1
 ```
+方式 2
+
+npm install wasm2js
+```js
+const wasm2js = require('wasm2js')
+const fs = require('fs')
+
+const wasmBuffer = fs.readFileSync('crypt.wasm')
+const js = wasm2js(wasmBuffer)
+console.log(js)
+
+fs.writeFile('out.js', js, function (err) {
+    if (err) return console.log(err);
+    console.log('Hello World > helloworld.txt');
+});
+```
+
 [动态调试](https://nodejs.org/zh-cn/docs/guides/debugging-getting-started/)
 ```
 node --inspect-brk index.js

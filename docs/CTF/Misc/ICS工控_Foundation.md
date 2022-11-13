@@ -114,14 +114,52 @@ Modbus 寄存器地址分配
 | 40001-49999   | 0000H-FFFFH           | 03H 06H 10H | 保持寄存器AO   | 可读可写 |
 
 首位0、1、3、4对应的DI,DO,AI,DO
+## MX地址计算
+%MW0.0-%MW0.100 的地址是多少
+%MX0.0.0-%mx0.100.7的地址是多少
+
+| name       | addr  |
+| ---------- | ----- |
+| %MW0.0     | 40001 |
+| %MW0.01    | 40002 |
+| %MW0.100   | 40101 |
+| %MX0.0.0   | 1     |
+| %MX0.0.1   | 2     |
+| %MX0.100.7 | 808   |
+## 相关工具
+modscan
 
 # s7comm
 
 s7comm.data.returncode == 00  返回代码
+s7comm.param.func  == 05      Write Var
+s7comm.param.func == 0x28     控制信息
+
+| func | Description                  |
+| ---- | ---------------------------- |
+| 0x00 | CPU services CPU服务         |
+| 0xf0 | Setup communication 建立通信 |
+| 0x04 | Read Var 读取值              |
+| 0x05 | Write Var 写入值             |
+| 0x1a | Request download 请求下载    |
+| 0x1b | Download block 下载块        |
+| 0x1c | Download ended 下载结束      |
+| 0x1d | Start upload 开始上传        |
+| 0x1e | Upload 上传                  |
+| 0x1f | End upload 上传结束          |
+| 0x28 | PI-Service 程序调用服务      |
+| 0x29 | PLC Stop 关闭PLC             |
+
+s7comm.data.returncode
 
 > 00 无法确认是否成功
 > 01 硬件错误
 > 0xff 正常
+
+# mms
+mms.itemId == "LLN0$CO$FunEna2$Oper"
+
+https://mp.weixin.qq.com/s/rpl-hmPZRazP2Y5B7iXDsQ
 
 # 工控ICS/软件下载
 ```sh
@@ -130,4 +168,5 @@ SIMATIC_WinCC_Legacy_Panel_Images
 SIMATIC_WinCC_Panel_Images_V17
 TIA_Portal_STEP7_Prof_Safety_WINCC_Adv_Unified_V17
 TIA_Portal_STEP7_Prof_Safety_WINCC_DVD_2_V17
+AutoThink https://www.hollysys.com/cn/other/download.html
 ```

@@ -1,3 +1,5 @@
+各种取证工具 https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%8F%96%E8%AF%81.md
+
 ## 取证题
 取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt 
 
@@ -13,7 +15,7 @@
 5. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL查看器
 
 ### windows
-powershell 最后一条命令
+powershell 最后一条命令 或 运行powershell向上翻
 appData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 
 wsl相关
@@ -44,7 +46,16 @@ mysql 记录
 修改 update
 login_time
 ```
+### 浏览器取证  Firefox
+https://github.com/lclevy/firepwd
+各种取证工具 https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%8F%96%E8%AF%81.md
 
+恢复 Firefox\Profiles\xx.default-release 下的key4.db和logins.json
+python firepwd.py -d ..\Profiles
+
+```
+places.sqlite  # 浏览记录
+```
 ###  模拟器取证 .npbk
 
 2.[雷电APP智能分析](https://www.forensix.cn/products/info.aspx?itemid=1127&lcid=5)

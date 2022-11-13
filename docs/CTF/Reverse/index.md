@@ -10,13 +10,15 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 1. 放die看EntryPoint 位置。
 2. 放die看编译器, 如果是gcc, IDA: Option - Compiler - GNU C++
 2. 看FindCrypt
-3. 恢复符号
+3. bindiff, 恢复符号
 2. 见 ## 程序执行顺序, 有没SEH
 3. ida打不开/ghidra/cutter
 4. 输入fuzz
-   - 输入 1 ascii: 49, -> out1
-   - 输入 b ascii: 98, -> out2
-   - 对比结果 out2/out1 看看是怎么变换的
+   - L1. 输入 1 ascii: 49, -> out1
+   - L1. 输入 b ascii: 98, -> out2
+   - L1. 对比结果 out2/out1 看看是怎么变换的
+   - L2. 输入 32个a, 看输出是不是等量 线性变换。能否输入全部字符直接换表
+
 
 1.简单题目 patch调试 set EIP到后面执行一下
 2.多用调试直接过逻辑看结果。

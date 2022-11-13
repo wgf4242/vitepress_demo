@@ -3,6 +3,7 @@ nodejs中的jwt库在签名时用algorithm指定算法，而在验签时用algor
 
 ```ts
 // https://www.secpulse.com/archives/129304.html
+// https://blog.csdn.net/miuzzx/article/details/127744431#t1
 const jwt = require('jsonwebtoken');
 
 var payload = {

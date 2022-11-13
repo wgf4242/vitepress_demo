@@ -106,6 +106,14 @@ Y 改前面加 const
 选中区域按p 会根据你框选范围 自动设置function end<br>
 也可能需要手动patch地址改为 0xc3即retn
 
+## 使用bindiff识别符号 
+
+```sh
+gcc -static main.c
+# 1.编译后用ida打开a.out 保存idb文件
+# 2.ida打开目标target,  file - bindiff, 打开idb文件
+# 3.import全绿函数识别
+```
 ## FAQ
 ### 1. graph is too big , more than 1000 nodes
 options - general - graph 

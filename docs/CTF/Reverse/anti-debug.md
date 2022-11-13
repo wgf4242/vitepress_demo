@@ -1,4 +1,5 @@
 ## 反调试
+* [anti_all_in_one](https://github.com/Hipepper/anti_all_in_one/wiki)
 * [反调试技术整理](https://www.cnblogs.com/hed10ne/p/anti-debug-techs.html)
 * https://ctf-wiki.org/reverse/windows/anti-debug/zwsetinformationthread/
 * ZwSetInformationThread 第 2 个参数为 ThreadHideFromDebugger，若为 0x11 修改为其他值
@@ -11,11 +12,36 @@
 
 破解方法:将PEB.Being Debugged的值修改设置为0.
 
-## NtGlobalFlag(+0x68)
-调试进程时,PEB.NtGlobalFlag成员的值会被设置为0x70,检测该成员值即可判断
-是否处于调试状态.
+## PEB, BeingDebugged, NtGlobalFlag, fs:[30h], gs:[60h]
+[PEB](https://blog.csdn.net/lyshark_lyshark/article/details/125851873)
 
-破解方法:将该PEB.NtGlobalFlag值设置为0;
+```
+typedef struct _PEB { // Size: 0x1D8
+/*002*/ UCHAR BeingDebugged;						// 无调试器时 = 0，有调试器时 = 1
+...
+/*068*/ LARGE_INTEGER NtGlobalFlag; 				// 有调试器时会被赋值为 70h = 112, 破解方法:将该PEB.NtGlobalFlag值设置为0;
+}
+```
+
+ __32位进程：__ 
+```
+mov eax, fs:[30h]
+cmp byte ptr [eax+2], 0
+jne being_debugged
+```
+
+ __64位进程：__ 
+```
+mov rax, gs:[60h]
+cmp byte ptr [rax+2], 0
+jne being_debugged
+```
+
+ __WOW64 进程：__ 
+```
+mov eax, fs:[30h]
+cmp byte ptr [eax+1002h], 0
+```
 
 ## Ldr(+0xC)
 调试进程时,堆区域会有特殊表示,表示正处于调试状态.最明显的便是未使用区域全部填充着0xEEFEEEFE,证明该进程正处于调试状态.

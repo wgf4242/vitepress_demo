@@ -140,3 +140,6 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 
 ## SQLi
 [2022 年最佳 SQL 注入检测工具【文末抽书】](https://mp.weixin.qq.com/s/2clT1zX9s8RXpMPsRK5zyg)
+[nosql注入用户名密码爆破工具](https://0xmrm.com/272.html)
+## ssti 
+https://blog.csdn.net/miuzzx/article/details/127744431#t4

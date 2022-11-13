@@ -16,3 +16,5 @@
 
 《 深度学习 》
 
+[Reverse engineering and game hacking resources](https://faradaysec.com/reverse-engineering-and-game-hacking-resources-2/)
+https://gamehacking.academy/about

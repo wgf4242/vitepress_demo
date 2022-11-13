@@ -230,7 +230,8 @@ kali 中 autopsy 可以取证一部分
 2. 团队赛决赛 Xiaoming
 3. [Linux新版内核下内存取证分析附CTF题](http://tttang.com/archive/1762/) https://mp.weixin.qq.com/s/dbHGBzjcMoF8aPqIkCN_Fg
 
-```
+```sh
+uname -r # 查看当前内核
 方式1.strings the_big_score.lime | grep 'Linux version'
 找到version和kernel 为 Ubuntu 18.04，linux 内核版本为 5.4.0-42-generic
 方式2 vol3

@@ -76,6 +76,9 @@ Ctrl+B, smali代码下断点
 
 ![](https://s2.loli.net/2022/09/07/hVu6cdH2oClzFBA.jpg)
 
+## load so file
+java 调用 把so放在app\src\main\jniLibs, 见 re_android_java_load_so_apk.rar
+原文链接：https://blog.csdn.net/lin_dianwei/article/details/54946393
 ## gdb 远程调试 so, dump内存,rebase so file
 
 https://web.archive.org/web/20210124162744/http://sh3llc0d3r.com/owasp-uncrackable-android-level2/

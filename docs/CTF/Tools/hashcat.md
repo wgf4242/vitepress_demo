@@ -170,7 +170,8 @@ shadow
 cat hashes.txt # 下面可以直接在线破解
 $1$Bg1H/4mz$X89TqH7tpi9dX1B9j5YsF.
 
-hashcat -m 500 -a 0 -o cracked.txt hashes.txt /usr/share/wordlists/sqlmap.txt -O
+hashcat -O -m 500 -a 0 hashes.txt rockyou.txt -o cracked.txt 
+hashcat -O -m 500 -a 0 -o cracked.txt hashes.txt /usr/share/wordlists/sqlmap.txt
 hashcat -O -m 500 -a 3 -o cracked.txt shadow ?l?l?l?l
 ```
 

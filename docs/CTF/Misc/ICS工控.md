@@ -72,3 +72,10 @@ INV_B取反字节 60=>-60
 
 四则运算符(加ADD、减SUB、乘MUL、除DIV)之后加“_I”，就是对整数进行运算；加“_DI”，就是对双整数进行算；加“_R”，就是对浮点数进行运算。
 ```
+
+
+# Article
+[modbus doc](https://openplcproject.com/docs/2-5-modbus-addressing/)
+[[渗透测试]工控安全MMS协议——wp](https://mp.weixin.qq.com/s/XJTdhfWI-gN8518G-Nktzw)
+[工控协议 : S7COMM协议分析(下)](https://mp.weixin.qq.com/s/O9PGN4XXijgSa8u4YSpSsQ)
+[工控协议 : S7COMM协议分析(上)](https://mp.weixin.qq.com/s/mXKBGiq8mjfOivcRrI4-CQ)

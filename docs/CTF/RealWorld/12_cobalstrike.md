@@ -46,3 +46,4 @@ java -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xm
 [干货|两个超实用的上线Cobaltstrike技巧！](https://mp.weixin.qq.com/s/jGwrVr0iotelS4KivC8pwA)
 ## plugin
 [分享个CobaltStrike插件 Bypass防护添加用户（附下载）](https://mp.weixin.qq.com/s/6nu1dwdvdtnP_6C-nIpMVg)
+[Cobalt-Strike之CrossC2插件安装与linux上线](https://mp.weixin.qq.com/s/Fty2S9ettdtTFgJWVTvQNQ)
