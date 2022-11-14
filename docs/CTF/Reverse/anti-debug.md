@@ -42,6 +42,24 @@ jne being_debugged
 mov eax, fs:[30h]
 cmp byte ptr [eax+1002h], 0
 ```
+## VEH,SEH
+CRTStartup ->  __scrt_common_main() -> __scrt_common_main_seh()
+
+VEH是进程的异常处理，有提供的API，只需要创建一个VEH然后再创建一个VEH的异常处理函数就好了。
+SEH是线程的异常处理，用__try 和except语句使用，也可以创建SEH的处理函数和调用SHE来实现内部逻辑结构。
+
+实例 wuhen.exe
+```c
+  if ( dword_7FF627741FC0 )
+    v2 = 1;
+  else  {
+    dword_7FF627741FC0 = 1;
+    if ( initterm_e((_PIFV *)&qword_7FF627736298, (_PIFV *)&qword_7FF6277362D0) )
+      return 255i64;
+    initterm((_PVFV *)&First, (_PVFV *)&Last); // 看First, Last
+  }
+// sub_7FF627722390(_EXCEPTION_POINTERS *a1) 设置Type为 _EXCEPTION_POINTERS
+```
 
 ## Ldr(+0xC)
 调试进程时,堆区域会有特殊表示,表示正处于调试状态.最明显的便是未使用区域全部填充着0xEEFEEEFE,证明该进程正处于调试状态.
