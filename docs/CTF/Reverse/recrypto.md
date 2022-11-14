@@ -79,5 +79,10 @@ delta 可能  0x33445566
 ```
 
 ## AES
-
 https://www.bilibili.com/video/BV1i341187fK
+
+## DES
+https://www.bilibili.com/video/BV1KQ4y127AT/
+左右分组。
+输入 64bit -> 8bytes
+L0 - 32bit , R0 - 32bit
