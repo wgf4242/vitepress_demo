@@ -125,6 +125,7 @@ Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 * bmp图片
   * 注意文件格式, 对比其他图 06h 08h 必须为0 否则有信息
 ### 二维码
+[QR Research 支持反色、残缺](https://mp.weixin.qq.com/s/uyCSZzMd2scAgsALKOIM-Q)
 https://cli.im/deqr/   有可能零宽隐写
 ## PDF文件
 1.删除图片
@@ -473,6 +474,9 @@ ctfshow 未知信号
 [数位板流量分析探索](https://www.cnblogs.com/zysgmzb/p/16667154.html)
 ## 协议
 [Bluetooth 蓝牙协议栈技术初探](https://mp.weixin.qq.com/s/1pG6jnvt3aqPrz5Vl6FIqg)
+
+## zip
+[CTF之Misc-zip压缩包分析](https://mp.weixin.qq.com/s/QfSzm_6bwbOjP97fu7pLZQ)
 
 ## eth
 [区块链--合约题入门操作 区块链题型简介 水龙头的对比 remixIDE的基本使用 1——NewStarCTF ](https://www.bilibili.com/video/BV1Xe4y1e7sQ/)
