@@ -129,6 +129,9 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [无字母数字RCE初探](http://www.m0x01sery.com/2022/03/28/rce-without-w-and-n/) 
 [【安全练兵场】| BurpSuite靶场系列之SQL注入](https://mp.weixin.qq.com/s/RqB-vMifxn0-4hrn0OEoHQ)
 [【安全练兵场】| BurpSuite靶场系列之身份验证](https://mp.weixin.qq.com/s/wDWcdTdFRkI8cMK1_pv94w)
+## rce
+[无字母数字Webshell&&冰蝎Webshell](https://mp.weixin.qq.com/s/1PX7_nU7bmqOs3lGb8O8gw)
+
 ## SRC
 [Java代码分析工具Tabby在CTF中的运用](https://mp.weixin.qq.com/s/u7RuSmBHy76R7_PqL8WJww)
 [挖洞思路：前端源码泄露漏洞并用source map文件还原](https://blog.csdn.net/qq_44930903/article/details/124257571)

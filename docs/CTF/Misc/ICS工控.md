@@ -79,3 +79,4 @@ INV_B取反字节 60=>-60
 [[渗透测试]工控安全MMS协议——wp](https://mp.weixin.qq.com/s/XJTdhfWI-gN8518G-Nktzw)
 [工控协议 : S7COMM协议分析(下)](https://mp.weixin.qq.com/s/O9PGN4XXijgSa8u4YSpSsQ)
 [工控协议 : S7COMM协议分析(上)](https://mp.weixin.qq.com/s/mXKBGiq8mjfOivcRrI4-CQ)
+[Modbus | 『工控』某工控比赛 Modbus 题目复盘](https://mp.weixin.qq.com/s/sOHJDV7wDb9FQbSxjQkTBw)

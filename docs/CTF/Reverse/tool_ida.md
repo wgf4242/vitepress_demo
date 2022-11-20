@@ -203,3 +203,5 @@ arg_1E7FBF= byte ptr  1E7FC7h ; 5.双击这里 进栈按u， 再按F5即可
 ### ida python 调试
 https://github.com/ioncodes/idacode
 
+# Article
+[IDAPython 速查表](https://www.cnblogs.com/hed10ne/p/idapython_cheatsheet.html)

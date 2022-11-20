@@ -41,6 +41,10 @@
 [浅尝ollvm轻度混淆后的加密算法分析](https://mp.weixin.qq.com/s/f_faZEZo9qxwRxkF2qiA9A)
 [ollvm反混淆学习](https://mp.weixin.qq.com/s/4Wyyaa14CHWyKhqLPPIsqw)
 
+[Here-is-SG | LLVM学习笔记](https://www.cnblogs.com/Here-is-SG/p/16708170.html)
+[Here-is-SG | llvm - 基本块分割](https://www.cnblogs.com/Here-is-SG/p/16744957.html)
+[Here-is-SG | 初探代码混淆](https://www.cnblogs.com/Here-is-SG/p/16813913.html)
+
 
 字符串
 [字符串混淆 | 2020-06-05-Frida辅助分析OLLVM混淆的算法](https://huhu0706.github.io/2020/06/05/2020-06-05-Frida%E8%BE%85%E5%8A%A9%E5%88%86%E6%9E%90OLLVM%E6%B7%B7%E6%B7%86%E7%9A%84%E7%AE%97%E6%B3%95/)

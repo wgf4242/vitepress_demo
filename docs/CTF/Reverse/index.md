@@ -18,6 +18,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
    - L1. 输入 b ascii: 98, -> out2
    - L1. 对比结果 out2/out1 看看是怎么变换的
    - L2. 输入 32个a, 看输出是不是等量 线性变换。能否输入全部字符直接换表
+5. 输入输出变换了大端小端
 
 
 1.简单题目 patch调试 set EIP到后面执行一下

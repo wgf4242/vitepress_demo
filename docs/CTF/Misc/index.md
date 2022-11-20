@@ -173,10 +173,12 @@ aircrack-ng 01.cap -j hashcat
 
 解密流量包
 airdecap-ng shipin.cap -e 0719(前面的essid) -p 88888888
+### MQTT
+https://mp.weixin.qq.com/s/32LxbV7jUpYTVKePBu1pWw
 
 ### misc_live/RTMP/RTSP/MPEG-DASH
 
-题目: 2021 中石油集团公司第二届网络安全攻防赛团体赛预赛 - Misc - Live
+题目: 石油杯 第二届网络安全攻防赛团体赛预赛 - Misc - Live
 
 涉及协议 直播流协议：RTMP、RTSP、MPEG-DASH
 

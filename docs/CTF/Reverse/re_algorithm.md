@@ -86,3 +86,5 @@ https://www.bilibili.com/video/BV1KQ4y127AT/
 左右分组。
 输入 64bit -> 8bytes
 L0 - 32bit , R0 - 32bit
+
+![](https://s2.loli.net/2022/11/18/oGqPkNsQp6DUVCM.jpg)
