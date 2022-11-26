@@ -59,6 +59,8 @@
 BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
 
 k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virustotal 扫程序和 IP。 分析出程序有连接 IP。扫 IP。 见 网刃杯 2022 FindMe 5. a3ed97e25583291767054a6a6b533a1c hash 解密
+
+.klr.enc1 - Kaspersky Rescue disk file, 异或 0xef
 ## RCE绕过类题目
 * unicode绕过
 * py绕过类
@@ -85,9 +87,9 @@ arr[$(cat /flag)]
 ## 图片题
 * https://www.aperisolve.com/
 * 看文件末尾、文件头
-* Stegsolve 看各通道有没奇怪的点
+* Stegsolve
   * File Format - 1.从下向上翻全看, 如palette隐写 2.复制到word再到txt, 过滤{看
-* stegsolve 
+  * 每个解码看, 看数据有没可能是反过来的
   * 切换 __仔细看__ 边缘有没有小点, 有则是lsb
   * lsb -- cloacked-pixel
 * png
@@ -482,3 +484,8 @@ ctfshow 未知信号
 
 ## eth
 [区块链--合约题入门操作 区块链题型简介 水龙头的对比 remixIDE的基本使用 1——NewStarCTF ](https://www.bilibili.com/video/BV1Xe4y1e7sQ/)
+
+## Steganography/隐写
+[各种类型的图片格式隐写术总结](https://mp.weixin.qq.com/s/9KZZDSpw1Xc_um0vNN4kpg)
+## 图像相关
+[傅里叶图像压缩](https://www.bilibili.com/video/BV1CY411R7bA?t=1329.5)

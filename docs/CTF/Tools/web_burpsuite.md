@@ -191,7 +191,6 @@ start attack
 # Article
 [实现 BurpSuite 多级代理的两种常用方法](https://mp.weixin.qq.com/s/x4_ZlE8H01ULjXrknIpKxg)
 [Burpsuite双层代理的抓包小技巧](https://mp.weixin.qq.com/s/udmke_48dgg82awRnMNIXg)
-
 [Burpsuite技巧之MD5加密密码爆破、带验证码爆破](https://mp.weixin.qq.com/s/r9pQVqIKOxXY-6QQobJruQ)
-
-[BurpSuite插件 -- LoggerPlusPlus](https://mp.weixin.qq.com/s/_wI0V3s9sURytjgO8Aldbw)
+[插件 | BurpSuite插件 -- LoggerPlusPlus](https://mp.weixin.qq.com/s/_wI0V3s9sURytjgO8Aldbw)
+[插件 | 高度自定义Burp插件log4j2burpscanner](https://mp.weixin.qq.com/s/DPRwo3n_4qRCGLA6Wdqx_g)
