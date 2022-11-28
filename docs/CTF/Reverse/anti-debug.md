@@ -17,7 +17,7 @@
 
 ```
 typedef struct _PEB { // Size: 0x1D8
-/*002*/ UCHAR BeingDebugged;						// 无调试器时 = 0，有调试器时 = 1
+/*002*/ UCHAR BeingDebugged;						// 无调试器时 = 0，有调试器时 = 1, isDebuggerPresent()访问这个
 ...
 /*068*/ LARGE_INTEGER NtGlobalFlag; 				// 有调试器时会被赋值为 70h = 112, 破解方法:将该PEB.NtGlobalFlag值设置为0;
 }
@@ -43,6 +43,7 @@ mov eax, fs:[30h]
 cmp byte ptr [eax+1002h], 0
 ```
 ## VEH,SEH
+
 CRTStartup ->  __scrt_common_main() -> __scrt_common_main_seh()
 
 VEH是进程的异常处理，有提供的API，只需要创建一个VEH然后再创建一个VEH的异常处理函数就好了。
@@ -60,6 +61,9 @@ SEH是线程的异常处理，用__try 和except语句使用，也可以创建SE
   }
 // sub_7FF627722390(_EXCEPTION_POINTERS *a1) 设置Type为 _EXCEPTION_POINTERS
 ```
+
+**解决方式:**
+极客大挑战 EX: C++异常处理的题，不能直接反编译出throw对应的catch块，使用ida指令粒度的trace，虽然trace不到catch块，但是可以trace到catch块最后的jmp指令
 
 ## Ldr(+0xC)
 调试进程时,堆区域会有特殊表示,表示正处于调试状态.最明显的便是未使用区域全部填充着0xEEFEEEFE,证明该进程正处于调试状态.

@@ -273,6 +273,7 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [记录一种新的绕过403的tip](https://mp.weixin.qq.com/s/o00V2a3kAEHB5leIIWAZKA)
 ## 信息收集
 [绕过CDN查询网站的真实IP地址](https://mp.weixin.qq.com/s/nlEwhkC9-hW6r9dYtBX1AA)
+[一个鉴别 cdn 的小工具](https://mp.weixin.qq.com/s/RuXWYm18paTcyfUABfgcBg)
 [awvs14 扫描脚本](https://mp.weixin.qq.com/s/hOTaFBHEOaYwXyzkQ32GtA) https://github.com/test502git/awvs14-scan
 
 ## 横向移动 
@@ -283,12 +284,14 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [远程下载的通用替代方案 ｜ 红队攻防](https://mp.weixin.qq.com/s/qXAspIaMzBXN8f5ViO4AOA)
 [windows隐藏账户](https://blog.csdn.net/weixin_42282189/article/details/120770787)
 [linux下进程隐藏的一些研究](https://mp.weixin.qq.com/s/AtLifo1OVerH1Uhl8KKfuQ)
+[安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
 
 ## Sql/Database
 [sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)
 
 ## Web
 [SOAP注入的介绍与实战](https://mp.weixin.qq.com/s/FV6eyLdtZ6oIS52O1CWpaQ)
+[干货|爆破带有验证码的Web登录表单](https://mp.weixin.qq.com/s/rW2QS5aCJ1RMt8GP6XbnEQ)
 
 ## 域/Domain
 [域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
@@ -301,7 +304,7 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 ## 钓鱼
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
 [实战 | 记一次Word文档网络钓鱼以及绕过火绒，电脑管家和Windows Defender](https://mp.weixin.qq.com/s/be8fDEYJTy1Yr0jFy6j7YA)
-
+[网络钓鱼19式](https://mp.weixin.qq.com/s/iYAVt0KP66Qf79_yePQjOA)
 ## Wifi
 [WiFi密码安全工具wifite](https://www.bilibili.com/video/BV1jK411X7w8/)
 
@@ -327,11 +330,18 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
 
+### 伪装
+[蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)
+
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
 
 ## 溯源
 [HVV蓝队溯源流程](https://mp.weixin.qq.com/s/uYZDW2aB0Xo_wi-h1YzVsQ)
+## APP/APK
+[渗透测试工具 -- AppScan_Standard_10.1](https://mp.weixin.qq.com/s/WeqaKs93VpNcui7df5cWIw)
+[APP漏洞挖掘](https://mp.weixin.qq.com/s/Q1Ll_ScFhGZmLJpd1YaWuA)
+
 
 # Tools
 LogParser 日志分析

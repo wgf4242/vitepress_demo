@@ -18,6 +18,8 @@ ping 0x7F.0x00.0x00.0x01
 ping 0x7F000001
 ping 0177.0000.0000.0001
 ```
+### bypass
+[Bypass Linux Shell Restrictions](https://mp.weixin.qq.com/s/8QTax87lorWNnOQR8p1ORQ)
 
 ## SSRF
 

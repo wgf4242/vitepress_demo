@@ -13,6 +13,8 @@
 [android逆向奇技淫巧十：OLLVM原理、常见破解思路和hook代码](https://www.cnblogs.com/theseventhson/p/14861940.html)
 [[原创]OLLVM控制流平坦化的改进 ](https://bbs.pediy.com/thread-274778.htm)
 [[原创]MRCTF2022 llvmvm出题以及解题](https://bbs.pediy.com/user-home-948449.htm)
+[[原创]2022祥云杯CTF babyparser ](https://bbs.pediy.com/thread-275296.htm)
+
 
 看雪
 [p.z【ACTF2022】Inflated（C++异常处理控制流下的OLLVM混淆） ](https://bbs.pediy.com/thread-273764.htm)

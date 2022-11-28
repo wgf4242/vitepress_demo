@@ -15,6 +15,12 @@ $$
 \sum_{n=1}^{100}{a_n}
 $$
 
+
+# 加密介绍
+
+对称加密 AES DES、3DES、TDEA、Blowfish、RC2、RC4、RC5、IDEA、SKIPJACK 
+非对称加密 RSA DSA ECC
+
 # Article
 [密码学-费马小定理在RSA中的应用1](https://mp.weixin.qq.com/s/9AjOCrw9g_cvgsH6X_PnXQ)
 [密码学｜第五章 组合学、概率论与信息论](https://mp.weixin.qq.com/s/qQFsfCwKtK-GIL-l50EZdg)
@@ -23,3 +29,4 @@ $$
 [密码学｜5.2.2 针对维吉尼亚密码的密码分析：实践部分](https://mp.weixin.qq.com/s/83ahZIYBjq3DeualZfutzg)
 [密码学｜论文精读系列：针对RSA小私钥与小素数差的攻击（三）](https://mp.weixin.qq.com/s/Q_IWzt3gAdutq-AOOUjqdA)
 [AES](https://bbs.pediy.com/thread-253884.htm)
+[Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)

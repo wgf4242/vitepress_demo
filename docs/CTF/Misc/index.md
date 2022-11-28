@@ -274,6 +274,7 @@ vi /boot/grub/grub.cfg
 ### scap
 sysdig文件
 sudo sysdig -r sysdig-trace-file.scap
+sudo sysdig -r test.scap -c spy_users
 [doc ByteCTF2022 ](https://bytedance.feishu.cn/docx/doxcnWmtkIItrGokckfo1puBtCh)
 
 ## pyc 文件
@@ -291,6 +292,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
             -- zip 010 -> Ctrl+G -> 6, 奇数加密，偶数未加密。改为偶数尝试
             -- rar  直接拖出来/或解压, 提示密码点确定
                -- 修复 Ctrl+G, 22回车, 7A改为74
+                  -- 也可能是  第24位的84改成80
                -- F9 81 74 85 改成 F9 81 74 80
                -- rar4 24 90 -> 20 90 , 用010看  FileHeadFlags HEAD_FLAGS - PASSWORD_ENCRYPTED。
 -- 伪解密, 文件报错, 是加密位去掉了, 用101手动恢复多处
