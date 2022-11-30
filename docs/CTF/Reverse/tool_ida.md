@@ -203,5 +203,10 @@ arg_1E7FBF= byte ptr  1E7FC7h ; 5.双击这里 进栈按u， 再按F5即可
 ### ida python 调试
 https://github.com/ioncodes/idacode
 
+# plugins
+## lazyida
+1.功能1: 右击数据 convert转化成python list
+2.功能2: 右键扫描格式化字符串漏洞的功能，这个不多讲，直接右键，scanformat就好了
+
 # Article
 [IDAPython 速查表](https://www.cnblogs.com/hed10ne/p/idapython_cheatsheet.html)
