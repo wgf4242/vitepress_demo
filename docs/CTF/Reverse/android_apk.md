@@ -135,6 +135,7 @@ https://github.com/APKLab/APKLab
 
 [吾爱破解安卓逆向入门教程--导航帖（2018-06）](https://www.52pojie.cn/thread-408645-1-1.html) 
 [【Android 逆向】ART 函数抽取加壳 ② ( 禁用 dex2oat 简介 | TurboDex 中禁用 dex2oat 参考示例 )](https://blog.csdn.net/han1202012/article/details/127416953)
+[JNI函数的Hook与快速定位](https://2298233831.github.io/2022/10/24/JNI%E5%87%BD%E6%95%B0%E7%9A%84Hook%E4%B8%8E%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D/)
 
 
 

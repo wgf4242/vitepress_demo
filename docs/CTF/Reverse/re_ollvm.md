@@ -14,6 +14,7 @@
 [[原创]OLLVM控制流平坦化的改进 ](https://bbs.pediy.com/thread-274778.htm)
 [[原创]MRCTF2022 llvmvm出题以及解题](https://bbs.pediy.com/user-home-948449.htm)
 [[原创]2022祥云杯CTF babyparser ](https://bbs.pediy.com/thread-275296.htm)
+[三叶草小组Syclover | 浅谈虚拟机保护还原](https://www.bilibili.com/video/BV1oP4y1X7oz/) 
 
 
 看雪

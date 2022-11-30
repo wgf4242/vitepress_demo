@@ -285,6 +285,7 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [windows隐藏账户](https://blog.csdn.net/weixin_42282189/article/details/120770787)
 [linux下进程隐藏的一些研究](https://mp.weixin.qq.com/s/AtLifo1OVerH1Uhl8KKfuQ)
 [安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
+[反弹Shell | 一款基于SSH的反向Shell工具](https://mp.weixin.qq.com/s/0Rx_FvSMV5l4mdf9qCMZrg)
 
 ## Sql/Database
 [sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)

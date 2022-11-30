@@ -11,6 +11,7 @@
    - 3.Firefox浏览器记录 places.sqlite
    - 4.浏览历史
    - 4.进程信息
+   - 5.dump内存 如dump下notepad进程的内存再foremost可能得压缩包
 4. [profile找不到详下 ](#profile找不到)
 5. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL查看器
 
