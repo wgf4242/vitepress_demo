@@ -297,10 +297,11 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 ## 域/Domain
 [域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
 
-## Exploit
+## Exploit/CVE/实战漏洞
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
 [ThinkPHP框架漏洞总结+Thinkphp自动化武器](https://mp.weixin.qq.com/s/OWmFjra3oZfth0rifK-kYg)
 [yii && gii ctf篇 | 第五空间 codereview](https://mp.weixin.qq.com/s/Ivq3E3ubj-A1sWGp1zpbTA)
+[Log4j2 漏洞实战案例](https://mp.weixin.qq.com/s/1I_cNwHso1LqXkRk0LARlg)
 
 ## 钓鱼
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
@@ -325,11 +326,13 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [API安全01：crAPI漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
+[一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
 ## 免杀
 50_Anti-AntiVirus_EXE.md
 [Mimikatz的18种免杀姿势及防御策略](https://www.freebuf.com/articles/system/234365.html)
 [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
+[powershell免杀混淆的小工具](https://mp.weixin.qq.com/s/tWOeU22jeotC2n4xW8zFiw)
 
 ### 伪装
 [蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)
@@ -345,7 +348,6 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 
 ## Docker
 [Docker逃逸那些事儿](https://mp.weixin.qq.com/s/tiniAQ5AhCXm2_mqj_j7iA)
-
 
 # Tools
 LogParser 日志分析
