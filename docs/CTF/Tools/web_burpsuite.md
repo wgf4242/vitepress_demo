@@ -194,3 +194,4 @@ start attack
 [Burpsuite技巧之MD5加密密码爆破、带验证码爆破](https://mp.weixin.qq.com/s/r9pQVqIKOxXY-6QQobJruQ)
 [插件 | BurpSuite插件 -- LoggerPlusPlus](https://mp.weixin.qq.com/s/_wI0V3s9sURytjgO8Aldbw)
 [插件 | 高度自定义Burp插件log4j2burpscanner](https://mp.weixin.qq.com/s/DPRwo3n_4qRCGLA6Wdqx_g)
+[插件 | sqlmap4burp++]()

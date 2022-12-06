@@ -343,8 +343,11 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 ## 溯源
 [HVV蓝队溯源流程](https://mp.weixin.qq.com/s/uYZDW2aB0Xo_wi-h1YzVsQ)
 ## APP/APK
+[工具 | AppInfoScanner]()
 [渗透测试工具 -- AppScan_Standard_10.1](https://mp.weixin.qq.com/s/WeqaKs93VpNcui7df5cWIw)
 [APP漏洞挖掘](https://mp.weixin.qq.com/s/Q1Ll_ScFhGZmLJpd1YaWuA)
+[APP漏洞挖掘之某下载量超101万的APP有几个漏洞可以GetShell？](https://mp.weixin.qq.com/s/x8gaMehZ6A_ATdkodKNHyQ)
+[移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/BCXolF0hi-IzXY1UZJcMQw)
 
 ## Docker
 [Docker逃逸那些事儿](https://mp.weixin.qq.com/s/tiniAQ5AhCXm2_mqj_j7iA)
