@@ -491,3 +491,11 @@ ctfshow 未知信号
 [各种类型的图片格式隐写术总结](https://mp.weixin.qq.com/s/9KZZDSpw1Xc_um0vNN4kpg)
 ## 图像相关
 [傅里叶图像压缩](https://www.bilibili.com/video/BV1CY411R7bA?t=1329.5)
+
+## 流量分析
+[中国蚁剑rsa、aes流量](https://www.bilibili.com/video/BV19P411T7kw/)
+[冰蝎流量解密](https://github.com/melody27/behinder_decrypt#readme)
+[冰蝎2.0流量](https://www.bilibili.com/video/BV1hB4y1q7Xa/)
+[冰蝎3.0流量解密工具2.0](https://www.bilibili.com/video/BV1uT411J7zD/)
+[冰蝎2.0-3.0流量(python批量解码)](https://www.bilibili.com/video/BV1Sd4y1s7vY/)
+[哥斯拉4.0流量解密(python批量解码)](https://www.bilibili.com/video/BV1u14y1J7Sj/)
