@@ -139,6 +139,9 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [挖洞思路：前端源码泄露漏洞并用source map文件还原](https://blog.csdn.net/qq_44930903/article/details/124257571)
 ## 工具/马
 [java 内存马](https://github.com/su18/ysoserial)
+[冰蝎流量解密](https://github.com/melody27/behinder_decrypt#readme)
+[哥斯拉4.0流量解密(python批量解码)](https://www.bilibili.com/video/BV1u14y1J7Sj/)
+
 ## 免杀
 [免杀学习——PHP免杀](https://blog.csdn.net/ZxC789456302/article/details/127473366): 白白白无-免杀学习——PHP免杀----🔥 热度:9113 
 [jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
