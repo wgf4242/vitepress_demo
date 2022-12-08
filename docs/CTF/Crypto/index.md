@@ -28,6 +28,7 @@ $$
 [密码学｜5.2.1 针对维吉尼亚密码的密码分析：理论部分](https://mp.weixin.qq.com/s/3wLcHpOkBF5Bpi_uCsP21A)
 [密码学｜5.2.2 针对维吉尼亚密码的密码分析：实践部分](https://mp.weixin.qq.com/s/83ahZIYBjq3DeualZfutzg)
 [密码学｜论文精读系列：针对RSA小私钥与小素数差的攻击（三）](https://mp.weixin.qq.com/s/Q_IWzt3gAdutq-AOOUjqdA)
-[密码学｜ 5.3 概率论](https://mp.weixin.qq.com/s/QLMK51Xvv9QW_gdszzFoTw)
+[密码学｜论文精读系列：针对RSA小私钥与小素数差的攻击（三）](https://mp.weixin.qq.com/s/IdGQDDWbi5zpMjYEsN4JGA)
+[密码学｜5.3 概率论](https://mp.weixin.qq.com/s/QLMK51Xvv9QW_gdszzFoTw)
 [AES](https://bbs.pediy.com/thread-253884.htm)
 [Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)

@@ -63,3 +63,7 @@ places.sqlite  # 浏览记录
 ### sqlmap 
 .db  .db-wal 都导出，然后用工具打开
 .db-wal 会定期写入到.db
+
+
+# Article
+[PC端微信个人信息与聊天记录取证](https://mp.weixin.qq.com/s/FPcIrouEAM_2RNZhfSRgoQ)
