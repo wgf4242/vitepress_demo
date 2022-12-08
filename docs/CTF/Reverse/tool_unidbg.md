@@ -7,3 +7,4 @@
 [某车联网App 通讯协议加密分析(二) *Unidbg*手把手跑通](https://blog.51cto.com/u_15527932/5694265)
 [某车联网App 通讯协议加密分析(三) Trace Block](https://blog.51cto.com/u_15527932/5694261)
 [某车联网App 通讯协议加密分析(四) Trace Code](https://blog.51cto.com/u_15527932/5708870)
+[利用unidbg进行一次电子取证](https://mp.weixin.qq.com/s/Yd0veyI9iNaQq7_0h3yMqw)
