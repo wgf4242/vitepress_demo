@@ -481,7 +481,8 @@ ctfshow 未知信号
 ## 协议
 [Bluetooth 蓝牙协议栈技术初探](https://mp.weixin.qq.com/s/1pG6jnvt3aqPrz5Vl6FIqg)
 
-## zip
+## 压缩包/zip
+[各类常见压缩包类型隐写术总结](https://mp.weixin.qq.com/s/VbFp_up_nAar6XTzjPmKZA)
 [CTF之Misc-zip压缩包分析](https://mp.weixin.qq.com/s/QfSzm_6bwbOjP97fu7pLZQ)
 
 ## eth
