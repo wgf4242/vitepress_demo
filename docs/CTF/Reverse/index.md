@@ -192,6 +192,7 @@ frida-dexdump -p 27815 -U
 ```
 ## 资源
 https://github.com/MiDuoKi/AndroidSafeStudy
+[移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/hp8NuaW0ioQX2bdIYvSHLg)
 ## APK壳
 https://blog.csdn.net/m0_64604636/article/details/121885541
 https://blog.csdn.net/weixin_44032232/article/details/109676945
@@ -211,6 +212,15 @@ https://www.52pojie.cn/thread-326995-1-1.html
 1.段头部(Section Header) 错误。如 2022网鼎杯青龙-fakeshell, 010搜索 FUK替换为UPX。
 * Functions 向右拉也看得到 Segments不对
 * 可用die查看 全部节, 找到FUK节, 双击 ×只读 可修改值
+
+UPX标识修改
+
+```sh
+UPX0       00001000  0000F000   00000400  00000000   E0000080                   # 第1处
+UPX1       00010000  00009000   00000400  00008400   E0000040                   # 第2处
+000003D0   00 00 00 00 00 00 00 00  00 00 00 33 2E 39 31 00              3.91   # 
+000003E0   55 50 58 21 0D 09 02 08  5A 34 28 27 60 95 D0 97   UPX!    `         # 第3处
+```
 ### VMP
 https://bbs.pediy.com/thread-271546-1.htm
 
@@ -295,6 +305,9 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 [原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
 
 [易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
+## Windows
+[Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)
+
 ## AI助手ChatGPT
 https://github.com/acheong08/ChatGPT
 
