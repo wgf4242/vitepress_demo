@@ -62,6 +62,10 @@
 [OLLVM 之控制流平坦化源码学习](http://www.qfrost.com/LLVM/【LLVM】Flattening源码分析/)
 [OLLVM 之全局变量间接访问源码学习](http://www.qfrost.com/LLVM/%E3%80%90LLVM%E3%80%91%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E9%97%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
 [OLLVM Pluto 之平坦化增强源码学习](http://www.qfrost.com/LLVM/【LLVM】FlatteningEnhanced/)
+## LLVM使用
+[LLVM入坑笔记(一):正式开始前的准备](https://blog.t0hka.top/archives/llvm入坑笔记一正式开始前的准备)
+[LLVM入坑笔记(二):LLVM Pass初探](https://blog.t0hka.top/archives/llvm入坑二llvmpass初探)
+
 ## 脚本 
 https://github.com/mFallW1nd/deflat
 

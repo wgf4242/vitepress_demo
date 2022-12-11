@@ -10,8 +10,9 @@
 
 [一条新的glibc IO_FILE利用链：_IO_obstack_jumps利用分析](https://mp.weixin.qq.com/s/U2ZsWV27FkKfXwLYDYgSRg)
 [『CTF』alarm 函数的妙用](https://mp.weixin.qq.com/s/CZgZmWE23LR9Zti8tcgL_Q)
-## 练习场
-https://pwn.college/
+[【星盟安全】PWN系列教程](https://www.bilibili.com/video/BV1Uv411j7fr)
+[heap | Use After Free - CTF Wiki](https://ctf-wiki.org/pwn/linux/user-mode/heap/ptmalloc2/use-after-free/)
+[heap | 新人PWN堆Heap总结](https://mp.weixin.qq.com/s/Dk11gRLVsh4-KstotEGb7g)
 
 ## Video
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN

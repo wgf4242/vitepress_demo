@@ -88,3 +88,8 @@ https://www.bilibili.com/video/BV1KQ4y127AT/
 L0 - 32bit , R0 - 32bit
 
 ![](https://s2.loli.net/2022/11/18/oGqPkNsQp6DUVCM.jpg)
+
+# Article
+[【星盟安全】Re系列教程 第1节 maze问题（1）](https://www.bilibili.com/video/BV1bR4y197nE/)
+[【星盟安全】Re系列教程 第2节 maze问题（2）](https://www.bilibili.com/video/BV18R4y1o7PU/)
+[【星盟安全】Re系列教程 第3节 base算法](https://www.bilibili.com/video/BV1MV4y1N7EQ/)
