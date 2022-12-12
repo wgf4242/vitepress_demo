@@ -1,0 +1,1 @@
+[2020.12.20 XCTF 华为云专场 Weird_lua](https://www.cnblogs.com/c10udlnk/p/14214080.html)
