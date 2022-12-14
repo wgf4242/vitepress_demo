@@ -31,5 +31,7 @@ $$
 [密码学｜论文精读系列：针对RSA小私钥与小素数差的攻击（三）](https://mp.weixin.qq.com/s/IdGQDDWbi5zpMjYEsN4JGA)
 [密码学｜5.3 概率论](https://mp.weixin.qq.com/s/QLMK51Xvv9QW_gdszzFoTw)
 [密码学｜5.3 概率论 贝叶斯公式](https://mp.weixin.qq.com/s/KW_YKWkdOcobo0h8Ey-4oA)
+[密码学｜5.3.3 概率论 蒙特卡罗算法](https://mp.weixin.qq.com/s/1Eqkt7UObvpZF_p4rxXrOg)
+[TLS 1.2 协议解析流程学习（一）](https://mp.weixin.qq.com/s/DS3ZMVSlHvIV0wIDrrmHpg)
 [AES](https://bbs.pediy.com/thread-253884.htm)
 [Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)

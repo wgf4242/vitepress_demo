@@ -13,3 +13,7 @@ var payload = {
 var token = jwt.sign(payload, undefined, {algorithm: 'none'});
 console.log(token);
 ```
+
+
+# Article
+[浅析JWT Attack](https://mp.weixin.qq.com/s/WvVgavjJMXSZQsVFtHEOhA)

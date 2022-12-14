@@ -97,8 +97,6 @@ ptrace是 process trace的缩写,是linux中父进程对子进程进行跟踪控
 
 [RE - Anti IDA 反反编译与反反反编译](http://note.youdao%2ecom/noteshare?id=3eb748f7bc67698d08107f963af77ab4&sub=6DC9E91DB3B24EC98DFA09E3AC3D6857)
 
-
-
 例 0xE8为call指令, 后面四个字节为地址, 反汇编器就会一下子读取5个字节.同样,有的字节码会读取2、3、4个字节.<br>
 例如两条汇编中出现一个0xE8字节, 跟着四个字节处理地址, call 0xbalabala 但其实后面四个字节码是其他指令.
 

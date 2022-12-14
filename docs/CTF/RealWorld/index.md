@@ -296,6 +296,7 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 
 ## 域/Domain
 [域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
+[​某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg)
 
 ## Exploit/CVE/实战漏洞
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
@@ -308,6 +309,8 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
 [实战 | 记一次Word文档网络钓鱼以及绕过火绒，电脑管家和Windows Defender](https://mp.weixin.qq.com/s/be8fDEYJTy1Yr0jFy6j7YA)
 [网络钓鱼19式](https://mp.weixin.qq.com/s/iYAVt0KP66Qf79_yePQjOA)
+[红队攻击手特训营-如何开展钓鱼演练](https://www.bilibili.com/video/BV1fM411U71d)
+
 ## Wifi
 [WiFi密码安全工具wifite](https://www.bilibili.com/video/BV1jK411X7w8/)
 
@@ -347,11 +350,12 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 
 ## APP/APK
 [工具 | AppInfoScanner]()
+[Android 内存执行ELF研究](https://mp.weixin.qq.com/s/aEQCLqX_Z515iiA75Ib7kw)
 [渗透测试工具 -- AppScan_Standard_10.1](https://mp.weixin.qq.com/s/WeqaKs93VpNcui7df5cWIw)
+[移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/BCXolF0hi-IzXY1UZJcMQw)
 [APP漏洞挖掘](https://mp.weixin.qq.com/s/Q1Ll_ScFhGZmLJpd1YaWuA)
 [APP漏洞挖掘之某下载量超101万的APP有几个漏洞可以GetShell？](https://mp.weixin.qq.com/s/x8gaMehZ6A_ATdkodKNHyQ)
-[移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/BCXolF0hi-IzXY1UZJcMQw)
-
+[APP漏洞挖掘之某款APP开发商通用漏洞的挖掘](https://mp.weixin.qq.com/s/T9H8dtFYCgck1PHB3zy_7Q)
 ## Docker
 [Docker逃逸那些事儿](https://mp.weixin.qq.com/s/tiniAQ5AhCXm2_mqj_j7iA)
 

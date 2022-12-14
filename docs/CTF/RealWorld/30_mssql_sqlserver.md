@@ -52,4 +52,5 @@ https://blog.csdn.net/weixin_30654583/article/details/97225375
 
 # Article
 [一篇搞定，窃取MSSQL 各版本密码 HASH](https://mp.weixin.qq.com/s/w9NqP4AqDth6sLbHAPF4AQ)
+[sql server提权总结](https://mp.weixin.qq.com/s/3Q6meWdMLfls5cK1j80tFw)
 
