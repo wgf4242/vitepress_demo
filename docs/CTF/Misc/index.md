@@ -500,3 +500,4 @@ ctfshow 未知信号
 [冰蝎3.0流量解密工具2.0](https://www.bilibili.com/video/BV1uT411J7zD/)
 [冰蝎2.0-3.0流量(python批量解码)](https://www.bilibili.com/video/BV1Sd4y1s7vY/)
 [哥斯拉4.0流量解密(python批量解码)](https://www.bilibili.com/video/BV1u14y1J7Sj/)
+[菜刀、冰蝎、蚁剑、哥斯拉webshell管理工具分享及特征分析](https://mp.weixin.qq.com/s/4KGUNeC1l_X9pbqerkk4zQ)

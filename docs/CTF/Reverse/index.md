@@ -207,9 +207,9 @@ adb -s "emulator-5554" install attachment-16.apk
 ### UPX/ESP定律
 https://www.52pojie.cn/thread-326995-1-1.html
 
-检查是UPX，但无法脱壳。
+1.检查是UPX，但无法脱壳。
 
-1.段头部(Section Header) 错误。如 2022网鼎杯青龙-fakeshell, 010搜索 FUK替换为UPX。
+1)段头部(Section Header) 错误。如 2022网鼎杯青龙-fakeshell, 010搜索 FUK替换为UPX。
 * Functions 向右拉也看得到 Segments不对
 * 可用die查看 全部节, 找到FUK节, 双击 ×只读 可修改值
 
@@ -221,6 +221,9 @@ UPX1       00010000  00009000   00000400  00008400   E0000040                   
 000003D0   00 00 00 00 00 00 00 00  00 00 00 33 2E 39 31 00              3.91   # 
 000003E0   55 50 58 21 0D 09 02 08  5A 34 28 27 60 95 D0 97   UPX!    `         # 第3处
 ```
+
+2.脱壳方式
+修复头后, 搜popad, 运行跳后走几步到push ebp dump
 ### VMP
 https://bbs.pediy.com/thread-271546-1.htm
 

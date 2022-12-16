@@ -67,3 +67,4 @@ places.sqlite  # 浏览记录
 
 # Article
 [PC端微信个人信息与聊天记录取证](https://mp.weixin.qq.com/s/FPcIrouEAM_2RNZhfSRgoQ)
+[浏览器数据导出解密工具 -- HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
