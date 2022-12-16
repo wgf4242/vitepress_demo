@@ -55,12 +55,16 @@ Client端主动断开连接.
 
 
 端口扫描
-* 使用UDP ping探测主机:
-* nmap -PU 192.168.1.0/ 24 服务版本探测
-* nmap -sV 192.168.1.1
-* 精准地确认端口上运行的服务
-* nmap -Pn -sV --script unusual-port 192.168.1.1
-* nmap -Pn -sV --script unusual-port 192.168.1.1 -p 9527
+```sh
+nmap -PU 192.168.1.0/24 # UDP ping探测主机:
+nmap -sV 192.168.1.1    # -sV: 扫描运行服务/软件版本 
+nmap -Pn -sV --script unusual-port 192.168.1.1
+nmap -Pn -sV --script unusual-port 192.168.1.1 -p 9527
+nmap -T4 -A -v 192.168.1.1 # 快速扫描主机全部信息
+dirb http://192.168.1.1        # Web扫描
+nikto -host http://192.168.1.1 # Web扫描
+ZAP                            # kali 菜单栏: Web工具: ZAP # OWASP ZAP 漏洞检测
+```
 
 
 常见扫描方式
