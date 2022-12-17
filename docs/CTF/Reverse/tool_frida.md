@@ -258,6 +258,8 @@ https://www.anquanke.com/post/id/195215
 [frida-snippets](https://github.com/iddoeldor/frida-snippets)
 [Frida学习笔记](https://zyzling.gitee.io/2020/05/12/Frida学习笔记/)
 [实用FRIDA进阶：内存漫游、hook anywhere、抓包/objection](https://www.anquanke.com/post/id/197657)
+[之前大家私信我frida的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm) 
+
 
 [_[原创]初识Frida--Android逆向之Java层hook (一) ](https://bbs.pediy.com/thread-227232.htm)
 [初识Frida--Android逆向之Java层hook (二)](https://bbs.pediy.com/thread-227233.htm)
