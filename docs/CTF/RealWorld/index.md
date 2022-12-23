@@ -40,6 +40,14 @@ Web漏洞分析
 * nmap 192.168.1.1／24 -excludefile xxx．txt(xxx．txt中的文件将
 会从扫描的主机中排除)
 
+| 扫描选项 | 扫描时间 | 是否需要root/sudo |
+| -------- | -------- | ----------------- |
+| nmap -sS | 16.82    | 是                |
+| nmap -sT | 16.72    | 否                |
+| nmap -sU | 1091.03  | 是                |
+| nmap -sN | 17.94    | 是                |
+| nmap -sV | 28.87    | 否                |
+| nmap -A  | 42.95    | 否                |
 
 TCP扫描 (-sT)
 * 这是一种最为普通的扫描方法,这种扫描方法的特点是
@@ -284,6 +292,7 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
 [内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
+[常见内网穿透工具使用总结](https://mp.weixin.qq.com/s/-rG5OA-CZYjkgzMn0dSazw)
 ### 后渗透/post/权限维持
 [远程下载的通用替代方案 ｜ 红队攻防](https://mp.weixin.qq.com/s/qXAspIaMzBXN8f5ViO4AOA)
 [windows隐藏账户](https://blog.csdn.net/weixin_42282189/article/details/120770787)
@@ -305,9 +314,20 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 ## Exploit/CVE/实战漏洞
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
 [ThinkPHP框架漏洞总结+Thinkphp自动化武器](https://mp.weixin.qq.com/s/OWmFjra3oZfth0rifK-kYg)
+[Thinkphp多语言漏洞自检工具 -- ThinkPhp6LangRce](https://mp.weixin.qq.com/s/a7Zo1GJpJuFGQR2t9m74Zw)
+[ThinkPHP 3.1.3 | 某外汇常用CMS通用未授权RCE](https://mp.weixin.qq.com/s/SJ-rCRIkqT3COP9jdKBY_g)
 [yii && gii ctf篇 | 第五空间 codereview](https://mp.weixin.qq.com/s/Ivq3E3ubj-A1sWGp1zpbTA)
 [Log4j2 漏洞实战案例](https://mp.weixin.qq.com/s/1I_cNwHso1LqXkRk0LARlg)
 [2022年最常被利用的十大漏洞](https://mp.weixin.qq.com/s/hdlHQNIgTF7PS7lHY8slCw)
+
+[WebSocket安全漏洞-攻击示例](https://mp.weixin.qq.com/s/-VazGZD9GLTqVPBiHFnccw)(12月20日)
+[WebSocket安全漏洞-概念梳理](https://mp.weixin.qq.com/s/dIGG9h-NSmX4yUyFuIqgCw)(12月20日)
+[OA综合利用工具（集合将近20款OA漏洞）](https://mp.weixin.qq.com/s/ZFW5phEN-0iAv4Pw4w8TkA)
+[通达OA v11.5 login_code.php 任意用户登录](https://mp.weixin.qq.com/s/7723ZW4-19JvqmMAVS4pcw)(12月20日)
+[通达OA命令执行方法探索（续）](https://mp.weixin.qq.com/s/TfMs5DwwLoIVjT96lhhdvQ)(12月20日)
+[通达OA高版本getshell思路（附部分脚本）](https://mp.weixin.qq.com/s/vHR1mOmu2xf_irKRxhFxIw)(12月20日)
+[禅道12.4.2后台管理员权限Getshell复现](https://cloud.tencent.com/developer/article/1749477)
+
 
 ## 钓鱼
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
@@ -341,9 +361,22 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
 [powershell免杀混淆的小工具](https://mp.weixin.qq.com/s/tWOeU22jeotC2n4xW8zFiw)
-
+[Powershell免杀混淆器](https://mp.weixin.qq.com/s/Z5nNx3iLaSeiLFtWSFHAdg)
+### Webshell
+[冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)(12月19日)
+[冰蝎流量免杀初探](https://mp.weixin.qq.com/s/1Llqwov2vFaaDNP1mLDtZg)(12月19日)
 ### 伪装
 [蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)
+
+## by pass
+### by pass WAF
+[实战 | WAF-Bypass之SQL注入绕过思路总结](https://mp.weixin.qq.com/s/PczKsU3WVRfuZpusr7CxnA)(12月20日)
+[实战 | Post文件上传WAF Bypass总结](https://mp.weixin.qq.com/s/S9-4sMsyXQqtjS4A_ABNGg)(12月20日)
+### by pass uac
+[Bypass UAC方法整理](https://mp.weixin.qq.com/s/vowFqYxX_x0gu2-38TEGFA)(12月21日)
+[Bypass UAC技术总结](https://mp.weixin.qq.com/s/6bGCjqOmav1_ekowCgBhoA)(12月21日)
+### by pass powershell strict
+[Bypass Powershell执行策略的N种方式](https://mp.weixin.qq.com/s/a5cFpw-E4VRY7xbaUdmaTg)
 
 # 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
@@ -362,6 +395,8 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [APP漏洞挖掘之某款APP开发商通用漏洞的挖掘](https://mp.weixin.qq.com/s/T9H8dtFYCgck1PHB3zy_7Q)
 ## Docker
 [Docker逃逸那些事儿](https://mp.weixin.qq.com/s/tiniAQ5AhCXm2_mqj_j7iA)
+# Other
+[【技术分享】通过设备指纹进行GPS欺骗检测](https://mp.weixin.qq.com/s/gHBxf8bnKjenrxNmVlaetQ)
 
 # Tools
 LogParser 日志分析

@@ -83,6 +83,10 @@ https://hashcat.net/wiki/doku.php?id=example_hashes
 爆破多尝试admin/root + 数字
 wifi最多爆到root12222
 
+md5 dict.txt
+hashcat.exe -a 0 -m 0 --force 5a690d842935c51f26f473e025c1b97a  rockyou.txt
+
+
 7位数字破解
 hashcat.exe -a 3 -O -m 0 --force 25c3e88f81b4853f2a8faacad4c871b6 ?d?d?d?d?d?d?d
 
