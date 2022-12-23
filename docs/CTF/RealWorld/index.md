@@ -18,6 +18,14 @@ Web漏洞分析
 > Burpsuite
 > x-ray
 
+## 渗透流程
+
+1. nmap -T4 全扫描
+2. msfconsole
+search ms10_018 (xp的)
+search ms17_018 (永恒之蓝)
+3. Web:  kali - web程序 -  ZAP 扫描
+
 ## Nmap
 主机探测(一)
 
@@ -49,7 +57,7 @@ TCP扫描 (-sT)
 
 ①Client端发送SYN;
 ②Server端返回SYN/ACK, 表明端口开放;
-③ Client端返回ACK, 表明连接已建立;
+③Client端返回ACK, 表明连接已建立;
 Client端主动断开连接.
 
 
@@ -342,6 +350,7 @@ reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
 [powershell免杀混淆的小工具](https://mp.weixin.qq.com/s/tWOeU22jeotC2n4xW8zFiw)
+[powershell免杀之路](https://mp.weixin.qq.com/s/FfXRtbUCOt3ZmubkAnCe6Q)
 
 ### 伪装
 [蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)

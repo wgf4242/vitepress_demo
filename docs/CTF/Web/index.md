@@ -139,7 +139,8 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [挖洞思路：前端源码泄露漏洞并用source map文件还原](https://blog.csdn.net/qq_44930903/article/details/124257571)
 ## 工具/马
 [java 内存马](https://github.com/su18/ysoserial)
-
+[Reverse Shell Cheat Sheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+[渗透干货｜史上最全一句话木马](https://mp.weixin.qq.com/s/o_HUnlubJdPRdQdpnMJeEw)
 
 ## 免杀
 [免杀学习——PHP免杀](https://blog.csdn.net/ZxC789456302/article/details/127473366): 白白白无-免杀学习——PHP免杀----🔥 热度:9113 
@@ -150,3 +151,4 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [nosql注入用户名密码爆破工具](https://0xmrm.com/272.html)
 ## ssti 
 https://blog.csdn.net/miuzzx/article/details/127744431#t4
+[CTF中SSTI漏洞的简单利用](https://mp.weixin.qq.com/s/pA-ca-b0IYszwjmkCIdYBg)

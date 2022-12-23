@@ -81,6 +81,8 @@ https://hashcat.net/wiki/doku.php?id=example_hashes
 -O 速度快
 测试rockyou.txt字典
 爆破多尝试admin/root + 数字
+3.大写字母 +数字
+4.小写字母 +数字
 wifi最多爆到root12222
 
 7位数字破解
