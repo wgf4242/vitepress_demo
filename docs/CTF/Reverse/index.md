@@ -7,6 +7,8 @@
 https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
 前置准备
+1. 二进制搜索
+2. 找ip端口 上传微步
 1. 放die看EntryPoint 位置。
 2. 放die看编译器, 如果是gcc, IDA: Option - Compiler - GNU C++
 2. 看FindCrypt
