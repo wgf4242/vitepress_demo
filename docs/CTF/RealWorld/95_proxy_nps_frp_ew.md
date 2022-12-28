@@ -65,3 +65,18 @@ http_proxy	string	连接服务端使用的代理地址			格式为 {protocol}://
 ./ew -s rssocks -d 127.0.0.1 -e 7777
 #数据流向: SOCKS v5 -> 1080 -> 8888 -> 9999 -> 7777 -> rssocks
 ```
+
+## UPnProxyChain：
+
+通过多个主机代理：
+```shell
+# start proxy
+./upnproxychain.py <IP1> <IP2> <IP3> <IP4> <IP5>
+# use the proxy to curl example.com
+curl socks5h://localhost:1080 http://example.com
+```
+
+检查主机是否存在漏洞：
+```shell
+./upnproxychain.py -v -c <IP>
+```

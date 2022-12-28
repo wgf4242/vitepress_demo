@@ -129,6 +129,7 @@ https://github.com/APKLab/APKLab
 ## 综合
 [入门 | 《安卓逆向这档事》三、初识smali，vip终结者](https://mp.weixin.qq.com/s/Kb8DbEXcthvRfakBRRXHTg)
 [入门 | Android逆向之smali语法宝典](https://www.jianshu.com/p/ba9b374346dd) 
+[Android逆向遇到的环境问题](https://bbs.pediy.com/thread-275251.htm) 
 
 [Android渗透07：安卓CTF系列-案例1](https://mp.weixin.qq.com/s/oY_W5Nt3SrY9OGuK1KGb_g)
 [Android渗透07：安卓CTF系列-案例2](https://mp.weixin.qq.com/s/RdvphrCCEVjPbUqmgcPMaQ)
@@ -137,7 +138,7 @@ https://github.com/APKLab/APKLab
 [Android渗透11：AS与Jeb动态调试Apk](https://mp.weixin.qq.com/s/SOPjvPkuCB2zFZiJ5L7tew)
 [Android渗透12：安卓逆向-IDA动态调试so](https://mp.weixin.qq.com/s/eJVicCY7Y4VEAg8U2dS4hg)
 [【APP 逆向百例】Frida 初体验，root 检测与加密字符串定位](https://mp.weixin.qq.com/s/WfvTA9MJh-NS86LYDVTBzg)
-
+[[分享]之前大家私信我frida的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm) 
 
 [吾爱破解安卓逆向入门教程--导航帖（2018-06）](https://www.52pojie.cn/thread-408645-1-1.html) 
 [【Android 逆向】ART 函数抽取加壳 ② ( 禁用 dex2oat 简介 | TurboDex 中禁用 dex2oat 参考示例 )](https://blog.csdn.net/han1202012/article/details/127416953)

