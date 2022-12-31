@@ -7,8 +7,9 @@
 [一个鉴别 cdn 的小工具](https://mp.weixin.qq.com/s/RuXWYm18paTcyfUABfgcBg)
 [awvs14 扫描脚本](https://mp.weixin.qq.com/s/hOTaFBHEOaYwXyzkQ32GtA) https://github.com/test502git/awvs14-scan
 
-## 横向移动
+## 内网横向移动
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
+[一个内网安全攻防的知识仓库](https://mp.weixin.qq.com/s/sP6t_TjAt0H1ELViqhzVlg)
 [红队实战（一）学习内网渗透](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e)
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
@@ -34,6 +35,10 @@
 ## Web
 [SOAP注入的介绍与实战](https://mp.weixin.qq.com/s/FV6eyLdtZ6oIS52O1CWpaQ)
 [干货|爆破带有验证码的Web登录表单](https://mp.weixin.qq.com/s/rW2QS5aCJ1RMt8GP6XbnEQ)
+[Burpsuite技巧之MD5加密密码爆破、带验证码爆破](https://mp.weixin.qq.com/s/r9pQVqIKOxXY-6QQobJruQ)
+[渗透测试｜验证码爆破总结](https://mp.weixin.qq.com/s/z9hkE0XBMwrdx09QHQC_1Q)
+result.txt | 搜验证码
+
 ### 文件上传
 [包括IIS6.0,7.5, Nginx | 文件上传与解析漏洞总结v1.0](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484289&idx=1&sn=0bf44261b5bb4a14e00286cc34e5879e)
 [boundary后面的分隔符加空格 |记一次文件上传漏洞绕过](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484330&idx=2&sn=dd12b562348d3078cdef9336887070cd)
@@ -43,6 +48,7 @@
 [某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg)
 
 ## Exploit/CVE/实战漏洞
+[泛微oa漏洞利用工具 -- WeaverScan](https://mp.weixin.qq.com/s/hpPNgxHnaUR87vvPxwx61w)
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
 [泛微 EOffice10 sql注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484992&idx=1&sn=461895617739b662d412648034b36ef7)
 [泛微 EOffice10 前台任意文件写入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484971&idx=1&sn=da9ea43e3fdfe946056e8aa1331e38ed)
@@ -68,6 +74,7 @@
 [通达OA多枚0day漏洞分享](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484396&idx=1&sn=97454ce0bb951df35584e91b125c3b9c)
 
 [致远OA A6 test.jsp 存在sql注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247485042&idx=1&sn=3dfac475ca4db76b412ed7c546e273a0)
+[致远OA wpsAssistServlet 任意文件上传漏洞 A6、A8、A8N (V8.0SP2, V8.1, V8.1SP1) // G6、G6N (V8.1、V8.1SP1)](https://mp.weixin.qq.com/s/lOk7rt26z33e-ogLmFlE0Q)
 [用友致远A6协同管理系统多处敏感信息泄露](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247485029&idx=1&sn=1bbe24fd063d75e35a4d24db5e8edd0f)
 [用友U8-OA和致远A6系统从信息泄露到伪造用户登录](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484871&idx=1&sn=bf0f160929200fb9104189680092f68e)
 [用友 畅捷通T+ 漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484859&idx=1&sn=beb56c8e035ef8a945a73c49481c7ed1)
@@ -86,12 +93,17 @@
 
 [KindEditor 文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484734&idx=1&sn=7508249f8d3a867617020338d3988404)
 [phpcms v9.6.0 会员注册界面远程文件下载getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484720&idx=1&sn=31a54a15eb8602d9fdd7b1f36f1067c0)
+[PHPCMS v9.6.0 前端任意文件上传漏洞分析](https://mp.weixin.qq.com/s/ECArepyqeUt7MLL8W7uy-Q)
+[PHPCMSv9.6.0wap模块注入漏洞](https://mp.weixin.qq.com/s/gSiD-tO9mk_U41ln23F7lQ)
+
 [IIS PUT漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=1&sn=6d5f4d8c89d0178492e42cd0663c5009)
 [Redis未授权访问漏洞(windows环境](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484286&idx=1&sn=6250d89d18ea635bda32e815fdcc5f6d)
 [【漏洞复现】Weblogic漏洞搭建与复现：弱口令与后台 Getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=2&sn=03a6427e19436c690d0966c7746461c5)
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
+[宝塔后渗透-添加用户|反弹shell](https://mp.weixin.qq.com/s/-MQ36nY6YbAPf6pVecregg)
+[yxcms后台模板写shell](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [2](https://blog.csdn.net/qq_40638006/article/details/122033546)
 
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
@@ -134,34 +146,38 @@
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
 ## 免杀
 50_Anti-AntiVirus_EXE.md
-[Mimikatz的18种免杀姿势及防御策略](https://www.freebuf.com/articles/system/234365.html)
+[Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
 [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 [安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
 [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
 [Powershell免杀混淆器](https://mp.weixin.qq.com/s/Z5nNx3iLaSeiLFtWSFHAdg)
 [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/LiYPT7SOE_v4uKqOrkqLvw)
+[powershell免杀之路](https://mp.weixin.qq.com/s/FfXRtbUCOt3ZmubkAnCe6Q)
 [免杀工具 ShellCodeRunner](https://github.com/antman1p/ShellCodeRunner)
 Themia加壳过火绒
 exe | darkarmour: `python darkarmour.py -f shell.exe -e xor -j -k sanker -l 20 -u -o bypass_shell.exe`
+[免杀生成与木马捆绑工具 -- rsmaker](https://mp.weixin.qq.com/s/ozZoTlG3e_M0eKxBu6hcLg)
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
 [冰蝎流量免杀初探](https://mp.weixin.qq.com/s/1Llqwov2vFaaDNP1mLDtZg)
-[powershell免杀之路](https://mp.weixin.qq.com/s/FfXRtbUCOt3ZmubkAnCe6Q)
+[冰蝎各版本工具分析与魔改思路](https://mp.weixin.qq.com/s/3lIOABAiuZd4rOM7SshOEA)
 
 ### 伪装
 [蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)
 
-## by pass
-### by pass WAF
+## bypass
+### bypass WAF
+[看图识WAF-搜集常见WAF拦截页面](https://mp.weixin.qq.com/s/F_K5kzBbUGguugToL8O5_Q)
 [实战 | WAF-Bypass之SQL注入绕过思路总结](https://mp.weixin.qq.com/s/PczKsU3WVRfuZpusr7CxnA)
 [实战 | Post文件上传WAF Bypass总结](https://mp.weixin.qq.com/s/S9-4sMsyXQqtjS4A_ABNGg)
 [实战技巧 | WAF绕过入狱指南](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=1&sn=6f6c9743c4cb4ef9db9a3656c93770cc)
-### by pass uac
+### bypass uac
 administrator 不受影响,其他用户受影响。
 [Bypass UAC方法整理](https://mp.weixin.qq.com/s/vowFqYxX_x0gu2-38TEGFA)
 [Bypass UAC技术总结](https://mp.weixin.qq.com/s/6bGCjqOmav1_ekowCgBhoA)
-### by pass powershell strict
+[Windows提权之bypass UAC 提权](https://mp.weixin.qq.com/s/Vx5BpzkB8Ruai3H6Ch_7mQ)
+### bypass powershell strict
 [Bypass Powershell执行策略的N种方式](https://mp.weixin.qq.com/s/a5cFpw-E4VRY7xbaUdmaTg)
 
 ## 痕迹清理
@@ -184,39 +200,45 @@ administrator 不受影响,其他用户受影响。
 [Docker逃逸那些事儿](https://mp.weixin.qq.com/s/tiniAQ5AhCXm2_mqj_j7iA)
 
 ## 靶场练习
-[Metasploit -- 攻击Metasploitable2靶机](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484255&idx=3&sn=3280a830c3da7243eccd086bc466a7b2)
-[xss-labs靶场通关（一）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247483919&idx=1&sn=c8d7405b318d043864653ab5d7a75e92)
-[xss-labs靶场通关（二）](https://mp.weixin.qq.com/s/xKDkf5CNteU-696tEIMZAw)
-[xss-labs靶场通关（三）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484065&idx=1&sn=843398214846250801186aaacd93f1c4)
-[xss-labs靶场通关（四）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484112&idx=1&sn=a4fbff84ee7e966353f768ff1e72d3aa)
-[ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=1&sn=a48f7ff148cb8d36d75e1426b04182c5)
-[ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680)
-[ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77)
-[ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b)
-[ATT&CK实战系列-红队评估 （五）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=5&sn=374eb562121ef479fd2a8bce5b5e459c)
-[ATT&CK实战系列-红队评估 （六）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=6&sn=23d5a6c9f323c314c6b0ca0dfd8b54b8)
-[ATT&CK实战系列-红队评估 （七）Vulnstack三层网络域渗透靶场](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=7&sn=55960825b1ca582a3b91d3f3ef11b4ac)
-[ATT&CK实战系列-红日-VulnStack内网靶场-ATT&CK（八）-文末下载地址](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
-[【内网渗透系列】1-暗月出师三层网络靶机7 writeup（附带【其他内网靶场】链接地址）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247492091&idx=2&sn=095bbd631029feeb3295e630b9f7e1f7)
-[【内网渗透系列】|14-内网穿透之多层代理](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247500112&idx=1&sn=32cc7236c332b04a7976d62c37b46db0)
-[【内网渗透系列】|15-内网渗透、横向攻击思路（文末赠内网渗透书籍）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247501438&idx=1&sn=cc63097388a6f6db8952c8d4960a3d92)
-[【内网渗透系列】|16-三层网络渗透测试实验（文末附 内网渗透靶场 下载方式）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247503827&idx=1&sn=48a50c41fd93dbab16781a1e882f409d)
-[【内网渗透系列】|17-从公网渗透到内网、拿域控（附：靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247504297&idx=2&sn=9e0ea996008a153b62e0b86ab3ad4db9)
-[【内网渗透系列】|20-一次内网渗透测试实验过程（附靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247505654&idx=2&sn=fa69ec20efda1d8a50ef2c0d02d0e10d)
-[vulnhub |1-Breach1.0（端口、cms、sql注入、tomcat后台shell、nc反弹）](https://mp.weixin.qq.com/s/iYsRfk1Bi_lOumc4L-V_4g)
-[vulnhub |2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw)
-[vulnhub |1-实战中如何运用msf攻击CMS、find命令提权、破解管理员密码](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
-[vulnhub | Me-and-My-Girlfriend(vulnhub)](https://mp.weixin.qq.com/s/nhqa_qZK6ELABfwczDdTbQ)
-[vulnhub | DC2 (vulnhub)](https://mp.weixin.qq.com/s/_tZVJg9g94NOFb3XqtC00g)
-[vulnhub | DC3 (Vulnhub)](https://mp.weixin.qq.com/s/06_Q83WFnoWJ_rfNah_Xgg)
-[vulnhub | DC系列-DC3(joomla漏洞、sqlmap注入、john 解密)](https://mp.weixin.qq.com/s/xS9IQ-PskClt3j1dftFVkw)
-[vulnhub | DC6](https://mp.weixin.qq.com/s/DrBXl2tFOyj6Rr1S8nhLJQ)
-[vulnhub | Moriarty Corp(vulnhub)](https://mp.weixin.qq.com/s/NsvsuX7rUv0GPW4xd7ckpQ)
-[vulnhub | DarkHole:1](https://mp.weixin.qq.com/s/BOF_3caGaZTll4gJpMfNWA)
-[基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
-[实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
-[DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
-[红队渗透测试之vulnerable_docker—docker逃逸（附靶场下载地址）](https://mp.weixin.qq.com/s/vg4bbgV5Zr7_qopsSqSDmg)
+* [三层网络搭建](https://mp.weixin.qq.com/s/DzlujezKjDKwVnf0BkqDRg)
+* [Metasploit -- 攻击Metasploitable2靶机](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484255&idx=3&sn=3280a830c3da7243eccd086bc466a7b2)
+* [xss-labs靶场通关（一）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247483919&idx=1&sn=c8d7405b318d043864653ab5d7a75e92)
+* [xss-labs靶场通关（二）](https://mp.weixin.qq.com/s/xKDkf5CNteU-696tEIMZAw)
+* [xss-labs靶场通关（三）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484065&idx=1&sn=843398214846250801186aaacd93f1c4)
+* [xss-labs靶场通关（四）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484112&idx=1&sn=a4fbff84ee7e966353f768ff1e72d3aa)
+* [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
+* [ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e)
+* [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787)
+* [ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw)
+* [ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b)
+* [ATT&CK实战系列-红队评估 （五）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=5&sn=374eb562121ef479fd2a8bce5b5e459c)
+* [ATT&CK实战系列-红队评估 （六）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=6&sn=23d5a6c9f323c314c6b0ca0dfd8b54b8)
+* [ATT&CK实战系列-红队评估 （七）Vulnstack三层网络域渗透靶场](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=7&sn=55960825b1ca582a3b91d3f3ef11b4ac)
+* [ATT&CK实战系列-红日-VulnStack内网靶场-ATT&CK（八）-文末下载地址](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
+* [【内网渗透系列】1-暗月出师三层网络靶机7 writeup（附带【其他内网靶场】链接地址）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247492091&idx=2&sn=095bbd631029feeb3295e630b9f7e1f7)
+* [【内网渗透系列】|14-内网穿透之多层代理](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247500112&idx=1&sn=32cc7236c332b04a7976d62c37b46db0)
+* [【内网渗透系列】|15-内网渗透、横向攻击思路（文末赠内网渗透书籍）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247501438&idx=1&sn=cc63097388a6f6db8952c8d4960a3d92)
+* [【内网渗透系列】|16-三层网络渗透测试实验（文末附 内网渗透靶场 下载方式）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247503827&idx=1&sn=48a50c41fd93dbab16781a1e882f409d)
+* [【内网渗透系列】|17-从公网渗透到内网、拿域控（附：靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247504297&idx=2&sn=9e0ea996008a153b62e0b86ab3ad4db9)
+* [【内网渗透系列】|20-一次内网渗透测试实验过程（附靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247505654&idx=2&sn=fa69ec20efda1d8a50ef2c0d02d0e10d)
+* [Done | vulnhub |1-Breach1.0（端口、cms、sql注入、keystore,keytool,ssl证书解密pcap,tomcat后台shell、nc反弹）, tomcat证书问题用burp代理访问](https://mp.weixin.qq.com/s/iYsRfk1Bi_lOumc4L-V_4g) [1](https://www.cnblogs.com/zhuxr/p/9848230.html)
+* [vulnhub |2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw)
+* [vulnhub |1-实战中如何运用msf攻击CMS、find命令提权、破解管理员密码](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
+* [vulnhub | Me-and-My-Girlfriend(vulnhub)](https://mp.weixin.qq.com/s/nhqa_qZK6ELABfwczDdTbQ)
+* [vulnhub | DC2 (vulnhub) vi绕过rbash git提权](https://mp.weixin.qq.com/s/_tZVJg9g94NOFb3XqtC00g) [NS Daemon](https://mp.weixin.qq.com/s/601p15_1WpfyTIwfG62TAg)
+* [vulnhub | DC3 (Vulnhub)](https://mp.weixin.qq.com/s/06_Q83WFnoWJ_rfNah_Xgg)
+* [vulnhub | DC系列-DC3(joomla漏洞、sqlmap注入、john 解密)](https://mp.weixin.qq.com/s/xS9IQ-PskClt3j1dftFVkw)
+* [vulnhub | DC6](https://mp.weixin.qq.com/s/DrBXl2tFOyj6Rr1S8nhLJQ)
+* [vulnhub | Moriarty Corp(vulnhub)](https://mp.weixin.qq.com/s/NsvsuX7rUv0GPW4xd7ckpQ)
+* [vulnhub | DarkHole:1](https://mp.weixin.qq.com/s/BOF_3caGaZTll4gJpMfNWA)
+* [Vulnhub tomato 番茄靶场攻略 kernel-exploits](https://mp.weixin.qq.com/s/iyKnlvqqXmbITIduRCbcsQ)
+* [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
+* [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
+* [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
+* [红队渗透测试之vulnerable_docker—docker逃逸（附靶场下载地址）](https://mp.weixin.qq.com/s/vg4bbgV5Zr7_qopsSqSDmg)
+* [pikachu 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
+* [安鸾靶场渗透练习 Discuz 3.2 3.3 3.4 udf提取](https://mp.weixin.qq.com/s/z6lkeadBtkOuKkIzu71QAg)
+
 
 # 蓝队
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
@@ -231,3 +253,4 @@ administrator 不受影响,其他用户受影响。
 
 # Tools
 LogParser 日志分析
+[fofa查询工具 -- chafofa](https://mp.weixin.qq.com/s/vFYs2t7DRX-TGd_xT3BiQw)

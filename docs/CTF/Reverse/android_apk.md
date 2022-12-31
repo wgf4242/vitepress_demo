@@ -156,6 +156,9 @@ https://github.com/APKLab/APKLab
 [移动安全（十）|TengXun加固动态脱壳（下篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=3&sn=40d185a659934c45851273d88353199a)
 
 [脱壳成长之路之二代壳进阶：绕过反调试、函数体回填并修复onCreate](https://mp.weixin.qq.com/s/8tawKAps_4Qu0Pf-PJRn0w)
+### 实战案例
+[某游戏社区App | So层逆向分析](https://mp.weixin.qq.com/s/GOUoBboBzZSxWFWWDKGahw)
+
 ## ab 文件
 abe.jar https://github.com/nelenkov/android-backup-extractor/releases
 
