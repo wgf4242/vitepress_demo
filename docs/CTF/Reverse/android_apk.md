@@ -122,8 +122,14 @@ https://github.com/APKLab/APKLab
 
 
 # Article
+
+## 抓包
+[安全攻防 | APP抓包大全](https://mp.weixin.qq.com/s/SoyZBDoPCX2crBmgM6uKfg)
+
+## 综合
 [入门 | 《安卓逆向这档事》三、初识smali，vip终结者](https://mp.weixin.qq.com/s/Kb8DbEXcthvRfakBRRXHTg)
 [入门 | Android逆向之smali语法宝典](https://www.jianshu.com/p/ba9b374346dd) 
+[Android逆向遇到的环境问题](https://bbs.pediy.com/thread-275251.htm) 
 
 [Android渗透07：安卓CTF系列-案例1](https://mp.weixin.qq.com/s/oY_W5Nt3SrY9OGuK1KGb_g)
 [Android渗透07：安卓CTF系列-案例2](https://mp.weixin.qq.com/s/RdvphrCCEVjPbUqmgcPMaQ)
@@ -132,7 +138,7 @@ https://github.com/APKLab/APKLab
 [Android渗透11：AS与Jeb动态调试Apk](https://mp.weixin.qq.com/s/SOPjvPkuCB2zFZiJ5L7tew)
 [Android渗透12：安卓逆向-IDA动态调试so](https://mp.weixin.qq.com/s/eJVicCY7Y4VEAg8U2dS4hg)
 [【APP 逆向百例】Frida 初体验，root 检测与加密字符串定位](https://mp.weixin.qq.com/s/WfvTA9MJh-NS86LYDVTBzg)
-
+[[分享]之前大家私信我frida的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm) 
 
 [吾爱破解安卓逆向入门教程--导航帖（2018-06）](https://www.52pojie.cn/thread-408645-1-1.html) 
 [【Android 逆向】ART 函数抽取加壳 ② ( 禁用 dex2oat 简介 | TurboDex 中禁用 dex2oat 参考示例 )](https://blog.csdn.net/han1202012/article/details/127416953)
@@ -140,6 +146,18 @@ https://github.com/APKLab/APKLab
 [Android 动态加载 so ！这一篇就够了！](https://mp.weixin.qq.com/s/oLg63d0DElahfERU3B_5nw)
 
 
+[移动安全（二）|APK打包流程及签名安全机制初探](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484330&idx=3&sn=ff6d5033c834535234aa9fb781c247d2)
+[移动安全（三）|一道CTF题的apk逆向实战](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=3&sn=284c3ea1d7149a56a8a2a51b778b0d73)
+[移动安全（四）|NDK开发教程_JavaToC](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484350&idx=2&sn=62ca448940c604feb3ca04d7810cd35b)
+[移动安全（五）|NDK开发教程_普通和静态字段调用](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484377&idx=3&sn=05491cc08171f41444a5593cd5f83e8f)
+[移动安全（七）|实战获取某APP登陆算法](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484393&idx=2&sn=d88be8fbadc529d0ca8eb98749f55918)
+[移动安全（八）|实战获取某合伙人APP登陆算法](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484396&idx=2&sn=e059bc752b8803859c2671b8978dd225)
+[移动安全（九）|TengXun加固动态脱壳（上篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=2&sn=c6abc2fc1f945d5f4c60fa6a92bb9106)
+[移动安全（十）|TengXun加固动态脱壳（下篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=3&sn=40d185a659934c45851273d88353199a)
+
+[脱壳成长之路之二代壳进阶：绕过反调试、函数体回填并修复onCreate](https://mp.weixin.qq.com/s/8tawKAps_4Qu0Pf-PJRn0w)
+### 实战案例
+[某游戏社区App | So层逆向分析](https://mp.weixin.qq.com/s/GOUoBboBzZSxWFWWDKGahw)
 
 ## ab 文件
 abe.jar https://github.com/nelenkov/android-backup-extractor/releases

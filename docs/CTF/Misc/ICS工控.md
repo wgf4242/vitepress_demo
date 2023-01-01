@@ -75,6 +75,7 @@ INV_B取反字节 60=>-60
 
 
 # Article
+[山石安研院2022年度安全研究精华汇](https://mp.weixin.qq.com/s/ubqxSpW3XxM4bcSj9_EHXA)
 [modbus doc](https://openplcproject.com/docs/2-5-modbus-addressing/)
 [[渗透测试]工控安全MMS协议——wp](https://mp.weixin.qq.com/s/XJTdhfWI-gN8518G-Nktzw)
 [工控协议 : S7COMM协议分析(下)](https://mp.weixin.qq.com/s/O9PGN4XXijgSa8u4YSpSsQ)

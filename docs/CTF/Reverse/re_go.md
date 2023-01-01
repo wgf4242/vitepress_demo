@@ -19,3 +19,7 @@ File - Load Script, 加载文件
 
 ## Exercise
 moectf MoeCTF2022_gogogo
+
+# Article
+
+[2022年春秋杯冬季赛_Godeep Go函数ida还原](https://mp.weixin.qq.com/s/tQzJWaAyUT119lNIp_Az7g)

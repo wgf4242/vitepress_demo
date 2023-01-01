@@ -85,6 +85,12 @@ https://hashcat.net/wiki/doku.php?id=example_hashes
 4.小写字母 +数字
 wifi最多爆到root12222
 
+```shell
+
+md5 dict.txt
+hashcat.exe -a 0 -m 0 --force 5a690d842935c51f26f473e025c1b97a  rockyou.txt
+
+
 7位数字破解
 hashcat.exe -a 3 -O -m 0 --force 25c3e88f81b4853f2a8faacad4c871b6 ?d?d?d?d?d?d?d
 
@@ -105,9 +111,23 @@ hashcat.exe -a 3 -O -m 0 --force ab65d749cba1656ca11dfa1cc2383102 --increment --
 hashcat.exe -a 3 -1 123456abcdf!@+- 8b78ba5089b11326290bc15cf0b9a07d ?1?1?1?1?1
 
 zip攻击 7位大小写+数字
+hashcat -m 17220 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 --custom-charset1=?u?d ?1?1?1?1?1?1?1?1
+
+hashcat -m 17210 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 --custom-charset1=?u?d ?1?1?1?1?1?1?1?1
+hashcat -m 17210 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 --custom-charset1=?l?d ?1?1?1?1?1?1?1?1
+hashcat -m 17210 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
 hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
 hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d  --increment --increment-min 1 --increment-max 8  ?1?1?1?1?1?1?1?1
 hashcat -m 17200 -O -a 3 test.hash --custom-charset1=?l?u?d  --increment --increment-min 1 --increment-max 8  ?1?1?1?1?1?1?1?1
+
+# session, checkpoint and restore
+#执行后 按下c保存 checkpoint, 再用 --restore 继续
+hashcat -m 17220 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 --custom-charset1=?a ?1?1?1?1?1?1?1?1
+hashcat --restore
+# with session name
+hashcat -m 17220 -O -a 3 test.hash --session session_name --increment --increment-min 1 --increment-max 8 --custom-charset1=?u?d ?1?1?1?1?1?1?1?1
+hashcat --session session_name --restore
+```
 
 rar5攻击
 ```

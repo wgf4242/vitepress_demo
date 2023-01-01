@@ -24,3 +24,9 @@ avr-objdump -Dx -m avr5 light.ino.hex
 # 转bin, 用010也行自动的
 avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 ```
+
+## Articles
+[安全竞赛中的IoT类题目环境部署方法研究](https://mp.weixin.qq.com/s/DRYEbNNUvXh4ECWgehmzbQ)
+[山石安研院2022年度安全研究精华汇](https://mp.weixin.qq.com/s/ubqxSpW3XxM4bcSj9_EHXA)
+[虚拟化安全｜从一道CTF题目学习KVM](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247494743&idx=1&sn=2f3bede3835ac1874f4fc556df1603f4)
+

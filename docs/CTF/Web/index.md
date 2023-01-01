@@ -131,6 +131,17 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [无字母数字RCE初探](http://www.m0x01sery.com/2022/03/28/rce-without-w-and-n/) 
 [【安全练兵场】| BurpSuite靶场系列之SQL注入](https://mp.weixin.qq.com/s/RqB-vMifxn0-4hrn0OEoHQ)
 [【安全练兵场】| BurpSuite靶场系列之身份验证](https://mp.weixin.qq.com/s/wDWcdTdFRkI8cMK1_pv94w)
+
+[PHP反序列化从0到1](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247496642&idx=1&sn=d1c120b862c75f586492ee9daf011f95)
+[详解PHP反序列化字符逃匿](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247495677&idx=1&sn=8b5d7efcb290219f1af7029078d81012)
+[详解PHP弱类型安全问题](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247494684&idx=1&sn=8264be9d89d29cc3c2c493b9aaa8d35f)
+[Bypass_disable_function总结](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493192&idx=1&sn=e6ec9ea78e2faccc013787376aced1cc)
+[bypass_无参数读文件和RCE的利用](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492577&idx=1&sn=3011d1eebe62226644ad83e9f6fee67a)
+[Android-Webview中的漏洞利用总结](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493433&idx=1&sn=c7f12e2b2afa2b57a9c663d272c40511)
+[SQLite注入](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492558&idx=1&sn=9f77c3df6508345194b6646f31cc4b29)
+[Java | JDBC 反序列化漏洞分析 & POC 编写](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247491462&idx=1&sn=8846b0f6a7ec694ff14722a78bc079d0)
+[Java | JDK8从任意文件写到远程命令执行](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493744&idx=1&sn=e3661151be5be5d88d41b8c88326841c)
+
 ## rce
 [无字母数字Webshell&&冰蝎Webshell](https://mp.weixin.qq.com/s/1PX7_nU7bmqOs3lGb8O8gw)
 
@@ -140,7 +151,8 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 ## 工具/马
 [java 内存马](https://github.com/su18/ysoserial)
 [Reverse Shell Cheat Sheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
-[渗透干货｜史上最全一句话木马](https://mp.weixin.qq.com/s/o_HUnlubJdPRdQdpnMJeEw)
+[史上最全一句话木马](https://mp.weixin.qq.com/s/o_HUnlubJdPRdQdpnMJeEw)
+[ChatGPT 写了“木马”](https://mp.weixin.qq.com/s/C3taCJVQP0RwNSBXoBnJFg)
 
 ## 免杀
 [免杀学习——PHP免杀](https://blog.csdn.net/ZxC789456302/article/details/127473366): 白白白无-免杀学习——PHP免杀----🔥 热度:9113 
@@ -152,3 +164,6 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 ## ssti 
 https://blog.csdn.net/miuzzx/article/details/127744431#t4
 [CTF中SSTI漏洞的简单利用](https://mp.weixin.qq.com/s/pA-ca-b0IYszwjmkCIdYBg)
+
+## AWD
+[Web AWD竞赛的攻击与防御技巧](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493468&idx=1&sn=507cbbb3809c19ad4d16475904bf8001)
