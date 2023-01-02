@@ -46,6 +46,7 @@ result.txt | 搜验证码
 ## 域/Domain
 [域内用户Hash获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
 [某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg)
+[内网渗透 | 最全的内网凭据密码收集方法和技巧总结](https://mp.weixin.qq.com/s/m9lrOYPi73BmXcx8ZnSapA)
 
 ## Exploit/CVE/实战漏洞
 [泛微oa漏洞利用工具 -- WeaverScan](https://mp.weixin.qq.com/s/hpPNgxHnaUR87vvPxwx61w)
@@ -105,6 +106,9 @@ result.txt | 搜验证码
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
 [宝塔后渗透-添加用户|反弹shell](https://mp.weixin.qq.com/s/-MQ36nY6YbAPf6pVecregg)
 [yxcms后台模板写shell](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [2](https://blog.csdn.net/qq_40638006/article/details/122033546)
+[Spring-Core-RCE漏洞 | 漏洞图形化GUI一键利用工具](https://mp.weixin.qq.com/s/FSDTz_yWUXrJsJBEibxAQg)
+[Struts 2.0.0 - Struts 2.0.8 , S2-001 远程代码执行漏洞](https://mp.weixin.qq.com/s/Ams1rVYxJwgH6VHsqyf1XA)
+[Struts 2.0.0 ~ 2.1.8.1 【漏洞复现】S2-005 远程代码执行漏洞(CVE-2010-1870)](https://mp.weixin.qq.com/s/3tNKiQOqmFb9kDSbyO7fzw)
 
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
@@ -178,6 +182,7 @@ administrator 不受影响,其他用户受影响。
 [Bypass UAC方法整理](https://mp.weixin.qq.com/s/vowFqYxX_x0gu2-38TEGFA)
 [Bypass UAC技术总结](https://mp.weixin.qq.com/s/6bGCjqOmav1_ekowCgBhoA)
 [Windows提权之bypass UAC 提权](https://mp.weixin.qq.com/s/Vx5BpzkB8Ruai3H6Ch_7mQ)
+reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f # 需要重启
 ### bypass powershell strict
 [Bypass Powershell执行策略的N种方式](https://mp.weixin.qq.com/s/a5cFpw-E4VRY7xbaUdmaTg)
 
@@ -208,9 +213,9 @@ administrator 不受影响,其他用户受影响。
 * [xss-labs靶场通关（三）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484065&idx=1&sn=843398214846250801186aaacd93f1c4)
 * [xss-labs靶场通关（四）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484112&idx=1&sn=a4fbff84ee7e966353f768ff1e72d3aa)
 * [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
-* [ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e)
+* [ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2)
 * [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787)
-* [ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw)
+* [ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw) [百度网盘](https://pan.baidu.com/s/1iy4MIy6ni6d9F3iypeCYVQ#7mhi)
 * [ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b)
 * [ATT&CK实战系列-红队评估 （五）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=5&sn=374eb562121ef479fd2a8bce5b5e459c)
 * [ATT&CK实战系列-红队评估 （六）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=6&sn=23d5a6c9f323c314c6b0ca0dfd8b54b8)
@@ -239,6 +244,8 @@ administrator 不受影响,其他用户受影响。
 * [红队渗透测试之vulnerable_docker—docker逃逸（附靶场下载地址）](https://mp.weixin.qq.com/s/vg4bbgV5Zr7_qopsSqSDmg)
 * [pikachu 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
 * [安鸾靶场渗透练习 Discuz 3.2 3.3 3.4 udf提取](https://mp.weixin.qq.com/s/z6lkeadBtkOuKkIzu71QAg)
+* [​某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg) [下载](https://pan.baidu.com/s/1DOaDrsDsB2aW0sHSO_-fZQ#vbi2 )
+
 
 
 # 蓝队

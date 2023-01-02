@@ -80,8 +80,81 @@ attacker-pc$ xfreerdp /v:127.0.0.1 /u:MyUser /p:MyPasswd
 
 从attacker-pc转发80并从PC-1使其可用
 ```shell
+# 将pc-1:80 转发到 1.1.1.1,  访问 2.2.2.2:80相当于访问  1.1.1.1:80
 PC-1$ ssh tunne1user@1.1.1.1 -L *:80:127.0.0.1:80 -N
 PC-1$ netsh advfirewall firewall add rule name="Open Port 80" dir=in action=allow protocol=TCP localport=80
+```
+
+3. 动态端口转和sock
+如果目标没有ssh服务器, 以下命令开启代理
+```shell
+PC-1$ ssh tunneluser@1.1.1.1 -R 9050 -N
+# 配合proxychians
+socks4 127.0.0.1 9050
+```
+## socat 端口转发
+
+有时不行换frp
+```shell
+# 本地 1234 转发到 远程 4321
+socat TCP4-LISTEN:1234,fork TCP4:1.1.1.1:4321
+# 本地 822 转发到 本地 8080
+socat TCP4-LISTEN:822,fork TCP4::8080
+```
+
+[SSH+socat](https://blog.51cto.com/u_14028678/3847755)
+```shell
+# ssh -1080 本地1080 转发到 192.168.0.154
+# 本地的 445端口数据通过sock代理转发到10.10.10.129的445端口上。
+ssh -D 1080 user@192.168.175.146
+socat TCP4-LISTEN:445,fork SOCKS4:127.0.0.1:192.168.232.132:445
+# socat->sock默认端口就是 1080 ，使用其他端口要在最后指定 socksport=<port>
+```
+
+![](https://s2.51cto.com/images/blog/202109/10/944febf3e0d057a36652ad7fba9f3e09.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184)
+
+该选项允许 socat为收到的每个连接分叉一个新进程，从而可以在不关闭的情况下处理多个连接。如果不包括它，socat 将在第一个连接完成后关闭。 fork
+回到我们的示例，如果我们想使用 PC-1 作为透视访问服务器上的端口 3389，就像我们对 SSH 远程端口转发所做的那样，我们可以使用以下命令
+
+```shell
+# 将 3.3.3.3:3389 挂载到 localhost:3389
+PC-1$ socat TCP4-LISTEN:3389,fork TCP4:3.3.3.3:3389
+```
+请注意，socat 不能像SSH那样将连接直接转发到攻击者的计算机，但会在PC-1上打开一个端口，然后攻击者的计算机可以连接到该端口:
+
+![](https://s2.loli.net/2023/01/01/1m9HgVTQbzJRjYW.png)
+
+```shell
+# 开防火墙 3389 端口
+PC-1$ netsh advfirewall firewall localport=3389 add rule name="Open Port 3389" dir=in action=allow protacol=TCP
+# 将 1.1.1.1:80服务 挂载到 localhost:80
+PC-1$ socat TCP4-LISTEN:80,fork TCP4:1.1.1.1:80
+```
+
+## gost 端口转发 -- 很全面
+[Link](https://blog.csdn.net/zzlufida/article/details/82972053) 
+[doc v2](https://v2.gost.run/configuration/)
+[doc v3](https://latest.gost.run/)
+
+
+
+将  1.1.1.1:9000 转发到 2.2.2.2:8080
+PC1: 1.1.1.1
+PC2: 2.2.2.2
+
+```shell
+# 创建代理
+PC-1$ gost -L socks5://:2080
+# 访问 1.1.1.1:9000 显示 2.2.2.2:8080
+PC-2$ gost -L=rtcp://:9000/127.0.0.1:8080 -F=socks5://1.1.1.1:2080
+```
+
+代理模式
+```shell
+# 默认是 http+socks5
+gost -L=:8080
+# 将 socks4 转成 http/socks5
+gost -L=:8080 -F=socks4://192.168.50.161:43848
 ```
 
 ## pystinger 仅web服务权限不出网使用

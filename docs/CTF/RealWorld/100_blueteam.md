@@ -40,3 +40,6 @@ root 密码
 创建新用户给 web, 并配置 /var/www/html/Config.php 或 conn.php
 local_infile = 0
 ```
+
+# Article
+[干货|内存马检测排查手段 （附工具 ）](https://mp.weixin.qq.com/s/Hr8AEK1HVgc_6T6i1pUhWQ)
