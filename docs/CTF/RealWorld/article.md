@@ -6,6 +6,7 @@
 [绕过CDN查询网站的真实IP地址](https://mp.weixin.qq.com/s/nlEwhkC9-hW6r9dYtBX1AA)
 [一个鉴别 cdn 的小工具](https://mp.weixin.qq.com/s/RuXWYm18paTcyfUABfgcBg)
 [awvs14 扫描脚本](https://mp.weixin.qq.com/s/hOTaFBHEOaYwXyzkQ32GtA) https://github.com/test502git/awvs14-scan
+[FOFA | 指纹识别搜索 | 漏洞POC及指纹识别库（更新至2022年12月）](https://mp.weixin.qq.com/s/_4c1ZgU-WeQl8GN90B2nfw)
 
 ## 内网横向移动
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
@@ -28,6 +29,7 @@
 [安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
 [反弹Shell | 一款基于SSH的反向Shell工具](https://mp.weixin.qq.com/s/0Rx_FvSMV5l4mdf9qCMZrg)
 [todesk在红队中的使用](https://mp.weixin.qq.com/s/XhHdLt2HJMUOJFF6aRtygw)
+[todesk获取密码,rustdesk『红蓝对抗』远控软件小技巧](https://mp.weixin.qq.com/s/DvqFKMRzg6FCJtUdkk4hhA)
 
 ## Sql/Database
 [sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)
@@ -49,6 +51,11 @@ result.txt | 搜验证码
 [内网渗透 | 最全的内网凭据密码收集方法和技巧总结](https://mp.weixin.qq.com/s/m9lrOYPi73BmXcx8ZnSapA)
 
 ## Exploit/CVE/实战漏洞
+[一个漏洞Poc知识库](https://github.com/Cuerz/PoC-ExP)
+
+[[Web漏洞-XXE&XML漏洞]](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485040&idx=1&sn=820cc31cf2e2d251814a2cf09ab6be7a)
+[[Web漏洞]-(XSS详解)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485012&idx=1&sn=695f6ea23f8f8dc0d83f5f3c753befad)
+
 [泛微oa漏洞利用工具 -- WeaverScan](https://mp.weixin.qq.com/s/hpPNgxHnaUR87vvPxwx61w)
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
 [泛微 EOffice10 sql注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484992&idx=1&sn=461895617739b662d412648034b36ef7)
@@ -59,6 +66,8 @@ result.txt | 搜验证码
 [ThinkPHP 3.1.3 | 某外汇常用CMS通用未授权RCE](https://mp.weixin.qq.com/s/SJ-rCRIkqT3COP9jdKBY_g)
 [ThinkPHP远程代码执行漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247485017&idx=1&sn=82730143a26bfb4eeec1d9daa6671d17)
 [ThinkPHP 6.x反序列化POP链（一）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484192&idx=3&sn=1d97d5acb16026cdd2e0600bf3151c2f)
+[Thinkphp6-Lang-rce](https://mp.weixin.qq.com/s/7SlTUoeYAtqNhlInz7BGRg)
+
 [yii && gii ctf篇 | 第五空间 codereview](https://mp.weixin.qq.com/s/Ivq3E3ubj-A1sWGp1zpbTA)
 [Log4j2 漏洞实战案例](https://mp.weixin.qq.com/s/1I_cNwHso1LqXkRk0LARlg)
 [2022年最常被利用的十大漏洞](https://mp.weixin.qq.com/s/hdlHQNIgTF7PS7lHY8slCw)
@@ -66,8 +75,8 @@ result.txt | 搜验证码
 [WebSocket安全漏洞-攻击示例](https://mp.weixin.qq.com/s/-VazGZD9GLTqVPBiHFnccw)
 [WebSocket安全漏洞-概念梳理](https://mp.weixin.qq.com/s/dIGG9h-NSmX4yUyFuIqgCw)
 [Web协议层安全之websocket安全分析](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493997&idx=1&sn=9e6b5b6b1c1728a64980397ceb82aeb7)
-[OA综合利用工具（集合将近20款OA漏洞）](https://mp.weixin.qq.com/s/ZFW5phEN-0iAv4Pw4w8TkA)
 
+[OA综合利用工具（集合将近20款OA漏洞）](https://mp.weixin.qq.com/s/ZFW5phEN-0iAv4Pw4w8TkA)
 [通达OA v11.5 login_code.php 任意用户登录](https://mp.weixin.qq.com/s/7723ZW4-19JvqmMAVS4pcw)
 [通达OA命令执行方法探索（续）](https://mp.weixin.qq.com/s/TfMs5DwwLoIVjT96lhhdvQ)
 [通达OA高版本getshell思路（附部分脚本）](https://mp.weixin.qq.com/s/vHR1mOmu2xf_irKRxhFxIw)
@@ -91,7 +100,9 @@ result.txt | 搜验证码
 [华天动力 OA 任意文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484844&idx=1&sn=a314754ee9d480691dc53a7295bc1fd7)
 
 [禅道12.4.2后台管理员权限Getshell复现](https://cloud.tencent.com/developer/article/1749477)
-[禅道V16.5SQL注入漏洞（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484766&idx=1&sn=bd15f286ff1e21d3df2e0043ef60e206)
+[禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484766&idx=1&sn=bd15f286ff1e21d3df2e0043ef60e206)
+[禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485213&idx=2&sn=f5fda7a7c5de099c3f8ae7d3b5656bf5)
+
 
 [KindEditor 文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484734&idx=1&sn=7508249f8d3a867617020338d3988404)
 [phpcms v9.6.0 会员注册界面远程文件下载getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484720&idx=1&sn=31a54a15eb8602d9fdd7b1f36f1067c0)
@@ -100,15 +111,29 @@ result.txt | 搜验证码
 
 [IIS PUT漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=1&sn=6d5f4d8c89d0178492e42cd0663c5009)
 [Redis未授权访问漏洞(windows环境](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484286&idx=1&sn=6250d89d18ea635bda32e815fdcc5f6d)
-[【漏洞复现】Weblogic漏洞搭建与复现：弱口令与后台 Getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=2&sn=03a6427e19436c690d0966c7746461c5)
+[Weblogic | 漏洞搭建与复现：弱口令与后台 Getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=2&sn=03a6427e19436c690d0966c7746461c5)
+[Weblogic | CVE 漏洞总结](https://mp.weixin.qq.com/s/vUrWyOZbDqynlN2xdFMAFQ)
+[Weblogic | 反序列化远程代码执行漏洞(CVE-2019-2725)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485549&idx=1&sn=7c0ae29b49887d50327c46160be1b5e9)
+[Weblogic | 未授权绕过RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485533&idx=1&sn=bc34af894ff2cd03dab543ceb1338762)
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
-[宝塔后渗透-添加用户|反弹shell](https://mp.weixin.qq.com/s/-MQ36nY6YbAPf6pVecregg)
+[宝塔 | 后渗透-添加用户|反弹shell](https://mp.weixin.qq.com/s/-MQ36nY6YbAPf6pVecregg)
+[宝塔 | 密码生成规则 当我在内网遇到宝塔......](https://mp.weixin.qq.com/s/5Uhq1t4DIE28jlt85SX3BQ)
 [yxcms后台模板写shell](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [2](https://blog.csdn.net/qq_40638006/article/details/122033546)
 [Spring-Core-RCE漏洞 | 漏洞图形化GUI一键利用工具](https://mp.weixin.qq.com/s/FSDTz_yWUXrJsJBEibxAQg)
 [Struts 2.0.0 - Struts 2.0.8 , S2-001 远程代码执行漏洞](https://mp.weixin.qq.com/s/Ams1rVYxJwgH6VHsqyf1XA)
 [Struts 2.0.0 ~ 2.1.8.1 【漏洞复现】S2-005 远程代码执行漏洞(CVE-2010-1870)](https://mp.weixin.qq.com/s/3tNKiQOqmFb9kDSbyO7fzw)
+[Struts 2.1.0 ~ 2.3.1 【漏洞复现】S2-008 远程代码执行漏洞(CVE-2012-0391)](https://mp.weixin.qq.com/s/PfuG4FRra7OEtgQ9krFSmg)
+[Struts 2.1.0 ~ 2.3.13 【漏洞复现】S2-012 远程代码执行漏洞(CVE-2013-1965)](https://mp.weixin.qq.com/s/V2dZjvOB1MnAXmZYKM52HA)
+[Struts 2.0.0 ~ 2.3.14.1【漏洞复现】S2-013 远程代码执行漏洞(CVE-2013-1966)](https://mp.weixin.qq.com/s/EleJfjEsxsJfmq3eDKv-pA)
+[Struts 2.0.0 ~ 2.5.20 CVE-2019-0230 S2-059远程代码执行](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483849&idx=2&sn=04522570cd8ea723131ca4ffeeba83f9)
+[Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
+[Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
+
+[JBoss未授权漏洞复现](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485334&idx=1&sn=0bba17412525af0cf9c5ff5cc63bf2a5)
+[JBoss 4.x JBossMQ JMS 反序列化漏洞（CVE-2017-7504）](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485314&idx=1&sn=5c66488436cf10de927df74cf35ca9ad)
+[JBOSS [CVE-2017-7504-JBoss JMXInvokerServlet 反序列化]](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485285&idx=1&sn=c3402b0dc9a6404522bf2ce6f495dc8a)
 
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
@@ -213,10 +238,11 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [xss-labs靶场通关（三）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484065&idx=1&sn=843398214846250801186aaacd93f1c4)
 * [xss-labs靶场通关（四）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484112&idx=1&sn=a4fbff84ee7e966353f768ff1e72d3aa)
 * [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
-* [ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2)
+* [Done | ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2)
 * [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787)
-* [ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw) [百度网盘](https://pan.baidu.com/s/1iy4MIy6ni6d9F3iypeCYVQ#7mhi)
-* [ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b)
+* [Web安全入门进阶靶场实战](http://vulnstack.qiyuanxuetang.net/vuln/detail/4/) [百度网盘](https://pan.baidu.com/s/1K8o3b5nXEcE0AXJnZ7vRMw#mb6q)
+* [Done | ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw) [百度网盘](https://pan.baidu.com/s/1iy4MIy6ni6d9F3iypeCYVQ#7mhi)
+* [ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b) [下载](https://pan.baidu.com/s/1j4n8x1bil7hlX4uirOZcIA#0u8k)
 * [ATT&CK实战系列-红队评估 （五）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=5&sn=374eb562121ef479fd2a8bce5b5e459c)
 * [ATT&CK实战系列-红队评估 （六）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=6&sn=23d5a6c9f323c314c6b0ca0dfd8b54b8)
 * [ATT&CK实战系列-红队评估 （七）Vulnstack三层网络域渗透靶场](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=7&sn=55960825b1ca582a3b91d3f3ef11b4ac)

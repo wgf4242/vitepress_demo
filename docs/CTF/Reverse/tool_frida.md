@@ -106,7 +106,7 @@ frida-kill -D <DEVICE-ID> <PID>
 ```
 
 ### objection
-```sh
+```shell
 pip install objection
 
 # 例1 将objection注入应用
@@ -121,9 +121,14 @@ memory dump all from_base
 
 # 修改返回值
 android hooking set return_value com.example.test.rootUtils.isRooted false
+
+# list methods, 列出有哪些方法
+android hooking list class_method com.hfdcxy.android.by.test.a.a
+# 查看调用了哪些函数
+android hooking watch class com.hfdcxy.android.by.test.a.a
 ```
 
-```
+```shell
 # 例2 xctf app3 https://bbs.pediy.com/thread-273733.htm
 
 # hook 数据库拿密码
@@ -154,7 +159,7 @@ frida process_name/pid
 ```
 
 优先目标启动
-```
+```shell
 frida .\TestAdd.exe
 %resume
 ```

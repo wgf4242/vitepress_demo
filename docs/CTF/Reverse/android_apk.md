@@ -2,7 +2,7 @@
 [练习 | UnCrackable Mobile Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)
 [Android NDK开发](https://gift1a.github.io/2022/09/06/Android-Learning/#Android-NDK%E5%BC%80%E5%8F%91)
 [Android loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/zj5isP6dGu-mTNpJN1W3BQ)
-[给大家分享一下这几年学习Android逆向遇到的环境问题吧，希望大家不要在这上面浪费时间](https://bbs.pediy.com/thread-275251.htm) 
+[Android Studio调试Smali | 给大家分享一下这几年学习Android逆向遇到的环境问题吧，希望大家不要在这上面浪费时间](https://bbs.pediy.com/thread-275251.htm) 
 
 # 执行流程
 1.dex脱壳 - blackdex
@@ -156,6 +156,7 @@ https://github.com/APKLab/APKLab
 [移动安全（十）|TengXun加固动态脱壳（下篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=3&sn=40d185a659934c45851273d88353199a)
 
 [脱壳成长之路之二代壳进阶：绕过反调试、函数体回填并修复onCreate](https://mp.weixin.qq.com/s/8tawKAps_4Qu0Pf-PJRn0w)
+[快捷操作 | intent, top 移动端漏洞分析](https://mp.weixin.qq.com/s/rtQD14v-7tsA8feABffPNg)
 ### 实战案例
 [某游戏社区App | So层逆向分析](https://mp.weixin.qq.com/s/GOUoBboBzZSxWFWWDKGahw)
 

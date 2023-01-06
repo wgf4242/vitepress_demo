@@ -138,7 +138,8 @@ PC-1$ socat TCP4-LISTEN:80,fork TCP4:1.1.1.1:80
 
 
 
-将  1.1.1.1:9000 转发到 2.2.2.2:8080
+__端口转发:__
+将 1.1.1.1:9000 转发到 2.2.2.2:8080
 PC1: 1.1.1.1
 PC2: 2.2.2.2
 
@@ -146,7 +147,15 @@ PC2: 2.2.2.2
 # 创建代理
 PC-1$ gost -L socks5://:2080
 # 访问 1.1.1.1:9000 显示 2.2.2.2:8080
+PC-2$ gost -L=rtcp://:9000/:8080 -F=socks5://1.1.1.1:2080
 PC-2$ gost -L=rtcp://:9000/127.0.0.1:8080 -F=socks5://1.1.1.1:2080
+# 转发多个端口
+PC-2$ gost -L=rtcp://:9001/:8081 -L=rtcp://:9000/:8080 -F=socks5://192.168.50.232:2080
+
+
+# 本地端口转发, 可转成走代理的端口
+gost -L=tcp://:1234/192.168.50.80:8000 # 1234端口转发到 192.168.50.80:8000
+gost -L=tcp://:2222/192.168.1.1:22 [-F=...]
 ```
 
 代理模式
@@ -191,6 +200,25 @@ run
 ```shell
 tsocks curl http://myexternalip.com &
 ```
+# 远程桌面
+xfreerdp
+## remmina
+
+socks5代理
+```shell
+vi ~/.local/share/remmina/xxx.remmina
+proxy_hostname=192.168.50.161
+proxy_type=socks5
+proxy_port=2080
+# http代理
+http_proxy=http://username:password@proxyserver.net:port/
+http_proxy=http://192.168.50.161:2080/
+```
+## rustdesk 多平台/支持内网点对点
+[Link](https://github.com/rustdesk/rustdesk/releases)
+
+允许IP: ID右侧三个点 -> 允许IP直连
+
 
 # other
 

@@ -40,6 +40,10 @@ root 密码
 创建新用户给 web, 并配置 /var/www/html/Config.php 或 conn.php
 local_infile = 0
 ```
+## 边缘机器加固
+见 ATT&CK实战系列-红队评估 （三）
+1. 内网机器建立服务, 并且断掉网关。交机换中禁止其出网
+2. 边缘机器 代理内网机器服务。# 即使被控无法直接弹shell
 
 # Article
 [干货|内存马检测排查手段 （附工具 ）](https://mp.weixin.qq.com/s/Hr8AEK1HVgc_6T6i1pUhWQ)

@@ -24,6 +24,7 @@ ms08_067 # (445端口, 2008以外系统, KB958644)
 search ms17_010 # (永恒之蓝)
 ```
 3. Web:  kali - web程序 -  ZAP 扫描
+- 3.1 web 目录遍历 `downfile.jsp?filename=fan.pdf` 测试 `../../../../etc/passwd`
 4. [linux suid find 提权](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
 ```shell
 find / -perm -4000 # 如果有find 执行下面

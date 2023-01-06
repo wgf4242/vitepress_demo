@@ -129,6 +129,8 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 # Article
 
 [无字母数字RCE初探](http://www.m0x01sery.com/2022/03/28/rce-without-w-and-n/) 
+[Web安全-RCE代码及命令执行漏洞](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485274&idx=1&sn=590247ec93cd869b37e11f4d4208fd42)
+
 [【安全练兵场】| BurpSuite靶场系列之SQL注入](https://mp.weixin.qq.com/s/RqB-vMifxn0-4hrn0OEoHQ)
 [【安全练兵场】| BurpSuite靶场系列之身份验证](https://mp.weixin.qq.com/s/wDWcdTdFRkI8cMK1_pv94w)
 
@@ -141,6 +143,8 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [SQLite注入](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492558&idx=1&sn=9f77c3df6508345194b6646f31cc4b29)
 [Java | JDBC 反序列化漏洞分析 & POC 编写](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247491462&idx=1&sn=8846b0f6a7ec694ff14722a78bc079d0)
 [Java | JDK8从任意文件写到远程命令执行](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493744&idx=1&sn=e3661151be5be5d88d41b8c88326841c)
+## PHP
+[PHP原生类在安全方面的利用总结 | echo new a(b) | Error/Exception内置类绕过哈希比较 | SoapClient类进行SSRF | SimpleXMLElement类进行XXE](https://mp.weixin.qq.com/s/CDNU1RgfeliURN69UZqCTA)
 
 ## rce
 [无字母数字Webshell&&冰蝎Webshell](https://mp.weixin.qq.com/s/1PX7_nU7bmqOs3lGb8O8gw)
