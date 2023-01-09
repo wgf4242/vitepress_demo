@@ -16,5 +16,10 @@
 
 [linux kernel ROP 下的保护机制绕过](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497175&idx=1&sn=4ea7737c33bf2d6f5c627e5a3bde840f)
 [linux kernel 结构体利用 — tty,seq](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497382&idx=1&sn=3af9f1d3e1410968f4e79f8c7d4cb7af)
+## Tutorial
+[【星盟安全】PWN系列教程 第18节 堆chunk介绍以及源码剖析](https://www.bilibili.com/video/BV1NU4y187te)
+[【星盟安全】PWN系列教程 第19节 UAF](https://www.bilibili.com/video/BV1Ud4y1j7Nw)
+[【星盟安全】PWN系列教程 第22节 Fastbin](https://www.bilibili.com/video/BV1Xf4y1a7VK)
+
 ## Video
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN

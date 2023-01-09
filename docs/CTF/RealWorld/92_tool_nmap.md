@@ -1,6 +1,12 @@
 ## Nmap
 主机探测(一)
 
+```shell
+# 常用
+proxychains4 nmap -Pn -sT -T4 -p21,22,135,445,80,53,3389,8080,1433,8080 192.168.183.129
+nmap -sV -Pn -n --proxies socks4://127.0.0.1:9050 scanme.nmap.org
+```
+
 * 扫描单个主机
 * nmap 192.168.1.2
 * 扫描整个子网,命令如下:

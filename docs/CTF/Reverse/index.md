@@ -15,6 +15,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 3. bindiff, 恢复符号
 2. 见 ## 程序执行顺序, 有没SEH
 3. ida打不开/ghidra/cutter
+4. apk: jadx, jeb都打开 jeb能解些 brainfucks
 4. 输入fuzz
    - L1. 输入 1 ascii: 49, -> out1
    - L1. 输入 b ascii: 98, -> out2
