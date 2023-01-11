@@ -10,6 +10,8 @@
 
 ## 内网横向移动
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
+[多层网段渗透-真正理解socks代理隧道技术](https://mp.weixin.qq.com/s/T5Op0G54sIKUJMZYwwav3A)
+
 [一个内网安全攻防的知识仓库](https://mp.weixin.qq.com/s/sP6t_TjAt0H1ELViqhzVlg)
 [红队实战（一）学习内网渗透](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e)
 
@@ -172,6 +174,7 @@ result.txt | 搜验证码
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API安全01：crAPI漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 [API | 工具|10大API安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
+[渗透实战系列](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
@@ -189,6 +192,7 @@ Themia加壳过火绒
 exe | darkarmour: `python darkarmour.py -f shell.exe -e xor -j -k sanker -l 20 -u -o bypass_shell.exe`
 [免杀生成与木马捆绑工具 -- rsmaker](https://mp.weixin.qq.com/s/ozZoTlG3e_M0eKxBu6hcLg)
 [隐写RGB-mimikatz读取绕过杀软](https://mp.weixin.qq.com/s/igmZ7e9qOC_9zAyoolAd0g)
+[红队渗透-免杀-7-msfmania过杀软实现免杀-哔哩哔哩](https://www.bilibili.com/video/BV18d4y1E7Q1)
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
@@ -254,13 +258,14 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
 * [【内网渗透系列】1-暗月出师三层网络靶机7 writeup（附带【其他内网靶场】链接地址）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247492091&idx=2&sn=095bbd631029feeb3295e630b9f7e1f7)
 * [【内网渗透系列】|14-内网穿透之多层代理](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247500112&idx=1&sn=32cc7236c332b04a7976d62c37b46db0)
-* [【内网渗透系列】|15-内网渗透、横向攻击思路（文末赠内网渗透书籍）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247501438&idx=1&sn=cc63097388a6f6db8952c8d4960a3d92)
+* [【内网渗透系列】|15-内网渗透、横向攻击思路](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247501438&idx=1&sn=cc63097388a6f6db8952c8d4960a3d92)
 * [【内网渗透系列】|16-三层网络渗透测试实验（文末附 内网渗透靶场 下载方式）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247503827&idx=1&sn=48a50c41fd93dbab16781a1e882f409d)
 * [【内网渗透系列】|17-从公网渗透到内网、拿域控（附：靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247504297&idx=2&sn=9e0ea996008a153b62e0b86ab3ad4db9)
 * [【内网渗透系列】|20-一次内网渗透测试实验过程（附靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247505654&idx=2&sn=fa69ec20efda1d8a50ef2c0d02d0e10d)
 * [Done | vulnhub |1-Breach1.0（端口、cms、sql注入、keystore,keytool,ssl证书解密pcap,tomcat后台shell、nc反弹）, tomcat证书问题用burp代理访问](https://mp.weixin.qq.com/s/iYsRfk1Bi_lOumc4L-V_4g) [1](https://www.cnblogs.com/zhuxr/p/9848230.html)
-* [vulnhub |2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw)
+* [VulnHub渗透测试实战靶场笔记](https://blog.csdn.net/qq_37113223/article/details/104668136)
 * [vulnhub |1-实战中如何运用msf攻击CMS、find命令提权、破解管理员密码](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
+* [vulnhub |2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw) [Download](https://download.vulnhub.com/billu/Billu_b0x.zip)
 * [vulnhub | Me-and-My-Girlfriend(vulnhub)](https://mp.weixin.qq.com/s/nhqa_qZK6ELABfwczDdTbQ)
 * [vulnhub | DC2 (vulnhub) vi绕过rbash git提权](https://mp.weixin.qq.com/s/_tZVJg9g94NOFb3XqtC00g) [NS Daemon](https://mp.weixin.qq.com/s/601p15_1WpfyTIwfG62TAg)
 * [vulnhub | DC3 (Vulnhub)](https://mp.weixin.qq.com/s/06_Q83WFnoWJ_rfNah_Xgg)

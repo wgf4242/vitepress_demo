@@ -330,5 +330,9 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)
 ## vm
 [记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)
+## Game
+
+[【逆向安全】快速搜索FPS游戏相机矩阵_矩阵特性1-哔哩哔哩](https://www.bilibili.com/video/BV1s3411D7JU)
+
 ## 工具
 LIEF | 对ELF添加 section, segment

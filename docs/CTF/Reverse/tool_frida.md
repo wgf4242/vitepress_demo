@@ -259,12 +259,11 @@ https://www.jianshu.com/p/a36f49ed666b
 Frida常用方法汇总 https://www.996station.com/1030
 https://www.anquanke.com/post/id/195215
 
-##  入门文章
+# Article
 [frida-snippets](https://github.com/iddoeldor/frida-snippets)
 [Frida学习笔记](https://zyzling.gitee.io/2020/05/12/Frida学习笔记/)
 [实用FRIDA进阶：内存漫游、hook anywhere、抓包/objection](https://www.anquanke.com/post/id/197657)
 [之前大家私信我frida的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm) 
-
 
 [_[原创]初识Frida--Android逆向之Java层hook (一) ](https://bbs.pediy.com/thread-227232.htm)
 [初识Frida--Android逆向之Java层hook (二)](https://bbs.pediy.com/thread-227233.htm)
@@ -274,6 +273,12 @@ https://www.anquanke.com/post/id/195215
 ## Brida
 [[原创]Frida配合BurpSuite的Brida插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
 [Android渗透测试frida——Brida插件加解密实战演示](https://xz.aliyun.com/t/7562?page=34)
+## Video
+[使用Frida 和 Unidbg 获取 so 在内存中的基址](https://www.bilibili.com/video/BV1aG4y1E73x/)
+[拔出萝卜带出泥！最新Fulao2破了frida检测后，再用frida-dexdump来把壳脱下来~全套代码都在dex中，毫无秘密可言！](https://www.bilibili.com/video/BV1NR4y1k7J3/)
+[Frida基操之三种日志级别的使用](https://www.bilibili.com/video/BV1MD4y1Y7yA/)
+[使用pyenv安装最新的Frida16](https://www.bilibili.com/video/BV1714y1E7Rq/)
+
 ## FAQ
 
 1. app Failed to spawn: unexpectedly timed out while waiting for app to launch

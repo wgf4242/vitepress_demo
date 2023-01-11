@@ -159,6 +159,11 @@ https://github.com/APKLab/APKLab
 [快捷操作 | intent, top 移动端漏洞分析](https://mp.weixin.qq.com/s/rtQD14v-7tsA8feABffPNg)
 ### 实战案例
 [某游戏社区App | So层逆向分析](https://mp.weixin.qq.com/s/GOUoBboBzZSxWFWWDKGahw)
+[买车报价APP sign分析](https://mp.weixin.qq.com/s/lmUOwnLAH2lbvWB4uIN6pg)
+[某汽车社区App 签名和加解密分析 (二) : Frida Dump so](https://blog.51cto.com/u_15527932/5205322)
+## 混淆加密
+[开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)
+[Dex控制流混淆-AS插件版](https://www.bilibili.com/video/BV1MG4y1574m/)
 
 ## ab 文件
 abe.jar https://github.com/nelenkov/android-backup-extractor/releases
