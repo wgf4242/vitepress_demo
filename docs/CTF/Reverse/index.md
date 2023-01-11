@@ -321,6 +321,7 @@ https://github.com/acheong08/ChatGPT
 
 ## PE
 [详解二进制PE文件 | 导入表技术](https://mp.weixin.qq.com/s/eu14EHuNup0Y504qY3rsDg)
+[手动展开PE文件 | 二进制安全](https://mp.weixin.qq.com/s/VcKtwTn4fh8nyPVhYxkrmQ)
 
 ## 模拟运行
 [Qiling框架模拟运行固件配合IDA动态调试](https://mp.weixin.qq.com/s/PsWTcazrgj0Lv-6ZNNkx3g)

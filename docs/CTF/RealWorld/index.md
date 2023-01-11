@@ -21,7 +21,9 @@ Web漏洞分析
   cd /usr/share/exploitdb/exploits/php/webapps
   cat 46150.txt
 ```
-1.1 cs上线后联动msf, cs 插件 收集域信息
+1.1 cs上线
+1.1.1 beacon > logonpasswords
+1.1.1 联动msf, cs 插件 收集域信息
 2. msfconsole
 ```shell
 migrate

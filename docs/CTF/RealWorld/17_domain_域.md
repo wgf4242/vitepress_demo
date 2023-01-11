@@ -107,3 +107,8 @@ schtasks /create /S WIN-ENS2VR5TR3N /TN "test" /TR c:/1.bat /SC MINUTE /ST 21:27
 :: 下一步 psexec
 ```
 
+
+
+# Article
+
+[域内定位个人PC的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)
