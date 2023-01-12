@@ -172,3 +172,6 @@ abe.jar https://github.com/nelenkov/android-backup-extractor/releases
 ```bat
 java -jar abe.jar unpack 1.ab 1.tar
 ```
+
+## 小程序
+[【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)

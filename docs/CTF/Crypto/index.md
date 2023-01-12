@@ -35,6 +35,7 @@ $$
 [密码学｜5.3.4 随机变量](https://mp.weixin.qq.com/s/xgG7mXJxHE5j431Xu88biA)
 [密码学｜5.3.5 期望](https://mp.weixin.qq.com/s/E9e9VBXngoWni87KtUL62w)
 [密码学｜5.4 碰撞算法与中间相遇攻击](https://mp.weixin.qq.com/s/CCDVlB_OafzzNVMBlrm6rg)
+[密码学｜5.4.2 碰撞定理](https://mp.weixin.qq.com/s/5e_YadgGSvN7c6ADWpGtSw)
 
 [AES](https://bbs.pediy.com/thread-253884.htm)
 [Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)

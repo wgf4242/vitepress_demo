@@ -128,6 +128,8 @@ result.txt | 搜验证码
 [Struts 2.0.0 ~ 2.3.14.1【漏洞复现】S2-013 远程代码执行漏洞(CVE-2013-1966)](https://mp.weixin.qq.com/s/EleJfjEsxsJfmq3eDKv-pA)
 [Struts 2.0.0 ~ 2.5.20 CVE-2019-0230 S2-059远程代码执行](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483849&idx=2&sn=04522570cd8ea723131ca4ffeeba83f9)
 [Struts 2.0.0 ~ 2.3.15【漏洞复现】S2-015 远程代码执行漏洞(CVE-2013-2134)](https://mp.weixin.qq.com/s/WoPCyBJeASmpng9e-H1Mpg)
+[Struts 2.0.0 ~ 2.3.15【漏洞复现】S2-016 远程代码执行漏洞(CVE-2013-2251)](https://mp.weixin.qq.com/s/ZREGO8utREF_C323MLclnA)
+
 [Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
 [Apache | 春秋云镜-CVE-2022-33980（Apache Commons Configuration远程命令执行漏洞）](https://mp.weixin.qq.com/s/EhatzI7QVmh_RQZYOWNBYg)
@@ -171,10 +173,11 @@ result.txt | 搜验证码
 ## 渗透测试
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
 [干货 | Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
+[渗透实战系列](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API安全01：crAPI漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 [API | 工具|10大API安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
-[渗透实战系列](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
+[API | 挖洞随记-js接口泄露隱藏接口导致文件上传漏洞](https://mp.weixin.qq.com/s/DPJtJEYgyo15kX4FLw1pRQ)
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
