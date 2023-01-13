@@ -99,6 +99,7 @@ result.txt | 搜验证码
 [禅道12.4.2后台管理员权限Getshell复现](https://cloud.tencent.com/developer/article/1749477)
 [禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484766&idx=1&sn=bd15f286ff1e21d3df2e0043ef60e206)
 [禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485213&idx=2&sn=f5fda7a7c5de099c3f8ae7d3b5656bf5)
+[禅道 17.4以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞分析](https://mp.weixin.qq.com/s/ZHsYaU31WkzAJijy1V0U1w)
 
 
 [KindEditor 文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484734&idx=1&sn=7508249f8d3a867617020338d3988404)
@@ -276,6 +277,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [vulnhub | DC6](https://mp.weixin.qq.com/s/DrBXl2tFOyj6Rr1S8nhLJQ)
 * [vulnhub | Moriarty Corp(vulnhub)](https://mp.weixin.qq.com/s/NsvsuX7rUv0GPW4xd7ckpQ)
 * [vulnhub | DarkHole:1](https://mp.weixin.qq.com/s/BOF_3caGaZTll4gJpMfNWA)
+* [vulnhub | Raven-1](https://mp.weixin.qq.com/s/cIMCWOs0ydzw8TcaFGwLkQ) [Download](https://www.vulnhub.com/entry/raven-1,256/)
 * [Vulnhub tomato 番茄靶场攻略 kernel-exploits](https://mp.weixin.qq.com/s/iyKnlvqqXmbITIduRCbcsQ)
 * [Vulnhub-MyCmsms](https://mp.weixin.qq.com/s/OEFBzaB73gi-U9JHf4KHEQ)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
