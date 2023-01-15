@@ -270,6 +270,9 @@ https://www.anquanke.com/post/id/195215
 [【实战篇】Frida-objection 基础使用获取FLAG ](https://bbs.pediy.com/thread-273733.htm)
 [某汽车社区App 签名和加解密分析 (二) : Frida Dump so](https://blog.51cto.com/u_15527932/5205322)
 
+[安卓协议逆向之frida hook百例](https://www.52pojie.cn/thread-1711668-1-1.html) 
+[安卓协议逆向之frida hook百例二](https://www.52pojie.cn/thread-1712752-1-1.html) 
+
 ## Brida
 [[原创]Frida配合BurpSuite的Brida插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
 [Android渗透测试frida——Brida插件加解密实战演示](https://xz.aliyun.com/t/7562?page=34)

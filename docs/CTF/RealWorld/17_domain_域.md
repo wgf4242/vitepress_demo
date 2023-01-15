@@ -14,7 +14,7 @@ ping OWA # 域控主机即可获得域控IP
 net group "domain computers" /domain
 # 查看域管理员
 Net group "domain admins" /domain
-# 查看本地管理组
+# 登陆本机的域管理员
 net localgroup administrators /domain
 
 # 三种情况

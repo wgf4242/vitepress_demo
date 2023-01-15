@@ -209,6 +209,7 @@ adb -s "emulator-5554" install attachment-16.apk
 
 ### UPX/ESP定律
 https://www.52pojie.cn/thread-326995-1-1.html
+[完美UPX脱壳------之投怀送抱篇（适合所有变形）](https://www.52pojie.cn/thread-1673206-1-1.html) 
 
 1.检查是UPX，但无法脱壳。
 
@@ -315,6 +316,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ## Windows
 [Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)
 [syscall的检测与绕过](https://mp.weixin.qq.com/s/wWddKGu-W9WZsMyM3XemOg)
+[SYSENTER HOOK](https://mp.weixin.qq.com/s/x12Y6rH37PkV24fALX4Oow)
 
 ## AI助手ChatGPT
 https://github.com/acheong08/ChatGPT

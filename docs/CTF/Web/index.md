@@ -87,6 +87,9 @@ sp_configure 'xp_cmdshell',1
 reconfigure
 go
 ```
+## Oracle
+[干货 | Oracle注入和漏洞利用姿势总结](https://mp.weixin.qq.com/s/cZdS3hgXr8JG2UPrI1S4Cg)
+
 ## sqlite
 
 ```sql

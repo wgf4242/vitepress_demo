@@ -8,6 +8,7 @@
 [某车联网App 通讯协议加密分析(三) Trace Block](https://blog.51cto.com/u_15527932/5694261)
 [某车联网App 通讯协议加密分析(四) Trace Code](https://blog.51cto.com/u_15527932/5708870)
 [利用unidbg进行一次电子取证](https://mp.weixin.qq.com/s/Yd0veyI9iNaQq7_0h3yMqw)
+[unidbg调用sgmain的doCommandNative函数生成某酷encryptR_client参数 ](https://www.52pojie.cn/thread-1680816-1-1.html) 
 
 
 ---
@@ -36,3 +37,4 @@ __Video__
 [unidbg中子进程fork问题](https://www.bilibili.com/video/BV1RK411d7uf/)
 [使用unidbg下断点查看寄存器中的参数值](https://www.bilibili.com/video/BV1RG4y1V7zF/)
 [1.使用unidbg主动调用so中的算法_batch](https://www.bilibili.com/video/BV1aR4y1o7M4/)
+

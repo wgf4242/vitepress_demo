@@ -72,6 +72,7 @@ result.txt | 搜验证码
 [WebSocket安全漏洞-攻击示例](https://mp.weixin.qq.com/s/-VazGZD9GLTqVPBiHFnccw)
 [WebSocket安全漏洞-概念梳理](https://mp.weixin.qq.com/s/dIGG9h-NSmX4yUyFuIqgCw)
 [Web协议层安全之websocket安全分析](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493997&idx=1&sn=9e6b5b6b1c1728a64980397ceb82aeb7)
+[H5游戏（一）登录某某首富H5游戏之WebSockets初涉](https://www.52pojie.cn/thread-1629782-1-1.html) 
 
 [OA综合利用工具（集合将近20款OA漏洞）](https://mp.weixin.qq.com/s/ZFW5phEN-0iAv4Pw4w8TkA)
 [通达OA v11.5 login_code.php 任意用户登录](https://mp.weixin.qq.com/s/7723ZW4-19JvqmMAVS4pcw)
@@ -173,8 +174,11 @@ result.txt | 搜验证码
 
 ## 渗透测试
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
-[干货 | Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
 [渗透实战系列](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
+[干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
+[渗透测试Tips【建议收藏】](https://mp.weixin.qq.com/s/L_g8yEmUKAT3LKrR_wV8yw)
+[常用的30+种未授权访问漏洞汇总](https://mp.weixin.qq.com/s/nVSXNz8oJSnGb1Nd7mGy8A)
+
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API安全01：crAPI漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 [API | 工具|10大API安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
@@ -287,6 +291,10 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [pikachu 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
 * [安鸾靶场渗透练习 Discuz 3.2 3.3 3.4 udf提取](https://mp.weixin.qq.com/s/z6lkeadBtkOuKkIzu71QAg)
 * [​某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg) [下载](https://pan.baidu.com/s/1DOaDrsDsB2aW0sHSO_-fZQ#vbi2 )
+* [Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
+* [nasa 靶场 | 暗月​2022年1月 NASA考核文章1](https://mp.weixin.qq.com/s/tbFxqH5YsXBSGw6Rlfk63w)
+* [nasa 靶场 | 从外网打点到内网漫游-入门级靶场渗透笔记](https://www.freebuf.com/articles/web/347079.html)
+
 
 # 蓝队
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)

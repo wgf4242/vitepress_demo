@@ -5,6 +5,7 @@
 NSSCTF ROUND 4 wasm
 [DEF CON CTF 2019 Quals | 一种Wasm逆向静态分析方法](https://www.52pojie.cn/thread-962068-1-1.html)
 [minil2022](https://hzlg.github.io/2022/05/04/game/minil2022/wasm/)
+[wasm转c调用实战 | 猿人学2022新春题 | 腾讯视频ckey参数获取](https://www.52pojie.cn/thread-1581887-1-1.html) 
 
 方式0
 [ghidra-wasm-plugin](https://github.com/nneonneo/ghidra-wasm-plugin)

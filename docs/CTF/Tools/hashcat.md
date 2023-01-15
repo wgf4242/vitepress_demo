@@ -168,6 +168,10 @@ avytGP+4位字符
 hashcat -m 1400 -O -a 3 26d601e47a170bf796f0c1568febbc6fd40ba7a894668c2829e31dfccd35e34f avytGP?1?1?1?1  --custom-charset1=?l?u?d
 
 WPA/CAP/Wifi
+```sh
+# 转成 hashcat 格式
+aircrack-ng 01.cap -j hashcat
+
 hashcat -m 2500 test.hccap pass.txt
 hashcat -a 0 -O -m 2500 hashcat.hccapx dic.txt
 hashcat -O -a 3 -m 2500 hashcat.hccapx --increment --increment-min 1 --increment-max 9 root?d?d?d?d?d?d?d?d?d
@@ -175,7 +179,7 @@ hashcat -O -a 3 -m 2500 hashcat.hccapx --increment --increment-min 1 --increment
 hashcat -O -a 3 -m 2500 hashcat.hccapx --increment --increment-min 1 --increment-max 8 ?1?1?1?1?1?1?1?1  --custom-charset1=?l?u?d
 hashcat -O -a 3 -m 2500 hashcat.hccapx  ?1?1?1?1?1?1?1  --custom-charset1=?l?u?d
 hashcat -O -a 3 -m 2500 hashcat.hccapx 1391040?d?d?d?d #跑4位数字密码
-
+```
 
 $pkzip2$ -m 17225
 hashcat -a 3 -O -m 17225 111.hash --increment  --increment-min 1 --increment-max=9 ?d?d?d?d?d?d?d?d?d
