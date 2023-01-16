@@ -128,9 +128,10 @@ result.txt | 搜验证码
 [Struts 2.1.0 ~ 2.3.1 【漏洞复现】S2-008 远程代码执行漏洞(CVE-2012-0391)](https://mp.weixin.qq.com/s/PfuG4FRra7OEtgQ9krFSmg)
 [Struts 2.1.0 ~ 2.3.13 【漏洞复现】S2-012 远程代码执行漏洞(CVE-2013-1965)](https://mp.weixin.qq.com/s/V2dZjvOB1MnAXmZYKM52HA)
 [Struts 2.0.0 ~ 2.3.14.1【漏洞复现】S2-013 远程代码执行漏洞(CVE-2013-1966)](https://mp.weixin.qq.com/s/EleJfjEsxsJfmq3eDKv-pA)
-[Struts 2.0.0 ~ 2.5.20 CVE-2019-0230 S2-059远程代码执行](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483849&idx=2&sn=04522570cd8ea723131ca4ffeeba83f9)
+[Struts 2.0.0 ~ 2.5.20 CVE-2019-0230 S2-059远程代码执行](https://mp.weixin.qq.com/s/XvpwX9GhcIiBfz8QqXH5Yg)
 [Struts 2.0.0 ~ 2.3.15【漏洞复现】S2-015 远程代码执行漏洞(CVE-2013-2134)](https://mp.weixin.qq.com/s/WoPCyBJeASmpng9e-H1Mpg)
 [Struts 2.0.0 ~ 2.3.15【漏洞复现】S2-016 远程代码执行漏洞(CVE-2013-2251)](https://mp.weixin.qq.com/s/ZREGO8utREF_C323MLclnA)
+[Struts 2.3.20 ~ 2.3.28，其中2.3.20.3和2.3.24.3没有漏洞。S2-032 远程代码执行漏洞(CVE-2016-3081)](https://mp.weixin.qq.com/s/o7ljCN8PghSzk0GwMHy7uQ)
 
 [Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
