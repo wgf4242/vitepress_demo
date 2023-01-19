@@ -282,6 +282,16 @@ https://www.anquanke.com/post/id/195215
 [Frida基操之三种日志级别的使用](https://www.bilibili.com/video/BV1MD4y1Y7yA/)
 [使用pyenv安装最新的Frida16](https://www.bilibili.com/video/BV1714y1E7Rq/)
 
+[2023安卓逆向CTF系列视频（一）（上）](https://www.bilibili.com/video/BV1zK411r79R/)
+[2023安卓Hook框架源码入门（零-首次介绍）](https://www.bilibili.com/video/BV1D84y1h7jj/)
+[2023安卓逆向CTF系列视频（零-首次介绍）](https://www.bilibili.com/video/BV1v84y1h7Wr/)
+[（视频）反调试入门第六课lsposed编译与简单魔改（上）](https://www.bilibili.com/video/BV15g411x71c/)
+[（视频）反调试入门第六课lsposed编译与简单魔改（下）](https://www.bilibili.com/video/BV1FW4y157z8/)
+[反调试入门第一课第一节上](https://www.bilibili.com/video/BV1oG4y1m7if/)
+[反调试入门第一课第一节下](https://www.bilibili.com/video/BV1Ee4y1V7yL/)
+[番外篇之java混淆函数的hook处理](https://www.bilibili.com/video/BV1Y84y1Y7Nc/)
+[目前遇到的最辣鸡的锁机app](https://www.bilibili.com/video/BV1NN4y1K7yW/)
+
 ## FAQ
 
 1. app Failed to spawn: unexpectedly timed out while waiting for app to launch

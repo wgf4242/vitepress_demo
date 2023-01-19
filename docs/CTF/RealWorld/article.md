@@ -132,6 +132,7 @@ result.txt | 搜验证码
 [Struts 2.0.0 ~ 2.3.15【漏洞复现】S2-015 远程代码执行漏洞(CVE-2013-2134)](https://mp.weixin.qq.com/s/WoPCyBJeASmpng9e-H1Mpg)
 [Struts 2.0.0 ~ 2.3.15【漏洞复现】S2-016 远程代码执行漏洞(CVE-2013-2251)](https://mp.weixin.qq.com/s/ZREGO8utREF_C323MLclnA)
 [Struts 2.3.20 ~ 2.3.28，其中2.3.20.3和2.3.24.3没有漏洞。S2-032 远程代码执行漏洞(CVE-2016-3081)](https://mp.weixin.qq.com/s/o7ljCN8PghSzk0GwMHy7uQ)
+[Struts 2.3.5 ~ 2.3.31，2.5 ~ 2.5.10 【漏洞复现】S2-045 远程代码执行漏洞(CVE-2017-5638)](https://mp.weixin.qq.com/s/hPAtR8tt4QQ9X_9BECgb4Q)
 
 [Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
@@ -295,7 +296,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
 * [nasa 靶场 | 暗月​2022年1月 NASA考核文章1](https://mp.weixin.qq.com/s/tbFxqH5YsXBSGw6Rlfk63w)
 * [nasa 靶场 | 从外网打点到内网漫游-入门级靶场渗透笔记](https://www.freebuf.com/articles/web/347079.html)
-
+* [【靶场实例】6-Lord Of The Root-1.0.1](https://mp.weixin.qq.com/s/YG00g9r8md_Q6yzSUV7Izg)
 
 # 蓝队
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)

@@ -129,6 +129,8 @@ Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 ### 二维码
 [QR Research 支持反色、残缺](https://mp.weixin.qq.com/s/uyCSZzMd2scAgsALKOIM-Q)
 https://cli.im/deqr/   有可能零宽隐写
+[如何手算二维码](https://www.bilibili.com/video/BV18s411P7to)
+
 ## PDF文件
 1.删除图片
 1.顺序重排 -- 2022春秋杯 Capture Radiate Chart  https://mp.weixin.qq.com/s/uT42XKAvNOjEOzlBUbZoUQ
