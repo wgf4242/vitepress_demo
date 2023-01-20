@@ -4,6 +4,7 @@
 lusb # 看有没有显示
 ifconfig # 查看 wlan0 无线网卡
 airmon-ng # 查看是否支持监听模式 显示wlan0 支持
+airmon-ng check kill # 可能需要 ifconfig eth0 down 关闭其他 eth
 airmon-ng start wlan0 # 开启监听
 
 airodump-ng wlan0  # 扫描 wifi

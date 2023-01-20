@@ -282,6 +282,10 @@ https://www.anquanke.com/post/id/195215
 [Frida基操之三种日志级别的使用](https://www.bilibili.com/video/BV1MD4y1Y7yA/)
 [使用pyenv安装最新的Frida16](https://www.bilibili.com/video/BV1714y1E7Rq/)
 
+[2023安卓逆向CTF系列视频（二(2)idaattach分析）](https://www.bilibili.com/video/BV1Gx4y1g7EQ/)
+[2023安卓逆向CTF系列视频（一）（下）](https://www.bilibili.com/video/BV1nv4y1C7AP/)
+[2023安卓逆向CTF系列视频（二(1)fridainlinehook）](https://www.bilibili.com/video/BV1QY411Q7u2/)
+[2023安卓逆向CTF系列视频（二概述）](https://www.bilibili.com/video/BV1rx4y1u7sN/)
 [2023安卓逆向CTF系列视频（一）（上）](https://www.bilibili.com/video/BV1zK411r79R/)
 [2023安卓Hook框架源码入门（零-首次介绍）](https://www.bilibili.com/video/BV1D84y1h7jj/)
 [2023安卓逆向CTF系列视频（零-首次介绍）](https://www.bilibili.com/video/BV1v84y1h7Wr/)

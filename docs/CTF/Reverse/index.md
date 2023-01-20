@@ -340,3 +340,4 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 
 ## 工具
 LIEF | 对ELF添加 section, segment
+[awesome-ida-x64-olly-plugin](https://github.com/fr0gger/awesome-ida-x64-olly-plugin)

