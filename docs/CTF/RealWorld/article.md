@@ -116,6 +116,8 @@ result.txt | 搜验证码
 [Weblogic | CVE 漏洞总结](https://mp.weixin.qq.com/s/vUrWyOZbDqynlN2xdFMAFQ)
 [Weblogic | 反序列化远程代码执行漏洞(CVE-2019-2725)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485549&idx=1&sn=7c0ae29b49887d50327c46160be1b5e9)
 [Weblogic | 未授权绕过RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485533&idx=1&sn=bc34af894ff2cd03dab543ceb1338762)
+Weblogic | CVE-2021-2109: WebLogic Server的console中认证后可rce
+weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
@@ -135,6 +137,7 @@ result.txt | 搜验证码
 [Struts 2.0.0 ~ 2.3.15【漏洞复现】S2-016 远程代码执行漏洞(CVE-2013-2251)](https://mp.weixin.qq.com/s/ZREGO8utREF_C323MLclnA)
 [Struts 2.3.20 ~ 2.3.28，其中2.3.20.3和2.3.24.3没有漏洞。S2-032 远程代码执行漏洞(CVE-2016-3081)](https://mp.weixin.qq.com/s/o7ljCN8PghSzk0GwMHy7uQ)
 [Struts 2.3.5 ~ 2.3.31，2.5 ~ 2.5.10 【漏洞复现】S2-045 远程代码执行漏洞(CVE-2017-5638)](https://mp.weixin.qq.com/s/hPAtR8tt4QQ9X_9BECgb4Q)
+[Struts 2.0.0 ~ 2.3.32 【漏洞复现】S2-046 远程代码执行漏洞(CVE-2017-5638)](https://mp.weixin.qq.com/s/QqrOH_bczvyd8HiawjiA3w)
 
 [Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
@@ -145,6 +148,8 @@ result.txt | 搜验证码
 [JBOSS [CVE-2017-7504-JBoss JMXInvokerServlet 反序列化]](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485285&idx=1&sn=c3402b0dc9a6404522bf2ce6f495dc8a)
 
 [phpMyAdmin 4.8.0和4.8.1 | CVE-2018-12613 ](./exp/phpMyadmin.md)
+
+[YApi <1.12.0 远程命令执行漏洞](https://mp.weixin.qq.com/s/UTMly3wLfK0SQHOj5CcN8w)
 
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
@@ -187,24 +192,27 @@ result.txt | 搜验证码
 [API | API安全01：crAPI漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 [API | 工具|10大API安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
 [API | 挖洞随记-js接口泄露隱藏接口导致文件上传漏洞](https://mp.weixin.qq.com/s/DPJtJEYgyo15kX4FLw1pRQ)
+[API | 如何hack api并进行模糊测试](https://mp.weixin.qq.com/s/iiyCwU_WL2uVVfnO2WxrYA)
+
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
 ## 免杀
-50_Anti-AntiVirus_EXE.md
-[Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
-[绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
-[安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
-[powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
-[Powershell免杀混淆器](https://mp.weixin.qq.com/s/Z5nNx3iLaSeiLFtWSFHAdg)
-[powershell命令免杀的小工具](https://mp.weixin.qq.com/s/LiYPT7SOE_v4uKqOrkqLvw)
-[powershell免杀之路](https://mp.weixin.qq.com/s/FfXRtbUCOt3ZmubkAnCe6Q)
-[免杀工具 ShellCodeRunner](https://github.com/antman1p/ShellCodeRunner)
-Themia加壳过火绒
-exe | darkarmour: `python darkarmour.py -f shell.exe -e xor -j -k sanker -l 20 -u -o bypass_shell.exe`
-[免杀生成与木马捆绑工具 -- rsmaker](https://mp.weixin.qq.com/s/ozZoTlG3e_M0eKxBu6hcLg)
-[隐写RGB-mimikatz读取绕过杀软](https://mp.weixin.qq.com/s/igmZ7e9qOC_9zAyoolAd0g)
-[红队渗透-免杀-7-msfmania过杀软实现免杀-哔哩哔哩](https://www.bilibili.com/video/BV18d4y1E7Q1)
+* 50_Anti-AntiVirus_EXE.md
+* [Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
+* [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
+* [安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
+* [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
+* [Powershell免杀混淆器](https://mp.weixin.qq.com/s/Z5nNx3iLaSeiLFtWSFHAdg)
+* [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/LiYPT7SOE_v4uKqOrkqLvw)
+* [powershell免杀之路](https://mp.weixin.qq.com/s/FfXRtbUCOt3ZmubkAnCe6Q)
+* [免杀工具 ShellCodeRunner](https://github.com/antman1p/ShellCodeRunner)
+* Themia加壳过火绒
+* exe | darkarmour: `python darkarmour.py -f shell.exe -e xor -j -k sanker -l 20 -u -o bypass_shell.exe`
+* [免杀生成与木马捆绑工具 -- rsmaker](https://mp.weixin.qq.com/s/ozZoTlG3e_M0eKxBu6hcLg)
+* [隐写RGB-mimikatz读取绕过杀软](https://mp.weixin.qq.com/s/igmZ7e9qOC_9zAyoolAd0g)
+* [红队渗透-免杀-7-msfmania过杀软实现免杀-哔哩哔哩](https://www.bilibili.com/video/BV18d4y1E7Q1)
+* certutil bypass360: `改名123.exe使用`
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
@@ -294,13 +302,13 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [红队渗透测试之vulnerable_docker—docker逃逸（附靶场下载地址）](https://mp.weixin.qq.com/s/vg4bbgV5Zr7_qopsSqSDmg)
 * [pikachu 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
 * [安鸾靶场渗透练习 Discuz 3.2 3.3 3.4 udf提取](https://mp.weixin.qq.com/s/z6lkeadBtkOuKkIzu71QAg)
-* [​某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg) [下载](https://pan.baidu.com/s/1DOaDrsDsB2aW0sHSO_-fZQ#vbi2 )
+* [某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg) [下载](https://pan.baidu.com/s/1DOaDrsDsB2aW0sHSO_-fZQ#vbi2 )
 * [Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
-* [nasa 靶场 | 暗月​2022年1月 NASA考核文章1](https://mp.weixin.qq.com/s/tbFxqH5YsXBSGw6Rlfk63w)
+* [nasa 靶场 | 暗月2022年1月 NASA考核文章1](https://mp.weixin.qq.com/s/tbFxqH5YsXBSGw6Rlfk63w)
 * [nasa 靶场 | 从外网打点到内网漫游-入门级靶场渗透笔记](https://www.freebuf.com/articles/web/347079.html)
 * [【靶场实例】6-Lord Of The Root-1.0.1](https://mp.weixin.qq.com/s/YG00g9r8md_Q6yzSUV7Izg)
 * [九种DC靶机渗透测试一](https://mp.weixin.qq.com/s/gh_vGCjJtZe4EKHecKjjbg) [二](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [三](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [Download](https://pan.baidu.com/s/13ra2u5QjCDRewN_RiTfS_Q#seri)
-
+* [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/WA9AMnF6wZSEVudr0Szgkw)
 ## 漏洞挖掘
 [短信验证码常见漏洞总结](https://mp.weixin.qq.com/s/h5eJgbZi5SHRRa0FtkeJSg)
 

@@ -90,6 +90,11 @@ wifi最多爆到root12222
 md5 dict.txt
 hashcat.exe -a 0 -m 0 --force 5a690d842935c51f26f473e025c1b97a  rockyou.txt
 
+#多字典模式 https://hashcat.net/wiki/doku.php?id=frequently_asked_questions#how_to_use_multiple_dictionaries
+hashcat.bin -m 0 -a 0 hash.txt dict1.txt dict2.txt dict3.txt
+hashcat.bin -m 0 -a 0 hash.txt ../my_files/*.dict
+## 指定文件夹
+hashcat.bin -m 0 -a 0 hash.txt wordlists
 
 7位数字破解
 hashcat.exe -a 3 -O -m 0 --force 25c3e88f81b4853f2a8faacad4c871b6 ?d?d?d?d?d?d?d

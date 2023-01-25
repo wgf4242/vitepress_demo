@@ -318,6 +318,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 [syscall的检测与绕过](https://mp.weixin.qq.com/s/wWddKGu-W9WZsMyM3XemOg)
 [SYSENTER HOOK](https://mp.weixin.qq.com/s/x12Y6rH37PkV24fALX4Oow)
 [逆向原理 | SetWindowsHookEx 原理探究与实验](https://www.bilibili.com/read/cv21270420)
+[Window | 【原理到实践】如何在电脑上置顶一个窗口_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1BT41117fe/)
 
 
 ## AI助手ChatGPT
@@ -334,9 +335,11 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)
 ## vm
 [记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)
-## Game
+## Game | 游戏安全
 
 [【逆向安全】快速搜索FPS游戏相机矩阵_矩阵特性1-哔哩哔哩](https://www.bilibili.com/video/BV1s3411D7JU)
+[Hacking Electron Games 1 | Vampire Survivors](https://www.youtube.com/watch?v=6u0V1svtj3A)
+[Hacking Electron Games 2 | Vampire Survivors](https://www.youtube.com/watch?v=kKun6MrHCxI)
 
 ## 工具
 LIEF | 对ELF添加 section, segment

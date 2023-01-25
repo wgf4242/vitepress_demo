@@ -33,5 +33,7 @@ out PowerShellCodeASCII.ps1
 ```
 
 # 免杀工具
-1.Themida
-2.掩日免杀
+* Themida
+* 掩日免杀
+* [FourEye](https://github.com/lengjibo/FourEye) -  [使用](https://mp.weixin.qq.com/s/WA9AMnF6wZSEVudr0Szgkw)
+* [kscan 代替fscan能免杀](https://github.com/lcvvvv/kscan)

