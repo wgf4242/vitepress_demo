@@ -56,9 +56,11 @@ result.txt | 搜验证码
 
 ## Exploit/CVE/实战漏洞
 [一个漏洞Poc知识库](https://github.com/Cuerz/PoC-ExP)
+[常见未授权访问漏洞总结](https://xz.aliyun.com/t/6103)
 
 [[Web漏洞-XXE&XML漏洞]](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485040&idx=1&sn=820cc31cf2e2d251814a2cf09ab6be7a)
 [[Web漏洞]-(XSS详解)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485012&idx=1&sn=695f6ea23f8f8dc0d83f5f3c753befad)
+[XSS 常用标签及绕过姿势总结](https://mp.weixin.qq.com/s/qm-THY310CmaDFIyr3TXcA)
 
 [泛微oa漏洞利用工具 -- WeaverScan](https://mp.weixin.qq.com/s/hpPNgxHnaUR87vvPxwx61w)
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
@@ -102,7 +104,8 @@ result.txt | 搜验证码
 [禅道12.4.2后台管理员权限Getshell复现](https://cloud.tencent.com/developer/article/1749477)
 [禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484766&idx=1&sn=bd15f286ff1e21d3df2e0043ef60e206)
 [禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485213&idx=2&sn=f5fda7a7c5de099c3f8ae7d3b5656bf5)
-[禅道 17.4以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞分析](https://mp.weixin.qq.com/s/ZHsYaU31WkzAJijy1V0U1w)
+[禅道17.4以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞分析](https://mp.weixin.qq.com/s/ZHsYaU31WkzAJijy1V0U1w)
+[禅道18.1版本RCE分析](https://mp.weixin.qq.com/s/QYISEFl3rTVnGY1ONFLIPw)
 
 
 [KindEditor 文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484734&idx=1&sn=7508249f8d3a867617020338d3988404)
@@ -156,6 +159,7 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 ### Exploit/CVE/实战漏洞/微信小程序
 [渗透实战|记一次微信小程序渗透测试](https://mp.weixin.qq.com/s/GQYqbKDiY_OfE4kdVgCMig)
+[记一次微信小程序渗透实战记录](https://mp.weixin.qq.com/s/LUDuOgBesn8xKGonE6R8tw)
 
 ### Exploit/CVE/实战漏洞/IOT 
 [TOTOLINK CVE-2022-26210 漏洞分析&复现](https://mp.weixin.qq.com/s/HYDHoo7ep85SwJeEZxAkEQ)
@@ -197,6 +201,10 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
+[Web | 内存马 | 内存Shell生成器](https://mp.weixin.qq.com/s/7YPuChR7anVAninHOMB6aA)
+### Mobile/Android/APK
+[安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
+
 ## 免杀
 * 50_Anti-AntiVirus_EXE.md
 * [Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)

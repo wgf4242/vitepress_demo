@@ -107,6 +107,16 @@ schtasks /create /S WIN-ENS2VR5TR3N /TN "test" /TR c:/1.bat /SC MINUTE /ST 21:27
 :: 下一步 psexec
 ```
 
+### shadow-credentials
+[Link](https://zhuanlan.zhihu.com/p/581451146)
+
+条件: 以下账户拥有 msDS-KeyCredentialLink 属性的写入权限：
+
+* 域管理员账户
+* Key Admins 组中的账户
+* Enterprise Key Admins 组中的账户
+* 对 Active Directory 中的对象具有 GenericAll 或 GenericWrite 权限的帐户
+* 机器账户对自身的 msDS-KeyCredentialLink 属性拥有写入权限
 
 
 # Article

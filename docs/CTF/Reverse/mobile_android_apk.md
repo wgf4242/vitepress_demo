@@ -157,6 +157,14 @@ https://github.com/APKLab/APKLab
 
 [脱壳成长之路之二代壳进阶：绕过反调试、函数体回填并修复onCreate](https://mp.weixin.qq.com/s/8tawKAps_4Qu0Pf-PJRn0w)
 [快捷操作 | intent, top 移动端漏洞分析](https://mp.weixin.qq.com/s/rtQD14v-7tsA8feABffPNg)
+
+
+[2023安卓Hook框架源码入门（零-首次介绍）](https://www.bilibili.com/video/BV1D84y1h7jj/)
+[2023安卓Hook框架源码入门（一YAHFA框架）（4ArtMethod执行流）](https://www.bilibili.com/video/BV1N84y177nF/)
+[2023安卓Hook框架源码入门（一YAHFA框架）（3ArtMethod）](https://www.bilibili.com/video/BV17T411y7AE/)
+[2023安卓Hook框架源码入门（一YAHFA框架）（2使用）](https://www.bilibili.com/video/BV1Dx4y1M76f/)
+[2023安卓Hook框架源码入门（一YAHFA框架）（1概述）](https://www.bilibili.com/video/BV1TY4y1f7rw/)
+
 ### 实战案例
 [某游戏社区App | So层逆向分析](https://mp.weixin.qq.com/s/GOUoBboBzZSxWFWWDKGahw)
 [买车报价APP sign分析](https://mp.weixin.qq.com/s/lmUOwnLAH2lbvWB4uIN6pg)
@@ -179,3 +187,4 @@ java -jar abe.jar unpack 1.ab 1.tar
 [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
 [【微信&反汇编&x64dbg】小程序加密反汇编分析算法AES密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)
 [【微信&反汇编&x64dbg】小程序加密反汇编分析算法XOR解密](https://www.bilibili.com/video/BV1Lv4y1i7hJ/)
+[小程序测试流程](https://mp.weixin.qq.com/s/NVN73i8t0Ozy7bW8QimlNg)
