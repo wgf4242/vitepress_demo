@@ -115,7 +115,13 @@ cat /proc/<PID>/maps
 # 断下后看register
 ```
 
+## ab 文件
+abe.jar https://github.com/nelenkov/android-backup-extractor/releases
 
+恢复
+```bat
+java -jar abe.jar unpack 1.ab 1.tar
+```
 
 ## APKlab
 https://github.com/APKLab/APKLab
@@ -176,13 +182,8 @@ https://github.com/APKLab/APKLab
 [开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)
 [Dex控制流混淆-AS插件版](https://www.bilibili.com/video/BV1MG4y1574m/)
 
-## ab 文件
-abe.jar https://github.com/nelenkov/android-backup-extractor/releases
-
-恢复
-```bat
-java -jar abe.jar unpack 1.ab 1.tar
-```
+## 底层研究
+[loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/L4LmF1M4gN21r8uYL0BDJg)
 
 ## 小程序
 [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
