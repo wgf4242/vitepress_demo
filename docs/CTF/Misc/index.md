@@ -293,7 +293,7 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 国外 https://lens.google/
 
 ## 音频题目
-
+[关于音频隐写的一些总结](https://mp.weixin.qq.com/s/8U_UGZh9NujVKxJ-_tku8w)
 多个相同音频, 通过导入后反相识图。链接如下。
 https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
 
@@ -304,7 +304,7 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
     -- DB 波谱: 右击 左侧刻度 -> db
     -- 3.听歌
     -- 4. misc_dtmf / http://dialabc.com/sound/detect/index.html
-    -- 本地 dtmf 有时会有重复值
+    -- 本地 dtmf 有时会有重复值 [DTMF](https://gitcode.net/mirrors/ribt/dtmf-decoder?utm_source=csdn_github_accelerator)
     -- 效果-反向 听声音。
     -- 删除多余文件头，可能有 2 段 riff
     -- SilentEye
@@ -322,6 +322,7 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
     -- SSTV 扫描
        -- 1.频谱图比较平均 dididi 的声音 见 ### sstv
        -- 2.长度36秒 Robot36
+    -- MIDI隐写，见本章链接。
     -- PT2242 信号： 用短的一段表示是 0，长的一段表示是 1 前面 4bit 表示同步码，中间的 20bit 表示地址码，后面的 4bit 表示功能码，最后一位是停止码。
               -- 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
               -- PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html

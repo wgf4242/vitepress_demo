@@ -60,6 +60,21 @@ places.sqlite  # 浏览记录
 ###  模拟器取证 .npbk
 
 2.[雷电APP智能分析](https://www.forensix.cn/products/info.aspx?itemid=1127&lcid=5)
+
+[2023西湖论剑-机你太美](https://mp.weixin.qq.com/s/vSI5nTZVcwm5qwh2iwomcg)
+
+__夜神模拟器去除锁屏密码__
+```sh
+adb devices
+adb shell
+su
+settings put secure lockscreen.disabled 1
+rm /data/system/locksettings.db
+rm /data/system/locksettings.db-shm
+rm /data/system/locksettings.db-wal
+reboot
+# 重启之后就进去了。
+```
 ### sqlmap 
 .db  .db-wal 都导出，然后用工具打开
 .db-wal 会定期写入到.db

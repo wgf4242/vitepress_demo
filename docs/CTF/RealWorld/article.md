@@ -2,6 +2,7 @@
 [漏洞挖掘 | 例会分享之漏洞挖掘杂谈](https://www.bilibili.com/video/BV1bd4y1M7SY)
 [网络安全实战之靶场渗透技术](https://blog.csdn.net/kali_Ma/article/details/127429832)
 [记录一种新的绕过403的tip](https://mp.weixin.qq.com/s/o00V2a3kAEHB5leIIWAZKA)
+[实用技巧|渗透测试中的流量修改](https://mp.weixin.qq.com/s/oQOHPowLN45SHDn2i7pizg)
 ## 信息收集
 [绕过CDN查询网站的真实IP地址](https://mp.weixin.qq.com/s/nlEwhkC9-hW6r9dYtBX1AA)
 [一个鉴别 cdn 的小工具](https://mp.weixin.qq.com/s/RuXWYm18paTcyfUABfgcBg)
@@ -33,6 +34,7 @@
 [反弹Shell | 一款基于SSH的反向Shell工具](https://mp.weixin.qq.com/s/0Rx_FvSMV5l4mdf9qCMZrg)
 [todesk在红队中的使用](https://mp.weixin.qq.com/s/XhHdLt2HJMUOJFF6aRtygw)
 [todesk获取密码,rustdesk『红蓝对抗』远控软件小技巧](https://mp.weixin.qq.com/s/DvqFKMRzg6FCJtUdkk4hhA)
+[todesk企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
 
 ## Sql/Database
 [sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)
@@ -57,6 +59,11 @@ result.txt | 搜验证码
 ## Exploit/CVE/实战漏洞
 [一个漏洞Poc知识库](https://github.com/Cuerz/PoC-ExP)
 [常见未授权访问漏洞总结](https://xz.aliyun.com/t/6103)
+[浅谈常见未授权访问漏洞系列（一）](https://mp.weixin.qq.com/s/9L6Xd1CklXX9bfFfaW_JCg)
+[浅谈常见未授权访问漏洞系列（二）](https://mp.weixin.qq.com/s/35BU32X19KMSyUFtdvIjJg)
+[浅谈常见未授权访问漏洞系列（三）](https://mp.weixin.qq.com/s/H_0T-xdk7HuzTjigu-Izjw)
+[浅谈常见未授权访问漏洞系列（四）](https://mp.weixin.qq.com/s/Gb59ajCdE6XssQAAG7dS1g)
+[浅谈常见未授权访问漏洞系列（五）](https://mp.weixin.qq.com/s/20SIvVMe3aSSAG_KbeqnaA)
 
 [[Web漏洞-XXE&XML漏洞]](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485040&idx=1&sn=820cc31cf2e2d251814a2cf09ab6be7a)
 [[Web漏洞]-(XSS详解)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485012&idx=1&sn=695f6ea23f8f8dc0d83f5f3c753befad)
@@ -160,6 +167,7 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 ### Exploit/CVE/实战漏洞/微信小程序
 [渗透实战|记一次微信小程序渗透测试](https://mp.weixin.qq.com/s/GQYqbKDiY_OfE4kdVgCMig)
 [记一次微信小程序渗透实战记录](https://mp.weixin.qq.com/s/LUDuOgBesn8xKGonE6R8tw)
+[针对微信小程序的渗透测试(附实战)](https://mp.weixin.qq.com/s/9XN2cbGZBtp-ZxyJTHkdKA)
 
 ### Exploit/CVE/实战漏洞/IOT 
 [TOTOLINK CVE-2022-26210 漏洞分析&复现](https://mp.weixin.qq.com/s/HYDHoo7ep85SwJeEZxAkEQ)
@@ -221,6 +229,7 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [隐写RGB-mimikatz读取绕过杀软](https://mp.weixin.qq.com/s/igmZ7e9qOC_9zAyoolAd0g)
 * [红队渗透-免杀-7-msfmania过杀软实现免杀-哔哩哔哩](https://www.bilibili.com/video/BV18d4y1E7Q1)
 * certutil bypass360: `改名123.exe使用`
+* [CS的shellcode免杀加载器（2月1日更新）](https://mp.weixin.qq.com/s/zdzf73UqZCikuYqy6DfflA)
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)

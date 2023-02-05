@@ -127,7 +127,8 @@ https://github.com/APKLab/APKLab
 [安全攻防 | APP抓包大全](https://mp.weixin.qq.com/s/SoyZBDoPCX2crBmgM6uKfg)
 
 ## 综合
-[入门 | 《安卓逆向这档事》三、初识smali，vip终结者](https://mp.weixin.qq.com/s/Kb8DbEXcthvRfakBRRXHTg)
+[《安卓逆向这档事》三、初识smali，vip终结者](https://mp.weixin.qq.com/s/Kb8DbEXcthvRfakBRRXHTg)
+[《安卓逆向这档事》七、Sorry，会Hook真的可以为所欲为-Xposed快速上手(上)模块](https://www.52pojie.cn/thread-1740944-1-1.html) [video](https://www.bilibili.com/video/BV1VT411C7Sr/)
 [入门 | Android逆向之smali语法宝典](https://www.jianshu.com/p/ba9b374346dd) 
 [Android逆向遇到的环境问题](https://bbs.pediy.com/thread-275251.htm) 
 

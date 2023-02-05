@@ -48,8 +48,10 @@ mov ecx, [esp+4]
 add esp, 8
 jmp ecx
 ```
-
+## Base
+[Video](https://www.bilibili.com/video/BV1MV4y1N7EQ/)
 ## RC4
+[Video](https://www.bilibili.com/video/BV1ky4y1R7S3/)
 ```
 256 交换 key 2轮 1.初始化 2.str 加密
 ```

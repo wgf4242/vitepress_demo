@@ -47,6 +47,8 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 
 1. mrb文件 - ruby字节码 16进制显示 RITE0300  , CISCN2022 babycode   https://docs.qq.com/doc/DRmhseWVMV1dJbUR1
 2. swift ast https://docs.qq.com/doc/DRmhseWVMV1dJbUR1 CISCN2022 babytree
+3. ebpf程序，使用bpftool提取字节码, [西湖论剑2023-Berkeley](http://lu1u.bxsteam.tk/2023/02/03/2023XHLJ-RE/#Berkeley) , [2022虎符ftype](https://lu1u.bxsteam.tk/2022/03/28/RE_Challenge/) [字节码逆向](https://tttang.com/archive/1550/)
+
 ## 程序执行顺序
 
    1. Shift+F4, Name: ___CTOR_LIST__ 有没有对应函数地址. function: __do_global_ctors() : constructor
@@ -319,7 +321,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 [SYSENTER HOOK](https://mp.weixin.qq.com/s/x12Y6rH37PkV24fALX4Oow)
 [逆向原理 | SetWindowsHookEx 原理探究与实验](https://www.bilibili.com/read/cv21270420)
 [Window | 【原理到实践】如何在电脑上置顶一个窗口_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1BT41117fe/)
-
+### DLL注入
+[初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)
 
 ## AI助手ChatGPT
 https://github.com/acheong08/ChatGPT

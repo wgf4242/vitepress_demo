@@ -36,6 +36,9 @@ $$
 [密码学｜5.3.5 期望](https://mp.weixin.qq.com/s/E9e9VBXngoWni87KtUL62w)
 [密码学｜5.4 碰撞算法与中间相遇攻击](https://mp.weixin.qq.com/s/CCDVlB_OafzzNVMBlrm6rg)
 [密码学｜5.4.2 碰撞定理](https://mp.weixin.qq.com/s/5e_YadgGSvN7c6ADWpGtSw)
+[密码学｜5.4.3 一个针对离散对数问题的碰撞算法](https://mp.weixin.qq.com/s/zNKKGdzgPcLE8OwWbPALAA)
+[密码学｜5.5 Pollard’s p Method](https://mp.weixin.qq.com/s/gNFN9JRDR1ey3_1soY8N1g)
 
 [AES](https://bbs.pediy.com/thread-253884.htm)
 [Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)
+[『CTF』你知道 DLP 吗？](https://mp.weixin.qq.com/s/qZt5dllMsdIqNF3RsTy-Ig)
