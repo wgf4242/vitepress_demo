@@ -38,3 +38,8 @@ __Video__
 [使用unidbg下断点查看寄存器中的参数值](https://www.bilibili.com/video/BV1RG4y1V7zF/)
 [1.使用unidbg主动调用so中的算法_batch](https://www.bilibili.com/video/BV1aR4y1o7M4/)
 
+## Trace 技巧
+简单写几个分析trace的技巧：
+* 控制变量法，trace两遍对比差异
+* 跟踪输入数据在寄存器/堆、栈之间的传递
+* 指令运行、函数调用的次数

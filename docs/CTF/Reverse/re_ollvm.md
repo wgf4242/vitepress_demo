@@ -22,6 +22,7 @@
 看雪
 [p.z【ACTF2022】Inflated（C++异常处理控制流下的OLLVM混淆） ](https://bbs.pediy.com/thread-273764.htm)
 [『直播中』从unidbg trace log中还原被ollvm混淆的非标准算法](https://mp.weixin.qq.com/s/LZyDuCKIrH4bQQZgoNuvCA)
+[大杀器Unidbg真正的威力](https://mp.weixin.qq.com/s/eJef9L3WA_8neQw-gGAGrg)
 [使用unidbg还原标准ollvm的fla控制流程平坦化 ](https://bbs.pediy.com/thread-267687.htm) 
 [使用unidbg去ollvm虚假分支反混淆 ](https://bbs.pediy.com/thread-267499.htm) 
 [使用ollvm自定义简单的字符串加密 ](https://bbs.pediy.com/thread-264497.htm) 
