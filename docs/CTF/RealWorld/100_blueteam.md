@@ -48,3 +48,4 @@ local_infile = 0
 # Article
 [干货|内存马检测排查手段 （附工具 ）](https://mp.weixin.qq.com/s/Hr8AEK1HVgc_6T6i1pUhWQ)
 [漏洞修复建议大全](https://mp.weixin.qq.com/s/3ltiNkxyRPViXmeI2-PJvQ)
+[安全运维 | RDP登录日志取证和清除](https://mp.weixin.qq.com/s/7504YsCEEfiM8uXQVCGRqA)

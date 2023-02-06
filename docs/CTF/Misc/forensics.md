@@ -85,3 +85,4 @@ reboot
 [Android | 半自动微信数据库脱密及解析，生成词云和条状图 ](https://www.52pojie.cn/thread-1724737-1-1.html) 
 
 [浏览器数据导出解密工具 -- HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
+[安全运维 | RDP登录日志取证和清除](https://mp.weixin.qq.com/s/7504YsCEEfiM8uXQVCGRqA)
