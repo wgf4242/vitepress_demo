@@ -1,6 +1,11 @@
 [[toc]]
 ## 环境配置
 视图 - 着色规则
+
+* Wireshark添加列:
+  - 可展开 Http -> Host 右击Host, 应用为列
+* 修改时间格式UTC: 首选项 - Columns - 某字段 - UTC Date
+
 ## Wireshark - 浏量数据分析
 1.改成zip解压
 1.foremost filename

@@ -103,9 +103,10 @@ arr[$(cat /flag)]
 * 关键字:猫/猫脸变换/arnold 置乱
 * 做fourier变换。
 * pixel 像素题
-  * 1.r,g,b中b一直是255，有时不是255，非255输出chr尝试
+  * r,g,b中b一直是255，有时不是255，非255输出chr尝试
   * https://sekao.net/pixeljihad/   https://github.com/oakes/PixelJihad
-  * 1.r,g,b数字可能是字符串，加起来转ascii
+  * r,g,b数字可能是字符串，加起来转ascii
+  * alpha有信息时, 测试255时 输出1,否则为0
 * BMP文件
   * 010 修改位深 WORD biBitCount 16 为 24 再看
 * 多图片问题
