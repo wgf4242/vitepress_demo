@@ -37,6 +37,7 @@ pip3 install -U objection
 
 6.安装hello-app (随便一个apk)
 ```
+frida-ps -Ua
 frida-ps -Uai
 #  2568  Hello App com.example.helloapp
 # 启动app后
@@ -114,6 +115,8 @@ objection -g com.ss.android.auto explore
 objection -g 5216 explore  # frida-ps -Ua
 # Hook, jadx查看方法
 android hooking watch class_method com.hfdcxy.android.by.test.a.a --dump-args --dump-backtrace --dump-return
+android hooking watch class_method com.hfdcxy.android.by.test.a.a --dump-return
+## remove: 通过 jobs kill [jobID]
 # 提取内存
 memory list modules
 android heap serach instances com.hfdcxy.android.by.test.a
