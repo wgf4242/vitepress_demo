@@ -44,6 +44,9 @@ https://gamehacking.academy/about
 * [失落的方舟快捷键call分析与调用](https://www.bilibili.com/video/BV1zV4y177Up/)
 * [失落的方舟写自动寻路call](https://www.bilibili.com/video/BV1Fe4y1d7Hh/)
 
+CE
+* [CE提升进程读写权限（读写权限卡图标）-哔哩哔哩](https://www.bilibili.com/video/BV1HA411f77r)
+
 Plant Vs Zombie 
 * [Plant Vs Zombie 游戏外挂开发第一期](https://www.bilibili.com/video/BV1oa4y1573x/)
 * [Plant Vs Zombie [全新2023]游戏外挂开发第一期](https://www.bilibili.com/video/BV1h14y1T76E/)

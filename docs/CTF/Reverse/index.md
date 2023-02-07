@@ -162,6 +162,8 @@ struct IMAGE_FILE_HEADER FileHeader
 struct IMAGE_OPTIONAL_HEADER32 OptionalHeader
  -- enum OPTIONAL_MAGIC Magic   : PE32 (10Bh) 改 PE64
 ```
+## CPP/STL
+[STL容器逆向与实战](https://mp.weixin.qq.com/s/bfzeGbieYWaPS3_iB-gSeg)
 
 ## MFC
 https://blog.csdn.net/Sanky0u/article/details/81568483
