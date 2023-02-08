@@ -303,8 +303,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 [Debugging Tips](https://blog.wjhwjhn.com/archives/838/)
 
 [精品连载丨安卓 App 逆向课程之五 frida 注入 Okhttp 抓包下](https://cloud.tencent.com/developer/article/1669631?from=article.detail.1758879)篇
-[**精品连载丨安卓 App 逆向课程之三 frida 注入 Okhttp 抓包上篇**](https://mp.weixin.qq.com/s/_nSs3yGCll0_B6OZBTU5Bg)
- [**精品连载丨安卓 App 逆向课程之四 frida 注入 Okhttp 抓包中篇**](https://mp.weixin.qq.com/s/7-HRRV2i2lX9-t62jYI0ig)
+[精品连载丨安卓 App 逆向课程之三 frida 注入 Okhttp 抓包上篇](https://mp.weixin.qq.com/s/_nSs3yGCll0_B6OZBTU5Bg)
+[精品连载丨安卓 App 逆向课程之四 frida 注入 Okhttp 抓包中篇](https://mp.weixin.qq.com/s/7-HRRV2i2lX9-t62jYI0ig)
 [[原创]Frida实现okhttp3.Interceptor ](https://bbs.pediy.com/thread-252129.htm) 
 [[原创] 如何实现 Https拦截进行 非常规“抓包”（20.9.13-代码更新） ](https://bbs.pediy.com/thread-252100.htm) 
 
@@ -316,6 +316,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 [原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
 
 [易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
+## 基础学习
+[『杂项』SMC加密技术（二）](https://mp.weixin.qq.com/s/fJW9qUxedFStTHm7r1AADg)
 
 ## Windows/hook
 [Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)
@@ -340,11 +342,6 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)
 ## vm
 [记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)
-## Game | 游戏安全
-
-[【逆向安全】快速搜索FPS游戏相机矩阵_矩阵特性1-哔哩哔哩](https://www.bilibili.com/video/BV1s3411D7JU)
-[Hacking Electron Games 1 | Vampire Survivors](https://www.youtube.com/watch?v=6u0V1svtj3A)
-[Hacking Electron Games 2 | Vampire Survivors](https://www.youtube.com/watch?v=kKun6MrHCxI)
 
 ## 工具
 LIEF | 对ELF添加 section, segment

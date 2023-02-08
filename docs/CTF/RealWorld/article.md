@@ -111,8 +111,11 @@ result.txt | 搜验证码
 [禅道12.4.2后台管理员权限Getshell复现](https://cloud.tencent.com/developer/article/1749477)
 [禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484766&idx=1&sn=bd15f286ff1e21d3df2e0043ef60e206)
 [禅道V16.5SQL注入（CNVD-2022-42853）](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485213&idx=2&sn=f5fda7a7c5de099c3f8ae7d3b5656bf5)
-[禅道17.4以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞分析](https://mp.weixin.qq.com/s/ZHsYaU31WkzAJijy1V0U1w)
+[禅道17.4以下 ~ 18.0.beta1系统权限绕过与命令执行漏洞分析](https://mp.weixin.qq.com/s/ZHsYaU31WkzAJijy1V0U1w)
+[禅道17.4以下 ~ 18.0.beta1系统权限绕过与命令执行漏洞](https://mp.weixin.qq.com/s/xcOvFx2nUDUGkdXqXj0iMw)
 [禅道18.1版本RCE分析](https://mp.weixin.qq.com/s/QYISEFl3rTVnGY1ONFLIPw)
+
+
 
 
 [KindEditor 文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484734&idx=1&sn=7508249f8d3a867617020338d3988404)
@@ -313,6 +316,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [vulnhub | Raven-1](https://mp.weixin.qq.com/s/cIMCWOs0ydzw8TcaFGwLkQ) [Download](https://www.vulnhub.com/entry/raven-1,256/)
 * [Vulnhub tomato 番茄靶场攻略 kernel-exploits](https://mp.weixin.qq.com/s/iyKnlvqqXmbITIduRCbcsQ)
 * [Vulnhub-MyCmsms](https://mp.weixin.qq.com/s/OEFBzaB73gi-U9JHf4KHEQ)
+* [Vulnhub | MinU: 1（nmap端口、dirb目录、绕过waf、JWT令牌分析）](https://mp.weixin.qq.com/s/dTgqScwJrYTNOyIrGIzHjg)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
