@@ -38,6 +38,10 @@ __Video__
 [使用unidbg下断点查看寄存器中的参数值](https://www.bilibili.com/video/BV1RG4y1V7zF/)
 [1.使用unidbg主动调用so中的算法_batch](https://www.bilibili.com/video/BV1aR4y1o7M4/)
 
+[14.unidbg马蜂窝zzzghostsigh算法还原魔改SHA-1](https://www.bilibili.com/video/BV1Bd4y1m7ZP/)
+[13.安卓逆向实战unidbg补环境-马蜂窝zzzghostsigh协议字段解析](https://www.bilibili.com/video/BV1sd4y1m7iw/)
+[《和沐阳一起学unidbg》从入门到精通系列](https://www.bilibili.com/video/BV1tv4y1u7X1/)
+
 ## Trace 技巧
 简单写几个分析trace的技巧：
 * 控制变量法，trace两遍对比差异
