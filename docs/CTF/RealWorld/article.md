@@ -84,6 +84,8 @@ result.txt | 搜验证码
 [WebSocket安全漏洞-概念梳理](https://mp.weixin.qq.com/s/dIGG9h-NSmX4yUyFuIqgCw)
 [Web协议层安全之websocket安全分析](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493997&idx=1&sn=9e6b5b6b1c1728a64980397ceb82aeb7)
 [H5游戏（一）登录某某首富H5游戏之WebSockets初涉](https://www.52pojie.cn/thread-1629782-1-1.html) 
+[WebSocket 测试入门篇](https://mp.weixin.qq.com/s/MFNoS-pL5rPlcfo8g086TA)
+
 
 [OA综合利用工具（集合将近20款OA漏洞）](https://mp.weixin.qq.com/s/ZFW5phEN-0iAv4Pw4w8TkA)
 [通达OA v11.5 login_code.php 任意用户登录](https://mp.weixin.qq.com/s/7723ZW4-19JvqmMAVS4pcw)
@@ -164,6 +166,8 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [YApi <1.12.0 远程命令执行漏洞](https://mp.weixin.qq.com/s/UTMly3wLfK0SQHOj5CcN8w)
 
+[Keepass 附EXP CVE-2023-24055](https://mp.weixin.qq.com/s/_yNcIuvl5UmbyMenoKtxyw)
+
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -208,6 +212,7 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | 工具|10大API安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
 [API | 挖洞随记-js接口泄露隱藏接口导致文件上传漏洞](https://mp.weixin.qq.com/s/DPJtJEYgyo15kX4FLw1pRQ)
 [API | 如何hack api并进行模糊测试](https://mp.weixin.qq.com/s/iiyCwU_WL2uVVfnO2WxrYA)
+[API接口安全测试-Wsdl&Swagger&Webpack](https://mp.weixin.qq.com/s/KCfUZCl1hZztmWdGc5XTwg)
 
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
