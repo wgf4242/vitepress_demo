@@ -214,6 +214,8 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | 如何hack api并进行模糊测试](https://mp.weixin.qq.com/s/iiyCwU_WL2uVVfnO2WxrYA)
 [API接口安全测试-Wsdl&Swagger&Webpack](https://mp.weixin.qq.com/s/KCfUZCl1hZztmWdGc5XTwg)
 
+[登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
+
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
