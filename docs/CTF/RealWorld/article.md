@@ -153,6 +153,7 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Struts 2.3.20 ~ 2.3.28，其中2.3.20.3和2.3.24.3没有漏洞。S2-032 远程代码执行漏洞(CVE-2016-3081)](https://mp.weixin.qq.com/s/o7ljCN8PghSzk0GwMHy7uQ)
 [Struts 2.3.5 ~ 2.3.31，2.5 ~ 2.5.10 【漏洞复现】S2-045 远程代码执行漏洞(CVE-2017-5638)](https://mp.weixin.qq.com/s/hPAtR8tt4QQ9X_9BECgb4Q)
 [Struts 2.0.0 ~ 2.3.32 【漏洞复现】S2-046 远程代码执行漏洞(CVE-2017-5638)](https://mp.weixin.qq.com/s/QqrOH_bczvyd8HiawjiA3w)
+[Struts 2.0.0 ~ 2.3.32 【漏洞复现】S2-048 远程代码执行漏洞(CVE-2017-9791)](https://mp.weixin.qq.com/s/OwC68gZQET27pIklOy7DZg)
 
 [Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
@@ -175,10 +176,13 @@ weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [渗透实战|记一次微信小程序渗透测试](https://mp.weixin.qq.com/s/GQYqbKDiY_OfE4kdVgCMig)
 [记一次微信小程序渗透实战记录](https://mp.weixin.qq.com/s/LUDuOgBesn8xKGonE6R8tw)
 [针对微信小程序的渗透测试(附实战)](https://mp.weixin.qq.com/s/9XN2cbGZBtp-ZxyJTHkdKA)
+[WX小程序反编译到url提取一条龙服务](https://mp.weixin.qq.com/s/XKk1GxabW6BGzkVAPHFt9w)
+[微信小程序的任意用户登录实战](https://mp.weixin.qq.com/s/Q5onwwDX27-o5YrWVvjuOw)
 
 ### Exploit/CVE/实战漏洞/IOT 
 [TOTOLINK CVE-2022-26210 漏洞分析&复现](https://mp.weixin.qq.com/s/HYDHoo7ep85SwJeEZxAkEQ)
 [小米路由器任意文件读取及远程命令执行漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484929&idx=1&sn=8012fce68bf9eaccef59fc280b663077)
+[海康威视代码执行漏洞](https://mp.weixin.qq.com/s/o3A7xOPLbdmo6WAZsygHYQ)
 
 ## 钓鱼
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
