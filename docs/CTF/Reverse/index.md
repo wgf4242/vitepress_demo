@@ -345,6 +345,9 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 ## vm
 [记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)
 
+## fuzz/模糊测试
+[Windows平台用户层二进制漏洞模糊测试入门](https://mp.weixin.qq.com/s/nHuo1i21mI-TyqYL21l0RQ)
+
 ## 工具
 LIEF | 对ELF添加 section, segment
 [awesome-ida-x64-olly-plugin](https://github.com/fr0gger/awesome-ida-x64-olly-plugin)

@@ -298,6 +298,7 @@ https://www.anquanke.com/post/id/195215
 [反调试入门第一课第一节下](https://www.bilibili.com/video/BV1Ee4y1V7yL/)
 [番外篇之java混淆函数的hook处理](https://www.bilibili.com/video/BV1Y84y1Y7Nc/)
 [目前遇到的最辣鸡的锁机app](https://www.bilibili.com/video/BV1NN4y1K7yW/)
+[Frida 高频问题：双进程保护该怎么突破：Frida 布道师亲授-哔哩哔哩](https://www.bilibili.com/video/BV1h24y1s7vf)
 
 ## FAQ
 
