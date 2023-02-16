@@ -8,7 +8,7 @@ net user /domain
 获取域内用户的详细信息：
 wmic useraccount get /all
 
-net group "domain controllers" /domain # 查看域管理员 OWA$
+net group "domain controllers" /domain # 查看域控 OWA$
 ping OWA # 域控主机即可获得域控IP
 # 查看所有域成员计算机列表
 net group "domain computers" /domain
@@ -16,6 +16,12 @@ net group "domain computers" /domain
 Net group "domain admins" /domain
 # 登陆本机的域管理员
 net localgroup administrators /domain
+# 查看域成员 假设域为god
+net view /domain:god
+# 当前计算机名
+hostname
+# 查看域控列表
+beacon> net dclist
 
 # 三种情况
 ##1. 存在域，但当前用户不是域用户，提示说明权限不够

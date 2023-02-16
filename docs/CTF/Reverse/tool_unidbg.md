@@ -1,3 +1,28 @@
+
+# Usage
+
+ida中查看so的方法显示 Java_com_kanxue_test2_MainActivity_jnitest
+1. com.kanxue.test2.MainActivity.java 包名要和so文件中的一样。
+2. emulator = AndroidEmulatorBuilder.for32Bit() // 要注意对应的 架构 32 64
+3. loadLibrary 2种方式
+```sh
+# 方式一
+DalvikModule dm = vm.loadLibrary(new File("unidbg-android/src/test/resources/example_binaries/armeabi-v7a/libnative-lib.so"), false);
+# 方式二 文件名为 libmatch02.so
+DalvikModule dm = vm.loadLibrary("match02"); # 去掉 "lib",".so"
+```
+4. createDalvikVM
+```java
+vm = emulator.createDalvikVM(new File("unidbg-android/src/test/resources/example_binaries/xx.apk")); // 使用apk可过签名校验, 有时可不用
+```
+
+
+```java
+"jnitest(Ljava/lang/String;)Z", Z表示 boolean 类型。
+vm.setVerbose(false);  // 设置为true时日志太多
+```
+
+# Article
 [Unidbg + Web = Unidbg-server 手把手教你搭个签名服务器](https://blog.51cto.com/u_15527932/5205378)
 [代码还原的技术: Unidbg调试浮点数运算(一)](https://blog.51cto.com/u_15527932/5205368)
 [Unidbg模拟执行某段子so实操教程(二) LoadSo对比](https://blog.51cto.com/u_15527932/5218089)
@@ -13,6 +38,7 @@
 
 ---
 __Video__
+[《和沐阳一起学unidbg》从入门到精通系列](https://www.bilibili.com/video/BV1tv4y1u7X1/)
 [使用Unidbg在so中任意一个位置下断点](https://www.bilibili.com/video/BV1z14y1g7dq/)
 [Unidbg使用地址的方式去调用函数](https://www.bilibili.com/video/BV19M411h7BV/)
 [Unidbg中一个不存在的Class也能被正常加载？](https://www.bilibili.com/video/BV1cM411y7vG/)
