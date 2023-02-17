@@ -2,7 +2,7 @@
 # Usage
 
 ida中查看so的方法显示 Java_com_kanxue_test2_MainActivity_jnitest
-1. com.kanxue.test2.MainActivity.java 包名要和so文件中的一样。
+1. com.kanxue.test2.MainActivity.java 包名、文件名要和so文件中的一样。
 2. emulator = AndroidEmulatorBuilder.for32Bit() // 要注意对应的 架构 32 64
 3. loadLibrary 2种方式
 ```sh
