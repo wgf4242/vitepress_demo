@@ -15,7 +15,7 @@ Shift+F7 - Segments 看 .init_array ,  init_array是我们程序代码可以控�
 * smali中可能有匿名类, 注意查看是否有用
 
 ## ida native 函数处理
-a1 改类型为JNIEnv *
+a1 改类型为 JNIEnv *
 a2 - jobject/jclass
 ```c
 // a3 没用, a2可能是MainActivity

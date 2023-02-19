@@ -222,6 +222,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
 
+[支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
