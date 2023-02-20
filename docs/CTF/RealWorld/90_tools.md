@@ -1,5 +1,8 @@
 https://gitee.com/windyjxx/projects
 
+## 信息收集
+[ENScan_GO | 剑指HW/SRC，解决在HW/SRC场景下遇到的各种针对国内企业信息收集难题](https://github.com/wgpsec/ENScan_GO)
+
 
 ## 内网穿透
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
@@ -424,6 +427,12 @@ http_proxy=http://192.168.50.161:2080/
 
 
 # other
+
+## linpeas
+
+```sh
+./linpeas.sh | tee linlog.txt
+```
 
 ## keystore,keytool,ssl证书解密pcap
 

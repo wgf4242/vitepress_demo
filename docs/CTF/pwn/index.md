@@ -22,6 +22,7 @@
 [【星盟安全】PWN系列教程 第18节 堆chunk介绍以及源码剖析](https://www.bilibili.com/video/BV1NU4y187te)
 [【星盟安全】PWN系列教程 第19节 UAF](https://www.bilibili.com/video/BV1Ud4y1j7Nw)
 [【星盟安全】PWN系列教程 第22节 Fastbin](https://www.bilibili.com/video/BV1Xf4y1a7VK)
+[Heap | 高级二进制安全 | Binary Exploitation - Advanced （中文教学）](https://www.bilibili.com/video/BV1Z24y1W7QP)
 ## Examples
 [jarvisoj_fm](https://mp.weixin.qq.com/s/7rI3I0M6BcM6UGR119cAbQ)
 

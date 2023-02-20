@@ -179,6 +179,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [针对微信小程序的渗透测试(附实战)](https://mp.weixin.qq.com/s/9XN2cbGZBtp-ZxyJTHkdKA)
 [WX小程序反编译到url提取一条龙服务](https://mp.weixin.qq.com/s/XKk1GxabW6BGzkVAPHFt9w)
 [微信小程序的任意用户登录实战](https://mp.weixin.qq.com/s/Q5onwwDX27-o5YrWVvjuOw)
+[反编译&调试小程序请求签名](https://mp.weixin.qq.com/s/0HzgsFd0_2-ZgAyg8mP_Dw)
 
 ### Exploit/CVE/实战漏洞/IOT 
 [TOTOLINK CVE-2022-26210 漏洞分析&复现](https://mp.weixin.qq.com/s/HYDHoo7ep85SwJeEZxAkEQ)
@@ -222,6 +223,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
 
+[支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)

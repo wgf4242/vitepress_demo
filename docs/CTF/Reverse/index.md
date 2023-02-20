@@ -1,8 +1,8 @@
-[[toc]]
+* [[toc]]
 
-[Frida](./frida)
+* [Frida](./frida)
 
-[相关加密](./recrypto.md)
+* [相关加密](./recrypto.md)
 ## TODO
 https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
@@ -87,9 +87,9 @@ mov rbp, rsp
 
 ## angr
 
-[angr题库](https://github.com/jakespringer/angr_ctf)
+* [angr题库](https://github.com/jakespringer/angr_ctf)
 
-[参照文章](https://www.anquanke.com/post/id/212816)
+* [参照文章](https://www.anquanke.com/post/id/212816)
 
 ## 提问
 ida 调试时  watch view 怎样计算地址值比如 *(Map+1100+1)
@@ -163,7 +163,7 @@ struct IMAGE_OPTIONAL_HEADER32 OptionalHeader
  -- enum OPTIONAL_MAGIC Magic   : PE32 (10Bh) 改 PE64
 ```
 ## CPP/STL
-[STL容器逆向与实战](https://mp.weixin.qq.com/s/bfzeGbieYWaPS3_iB-gSeg)
+* [STL容器逆向与实战](https://mp.weixin.qq.com/s/bfzeGbieYWaPS3_iB-gSeg)
 
 ## MFC
 https://blog.csdn.net/Sanky0u/article/details/81568483
@@ -199,7 +199,7 @@ frida-dexdump -p 27815 -U
 ```
 ## 资源
 https://github.com/MiDuoKi/AndroidSafeStudy
-[移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/hp8NuaW0ioQX2bdIYvSHLg)
+* [移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/hp8NuaW0ioQX2bdIYvSHLg)
 ## APK壳
 https://blog.csdn.net/m0_64604636/article/details/121885541
 https://blog.csdn.net/weixin_44032232/article/details/109676945
@@ -213,7 +213,7 @@ adb -s "emulator-5554" install attachment-16.apk
 
 ### UPX/ESP定律
 https://www.52pojie.cn/thread-326995-1-1.html
-[完美UPX脱壳------之投怀送抱篇（适合所有变形）](https://www.52pojie.cn/thread-1673206-1-1.html) 
+* [完美UPX脱壳------之投怀送抱篇（适合所有变形）](https://www.52pojie.cn/thread-1673206-1-1.html) 
 
 1.检查是UPX，但无法脱壳。
 
@@ -295,59 +295,66 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 # 逆向分类
 ## CEF Chromium Embedded Framework
 
-[将js代码注入到第三方CEF应用程序的一点浅见 ](https://bbs.pediy.com/thread-268570.htm)
+* [将js代码注入到第三方CEF应用程序的一点浅见 ](https://bbs.pediy.com/thread-268570.htm)
 
 
 
 # Article
-[Debugging Tips](https://blog.wjhwjhn.com/archives/838/)
-
-[精品连载丨安卓 App 逆向课程之五 frida 注入 Okhttp 抓包下](https://cloud.tencent.com/developer/article/1669631?from=article.detail.1758879)篇
-[精品连载丨安卓 App 逆向课程之三 frida 注入 Okhttp 抓包上篇](https://mp.weixin.qq.com/s/_nSs3yGCll0_B6OZBTU5Bg)
-[精品连载丨安卓 App 逆向课程之四 frida 注入 Okhttp 抓包中篇](https://mp.weixin.qq.com/s/7-HRRV2i2lX9-t62jYI0ig)
-[[原创]Frida实现okhttp3.Interceptor ](https://bbs.pediy.com/thread-252129.htm) 
-[[原创] 如何实现 Https拦截进行 非常规“抓包”（20.9.13-代码更新） ](https://bbs.pediy.com/thread-252100.htm) 
-
-[6.frida全自动HOOK解密](https://www.bilibili.com/video/BV1kg411N7Zj)
-[【安卓逆向hook第四节课 安卓逆向Hook分析  frida  Hook神器   过Root检测-哔哩哔哩】](https://www.bilibili.com/video/BV1qS4y1X75V)
-[frida真机HOOK解密_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1sR4y147SP)
-[巧用Frida与Unidbg快速在CTF中解题](https://mp.weixin.qq.com/s/LB37_0wBms9UrtiYJ3MpaQ)
-[【技术分享】FRIDA-API使用篇：rpc、Process、Module、Memory使用方法及示例](https://mp.weixin.qq.com/s/-LN2wCj7Vdx65gzeqpjgQw)
-[原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
-
-[易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
+* [Debugging Tips](https://blog.wjhwjhn.com/archives/838/)
+---
+* [精品连载丨安卓 App 逆向课程之五 frida 注入 Okhttp 抓包下](https://cloud.tencent.com/developer/article/1669631?from=article.detail.1758879)篇
+* [精品连载丨安卓 App 逆向课程之三 frida 注入 Okhttp 抓包上篇](https://mp.weixin.qq.com/s/_nSs3yGCll0_B6OZBTU5Bg)
+* [精品连载丨安卓 App 逆向课程之四 frida 注入 Okhttp 抓包中篇](https://mp.weixin.qq.com/s/7-HRRV2i2lX9-t62jYI0ig)
+* [[原创]Frida实现okhttp3.Interceptor ](https://bbs.pediy.com/thread-252129.htm) 
+* [[原创] 如何实现 Https拦截进行 非常规“抓包”（20.9.13-代码更新） ](https://bbs.pediy.com/thread-252100.htm) 
+---
+* [6.frida全自动HOOK解密](https://www.bilibili.com/video/BV1kg411N7Zj)
+* [【安卓逆向hook第四节课 安卓逆向Hook分析  frida  Hook神器   过Root检测-哔哩哔哩】](https://www.bilibili.com/video/BV1qS4y1X75V)
+* [frida真机HOOK解密_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1sR4y147SP)
+* [巧用Frida与Unidbg快速在CTF中解题](https://mp.weixin.qq.com/s/LB37_0wBms9UrtiYJ3MpaQ)
+* [【技术分享】FRIDA-API使用篇：rpc、Process、Module、Memory使用方法及示例](https://mp.weixin.qq.com/s/-LN2wCj7Vdx65gzeqpjgQw)
+* [原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
+---
+* [易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
 ## 基础学习
-[『杂项』SMC加密技术（二）](https://mp.weixin.qq.com/s/fJW9qUxedFStTHm7r1AADg)
+* [『杂项』SMC加密技术（二）](https://mp.weixin.qq.com/s/fJW9qUxedFStTHm7r1AADg)
 
 ## Windows/hook
-[Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)
-[syscall的检测与绕过](https://mp.weixin.qq.com/s/wWddKGu-W9WZsMyM3XemOg)
-[SYSENTER HOOK](https://mp.weixin.qq.com/s/x12Y6rH37PkV24fALX4Oow)
-[逆向原理 | SetWindowsHookEx 原理探究与实验](https://www.bilibili.com/read/cv21270420)
-[Window | 【原理到实践】如何在电脑上置顶一个窗口_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1BT41117fe/)
-[DLL注入与HOOK](https://secondbc.github.io/SecondBC/2022/12/12/DLL注入与HOOK/)
+* [Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)
+* [syscall的检测与绕过](https://mp.weixin.qq.com/s/wWddKGu-W9WZsMyM3XemOg)
+* [SYSENTER HOOK](https://mp.weixin.qq.com/s/x12Y6rH37PkV24fALX4Oow)
+* [逆向原理 | SetWindowsHookEx 原理探究与实验](https://www.bilibili.com/read/cv21270420)
+* [Window | 【原理到实践】如何在电脑上置顶一个窗口_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1BT41117fe/)
+* [DLL注入与HOOK](https://secondbc.github.io/SecondBC/2022/12/12/DLL注入与HOOK/)
 
 ### DLL注入
-[初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)
+* [初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)
 
 ## AI助手ChatGPT
 https://github.com/acheong08/ChatGPT
 
 ## PE
-[详解二进制PE文件 | 导入表技术](https://mp.weixin.qq.com/s/eu14EHuNup0Y504qY3rsDg)
-[手动展开PE文件 | 二进制安全](https://mp.weixin.qq.com/s/VcKtwTn4fh8nyPVhYxkrmQ)
+* [详解二进制PE文件 | 导入表技术](https://mp.weixin.qq.com/s/eu14EHuNup0Y504qY3rsDg)
+* [手动展开PE文件 | 二进制安全](https://mp.weixin.qq.com/s/VcKtwTn4fh8nyPVhYxkrmQ)
 
 ## 模拟运行
-[Qiling框架模拟运行固件配合IDA动态调试](https://mp.weixin.qq.com/s/PsWTcazrgj0Lv-6ZNNkx3g)
+* [Qiling框架模拟运行固件配合IDA动态调试](https://mp.weixin.qq.com/s/PsWTcazrgj0Lv-6ZNNkx3g)
 ## 地址计算
 so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地址 -800为base
 看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)
 ## vm
-[记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)
+* [记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)
 
 ## fuzz/模糊测试
-[Windows平台用户层二进制漏洞模糊测试入门](https://mp.weixin.qq.com/s/nHuo1i21mI-TyqYL21l0RQ)
+* [Windows平台用户层二进制漏洞模糊测试入门](https://mp.weixin.qq.com/s/nHuo1i21mI-TyqYL21l0RQ)
+
+## 实践与练习
+* [[原创]EXP编写学习 之 栈溢出（一）](https://bbs.kanxue.com/thread-272505.htm)
+* [[原创]EXP编写学习 之 SEH利用 （二）](https://bbs.kanxue.com/thread-272555.htm)
+* [[原创]EXP编写学习 之 网络上的EXP（三）](https://bbs.kanxue.com/thread-272583.htm)
+* [[原创]EXP编写学习 之 绕过GS（四）](https://bbs.kanxue.com/thread-272598.htm)
+* [[原创]EXP编写学习 之 绕过SafeSEH（五）](https://bbs.kanxue.com/thread-272603.htm)
 
 ## 工具
 LIEF | 对ELF添加 section, segment
-[awesome-ida-x64-olly-plugin](https://github.com/fr0gger/awesome-ida-x64-olly-plugin)
+* [awesome-ida-x64-olly-plugin](https://github.com/fr0gger/awesome-ida-x64-olly-plugin)
