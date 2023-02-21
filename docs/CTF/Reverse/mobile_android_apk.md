@@ -137,13 +137,16 @@ https://github.com/APKLab/APKLab
 * [《安卓逆向这档事》二、初识APK文件结构、双开、汉化、基础修改](https://www.52pojie.cn/thread-1695796-1-1.html)
 * [《安卓逆向这档事》三、初识smail，vip终结者](https://www.52pojie.cn/thread-1701353-1-1.html)
 * [《安卓逆向这档事》四、恭喜你获得广告&弹窗静默卡](https://www.52pojie.cn/thread-1706691-1-1.html)
+* [《安卓逆向这档事》五、1000-7=？&动态调试&Log插桩](https://mp.weixin.qq.com/s/aY_SZSFdWWZEG8ZL0BTtYw)
+* [《安卓逆向这档事》六、校验的N次方-签名校验对抗、PM理、IO重定向](https://mp.weixin.qq.com/s/aY_SZSFdWWZEG8ZL0BTtYw)
+* [《安卓逆向这档事》七、Sorry，会Hook真的可以为所欲为-Xposed快速上手(上)模块](https://www.52pojie.cn/thread-1740944-1-1.html) [video](https://www.bilibili.com/video/BV1VT411C7Sr/)
+* [《安卓逆向这档事》八、Sorry，会Hook真的可以为所欲为-xposed快速上手(下)快速hook](https://mp.weixin.qq.com/s/L1dpWfoFLCPKcLx_kriH-Q)
 ------
 八、参考文档
 * [吾爱破解安卓逆向入门教程（三）---深入Smali文件](https://www.52pojie.cn/thread-396966-1-1.html)
 * [吾爱破解安卓逆向入门教程（四）---Smali函数分析](https://www.52pojie.cn/thread-397858-1-1.html)
 * [【原木文章】Android改造者之路-02.初探smali功法](https://www.52pojie.cn/thread-1485681-1-1.html)
 ---
-* [《安卓逆向这档事》七、Sorry，会Hook真的可以为所欲为-Xposed快速上手(上)模块](https://www.52pojie.cn/thread-1740944-1-1.html) [video](https://www.bilibili.com/video/BV1VT411C7Sr/)
 * [入门 | Android逆向之smali语法宝典](https://www.jianshu.com/p/ba9b374346dd) 
 * [Android逆向遇到的环境问题](https://bbs.pediy.com/thread-275251.htm) 
 ---

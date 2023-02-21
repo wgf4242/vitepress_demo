@@ -332,6 +332,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Vulnhub tomato 番茄靶场攻略 kernel-exploits](https://mp.weixin.qq.com/s/iyKnlvqqXmbITIduRCbcsQ)
 * [Vulnhub-MyCmsms](https://mp.weixin.qq.com/s/OEFBzaB73gi-U9JHf4KHEQ)
 * [Vulnhub | MinU: 1（nmap端口、dirb目录、绕过waf、JWT令牌分析）](https://mp.weixin.qq.com/s/dTgqScwJrYTNOyIrGIzHjg)
+* [【VulnHub靶机系列】De-ICE: S1.100](https://mp.weixin.qq.com/s/9-M9EPcCgmJedvmRNLqvNA)
+* [【VulnHub靶机系列】BadStore](https://mp.weixin.qq.com/s/a426CZgSK_rytU6MCXTRow)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
