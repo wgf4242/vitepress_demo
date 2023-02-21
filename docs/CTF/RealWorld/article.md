@@ -169,6 +169,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [YApi <1.12.0 远程命令执行漏洞](https://mp.weixin.qq.com/s/UTMly3wLfK0SQHOj5CcN8w)
 
 [Keepass 附EXP CVE-2023-24055](https://mp.weixin.qq.com/s/_yNcIuvl5UmbyMenoKtxyw)
+[Keepass CVE-2023-24055 KeePass敏感信息明文传输漏洞复现](https://mp.weixin.qq.com/s/0-qIbnxOIx4bJJrrVtvseg)
 
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
@@ -253,6 +254,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
 [冰蝎流量免杀初探](https://mp.weixin.qq.com/s/1Llqwov2vFaaDNP1mLDtZg)
 [冰蝎各版本工具分析与魔改思路](https://mp.weixin.qq.com/s/3lIOABAiuZd4rOM7SshOEA)
+[冰蝎Java WebShell免杀生成 -- ByPassBehinder4J​](https://mp.weixin.qq.com/s/Gy6xAYVE3AOybr3CG4HV2A)
 
 ### 伪装
 [蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)

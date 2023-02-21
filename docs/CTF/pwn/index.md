@@ -3,6 +3,8 @@
 
 # Article
 [里面找链接](https://faradaysec.com/reverse-engineering-and-game-hacking-resources-2/)
+
+[从新生赛入门PWN](https://mp.weixin.qq.com/s/kAgrcDO-Dt15eZKo0w0pEw)
 [Pwn堆利用学习](https://mp.weixin.qq.com/s/R1LcyFnb9tCDVLP-1ryKYw)
 [【ACTF2022】从Fuzz到XCTF赛题 | 堆题目](https://mp.weixin.qq.com/s/80jizJsqmrq9dPFE77uzew)
 
