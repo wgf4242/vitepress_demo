@@ -205,6 +205,7 @@ https://github.com/APKLab/APKLab
 * [【微信&反汇编&x64dbg】小程序加密反汇编分析算法AES密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)
 * [【微信&反汇编&x64dbg】小程序加密反汇编分析算法XOR解密](https://www.bilibili.com/video/BV1Lv4y1i7hJ/)
 * [小程序测试流程](https://mp.weixin.qq.com/s/NVN73i8t0Ozy7bW8QimlNg)
+* [小程序渗透工具 -- wxapkgUnpack](https://mp.weixin.qq.com/s/iGInWwvvnv6aC1cHoI_Z2g)
 
 ## 关注列表
 [和沐阳学逆向](https://space.bilibili.com/439348342)

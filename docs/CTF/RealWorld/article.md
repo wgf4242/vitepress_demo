@@ -237,6 +237,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
 * [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 * [安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
+* [Windows Defender的一些渗透知识](https://mp.weixin.qq.com/s/4s3uJ2vofGbkBCyt_f5jHQ)
 * [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
 * [Powershell免杀混淆器](https://mp.weixin.qq.com/s/Z5nNx3iLaSeiLFtWSFHAdg)
 * [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/LiYPT7SOE_v4uKqOrkqLvw)
