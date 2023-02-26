@@ -192,6 +192,8 @@ https://github.com/APKLab/APKLab
 * [某汽车社区App 签名和加解密分析 (二) : Frida Dump so](https://blog.51cto.com/u_15527932/5205322)
 * [典工宝/链工宝协议逆向-视频快进](https://www.52pojie.cn/thread-1715717-1-1.html) 
 * [奥维地图浏览器-vip分析](https://mp.weixin.qq.com/s/fgHpsHFGohYpPLUlb76cCA)
+* [某视频VIP播放 一个懒人的破解方式](https://www.52pojie.cn/thread-1747613-1-1.html) 
+
 
 ## 混淆加密
 * [开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)

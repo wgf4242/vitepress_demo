@@ -39,6 +39,7 @@ $$
 [密码学｜5.4.3 一个针对离散对数问题的碰撞算法](https://mp.weixin.qq.com/s/zNKKGdzgPcLE8OwWbPALAA)
 [密码学｜5.5 Pollard’s p Method](https://mp.weixin.qq.com/s/gNFN9JRDR1ey3_1soY8N1g)
 [密码学｜5.5.2 通过Pollard’s ρ Method离散对数](https://mp.weixin.qq.com/s/0tNCkh_GY9mVXXto6CGsTw)
+[『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 
 [AES](https://bbs.pediy.com/thread-253884.htm)
 [Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)

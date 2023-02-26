@@ -171,6 +171,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Keepass 附EXP CVE-2023-24055](https://mp.weixin.qq.com/s/_yNcIuvl5UmbyMenoKtxyw)
 [Keepass CVE-2023-24055 KeePass敏感信息明文传输漏洞复现](https://mp.weixin.qq.com/s/0-qIbnxOIx4bJJrrVtvseg)
 
+[Joomla未授权访问漏洞(CVE-2023-23752)](https://mp.weixin.qq.com/s/N_fSww8Hjylnrha6EvlSjg)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -220,6 +221,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | 挖洞随记-js接口泄露隱藏接口导致文件上传漏洞](https://mp.weixin.qq.com/s/DPJtJEYgyo15kX4FLw1pRQ)
 [API | 如何hack api并进行模糊测试](https://mp.weixin.qq.com/s/iiyCwU_WL2uVVfnO2WxrYA)
 [API接口安全测试-Wsdl&Swagger&Webpack](https://mp.weixin.qq.com/s/KCfUZCl1hZztmWdGc5XTwg)
+[API | 水平越权漏洞检测工具](https://mp.weixin.qq.com/s/VrJ_6dvu8-U5sVAfLzgtGg)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
