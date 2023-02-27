@@ -134,6 +134,7 @@ result.txt | 搜验证码
 Weblogic | CVE-2021-2109: WebLogic Server的console中认证后可rce
 Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Weblogic | 【漏洞复现】Weblogic远程代码执行漏洞(CVE-2017-10271)](https://mp.weixin.qq.com/s/y4vsWLktdc5_pOp-uJIHpw)
+[Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0  远程代码执行漏洞 CVE-2023-21839](https://mp.weixin.qq.com/s/i_uJwyvvWrKpDjyGT6t2RQ)
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
@@ -155,6 +156,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Struts 2.3.5 ~ 2.3.31，2.5 ~ 2.5.10 【漏洞复现】S2-045 远程代码执行漏洞(CVE-2017-5638)](https://mp.weixin.qq.com/s/hPAtR8tt4QQ9X_9BECgb4Q)
 [Struts 2.0.0 ~ 2.3.32 【漏洞复现】S2-046 远程代码执行漏洞(CVE-2017-5638)](https://mp.weixin.qq.com/s/QqrOH_bczvyd8HiawjiA3w)
 [Struts 2.0.0 ~ 2.3.32 【漏洞复现】S2-048 远程代码执行漏洞(CVE-2017-9791)](https://mp.weixin.qq.com/s/OwC68gZQET27pIklOy7DZg)
+[Struts 2.1.2 ~ 2.3.33，2.5 ~ 2.5.12【漏洞复现】S2-052远程代码执行漏洞(CVE-2017-9805)](https://mp.weixin.qq.com/s/pyNA_tQflMcaNrIptWcQYg)
 
 [Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)

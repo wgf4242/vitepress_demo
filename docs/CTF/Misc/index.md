@@ -362,3 +362,5 @@ ctfshow 未知信号
 [各种类型的图片格式隐写术总结](https://mp.weixin.qq.com/s/9KZZDSpw1Xc_um0vNN4kpg)
 ## 图像相关
 [傅里叶图像压缩](https://www.bilibili.com/video/BV1CY411R7bA?t=1329.5)
+## Android
+[实战攻击手机PIN和图案密码](https://byxs20.github.io/posts/38185.html)
