@@ -158,7 +158,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Struts 2.0.0 ~ 2.3.32 【漏洞复现】S2-048 远程代码执行漏洞(CVE-2017-9791)](https://mp.weixin.qq.com/s/OwC68gZQET27pIklOy7DZg)
 [Struts 2.1.2 ~ 2.3.33，2.5 ~ 2.5.12【漏洞复现】S2-052远程代码执行漏洞(CVE-2017-9805)](https://mp.weixin.qq.com/s/pyNA_tQflMcaNrIptWcQYg)
 
-[Tomcat 【中间件】tomcat 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
+[Tomcat | 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
+[Tomcat | 7.0.0-7.0.81 任意文件写入(CVE-2017-12615)](https://mp.weixin.qq.com/s/_Pw2jqKx21RtrZFDSM6xCQ)
 [Apache Solr JMX服务RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
 [Apache | 春秋云镜-CVE-2022-33980（Apache Commons Configuration远程命令执行漏洞）](https://mp.weixin.qq.com/s/EhatzI7QVmh_RQZYOWNBYg)
 
@@ -224,6 +225,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | 如何hack api并进行模糊测试](https://mp.weixin.qq.com/s/iiyCwU_WL2uVVfnO2WxrYA)
 [API接口安全测试-Wsdl&Swagger&Webpack](https://mp.weixin.qq.com/s/KCfUZCl1hZztmWdGc5XTwg)
 [API | 水平越权漏洞检测工具](https://mp.weixin.qq.com/s/VrJ_6dvu8-U5sVAfLzgtGg)
+[API接口渗透测试技巧汇总](https://mp.weixin.qq.com/s/0l8uPx9akhY3KsyPMjLJxg)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
@@ -254,6 +256,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [红队渗透-免杀-7-msfmania过杀软实现免杀-哔哩哔哩](https://www.bilibili.com/video/BV18d4y1E7Q1)
 * certutil bypass360: `改名123.exe使用`
 * [CS的shellcode免杀加载器（2月1日更新）](https://mp.weixin.qq.com/s/zdzf73UqZCikuYqy6DfflA)
+* [CS | 苛刻条件下，C2上传执行骚姿势](https://mp.weixin.qq.com/s/l-QJyl2NDxi7y94-k-cRrg)
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
