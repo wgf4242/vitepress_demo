@@ -136,6 +136,8 @@ Weblogic | CVE-2021-2109: WebLogic Server的console中认证后可rce
 Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Weblogic | 【漏洞复现】Weblogic远程代码执行漏洞(CVE-2017-10271)](https://mp.weixin.qq.com/s/y4vsWLktdc5_pOp-uJIHpw)
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0  远程代码执行漏洞 CVE-2023-21839](https://mp.weixin.qq.com/s/i_uJwyvvWrKpDjyGT6t2RQ)
+[Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0  Ladon漏洞复现  CVE-2023-21839](https://mp.weixin.qq.com/s/hGmjbampA9sALK7gCtt6cg)
+
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
