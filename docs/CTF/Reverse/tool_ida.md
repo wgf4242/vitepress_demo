@@ -213,3 +213,4 @@ https://github.com/JusticeRage/Gepetto
 
 # Article
 [IDAPython 速查表](https://www.cnblogs.com/hed10ne/p/idapython_cheatsheet.html)
+[IDAPython/Tracing calls tutorial](https://magiclantern.fandom.com/wiki/IDAPython/Tracing_calls_tutorial)

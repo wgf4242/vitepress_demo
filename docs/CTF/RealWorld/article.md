@@ -230,6 +230,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API接口安全测试-Wsdl&Swagger&Webpack](https://mp.weixin.qq.com/s/KCfUZCl1hZztmWdGc5XTwg)
 [API | 水平越权漏洞检测工具](https://mp.weixin.qq.com/s/VrJ_6dvu8-U5sVAfLzgtGg)
 [API接口渗透测试技巧汇总](https://mp.weixin.qq.com/s/0l8uPx9akhY3KsyPMjLJxg)
+[API | 常见API接口渗透测试流程](https://mp.weixin.qq.com/s/_QOlsVvUSXv0EHlYFdUPuw)
+[API安全漏洞靶场crapi漏洞复现](https://mp.weixin.qq.com/s/6QPjshRhegNsHS3ua-DZ1w)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
@@ -317,7 +319,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
 * [VulnStack靶场实战指南系列全集](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4NjEyMDk0MA==&action=getalbum&album_id=2034161318382862339)
 * [Done | ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2)
-* [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787)
+* [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787) [域渗透实战-红日靶场二](https://mp.weixin.qq.com/s/FeGKC_keorOpkKEgFPVzeA)
 * [Web安全入门进阶靶场实战](http://vulnstack.qiyuanxuetang.net/vuln/detail/4/) [百度网盘](https://pan.baidu.com/s/1K8o3b5nXEcE0AXJnZ7vRMw#mb6q)
 * [Done | ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw) [百度网盘](https://pan.baidu.com/s/1iy4MIy6ni6d9F3iypeCYVQ#7mhi)
 * [Done | ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b) [下载](https://pan.baidu.com/s/1j4n8x1bil7hlX4uirOZcIA#0u8k)
