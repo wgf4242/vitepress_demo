@@ -221,6 +221,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
 [渗透测试Tips【建议收藏】](https://mp.weixin.qq.com/s/L_g8yEmUKAT3LKrR_wV8yw)
 [常用的30+种未授权访问漏洞汇总](https://mp.weixin.qq.com/s/nVSXNz8oJSnGb1Nd7mGy8A)
+[渗透测试中403/401页面绕过的思路总结](https://mp.weixin.qq.com/s/RcEL4uw9DbM98hUsmws5_Q)
 
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API安全01：crAPI漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
@@ -255,6 +256,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/LiYPT7SOE_v4uKqOrkqLvw)
 * [powershell免杀之路](https://mp.weixin.qq.com/s/FfXRtbUCOt3ZmubkAnCe6Q)
 * [免杀工具 ShellCodeRunner](https://github.com/antman1p/ShellCodeRunner)
+* [红队综合免杀工具 -- 掩日（3月3日更新）](https://mp.weixin.qq.com/s/F84H3cpB2fMmDPQvLvQ5sg)
 * Themia加壳过火绒
 * exe | darkarmour: `python darkarmour.py -f shell.exe -e xor -j -k sanker -l 20 -u -o bypass_shell.exe`
 * [免杀生成与木马捆绑工具 -- rsmaker](https://mp.weixin.qq.com/s/ozZoTlG3e_M0eKxBu6hcLg)
