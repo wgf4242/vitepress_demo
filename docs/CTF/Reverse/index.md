@@ -234,7 +234,7 @@ UPX1       00010000  00009000   00000400  00008400   E0000040                   
 修复头后, 搜popad, 运行跳后走几步到push ebp dump
 ### VMP
 https://bbs.pediy.com/thread-271546-1.htm
-
+[某驱动脱壳 vmp](https://wbglil.github.io/2021/04/05/%E6%9F%90%E9%A9%B1%E5%8A%A8%E8%84%B1%E5%A3%B3%20vmp/)
 ## frida
 ### x86
 mkdir /data/local/tmp

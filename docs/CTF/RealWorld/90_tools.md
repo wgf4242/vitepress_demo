@@ -6,6 +6,7 @@ https://gitee.com/windyjxx/projects
 
 ## 内网穿透
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
+[不同中间件端口复用代理解决方案](https://9bie.org/index.php/archives/969/)
 [Neo-reGeorg -- php](https://blog.csdn.net/qq_42094992/article/details/115143527)
 frp/nps
 
