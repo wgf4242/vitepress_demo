@@ -138,6 +138,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0  远程代码执行漏洞 CVE-2023-21839](https://mp.weixin.qq.com/s/i_uJwyvvWrKpDjyGT6t2RQ)
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0  Ladon漏洞复现  CVE-2023-21839](https://mp.weixin.qq.com/s/hGmjbampA9sALK7gCtt6cg)
 
+[FastJson利用工具 -- fastjson-exp](https://mp.weixin.qq.com/s/dyeOlw2SyjgCGE3C8MDjfg)
+[若依系统前后台漏洞大全](https://mp.weixin.qq.com/s/LZxZZ3ZLQg2Wz3xX4iCE8w)
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某OJ渗透测试记录_bypass_winapi.h__asm_shellcode_c#_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
@@ -146,6 +148,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [yxcms后台模板写shell](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [2](https://blog.csdn.net/qq_40638006/article/details/122033546)
 [Spring-Core-RCE漏洞 | 漏洞图形化GUI一键利用工具](https://mp.weixin.qq.com/s/FSDTz_yWUXrJsJBEibxAQg)
 [Spring | CVE-2022-22965 Spring RCE漏洞复现](https://mp.weixin.qq.com/s/KEmd9O2A121vd3vO97rdkw)
+[Spring boot | 记一次Spring boot任意文件上传](https://mp.weixin.qq.com/s/nnFCqvC40zMAKWRIi4Doug)
 
 [Struts 2.0.0 - Struts 2.0.8 , S2-001 远程代码执行漏洞](https://mp.weixin.qq.com/s/Ams1rVYxJwgH6VHsqyf1XA)
 [Struts 2.0.0 ~ 2.1.8.1 【漏洞复现】S2-005 远程代码执行漏洞(CVE-2010-1870)](https://mp.weixin.qq.com/s/3tNKiQOqmFb9kDSbyO7fzw)
