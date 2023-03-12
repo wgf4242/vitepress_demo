@@ -149,6 +149,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Spring-Core-RCE漏洞 | 漏洞图形化GUI一键利用工具](https://mp.weixin.qq.com/s/FSDTz_yWUXrJsJBEibxAQg)
 [Spring | CVE-2022-22965 Spring RCE漏洞复现](https://mp.weixin.qq.com/s/KEmd9O2A121vd3vO97rdkw)
 [Spring boot | 记一次Spring boot任意文件上传](https://mp.weixin.qq.com/s/nnFCqvC40zMAKWRIi4Doug)
+[Spring | 敏感目录扫描 -- SpringScan](https://mp.weixin.qq.com/s/tzZTuODeSLNapFjh5Py_Pg)
 
 [Struts 2.0.0 - Struts 2.0.8 , S2-001 远程代码执行漏洞](https://mp.weixin.qq.com/s/Ams1rVYxJwgH6VHsqyf1XA)
 [Struts 2.0.0 ~ 2.1.8.1 【漏洞复现】S2-005 远程代码执行漏洞(CVE-2010-1870)](https://mp.weixin.qq.com/s/3tNKiQOqmFb9kDSbyO7fzw)
