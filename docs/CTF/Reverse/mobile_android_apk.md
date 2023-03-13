@@ -131,6 +131,7 @@ https://github.com/APKLab/APKLab
 
 ## 抓包
 * [安全攻防 | APP抓包大全](https://mp.weixin.qq.com/s/SoyZBDoPCX2crBmgM6uKfg)
+* [Android渗透测试HTTPS证书校验绕过](https://mp.weixin.qq.com/s/X6efaPMF0Zb3ENsEy-H3gQ)
 
 ## 综合
 * [《安卓逆向这档事》一、模拟器环境搭建](https://www.52pojie.cn/thread-1695141-1-1.html)
