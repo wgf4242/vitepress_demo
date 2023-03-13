@@ -350,6 +350,7 @@ ctfshow 未知信号
 
 # Article
 [数位板流量分析探索](https://www.cnblogs.com/zysgmzb/p/16667154.html)
+[USB接口流量分析与CTF解题技巧](https://mp.weixin.qq.com/s/4DmPlmuJ4rMKyByEvrkPxw)
 
 ## 压缩包/zip
 [各类常见压缩包类型隐写术总结](https://mp.weixin.qq.com/s/VbFp_up_nAar6XTzjPmKZA)
