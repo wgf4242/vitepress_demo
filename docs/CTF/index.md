@@ -14,6 +14,7 @@ cat test
 [MQTT安全分析](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492664&idx=1&sn=e18c8c1e7209f6bacddb85397eab85c9)
 [Bluetooth 蓝牙协议栈技术初探](https://mp.weixin.qq.com/s/1pG6jnvt3aqPrz5Vl6FIqg)
 [TLS 1.2 协议解析流程学习（一）](https://mp.weixin.qq.com/s/DS3ZMVSlHvIV0wIDrrmHpg)
+[HLS 无损下载B站直播 | HLS协议从入门到实践](https://www.bilibili.com/video/BV1yL411k7DK/)
 
 [IOT设备常见配置文件加解密分析](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247496354&idx=1&sn=79f02dbebafeb18dfc3e962c489a560f)
 [Openwrt进程间通信-Ubus](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247494791&idx=1&sn=58ce08c883a7056af29163db8fac83c4)

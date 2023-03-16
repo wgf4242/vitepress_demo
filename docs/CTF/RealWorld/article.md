@@ -183,6 +183,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Keepass CVE-2023-24055 KeePass敏感信息明文传输漏洞复现](https://mp.weixin.qq.com/s/0-qIbnxOIx4bJJrrVtvseg)
 
 [Joomla未授权访问漏洞(CVE-2023-23752)](https://mp.weixin.qq.com/s/N_fSww8Hjylnrha6EvlSjg)
+[JoomlaCVE-2023-23752：Joomla未授权访问漏洞](https://mp.weixin.qq.com/s/p-LDGXaC_jTsLYxuYQvR7w)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -226,7 +227,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [渗透测试Tips【建议收藏】](https://mp.weixin.qq.com/s/L_g8yEmUKAT3LKrR_wV8yw)
 [常用的30+种未授权访问漏洞汇总](https://mp.weixin.qq.com/s/nVSXNz8oJSnGb1Nd7mGy8A)
 [渗透测试中403/401页面绕过的思路总结](https://mp.weixin.qq.com/s/RcEL4uw9DbM98hUsmws5_Q)
+[渗透测试之突破口 | 常见打点及漏洞利用](https://mp.weixin.qq.com/s/190z9ljqriHLLexEMRkJ5w)
 
+[API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API安全01：crAPI漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 [API | 工具|10大API安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
