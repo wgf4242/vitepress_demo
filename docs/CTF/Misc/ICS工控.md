@@ -83,6 +83,7 @@ INV_B取反字节 60=>-60
 [Modbus | 『工控』某工控比赛 Modbus 题目复盘](https://mp.weixin.qq.com/s/sOHJDV7wDb9FQbSxjQkTBw)
 
 [Modbus Slave缓冲区溢出漏洞CVE-2022-1068分析与复现](https://mp.weixin.qq.com/s/5InTTej26aDFzQgB8l6MHw)
+[工控CTF中常见题型介绍](https://mp.weixin.qq.com/s/LW0jQAoD5VLygHyooyUXlw)
 
 ## 漏洞平台
 https://ics.cnvd.org.cn/index

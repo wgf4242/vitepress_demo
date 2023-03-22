@@ -15,11 +15,14 @@
 [【星盟安全】PWN系列教程](https://www.bilibili.com/video/BV1Uv411j7fr)
 [heap | Use After Free - CTF Wiki](https://ctf-wiki.org/pwn/linux/user-mode/heap/ptmalloc2/use-after-free/)
 [heap | 新人PWN堆Heap总结](https://mp.weixin.qq.com/s/Dk11gRLVsh4-KstotEGb7g)
+[heap | 【详解】CTFHUB-FastBin Attack](https://mp.weixin.qq.com/s/oAivho44IHPBYC9K9h2rOA)
 [tcache bin利用总结](https://mp.weixin.qq.com/s/7kytfB0oFy2xcccwy3cxMA)
 
 [linux kernel ROP 下的保护机制绕过](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497175&idx=1&sn=4ea7737c33bf2d6f5c627e5a3bde840f)
 [linux kernel 结构体利用 — tty,seq](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497382&idx=1&sn=3af9f1d3e1410968f4e79f8c7d4cb7af)
 [Linux内核pwn之基础rop提权](https://mp.weixin.qq.com/s/VNlTOgRaQF3KqxKMEJDuBw)
+[Glibc 高版本堆利用方法总结](https://mp.weixin.qq.com/s/NE0ujoNZUjlY_MALM1nObw)
+[『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
 ## Tutorial
 [【星盟安全】PWN系列教程 第18节 堆chunk介绍以及源码剖析](https://www.bilibili.com/video/BV1NU4y187te)
 [【星盟安全】PWN系列教程 第19节 UAF](https://www.bilibili.com/video/BV1Ud4y1j7Nw)

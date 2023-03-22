@@ -142,6 +142,7 @@ https://github.com/APKLab/APKLab
 * [《安卓逆向这档事》六、校验的N次方-签名校验对抗、PM理、IO重定向](https://mp.weixin.qq.com/s/aY_SZSFdWWZEG8ZL0BTtYw)
 * [《安卓逆向这档事》七、Sorry，会Hook真的可以为所欲为-Xposed快速上手(上)模块](https://www.52pojie.cn/thread-1740944-1-1.html) [video](https://www.bilibili.com/video/BV1VT411C7Sr/)
 * [《安卓逆向这档事》八、Sorry，会Hook真的可以为所欲为-xposed快速上手(下)快速hook](https://mp.weixin.qq.com/s/L1dpWfoFLCPKcLx_kriH-Q)
+* [《安卓逆向这档事》九、密码学基础、算法自吐、非标准加密对抗](https://mp.weixin.qq.com/s/jIId9oEchhU4W7jplYcyJg)
 ------
 八、参考文档
 * [吾爱破解安卓逆向入门教程（三）---深入Smali文件](https://www.52pojie.cn/thread-396966-1-1.html)

@@ -245,10 +245,14 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
 
 [支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
+### Android
+[安卓渗透测试工具集 -- h4tools](https://mp.weixin.qq.com/s/z0pb-Z4pzk-eX5nXsrF8vg)
+
 ## 木马
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
 [Web | 内存马 | 内存Shell生成器](https://mp.weixin.qq.com/s/7YPuChR7anVAninHOMB6aA)
+[冰蝎内存马生成工具 -- ysoserialbtl](https://mp.weixin.qq.com/s/5B_kcFnKVoHewvgGEiVhBg)
 ### Mobile/Android/APK
 [安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
 
@@ -327,14 +331,14 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [xss-labs靶场通关（四）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484112&idx=1&sn=a4fbff84ee7e966353f768ff1e72d3aa)
 * [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
 * [VulnStack靶场实战指南系列全集](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4NjEyMDk0MA==&action=getalbum&album_id=2034161318382862339)
-* [Done | ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2)
-* [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787) [域渗透实战-红日靶场二](https://mp.weixin.qq.com/s/FeGKC_keorOpkKEgFPVzeA)
 * [Web安全入门进阶靶场实战](http://vulnstack.qiyuanxuetang.net/vuln/detail/4/) [百度网盘](https://pan.baidu.com/s/1K8o3b5nXEcE0AXJnZ7vRMw#mb6q)
-* [Done | ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw) [百度网盘](https://pan.baidu.com/s/1iy4MIy6ni6d9F3iypeCYVQ#7mhi)
+* [Done | ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [4](https://blog.csdn.net/qq_50854790/article/details/122758416) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2) [video](https://www.bilibili.com/video/BV1Ta411R7hm)
+* [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787) [域渗透实战-红日靶场二](https://mp.weixin.qq.com/s/FeGKC_keorOpkKEgFPVzeA)
+* [Done | ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透 | Joomla](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw) [百度网盘](https://pan.baidu.com/s/1iy4MIy6ni6d9F3iypeCYVQ#7mhi)
 * [Done | ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b) [下载](https://pan.baidu.com/s/1j4n8x1bil7hlX4uirOZcIA#0u8k)
 * [Done | ATT&CK实战系列-红队评估 （五）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=5&sn=374eb562121ef479fd2a8bce5b5e459c) [百度网盘](https://pan.baidu.com/s/1kL8reGc79A_ZQBVnkDCOMA?pwd=in2i)
 * [ATT&CK实战系列-红队评估 （六）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=6&sn=23d5a6c9f323c314c6b0ca0dfd8b54b8) [下载](https://pan.baidu.com/s/1SCMMaiwj2q-pZMsvGoIl9A#r4vg)
-* [ATT&CK实战系列-红队评估 （七）Vulnstack三层网络域渗透靶场](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=7&sn=55960825b1ca582a3b91d3f3ef11b4ac)
+* [ATT&CK实战系列-红队评估 （七）Vulnstack三层网络域渗透靶场](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=7&sn=55960825b1ca582a3b91d3f3ef11b4ac) [2](https://mp.weixin.qq.com/s/GWFiFlVmnhHLnK8bY3HtsA) [百度网盘](https://pan.baidu.com/s/1ZGni7v0RMmQWoqBtspIUQA#u4j7)
 * [ATT&CK实战系列-红日-VulnStack内网靶场-ATT&CK（八）-文末下载地址](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ) [下载](https://pan.baidu.com/s/15cAFc3mFoHtNmVv2wKr1sQ?pwd=rb8f)
 * [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
 * [【内网渗透系列】1-暗月出师三层网络靶机7 writeup（附带【其他内网靶场】链接地址）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247492091&idx=2&sn=095bbd631029feeb3295e630b9f7e1f7)
@@ -373,6 +377,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [【靶场实例】6-Lord Of The Root-1.0.1](https://mp.weixin.qq.com/s/YG00g9r8md_Q6yzSUV7Izg)
 * [九种DC靶机渗透测试一](https://mp.weixin.qq.com/s/gh_vGCjJtZe4EKHecKjjbg) [二](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [三](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [Download](https://pan.baidu.com/s/13ra2u5QjCDRewN_RiTfS_Q#seri)
 * [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/WA9AMnF6wZSEVudr0Szgkw)
+* [HackTheBox | BountyHunter靶场实战](https://mp.weixin.qq.com/s/aBMeOtC300oiAe7XYrQzww)
 ## 漏洞挖掘
 [短信验证码常见漏洞总结](https://mp.weixin.qq.com/s/h5eJgbZi5SHRRa0FtkeJSg)
 

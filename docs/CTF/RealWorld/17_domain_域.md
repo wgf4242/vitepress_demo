@@ -12,7 +12,7 @@ net group "domain controllers" /domain # 查看域控 OWA$
 ping OWA # 域控主机即可获得域控IP
 # 查看所有域成员计算机列表
 net group "domain computers" /domain
-# 查看域管理员
+# 查看域管理员, 看到管理员后 meterpreter > ps , migrate xxx 偷令牌
 Net group "domain admins" /domain
 # 登陆本机的域管理员
 net localgroup administrators /domain
