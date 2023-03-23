@@ -15,6 +15,7 @@ Web漏洞分析
 
 ## 渗透流程
 1. 信息收集 > fscan/cscan/kscan(免杀), NMAP > AWVS > Appscan > Burpsuite > x-ray
+* 445 - 永恒之蓝, 有账户后 psexec 执行命令
 * 2375端口: docker 未授权
 * 21/2121:  ftp 匿名登录/未授权
 * 6379:     redis/未授权
