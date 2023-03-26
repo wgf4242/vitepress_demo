@@ -7,6 +7,7 @@
 https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 ## 解题思路
 前置准备
+1. 资源文件 0x80, 0xff 异或
 1. 二进制搜索
 2. 找ip端口 上传微步
 1. 放die看EntryPoint 位置。
@@ -316,6 +317,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 * [原生安卓开发app的框架frida自吐算法开发](https://mp.weixin.qq.com/s/CWTN7FJTGouAtX45B6Io-Q)
 ---
 * [易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
+* [免杀 | CobaltStrike | Execute-Assembly攻守之道](https://mp.weixin.qq.com/s/IlOAShBMrOUTixhxqGvncQ)
 ## 基础学习
 * [『杂项』SMC加密技术（二）](https://mp.weixin.qq.com/s/fJW9qUxedFStTHm7r1AADg)
 

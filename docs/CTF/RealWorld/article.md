@@ -184,6 +184,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [Joomla未授权访问漏洞(CVE-2023-23752)](https://mp.weixin.qq.com/s/N_fSww8Hjylnrha6EvlSjg)
 [JoomlaCVE-2023-23752：Joomla未授权访问漏洞](https://mp.weixin.qq.com/s/p-LDGXaC_jTsLYxuYQvR7w)
+
+[png | ImageMagick任意文件读取漏洞POC （CVE-2022-44268）](https://mp.weixin.qq.com/s/vhyp6OkS7enMxuCHRXR6ag)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -240,6 +242,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API接口渗透测试技巧汇总](https://mp.weixin.qq.com/s/0l8uPx9akhY3KsyPMjLJxg)
 [API | 常见API接口渗透测试流程](https://mp.weixin.qq.com/s/_QOlsVvUSXv0EHlYFdUPuw)
 [API安全漏洞靶场crapi漏洞复现](https://mp.weixin.qq.com/s/6QPjshRhegNsHS3ua-DZ1w)
+[API你不得不会的安全漏洞-API安全](https://www.bilibili.com/video/BV1HD4y1P7v6/)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
@@ -303,6 +306,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 
 ## 痕迹清理
 [入侵痕迹清理](https://mp.weixin.qq.com/s/jki83_0x__LfWGZj2da33g)
+[痕迹清理技术要点与实战方法总结](https://mp.weixin.qq.com/s/YSznjjQGHk6scTrGZVSbww)
 
 [HVV蓝队溯源流程](https://mp.weixin.qq.com/s/uYZDW2aB0Xo_wi-h1YzVsQ)
 [溯源实例-从OA到北信源RCE攻击VRV](https://mp.weixin.qq.com/s/WzC9oPa2ItS2H_-JdrIRuw)

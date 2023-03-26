@@ -23,7 +23,7 @@ nmap -sV -Pn -n --proxies socks4://127.0.0.1:9050 scanme.nmap.org
 * 扫描除过某一个ip外的所有子网主机,命令:
 * nmap 192.168.1.1/24 -exclude 192.168.1.1
 * 扫描除过某一个文件中的ip外的子网主机命令
-* nmap 192.168.1.1／24 -excludefile xxx．txt(xxx．txt中的文件将
+* nmap 192.168.1.1/24 -excludefile xxx．txt(xxx．txt中的文件将
   会从扫描的主机中排除)
 
 | 扫描选项     | 扫描时间    | 是否需要root/sudo |                       |
@@ -57,10 +57,12 @@ Client端主动断开连接.
 ```sh
 # 快速扫描
 nmap -T4 -F 192.168.93.20
-sudo nmap -sS -Pn -n --open --min-hostgroup 4 --min-parallelism 1024 --host-timeout 10 -T4 -v -oG result.txt -iL ip.txt
+sudo nmap -sS -Pn -p 445 -n --open --min-hostgroup 1024 --min-parallelism 10 --host-timeout 30 -T4 -v -oG results-all.txt 192.168.52.0/24
+sudo nmap -sS -Pn -p 445 -n --open --min-hostgroup 1024 --min-parallelism 10 --host-timeout 30 -T4 -v -oG results-all.txt -iL ip.txt
 nmap -PU 192.168.1.0/24 # UDP ping探测主机:
 nmap -sV 192.168.1.1    # -sV: 扫描运行服务/软件版本 
-nmap -P0 192.168.1.131 #无Ping扫描，可以躲避某些防火墙的防护
+nmap -P0 192.168.1.131  # 无Ping扫描，可以躲避某些防火墙的防护
+nmap -sP 192.168.0.0/24 # ping扫描
 nmap -Pn -sV --script unusual-port 192.168.1.1
 nmap -Pn -sV --script unusual-port 192.168.1.1 -p 9527
 nmap -T4 -A -v 192.168.1.1 # 快速扫描主机全部信息
