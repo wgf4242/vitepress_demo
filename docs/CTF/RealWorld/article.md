@@ -279,6 +279,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * certutil bypass360: `改名123.exe使用`
 * [CS的shellcode免杀加载器（2月1日更新）](https://mp.weixin.qq.com/s/zdzf73UqZCikuYqy6DfflA)
 * [CS | 苛刻条件下，C2上传执行骚姿势](https://mp.weixin.qq.com/s/l-QJyl2NDxi7y94-k-cRrg)
+* [免杀36x和火x的shellcode加载器 -- c2-shellcode-py](https://github.com/langsasec/c2-shellcode-py)
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
@@ -336,7 +337,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [ATT&CK实战系列-红队评估全套靶场下载地址](https://mp.weixin.qq.com/s/IXM_kawmop0i6mKTkLZpOg)
 * [VulnStack靶场实战指南系列全集](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI4NjEyMDk0MA==&action=getalbum&album_id=2034161318382862339)
 * [Web安全入门进阶靶场实战](http://vulnstack.qiyuanxuetang.net/vuln/detail/4/) [百度网盘](https://pan.baidu.com/s/1K8o3b5nXEcE0AXJnZ7vRMw#mb6q)
-* [Done | ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [4](https://blog.csdn.net/qq_50854790/article/details/122758416) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2) [video](https://www.bilibili.com/video/BV1Ta411R7hm)
+* [Done | ATT&CK实战系列-红队评估 （一）Vulnstack靶场内网域渗透](https://www.freebuf.com/articles/web/322101.html) [NS Daemon](https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw) [2](https://www.freebuf.com/articles/web/285854.html) [3](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [4](https://blog.csdn.net/qq_50854790/article/details/122758416) [5](https://mp.weixin.qq.com/s/a00e4ELh_i-foC6jW_-0pA) [百度网盘](https://pan.baidu.com/s/1nC6V8e_EuKfaLb2IuEbe7w&shfl=sharepset#n1u2) [video](https://www.bilibili.com/video/BV1Ta411R7hm)
 * [ATT&CK实战系列-红队评估 （二）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=2&sn=cce5a2ac522257b9a55a002868a30680) [2](https://cloud.tencent.com/developer/article/1583787) [域渗透实战-红日靶场二](https://mp.weixin.qq.com/s/FeGKC_keorOpkKEgFPVzeA)
 * [Done | ATT&CK实战系列-红队评估 （三）Vulnstack靶场内网域渗透 | Joomla](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=3&sn=f35e95d08d7c733e6bd295e94e492f77) [NS Daemon](https://mp.weixin.qq.com/s/wPtfalTGLwfSjgSSmOmlcw) [百度网盘](https://pan.baidu.com/s/1iy4MIy6ni6d9F3iypeCYVQ#7mhi)
 * [Done | ATT&CK实战系列-红队评估 （四）Vulnstack靶场内网域渗透](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247495964&idx=4&sn=078472e305f23546b40f63d81704aa4b) [下载](https://pan.baidu.com/s/1j4n8x1bil7hlX4uirOZcIA#0u8k)

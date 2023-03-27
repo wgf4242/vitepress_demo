@@ -361,6 +361,7 @@ ctfshow 未知信号
 
 ## Steganography/隐写
 [各种类型的图片格式隐写术总结](https://mp.weixin.qq.com/s/9KZZDSpw1Xc_um0vNN4kpg)
+[隐写术之音频隐写解题技巧](https://mp.weixin.qq.com/s/stVrGrsSUUAmwRNBxART-A)
 ## 图像相关
 [傅里叶图像压缩](https://www.bilibili.com/video/BV1CY411R7bA?t=1329.5)
 ## Android
