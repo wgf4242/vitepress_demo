@@ -41,8 +41,11 @@ $$
 [密码学｜5.5.2 通过Pollard’s ρ Method离散对数](https://mp.weixin.qq.com/s/0tNCkh_GY9mVXXto6CGsTw)
 [密码学 ｜5.6 信息论](https://mp.weixin.qq.com/s/L3OrbnhIv5Ez6e-uK0_AGg)
 [密码学 ｜ 5.6.2 熵](https://mp.weixin.qq.com/s/n5QCJMpBrCXGbkBNiqoyyQ)
-[『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 
+[『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 [AES](https://bbs.pediy.com/thread-253884.htm)
 [Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)
 [『CTF』你知道 DLP 吗？](https://mp.weixin.qq.com/s/qZt5dllMsdIqNF3RsTy-Ig)
+
+## RSA
+[『CTF』RSA 已知高位算法攻击扩展](https://mp.weixin.qq.com/s/SysK0jwjbYvu34EqHWmwMA)

