@@ -11,6 +11,8 @@ crunch 1 5 -o START -c 6000 -z bzip2  # 6000个密码/每文件
 crunch 3 3 0123456789 -o pwd.txt
 crunch 3 3 0123456789 > pwd.txt
 
+crunch 4 4 -t abc%                    # abc[0-9]
+
 #-b 20mib 指的是单个文件的大小，支持kb,mb,gb,kib,mib,gib，
 #前三种之间的进制是1000，后三种进制是1024
 crunch 1 10 -b 20mib -o START                  # 不填默认是 a-z 生成
@@ -38,6 +40,18 @@ crunch 10 10 -t @@@^%%%%^^ -d 2@ -d 3% -b 20mb -o START  #生成10位密码，�
 
 crunch 4 4 -f unicode_test.lst the-greeks -t @@%% -l @xdd
 #调用密码库unicode_test.lst中的the-greeks项目字符，生成4位密码，其中格式为两小写字母+两数字
+```
+
+
+| Param     |  E.g    | Desc     |
+| ---- | ---- | ---- |
+| -d numbersymbol    |   -d 2@   | 小写只能出现2次  |
+
+```bash
+crunch 10 10 -t @@@^%%%%^^ -d 2@ -d 3% -b 20mb -o START
+# crunch will generate 10 character strings starting with aab!0001!! and ending at zzy 9998    The output will be written to 20mb files.
+crunch 8 8 -d 2@
+# crunch will generate 8 characters that limit the same number of lower case characters to 2.  Crunch will start at aabaabaa and end at zzyzzyzz.
 ```
 
 ## -t 占位符

