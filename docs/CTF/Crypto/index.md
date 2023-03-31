@@ -41,6 +41,7 @@ $$
 [密码学｜5.5.2 通过Pollard’s ρ Method离散对数](https://mp.weixin.qq.com/s/0tNCkh_GY9mVXXto6CGsTw)
 [密码学 ｜5.6 信息论](https://mp.weixin.qq.com/s/L3OrbnhIv5Ez6e-uK0_AGg)
 [密码学 ｜ 5.6.2 熵](https://mp.weixin.qq.com/s/n5QCJMpBrCXGbkBNiqoyyQ)
+[密码学 ｜ 6.2 有限域上的椭圆曲线](https://mp.weixin.qq.com/s/wXRt_MzWPjK74xzgx31DmQ)
 
 [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 [AES](https://bbs.pediy.com/thread-253884.htm)
