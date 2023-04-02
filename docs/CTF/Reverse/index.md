@@ -236,6 +236,10 @@ UPX1       00010000  00009000   00000400  00008400   E0000040                   
 ### VMP
 https://bbs.pediy.com/thread-271546-1.htm
 [某驱动脱壳 vmp](https://wbglil.github.io/2021/04/05/%E6%9F%90%E9%A9%B1%E5%8A%A8%E8%84%B1%E5%A3%B3%20vmp/)
+### Themida/WinLicense
+[unlicense脱](https://www.52pojie.cn/forum.php?mod=viewthread&tid=1647083)
+[Download](https://github.com/ergrelet/unlicense/releases)
+
 ## frida
 ### x86
 mkdir /data/local/tmp

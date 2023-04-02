@@ -124,7 +124,8 @@ result.txt | 搜验证码
 [PHPCMS v9.6.0 wap模块注入漏洞](https://mp.weixin.qq.com/s/gSiD-tO9mk_U41ln23F7lQ)
 
 [IIS PUT漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=1&sn=6d5f4d8c89d0178492e42cd0663c5009)
-[Redis未授权访问漏洞(windows环境](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484286&idx=1&sn=6250d89d18ea635bda32e815fdcc5f6d)
+
+
 [Weblogic | 漏洞搭建与复现：弱口令与后台 Getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484348&idx=2&sn=03a6427e19436c690d0966c7746461c5)
 [Weblogic | CVE 漏洞总结](https://mp.weixin.qq.com/s/vUrWyOZbDqynlN2xdFMAFQ)
 [Weblogic | 反序列化远程代码执行漏洞(CVE-2019-2725)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485549&idx=1&sn=7c0ae29b49887d50327c46160be1b5e9)
@@ -181,6 +182,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [Joomla未授权访问漏洞(CVE-2023-23752)](https://mp.weixin.qq.com/s/N_fSww8Hjylnrha6EvlSjg)
 [JoomlaCVE-2023-23752：Joomla未授权访问漏洞](https://mp.weixin.qq.com/s/p-LDGXaC_jTsLYxuYQvR7w)
+
+[phpStudy小皮Windows面板 V0.102以及以下版本 RCE漏洞](https://mp.weixin.qq.com/s/FBl8Ocn2m8xBX3ZzydE5pg)
 
 [png | ImageMagick任意文件读取漏洞POC （CVE-2022-44268）](https://mp.weixin.qq.com/s/vhyp6OkS7enMxuCHRXR6ag)
 ### Exploit/CVE/实战漏洞/Windows
@@ -277,6 +280,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [CS的shellcode免杀加载器（2月1日更新）](https://mp.weixin.qq.com/s/zdzf73UqZCikuYqy6DfflA)
 * [CS | 苛刻条件下，C2上传执行骚姿势](https://mp.weixin.qq.com/s/l-QJyl2NDxi7y94-k-cRrg)
 * [免杀36x和火x的shellcode加载器 -- c2-shellcode-py](https://github.com/langsasec/c2-shellcode-py)
+* [技术 | 进程重影](http://s0rry.cn/archives/jin-cheng-zhong-ying)
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)

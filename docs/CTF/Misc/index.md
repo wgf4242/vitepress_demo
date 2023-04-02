@@ -8,6 +8,7 @@
 * 1.不要路径有空格, 不要中文路径
 * grep -r "flag"
 * strings ./file | grep flag
+* 010 1.全局搜索 2. Unicode型搜索
 * 文件名 hxcode 汉信码
 * 32位长度 AES的秘钥
 * Base64 解出来看不懂

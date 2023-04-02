@@ -20,16 +20,17 @@ zip -q -d burpsuite_pro_v2022.9.jar chromium-linux64-105.0.5195.102.zip
 * Character Sets: UTF8
 
  __启动命令__ 
-```
-普通启动
+```sh
+# 普通启动
 javaw -jar burploader.jar
-跳过loader
+# 跳过loader
 javaw -noverify -javaagent:burploader.jar -jar burpsuite_pro_v2021.6.2.jar
-禁止缩放 防止光标错位
+# 禁止缩放 防止光标错位
 javaw -noverify -Dsun.java2d.uiScale=1 -javaagent:burploader.jar -jar burpsuite_pro_v2021.6.2.jar
+
+# 安装插件
+java -jar <path-to-burp.jar> --install-plugin <path-to-plugin.jar>
 ```
-
-
 ## Reading
 https://t0data.gitbooks.io/burpsuite/content/chapter3.html
 
@@ -195,6 +196,9 @@ start attack
 [插件 | 高度自定义Burp插件log4j2burpscanner](https://mp.weixin.qq.com/s/DPRwo3n_4qRCGLA6Wdqx_g)
 [插件 | sqlmap4burp++]()
 [插件 | Doraemon exp模板](https://mp.weixin.qq.com/s/4K6IaPCjWNSQ27sPV0GaEA)
+[插件 | 武装你的BurpSuite(一)](https://mp.weixin.qq.com/s/Pl3HDMV_EhDlvY8lyzk02g) 
+[插件 | 武装你的BurpSuite（二）](https://mp.weixin.qq.com/s/pNMJhiCDbo_kLsNYGJnNmA) 
+
 
 
 ## 靶场系列

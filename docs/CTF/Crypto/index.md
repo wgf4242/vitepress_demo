@@ -50,3 +50,11 @@ $$
 
 ## RSA
 [『CTF』RSA 已知高位算法攻击扩展](https://mp.weixin.qq.com/s/SysK0jwjbYvu34EqHWmwMA)
+
+## Note
+
+https://mp.weixin.qq.com/s/DJp-Kq0dIDqx0LP6KiGHZw
+佩尔方程
+Cipolla算法
+考点：hnp
+

