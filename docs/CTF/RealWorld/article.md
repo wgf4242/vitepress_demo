@@ -196,6 +196,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [WX小程序反编译到url提取一条龙服务](https://mp.weixin.qq.com/s/XKk1GxabW6BGzkVAPHFt9w)
 [微信小程序的任意用户登录实战](https://mp.weixin.qq.com/s/Q5onwwDX27-o5YrWVvjuOw)
 [反编译&调试小程序请求签名](https://mp.weixin.qq.com/s/0HzgsFd0_2-ZgAyg8mP_Dw)
+[小程序渗透测试工具 -- unveilr](https://mp.weixin.qq.com/s/rL4lQlG64M3sSSLcHtzQOg)
 
 ### Exploit/CVE/实战漏洞/IOT 
 [TOTOLINK CVE-2022-26210 漏洞分析&复现](https://mp.weixin.qq.com/s/HYDHoo7ep85SwJeEZxAkEQ)
@@ -259,7 +260,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 ### Mobile/Android/APK
 [安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
 
-## 免杀
+## 免杀/安全开发C/Cpp
 * 50_Anti-AntiVirus_EXE.md
 * [Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
 * [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
@@ -281,6 +282,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [CS | 苛刻条件下，C2上传执行骚姿势](https://mp.weixin.qq.com/s/l-QJyl2NDxi7y94-k-cRrg)
 * [免杀36x和火x的shellcode加载器 -- c2-shellcode-py](https://github.com/langsasec/c2-shellcode-py)
 * [技术 | 进程重影](http://s0rry.cn/archives/jin-cheng-zhong-ying)
+
+__Video__
+* [rkvir逆向工程学院](https://space.bilibili.com/447734880/video)
 
 ### Webshell
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
@@ -365,11 +369,12 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [vulnhub | Moriarty Corp(vulnhub)](https://mp.weixin.qq.com/s/NsvsuX7rUv0GPW4xd7ckpQ)
 * [vulnhub | DarkHole:1](https://mp.weixin.qq.com/s/BOF_3caGaZTll4gJpMfNWA)
 * [vulnhub | Raven-1](https://mp.weixin.qq.com/s/cIMCWOs0ydzw8TcaFGwLkQ) [Download](https://www.vulnhub.com/entry/raven-1,256/)
-* [Vulnhub tomato 番茄靶场攻略 kernel-exploits](https://mp.weixin.qq.com/s/iyKnlvqqXmbITIduRCbcsQ)
-* [Vulnhub-MyCmsms](https://mp.weixin.qq.com/s/OEFBzaB73gi-U9JHf4KHEQ)
+* [Vulnhub | tomato 番茄靶场攻略 kernel-exploits](https://mp.weixin.qq.com/s/iyKnlvqqXmbITIduRCbcsQ)
+* [Vulnhub | MyCmsms](https://mp.weixin.qq.com/s/OEFBzaB73gi-U9JHf4KHEQ)
 * [Vulnhub | MinU: 1（nmap端口、dirb目录、绕过waf、JWT令牌分析）](https://mp.weixin.qq.com/s/dTgqScwJrYTNOyIrGIzHjg)
-* [【VulnHub靶机系列】De-ICE: S1.100](https://mp.weixin.qq.com/s/9-M9EPcCgmJedvmRNLqvNA)
-* [【VulnHub靶机系列】BadStore](https://mp.weixin.qq.com/s/a426CZgSK_rytU6MCXTRow)
+* [VulnHub | De-ICE: S1.100](https://mp.weixin.qq.com/s/9-M9EPcCgmJedvmRNLqvNA)
+* [VulnHub | BadStore](https://mp.weixin.qq.com/s/a426CZgSK_rytU6MCXTRow)
+* [Vulnhub | Morpheus(摩耳甫斯)-哔哩哔哩](https://www.bilibili.com/video/BV1eT411B7bF)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
@@ -382,7 +387,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [nasa 靶场 | 从外网打点到内网漫游-入门级靶场渗透笔记](https://www.freebuf.com/articles/web/347079.html)
 * [【靶场实例】6-Lord Of The Root-1.0.1](https://mp.weixin.qq.com/s/YG00g9r8md_Q6yzSUV7Izg)
 * [九种DC靶机渗透测试一](https://mp.weixin.qq.com/s/gh_vGCjJtZe4EKHecKjjbg) [二](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [三](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [Download](https://pan.baidu.com/s/13ra2u5QjCDRewN_RiTfS_Q#seri)
-* [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/WA9AMnF6wZSEVudr0Szgkw)
+* [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/mqRMPA_zxa3biQ-F_ZdBJw)
 * [HackTheBox | BountyHunter靶场实战](https://mp.weixin.qq.com/s/aBMeOtC300oiAe7XYrQzww)
 ## 漏洞挖掘
 [短信验证码常见漏洞总结](https://mp.weixin.qq.com/s/h5eJgbZi5SHRRa0FtkeJSg)

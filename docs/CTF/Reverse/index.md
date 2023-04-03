@@ -333,6 +333,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 * [Window | 【原理到实践】如何在电脑上置顶一个窗口_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1BT41117fe/)
 * [DLL注入与HOOK](https://secondbc.github.io/SecondBC/2022/12/12/DLL注入与HOOK/)
 * [拦截Windows关机消息](https://mp.weixin.qq.com/s/cyqmBwumjmTXIZruCC2jVQ)
+* [关于几种hook的探究](https://mp.weixin.qq.com/s/psAu9mnS1nyQKs_Nj8HzAw)
 
 ### DLL注入
 * [初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)
