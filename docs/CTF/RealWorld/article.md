@@ -36,6 +36,8 @@
 [todesk获取密码,rustdesk『红蓝对抗』远控软件小技巧](https://mp.weixin.qq.com/s/DvqFKMRzg6FCJtUdkk4hhA)
 [todesk企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
 
+[CS权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
+
 ## Sql/Database
 [sql server执行os-shell](https://mp.weixin.qq.com/s/PWHk-CIFaitwZ2rCOftIbg)
 
@@ -65,6 +67,7 @@ result.txt | 搜验证码
 [浅谈常见未授权访问漏洞系列（三）](https://mp.weixin.qq.com/s/H_0T-xdk7HuzTjigu-Izjw)
 [浅谈常见未授权访问漏洞系列（四）](https://mp.weixin.qq.com/s/Gb59ajCdE6XssQAAG7dS1g)
 [浅谈常见未授权访问漏洞系列（五）](https://mp.weixin.qq.com/s/20SIvVMe3aSSAG_KbeqnaA)
+[浅谈常见未授权访问漏洞系列（六）](https://mp.weixin.qq.com/s/LAZHRbzfjoXxantUWhuPMg)
 
 [[Web漏洞-XXE&XML漏洞]](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485040&idx=1&sn=820cc31cf2e2d251814a2cf09ab6be7a)
 [[Web漏洞]-(XSS详解)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485012&idx=1&sn=695f6ea23f8f8dc0d83f5f3c753befad)
@@ -260,7 +263,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 ### Mobile/Android/APK
 [安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
 
-## 免杀/安全开发C/Cpp
+## bypass
+
+### bypass_AV/免杀/安全开发C/Cpp
 * 50_Anti-AntiVirus_EXE.md
 * [Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
 * [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
@@ -282,6 +287,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [CS | 苛刻条件下，C2上传执行骚姿势](https://mp.weixin.qq.com/s/l-QJyl2NDxi7y94-k-cRrg)
 * [免杀36x和火x的shellcode加载器 -- c2-shellcode-py](https://github.com/langsasec/c2-shellcode-py)
 * [技术 | 进程重影](http://s0rry.cn/archives/jin-cheng-zhong-ying)
+* [技术 | 白加黑的初步探究](https://mp.weixin.qq.com/s/23hMrZEI2p_8i8LIbJQsWg)
+* [BypassAV](https://github.com/CMEPW/BypassAV)
 
 __Video__
 * [rkvir逆向工程学院](https://space.bilibili.com/447734880/video)
@@ -295,7 +302,6 @@ __Video__
 ### 伪装
 [蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)
 
-## bypass
 ### bypass WAF
 [看图识WAF-搜集常见WAF拦截页面](https://mp.weixin.qq.com/s/F_K5kzBbUGguugToL8O5_Q)
 [实战 | WAF-Bypass之SQL注入绕过思路总结](https://mp.weixin.qq.com/s/PczKsU3WVRfuZpusr7CxnA)

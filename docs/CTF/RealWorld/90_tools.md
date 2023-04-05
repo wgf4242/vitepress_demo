@@ -8,6 +8,10 @@ empire && starkiller VS metasploit && armitage
 
 empire && starkiller的体验还不错
 
+* Havoc
+* Sliver
+* BRC4
+
 ## 内网相关/内网穿透
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
 [不同中间件端口复用代理解决方案](https://9bie.org/index.php/archives/969/)
@@ -449,6 +453,23 @@ gost -L=:8080
 gost -L=:8080 -F=socks4://192.168.50.161:43848
 ```
 
+## tocks
+apt-get install tsocks  
+vi /etc/tsocks.conf  
+
+```shell
+local = 192.168.1.0/255.255.255.0  #local表示本地的网络，也就是不使用socks代理的网络  
+local = 127.0.0.0/255.0.0.0  
+server = 127.0.0.1   #socks服务器的IP  
+server_type = 5  #socks服务版本  
+server_port = 8888  # socks服务使用的端口  
+```
+
+run
+```shell
+tsocks curl http://myexternalip.com &
+```
+
 ## pystinger 仅web服务权限不出网使用
 [Link](https://cloud.tencent.com/developer/article/2036092) 
 
@@ -467,22 +488,6 @@ SOCK4代理
 
 ```
 
-## tocks
-apt-get install tsocks  
-vi /etc/tsocks.conf  
-
-```shell
-local = 192.168.1.0/255.255.255.0  #local表示本地的网络，也就是不使用socks代理的网络  
-local = 127.0.0.0/255.0.0.0  
-server = 127.0.0.1   #socks服务器的IP  
-server_type = 5  #socks服务版本  
-server_port = 8888  # socks服务使用的端口  
-```
-
-run
-```shell
-tsocks curl http://myexternalip.com &
-```
 ## regeorg
 pip install安装
 
@@ -501,6 +506,17 @@ proxychains 命令
 
 ## SoftEther VPN内网穿透
 [SoftEther VPN内网穿透](https://mp.weixin.qq.com/s/Xim1SKnU41Z_rb9aI0QdDA)
+
+## 其他隧道
+
+ICMP隧道
+* icmpsh
+* pingtunnnel
+
+DNS隧道
+* dns2tcp
+* dnscat2
+* iodine
 
 # 远程桌面
 xfreerdp

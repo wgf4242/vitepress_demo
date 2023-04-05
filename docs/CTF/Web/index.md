@@ -24,6 +24,7 @@ ping 0177.0000.0000.0001
 [sql注入bypass waf工具（1月18日更新）](https://mp.weixin.qq.com/s/qritLmRwP-Q5OLskxNWSVw)
 
 ## SSRF
+[盲ssrf漏洞 | 四个有趣的靶场漏洞挖掘案例](https://mp.weixin.qq.com/s/dAlvpJ5dMa5oSExV4Lsgzg)
 
 1. 不存在路径绕过
 
@@ -57,8 +58,11 @@ SVG XXE
 
 # SQL 注入
 
+## Mysql
+
 ## SQL Server
 https://www.w3schools.com/sql/sql_ref_sqlserver.asp
+[ 存储过程sql注入； table头注入； 安全攻防 | 四个有趣的靶场漏洞挖掘案例](https://mp.weixin.qq.com/s/dAlvpJ5dMa5oSExV4Lsgzg)
 
 ```sql
 -- db name
