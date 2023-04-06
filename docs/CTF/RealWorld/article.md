@@ -245,8 +245,10 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | 水平越权漏洞检测工具](https://mp.weixin.qq.com/s/VrJ_6dvu8-U5sVAfLzgtGg)
 [API接口渗透测试技巧汇总](https://mp.weixin.qq.com/s/0l8uPx9akhY3KsyPMjLJxg)
 [API | 常见API接口渗透测试流程](https://mp.weixin.qq.com/s/_QOlsVvUSXv0EHlYFdUPuw)
-[API安全漏洞靶场crapi漏洞复现](https://mp.weixin.qq.com/s/6QPjshRhegNsHS3ua-DZ1w)
-[API你不得不会的安全漏洞-API安全](https://www.bilibili.com/video/BV1HD4y1P7v6/)
+[API | 安全漏洞靶场crapi漏洞复现](https://mp.weixin.qq.com/s/6QPjshRhegNsHS3ua-DZ1w)
+[API | 你不得不会的安全漏洞-API安全](https://www.bilibili.com/video/BV1HD4y1P7v6/)
+[API | js文件中的敏感信息&swagger接口测试](https://mp.weixin.qq.com/s/79xMwEcJaqTfc7BIKG6gDA) 
+
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
