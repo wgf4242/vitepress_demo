@@ -212,5 +212,8 @@ https://github.com/APKLab/APKLab
 * [小程序测试流程](https://mp.weixin.qq.com/s/NVN73i8t0Ozy7bW8QimlNg)
 * [小程序渗透工具 -- wxapkgUnpack](https://mp.weixin.qq.com/s/iGInWwvvnv6aC1cHoI_Z2g)
 
+## 普通文章
+[安卓app四大组件的攻击面分析](https://mp.weixin.qq.com/s/MQ7gNnIkzGBkaJLtAsSORQ)
+
 ## 关注列表
 [和沐阳学逆向](https://space.bilibili.com/439348342)
