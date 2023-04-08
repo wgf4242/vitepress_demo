@@ -14,6 +14,9 @@ instant client解压到 D:\instantclient_11_2
 ## 配置环境变量
 1.
 TNS_ADMIN=D:\instantclient_11_2
+ORACLE_HOME=D:\instantclient_11_2
+-- 会自动在 ORACLE_HOME/NETWORK/ADMIN/ 中查找tnsnames.ora 文件。
+
 2.
 PATH添加 %D:\instantclient_11_2%
 ```
@@ -21,6 +24,12 @@ setx TNS_ADMIN "D:\instantclient_11_2" /m
 ```
 D:\instantclient_11_2创建tnsnames.ora
 
+3.直接命令连接
+```
+sqlplus "user/pass@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=hostname.network)(Port=1521))(CONNECT_DATA=(SID=remote_SID)))"
+sqlplus user/pass@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=hostname.network)(Port=1521))(CONNECT_DATA=(SID=remote_SID)))
+sqlplus test/test@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=10.3.1.1)(Port=1521))(CONNECT_DATA=(SID=Normal)))
+```
 
 
 ```sql
