@@ -262,6 +262,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [一款功能强大的内存WebShell生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
 [Web | 内存马 | 内存Shell生成器](https://mp.weixin.qq.com/s/7YPuChR7anVAninHOMB6aA)
 [冰蝎内存马生成工具 -- ysoserialbtl](https://mp.weixin.qq.com/s/5B_kcFnKVoHewvgGEiVhBg)
+[内存马流程理解与手写 EXP](https://mp.weixin.qq.com/s/2BSrWaB0B7cn0ng4BAwUHA)
 ### Mobile/Android/APK
 [安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
 
@@ -414,3 +415,4 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 # Tools
 LogParser 日志分析
 [fofa查询工具 -- chafofa](https://mp.weixin.qq.com/s/vFYs2t7DRX-TGd_xT3BiQw)
+[Linux 端使用 Clash 作为代理工具](https://mp.weixin.qq.com/s/BW9TpMW209TlvAh0oyvrJA)

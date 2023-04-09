@@ -29,6 +29,12 @@ net view # 查看局域网内所有计算机
 Ladon 192.168.52.0/24 OnlinePC
 net view /domain 查看域情况
 CS和msf联动
+
+# 内网主机信息收集
+## * everything文件搜索（正则表达式提高效率）
+## * 浏览器保存的密码/微信/QQ文件夹/回收站/共享盘/邮件软件/协同软件
+## * 远程软件保存的远程连接 mstsc/内网通/向日葵/todesk等
+
 ```
 ### 多用户登录远程桌面
 [RDP连接多开方法与利用思路](https://mp.weixin.qq.com/s/GCFCIwqnQUAFNED0dTVDoA)
@@ -40,7 +46,7 @@ net localgroup "Remote Desktop Users" admin /add 2>nul
 
 # 1. 不同用户同时登录
 mimikatz.exe privilege::Debug ts::multirdp exit
-# 2. 同用户同时登录 RDPWrap
+# 2. 同用户同时登录 RDPWrap, 好像不好使
 install.bat
 rdpconf.exe  # 取消 Single Session
 ## 2.1 win10+win11 http://github.com/anhkgg/SuperRDP

@@ -13,9 +13,14 @@ plsql: help - support info
 instant client解压到 D:\instantclient_11_2
 ## 配置环境变量
 1.
-TNS_ADMIN=D:\instantclient_11_2
+```bat
+TNS_ADMIN=D:\instantclient_11_2\network\admin
 ORACLE_HOME=D:\instantclient_11_2
--- 会自动在 ORACLE_HOME/NETWORK/ADMIN/ 中查找tnsnames.ora 文件。
+setx TNS_ADMIN C:\oraclexe\app\oracle\product\11.2.0\server\network\admin /m 
+setx ORACLE_HOME C:\oraclexe\app\oracle\product\11.2.0\server /m 
+```
+
+-- PLSQL 会自动在 TNS_ADMIN 中查找tnsnames.ora 文件。
 
 2.
 PATH添加 %D:\instantclient_11_2%

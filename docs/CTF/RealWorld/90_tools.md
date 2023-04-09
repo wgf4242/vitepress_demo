@@ -3,6 +3,9 @@ https://gitee.com/windyjxx/projects
 ## 信息收集
 [ENScan_GO | 剑指HW/SRC，解决在HW/SRC场景下遇到的各种针对国内企业信息收集难题](https://github.com/wgpsec/ENScan_GO)
 
+### kscan
+kscan.exe -t 10.0.0.0/8 --hydra --hydra-pass file:pwd.txt
+
 ## C2工具类似msf
 empire && starkiller VS metasploit && armitage
 

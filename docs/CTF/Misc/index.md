@@ -130,9 +130,14 @@ Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 * bmp图片
   * 注意文件格式, 对比其他图 06h 08h 必须为0 否则有信息
 ### 二维码
-[QR Research 支持反色、残缺](https://mp.weixin.qq.com/s/uyCSZzMd2scAgsALKOIM-Q)
-https://cli.im/deqr/   有可能零宽隐写
-[如何手算二维码](https://www.bilibili.com/video/BV18s411P7to)
+* 旋转180度然后 填充 version1. -- ezQR 2023贝格通杯 MISC
+* [QRazyBox](https://merricx.github.io/qrazybox/) - Tool - Brute-force Format Info Pattern, 爆破，然后Decode
+* [QR Research 支持反色、残缺](https://mp.weixin.qq.com/s/uyCSZzMd2scAgsALKOIM-Q)
+* https://cli.im/deqr/   有可能零宽隐写
+* [如何手算二维码](https://www.bilibili.com/video/BV18s411P7to)
+* [如何笔算解码二维码？](https://www.zhihu.com/question/65253283)
+* [ez-qrcode](https://yous.be/2014/12/07/seccon-ctf-2014-qr-easy-write-up/)
+* [CTFSHOW-36D杯: ez-qrcode](https://byxs20.github.io/posts/15890.html#4-%E6%95%B0%E6%8D%AE%E8%A7%A3%E7%A0%81)
 
 ## PDF文件
 1.删除图片
@@ -195,7 +200,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
   -- zip 掩码爆破 NCTF2018-havefun, 用ARCH, 开始wcy00000 结束wcy00000, 长度8, 暴力
 
 -- 明文攻击, 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
-  -- arch 尝试 winrar/7z/bandizip 压缩尝试明文攻击
+  -- arch 尝试 winrar/7z/bandizip/360 压缩尝试明文攻击
   -- https://blog.csdn.net/q851579181q/article/details/109767425
   -- 压缩为ZipCrypto 的压缩才能明文攻击
   -- AES256-Deflate/AES256-Store加密的文件不适用于明文攻击。

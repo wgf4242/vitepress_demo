@@ -2,6 +2,11 @@
 
 端口 1433
 
+
+__工具__
+
+* SQLTools 2.0
+
 ## SqlServer 2000 在win7x64安装条件
 
 1.计算机名更改为全用大写字符就可以了。
@@ -54,4 +59,5 @@ https://blog.csdn.net/weixin_30654583/article/details/97225375
 [窃取MSSQL 各版本密码 HASH](https://mp.weixin.qq.com/s/w9NqP4AqDth6sLbHAPF4AQ)
 [sql server提权总结](https://mp.weixin.qq.com/s/3Q6meWdMLfls5cK1j80tFw)
 [MSSQL注入和漏洞利用姿势总结](https://mp.weixin.qq.com/s/OakfrGRvYPYGFLY_30aj5w)
+[红队必修课之针对MSSQL数据库攻击尝试](https://forum.butian.net/share/1390)
 
