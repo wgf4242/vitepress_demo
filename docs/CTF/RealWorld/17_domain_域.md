@@ -144,6 +144,10 @@ proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb4
 ### DC Takeover
 [Ichunqiu云境 —— Tsclient Writeup](https://mp.weixin.qq.com/s/1VDwjl_fhpZOKUy5-ZHCTQ)
 
+### 约束委派攻击
+[1](https://mp.weixin.qq.com/s/O2LC0Qk55AAOqLGTJmzISg)
+[2](https://zhuanlan.zhihu.com/p/581577873)
+
 # Article
 
 [域内定位个人PC的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)

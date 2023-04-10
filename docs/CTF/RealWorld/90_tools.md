@@ -291,8 +291,46 @@ proxy tcp -p ":23080" -T tcp -P "22.22.22.33:33080"
 ```
 ## ssh
 
+* [『杂项』使用 SSH 实现三层网络穿透](https://mp.weixin.qq.com/s/RPM5UZcs4EwO0S7K7zaFBw)
+
+![640 _1_.png](https://s2.loli.net/2023/04/10/cwQmkx8PrqvgT9b.png)
+
+* 本地转发: 将 Ubuntu:22 转到 kali:222
+```sh
+#  Kali 上执行
+ssh -CfNg -L 222:10.10.10.2:22 root@172.20.10.4
+ssh root@127.0.0.1 -p 222
+```
+
+* 远程转发: 在远程主机上监听一个端口，所有远程主机指定的数据都会通过SSH隧道传输到本地主机的对应端口，远程转发相当于反向代理。
+* 将 Kali:222 转发到 Ubuntu:22
+```bash
+Linux$ ssh -CfNg -R 222:10.10.10.2:22 root@172.20.10.5
+ Kali$ ssh root@127.0.0.1 -p 222
+```
+
+* 动态转发: 代理
+```bash
+# 本机监听端口
+kali$ ssh -CfNg -D 6666 root@172.20.10.4
+## sudo vim /etc/proxychains.conf 添加 socks5 127.0.0.1：6666
+
+# 远程主机监听端口 代理为 1.1.1.1:9050
+kali$ ssh tunneluser@1.1.1.1 -R 9050 -N
+```
+
+* 示例: 三层网络穿透
+```bash
+Linux$ ssh -CfNg -R 222:10.10.10.2:22 root@172.20.10.5
+ Kali$ ssh -CfNg -D 0.0.0.0:2222 root@127.0.0.1 -p 222
+ Kali$ sudo vim /etc/proxychains.conf # 添加 socks5 127.0.0.2222
+ Kali$ proxychains msfconsole
+```
+
+---
+
+
 ![](https://s2.loli.net/2022/12/31/vdz5bXjOt368sHW.png)
-![](https://s2.loli.net/2022/12/31/OVPkim34YNj5Wwy.png)
 
 ```sh
 ssh -L localport:remotehost:remotehostport sshserver
@@ -310,12 +348,15 @@ ssh -L localport:remotehost:remotehostport sshserver
 | -N             | 不打开远程shell，处于等待状态(不加-N则会进入分配的命令行) |
 | -g             | 启用网关功能                                              |
 
+
+![](https://s2.loli.net/2022/12/31/OVPkim34YNj5Wwy.png)
+
 1.SSH远程端口转发
 ```shell
 # 示例1
-useradd tunneluser -m -d/home/tunneluser -s/bin/true
-passwd tunneluser
-ssh tunneluser@1.1.1.1 -R 3389:3.3.3.3:3389 -N # 跳板机1.1.1.1 将3389 转发到 内网 3.3.3.3:3389
+PC1$ useradd tunneluser -m -d /home/tunneluser -s /bin/true
+PC1$ passwd tunneluser
+PC1$ ssh tunneluser@1.1.1.1 -R 3389:3.3.3.3:3389 -N # 跳板机1.1.1.1 将3389 转发到 内网 3.3.3.3:3389
 ## 攻击者
 attacker-pc$ xfreerdp /v:127.0.0.1 /u:MyUser /p:MyPasswd
 
@@ -331,6 +372,7 @@ ssh -fN -L 6666:10.10.10.154:80 root@192.168.0.106
 ![](https://s2.loli.net/2022/12/31/IAcaVtw671PUevX.jpg)
 
 2.SSH本地端口转发
+
 适用不出网机器, 允许我们从通常无法连接回我们的主机运行反向shell
 
 从attacker-pc转发80并从PC-1使其可用
@@ -347,13 +389,6 @@ PC-1$ netsh advfirewall firewall add rule name="Open Port 80" dir=in action=allo
 ssh -f -N -D 127.0.0.1:1080 ubuntu@192.168.50.161 -p 2222
 ```
 
-3. 动态端口转和sock
-如果目标没有ssh服务器, 以下命令开启代理
-```shell
-PC-1$ ssh tunneluser@1.1.1.1 -R 9050 -N
-# 配合proxychians
-socks4 127.0.0.1 9050
-```
 
 | Args | Desc                             |
 | ---- | -------------------------------- |
@@ -563,6 +598,10 @@ keytool -importkeystore -srckeystore c:\keystore -destkeystore c:\tomcatkeystore
 ## 向日葵_识别码和验证码提取工具
 
 https://github.com/wafinfo/Sunflower_get_Password
+
+## Sql Tools
+Multiple.Database.Utilization.Tools
+激活  Ole automation procedures 点击激活，日志提示激活成功之后即可使用。
 
 # Domain/域
 ## psexec
