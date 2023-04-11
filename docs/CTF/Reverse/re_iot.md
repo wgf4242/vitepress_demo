@@ -34,6 +34,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 [西湖论剑IoT复现（一）](https://mp.weixin.qq.com/s/xfkm4zwZ9e8OtQq--MH8fA) 
 [2022西湖论剑 IoT-AWD 赛题官方 WriteUp （上篇）：一号固件&二号固件](https://mp.weixin.qq.com/s/tRmWsRfF2yRszwSeXws5xg)
 [2022西湖论剑 IoT-AWD 赛题官方 WriteUp （下篇）：三号固件](https://mp.weixin.qq.com/s/_1uLWXSPEiCFST6dsi0YBA)
+[解密固件实践及firmwalker脚本利用](https://www.bilibili.com/video/BV1Fs4y1K76J/)
 ## SRC 
 [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)
 
