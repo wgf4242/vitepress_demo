@@ -295,6 +295,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [技术 | 进程重影](http://s0rry.cn/archives/jin-cheng-zhong-ying)
 * [技术 | 白加黑的初步探究](https://mp.weixin.qq.com/s/23hMrZEI2p_8i8LIbJQsWg)
 * [BypassAV](https://github.com/CMEPW/BypassAV)
+* [技术 | shellcode loader的编写](https://mp.weixin.qq.com/s/sfxmWf9nCQeAc7PRRG5eaQ)
 
 __Video__
 * [rkvir逆向工程学院](https://space.bilibili.com/447734880/video)

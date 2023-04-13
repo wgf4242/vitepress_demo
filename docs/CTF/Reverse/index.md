@@ -341,6 +341,9 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ### DLL注入
 * [初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)
 
+### x64dbg/ollydbg
+[x64dbg插件编写基础](https://mp.weixin.qq.com/s/nATav0shkwytSURp1yMyiQ)
+
 ## AI助手ChatGPT
 https://github.com/acheong08/ChatGPT
 
