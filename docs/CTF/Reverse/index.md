@@ -334,6 +334,9 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 * [DLL注入与HOOK](https://secondbc.github.io/SecondBC/2022/12/12/DLL注入与HOOK/)
 * [拦截Windows关机消息](https://mp.weixin.qq.com/s/cyqmBwumjmTXIZruCC2jVQ)
 * [关于几种hook的探究](https://mp.weixin.qq.com/s/psAu9mnS1nyQKs_Nj8HzAw)
+* [使用Frida编写HOOK实现内存注入 (26秒前 )](https://www.cnblogs.com/wgf4242/p/17311264.html)
+* [使用Frida实现内存注入主动调用函数 (1分钟前 )](https://www.cnblogs.com/wgf4242/p/17311259.html)
+* [使用OllyDbg逆向查找HOOK地址和寄存器使用 (2分钟前 )](https://www.cnblogs.com/wgf4242/p/17311256.html)
 
 ### DLL注入
 * [初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)

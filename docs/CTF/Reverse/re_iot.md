@@ -26,15 +26,16 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 ```
 
 # Articles
-[安全竞赛中的IoT类题目环境部署方法研究](https://mp.weixin.qq.com/s/DRYEbNNUvXh4ECWgehmzbQ)
-[山石安研院2022年度安全研究精华汇](https://mp.weixin.qq.com/s/ubqxSpW3XxM4bcSj9_EHXA)
-[虚拟化安全｜从一道CTF题目学习KVM](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247494743&idx=1&sn=2f3bede3835ac1874f4fc556df1603f4)
-[车联网安全入门之从CAN模拟环境搭建到重放攻击](https://mp.weixin.qq.com/s/LzrqCOq6BjPC6s3SjNvXcw)
-[物联网固件逆向工程基础](https://xz.aliyun.com/t/12320)
-[西湖论剑IoT复现（一）](https://mp.weixin.qq.com/s/xfkm4zwZ9e8OtQq--MH8fA) 
-[2022西湖论剑 IoT-AWD 赛题官方 WriteUp （上篇）：一号固件&二号固件](https://mp.weixin.qq.com/s/tRmWsRfF2yRszwSeXws5xg)
-[2022西湖论剑 IoT-AWD 赛题官方 WriteUp （下篇）：三号固件](https://mp.weixin.qq.com/s/_1uLWXSPEiCFST6dsi0YBA)
-[解密固件实践及firmwalker脚本利用](https://www.bilibili.com/video/BV1Fs4y1K76J/)
+* [安全竞赛中的IoT类题目环境部署方法研究](https://mp.weixin.qq.com/s/DRYEbNNUvXh4ECWgehmzbQ)
+* [山石安研院2022年度安全研究精华汇](https://mp.weixin.qq.com/s/ubqxSpW3XxM4bcSj9_EHXA)
+* [虚拟化安全｜从一道CTF题目学习KVM](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247494743&idx=1&sn=2f3bede3835ac1874f4fc556df1603f4)
+* [车联网安全入门之从CAN模拟环境搭建到重放攻击](https://mp.weixin.qq.com/s/LzrqCOq6BjPC6s3SjNvXcw)
+* [物联网固件逆向工程基础](https://xz.aliyun.com/t/12320)
+* [西湖论剑IoT复现（一）](https://mp.weixin.qq.com/s/xfkm4zwZ9e8OtQq--MH8fA) 
+* [2022西湖论剑 IoT-AWD 赛题官方 WriteUp （上篇）：一号固件&二号固件](https://mp.weixin.qq.com/s/tRmWsRfF2yRszwSeXws5xg)
+* [2022西湖论剑 IoT-AWD 赛题官方 WriteUp （下篇）：三号固件](https://mp.weixin.qq.com/s/_1uLWXSPEiCFST6dsi0YBA)
+* [解密固件实践及firmwalker脚本利用](https://www.bilibili.com/video/BV1Fs4y1K76J/)
+* [分析固件解密流程](https://www.bilibili.com/video/BV1YL411m7nx/)
 ## SRC 
 [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)
 
