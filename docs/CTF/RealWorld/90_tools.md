@@ -553,6 +553,14 @@ socks5 127.0.0.1 本地监听端口
 
 proxychains 命令
 ```
+## Neo-reGeorg
+Public
+
+```bash
+python neoreg.py generate -k <your_password>
+python3 neoreg.py -k password -u http://xx/tunnel.php
+
+```
 
 
 ## SoftEther VPN内网穿透

