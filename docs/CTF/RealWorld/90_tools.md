@@ -159,6 +159,7 @@ Ladon 192.168.1.50-192.168.1.200 ICMP
 Ladon ip24.txt ICMP
 Ladon 192.168.1.8 WhatCMS # 扫描IP
 Ladon noping 192.168.1.8 WhatCMS # 扫描IP 禁PING扫描
+Ladon 172.20.10.1/24 WebScan
 ```
 
 正向代理Socks5
