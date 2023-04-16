@@ -31,6 +31,21 @@ javaw -noverify -Dsun.java2d.uiScale=1 -javaagent:burploader.jar -jar burpsuite_
 # 安装插件
 java -jar <path-to-burp.jar> --install-plugin <path-to-plugin.jar>
 ```
+### 配置 proxy history
+
+* Target - Scope - √ Use Advanced scope control
+* Target - Scope - Include in scope  - Add - any
+* Target - Scope - Exclude from scope - Add Any:(bdstatic|baidu|g-fox|firefox|mozilla|google|alicdn)
+* 2.Proxy - Option - Miscellaneous - Don't send items to Proxy history or live tasks, if out of scope
+* 2.1Proxy - Option - Intetcept Client - Requests - Add: And, Domain name, `(.*.baidu.com|.*.google.com)`
+* 2.1Proxy - Option - Intetcept Server Response - Add: And, Domain name, `(.*.baidu.com|.*.google.com)`
+
+###  配置 Upstream proxy
+
+```
+Destination host:  *
+别的正常填上级代理
+```
 ## Reading
 https://t0data.gitbooks.io/burpsuite/content/chapter3.html
 

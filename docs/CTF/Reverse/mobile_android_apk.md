@@ -128,6 +128,8 @@ https://github.com/APKLab/APKLab
 
 
 # Article
+## 课程
+[Awesome-Android-Reverse-Engineering](https://github.com/user1342/Awesome-Android-Reverse-Engineering)
 
 ## 抓包
 * [安全攻防 | APP抓包大全](https://mp.weixin.qq.com/s/SoyZBDoPCX2crBmgM6uKfg)
