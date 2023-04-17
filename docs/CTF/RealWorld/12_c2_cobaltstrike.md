@@ -657,6 +657,9 @@ sub dialog_test {
 }
 ```
 
+# Sliver
+[安全工具开发-跨平台植入型框架Sliver生成C2](https://www.bilibili.com/video/BV1xL411Q7hH/)
+
 # Article
 [全网最全的Cobalt Strike使用教程系列-基础篇](https://mp.weixin.qq.com/s/4KvmV9cdyzPsYHtBlEKGFQ)
 [干货|两个超实用的上线Cobaltstrike技巧！](https://mp.weixin.qq.com/s/jGwrVr0iotelS4KivC8pwA)
