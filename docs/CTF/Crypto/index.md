@@ -48,6 +48,7 @@ $$
 * [Diffie-Hellman密钥交换算法简单原理(颜色演示)](https://www.bilibili.com/video/BV1hP411w7QK/)
 * [『CTF』你知道 DLP 吗？](https://mp.weixin.qq.com/s/qZt5dllMsdIqNF3RsTy-Ig)
 * [RSA加密算法原理及JS实现](https://mp.weixin.qq.com/s/mXMey_uAAkt-W02KP78p_Q) 
+[『CTF』AMM 算法详解与应用](https://mp.weixin.qq.com/s/Q_rzLaCp19ms-sYix-sHcA)
 ---
 * [密码学从入门到大佬——Xenny密码学全系列课程导航](https://www.nssctf.cn/note/set/1698)**    
 * [wiener攻击](https://www.nssctf.cn/note/set/8)    
