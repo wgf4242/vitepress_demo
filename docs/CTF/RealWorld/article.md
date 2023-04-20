@@ -256,6 +256,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | 你不得不会的安全漏洞-API安全](https://www.bilibili.com/video/BV1HD4y1P7v6/)
 [API | js文件中的敏感信息&swagger接口测试](https://mp.weixin.qq.com/s/79xMwEcJaqTfc7BIKG6gDA) 
 [Api | 接口安全测试方法大全-Wsdl&Swagger&Webpack（附一键化扫描工具）](https://mp.weixin.qq.com/s/4EYox2aFJC2HNIExIi15Kw)
+[API | 五大API安全漏洞及缓解措施](https://mp.weixin.qq.com/s/jzCnR9cfuRj0J4sgYnJDWQ)
 
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
@@ -408,6 +409,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [九种DC靶机渗透测试一](https://mp.weixin.qq.com/s/gh_vGCjJtZe4EKHecKjjbg) [二](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [三](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [Download](https://pan.baidu.com/s/13ra2u5QjCDRewN_RiTfS_Q#seri)
 * [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/mqRMPA_zxa3biQ-F_ZdBJw)
 * [HackTheBox | BountyHunter靶场实战](https://mp.weixin.qq.com/s/aBMeOtC300oiAe7XYrQzww)
+* [THM](http://www.nooemotion.com/ctf/)
+
 ## 漏洞挖掘
 [短信验证码常见漏洞总结](https://mp.weixin.qq.com/s/h5eJgbZi5SHRRa0FtkeJSg)
 

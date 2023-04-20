@@ -21,6 +21,9 @@ netsh advfirewall firewall add rule name="Remote Desktop" protocol=TCP dir=in lo
 proxychains rdesktop 192.168.52.141
 rdesktop -u yourname -p password -g 1024x720 192.168.0.2
 remmina # 可配代理 见 90_tools.md
+freerdp
+xfreerdp
+
 
 net config Workstation # (当前计算机名，全名，用户名，系统版本，工作站域，登陆域)
 net localgroup administrators

