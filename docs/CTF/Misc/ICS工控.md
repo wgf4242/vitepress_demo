@@ -85,6 +85,7 @@ INV_B取反字节 60=>-60
 [Modbus Slave缓冲区溢出漏洞CVE-2022-1068分析与复现](https://mp.weixin.qq.com/s/5InTTej26aDFzQgB8l6MHw)
 [工控CTF中常见题型介绍](https://mp.weixin.qq.com/s/LW0jQAoD5VLygHyooyUXlw)
 [工控安全竞赛之应用程序逆向分析技术](https://mp.weixin.qq.com/s/6sb6q0959Nb-Z1eTi5Uprg)
+[工业控制靶场-虚拟化体验分享（一）](https://mp.weixin.qq.com/s/Q26EpfVOsPKXzVFVoIPbqQ)
 
 ## 漏洞平台
 https://ics.cnvd.org.cn/index

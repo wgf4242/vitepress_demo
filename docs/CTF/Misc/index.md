@@ -22,7 +22,7 @@
 * unknown数据
   * 查md5
   * To Hex, 16位可能是md5, 如果是2层md5, flag可能是一层md5
-  * 外文, 使用Cyberchef Text Encoding Brute Force 选Decode
+  * 看不懂/外文, 使用Cyberchef Text Encoding Brute Force 选Decode
   * 每行字符的第一个/最后一个 组合提取密码
   * 观察文件尾 文件头 50 4b 03 04 正序反序
   * 拆成2段base64 例 enlyZ2h3eXlmeHc0ezhpMAMX1tMzk3amNpNXZqdDRrZg==== 
@@ -116,7 +116,7 @@ arr[$(cat /flag)]
 * poi/qoi
   * https://www.aconvert.com/image/qoi-to-png/
   * https://floooh.github.io/qoiview/qoiview.html
-
+* dcm文件 microdicom 导出见 红明谷2023 X光的秘密
 ![](https://s2.loli.net/2022/05/18/f7heVPs4BwJN6ET.jpg)
 
 JPG 
