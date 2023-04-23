@@ -195,7 +195,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [Dubbo CVE-2023-23638](https://n1k0la-t.github.io/2023/03/16/Dubbo-CVE-2023-23638/)
 [DreamerCMS代码审计](https://n1k0la-t.github.io/2023/01/31/DreamerCMS代码审计/)
-[EyouCMS v1.6.1 0day挖掘](https://n1k0la-t.github.io/2023/01/28/EyouCMS v1.6.1 0day挖掘/)
+[EyouCMS v1.6.1 0day挖掘](https://n1k0la-t.github.io/2023/01/28/EyouCMS%20v1.6.1%200day%e6%8c%96%e6%8e%98/)
+
+[Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2和8.6.4.1 | CVE-2022-36537未授权RCE漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -355,6 +357,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Metasploit -- 攻击Metasploitable2靶机](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484255&idx=3&sn=3280a830c3da7243eccd086bc466a7b2)
 * [基于docker的网络安全靶场搭建](https://mp.weixin.qq.com/s/RJH7mHbbygENZTQzYU4CFg)
 * [JAVA靶机和漏洞练习平台推荐](https://mp.weixin.qq.com/s/NJUNUxrMpvWKT-f_yQM_YA)
+
+* [云尘 cloud-pentest | 记录一次坎坷的打靶经历·四（附靶场地址-内网、域控、cms漏洞、frp等）](https://mp.weixin.qq.com/s/RBJPuZICoXYpkND-Yl_8aQ)
 * [xss-labs靶场通关（一）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247483919&idx=1&sn=c8d7405b318d043864653ab5d7a75e92)
 * [xss-labs靶场通关（二）](https://mp.weixin.qq.com/s/xKDkf5CNteU-696tEIMZAw)
 * [xss-labs靶场通关（三）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484065&idx=1&sn=843398214846250801186aaacd93f1c4)
