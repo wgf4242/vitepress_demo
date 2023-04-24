@@ -137,6 +137,9 @@ http.host contains weixin
 http.response.code==302
 //过滤http响应状态码为302的数据包
 http.response==1
+// 响应首部：
+http.response.line
+
 //过滤所有的http响应包
 http.content_type == “text/html”
 http.content_length == 279

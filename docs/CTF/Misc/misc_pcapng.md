@@ -20,6 +20,9 @@
 
 rtpbreak -r mus1c6s.pcapng 可以分析并还原RTP流量中的语音内容
 
+### hid
+[Manual](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf)
+
 ### SMP/蓝牙
 
 crackle -i ble.pcapng -o decode.pcapng #解密流量包再看
