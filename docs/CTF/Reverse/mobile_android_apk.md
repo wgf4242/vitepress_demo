@@ -216,6 +216,7 @@ https://github.com/APKLab/APKLab
 
 ## 普通文章
 [安卓app四大组件的攻击面分析](https://mp.weixin.qq.com/s/MQ7gNnIkzGBkaJLtAsSORQ)
+[eBPF公开课-安卓eBPF开发环境搭建方案](https://mp.weixin.qq.com/s/cQvv7WhCPGNuRhF7DiX_-g)
 
 ## 关注列表
 [和沐阳学逆向](https://space.bilibili.com/439348342)

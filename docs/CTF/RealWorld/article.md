@@ -198,6 +198,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [EyouCMS v1.6.1 0day挖掘](https://n1k0la-t.github.io/2023/01/28/EyouCMS%20v1.6.1%200day%e6%8c%96%e6%8e%98/)
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2和8.6.4.1 | CVE-2022-36537未授权RCE漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
+[Nacos | QVD-2023-6271：Nacos身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -322,6 +323,7 @@ __Video__
 [实战 | WAF-Bypass之SQL注入绕过思路总结](https://mp.weixin.qq.com/s/PczKsU3WVRfuZpusr7CxnA)
 [实战 | Post文件上传WAF Bypass总结](https://mp.weixin.qq.com/s/S9-4sMsyXQqtjS4A_ABNGg)
 [实战技巧 | WAF绕过入狱指南](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=1&sn=6f6c9743c4cb4ef9db9a3656c93770cc)
+[阿里云WAF3.0命令执行Bypass，也是WAF的通病](https://mp.weixin.qq.com/s/AuONhIYbnTZzIBpxpcXtIw)
 ### bypass uac
 administrator 不受影响,其他用户受影响。
 [Bypass UAC方法整理](https://mp.weixin.qq.com/s/vowFqYxX_x0gu2-38TEGFA)
@@ -357,7 +359,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Metasploit -- 攻击Metasploitable2靶机](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484255&idx=3&sn=3280a830c3da7243eccd086bc466a7b2)
 * [基于docker的网络安全靶场搭建](https://mp.weixin.qq.com/s/RJH7mHbbygENZTQzYU4CFg)
 * [JAVA靶机和漏洞练习平台推荐](https://mp.weixin.qq.com/s/NJUNUxrMpvWKT-f_yQM_YA)
-
+---
 * [云尘 cloud-pentest | 记录一次坎坷的打靶经历·四（附靶场地址-内网、域控、cms漏洞、frp等）](https://mp.weixin.qq.com/s/RBJPuZICoXYpkND-Yl_8aQ)
 * [xss-labs靶场通关（一）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247483919&idx=1&sn=c8d7405b318d043864653ab5d7a75e92)
 * [xss-labs靶场通关（二）](https://mp.weixin.qq.com/s/xKDkf5CNteU-696tEIMZAw)
@@ -383,6 +385,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [【内网渗透系列】|20-一次内网渗透测试实验过程（附靶场下载）](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247505654&idx=2&sn=fa69ec20efda1d8a50ef2c0d02d0e10d)
 * [Done | vulnhub |1-Breach1.0（端口、cms、sql注入、keystore,keytool,ssl证书解密pcap,tomcat后台shell、nc反弹）, tomcat证书问题用burp代理访问](https://mp.weixin.qq.com/s/iYsRfk1Bi_lOumc4L-V_4g) [1](https://www.cnblogs.com/zhuxr/p/9848230.html)
 * [VulnHub渗透测试实战靶场笔记](https://blog.csdn.net/qq_37113223/article/details/104668136)
+* [vulnhub靶机实战 lampiao【适合刚接触的新人学习】](https://mp.weixin.qq.com/s/SWLJuWpPXZvjl57Y7QFDaQ) [link](https://www.vulnhub.com/entry/lampiao-1,249/)
 * [vulnhub |1-实战中如何运用msf攻击CMS、find命令提权、破解管理员密码](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
 * [vulnhub |2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw) [Download](https://download.vulnhub.com/billu/Billu_b0x.zip)
 * [vulnhub | Me-and-My-Girlfriend(vulnhub)](https://mp.weixin.qq.com/s/nhqa_qZK6ELABfwczDdTbQ)
