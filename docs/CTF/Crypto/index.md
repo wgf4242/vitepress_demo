@@ -43,6 +43,9 @@ $$
 * [密码学 ｜ 5.6.2 熵](https://mp.weixin.qq.com/s/n5QCJMpBrCXGbkBNiqoyyQ)
 * [密码学 ｜ 6.2 有限域上的椭圆曲线](https://mp.weixin.qq.com/s/wXRt_MzWPjK74xzgx31DmQ)
 * [密码学 ｜ 6.3 椭圆曲线离散对数问题（ECDLP）](https://mp.weixin.qq.com/s/MBE4YC1dJTOYNpQ91IaPYA)
+* [密码学 ｜ 6.3.1 二重加法算法](https://mp.weixin.qq.com/s/c5g13vi9I_ytN8VkIvjoJw)
+* [密码学 ｜ 6.4 椭圆曲线密码学](https://mp.weixin.qq.com/s/CHyo16D7CKHgkGHMidpNHA)
+
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)

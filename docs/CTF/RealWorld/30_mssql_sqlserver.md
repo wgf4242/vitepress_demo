@@ -60,4 +60,5 @@ https://blog.csdn.net/weixin_30654583/article/details/97225375
 [sql server提权总结](https://mp.weixin.qq.com/s/3Q6meWdMLfls5cK1j80tFw)
 [MSSQL注入和漏洞利用姿势总结](https://mp.weixin.qq.com/s/OakfrGRvYPYGFLY_30aj5w)
 [红队必修课之针对MSSQL数据库攻击尝试](https://forum.butian.net/share/1390)
+[关于mssql注入的知识分享](https://mp.weixin.qq.com/s/sXt9zd18lD4Al4OC3mmsKw)
 

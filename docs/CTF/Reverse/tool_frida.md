@@ -275,6 +275,7 @@ https://www.anquanke.com/post/id/195215
 
 [安卓协议逆向之frida hook百例](https://www.52pojie.cn/thread-1711668-1-1.html) 
 [安卓协议逆向之frida hook百例二](https://www.52pojie.cn/thread-1712752-1-1.html) 
+[『工具使用』Frida 工程师备忘录](https://mp.weixin.qq.com/s/UqJSwsxkV8iTRTbUsS58Kg)
 
 ## Brida
 [[原创]Frida配合BurpSuite的Brida插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)

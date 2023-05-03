@@ -18,7 +18,7 @@
 [三叶草小组Syclover | 浅谈虚拟机保护还原](https://www.bilibili.com/video/BV1oP4y1X7oz/) 
 [frida辅助分析ollvm](https://bbs.pediy.com/thread-275265.htm) 
 [从开发的角度看看ollvm](https://bbs.pediy.com/thread-274996.htm) 
-
+[OLLVM-deflat 脚本学习](https://mp.weixin.qq.com/s/3ZiBPRK4NcOR_o4gnjO8GQ)
 
 看雪
 [p.z【ACTF2022】Inflated（C++异常处理控制流下的OLLVM混淆） ](https://bbs.pediy.com/thread-273764.htm)

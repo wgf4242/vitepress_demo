@@ -199,6 +199,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2和8.6.4.1 | CVE-2022-36537未授权RCE漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos | QVD-2023-6271：Nacos身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
+[Nacos | 身份绕过漏洞利用（QVD-2023-6271）](https://mp.weixin.qq.com/s/lt2FoK2wCxYz_I7QyeRMyw)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -244,6 +245,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [常用的30+种未授权访问漏洞汇总](https://mp.weixin.qq.com/s/nVSXNz8oJSnGb1Nd7mGy8A)
 [渗透测试中403/401页面绕过的思路总结](https://mp.weixin.qq.com/s/RcEL4uw9DbM98hUsmws5_Q)
 [渗透测试之突破口 | 常见打点及漏洞利用](https://mp.weixin.qq.com/s/190z9ljqriHLLexEMRkJ5w)
+[任意账号密码重置的6种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
 
 [API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
@@ -260,7 +262,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | js文件中的敏感信息&swagger接口测试](https://mp.weixin.qq.com/s/79xMwEcJaqTfc7BIKG6gDA) 
 [Api | 接口安全测试方法大全-Wsdl&Swagger&Webpack（附一键化扫描工具）](https://mp.weixin.qq.com/s/4EYox2aFJC2HNIExIi15Kw)
 [API | 五大API安全漏洞及缓解措施](https://mp.weixin.qq.com/s/jzCnR9cfuRj0J4sgYnJDWQ)
-
+[API | 常见的API接口漏洞总结](https://mp.weixin.qq.com/s/w44WyWWD60B3iqobHn6BQw)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
@@ -402,6 +404,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [VulnHub | De-ICE: S1.100](https://mp.weixin.qq.com/s/9-M9EPcCgmJedvmRNLqvNA)
 * [VulnHub | BadStore](https://mp.weixin.qq.com/s/a426CZgSK_rytU6MCXTRow)
 * [Vulnhub | Morpheus(摩耳甫斯)-哔哩哔哩](https://www.bilibili.com/video/BV1eT411B7bF)
+* [Vulnhub | 靶机精讲：SAR - 盲打这台机器吧](https://www.bilibili.com/video/BV1aX4y1r7JT)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
