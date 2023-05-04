@@ -1,3 +1,28 @@
+## GDB 安装
+
+找新版本
+
+```
+sudo apt remove gdb gdbserver
+sudo apt-get install texinfo
+
+whereis gdb
+# rm all
+
+cd ~/Downloads
+curl -O http://ftp.gnu.org/gnu/gdb/gdb-9.2.tar.gz
+curl -x http://192.168.50.161:1081 -O http://ftp.gnu.org/gnu/gdb/gdb-9.2.tar.gz
+
+tar zxvf gdb-9.2.tar.gz
+cd gdb-9.2
+mkdir build && cd build
+# `pwd`/../configure
+`pwd`/../configure --with-python=/usr/bin/python3.8
+`pwd`/../configure --with-python='/usr/bin/python3.8'
+make
+sudo make install
+```
+
 ## 常用命令
 
 ```
@@ -6,18 +31,44 @@ b __libc_start_main
 b *main
 ```
 
-## x/查看
+## x/examine/查看
 
 x/countFormatSize addr
 
 | count | size | type | desc         | type | desc   |
-| ---- | ---- | ---- | ------------ | ---- | ------ |
-| b    | 1    | o    | 八进制       | f    | 浮点数 |
-| h    | 2    | d    | 十进制       | a    | 地址   |
-| w    | 4    | x    | 十六进制     | i    | 指令   |
-| g    | 8    | u    | 无符号十进制 | c    | 字符   |
-|      |      | t    | 二进制       | s    | 字符串 |
+| ----- | ---- | ---- | ------------ | ---- | ------ |
+| b     | 1    | o    | 八进制       | f    | 浮点数 |
+| h     | 2    | d    | 十进制       | a    | 地址   |
+| w     | 4    | x    | 十六进制     | i    | 指令   |
+| g     | 8    | u    | 无符号十进制 | c    | 字符   |
+|       |      | t    | 二进制       | s    | 字符串 |
 
+格式: x /nfu <addr>
+
+n 表示要显示的内存单元的个数
+
+f 表示显示方式, 可取如下值
+
+| 1   | 2                            |
+| --- | ---------------------------- |
+| x   | 按十六进制格式显示变量。     |
+| d   | 按十进制格式显示变量。       |
+| u   | 按十进制格式显示无符号整型。 |
+| o   | 按八进制格式显示变量。       |
+| t   | 按二进制格式显示变量。       |
+| a   | 按十六进制格式显示变量。     |
+| i   | 指令地址格式                 |
+| c   | 按字符格式显示变量。         |
+| f   | 按浮点数格式显示变量。       |
+
+u 表示一个地址单元的长度
+
+| 1   | 2            |
+| --- | ------------ |
+| b   | 表示单字节， |
+| h   | 表示双字节， |
+| w   | 表示四字节， |
+| g   | 表示八字节   |
 
 ```sh
 x/32gx 0x602010-0x10 命令查看堆块情况
@@ -48,11 +99,212 @@ find 命令查找"/bin/sh" 字符串
 
 ## breakpoint
 
-```sh
-b *main # 在 main 函数的 prolog 代码处设置断点（prolog、epilog，分别表示编译器在每个函数的开头和结尾自行插入的代码）
-b *0x400100 # 在 0x400100处断点
-b *$rebase(0x相对基址偏移)  # pwndbg带的
-d  # Delete breakpoint）
-d * // 删除全部
-dis(able) # // 禁用端点
+| cmd                          | Desc                                                                                                       |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| b \*main                     | 在 main 函数的 prolog 代码处设置断点（prolog、epilog，分别表示编译器在每个函数的开头和结尾自行插入的代码） |
+| b \*0x400100                 | 在 0x400100 处断点                                                                                         |
+| b \*$rebase(0x 相对基址偏移) | pwndbg 带的                                                                                                |
+| d                            | Delete breakpoint                                                                                          |
+| d \*                         | 删除全部                                                                                                   |
+| dis(able)                    | 禁用断点                                                                                                   |
+
+### GDB 调试
+
+set follow-fork-mode parent|child 当发生 fork 时指示调试器跟踪父进程还是子进程
+handler SIGALRM ignore 忽视信息 SIGALRM，调试器接收到的 SIGALRM 信号不会发送给被调试程序
+target remote ip:port 连接远程调试
+
+### 调试技巧
+
+修改下一步运行地址
+
+    disas main # 查看想跳到0x4007e
+    set $rip=0x4007e # 就能跳过去了
+
+    set *0x4007e48=0x7c6c  # 修改值
+
+### gdb 调试常用命令
+
+| cmd                   | desc                                    |
+| --------------------- | --------------------------------------- |
+| file gdb-sample       | 载入程序                                |
+| Enter                 | 重复上一条命令                          |
+| start                 | 启动程序停在开辟完主函数栈帧的地方      |
+| r                     | run                                     |
+| p n                   | print n                                 |
+| c                     | Continue                                |
+| display /i $pc        | 显示汇编指令                            |
+| ni/si                 | step next/over 同 sn 针对汇编代码走一步 |
+| s/n                   | 针对 C 代码                             |
+| n 5                   | 走 5 步                                 |
+| fin                   | 执行到返回ret                           |
+| q                     | 退出                                    |
+| at                    | attach                                  |
+| tel 0x400100          | telescope 打印栈？还是地址？            |
+| tel &\_\_free_hook 1  |                                         |
+| tel cr_unpackData 100 |                                         |
+| stack 40              | 查看 40 个栈数据                        |
+
+- info
+
+| cmd                   | desc                                                  |
+| --------------------- | ----------------------------------------------------- |
+| i r                   | 命令显示寄存器中的当前值———i r 即 Infomation Register |
+| i r                   | info register                                         |
+| i r eax               |
+| i b                   | 查看断点                                              |
+| i functions           |
+| info file             | // 查看当前文件的信息，例如程序入口点                 |
+| info symbol 0x4555088 | 显示这是哪个函数                                      |
+
 ```
+list <linenum>
+• list <function>
+• list 显示当前行后面的源码
+• list -显示当前行前面的源码
+ search <regexp>
+• forward-search 向前搜索
+• reverse-search 全部搜索
+
+```
+
+- 运行参数
+
+```
+1、set args 10 20 30
+• 2、run 10 20 30
+• 3、gdb test -args 10 20 30
+• show args
+• 运行时输入数据:
+• run < payload.txt
+
+watch <expr>
+– 一旦表达式（变量）值有所变化，程序立马停住
+rwatch <expr>
+– 当expr被读时
+• awatch <expr>
+– 当expr被读或写时
+• info watchpoints
+• 清除停止点（break、watch、catch）
+– delete、clear、disable、enable
+```
+
+#### 修改变量值 修改寄存器
+
+```
+set $reg=value
+set *(type*)(address) = value
+```
+
+```
+print x=4
+set x=4
+set var width=10
+set *(char*)0x08048e3a = 0x74 修改汇编值
+set $rsp=$rsp+1 # rsp+1
+```
+
+- 跳转执行
+
+```
+jump
+jump <linespec>
+jump <address>
+同样，也可以直接改变跳转执行的地址:
+set $pc=0x08041234
+```
+
+#### 查看地址对应的函数 symbol of function
+
+```
+info symbol 0x400225
+info line *0xfde09edc
+disassemble /m 0xfde09edc
+```
+
+#### 调试 PIE 程序
+
+方式 1
+sudo vi v/proc/sys/kernel/randomize_va_space 本地调试修改为 0 就不会随机变化地址了
+
+```
+gdb file
+r
+Ctrl+c
+info proc mappings
+0x555555554000     0x555555556000     0x2000        0x0 /home/kali/vmware/test/pwn/pwn1_music/music
+base = 0x555555554000 # 这时第一行就是基址，可以通过加偏移来计算
+gdb.attach(p, "b *{b}".format(b = hex(base + 0x0CDD)))
+```
+
+方式 2 rebase
+0x933 是偏移地址
+
+b \*$rebase(0x933)
+
+### vm, vmmap 查看内存映射
+
+如何查找函数三种方式
+
+```sh
+shell$ objdump -d test
+shell$ objdump -M intel -d test | less
+shell$ objdump -T ./libc.so.6 | grep 'read'
+shell$ objdump -T ./libc.so.6 | grep '__libc_start_main'     这个在startmain前就会被call过
+gdb-peda$ p shell
+r2$ afl~shell
+```
+
+### peda
+
+```
+disass + main //反汇编main
+disassemble + func // 对指定的函数进行反汇编
+b main  // 断下main
+b *0x400100 // 在 0x400100 处下断点
+c(contunue)  // 继续执行
+x /4xg $ebp: 查看ebp开始的4个8字节内容（b: 单字节，h: 双字节，w: 四字节，g: 八字节；x: 十六进制，s: 字符串输出，i: 反汇编，c: 单字符）
+x / (n , f ,u) // n,f,u是其三个可选参数
+  n是一个正整数，表示需要显示的内存单元的个数，也就是说从当前地址向后显示几个内存单元的内容，一个内存单元的大小由后面的u定义。
+  f 表示显示的格式，参见下面。如果地址所指的是字符串，那么格式可以是s，如果地址是指令地址，那么格式可以是i。
+  u 表示从当前地址往后请求的字节数，如果不指定的话，GDB默认是4个bytes。u参数可以用下面的字符来代替，b表示单字节，h表示双字节，w表示四字节，g表示八字节。当我们指定了字节长度后，GDB会从指内存定的内存地址开始，读写指定字节，并把其当作一个值取出来。
+layout // 用于分割窗口，可以一边查看代码，一边测试。
+主要有下面几种用法:
+layout src // 显示源代码窗口
+layout asm // 显示汇编窗口
+layout regs // 显示源代码/汇编和寄存器窗口
+layout split // 显示源代码和汇编窗口
+layout next // 显示下一个layout
+layout prev // 显示上一个layout
+Ctrl + L // 刷新窗口
+Ctrl + x  再按1 // 单窗口模式，显示一个窗口
+Ctrl + x  再按2 // 双窗口模式，显示两个窗口
+Ctrl + x  再按a // 回到传统模式，即退出layout，回到执行layout之前的调试窗口。
+delete [number]: 删除断点
+tb一次性断点
+watch *(int *)0x08044530: 在内存0x0804453处的数据改变时stop
+p $eax: 输出eax的内容
+set $eax=4: 修改变量值
+fini: 运行至函数刚结束处
+return expression: 将函数返回值指定为expression
+bt: 查看当前栈帧
+info f: 查看当前栈帧
+context: 查看运行上下文
+stack: 查看当前堆栈
+call func: 强制函数调用
+ropgagdet: 找common rop
+  ROPgadget --binary stack2 --string 'sh' 查找sh字符
+  ROPgadget --binary 文件名 --only "pop|ret"
+vm, vmmap: 查看虚拟地址分布
+shellcode: 搜索，生成shellcode
+ptype struct link_map: 查看link_map定义
+p &((struct link_map*)0)->l_info: 查看l_info成员偏移
+```
+
+### gdb attach, process 后 gdb script 有问题时，选默认终端为 qterminal。
+
+    gcc gdb-sample.c -o gdb-sample -g
+
+### pwngdb 使用
+
+在 gdb.attach(io)之后，先输入 r 运行程序。再继续其他操作

@@ -45,7 +45,7 @@ $$
 * [密码学 ｜ 6.3 椭圆曲线离散对数问题（ECDLP）](https://mp.weixin.qq.com/s/MBE4YC1dJTOYNpQ91IaPYA)
 * [密码学 ｜ 6.3.1 二重加法算法](https://mp.weixin.qq.com/s/c5g13vi9I_ytN8VkIvjoJw)
 * [密码学 ｜ 6.4 椭圆曲线密码学](https://mp.weixin.qq.com/s/CHyo16D7CKHgkGHMidpNHA)
-
+* [密码学 ｜ 使用z3-solver破解随机数](https://mp.weixin.qq.com/s/UWKmWQnchRyz5a8zQo_HyA)
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)
