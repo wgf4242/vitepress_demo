@@ -213,7 +213,8 @@ start attack
 [插件 | Doraemon exp模板](https://mp.weixin.qq.com/s/4K6IaPCjWNSQ27sPV0GaEA)
 [插件 | 武装你的BurpSuite(一)](https://mp.weixin.qq.com/s/Pl3HDMV_EhDlvY8lyzk02g) 
 [插件 | 武装你的BurpSuite（二）](https://mp.weixin.qq.com/s/pNMJhiCDbo_kLsNYGJnNmA) 
-
+[插件 |【Python+Java】Burpsuite插件开发](https://mp.weixin.qq.com/s/xEKSXm2-fCHhyvZxrQUQvQ)
+[插件 | xp_CAPTCHA 4.2 - Burp验证码识别插件](https://mp.weixin.qq.com/s/nCcZ8gNutfPNz7X0lsxsdQ)
 
 
 ## 靶场系列

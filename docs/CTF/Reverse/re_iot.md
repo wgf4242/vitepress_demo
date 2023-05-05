@@ -39,6 +39,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 * [qemu模拟路由器环境 TP-Link sr20远程命令执行漏洞](https://www.bilibili.com/video/BV1jM411L7e6/)
 ## SRC 
 [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)
+[如何快速挖掘设备逻辑洞](https://mp.weixin.qq.com/s/jZd5BpAmwFZOZuNjc4-oqA)
 
 ## Coding
 [随身WiFi硬改计划](https://mp.weixin.qq.com/s/sw4R-GOM8jwGdEvsLJL6pw)
