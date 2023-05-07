@@ -200,6 +200,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2和8.6.4.1 | CVE-2022-36537未授权RCE漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos | QVD-2023-6271：Nacos身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
 [Nacos | 身份绕过漏洞利用（QVD-2023-6271）](https://mp.weixin.qq.com/s/lt2FoK2wCxYz_I7QyeRMyw)
+
+[Django | 【漏洞复现】Django SQL注入 （CVE-2022-28346）](https://mp.weixin.qq.com/s/ERiMGmljH6obMx18nhnC1g)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 

