@@ -202,6 +202,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Nacos | 身份绕过漏洞利用（QVD-2023-6271）](https://mp.weixin.qq.com/s/lt2FoK2wCxYz_I7QyeRMyw)
 
 [Django | 【漏洞复现】Django SQL注入 （CVE-2022-28346）](https://mp.weixin.qq.com/s/ERiMGmljH6obMx18nhnC1g)
+
+[Fastjson | 不出网利用总结](https://mp.weixin.qq.com/s/bwFxW4u6HZ382uZPFDhXFQ)
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -265,6 +267,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Api | 接口安全测试方法大全-Wsdl&Swagger&Webpack（附一键化扫描工具）](https://mp.weixin.qq.com/s/4EYox2aFJC2HNIExIi15Kw)
 [API | 五大API安全漏洞及缓解措施](https://mp.weixin.qq.com/s/jzCnR9cfuRj0J4sgYnJDWQ)
 [API | 常见的API接口漏洞总结](https://mp.weixin.qq.com/s/w44WyWWD60B3iqobHn6BQw)
+[API | API安全基础理论](https://mp.weixin.qq.com/s/eFxfxVcXNu2QhnnaQVO2Og)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)

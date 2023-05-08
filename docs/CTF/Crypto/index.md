@@ -46,7 +46,8 @@ $$
 * [密码学 ｜ 6.3.1 二重加法算法](https://mp.weixin.qq.com/s/c5g13vi9I_ytN8VkIvjoJw)
 * [密码学 ｜ 6.4 椭圆曲线密码学](https://mp.weixin.qq.com/s/CHyo16D7CKHgkGHMidpNHA)
 * [密码学 ｜ 使用z3-solver破解随机数](https://mp.weixin.qq.com/s/UWKmWQnchRyz5a8zQo_HyA)
-* [密码学｜6.4.2 椭圆Elgamal公钥密码系统](https://mp.weixin.qq.com/s/EjhPlck9-7MzIZvstriaOg)
+* [密码学 ｜ 6.4.2 椭圆Elgamal公钥密码系统](https://mp.weixin.qq.com/s/EjhPlck9-7MzIZvstriaOg)
+* [密码学 ｜ 6.5 公钥密码学的发展](https://mp.weixin.qq.com/s/DsuUBRn7raqAwgfi181S4w)
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)
