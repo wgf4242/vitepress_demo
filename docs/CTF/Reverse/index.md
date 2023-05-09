@@ -326,6 +326,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 * [免杀 | CobaltStrike | Execute-Assembly攻守之道](https://mp.weixin.qq.com/s/IlOAShBMrOUTixhxqGvncQ)
 ## 基础学习
 * [『杂项』SMC加密技术（二）](https://mp.weixin.qq.com/s/fJW9qUxedFStTHm7r1AADg)
+* [ELF](https://stevens.netmeister.org/631/elf.html)
+
 ### Video
 * [0x02 Delphi 逆向游乐园第二关](https://www.bilibili.com/video/BV1dk4y1j7ei)
 

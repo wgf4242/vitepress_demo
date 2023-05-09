@@ -198,6 +198,7 @@ https://github.com/APKLab/APKLab
 * [奥维地图浏览器-vip分析](https://mp.weixin.qq.com/s/fgHpsHFGohYpPLUlb76cCA)
 * [某视频VIP播放 一个懒人的破解方式](https://www.52pojie.cn/thread-1747613-1-1.html) 
 * [APP 聊天协议逆向](https://mp.weixin.qq.com/s/EBXnEfeb3IgcfPTqlb3Etw)
+* [APP去广告技术分析](https://mp.weixin.qq.com/s/OxH3uoPecBYL_cZTTOpQBA)
 
 
 ## 混淆加密
