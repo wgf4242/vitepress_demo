@@ -350,6 +350,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 ### x64dbg/ollydbg
 [x64dbg插件编写基础](https://mp.weixin.qq.com/s/nATav0shkwytSURp1yMyiQ)
+### other
+[虚拟机检测技术整理](https://mp.weixin.qq.com/s/tKqePIDTf8UE-_l3Er5QZQ)
 
 ## AI助手ChatGPT
 https://github.com/acheong08/ChatGPT

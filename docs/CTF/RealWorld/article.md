@@ -201,6 +201,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Nacos | QVD-2023-6271：Nacos身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
 [Nacos | 身份绕过漏洞利用（QVD-2023-6271）](https://mp.weixin.qq.com/s/lt2FoK2wCxYz_I7QyeRMyw)
 
+[neo4j | Neo4j 3.4.18 CVE-2021-34371](https://mp.weixin.qq.com/s/Wh-VyKtvw0bsEcZfxS7e_Q)
+
 [Django | 【漏洞复现】Django SQL注入 （CVE-2022-28346）](https://mp.weixin.qq.com/s/ERiMGmljH6obMx18nhnC1g)
 
 [Fastjson | 不出网利用总结](https://mp.weixin.qq.com/s/bwFxW4u6HZ382uZPFDhXFQ)

