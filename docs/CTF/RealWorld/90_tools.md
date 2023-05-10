@@ -323,6 +323,8 @@ powershell版使用同样非常简单，只需最后的“Ladon whoami”命令�
 
 
 # proxy代理
+[ICMP/TCP隧道 | 内网代理和穿透工具的分析记录](https://mp.weixin.qq.com/s/jpmi7CfvcOmL4qkSBKLvKQ)
+
 多层代理攻击方式
 1. proxychains
 2. msf route flush;set Proxies socks5:127.0.0.1:8989

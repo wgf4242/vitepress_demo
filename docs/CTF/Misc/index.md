@@ -27,6 +27,7 @@
   * 观察文件尾 文件头 50 4b 03 04 正序反序
   * 拆成2段base64 例 enlyZ2h3eXlmeHc0ezhpMAMX1tMzk3amNpNXZqdDRrZg==== 
   * Fence Code
+  * 画图, 比如01 多行，把1画出来。连上看看效果。
   
 * 不明数字+字母
   * Caesar 后过滤 16进制。

