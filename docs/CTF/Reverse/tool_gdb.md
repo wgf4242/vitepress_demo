@@ -101,11 +101,12 @@ find 命令查找"/bin/sh" 字符串
 
 | cmd                          | Desc                                                                                                       |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| i b                          | info breakpoint                                                                                            |
 | b \*main                     | 在 main 函数的 prolog 代码处设置断点（prolog、epilog，分别表示编译器在每个函数的开头和结尾自行插入的代码） |
 | b \*0x400100                 | 在 0x400100 处断点                                                                                         |
 | b \*$rebase(0x 相对基址偏移) | pwndbg 带的                                                                                                |
-| d                            | Delete breakpoint                                                                                          |
-| d \*                         | 删除全部                                                                                                   |
+| d                            | Delete all breakpoint                                                                                      |
+| d 1                          | Delete index 1 point                                                                                       |
 | dis(able)                    | 禁用断点                                                                                                   |
 
 ### GDB 调试
@@ -137,12 +138,13 @@ target remote ip:port 连接远程调试
 | ni/si                 | step next/over 同 sn 针对汇编代码走一步 |
 | s/n                   | 针对 C 代码                             |
 | n 5                   | 走 5 步                                 |
-| fin                   | 执行到返回ret                           |
+| fin                   | 执行到返回 ret                          |
 | q                     | 退出                                    |
 | at                    | attach                                  |
 | tel 0x400100          | telescope 打印栈？还是地址？            |
 | tel &\_\_free_hook 1  |                                         |
 | tel cr_unpackData 100 |                                         |
+| stack                 | 多次回车查看多个                        |
 | stack 40              | 查看 40 个栈数据                        |
 
 - info
