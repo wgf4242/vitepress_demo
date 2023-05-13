@@ -1,4 +1,5 @@
-
+# 环境配置
+[gdb调试 | pwndbg+pwndbg联合使用](https://blog.csdn.net/weixin_43092232/article/details/105648769)
 
 
 # Article
@@ -34,3 +35,4 @@
 
 ## Video
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
+[ret2shellcode](https://www.bilibili.com/video/BV1Ws4y137xa/)

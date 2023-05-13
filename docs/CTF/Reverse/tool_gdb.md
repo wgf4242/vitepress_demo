@@ -308,3 +308,10 @@ p &((struct link_map*)0)->l_info: 查看l_info成员偏移
 ### pwngdb 使用
 
 在 gdb.attach(io)之后，先输入 r 运行程序。再继续其他操作
+
+
+### gdb 执行命令
+```sh
+PYVER=$(gdb -batch -q --nx -ex 'pi import platform; print(".".join(platform.python_version_tuple()[:2]))')
+PYTHON+=$(gdb -batch -q --nx -ex 'pi import sys; print(sys.executable)')
+```

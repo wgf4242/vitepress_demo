@@ -204,6 +204,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [neo4j | Neo4j 3.4.18 CVE-2021-34371](https://mp.weixin.qq.com/s/Wh-VyKtvw0bsEcZfxS7e_Q)
 
 [Django | 【漏洞复现】Django SQL注入 （CVE-2022-28346）](https://mp.weixin.qq.com/s/ERiMGmljH6obMx18nhnC1g)
+[Django | SQL注入漏洞 CVE-2022-28346](https://mp.weixin.qq.com/s/bsoP24MTPQnuB-NTqHsz9g)
 
 [Fastjson | 不出网利用总结](https://mp.weixin.qq.com/s/bwFxW4u6HZ382uZPFDhXFQ)
 ### Exploit/CVE/实战漏洞/Windows
@@ -412,6 +413,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [VulnHub | BadStore](https://mp.weixin.qq.com/s/a426CZgSK_rytU6MCXTRow)
 * [Vulnhub | Morpheus(摩耳甫斯)-哔哩哔哩](https://www.bilibili.com/video/BV1eT411B7bF)
 * [Vulnhub | 靶机精讲：SAR - 盲打这台机器吧](https://www.bilibili.com/video/BV1aX4y1r7JT)
+* [Vulnhub | Orasi | 红队打靶](https://mp.weixin.qq.com/s/80-TLtZ0kKEci0qxHGr6kw)
+* [VulnHub | phineas | 红队打靶](https://mp.weixin.qq.com/s/_AXhB_S2Qz-6thWHR9bvvA)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
@@ -425,7 +428,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [【靶场实例】6-Lord Of The Root-1.0.1](https://mp.weixin.qq.com/s/YG00g9r8md_Q6yzSUV7Izg)
 * [九种DC靶机渗透测试一](https://mp.weixin.qq.com/s/gh_vGCjJtZe4EKHecKjjbg) [二](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [三](https://mp.weixin.qq.com/s/FjSaNNryyV9dKfjJZbyXag) [Download](https://pan.baidu.com/s/13ra2u5QjCDRewN_RiTfS_Q#seri)
 * [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/mqRMPA_zxa3biQ-F_ZdBJw)
-* [HackTheBox | BountyHunter靶场实战](https://mp.weixin.qq.com/s/aBMeOtC300oiAe7XYrQzww)
+* [HTB | HackTheBox | BountyHunter靶场实战](https://mp.weixin.qq.com/s/aBMeOtC300oiAe7XYrQzww)
+* [HTB | breaking grad靶机攻克](https://mp.weixin.qq.com/s/X--NTNiiGJZxHJYxnqJEOw)
 * [THM](http://www.nooemotion.com/ctf/)
 
 ## 漏洞挖掘
