@@ -330,6 +330,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 ### Video
 * [0x02 Delphi 逆向游乐园第二关](https://www.bilibili.com/video/BV1dk4y1j7ei)
+* [0x03 Delphi 逆向游乐园第三关](https://www.bilibili.com/video/BV1224y1K7ip/)
 
 ## Windows/hook
 * [Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)

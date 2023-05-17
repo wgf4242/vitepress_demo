@@ -324,6 +324,7 @@ powershell版使用同样非常简单，只需最后的“Ladon whoami”命令�
 
 # proxy代理
 [ICMP/TCP隧道 | 内网代理和穿透工具的分析记录](https://mp.weixin.qq.com/s/jpmi7CfvcOmL4qkSBKLvKQ)
+[Linux 或 Windows 上实现端口映射](https://mp.weixin.qq.com/s/V9iw_Z0B-dTJikvnwLUEAQ)
 
 多层代理攻击方式
 1. proxychains

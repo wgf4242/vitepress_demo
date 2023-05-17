@@ -666,6 +666,8 @@ sub dialog_test {
 [全网最全的 Cobalt Strike 使用教程-内网渗透之域控攻击篇](https://mp.weixin.qq.com/s/Nfhwx0JRt5S5LbcsXNMeyg)
 [Cobalt Strike Training Resources](https://www.cobaltstrike.com/training/)
 [done 4/9 | Cobalt Strike Red Team Ops - Training Cours](https://www.youtube.com/playlist?list=PLcjpg2ik7YT6H5l9Jx-1ooRYpfvznAInJ)
+[干货分享 | 魔改cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
+[基于Caddy实现的C2前置代理 - RedCaddy](https://mp.weixin.qq.com/s/usHrpgxCvGsu9vvf0SMSBQ)
 
 ## 使用帮助
 [提取密码 | 对湾湾某网站的一次渗透测试](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484330&idx=1&sn=fa5f3c3de8737f3ddbc5622917b2c852)

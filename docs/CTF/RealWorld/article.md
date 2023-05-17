@@ -294,6 +294,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * 50_Anti-AntiVirus_EXE.md
 * [Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
 * [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
+* [探究certutil在杀软中的绕过实践](https://mp.weixin.qq.com/s/0pIuOpqT4x7KWdxZ5XkS6w)
 * [安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
 * [Windows Defender的一些渗透知识](https://mp.weixin.qq.com/s/4s3uJ2vofGbkBCyt_f5jHQ)
 * [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
@@ -315,6 +316,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [技术 | 白加黑的初步探究](https://mp.weixin.qq.com/s/23hMrZEI2p_8i8LIbJQsWg)
 * [BypassAV](https://github.com/CMEPW/BypassAV)
 * [技术 | shellcode loader的编写](https://mp.weixin.qq.com/s/sfxmWf9nCQeAc7PRRG5eaQ)
+* [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)
 
 __Video__
 * [rkvir逆向工程学院](https://space.bilibili.com/447734880/video)
@@ -419,7 +421,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
 * [红队渗透测试之vulnerable_docker—docker逃逸（附靶场下载地址）](https://mp.weixin.qq.com/s/vg4bbgV5Zr7_qopsSqSDmg)
-* [pikachu 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
+* [pikachu | 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
+* [pikachu | 记录下pikachu靶场的打靶记录（渗透知识点全，强烈建议收藏）](https://mp.weixin.qq.com/s/MKbyGUKW-hQnqDAsmDc33A)
 * [安鸾靶场渗透练习 Discuz 3.2 3.3 3.4 udf提取](https://mp.weixin.qq.com/s/z6lkeadBtkOuKkIzu71QAg)
 * [某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg) [下载](https://pan.baidu.com/s/1DOaDrsDsB2aW0sHSO_-fZQ#vbi2 )
 * [Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
@@ -430,7 +433,10 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/mqRMPA_zxa3biQ-F_ZdBJw)
 * [HTB | HackTheBox | BountyHunter靶场实战](https://mp.weixin.qq.com/s/aBMeOtC300oiAe7XYrQzww)
 * [HTB | breaking grad靶机攻克](https://mp.weixin.qq.com/s/X--NTNiiGJZxHJYxnqJEOw)
+* [HTB | 攻克靶机实战Under Construction攻略分享](https://mp.weixin.qq.com/s/CkJsx1-bZhKGM9ue8tIHyA)
+* [HTB |  攻克靶机实战interdimensional internet攻略分享](https://mp.weixin.qq.com/s/cfcAq6vG-e2dB6mgymfcOQ)
 * [THM](http://www.nooemotion.com/ctf/)
+
 
 ## 漏洞挖掘
 [短信验证码常见漏洞总结](https://mp.weixin.qq.com/s/h5eJgbZi5SHRRa0FtkeJSg)
