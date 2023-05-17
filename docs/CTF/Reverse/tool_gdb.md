@@ -25,11 +25,13 @@ sudo make install
 
 ## 常用命令
 
-```
-entry -- Set a breakpoint at the first instruction executed in the target binary
-b __libc_start_main
-b *main
-```
+| cmd                   | desc                                                                    |
+| --------------------- | ----------------------------------------------------------------------- |
+| entry                 | Set a breakpoint at the first instruction executed in the target binary |
+| b \_\_libc_start_main |
+| b \*main              |
+| fmtargs 0x7fffe2d9    | 查看 printf 计算参数位置                                                |
+| distance 0x90 0x86    | 计算距离                                                                |
 
 ## x/examine/查看
 
@@ -311,8 +313,8 @@ p &((struct link_map*)0)->l_info: 查看l_info成员偏移
 
 在 gdb.attach(io)之后，先输入 r 运行程序。再继续其他操作
 
-
 ### gdb 执行命令
+
 ```sh
 PYVER=$(gdb -batch -q --nx -ex 'pi import platform; print(".".join(platform.python_version_tuple()[:2]))')
 PYTHON+=$(gdb -batch -q --nx -ex 'pi import sys; print(sys.executable)')

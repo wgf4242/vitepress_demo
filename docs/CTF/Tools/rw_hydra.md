@@ -48,6 +48,7 @@ hydra -l wenber -V -x 3:3:1 rdp://127.0.0.1:3389
 ```sh
 hydra -L user.txt -P pwd.txt 172.22.9.26 rdp -F -vV -e ns
 hydra 192.168.50.210 rdp -l admin -p 123456 -V -F
+hydra 192.168.31.22 rdp -L /usr/share/wordlists/dirbuster/password2.txt -P /usr/share/wordlists/dirbuster/password1.txt -V -F
 hydra rdp://192.168.1.1:3389 -l admin -p 123456 -V -F
 ```
 

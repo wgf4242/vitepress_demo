@@ -2,8 +2,9 @@
 [canary的各种姿势----pwn题解版  ](https://www.52pojie.cn/thread-932096-1-1.html)
 [PWN之Canary学习](https://www.jianshu.com/p/85d0f7ae822e)
 
-特点 最后一位是 \x00
+* 最后一位是 \x00
 * 格式化字符串绕过
+* scanf 用 + 绕过
 
 通过格式化字符串读取 canary的值
 
