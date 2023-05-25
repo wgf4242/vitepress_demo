@@ -7,6 +7,9 @@ pip3 install git+https://github.com/sviehb/jefferson.git
 binwalk -Me rootfs.img
 方式2.取证大师
 
+## 题目
+[openwrt | AntCTF x D³CTF 2023 d3op 复盘笔记](https://mp.weixin.qq.com/s/97TfeJgZeG-lLzWc95teBw)
+
 ## stm32
 [一个简单的STM32固件分析](https://mp.weixin.qq.com/s/2XeF67Rz8Tz5jPVevSHhpg)
 
@@ -37,6 +40,9 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 * [解密固件实践及firmwalker脚本利用](https://www.bilibili.com/video/BV1Fs4y1K76J/)
 * [分析固件解密流程](https://www.bilibili.com/video/BV1YL411m7nx/)
 * [qemu模拟路由器环境 TP-Link sr20远程命令执行漏洞](https://www.bilibili.com/video/BV1jM411L7e6/)
+* [例会分享之iot从提桶到跑路（1）](https://www.bilibili.com/video/BV1ok4y157Hw/)
+* [如何进行物联网渗透测试？](https://mp.weixin.qq.com/s/-p9-9ia_4aqXwL9ELW-BYg)
+
 ## SRC 
 [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)
 [如何快速挖掘设备逻辑洞](https://mp.weixin.qq.com/s/jZd5BpAmwFZOZuNjc4-oqA)

@@ -35,6 +35,7 @@
 [todesk在红队中的使用](https://mp.weixin.qq.com/s/XhHdLt2HJMUOJFF6aRtygw)
 [todesk获取密码,rustdesk『红蓝对抗』远控软件小技巧](https://mp.weixin.qq.com/s/DvqFKMRzg6FCJtUdkk4hhA)
 [todesk企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
+[todesk 记一次渗透测试遇到远程控制软件的深入利用](https://mp.weixin.qq.com/s/cjNwVbKjTUPgmIUAeq4PsA) todesk 
 
 [CS权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
 
@@ -68,6 +69,8 @@ result.txt | 搜验证码
 [浅谈常见未授权访问漏洞系列（四）](https://mp.weixin.qq.com/s/Gb59ajCdE6XssQAAG7dS1g)
 [浅谈常见未授权访问漏洞系列（五）](https://mp.weixin.qq.com/s/20SIvVMe3aSSAG_KbeqnaA)
 [浅谈常见未授权访问漏洞系列（六）](https://mp.weixin.qq.com/s/LAZHRbzfjoXxantUWhuPMg)
+
+[redis | 未授权访问配合ssh免密登录getshell](https://mp.weixin.qq.com/s/SWCWs5UDQALzHLkigOpHlA)
 
 [[Web漏洞-XXE&XML漏洞]](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485040&idx=1&sn=820cc31cf2e2d251814a2cf09ab6be7a)
 [[Web漏洞]-(XSS详解)](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485012&idx=1&sn=695f6ea23f8f8dc0d83f5f3c753befad)
@@ -205,8 +208,13 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [Django | 【漏洞复现】Django SQL注入 （CVE-2022-28346）](https://mp.weixin.qq.com/s/ERiMGmljH6obMx18nhnC1g)
 [Django | SQL注入漏洞 CVE-2022-28346](https://mp.weixin.qq.com/s/bsoP24MTPQnuB-NTqHsz9g)
+[Django | SQL注入漏洞 CVE-2022-28347](https://mp.weixin.qq.com/s/KgCOfIfXxxQr6ADdSWikuQ)
 
 [Fastjson | 不出网利用总结](https://mp.weixin.qq.com/s/bwFxW4u6HZ382uZPFDhXFQ)
+[Qizhi科技堡垒机后台命令执行漏洞检测](https://mp.weixin.qq.com/s/v4-AgFi5lE7i_lX0E-PC7Q)
+
+[电信 | 天翼网关 - 中兴ZXHN F450A超级管理员破解](https://mp.weixin.qq.com/s/3p8dE8bOxYKJuI8ylqLHAQ)
+
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
@@ -218,11 +226,13 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [微信小程序的任意用户登录实战](https://mp.weixin.qq.com/s/Q5onwwDX27-o5YrWVvjuOw)
 [反编译&调试小程序请求签名](https://mp.weixin.qq.com/s/0HzgsFd0_2-ZgAyg8mP_Dw)
 [小程序渗透测试工具 -- unveilr](https://mp.weixin.qq.com/s/rL4lQlG64M3sSSLcHtzQOg)
+[企业微信 | appid和secret泄露调用api服务](https://mp.weixin.qq.com/s/DNzupuzgubWBo-emjPH1Jg)
 
 ### Exploit/CVE/实战漏洞/IOT 
 [TOTOLINK CVE-2022-26210 漏洞分析&复现](https://mp.weixin.qq.com/s/HYDHoo7ep85SwJeEZxAkEQ)
 [小米路由器任意文件读取及远程命令执行漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484929&idx=1&sn=8012fce68bf9eaccef59fc280b663077)
 [海康威视代码执行漏洞](https://mp.weixin.qq.com/s/o3A7xOPLbdmo6WAZsygHYQ)
+[任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
 
 ## 钓鱼
 [公共WiFi钓鱼 | wifipumpkin3 |全局DoH+纯HTTPS网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
@@ -230,6 +240,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [网络钓鱼19式](https://mp.weixin.qq.com/s/iYAVt0KP66Qf79_yePQjOA)
 [红队攻击手特训营-如何开展钓鱼演练](https://www.bilibili.com/video/BV1fM411U71d)
 [浅谈关于二维码的钓鱼思路](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484481&idx=1&sn=20206d97c0e384a343fb6698f832c543)
+[海莲花APT针对中国大陆的邮件钓鱼技战术手法总结](https://mp.weixin.qq.com/s/jz3lZtROK4piLdkpzPcJoA)
 
 ## Wifi
 [WiFi密码安全工具wifite](https://www.bilibili.com/video/BV1jK411X7w8/)
@@ -253,6 +264,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [渗透测试中403/401页面绕过的思路总结](https://mp.weixin.qq.com/s/RcEL4uw9DbM98hUsmws5_Q)
 [渗透测试之突破口 | 常见打点及漏洞利用](https://mp.weixin.qq.com/s/190z9ljqriHLLexEMRkJ5w)
 [任意账号密码重置的6种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
+[企业级SRC挖掘-前端sessionStorage绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 
 [API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
 [接口 | 渗透实战|两个0day漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
@@ -271,6 +283,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [API | 五大API安全漏洞及缓解措施](https://mp.weixin.qq.com/s/jzCnR9cfuRj0J4sgYnJDWQ)
 [API | 常见的API接口漏洞总结](https://mp.weixin.qq.com/s/w44WyWWD60B3iqobHn6BQw)
 [API | API安全基础理论](https://mp.weixin.qq.com/s/eFxfxVcXNu2QhnnaQVO2Og)
+[API | 水平越权漏洞检测工具 -- IDOR_detect_tool](_)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
@@ -294,6 +307,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * 50_Anti-AntiVirus_EXE.md
 * [Mimikatz的18种免杀姿势及防御策略 | msf加载bin](https://www.freebuf.com/articles/system/234365.html)
 * [绕过windows defender上线cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
+* re_dll.md
+* [探究certutil在杀软中的绕过实践](https://mp.weixin.qq.com/s/0pIuOpqT4x7KWdxZ5XkS6w)
 * [安全攻防 | 多种方式关闭讨厌的defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
 * [Windows Defender的一些渗透知识](https://mp.weixin.qq.com/s/4s3uJ2vofGbkBCyt_f5jHQ)
 * [powershell命令免杀的小工具](https://mp.weixin.qq.com/s/74cXsjtZGdiZVObTitPW6Q)
@@ -315,6 +330,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 * [技术 | 白加黑的初步探究](https://mp.weixin.qq.com/s/23hMrZEI2p_8i8LIbJQsWg)
 * [BypassAV](https://github.com/CMEPW/BypassAV)
 * [技术 | shellcode loader的编写](https://mp.weixin.qq.com/s/sfxmWf9nCQeAc7PRRG5eaQ)
+* [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)
 
 __Video__
 * [rkvir逆向工程学院](https://space.bilibili.com/447734880/video)
@@ -415,11 +431,16 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Vulnhub | 靶机精讲：SAR - 盲打这台机器吧](https://www.bilibili.com/video/BV1aX4y1r7JT)
 * [Vulnhub | Orasi | 红队打靶](https://mp.weixin.qq.com/s/80-TLtZ0kKEci0qxHGr6kw)
 * [VulnHub | phineas | 红队打靶](https://mp.weixin.qq.com/s/_AXhB_S2Qz-6thWHR9bvvA)
+* [VulnHub | Socnet | 红队打靶](https://mp.weixin.qq.com/s/kkGPzcaNgr17488cUWAg8Q)
+* [VulnHub | easy_cloudantivirus | 红队打靶](https://mp.weixin.qq.com/s/PrG71FiN0Cwo8qHQgQZavA)
+* [VulnHub | Chronos | 红队打靶](https://mp.weixin.qq.com/s/7s85u8u36mm3mxsRi5K5Fg)
+* [VulnHub靶机-Hard_Socnet2 |红队打靶](https://mp.weixin.qq.com/s/_ZU965pfwrOx-c3Ih1Q5SQ)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
 * [红队渗透测试之vulnerable_docker—docker逃逸（附靶场下载地址）](https://mp.weixin.qq.com/s/vg4bbgV5Zr7_qopsSqSDmg)
-* [pikachu 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
+* [pikachu | 靶场攻略](https://mp.weixin.qq.com/s/M7tPpMGWN-MHI7Xfi4-8MQ)
+* [pikachu | 记录下pikachu靶场的打靶记录（渗透知识点全，强烈建议收藏）](https://mp.weixin.qq.com/s/MKbyGUKW-hQnqDAsmDc33A)
 * [安鸾靶场渗透练习 Discuz 3.2 3.3 3.4 udf提取](https://mp.weixin.qq.com/s/z6lkeadBtkOuKkIzu71QAg)
 * [某内网域渗透靶场的writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg) [下载](https://pan.baidu.com/s/1DOaDrsDsB2aW0sHSO_-fZQ#vbi2 )
 * [Tomcat弱口令爆破+War包部署Getshell靶场实战](https://mp.weixin.qq.com/s/THmJK56SIeWoJZrq3Aowiw)
@@ -430,6 +451,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [vulntarget-j打靶记录-作者：夏天](https://mp.weixin.qq.com/s/mqRMPA_zxa3biQ-F_ZdBJw)
 * [HTB | HackTheBox | BountyHunter靶场实战](https://mp.weixin.qq.com/s/aBMeOtC300oiAe7XYrQzww)
 * [HTB | breaking grad靶机攻克](https://mp.weixin.qq.com/s/X--NTNiiGJZxHJYxnqJEOw)
+* [HTB | 攻克靶机实战Under Construction攻略分享](https://mp.weixin.qq.com/s/CkJsx1-bZhKGM9ue8tIHyA)
+* [HTB |  攻克靶机实战interdimensional internet攻略分享](https://mp.weixin.qq.com/s/cfcAq6vG-e2dB6mgymfcOQ)
 * [THM](http://www.nooemotion.com/ctf/)
 
 ## 漏洞挖掘

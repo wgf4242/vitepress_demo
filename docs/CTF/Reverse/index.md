@@ -330,6 +330,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 ### Video
 * [0x02 Delphi 逆向游乐园第二关](https://www.bilibili.com/video/BV1dk4y1j7ei)
+* [0x03 Delphi 逆向游乐园第三关](https://www.bilibili.com/video/BV1224y1K7ip/)
 
 ## Windows/hook
 * [Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)
@@ -368,6 +369,9 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 ## vm
 * [记一次对vm保护的算法的快速定位](https://mp.weixin.qq.com/s/egggMm8hhcJ_kXVOwF5raQ)
 
+## 驱动 
+[驱动 | 腾讯游戏赛 [原创]2023南极动物厂高校决赛之决赛附加题 ](https://bbs.kanxue.com/thread-276892.htm)
+
 ## fuzz/模糊测试
 * [Windows平台用户层二进制漏洞模糊测试入门](https://mp.weixin.qq.com/s/nHuo1i21mI-TyqYL21l0RQ)
 
@@ -377,6 +381,9 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 * [[原创]EXP编写学习 之 网络上的EXP（三）](https://bbs.kanxue.com/thread-272583.htm)
 * [[原创]EXP编写学习 之 绕过GS（四）](https://bbs.kanxue.com/thread-272598.htm)
 * [[原创]EXP编写学习 之 绕过SafeSEH（五）](https://bbs.kanxue.com/thread-272603.htm)
+### 实战分析
+* [Cobalt Strike的DLL Stager分析](https://mp.weixin.qq.com/s/Tl9r7op-a7GVpw5k-lfYSw)
+* [Cobaltstrike4.5 stageless beacon 通信分析](https://mp.weixin.qq.com/s/xhRvAEFftmNEW97uW5BNOQ)
 
 ## 工具
 LIEF | 对ELF添加 section, segment

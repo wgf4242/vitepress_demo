@@ -136,7 +136,8 @@ Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 * [QR Research 支持反色、残缺](https://mp.weixin.qq.com/s/uyCSZzMd2scAgsALKOIM-Q)
 * https://cli.im/deqr/   有可能零宽隐写
 * [如何手算二维码](https://www.bilibili.com/video/BV18s411P7to)
-* [如何笔算解码二维码？](https://www.zhihu.com/question/65253283)
+* [如何笔算解码二维码？](https://www.zhihu.com/question/65253283) * L3HCTF2021 cropped，NEEPU Sec 2023  二维码修复计划
+* [二维码之QR码生成原理与损坏修复 ](https://www.cnblogs.com/luogi/p/15469106.html)
 * [ez-qrcode](https://yous.be/2014/12/07/seccon-ctf-2014-qr-easy-write-up/)
 * [CTFSHOW-36D杯: ez-qrcode](https://byxs20.github.io/posts/15890.html#4-%E6%95%B0%E6%8D%AE%E8%A7%A3%E7%A0%81)
 

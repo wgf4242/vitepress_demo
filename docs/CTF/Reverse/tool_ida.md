@@ -15,6 +15,12 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - import 可看到 GetMessageBoxA, 在 import 处双击跳转
 - 读取卡死 载入选择 Binary
 
+### 符号修复
+
+```c
+*(&::ptr + (unsigned int)cnt) = ptr;
+// void* ptr -> void* ptr[]
+```
 ## 快捷键
 
 | 快捷键         | 描述                               |
@@ -127,6 +133,7 @@ gcc -static main.c
 ```
 
 ## FAQ
+[Link](https://blog.csdn.net/CSNN2019/article/details/117219906)
 
 ### 1. graph is too big , more than 1000 nodes
 

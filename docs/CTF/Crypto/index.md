@@ -22,6 +22,7 @@ $$
 非对称加密 RSA DSA ECC
 
 # Article
+* [数论](https://oi-wiki.org/math/number-theory/basic/)
 * [密码学-费马小定理在RSA中的应用1](https://mp.weixin.qq.com/s/9AjOCrw9g_cvgsH6X_PnXQ)
 * [密码学｜第五章 组合学、概率论与信息论](https://mp.weixin.qq.com/s/qQFsfCwKtK-GIL-l50EZdg)
 * [密码学｜5.2 维吉尼亚密码](https://mp.weixin.qq.com/s/CKheGMHMUNgWyk_NUH_JIQ)
@@ -48,6 +49,7 @@ $$
 * [密码学 ｜ 使用z3-solver破解随机数](https://mp.weixin.qq.com/s/UWKmWQnchRyz5a8zQo_HyA)
 * [密码学 ｜ 6.4.2 椭圆Elgamal公钥密码系统](https://mp.weixin.qq.com/s/EjhPlck9-7MzIZvstriaOg)
 * [密码学 ｜ 6.5 公钥密码学的发展](https://mp.weixin.qq.com/s/DsuUBRn7raqAwgfi181S4w)
+* [恶意代码系列 ｜基于图的恶意代码检测方法](https://mp.weixin.qq.com/s/BLoqSpdjokbRHSIMp8Femw)
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)

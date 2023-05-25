@@ -212,4 +212,5 @@ hashcat -O -m 500 -a 3 -o cracked.txt shadow ?l?l?l?l
 ```sh
 unshadow passwd.txt shadow.txt > passwords.txt
 john --wordlist=/usr/share/wordlists/sqlmap.txt passwords.txt
+john shadow --format=NT # filename: shadow
 ```

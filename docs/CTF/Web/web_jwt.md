@@ -19,3 +19,4 @@ console.log(token);
 [浅析JWT Attack](https://mp.weixin.qq.com/s/WvVgavjJMXSZQsVFtHEOhA)
 [JWT相关题目刷题](https://mp.weixin.qq.com/s/Ss9Oc2ZN7qFboBWaXfrDLA)
 [『红蓝对抗』JWT 攻击手法](https://mp.weixin.qq.com/s/OVppZClKRWP8zNEBjZPRow)
+[JWT攻击手法——1](https://mp.weixin.qq.com/s/kkoskD6d69G59bRK8nyUdw)

@@ -25,6 +25,7 @@
 [Glibc 高版本堆利用方法总结](https://mp.weixin.qq.com/s/NE0ujoNZUjlY_MALM1nObw)
 [『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
 ## Tutorial
+[HITCON-Training](https://github.com/scwuaptx/HITCON-Training/tree/master/LAB)
 [【星盟安全】PWN系列教程 第18节 堆chunk介绍以及源码剖析](https://www.bilibili.com/video/BV1NU4y187te)
 [【星盟安全】PWN系列教程 第19节 UAF](https://www.bilibili.com/video/BV1Ud4y1j7Nw)
 [【星盟安全】PWN系列教程 第22节 Fastbin](https://www.bilibili.com/video/BV1Xf4y1a7VK)

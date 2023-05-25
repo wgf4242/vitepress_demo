@@ -180,6 +180,7 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 
 ## rce
 [无字母数字Webshell&&冰蝎Webshell](https://mp.weixin.qq.com/s/1PX7_nU7bmqOs3lGb8O8gw)
+[一些RCE的汇总](http://www.yaotu.net/biancheng/120663.html)
 
 ## SRC
 [Java代码分析工具Tabby在CTF中的运用](https://mp.weixin.qq.com/s/u7RuSmBHy76R7_PqL8WJww)
@@ -200,6 +201,8 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 ## ssti 
 https://blog.csdn.net/miuzzx/article/details/127744431#t4
 [CTF中SSTI漏洞的简单利用](https://mp.weixin.qq.com/s/pA-ca-b0IYszwjmkCIdYBg)
+[SSTI绕过 | [GDOUCTF 2023]<ez_ze>](https://www.nssctf.cn/problem/3745) [参考文章](https://zhuanlan.zhihu.com/p/619441473)
+
 
 ## AWD
 [Web AWD竞赛的攻击与防御技巧](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493468&idx=1&sn=507cbbb3809c19ad4d16475904bf8001)

@@ -98,3 +98,11 @@ Galgame
 [【逆向安全】快速搜索FPS游戏相机矩阵_矩阵特性1-哔哩哔哩](https://www.bilibili.com/video/BV1s3411D7JU)
 [Hacking Electron Games 1 | Vampire Survivors](https://www.youtube.com/watch?v=6u0V1svtj3A)
 [Hacking Electron Games 2 | Vampire Survivors](https://www.youtube.com/watch?v=kKun6MrHCxI)
+
+
+## Game/CTF
+[驱动 | 腾讯游戏赛 [原创]2023南极动物厂高校决赛之决赛附加题 ](https://bbs.kanxue.com/thread-276892.htm)
+[[原创]2021南极动物厂 游戏高赛竞赛决赛分析02](https://bbs.kanxue.com/thread-267009.htm)
+[[原创]2021南极动物厂 游戏高赛竞赛决赛分析01](https://bbs.kanxue.com/thread-267008.htm)
+[[原创]南极动物厂 游戏高校竞赛决赛分析 之 Ring0](https://bbs.kanxue.com/thread-258803.htm)
+[[原创]南极动物厂 游戏高校竞赛决赛分析 之 Ring3](https://bbs.kanxue.com/thread-258801.htm)

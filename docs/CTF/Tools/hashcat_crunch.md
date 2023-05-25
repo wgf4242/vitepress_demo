@@ -1,6 +1,6 @@
 # crunch 生成字典
 
-不指定字符集默认是26个小写字母
+不指定字符集默认是 26 个小写字母
 
 ```bash
 crunch 5 5 0123456789 -o password.txt # 0-9选5位
@@ -21,8 +21,8 @@ crunch 1 10 1234567890 -b 10mb -o START        # 10mb 1个文件
 crunch 3 3 0123456789 -s 666 > pwd.txt         # 666-999 -s:start -e: end
 crunch 3 3 0123456789 -s 666 -e 888 > pwd.txt  # 666-888
 
-crunch 3 3 abc + 123 @#! -t @%^ 
-#3位密码，1为 [abc]；2为 [123]；3为 [!@#]。比如1a！2a# 3b@   ......                
+crunch 3 3 abc + 123 @#! -t @%^
+#3位密码，1为 [abc]；2为 [123]；3为 [!@#]。比如1a！2a# 3b@   ......
 
 crunch 1 6 abc\
 #1-6位 由abc和空格为元素的所有组合（\代表空格）
@@ -42,10 +42,16 @@ crunch 4 4 -f unicode_test.lst the-greeks -t @@%% -l @xdd
 #调用密码库unicode_test.lst中的the-greeks项目字符，生成4位密码，其中格式为两小写字母+两数字
 ```
 
+`crunch <min-len> <max-len> [<charset string>] [options]`
 
-| Param     |  E.g    | Desc     |
-| ---- | ---- | ---- |
-| -d numbersymbol    |   -d 2@   | 小写只能出现2次  |
+| Param                            | E.g          | Desc                                           |
+| -------------------------------- | ------------ | ---------------------------------------------- |
+| -d numbersymbol                  | -d 2@        | 小写只能出现 2 次                              |
+| -s startblock                    | -s 03god22fs | Specifies a starting string,                   |
+| -e string                        |              | Specifies when crunch should stop early        |
+| -c number                        |              | 生成密码数量                                   |
+| -t                               |              | 自定义占位符见下面                             |
+| -f /usr/charset.lst charset-name |              | Specifies a character set from the charset.lst |
 
 ```bash
 crunch 10 10 -t @@@^%%%%^^ -d 2@ -d 3% -b 20mb -o START
@@ -56,11 +62,12 @@ crunch 8 8 -d 2@
 
 ## -t 占位符
 
-| @    | lower case characters |
-| ---- | --------------------- |
-| ,    | upper case characters |
-| %    | numbers               |
-| ^    | symbols               |
+| @   | lower case characters |
+| --- | --------------------- |
+| ,   | upper case characters |
+| %   | numbers               |
+| ^   | symbols               |
+
 ```sh
 crunch 4 4 -t @,%^ -o pwd.txt
 
@@ -93,10 +100,13 @@ crunch 3 3 -i
 crunch 3 3 0123456789 -o START -z gzip
 
 ```
-## -p,-q 连接字符
--p参数 和 -q 参数效果一样，不过-q是从文件读入字符集
 
--p字符集组合 min,max随便填
+## -p,-q 连接字符
+
+-p 参数 和 -q 参数效果一样，不过-q 是从文件读入字符集
+
+-p 字符集组合 min,max 随便填
+
 ```
 crunch 0 0 -p a b c
 crunch 0 0 -p abc

@@ -32,6 +32,14 @@ sudo make install
 | b \*main              |
 | fmtargs 0x7fffe2d9    | 查看 printf 计算参数位置                                                |
 | distance 0x90 0x86    | 计算距离                                                                |
+| p $esp                | 输出 esp, p/x 32 -- 0x20                                                |
+| tel <addr>            | 查看地址值                                                              |
+| -- heap --            |                                                                         |
+| heap                  | 查看堆,配合 x/addr 看位置                                               |
+| parseheap             |
+| bins                  | 查看 bins                                                               |
+| chunkinfo <addr>      | 查看 chunk                                                              |
+| hex 0x8e1000 2300     | 查看 hex                                                                |
 
 ## x/examine/查看
 
@@ -110,6 +118,7 @@ find 命令查找"/bin/sh" 字符串
 | d                            | Delete all breakpoint                                                                                      |
 | d 1                          | Delete index 1 point                                                                                       |
 | dis(able)                    | 禁用断点                                                                                                   |
+| condition bnum expression    | 为 bnum 进行条件断点,例 condition 2 $rdx==11                                                               |
 
 ### GDB 调试
 
