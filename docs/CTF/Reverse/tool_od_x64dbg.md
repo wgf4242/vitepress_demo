@@ -1,13 +1,49 @@
+## x64dbg 快捷键
 
-## x64dbg快捷键
-g 图表
-h 点击变量，可以高亮。
-bph esp 硬件断点
-bphc 删除硬件断点
-## IDA地址转OD地址
-查看并计算ida偏移。
-用OD基地加偏移跳转。
+| cmd                 | Desc                           |
+| ------------------- | ------------------------------ |
+| g                   | 图表                           |
+| h                   | 点击变量，可以高亮。           |
+| bp InternetOpenUrlA | 加载后才能用函数名下断点 |
+| bph esp             | 硬件断点                       |
+| bphc                | 删除硬件断点                   |
+| d <addr>            | 跳转                           |
+| d <function_name>   | d <fn+5> 跳转到 fn+5 处        |
 
+## IDA 地址转 OD 地址
+
+查看并计算 ida 偏移。
+用 OD 基地加偏移跳转。
 
 ## Patch
-x32dbg/x64dbg 右击补丁 - 补丁文件 - 保存为x.exe
+
+x32dbg/x64dbg 右击补丁 - 补丁文件 - 保存为 x.exe
+
+# x64dbg
+
+Trace: --> trace record -> word 查看实际执行路线。
+
+Graph 模式 1.运行到 call 处, 右键 - Sync with origin (S).进入 call.
+2.SS : going back into the stepped in call.
+
+## 设置
+
+设置 - 事件 - ×TLS 回调
+设置 - Exception: 范围 00000000 - ffffffff
+
+---
+
+x64dbg 的默认设置: 系统断点 入口断点 用户 TLS 回调函数
+
+## 快捷键
+
+G Graph,查看图流程
+Ctrl+Backspace 还原选择
+Ctrl+P Patch
+Ctrl+F9 执行到返回
+Ctrl+9 Nop
+
+# API
+
+wininet.dll.InternetOpenUrlA
+wininet.dll.InternetConnectA

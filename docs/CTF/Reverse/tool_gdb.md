@@ -28,6 +28,7 @@ sudo make install
 | cmd                   | desc                                                                    |
 | --------------------- | ----------------------------------------------------------------------- |
 | entry                 | Set a breakpoint at the first instruction executed in the target binary |
+| ctx                   | 默认的 context 信息                                                     |
 | b \_\_libc_start_main |
 | b \*main              |
 | fmtargs 0x7fffe2d9    | 查看 printf 计算参数位置                                                |
@@ -96,6 +97,7 @@ x/3uh 0x54320 //内存地址0x54320读取内容 3u 3w个字节
 x/3us 0x601080 //读取地址字符串
 ```
 
+
 ### p 打印出函数地址/计算
 
 ```
@@ -120,11 +122,14 @@ find 命令查找"/bin/sh" 字符串
 | dis(able)                    | 禁用断点                                                                                                   |
 | condition bnum expression    | 为 bnum 进行条件断点,例 condition 2 $rdx==11                                                               |
 
-### GDB 调试
+## GDB 调试
 
 set follow-fork-mode parent|child 当发生 fork 时指示调试器跟踪父进程还是子进程
 handler SIGALRM ignore 忽视信息 SIGALRM，调试器接收到的 SIGALRM 信号不会发送给被调试程序
 target remote ip:port 连接远程调试
+
+### gdb带源码调试
+比如调试 malloc.c中的free 下载对应的glibc版本 https://mirrors.ustc.edu.cn/gnu/glibc/ 解压 malloc.c到当前目录。这时 si 就能进入对应函数源码了。
 
 ### 调试技巧
 
@@ -202,7 +207,7 @@ rwatch <expr>
 – delete、clear、disable、enable
 ```
 
-#### 修改变量值 修改寄存器
+### 修改变量值 修改寄存器
 
 ```
 set $reg=value
@@ -227,7 +232,7 @@ jump <address>
 set $pc=0x08041234
 ```
 
-#### 查看地址对应的函数 symbol of function
+### 查看地址对应的函数 symbol of function
 
 ```
 info symbol 0x400225
@@ -235,7 +240,7 @@ info line *0xfde09edc
 disassemble /m 0xfde09edc
 ```
 
-#### 调试 PIE 程序
+### 调试 PIE 程序
 
 方式 1
 sudo vi v/proc/sys/kernel/randomize_va_space 本地调试修改为 0 就不会随机变化地址了
@@ -255,7 +260,7 @@ gdb.attach(p, "b *{b}".format(b = hex(base + 0x0CDD)))
 
 b \*$rebase(0x933)
 
-### vm, vmmap 查看内存映射
+## vm, vmmap 查看内存映射
 
 如何查找函数三种方式
 
@@ -268,7 +273,7 @@ gdb-peda$ p shell
 r2$ afl~shell
 ```
 
-### peda
+## peda
 
 ```
 disass + main //反汇编main
@@ -314,17 +319,55 @@ ptype struct link_map: 查看link_map定义
 p &((struct link_map*)0)->l_info: 查看l_info成员偏移
 ```
 
-### gdb attach, process 后 gdb script 有问题时，选默认终端为 qterminal。
+## gdb attach, process 后 gdb script 有问题时，选默认终端为 qterminal。
 
     gcc gdb-sample.c -o gdb-sample -g
 
-### pwngdb 使用
+## pwngdb 使用
 
 在 gdb.attach(io)之后，先输入 r 运行程序。再继续其他操作
 
-### gdb 执行命令
+## gdb 执行命令
 
 ```sh
 PYVER=$(gdb -batch -q --nx -ex 'pi import platform; print(".".join(platform.python_version_tuple()[:2]))')
 PYTHON+=$(gdb -batch -q --nx -ex 'pi import sys; print(sys.executable)')
+```
+
+## gdb log/help 保存调试信息
+
+示例 保存 help all 到文本
+```sh
+set logging file a.txt
+set logging enabled on
+help all
+
+
+```
+
+```sh
+set logging on
+           Enable logging. 
+set logging off
+           Disable logging. 
+set logging file file
+           Change the name of the current logfile. The default logfile is gdb.txt. 
+set logging overwrite [on|off]
+           By default, gdb will append to the logfile. Set overwrite if you want set logging on to overwrite the logfile instead. 
+set logging redirect [on|off]
+           By default, gdb output will go to both the terminal and the logfile. Set redirect if you want output to go only to the log file. 
+show logging
+          Show the current values of the logging settin
+```
+## gdb/python
+
+```sh
+pwndbg$ python gdb.execute('p 123')
+pwndbg$ py gdb.execute('heap')
+
+
+pi # 进入 interpreter, 可输入多行命令
+
+# 执行脚本文件
+python exec(open('myscript.py').read())
 ```

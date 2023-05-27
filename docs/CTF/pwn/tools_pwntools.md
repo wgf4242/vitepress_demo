@@ -102,14 +102,14 @@ from pwn import *
 print(asm('XCHG EAX,ESP\nRET\nMOV ECX,[EAX]\nMOV [EDX],ECX\nPOP EBX\nRET'.lower()).hex())
 ```
 
-p32
+p32 - Packs an 32-bit integer
 
 ```python
 >>> p32(0x8040000)
 b'\x00\x00\x04\x08'
 ```
 
-u32 使用
+u32 使用 - Unpacks an 64-bit integer
 
 ```python
 >>> u32('\x00\x00\x04\x08')

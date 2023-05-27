@@ -384,6 +384,11 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 ### 实战分析
 * [Cobalt Strike的DLL Stager分析](https://mp.weixin.qq.com/s/Tl9r7op-a7GVpw5k-lfYSw)
 * [Cobaltstrike4.5 stageless beacon 通信分析](https://mp.weixin.qq.com/s/xhRvAEFftmNEW97uW5BNOQ)
+* [Cobalt Strike4.0远控木马分析 ](https://bbs.kanxue.com/thread-264470.htm) 
+* [Cobalt Strike 010.exe 病毒分析](https://blog.csdn.net/weixin_48650826/article/details/109991600) 
+* [透视CobaltStrike（一）——PE类Beacon分析](https://www.anquanke.com/post/id/228123) 
+* [CobaltStrike木马artifact.exe规避火绒，360，node32沙盒的方法分析](https://blog.csdn.net/u012998306/article/details/102830991) 
+
 
 ## 工具
 LIEF | 对ELF添加 section, segment
