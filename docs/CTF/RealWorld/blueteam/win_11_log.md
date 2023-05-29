@@ -11,9 +11,11 @@ logparser -i:输入文件的格式 -o:输出文件的格式 "查询语句 和文
 
 ```sh
 path "C:\Program Files (x86)\Log Parser 2.2";%path%
+$env:path="C:\Program Files (x86)\Log Parser 2.2";$path
 LogParser.exe -i:EVT -o:DATAGRID  "SELECT *  FROM E:\Security.evtx where EventID=4624"
 LogParser.exe -i:EVT -o:DATAGRID "SELECT * FROM F:\Security.evtx WHERE EventID=4624 ORDER BY TimeGenerated DESC"
 LogParser.exe -i:EVT -o:DATAGRID "SELECT * FROM F:\Security.evtx WHERE EventID=4624 OR EventID=4625 ORDER BY TimeGenerated DESC"
+LogParser.exe -i:EVT -o:DATAGRID "SELECT *  FROM Security.evtx where (EventID=4624 OR EventID=4625) AND Message LIKE '%源网络地址%'  ORDER BY TimeGenerated DESC"
 
 ```
 

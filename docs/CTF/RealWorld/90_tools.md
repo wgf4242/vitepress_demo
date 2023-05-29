@@ -8,6 +8,10 @@ https://gitee.com/windyjxx/projects
 ```bash
 fscan -h 10.63.81.21 -p 1-65535 -np
 fscan -h 10.63.81.21 -p 1-65535 -np -nobr
+# -m 参数见 plugins目录
+## 密码爆破 smb smb2 rdp 都可以
+fscan -h 192.168.127.137 -m smb -user administrator -pwdf pwd.txt
+fscan -h 192.168.127.137 -m rdp -user administrator -pwdf pwd.txt
 ```
 
 ### kscan

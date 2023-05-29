@@ -201,6 +201,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Dubbo CVE-2023-23638](https://n1k0la-t.github.io/2023/03/16/Dubbo-CVE-2023-23638/)
 [DreamerCMS代码审计](https://n1k0la-t.github.io/2023/01/31/DreamerCMS代码审计/)
 [EyouCMS v1.6.1 0day挖掘](https://n1k0la-t.github.io/2023/01/28/EyouCMS%20v1.6.1%200day%e6%8c%96%e6%8e%98/)
+[DedeCMS组合漏洞分析](https://mp.weixin.qq.com/s/vzNIMszhneJCq5MznfrR0A)
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2和8.6.4.1 | CVE-2022-36537未授权RCE漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos | QVD-2023-6271：Nacos身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
@@ -216,6 +217,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Qizhi科技堡垒机后台命令执行漏洞检测](https://mp.weixin.qq.com/s/v4-AgFi5lE7i_lX0E-PC7Q)
 
 [电信 | 天翼网关 - 中兴ZXHN F450A超级管理员破解](https://mp.weixin.qq.com/s/3p8dE8bOxYKJuI8ylqLHAQ)
+[JDWP | 『渗透测试』关于 JDWP 的那些事儿](https://mp.weixin.qq.com/s/lh5-ELxpEPdruIHAX6WFMQ)
 
 ### Exploit/CVE/实战漏洞/Windows
 [安全攻防 | 浅谈ms17-010多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
