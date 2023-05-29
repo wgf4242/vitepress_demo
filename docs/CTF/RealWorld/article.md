@@ -143,6 +143,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0 CVE-2023-21839 远程代码执行漏洞](https://mp.weixin.qq.com/s/i_uJwyvvWrKpDjyGT6t2RQ)
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0 CVE-2023-21839 Ladon漏洞复现](https://mp.weixin.qq.com/s/hGmjbampA9sALK7gCtt6cg)
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0 CVE-2023-21839 Weblogic反序列化漏洞](https://mp.weixin.qq.com/s/3wnSr4Cxuc6jR6DzApnBAg)
+[Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0 CVE-2023-21839 远程代码执行漏洞](https://mp.weixin.qq.com/s/B_4gQpXnJhzWs4jo1hFUIA)
 
 
 [FastJson利用工具 -- fastjson-exp](https://mp.weixin.qq.com/s/dyeOlw2SyjgCGE3C8MDjfg)

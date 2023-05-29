@@ -17,7 +17,6 @@
 [【星盟安全】PWN 系列教程](https://www.bilibili.com/video/BV1Uv411j7fr)
 [heap | Use After Free - CTF Wiki](https://ctf-wiki.org/pwn/linux/user-mode/heap/ptmalloc2/use-after-free/)
 [heap | 新人 PWN 堆 Heap 总结](https://mp.weixin.qq.com/s/Dk11gRLVsh4-KstotEGb7g)
-[heap | 【详解】CTFHUB-FastBin Attack](https://mp.weixin.qq.com/s/oAivho44IHPBYC9K9h2rOA)
 [tcache bin 利用总结](https://mp.weixin.qq.com/s/7kytfB0oFy2xcccwy3cxMA)
 
 [linux kernel ROP 下的保护机制绕过](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497175&idx=1&sn=4ea7737c33bf2d6f5c627e5a3bde840f)
@@ -39,12 +38,13 @@
 - [jarvisoj_fm](https://mp.weixin.qq.com/s/7rI3I0M6BcM6UGR119cAbQ)
 - [CTFHUB | 栈溢出 | ret2VDSO](https://bbs.kanxue.com/thread-276433.htm)
 - [CTFHUB | 栈溢出 | ret2dl_resolve](https://bbs.kanxue.com/thread-276450.htm)
-- [CTFHUB | FastBin Attack](https://bbs.kanxue.com/thread-276456.htm)
-- [CTFHUB | UnsortedBin Attack](https://bbs.kanxue.com/thread-276457.htm)
-- [CTFHUB | LargeBin Attack|House of Storm](https://bbs.kanxue.com/thread-276516.htm)
 
 ---
 
+- [CTFHUB | 堆溢出 | FastBin Attack](https://bbs.kanxue.com/thread-276456.htm) [FastBin Attack：House of spirit attack](https://mp.weixin.qq.com/s/Jq-PIqb8WGbE3Ot65gSxZg)
+- [CTFHUB | 堆溢出 | UnsortedBin Attack](https://bbs.kanxue.com/thread-276457.htm)
+- [CTFHUB | 堆溢出 | LargeBin Attack|House of Storm](https://bbs.kanxue.com/thread-276516.htm)
+-
 - [CTFHUB | 堆溢出 | FastBin Attack](https://blog.csdn.net/KaliLinux_V/article/details/128787055)
 - [CTFHUB | 堆溢出 | Largebin Attack(House of storm)](https://blog.csdn.net/KaliLinux_V/article/details/128915137)
 - [CTFHUB | 堆溢出 | off by one](https://blog.csdn.net/KaliLinux_V/article/details/128797268)
@@ -52,7 +52,7 @@
 - [CTFHUB | 堆溢出 | Chunk Extend](https://blog.csdn.net/KaliLinux_V/article/details/128917658)
 - [CTFHUB | 堆溢出 | tcache Attack](https://blog.csdn.net/KaliLinux_V/article/details/128857374)
 - [CTFHUB | 堆溢出 | House of Einherjar](https://blog.csdn.net/KaliLinux_V/article/details/128933128)
-- [CTFHUB | 堆溢出 | House of spirit](https://blog.csdn.net/KaliLinux_V/article/details/128944591)
+- [CTFHUB | 堆溢出 | House of spirit](https://blog.csdn.net/KaliLinux_V/article/details/128944591) [FastBin Attack：House of spirit attack](https://mp.weixin.qq.com/s/Jq-PIqb8WGbE3Ot65gSxZg)
 - [CTFHUB | 堆溢出 | House of roman](https://blog.csdn.net/KaliLinux_V/article/details/128951462)
 - [CTFHUB | 堆溢出 | House of orange](https://blog.csdn.net/KaliLinux_V/article/details/128966835)
 - [CTFHUB | 堆溢出 | House of Lore](https://blog.csdn.net/KaliLinux_V/article/details/128969408)
