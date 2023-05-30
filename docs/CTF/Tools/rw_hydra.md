@@ -55,7 +55,7 @@ hydra 192.168.50.210 rdp -l admin -p 123456 -V -F
 hydra 192.168.31.22 rdp -L /usr/share/wordlists/dirbuster/password2.txt -P /usr/share/wordlists/dirbuster/password1.txt -V -F
 ```
 
-## rdp/超级弱口令检查工具/御剑RDP爆破工具/fscan/
+## rdp/御剑RDP爆破工具/超级弱口令检查工具/fscan/
 ## rdp/ncrack 3389 rdp 爆破
 
 ```sh

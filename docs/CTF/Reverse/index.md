@@ -211,6 +211,9 @@ https://blog.51cto.com/yeshaochen/2496524
 adb -s "emulator-5554" install attachment-16.apk
 
 ## PE/壳
+[脱壳学习（一）- 计算机底层基础](https://mp.weixin.qq.com/s/98xIIROLQPjsxQ1rAiSDkg)
+[脱壳学习（二）- 反“反调试”篇](https://mp.weixin.qq.com/s/pSaTZSd0ouacZ3A4RxeWfg)
+[逆向脱壳（三） - 完结篇](https://mp.weixin.qq.com/s/svh_jfph_PiSpN3enGtYXQ)
 
 ### UPX/ESP定律
 https://www.52pojie.cn/thread-326995-1-1.html

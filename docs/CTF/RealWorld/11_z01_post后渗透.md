@@ -154,3 +154,7 @@ getuid
 getsystem
 ```
 2. CVE编号:CVE-2019-1388,windwos证书对话框特权提升漏洞。补丁号KB4524235 KB4525233
+
+# Article
+[后渗透之windows中无文件落地执行方法](https://mp.weixin.qq.com/s/GqgFDi8hJ3NcN8c98yIXuw)
+[后渗透之windows中远程下载文件tips](https://mp.weixin.qq.com/s/Ax0CaErM3F6VCctTB2KaHA)
