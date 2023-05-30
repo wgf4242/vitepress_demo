@@ -202,7 +202,7 @@ https://github.com/APKLab/APKLab
 * [某视频VIP播放 一个懒人的破解方式](https://www.52pojie.cn/thread-1747613-1-1.html) 
 * [APP 聊天协议逆向](https://mp.weixin.qq.com/s/EBXnEfeb3IgcfPTqlb3Etw)
 * [APP去广告技术分析](https://mp.weixin.qq.com/s/OxH3uoPecBYL_cZTTOpQBA)
-
+* [App逆向百例|16|某交友App花指令分析](https://mp.weixin.qq.com/s/PyKtsRV0WJaqm8APpJNOMw)
 
 ## 混淆加密
 * [开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)

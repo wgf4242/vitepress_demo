@@ -10,7 +10,6 @@ head:
 ## 分析
 
 pq相邻 - yafu
-
 $$
 \sum_{n=1}^{100}{a_n}
 $$
@@ -50,6 +49,10 @@ $$
 * [密码学 ｜ 6.4.2 椭圆Elgamal公钥密码系统](https://mp.weixin.qq.com/s/EjhPlck9-7MzIZvstriaOg)
 * [密码学 ｜ 6.5 公钥密码学的发展](https://mp.weixin.qq.com/s/DsuUBRn7raqAwgfi181S4w)
 * [恶意代码系列 ｜基于图的恶意代码检测方法](https://mp.weixin.qq.com/s/BLoqSpdjokbRHSIMp8Femw)
+* [RSA专题——泄露与攻击](https://mp.weixin.qq.com/s/uQLwGfFRndDwa204WH81lQ)
+* [RSA专题——coppersmith](https://mp.weixin.qq.com/s/9-kf1bsftcpuA8OoSeUJ5w)
+* [RSA专题——模数分解](https://mp.weixin.qq.com/s/sNEyaJ6qioIMdsJxZ3Hccw)
+* [RSA专题——”误用“攻击](https://mp.weixin.qq.com/s/BB8euI5ytK0A5sfc6Gv-fw)
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)

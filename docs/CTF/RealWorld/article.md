@@ -447,6 +447,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Vulnhub | Chronos | 红队打靶](https://mp.weixin.qq.com/s/7s85u8u36mm3mxsRi5K5Fg)
 * [Vulnhub | EvilBox | 红队打靶](https://mp.weixin.qq.com/s/kag32SCOXjEEz1AOCsbSGw)
 * [Vulnhub | Hackerkid |红队打靶](https://mp.weixin.qq.com/s/8frp2usmY3Og00eg4fEPlQ)
+* [VulnHub | y0usef |红队打靶](https://mp.weixin.qq.com/s/YYmEwN6alXQBn-wzi0CvXw)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
