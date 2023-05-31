@@ -238,6 +238,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [TOTOLINK T10漏洞分析](https://mp.weixin.qq.com/s/6kC02ABzeBnhjPeAs6lyrQ)
 [小米路由器任意文件读取及远程命令执行漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484929&idx=1&sn=8012fce68bf9eaccef59fc280b663077)
 [海康威视代码执行漏洞](https://mp.weixin.qq.com/s/o3A7xOPLbdmo6WAZsygHYQ)
+[海康威视综合安防系统iVMS-5000 iVMS-8700 任意文件上传漏洞复现（0day）](https://mp.weixin.qq.com/s/Wveo0X3857mBWFzNOcJHJw)
 [任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
 
 ## 钓鱼
@@ -345,11 +346,12 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 __Video__
 * [rkvir逆向工程学院](https://space.bilibili.com/447734880/video)
 
-### Webshell
+### Webshell/魔改特征
 [冰蝎jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
 [冰蝎流量免杀初探](https://mp.weixin.qq.com/s/1Llqwov2vFaaDNP1mLDtZg)
 [冰蝎各版本工具分析与魔改思路](https://mp.weixin.qq.com/s/3lIOABAiuZd4rOM7SshOEA)
 [冰蝎Java WebShell免杀生成 -- ByPassBehinder4J​](https://mp.weixin.qq.com/s/Gy6xAYVE3AOybr3CG4HV2A)
+[内网穿透nps的魔改](https://mp.weixin.qq.com/s/Tueykyf0P5opuL3jY7UdHw)
 
 ### 伪装
 [蚁剑指纹修改](https://mp.weixin.qq.com/s/8AOOixBA8Rhd5T40YQ5HfQ)
@@ -448,6 +450,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Vulnhub | EvilBox | 红队打靶](https://mp.weixin.qq.com/s/kag32SCOXjEEz1AOCsbSGw)
 * [Vulnhub | Hackerkid |红队打靶](https://mp.weixin.qq.com/s/8frp2usmY3Og00eg4fEPlQ)
 * [VulnHub | y0usef |红队打靶](https://mp.weixin.qq.com/s/YYmEwN6alXQBn-wzi0CvXw)
+* [VulnHub | Vikings |红队打靶](https://mp.weixin.qq.com/s/0bik8X1TYRKo-WifmVdnqg)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

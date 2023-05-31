@@ -4,6 +4,24 @@
 * [Android loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/zj5isP6dGu-mTNpJN1W3BQ)
 * [Android Studio调试Smali | 给大家分享一下这几年学习Android逆向遇到的环境问题吧，希望大家不要在这上面浪费时间](https://bbs.pediy.com/thread-275251.htm) 
 
+# APK
+1.PKID查壳、BlackDex脱壳、jadx打开(报用gda)
+2.看资源文件  看dex
+2.adb pull /storage/emulated/0/Android/data/top.niunaijun.blackdexa32/dump
+2-2 
+```
+frida-ps -Ua
+frida-dexdump -p 27815 -U
+```
+## 资源
+https://github.com/MiDuoKi/AndroidSafeStudy
+* [移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/hp8NuaW0ioQX2bdIYvSHLg)
+## APK壳
+https://blog.csdn.net/m0_64604636/article/details/121885541
+https://blog.csdn.net/weixin_44032232/article/details/109676945
+https://blog.51cto.com/yeshaochen/2496524
+
+
 # 执行流程
 1.dex脱壳 - blackdex
 .so文件 

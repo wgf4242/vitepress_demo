@@ -184,31 +184,8 @@ js -- decodeObfuscator
 
 ### uniapp
 
-# IOT
-IOT 车联网问题。启动不了找问题patch掉。可能是没有某些设备
-ida 定位字符串。都patch
-qemu-arm -L ./tbox_app.bin
-
-# APK
-1.PKID查壳、BlackDex脱壳、jadx打开(报用gda)
-2.看资源文件  看dex
-2.adb pull /storage/emulated/0/Android/data/top.niunaijun.blackdexa32/dump
-2-2 
-```
-frida-ps -Ua
-frida-dexdump -p 27815 -U
-```
-## 资源
-https://github.com/MiDuoKi/AndroidSafeStudy
-* [移动安全分析平台 -- 南明离火](https://mp.weixin.qq.com/s/hp8NuaW0ioQX2bdIYvSHLg)
-## APK壳
-https://blog.csdn.net/m0_64604636/article/details/121885541
-https://blog.csdn.net/weixin_44032232/article/details/109676945
-https://blog.51cto.com/yeshaochen/2496524
-
-
-## adb commands
-adb -s "emulator-5554" install attachment-16.apk
+## 混淆
+[movfuscator混淆了解一下 CTF](https://blog.csdn.net/qq_33438733/article/details/79860304)
 
 ## PE/壳
 [脱壳学习（一）- 计算机底层基础](https://mp.weixin.qq.com/s/98xIIROLQPjsxQ1rAiSDkg)
@@ -334,6 +311,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ### Video
 * [0x02 Delphi 逆向游乐园第二关](https://www.bilibili.com/video/BV1dk4y1j7ei)
 * [0x03 Delphi 逆向游乐园第三关](https://www.bilibili.com/video/BV1224y1K7ip/)
+## 高级学习/调试/反调试 
+[无限硬件中断的代码实现](https://mp.weixin.qq.com/s/8mrJFA8Xvf_qfzX2dwpIEQ)
 
 ## Windows/hook
 * [Hook | Window向之全局Hook实现进程隐藏](https://mp.weixin.qq.com/s/WEaWowL2r5OcGBLFaqYSCQ)

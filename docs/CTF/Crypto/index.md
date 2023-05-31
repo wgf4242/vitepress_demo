@@ -53,6 +53,7 @@ $$
 * [RSA专题——coppersmith](https://mp.weixin.qq.com/s/9-kf1bsftcpuA8OoSeUJ5w)
 * [RSA专题——模数分解](https://mp.weixin.qq.com/s/sNEyaJ6qioIMdsJxZ3Hccw)
 * [RSA专题——”误用“攻击](https://mp.weixin.qq.com/s/BB8euI5ytK0A5sfc6Gv-fw)
+* [RSA专题——参数误用](https://mp.weixin.qq.com/s/oicoXceIeqOWEvcJECbkWg)
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)

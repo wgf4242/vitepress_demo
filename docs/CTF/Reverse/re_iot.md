@@ -7,6 +7,12 @@ pip3 install git+https://github.com/sviehb/jefferson.git
 binwalk -Me rootfs.img
 方式2.取证大师
 
+
+# IOT
+IOT 车联网问题。启动不了找问题patch掉。可能是没有某些设备
+ida 定位字符串。都patch
+qemu-arm -L ./tbox_app.bin
+
 ## 题目
 [openwrt | AntCTF x D³CTF 2023 d3op 复盘笔记](https://mp.weixin.qq.com/s/97TfeJgZeG-lLzWc95teBw)
 
