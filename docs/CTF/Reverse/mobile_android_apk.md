@@ -211,6 +211,9 @@ https://github.com/APKLab/APKLab
 * [2023安卓Hook框架源码入门（一YAHFA框架）（3ArtMethod）](https://www.bilibili.com/video/BV17T411y7AE/)
 * [2023安卓Hook框架源码入门（一YAHFA框架）（2使用）](https://www.bilibili.com/video/BV1Dx4y1M76f/)
 * [2023安卓Hook框架源码入门（一YAHFA框架）（1概述）](https://www.bilibili.com/video/BV1TY4y1f7rw/)
+### 抓包
+[安卓应用层抓包突破](https://mp.weixin.qq.com/s/gSTrnJO8e6rXwLOYr3eN2Q)
+
 ### 实战案例
 * [某游戏社区App | So层逆向分析](https://mp.weixin.qq.com/s/GOUoBboBzZSxWFWWDKGahw)
 * [买车报价APP sign分析](https://mp.weixin.qq.com/s/lmUOwnLAH2lbvWB4uIN6pg)
@@ -221,7 +224,8 @@ https://github.com/APKLab/APKLab
 * [APP 聊天协议逆向](https://mp.weixin.qq.com/s/EBXnEfeb3IgcfPTqlb3Etw)
 * [APP去广告技术分析](https://mp.weixin.qq.com/s/OxH3uoPecBYL_cZTTOpQBA)
 * [App逆向百例|16|某交友App花指令分析](https://mp.weixin.qq.com/s/PyKtsRV0WJaqm8APpJNOMw)
-
+* [APP反取证分析实战记录分享](https://mp.weixin.qq.com/s/SBY_CNcZIDugnFO6S6Yepg)
+* [Android逆向 | 某麦网APP抢票接口加密参数分析及抢票工具编写](https://mp.weixin.qq.com/s/fAGcyE13TTmkutuclKasmA)
 ## 混淆加密
 * [开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)
 * [Dex控制流混淆-AS插件版](https://www.bilibili.com/video/BV1MG4y1574m/)
