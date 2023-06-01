@@ -327,6 +327,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 * [使用Frida实现内存注入主动调用函数 (1分钟前 )](https://www.cnblogs.com/wgf4242/p/17311259.html)
 * [使用OllyDbg逆向查找HOOK地址和寄存器使用 (2分钟前 )](https://www.cnblogs.com/wgf4242/p/17311256.html)
 * [FindWindow函数行为分析](https://mp.weixin.qq.com/s/VDlU1iHDaTo7W6n9SGRO3Q)
+* [HOOK的原理分析与easy_hook逆向题分析](https://mp.weixin.qq.com/s/5Bq5oncZ3gvnU3sDGaKfZw)
 
 ### DLL注入
 * [初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)

@@ -226,6 +226,7 @@ https://github.com/APKLab/APKLab
 * [App逆向百例|16|某交友App花指令分析](https://mp.weixin.qq.com/s/PyKtsRV0WJaqm8APpJNOMw)
 * [APP反取证分析实战记录分享](https://mp.weixin.qq.com/s/SBY_CNcZIDugnFO6S6Yepg)
 * [Android逆向 | 某麦网APP抢票接口加密参数分析及抢票工具编写](https://mp.weixin.qq.com/s/fAGcyE13TTmkutuclKasmA)
+* [某手医疗app的sign](https://mp.weixin.qq.com/s/yC2KQpXHA_SuuAv4J2WzAQ)
 ## 混淆加密
 * [开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)
 * [Dex控制流混淆-AS插件版](https://www.bilibili.com/video/BV1MG4y1574m/)

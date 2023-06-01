@@ -17,6 +17,7 @@ instant client解压到 D:\instantclient_11_2
 :: instantclient
 TNS_ADMIN=D:\instantclient_11_2\network\admin
 ORACLE_HOME=D:\instantclient_11_2
+个别需要添加 lib 目录到 path
 :: 数据库版 
 setx TNS_ADMIN C:\oraclexe\app\oracle\product\11.2.0\server\network\admin /m 
 setx ORACLE_HOME C:\oraclexe\app\oracle\product\11.2.0\server /m 
