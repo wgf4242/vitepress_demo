@@ -102,6 +102,7 @@ result.txt | 搜验证码
 [通达OA文件删除+任意文件上传rce漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484393&idx=1&sn=b39bf2c7dc38e2b4ac8a515ea0555ea0)
 [通达OA任意用户伪造登录漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247483798&idx=1&sn=4291fccda8c86d8d97b62aab25ebed8f)
 [通达OA多枚0day漏洞分享](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484396&idx=1&sn=97454ce0bb951df35584e91b125c3b9c)
+[通达OA 11.10 未授权任意文件上传](https://mp.weixin.qq.com/s/z53MByKJ0o5NWL5jdqi24g)
 
 [致远OA A6 test.jsp 存在sql注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247485042&idx=1&sn=3dfac475ca4db76b412ed7c546e273a0)
 [致远OA wpsAssistServlet 任意文件上传漏洞 A6、A8、A8N (V8.0SP2, V8.1, V8.1SP1) // G6、G6N (V8.1、V8.1SP1)](https://mp.weixin.qq.com/s/lOk7rt26z33e-ogLmFlE0Q)
@@ -352,6 +353,7 @@ __Video__
 [冰蝎流量免杀初探](https://mp.weixin.qq.com/s/1Llqwov2vFaaDNP1mLDtZg)
 [冰蝎各版本工具分析与魔改思路](https://mp.weixin.qq.com/s/3lIOABAiuZd4rOM7SshOEA)
 [冰蝎Java WebShell免杀生成 -- ByPassBehinder4J​](https://mp.weixin.qq.com/s/Gy6xAYVE3AOybr3CG4HV2A)
+[冰蝎3和冰蝎4AES爆破题目](https://byxs20.github.io/posts/5092.html)
 [内网穿透nps的魔改](https://mp.weixin.qq.com/s/Tueykyf0P5opuL3jY7UdHw)
 
 ### 伪装
@@ -452,6 +454,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 * [Vulnhub | Hackerkid |红队打靶](https://mp.weixin.qq.com/s/8frp2usmY3Og00eg4fEPlQ)
 * [VulnHub | y0usef |红队打靶](https://mp.weixin.qq.com/s/YYmEwN6alXQBn-wzi0CvXw)
 * [VulnHub | Vikings |红队打靶](https://mp.weixin.qq.com/s/0bik8X1TYRKo-WifmVdnqg)
+* [VulnHub | hacksudo-Thor|红队打靶](https://mp.weixin.qq.com/s/tued1xfz21BpDEUhpEiWLA)
 * [基于docker的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 * [实战|红队渗透项目之MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 * [DroopyCTF靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

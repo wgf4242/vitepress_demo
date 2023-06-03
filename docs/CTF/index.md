@@ -9,6 +9,9 @@ cat test
 
 # Articles
 
+## QQ群
+829089482 赛事群
+
 ## Protocol/IoT
 
 [MQTT安全分析](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492664&idx=1&sn=e18c8c1e7209f6bacddb85397eab85c9)
