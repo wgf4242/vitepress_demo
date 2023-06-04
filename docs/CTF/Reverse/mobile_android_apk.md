@@ -228,6 +228,7 @@ https://github.com/APKLab/APKLab
 * [Android逆向 | 某麦网APP抢票接口加密参数分析及抢票工具编写](https://mp.weixin.qq.com/s/fAGcyE13TTmkutuclKasmA)
 * [某手医疗app的sign](https://mp.weixin.qq.com/s/yC2KQpXHA_SuuAv4J2WzAQ)
 * [app逆向--美图秀秀sig参数](https://mp.weixin.qq.com/s/HWMqHIZ8tBSnRPiTy4ymXA)
+* [安卓脱壳修复（腾讯御xx）](https://mp.weixin.qq.com/s/_Q1vrztni5ODwSyaJ_Kz_Q)
 ## 混淆加密
 * [开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)
 * [Dex控制流混淆-AS插件版](https://www.bilibili.com/video/BV1MG4y1574m/)
