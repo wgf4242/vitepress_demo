@@ -371,6 +371,7 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 * [Cobalt Strike 010.exe 病毒分析](https://blog.csdn.net/weixin_48650826/article/details/109991600) 
 * [透视CobaltStrike（一）——PE类Beacon分析](https://www.anquanke.com/post/id/228123) 
 * [CobaltStrike木马artifact.exe规避火绒，360，node32沙盒的方法分析](https://blog.csdn.net/u012998306/article/details/102830991) 
+* [CobaltStrike分析-beacon 解析](https://mp.weixin.qq.com/s/NZkVwRC2VB9_3-Om9rVVCg)
 
 
 ## 工具
