@@ -18,12 +18,13 @@ nc -vc ./fmt -kl 3333
 
 然后其他机器就可以 nc ip port 连接了
 
-### 怎样调试
+### 怎样调试/配置
 
 方法 1
 
 ```python
 context(arch='amd64', os='linux', log_level='debug')
+# arch影响 flat, pack, unpack 使用4Bytes还是8Bytes
 sh = process('./pwn')
 # gdb.attach(sh, 'b *0x1234')
 gdb.attach(sh)

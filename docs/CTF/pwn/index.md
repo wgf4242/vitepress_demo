@@ -1,3 +1,7 @@
+# 解题思路
+
+* 指针不置0, uaf
+
 # 环境配置
 
 [gdb 调试 | pwndbg+pwndbg 联合使用](https://blog.csdn.net/weixin_43092232/article/details/105648769)

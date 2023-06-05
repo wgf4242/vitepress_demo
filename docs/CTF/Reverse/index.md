@@ -13,7 +13,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 1. 放die看EntryPoint 位置。
 2. 放die看编译器, 如果是gcc, IDA: Option - Compiler - GNU C++
 2. 看FindCrypt
-3. bindiff, 恢复符号
+3. bindiff, 恢复符号, 见 re_symbols.md
 2. 见 ## 程序执行顺序, 有没SEH
 3. ida打不开/ghidra/cutter
 4. apk: jadx, jeb都打开 jeb能解些 brainfucks

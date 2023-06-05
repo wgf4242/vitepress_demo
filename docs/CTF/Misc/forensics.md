@@ -3,6 +3,7 @@
 ## 取证题
 取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt 
 
+1. 直接010, strings
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
 2. 看桌面 
    - 2.0 Filter: Desktop\

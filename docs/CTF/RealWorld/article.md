@@ -163,6 +163,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [实战 | 某 OJ 渗透测试记录\_bypass_winapi.h\_\_asm_shellcode_c#\_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
 [宝塔 | 后渗透-添加用户|反弹 shell](https://mp.weixin.qq.com/s/-MQ36nY6YbAPf6pVecregg)
 [宝塔 | 密码生成规则 当我在内网遇到宝塔......](https://mp.weixin.qq.com/s/5Uhq1t4DIE28jlt85SX3BQ)
+[宝塔 | Windows版宝塔bypass到RDP登录](https://mp.weixin.qq.com/s/PROqOqcMgF-s2CJ5B1aHew)
 [yxcms 后台模板写 shell](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [2](https://blog.csdn.net/qq_40638006/article/details/122033546)
 [Spring-Core-RCE 漏洞 | 漏洞图形化 GUI 一键利用工具](https://mp.weixin.qq.com/s/FSDTz_yWUXrJsJBEibxAQg)
 [Spring | CVE-2022-22965 Spring RCE 漏洞复现](https://mp.weixin.qq.com/s/KEmd9O2A121vd3vO97rdkw)
@@ -216,6 +217,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2 和 8.6.4.1 | CVE-2022-36537 未授权 RCE 漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos | QVD-2023-6271：Nacos 身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
 [Nacos | 身份绕过漏洞利用（QVD-2023-6271）](https://mp.weixin.qq.com/s/lt2FoK2wCxYz_I7QyeRMyw)
+[Nacos | 漏洞问题及修复(CVE-2021-29441) 任意用户注册和管理员密码修改](https://blog.csdn.net/Hoopy_Hoopy/article/details/120283270)
+[Nacos | CTF | BackendService](https://mp.weixin.qq.com/s/2TDV2L-o1MlbYU0PSjb65Q)
+[Nacos | CTF | BackendService 权限绕过](https://juejin.cn/post/7133573986633383950)
 
 [neo4j | Neo4j 3.4.18 CVE-2021-34371](https://mp.weixin.qq.com/s/Wh-VyKtvw0bsEcZfxS7e_Q)
 
@@ -334,7 +338,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 ### Mobile/Android/APK
 
 [安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
-[木马 | ​ 将安卓远控 Apk 附加进普通的 App](https://mp.weixin.qq.com/s/m7dz_C6RRcC-Ok5ct-Phjw)
+[木马 | ​ 将安卓远控 Apk 附加进普通的 App | a520ApkHook-1.0-jar-with-dependencies.jar](https://mp.weixin.qq.com/s/m7dz_C6RRcC-Ok5ct-Phjw)
 
 ## bypass
 
@@ -493,6 +497,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | y0usef |红队打靶](https://mp.weixin.qq.com/s/YYmEwN6alXQBn-wzi0CvXw)
 - [VulnHub | Vikings |红队打靶](https://mp.weixin.qq.com/s/0bik8X1TYRKo-WifmVdnqg)
 - [VulnHub | hacksudo-Thor|红队打靶](https://mp.weixin.qq.com/s/tued1xfz21BpDEUhpEiWLA)
+- [VulnHub | Billu_b0x | 红队打靶](https://mp.weixin.qq.com/s/XWOFO-UaG_u0rZqynjMXlQ)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

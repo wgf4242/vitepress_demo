@@ -12,6 +12,7 @@
 * 丢云沙箱检查相关信息
 * 文件名 hxcode 汉信码
 * 32位长度 AES的秘钥
+* swp 文件 vim -r index.php.swp
 * Base64 解出来看不懂
   * To Hex, 16位可能是md5, 如果是2层md5, flag可能是一层md5
   * 尝试rot13, 尝试 base32
@@ -20,6 +21,7 @@
   * 分成8个一组，尝试前后补0, 以及 python int(011, 2)
   * 转二维码
 * unknown数据
+  * 1.CTF.xmind  2. CTF.xmind.md 3.解密总结
   * 查md5
   * To Hex, 16位可能是md5, 如果是2层md5, flag可能是一层md5
   * 看不懂/外文, 使用Cyberchef Text Encoding Brute Force 选Decode

@@ -21,6 +21,7 @@ $$
 非对称加密 RSA DSA ECC
 
 # Article
+* [《DASCTF开学第一课：密码篇》](https://www.bilibili.com/video/BV1ba411R7QK/)
 * [数论](https://oi-wiki.org/math/number-theory/basic/)
 * [密码学-费马小定理在RSA中的应用1](https://mp.weixin.qq.com/s/9AjOCrw9g_cvgsH6X_PnXQ)
 * [密码学｜第五章 组合学、概率论与信息论](https://mp.weixin.qq.com/s/qQFsfCwKtK-GIL-l50EZdg)
