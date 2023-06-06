@@ -3,6 +3,15 @@
 
 https://www.cplusplus.com/reference/cstdio/printf/
 
+在 printf 行下断点, 
+```sh
+tel esp
+fmtarg <addr>
+-- The index of format argument : 31 ("\%30$p")
+输入 %31$p
+```
+
+
 | param | Desc                                                                                                          |
 | ----- | ------------------------------------------------------------------------------------------------------------- |
 | %d    | 十进制 - 输出十进制整数                                                                                       |

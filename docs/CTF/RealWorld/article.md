@@ -156,6 +156,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0 CVE-2023-21839 Weblogic 反序列化漏洞](https://mp.weixin.qq.com/s/3wnSr4Cxuc6jR6DzApnBAg)
 [Weblogic | 12.2.1.3.0 12.2.1.4.0 14.1.1.0.0 CVE-2023-21839 远程代码执行漏洞](https://mp.weixin.qq.com/s/B_4gQpXnJhzWs4jo1hFUIA)
 
+[向日葵 | 远程代码执行(CNVD-2022-10270)漏洞复现](https://mp.weixin.qq.com/s/BxjcYL94SGJ4xSox_BPgLg)
+
 [FastJson 利用工具 -- fastjson-exp](https://mp.weixin.qq.com/s/dyeOlw2SyjgCGE3C8MDjfg)
 [若依系统前后台漏洞大全](https://mp.weixin.qq.com/s/LZxZZ3ZLQg2Wz3xX4iCE8w)
 
@@ -498,6 +500,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | Vikings |红队打靶](https://mp.weixin.qq.com/s/0bik8X1TYRKo-WifmVdnqg)
 - [VulnHub | hacksudo-Thor|红队打靶](https://mp.weixin.qq.com/s/tued1xfz21BpDEUhpEiWLA)
 - [VulnHub | Billu_b0x | 红队打靶](https://mp.weixin.qq.com/s/XWOFO-UaG_u0rZqynjMXlQ)
+- [VulnHub | Fawkes | 红队打靶](https://mp.weixin.qq.com/s/FX807jGPABtlRXL9qquUdw)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

