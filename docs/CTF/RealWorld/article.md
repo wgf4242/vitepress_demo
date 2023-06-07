@@ -328,6 +328,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 ### Android
 
 [安卓渗透测试工具集 -- h4tools](https://mp.weixin.qq.com/s/z0pb-Z4pzk-eX5nXsrF8vg)
+[安全攻防 | 安卓APP/小程序渗透测试技巧总结](https://mp.weixin.qq.com/s/RJzT_shMGdhacpKKgN9pYA)
 
 ## 木马
 
@@ -501,6 +502,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | hacksudo-Thor|红队打靶](https://mp.weixin.qq.com/s/tued1xfz21BpDEUhpEiWLA)
 - [VulnHub | Billu_b0x | 红队打靶](https://mp.weixin.qq.com/s/XWOFO-UaG_u0rZqynjMXlQ)
 - [VulnHub | Fawkes | 红队打靶](https://mp.weixin.qq.com/s/FX807jGPABtlRXL9qquUdw)
+- [VulnHub | doubletrouble |红队打靶](https://mp.weixin.qq.com/s/BgLHFCtWWH1bSI1CXpDzdA)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
