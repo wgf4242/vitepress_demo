@@ -268,6 +268,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [红队攻击手特训营-如何开展钓鱼演练](https://www.bilibili.com/video/BV1fM411U71d)
 [浅谈关于二维码的钓鱼思路](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484481&idx=1&sn=20206d97c0e384a343fb6698f832c543)
 [海莲花 APT 针对中国大陆的邮件钓鱼技战术手法总结](https://mp.weixin.qq.com/s/jz3lZtROK4piLdkpzPcJoA)
+[『红蓝对抗』EwoMail 结合 Gophish 的钓鱼邮件姿势](https://mp.weixin.qq.com/s/PyECTLG_LyzSVSTkQkhDWA)
 
 - 蓝队
   [钓鱼邮件攻击分析](https://mp.weixin.qq.com/s/F_eM1jm6CYnadCiv6oh0ng)
