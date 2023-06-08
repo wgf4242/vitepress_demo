@@ -23,3 +23,4 @@ moectf MoeCTF2022_gogogo
 # Article
 
 [2022年春秋杯冬季赛_Godeep Go函数ida还原](https://mp.weixin.qq.com/s/tQzJWaAyUT119lNIp_Az7g)
+[高版本go语言符号还原](https://mp.weixin.qq.com/s/-0bwLPIAPzABAnjMGbN-6Q)

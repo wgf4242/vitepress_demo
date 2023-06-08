@@ -3,3 +3,4 @@
 - 大小写绕过
 - %0a 绕过
 - unicode绕过, `t => \u0074`
+- [PHP_INCLUDE_TO_SHELL_CHAR_DICT](https://github.com/wupco/PHP_INCLUDE_TO_SHELL_CHAR_DICT)

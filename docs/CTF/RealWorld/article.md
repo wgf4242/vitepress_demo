@@ -94,6 +94,7 @@ result.txt | 搜验证码
 [泛微 EOffice10 前台任意文件写入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484971&idx=1&sn=da9ea43e3fdfe946056e8aa1331e38ed)
 [泛微 E-Cology9 <=10.55 | CNVD-2023-12632 未授权 SQL 注入漏洞复现](https://mp.weixin.qq.com/s/_NzNyWjMrx4DhMtrYGZlVQ)
 [泛微 E-Cology9 changeUserInfo 信息泄漏及 ofsLogin 任意用户登录检测工具](https://mp.weixin.qq.com/s/ac8v3G0Z_1QUQjro5fGR2Q)
+[泛微 ofslogin.jsp任意用户登录](https://mp.weixin.qq.com/s/z7zS7CUwKAaNA4Z-oLIQsA)
 
 [信呼 OA RCE](https://mp.weixin.qq.com/s/s2x28qkAW13DIDFZOdO73g)
 
@@ -192,6 +193,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Tomcat | 7.0.0-7.0.81 任意文件写入(CVE-2017-12615)](https://mp.weixin.qq.com/s/_Pw2jqKx21RtrZFDSM6xCQ)
 [Apache Solr JMX 服务 RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
 [Apache | 春秋云镜-CVE-2022-33980（Apache Commons Configuration 远程命令执行漏洞）](https://mp.weixin.qq.com/s/EhatzI7QVmh_RQZYOWNBYg)
+[Apache | RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/iNvk0U3Wz5ShAf588GneAA)
 [Nginx](http://www.xxx.com/logo.jpg/a.php) [exp2](http://www.xxx.com/logo.jpg%00.php)
 
 [JBoss 未授权漏洞复现](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485334&idx=1&sn=0bba17412525af0cf9c5ff5cc63bf2a5)

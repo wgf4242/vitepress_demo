@@ -81,6 +81,7 @@ INV_B取反字节 60=>-60
 [工控协议 : S7COMM协议分析(下)](https://mp.weixin.qq.com/s/O9PGN4XXijgSa8u4YSpSsQ)
 [工控协议 : S7COMM协议分析(上)](https://mp.weixin.qq.com/s/mXKBGiq8mjfOivcRrI4-CQ)
 [数控设备互联通讯协议MTConnect分析基础](https://mp.weixin.qq.com/s/5ZBno2uU0qOlGEHyNj4yCw)
+[协议格式 | 音视频技术助力政府采购之音视频编码采集](https://mp.weixin.qq.com/s/Ux-U148Akl_zdY_VlyxPug)
 
 [Modbus | 『工控』某工控比赛 Modbus 题目复盘](https://mp.weixin.qq.com/s/sOHJDV7wDb9FQbSxjQkTBw)
 
