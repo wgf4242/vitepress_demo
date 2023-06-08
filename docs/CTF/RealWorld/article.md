@@ -71,6 +71,7 @@ result.txt | 搜验证码
 [内网渗透 | 最全的内网凭据密码收集方法和技巧总结](https://mp.weixin.qq.com/s/m9lrOYPi73BmXcx8ZnSapA)
 
 ## Exploit/CVE/实战漏洞
+* rw_exp_历年hvv漏洞集合2020-2022.zip
 
 [一个漏洞 Poc 知识库](https://github.com/Cuerz/PoC-ExP)
 [常见未授权访问漏洞总结](https://xz.aliyun.com/t/6103)
