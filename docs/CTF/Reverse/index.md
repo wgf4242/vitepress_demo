@@ -50,6 +50,9 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 2. swift ast https://docs.qq.com/doc/DRmhseWVMV1dJbUR1 CISCN2022 babytree
 3. ebpf程序，使用bpftool提取字节码, [西湖论剑2023-Berkeley](http://lu1u.bxsteam.tk/2023/02/03/2023XHLJ-RE/#Berkeley) , [2022虎符ftype](https://lu1u.bxsteam.tk/2022/03/28/RE_Challenge/) [字节码逆向](https://tttang.com/archive/1550/)
 
+解题技巧
+* patch程序， 输出匹配的密文数量到exitcode。 2023 安洵杯SYCTF ez_cpp , 见 ## 解题技巧
+
 ## 程序执行顺序
 
    1. Shift+F4, Name: ___CTOR_LIST__ 有没有对应函数地址. function: __do_global_ctors() : constructor
@@ -373,6 +376,17 @@ so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际�
 * [CobaltStrike木马artifact.exe规避火绒，360，node32沙盒的方法分析](https://blog.csdn.net/u012998306/article/details/102830991) 
 * [CobaltStrike分析-beacon 解析](https://mp.weixin.qq.com/s/NZkVwRC2VB9_3-Om9rVVCg)
 
+## 解题技巧
+* patch程序， 输出匹配的密文数量到exitcode。 2023 安洵杯SYCTF ez_cpp
+
+```sh
+.text:00413CFA                 jmp     short loc_413D19
+.text:00413CFA ; ---------------------------------------------------------------------------
+.text:00413D19 loc_413D19:                             ; CODE XREF: .text:00413CFA↑j
+.text:00413D19                 push    ecx
+.text:00413D1A                 nop
+.text:00413D1B                 call    ds:__imp_exit
+```
 
 ## 工具
 LIEF | 对ELF添加 section, segment

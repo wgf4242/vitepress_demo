@@ -3,3 +3,6 @@
 
 * [Unicorn快速入门](https://www.cnblogs.com/Here-is-SG/p/17080180.html)
 * [Unicorn备忘录](https://www.cnblogs.com/Here-is-SG/p/17080045.html)
+* [Flare-on4第3题解答 - greek_to_me.exe ](https://bbs.kanxue.com/thread-223473.htm)
+
+

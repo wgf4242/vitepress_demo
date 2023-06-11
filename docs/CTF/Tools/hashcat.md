@@ -187,7 +187,8 @@ hashcat -O -a 3 -m 2500 hashcat.hccapx 1391040?d?d?d?d #跑4位数字密码
 ```
 
 $pkzip2$ -m 17225
-hashcat -a 3 -O -m 17225 111.hash --increment  --increment-min 1 --increment-max=9 ?d?d?d?d?d?d?d?d?d
+hashcat -a 3 -O -m 17225 111.hash --increment --increment-min 1 --increment-max=9 ?d?d?d?d?d?d?d?d?d
+hashcat -a 3 -O -m 17225 111.hash --increment --increment-min 1 --increment-max 8 ?1?1?1?1?1?1?1?1  --custom-charset1=?l?u?d
 
 keepass
 ```

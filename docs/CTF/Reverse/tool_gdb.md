@@ -25,22 +25,29 @@ sudo make install
 
 ## 常用命令
 
-| cmd                   | desc                                                                    |
-| --------------------- | ----------------------------------------------------------------------- |
-| entry                 | Set a breakpoint at the first instruction executed in the target binary |
-| ctx                   | 默认的 context 信息                                                     |
-| b \_\_libc_start_main |
-| b \*main              |
-| fmtargs 0x7fffe2d9    | 查看 printf 计算参数位置                                                |
-| distance 0x90 0x86    | 计算距离                                                                |
-| p $esp                | 输出 esp, p/x 32 -- 0x20                                                |
-| tel <addr>            | 查看地址值                                                              |
-| -- heap --            |                                                                         |
-| heap                  | 查看堆,配合 x/addr 看位置                                               |
-| parseheap             |
-| bins                  | 查看 bins                                                               |
-| chunkinfo <addr>      | 查看 chunk                                                              |
-| hex 0x8e1000 2300     | 查看 hex                                                                |
+|             | cmd                                  | desc                                                                    |
+| ----------- | ------------------------------------ | ----------------------------------------------------------------------- |
+|             | entry                                | Set a breakpoint at the first instruction executed in the target binary |
+|             | ctx                                  | 默认的 context 信息                                                     |
+|             | b \_\_libc_start_main                |
+|             | b \*main                             |
+|             | fmtargs 0x7fffe2d9                   | 查看 printf 计算参数位置                                                |
+|             | distance 0x90 0x86                   | 计算距离                                                                |
+|             | p $esp                               | 输出 esp, p/x 32 -- 0x20                                                |
+|             | tel <addr>                           | 查看地址值                                                              |
+|             | libc                                 | 查看 libc 地址                                                          |
+| -- debug -- |                                      |
+|             | alsr off                             | 关闭 alsr                                                               |
+| -- heap --  |                                      | 查看堆,配合 x/addr 看位置                                               |
+|             | parseheap                            |
+|             | bins                                 | 查看 bins                                                               |
+|             | chunkinfo <addr>                     | 查看 chunk                                                              |
+|             | hex 0x8e1000 2300                    | 查看 hex                                                                |
+|             | p &\_\_malloc_hook                   |
+|             | magic                                | 查看 malloc_hook system 等地址                                          |
+|             | fakefast <mallochook 地址>           |
+|             | chunkinfo 0x7fxxxx                   |
+|             | tel \*(0x7ffff588+0x30 + 4) = 0 赋值 |
 
 ## x/examine/查看
 
@@ -97,7 +104,6 @@ x/3uh 0x54320 //内存地址0x54320读取内容 3u 3w个字节
 x/3us 0x601080 //读取地址字符串
 ```
 
-
 ### p 打印出函数地址/计算
 
 ```
@@ -128,8 +134,9 @@ set follow-fork-mode parent|child 当发生 fork 时指示调试器跟踪父进�
 handler SIGALRM ignore 忽视信息 SIGALRM，调试器接收到的 SIGALRM 信号不会发送给被调试程序
 target remote ip:port 连接远程调试
 
-### gdb带源码调试
-比如调试 malloc.c中的free 下载对应的glibc版本 https://mirrors.ustc.edu.cn/gnu/glibc/ 解压 malloc.c到当前目录。这时 si 就能进入对应函数源码了。
+### gdb 带源码调试
+
+比如调试 malloc.c 中的 free 下载对应的 glibc 版本 https://mirrors.ustc.edu.cn/gnu/glibc/ 解压 malloc.c 到当前目录。这时 si 就能进入对应函数源码了。
 
 ### 调试技巧
 
@@ -337,6 +344,7 @@ PYTHON+=$(gdb -batch -q --nx -ex 'pi import sys; print(sys.executable)')
 ## gdb log/help 保存调试信息
 
 示例 保存 help all 到文本
+
 ```sh
 set logging file a.txt
 set logging enabled on
@@ -347,24 +355,26 @@ help all
 
 ```sh
 set logging on
-           Enable logging. 
+           Enable logging.
 set logging off
-           Disable logging. 
+           Disable logging.
 set logging file file
-           Change the name of the current logfile. The default logfile is gdb.txt. 
+           Change the name of the current logfile. The default logfile is gdb.txt.
 set logging overwrite [on|off]
-           By default, gdb will append to the logfile. Set overwrite if you want set logging on to overwrite the logfile instead. 
+           By default, gdb will append to the logfile. Set overwrite if you want set logging on to overwrite the logfile instead.
 set logging redirect [on|off]
-           By default, gdb output will go to both the terminal and the logfile. Set redirect if you want output to go only to the log file. 
+           By default, gdb output will go to both the terminal and the logfile. Set redirect if you want output to go only to the log file.
 show logging
           Show the current values of the logging settin
 ```
+
 ## gdb/python
 
 ```sh
+pwndbg$ python print ("123")
 pwndbg$ python gdb.execute('p 123')
 pwndbg$ py gdb.execute('heap')
-
+pwndbg$ py txt = gdb.execute('p/x $ecx', to_string=True); r = txt.split(' = ')[1]; print(gdb.execute(f'fmtarg {r}', to_string=True))
 
 pi # 进入 interpreter, 可输入多行命令
 

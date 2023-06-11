@@ -72,6 +72,8 @@ result.txt | 搜验证码
 
 ## Exploit/CVE/实战漏洞
 * rw_exp_历年hvv漏洞集合2020-2022.zip
+* rw_exp_红队利器漏洞利用工具_apttools
+* rw_exp_scan_Find-SomeThing-main.zip
 
 [一个漏洞 Poc 知识库](https://github.com/Cuerz/PoC-ExP)
 [常见未授权访问漏洞总结](https://xz.aliyun.com/t/6103)
@@ -95,6 +97,7 @@ result.txt | 搜验证码
 [泛微 E-Cology9 <=10.55 | CNVD-2023-12632 未授权 SQL 注入漏洞复现](https://mp.weixin.qq.com/s/_NzNyWjMrx4DhMtrYGZlVQ)
 [泛微 E-Cology9 changeUserInfo 信息泄漏及 ofsLogin 任意用户登录检测工具](https://mp.weixin.qq.com/s/ac8v3G0Z_1QUQjro5fGR2Q)
 [泛微 ofslogin.jsp任意用户登录](https://mp.weixin.qq.com/s/z7zS7CUwKAaNA4Z-oLIQsA)
+[泛微OA SQL注入漏洞利用工具](https://mp.weixin.qq.com/s/s6E0bHmCmVGXENjru0so4w)
 
 [信呼 OA RCE](https://mp.weixin.qq.com/s/s2x28qkAW13DIDFZOdO73g)
 
@@ -379,6 +382,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 - [技术 | shellcode loader 的编写](https://mp.weixin.qq.com/s/sfxmWf9nCQeAc7PRRG5eaQ)
 - [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)
 - [小技巧 | 用一条命令来隐藏反向 Shell](https://mp.weixin.qq.com/s/TKCNTovBdBd_cWRlbSlKPA)
+- [绕过AV/EDR的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
+
+
 
 **Video**
 
@@ -507,6 +513,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | Billu_b0x | 红队打靶](https://mp.weixin.qq.com/s/XWOFO-UaG_u0rZqynjMXlQ)
 - [VulnHub | Fawkes | 红队打靶](https://mp.weixin.qq.com/s/FX807jGPABtlRXL9qquUdw)
 - [VulnHub | doubletrouble |红队打靶](https://mp.weixin.qq.com/s/BgLHFCtWWH1bSI1CXpDzdA)
+- [VulnHub | Nagini |红队打靶](https://mp.weixin.qq.com/s/kBKYrs2_EoyCVGQvipRyCw)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

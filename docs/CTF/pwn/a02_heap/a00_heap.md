@@ -120,11 +120,11 @@ struct malloc_chunk{
 
 ## fastbins （单向链表）
 
-| desc            | 请求条件      |
-| --------------- | ------------- |
-| x86 size_sz==4B | <64B          |
-| x64 size_sz==8B | <128B         |
-| chunck_size     | 32~128 : 0x80 |
+| desc            | 请求条件                                              |
+| --------------- | ----------------------------------------------------- |
+| x86 size_sz==4B | <64B                                                  |
+| x64 size_sz==8B | <128B                                                 |
+| x64 chunck_size | 32~128 : 0x20~0x80 , 以 0x10 为单位存储在 fastbinY 中 |
 
 一个新被加入的 Fast Bin 的 chunk，其 fd 指针指向上一次加入的 Fast Bin 的 chunk 的 pre size。
 
@@ -286,8 +286,8 @@ pwndbg> tel 0x1515010+0xa0  # tel @@b
 ```
 
 # Article
-[slides](https://github.com/bash-c/slides/blob/master/pwn_heap/)
 
+[slides](https://github.com/bash-c/slides/blob/master/pwn_heap/)
 
 [菜鸟 PWN 手进阶之堆基础](http://www.taodudu.cc/news/show-3444949.html?action=onClick)
 [好好说话之 unlink](https://blog.csdn.net/qq_41202237/article/details/108481889)

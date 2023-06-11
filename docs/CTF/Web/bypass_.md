@@ -2,6 +2,9 @@
 - 空格绕过 `a=system ('cat /flag');`
 - 大小写绕过
 - %0a 绕过
-- unicode绕过, `t => \u0074`
+- unicode 绕过, `t => \u0074`
 - ~ 反码绕过
 - [PHP_INCLUDE_TO_SHELL_CHAR_DICT](https://github.com/wupco/PHP_INCLUDE_TO_SHELL_CHAR_DICT)
+- splstack 绕过匹配 O 开头的序列化数据； [2023 安洵杯 4 号的罗纳尔多](https://mp.weixin.qq.com/s/azbY19cBgs3MgVdo7i-OhQ)
+- \_\_halt_compiler();来结束 php 代码执行流程 同上链接
+- [详细|waf绕过学习](https://mp.weixin.qq.com/s/OeZsKohqe87-ieIuW7L9tA)

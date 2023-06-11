@@ -1,3 +1,12 @@
+## Q & A 提问
+* Windows 本地怎样启环境 运行angr，像linux启动pwn题目那样。。想迷宫爆破。
+* png_4题目怎么做
+* re 集团公司 迷宫题 正常怎么调
+* 你文件没了快打钱.zip -- smc题目 ，
+	1.多次运行后sp 错误。
+	2.怎样解码后 patch出来。并且能运行。
+
+
 ## 综合利用
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 

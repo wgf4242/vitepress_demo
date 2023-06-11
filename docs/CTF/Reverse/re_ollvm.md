@@ -1,4 +1,6 @@
 ## Article
+[示例 xnuca-Strange Interpreter-浅谈逆向小技巧](https://xz.aliyun.com/t/3464)
+
 [记一次基于unidbg模拟执行的去除ollvm混淆](https://mp.weixin.qq.com/s/KuWi39Grl9lrhI8iY_S8pw)
 
 [ollvm总结](http://s0rry.cn/archives/2023-02-26-07-22-37)
