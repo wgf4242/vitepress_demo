@@ -11,5 +11,4 @@ ImpulsiveDLLHijack.exe -path xxx.exe
 [游戏安全:劫持dll与检测(上)](https://www.bilibili.com/video/BV1Vm4y147ze/) 
 
 
-[Malware Development: Processes, Threads, and Handles](https://www.youtube.com/watch?v=aNEqC-U5tHM)
 [Malware Development II: Process Injection](https://www.youtube.com/watch?v=A6EKDAKBXPs)

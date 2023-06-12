@@ -43,3 +43,4 @@ cat test
 [实验室2023届 本科优秀毕业设计展示一——操作系统实践、代码保护](https://mp.weixin.qq.com/s/C_Ias9xu02c1MpQo0CSzRQ)
 [实验室2023届 本科优秀毕业设计展示二——网络安全](https://mp.weixin.qq.com/s/IIMm-h6Fxota7XfN_07OJg)
 [实验室2023届 本科优秀毕业设计展示三——安全工具](https://mp.weixin.qq.com/s/UM-gCy9MIw9PQMN7X3ofyg)
+[实验室2023届 本科优秀毕业设计展示四——应用安全](https://mp.weixin.qq.com/s/-qTDBayECI8i11n-W1GEBg)

@@ -141,6 +141,9 @@ result.txt | 搜验证码
 [禅道 17.4 以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞分析](https://mp.weixin.qq.com/s/ZHsYaU31WkzAJijy1V0U1w)
 [禅道 17.4 以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞](https://mp.weixin.qq.com/s/xcOvFx2nUDUGkdXqXj0iMw)
 [禅道 18.1 版本 RCE 分析](https://mp.weixin.qq.com/s/QYISEFl3rTVnGY1ONFLIPw)
+[奇安信VPN | 存在任意账号密码修改漏洞](https://github.com/fork778/qax-vpn)
+
+
 
 [KindEditor 文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484734&idx=1&sn=7508249f8d3a867617020338d3988404)
 [phpcms v9.6.0 会员注册界面远程文件下载 getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484720&idx=1&sn=31a54a15eb8602d9fdd7b1f36f1067c0)
@@ -308,8 +311,10 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [任意账号密码重置的 6 种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 
+[几次护网小结之红队打点及小技巧](https://mp.weixin.qq.com/s/dmpgGTo3qd2qbXrNcFeafw)
+
 [API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
-[接口 | 渗透实战|两个 0day 漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
+[API | 渗透实战|两个 0day 漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API 安全 01：crAPI 漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 [API | 工具|10 大 API 安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
 [API | 挖洞随记-js 接口泄露隱藏接口导致文件上传漏洞](https://mp.weixin.qq.com/s/DPJtJEYgyo15kX4FLw1pRQ)
@@ -514,6 +519,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | Fawkes | 红队打靶](https://mp.weixin.qq.com/s/FX807jGPABtlRXL9qquUdw)
 - [VulnHub | doubletrouble |红队打靶](https://mp.weixin.qq.com/s/BgLHFCtWWH1bSI1CXpDzdA)
 - [VulnHub | Nagini |红队打靶](https://mp.weixin.qq.com/s/kBKYrs2_EoyCVGQvipRyCw)
+- [VulnHub | Ripper |红队打靶](https://mp.weixin.qq.com/s/68gZTse_tvPHznGQ8Sa6HA)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
