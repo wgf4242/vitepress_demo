@@ -27,11 +27,6 @@ ping 0x7F000001
 ping 0177.0000.0000.0001
 ```
 
-### bypass
-
-[Bypass Linux Shell Restrictions](https://mp.weixin.qq.com/s/8QTax87lorWNnOQR8p1ORQ)
-[sql 注入 bypass waf 工具（1 月 18 日更新）](https://mp.weixin.qq.com/s/qritLmRwP-Q5OLskxNWSVw)
-
 ## SSRF
 
 [盲 ssrf 漏洞 | 四个有趣的靶场漏洞挖掘案例](https://mp.weixin.qq.com/s/dAlvpJ5dMa5oSExV4Lsgzg)

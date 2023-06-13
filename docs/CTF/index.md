@@ -5,7 +5,8 @@
 * 你文件没了快打钱.zip -- smc题目 ，
 	1.多次运行后sp 错误。
 	2.怎样解码后 patch出来。并且能运行。
-
+* fmtarg ($ecx) 怎么写用ecx
+* harde_pwn libc.so.6 error
 
 ## 综合利用
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)

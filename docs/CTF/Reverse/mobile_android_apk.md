@@ -166,6 +166,7 @@ https://github.com/APKLab/APKLab
 * [《安卓逆向这档事》八、Sorry，会Hook真的可以为所欲为-xposed快速上手(下)快速hook](https://mp.weixin.qq.com/s/L1dpWfoFLCPKcLx_kriH-Q)
 * [《安卓逆向这档事》九、密码学基础、算法自吐、非标准加密对抗](https://mp.weixin.qq.com/s/jIId9oEchhU4W7jplYcyJg)
 * [《安卓逆向这档事》十、不是我说，有了IDA还要什么女朋友？](https://mp.weixin.qq.com/s/odbZ9F9u5nh9Bp2gK-YbxA) [video](https://www.bilibili.com/video/BV1ho4y1F7Vz/)
+* [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
 ------
 八、参考文档
 * [吾爱破解安卓逆向入门教程（三）---深入Smali文件](https://www.52pojie.cn/thread-396966-1-1.html)
@@ -229,6 +230,8 @@ https://github.com/APKLab/APKLab
 * [某手医疗app的sign](https://mp.weixin.qq.com/s/yC2KQpXHA_SuuAv4J2WzAQ)
 * [app逆向--美图秀秀sig参数](https://mp.weixin.qq.com/s/HWMqHIZ8tBSnRPiTy4ymXA)
 * [安卓脱壳修复（腾讯御xx）](https://mp.weixin.qq.com/s/_Q1vrztni5ODwSyaJ_Kz_Q)
+* [实战 | 记一次渗透中遇见的apk逆向 sign解码分析](https://mp.weixin.qq.com/s/LQJfpy-bQB6lFi51O_OwPA)
+
 ## 混淆加密
 * [开箱即用的SO代码混淆器来啦！r0env2022里的as集成ollvm混淆](https://www.bilibili.com/video/BV1z8411G79H/)
 * [Dex控制流混淆-AS插件版](https://www.bilibili.com/video/BV1MG4y1574m/)
