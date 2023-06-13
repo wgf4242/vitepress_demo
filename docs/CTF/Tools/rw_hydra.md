@@ -44,6 +44,11 @@ hydra -l wenber -V -x 3:3:1 rdp://127.0.0.1:3389
 |         | "r" try the reverse login as pass                                               |
 # rdp
 
+远程桌面 要求的函数不受支持
+```
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters /t reg_dword /v AllowEncryptionOracle /d 2
+```
+
 ## rdp/hydra
 
 ```sh

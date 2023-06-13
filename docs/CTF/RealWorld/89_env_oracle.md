@@ -86,6 +86,7 @@ Database: 192.168.200.70:15121/scm
 
 
 ## navicat 配置
+1.设置好对应版本的 oci.dll，重启 oci.dll
 以上基础上。直接将D:\instantclient_11_2整个文件夹复制到navicat进行覆盖。
 
 网络服务名 根据配置 可能为 TNS
