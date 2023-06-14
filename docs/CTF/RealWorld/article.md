@@ -243,6 +243,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [电信 | 天翼网关 - 中兴 ZXHN F450A 超级管理员破解](https://mp.weixin.qq.com/s/3p8dE8bOxYKJuI8ylqLHAQ)
 [JDWP | 『渗透测试』关于 JDWP 的那些事儿](https://mp.weixin.qq.com/s/lh5-ELxpEPdruIHAX6WFMQ)
+[福昕Foxit PDF远程代码执行漏洞CVE-2023-27363分析与复现](https://mp.weixin.qq.com/s/hfEqaPJuk3f4jOzrHo3xCg)
 
 ### Exploit/CVE/实战漏洞/Windows
 

