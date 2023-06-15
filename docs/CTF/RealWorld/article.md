@@ -389,6 +389,10 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 - [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)
 - [小技巧 | 用一条命令来隐藏反向 Shell](https://mp.weixin.qq.com/s/TKCNTovBdBd_cWRlbSlKPA)
 - [绕过AV/EDR的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
+_ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
+_ [冰蝎4.0流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
+_ [Webshell绕过360主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
+
 
 
 
@@ -521,6 +525,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | doubletrouble |红队打靶](https://mp.weixin.qq.com/s/BgLHFCtWWH1bSI1CXpDzdA)
 - [VulnHub | Nagini |红队打靶](https://mp.weixin.qq.com/s/kBKYrs2_EoyCVGQvipRyCw)
 - [VulnHub | Ripper |红队打靶](https://mp.weixin.qq.com/s/68gZTse_tvPHznGQ8Sa6HA)
+- [VulnHub | momentum |红队打靶](https://mp.weixin.qq.com/s/vcbZxTGwEdE_KPkCtx8V3w)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
