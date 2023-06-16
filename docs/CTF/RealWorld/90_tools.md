@@ -3,6 +3,10 @@ https://gitee.com/windyjxx/projects
 ## 信息收集
 [ENScan_GO | 剑指HW/SRC，解决在HW/SRC场景下遇到的各种针对国内企业信息收集难题](https://github.com/wgpsec/ENScan_GO)
 
+[隧道？代理？端口转发？（一文读懂）](https://mp.weixin.qq.com/s/PDIWU-xej9SffRXlDEJYdA)
+[常用的端口转发方式](https://mp.weixin.qq.com/s/VjFb77ALUKSzenKQYI42jA)
+
+
 ### fscan
 
 ```bash

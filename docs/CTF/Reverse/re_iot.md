@@ -50,7 +50,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 * [如何进行物联网渗透测试？](https://mp.weixin.qq.com/s/-p9-9ia_4aqXwL9ELW-BYg)
 * [记一次全设备通杀未授权RCE的挖掘经历](https://mp.weixin.qq.com/s/62WZmT3fWQjerjeqqRiTdw)
 * [yichen的信安知识库 物联网安全](https://www.yuque.com/hxfqg9/iot)
-
+* [手把手玩转路由器漏洞挖掘系列 - 基础入门](https://mp.weixin.qq.com/s/-yUPKhjTpYEbzlVNRBo9XQ)
 
 ## SRC 
 [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)

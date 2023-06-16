@@ -179,6 +179,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Spring | CVE-2022-22965 Spring RCE 漏洞复现](https://mp.weixin.qq.com/s/KEmd9O2A121vd3vO97rdkw)
 [Spring boot | 记一次 Spring boot 任意文件上传](https://mp.weixin.qq.com/s/nnFCqvC40zMAKWRIi4Doug)
 [Spring | 敏感目录扫描 -- SpringScan](https://mp.weixin.qq.com/s/tzZTuODeSLNapFjh5Py_Pg)
+[Spring | 漏洞综合利用工具——Spring_All_Reachable](https://github.com/savior-only/Spring_All_Reachable/releases/tag/v2.1)
+
 
 [Struts 2.0.0 - Struts 2.0.8 , S2-001 远程代码执行漏洞](https://mp.weixin.qq.com/s/Ams1rVYxJwgH6VHsqyf1XA)
 [Struts 2.0.0 ~ 2.1.8.1 【漏洞复现】S2-005 远程代码执行漏洞(CVE-2010-1870)](https://mp.weixin.qq.com/s/3tNKiQOqmFb9kDSbyO7fzw)
@@ -200,6 +202,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Apache Solr JMX 服务 RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
 [Apache | 春秋云镜-CVE-2022-33980（Apache Commons Configuration 远程命令执行漏洞）](https://mp.weixin.qq.com/s/EhatzI7QVmh_RQZYOWNBYg)
 [Apache | RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/iNvk0U3Wz5ShAf588GneAA)
+[Apache | RocketMQ CVE-2023-33246 RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/1GIATpldq29cVTR6Rw_DTw)
+[Apache | RocketMQ CVE-2023-33246命令执行复现分析](https://mp.weixin.qq.com/s/kHY5PMOy5m1g0QHCYwsT1A)
 [Nginx](http://www.xxx.com/logo.jpg/a.php) [exp2](http://www.xxx.com/logo.jpg%00.php)
 
 [JBoss 未授权漏洞复现](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485334&idx=1&sn=0bba17412525af0cf9c5ff5cc63bf2a5)
@@ -214,7 +218,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Keepass CVE-2023-24055 KeePass 敏感信息明文传输漏洞复现](https://mp.weixin.qq.com/s/0-qIbnxOIx4bJJrrVtvseg)
 
 [Joomla 未授权访问漏洞(CVE-2023-23752)](https://mp.weixin.qq.com/s/N_fSww8Hjylnrha6EvlSjg)
-[JoomlaCVE-2023-23752：Joomla 未授权访问漏洞](https://mp.weixin.qq.com/s/p-LDGXaC_jTsLYxuYQvR7w)
+[Joomla CVE-2023-23752：Joomla 未授权访问漏洞](https://mp.weixin.qq.com/s/p-LDGXaC_jTsLYxuYQvR7w)
+[Joomla CVE-2023-23752—Joomla未授权访问Rest API漏洞](https://mp.weixin.qq.com/s/C-t3TAtnWIX7xY-1AChauw)
 
 [phpStudy 小皮 Windows 面板 V0.102 以及以下版本 RCE 漏洞](https://mp.weixin.qq.com/s/FBl8Ocn2m8xBX3ZzydE5pg)
 
@@ -231,6 +236,14 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Nacos | 漏洞问题及修复(CVE-2021-29441) 任意用户注册和管理员密码修改](https://blog.csdn.net/Hoopy_Hoopy/article/details/120283270)
 [Nacos | CTF | BackendService](https://mp.weixin.qq.com/s/2TDV2L-o1MlbYU0PSjb65Q)
 [Nacos | CTF | BackendService 权限绕过](https://juejin.cn/post/7133573986633383950)
+[Nacos | Nacos身份绕过漏洞](https://mp.weixin.qq.com/s/zGsAr9vM9Ec7AByycpTAHw)
+[Nacos | 身份绕过漏洞](https://mp.weixin.qq.com/s/zGsAr9vM9Ec7AByycpTAHw)
+[Nacos Jraft | 远程代码执行漏洞 附检测POC (nuclei)](https://mp.weixin.qq.com/s/jovBE_wVIGl_e__fXm71bw)
+[MinIO | CVE-2023-28432 MinIO的信息泄露漏洞分析](https://mp.weixin.qq.com/s/sd0MmL3pYTfsUGJ0Sy2R2Q)
+[MinIO | 信息泄露漏洞(CVE-2023-28432)](https://mp.weixin.qq.com/s/Bb17fAJ8wB7x3w4mW40PGg)
+
+
+[Atlassian Bitbucket 登录绕过漏洞](https://mp.weixin.qq.com/s/w72e1WZKV2Qb7VDloc4DDw)
 
 [neo4j | Neo4j 3.4.18 CVE-2021-34371](https://mp.weixin.qq.com/s/Wh-VyKtvw0bsEcZfxS7e_Q)
 
@@ -244,6 +257,8 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [电信 | 天翼网关 - 中兴 ZXHN F450A 超级管理员破解](https://mp.weixin.qq.com/s/3p8dE8bOxYKJuI8ylqLHAQ)
 [JDWP | 『渗透测试』关于 JDWP 的那些事儿](https://mp.weixin.qq.com/s/lh5-ELxpEPdruIHAX6WFMQ)
 [福昕Foxit PDF远程代码执行漏洞CVE-2023-27363分析与复现](https://mp.weixin.qq.com/s/hfEqaPJuk3f4jOzrHo3xCg)
+
+[VMWare | RCE CVE-2023-2087](https://mp.weixin.qq.com/s/KKIEy1VljxE-a6QG27aZVA)
 
 ### Exploit/CVE/实战漏洞/Windows
 
@@ -391,7 +406,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 - [绕过AV/EDR的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
 _ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
 _ [冰蝎4.0流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
-_ [Webshell绕过360主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
+_ [Webshell | 绕过360主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
+- [Webshell | jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
+
 
 
 
@@ -428,6 +445,7 @@ administrator 不受影响,其他用户受影响。
 [Bypass UAC 技术总结](https://mp.weixin.qq.com/s/6bGCjqOmav1_ekowCgBhoA)
 [Windows 提权之 bypass UAC 提权](https://mp.weixin.qq.com/s/Vx5BpzkB8Ruai3H6Ch_7mQ)
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f # 需要重启
+[Bypass UAC](https://mp.weixin.qq.com/s/2Cn3DJBq8xavwPPDCuaJRQ)
 
 ### bypass powershell strict
 
@@ -526,6 +544,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | Nagini |红队打靶](https://mp.weixin.qq.com/s/kBKYrs2_EoyCVGQvipRyCw)
 - [VulnHub | Ripper |红队打靶](https://mp.weixin.qq.com/s/68gZTse_tvPHznGQ8Sa6HA)
 - [VulnHub | momentum |红队打靶](https://mp.weixin.qq.com/s/vcbZxTGwEdE_KPkCtx8V3w)
+- [VulnHub | narak |红队打靶](https://mp.weixin.qq.com/s/b3dIK1XeoG-KlQMc84uFvA)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

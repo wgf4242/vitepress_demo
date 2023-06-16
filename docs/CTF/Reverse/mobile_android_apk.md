@@ -250,5 +250,8 @@ https://github.com/APKLab/APKLab
 [安卓app四大组件的攻击面分析](https://mp.weixin.qq.com/s/MQ7gNnIkzGBkaJLtAsSORQ)
 [eBPF公开课-安卓eBPF开发环境搭建方案](https://mp.weixin.qq.com/s/cQvv7WhCPGNuRhF7DiX_-g)
 
+## 安卓/木马
+[简单的安卓木马制作（实现外网控制）](https://mp.weixin.qq.com/s/7vbzKsxbOXLz99t0O7NLfw)
+
 ## 关注列表
 [和沐阳学逆向](https://space.bilibili.com/439348342)

