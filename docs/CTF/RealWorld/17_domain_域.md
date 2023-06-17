@@ -31,7 +31,10 @@ beacon> net dclist
 ```
 sharehound 查看收集的信息
 
-
+## 提权
+```sh
+wmic qfe get hotfixid | findstr KB3011780 # 无补丁  则 ms14-068 提权
+```
 ## 攻击 
 
 ```shell

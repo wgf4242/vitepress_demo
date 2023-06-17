@@ -533,6 +533,8 @@ ssh -f -N -D 127.0.0.1:1080 ubuntu@192.168.50.161 -p 2222
 ```shell
 # 本地 1234 转发到 远程 4321
 socat TCP4-LISTEN:1234,fork TCP4:1.1.1.1:4321
+# 本地 80 转发到远程 80
+socat -d -d -lh -v TCP4-LISTEN:80,fork TCP4:192.168.1.215:80
 # 本地 822 转发到 本地 8080
 socat TCP4-LISTEN:822,fork TCP4::8080
 ```
@@ -621,6 +623,10 @@ gost -L=:8080
 # 将 socks4 转成 http/socks5
 gost -L=:8080 -F=socks4://192.168.50.161:43848
 ```
+## nginx端口转发 
+
+https://wbglil.gitbook.io/cobalt-strike/cobalt-strikekuo-zhan/dai-xie#nginx
+
 
 ## tocks
 apt-get install tsocks  
