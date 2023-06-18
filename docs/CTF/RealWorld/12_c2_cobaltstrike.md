@@ -159,6 +159,7 @@ erwerwer
 ## Beacon/Cmd
 [Link](https://www.cnblogs.com/icui4cu/p/16056428.html)
 
+Bind TCP Beacon 对应的是 connect 和 unlink.
 ```shell
 # ec2 - smb 是一个Listener
 beacon > jump psexec64 FILESERVER ec2 - smb
