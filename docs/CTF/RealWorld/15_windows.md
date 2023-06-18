@@ -38,6 +38,15 @@ wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 0
 ```
 
 ## FAQ
+### 剪贴板突然不能用了
+
+```sh
+taskkill /im rdpclip.exe /f
+rdpclip.exe
+# gpedit.msc，计算机配置->管理模板->Windows 组件->远程桌面服务->远程桌面会话主机->设备和资源重定向->不允许剪贴板重定向，设置为无配置
+# https://blog.51cto.com/u_14286115/5193293
+```
+
 ###  终端服务器超过最大允许连接数
 远程桌面界面，在地址栏上 1.1.58.58:65535 /admin
 

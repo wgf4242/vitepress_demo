@@ -17,6 +17,10 @@ qemu-arm -L ./tbox_app.bin
 [openwrt | AntCTF x D³CTF 2023 d3op 复盘笔记](https://mp.weixin.qq.com/s/97TfeJgZeG-lLzWc95teBw)
 
 ## stm32
+[按这个配置](https://www.bilibili.com/video/BV1LX4y157TP/)
+[IOT安全——stm32从做题到复现](https://www.anquanke.com/post/id/229321)
+[[原创]STM32固件逆向 ](https://bbs.kanxue.com/thread-272811.htm)
+[stm32芯片程序有xtea加密算法](https://bbs.kanxue.com/thread-272872.htm)
 [一个简单的STM32固件分析](https://mp.weixin.qq.com/s/2XeF67Rz8Tz5jPVevSHhpg)
 
 ## ardruino hex
