@@ -1,6 +1,7 @@
 [Redis未授权访问漏洞(windows环境](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484286&idx=1&sn=6250d89d18ea635bda32e815fdcc5f6d)
 [Redis未授权计划任务反弹shell](https://zhuanlan.zhihu.com/p/582582342)
 [Redis的漏洞总结(建议收藏)](https://mp.weixin.qq.com/s/wfncezg7Xe4Z4VP7lMxc7Q)
+[Redis系列漏洞总结](https://mp.weixin.qq.com/s/O5JVZtTifDri8xGJA08AWA)
 
 # Redis主从复制RCE redis 4.X/5.X
 

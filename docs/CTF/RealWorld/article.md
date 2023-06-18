@@ -204,6 +204,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Apache | RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/iNvk0U3Wz5ShAf588GneAA)
 [Apache | RocketMQ CVE-2023-33246 RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/1GIATpldq29cVTR6Rw_DTw)
 [Apache | RocketMQ CVE-2023-33246命令执行复现分析](https://mp.weixin.qq.com/s/kHY5PMOy5m1g0QHCYwsT1A)
+rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [Nginx](http://www.xxx.com/logo.jpg/a.php) [exp2](http://www.xxx.com/logo.jpg%00.php)
 
 [JBoss 未授权漏洞复现](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485334&idx=1&sn=0bba17412525af0cf9c5ff5cc63bf2a5)
@@ -220,6 +221,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Joomla 未授权访问漏洞(CVE-2023-23752)](https://mp.weixin.qq.com/s/N_fSww8Hjylnrha6EvlSjg)
 [Joomla CVE-2023-23752：Joomla 未授权访问漏洞](https://mp.weixin.qq.com/s/p-LDGXaC_jTsLYxuYQvR7w)
 [Joomla CVE-2023-23752—Joomla未授权访问Rest API漏洞](https://mp.weixin.qq.com/s/C-t3TAtnWIX7xY-1AChauw)
+rw_exp_joomla_CVE-2023-23752
 
 [phpStudy 小皮 Windows 面板 V0.102 以及以下版本 RCE 漏洞](https://mp.weixin.qq.com/s/FBl8Ocn2m8xBX3ZzydE5pg)
 
@@ -275,6 +277,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [小程序渗透测试工具 -- unveilr](https://mp.weixin.qq.com/s/rL4lQlG64M3sSSLcHtzQOg)
 [微信小程序渗透——反编译小程序](https://mp.weixin.qq.com/s/C5R_xX_69xiB3n5qS9TZJA)
 [企业微信 | appid 和 secret 泄露调用 api 服务](https://mp.weixin.qq.com/s/DNzupuzgubWBo-emjPH1Jg)
+[微信小程序文件下载两种方式](https://mp.weixin.qq.com/s/FhGJsX37c5HlFa-Gq6VA_w)
 
 ### Exploit/CVE/实战漏洞/IOT
 

@@ -1,5 +1,7 @@
 # 信息收集
-[后渗透之windows中无文件落地执行方法](https://mp.weixin.qq.com/s/-rN-rsnYRSKuJr5BkaRnBg)
+
+- 出网端口扫描.输出到文件。
+- [后渗透之 windows 中无文件落地执行方法](https://mp.weixin.qq.com/s/-rN-rsnYRSKuJr5BkaRnBg)
 
 ## web 路径
 
