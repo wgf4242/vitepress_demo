@@ -15,4 +15,4 @@ https://blog.csdn.net/CSNN2019/article/details/115612259
 [深入浅出angr（四）](https://xz.aliyun.com/t/4137)
 [深入浅出angr（五）](https://xz.aliyun.com/t/4196)
 [深入浅出angr（六）](https://xz.aliyun.com/t/4353)
-
+[angr学习-入门篇](https://mp.weixin.qq.com/s/wFgd0XPdlC05Uv7goRYvsQ)

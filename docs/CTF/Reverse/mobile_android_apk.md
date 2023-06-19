@@ -201,6 +201,7 @@ https://github.com/APKLab/APKLab
 * [移动安全（八）|实战获取某合伙人APP登陆算法](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484396&idx=2&sn=e059bc752b8803859c2671b8978dd225)
 * [移动安全（九）|TengXun加固动态脱壳（上篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=2&sn=c6abc2fc1f945d5f4c60fa6a92bb9106)
 * [移动安全（十）|TengXun加固动态脱壳（下篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=3&sn=40d185a659934c45851273d88353199a)
+* [Android 逆向之脱壳实战篇](https://mp.weixin.qq.com/s/zmCVxorHy_juPnV_I-8Inw)
 ---
 
 * [脱壳成长之路之二代壳进阶：绕过反调试、函数体回填并修复onCreate](https://mp.weixin.qq.com/s/8tawKAps_4Qu0Pf-PJRn0w)

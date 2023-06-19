@@ -2,6 +2,14 @@
 
 - 出网端口扫描.输出到文件。
 - [后渗透之 windows 中无文件落地执行方法](https://mp.weixin.qq.com/s/-rN-rsnYRSKuJr5BkaRnBg)
+```sh
+arp -a
+ipconfig /all
+dir /a C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent
+dir /a C:\Users\Administrator\Desktop
+reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+dir D:\ /s | findstr /i ora >c:\tmp.txt # 查找ora文件
+```
 
 ## web 路径
 

