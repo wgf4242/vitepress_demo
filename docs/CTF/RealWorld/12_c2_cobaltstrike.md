@@ -490,6 +490,10 @@ beacon> jump psexec ENGINEER pivot - POWERDC
 beacon> jump psexec BILLING pivot - POWERDC
 ```
 
+比如新建 a1listener, 目前不能直接生成executale
+- 只能命令横向上线
+- 或者上线后 spawn 为 a1listener, 再关掉旧的session
+
 #### Pivot Listeners - 1
 
 - Create a listener that calls home through a Beacon session...`(Asynchronous C2 is OK!)`
