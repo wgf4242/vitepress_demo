@@ -873,8 +873,14 @@ zip 压缩包的格式保存，拷贝到 BloodHound 主机上，右侧图标 Upl
 
 文档
 * [渗透测试之内网攻防篇：使用 BloodHound 分析大型域内环境](https://www.freebuf.com/articles/web/288370.html)
+### neo4j安装 / bloodhound使用
 
-
+```sh
+start http://localhost:7474/
+# neo4j/neo4j
+# 改为 neo4j/neo4j123
+bloodhound --nosandbox
+```
 # 团队协作 
 rocketchat 局域网聊天工具。web 可传文件
 synolog chat

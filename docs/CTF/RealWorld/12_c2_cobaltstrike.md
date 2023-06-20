@@ -8,7 +8,7 @@ beacon> cp 复制文件
 
 ## file
 run <cmd>
-portscan 192.168.127.135 1-1024,3389,5000-6000 arp # [max]
+portscan 192.168.0.1-192.168.255.255 1-1024,3389,5000-6000 arp # [max]
 net 在目标上执行net命令
 desktop pid [x86|x64] low|high # VNC: vnc dll注入到指定进程中运行 注：需要确保cs服务端有vnc dll
 ssh [host:port] [user][pass]
