@@ -34,6 +34,7 @@ vm.setVerbose(false);  // 设置为true时日志太多
 [某车联网App 通讯协议加密分析(四) Trace Code](https://blog.51cto.com/u_15527932/5708870)
 [利用unidbg进行一次电子取证](https://mp.weixin.qq.com/s/Yd0veyI9iNaQq7_0h3yMqw)
 [unidbg调用sgmain的doCommandNative函数生成某酷encryptR_client参数 ](https://www.52pojie.cn/thread-1680816-1-1.html) 
+[Unicorn及Unidbg学习记录](http://43.138.162.163:8090/archives/unicornji-unidbgxue-xi-ji-lu) 
 
 
 ---

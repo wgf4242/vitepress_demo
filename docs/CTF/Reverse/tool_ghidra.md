@@ -1,3 +1,6 @@
+点击变量高亮所有同名变量
+默认鼠标中键, 在 Edit → Tool Options - Listing Fields - Cursor Text Highlight 可改为左键
+
 ### 2.1 反汇编代码快捷键
 
 

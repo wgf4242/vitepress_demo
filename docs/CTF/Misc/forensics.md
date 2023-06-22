@@ -5,6 +5,7 @@
 
 1. 直接010, strings
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
+1. systeminfo - 安装时间
 2. 看桌面 
    - 2.0 Filter: Desktop\
    - 2.1 Magnet AXIOM 收集信息

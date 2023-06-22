@@ -242,3 +242,4 @@ start attack
 [梨子带你刷burpsuite靶场系列之高级漏洞篇 - 不安全的反序列化专题](https://www.anquanke.com/post/id/246276)
 [梨子带你刷burpsuite靶场系列之高级漏洞篇 - 服务器端模板注入(SSTI)专题](https://www.anquanke.com/post/id/246293)
 [【安全练兵场】| BurpSuite靶场系列之命令注入（5个实验）](https://mp.weixin.qq.com/s/SRlQ6MdtUey8gr4PQA_IVQ)
+[使用插件加密处理密码](https://mp.weixin.qq.com/s/72S-mYCHEnQZBPEIcKME3Q)

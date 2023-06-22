@@ -2,6 +2,7 @@
 * strings 整个数据包，定位到关键数据，查看上下文命令, 之后可在 wireshark搜索。
 * 追踪流注意单个 66 6c 61 67 -> flag
 * 科来网络分析系统 - 查一下包
+* key.log - TLS解密: 编辑 - 首选项 - Protocols - TLS - Master - Secret log filename
 * 过滤关键协议如websocket，整体导出为csv, countif过滤length, 找少的比如只有2个的数据。定位查看。
 * http
     * url查看有没 file=

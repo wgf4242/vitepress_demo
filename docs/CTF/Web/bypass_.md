@@ -13,6 +13,8 @@
 
 [sql 注入 bypass waf 工具（1 月 18 日更新）](https://mp.weixin.qq.com/s/qritLmRwP-Q5OLskxNWSVw)
 [Sql注入过安全狗](https://mp.weixin.qq.com/s/Ighou2aYORZ7rGvJfpeeHg)
+[实战绕过某WAF+拿shell组合拳](https://mp.weixin.qq.com/s/Q57dOjq279kqOFtSA1mV8Q)
+[webshell检测算法实践](https://mp.weixin.qq.com/s/M4umpduFCI50zOO-5080cw)
 
 # Cmd bypass
 

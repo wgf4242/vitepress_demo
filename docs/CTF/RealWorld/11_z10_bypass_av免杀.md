@@ -1,4 +1,5 @@
 普通 exe 免杀使用 py 或 go 等加密后反射加载，基本上就可以过大部分杀软了。
+启动后 cmd /c timeout 延迟等待N秒用来反沙箱
 
 procdump+mimikatz,  mimikatz很多时候都会被杀掉，可以通过procdump+mimikatz的方式 进行绕过。 或 任务管理器—进程—显示所有用户进程—找到lsass(Local Security Authority Process)—右键“创建转储文件”
 - mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" "exit">pass.txt

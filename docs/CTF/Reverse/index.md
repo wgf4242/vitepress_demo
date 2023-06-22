@@ -14,7 +14,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 2. 放die看编译器, 如果是gcc, IDA: Option - Compiler - GNU C++
 2. 看FindCrypt
 3. bindiff, 恢复符号, 见 re_symbols.md
-2. 见 ## 程序执行顺序, 有没SEH
+2. 见 [程序执行顺序](#程序执行顺序), 有没SEH
 3. ida打不开/ghidra/cutter
 4. apk: jadx, jeb都打开 jeb能解些 brainfucks
 4. 输入fuzz
@@ -33,7 +33,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html  finger符号还原
 6.已知算法未成功执行，检查有符号 还是无符号，可能有改变。
 6.调试时
 - 1. 通过%s搜scanf scanf如果没变量 断点动调, 切汇编再F5 可能不一样
-- 3.考虑给内存地址打硬件断点
+- 3. 考虑给内存地址打硬件断点
 - 2. 在 flag 查交叉引用
 - 3. 经常看图, 看汇编, encflag通常在分叉前一点
 1.smc
@@ -331,6 +331,8 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 * [使用OllyDbg逆向查找HOOK地址和寄存器使用 (2分钟前 )](https://www.cnblogs.com/wgf4242/p/17311256.html)
 * [FindWindow函数行为分析](https://mp.weixin.qq.com/s/VDlU1iHDaTo7W6n9SGRO3Q)
 * [HOOK的原理分析与easy_hook逆向题分析](https://mp.weixin.qq.com/s/5Bq5oncZ3gvnU3sDGaKfZw)
+* [Windows编程相关](file:///D:/wgf/My%20Documents/GitHub/cprojects/c_cpp_tutorial/Windows.md#%E5%AE%89%E5%85%A8%E7%BC%96%E7%A8%8B)
+
 
 ### DLL注入
 * [初探DLL注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)

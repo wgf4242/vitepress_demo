@@ -67,6 +67,8 @@ BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
 k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virustotal 扫程序和 IP。 分析出程序有连接 IP。扫 IP。 见 网刃杯 2022 FindMe 5. a3ed97e25583291767054a6a6b533a1c hash 解密
 
 .klr.enc1 - Kaspersky Rescue disk file, 异或 0xef
+## [流量分析](./misc_pcapng.md)
+
 
 ## RCE 绕过类题目
 

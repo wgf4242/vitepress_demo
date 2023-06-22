@@ -16,6 +16,10 @@ Web漏洞分析
 ## 渗透流程
 1. awd/index.md 红队
 1. 信息收集 > fscan/cscan/kscan(免杀), NMAP > AWVS > Appscan > Burpsuite > x-ray
+    - scan - rw_scan_HCL.AppScan.Standard.v10.2.1.zip
+    - scan - rw_scan_Invicti-Professional-v23.6.0.40861.zip
+    - scan - rw_scan_awvs_Acunetix-v15.6-Linux-.zip
+    - scan - rw_scan_Yakit-1.2.1-sp5-windows-amd64_6.exe
 * 445 - 永恒之蓝, 有账户后 psexec 执行命令
 * 2375端口: docker 未授权
 * 21/2121:  ftp 匿名登录/未授权

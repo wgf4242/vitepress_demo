@@ -22,6 +22,7 @@ qemu-arm -L ./tbox_app.bin
 [[原创]STM32固件逆向 ](https://bbs.kanxue.com/thread-272811.htm)
 [stm32芯片程序有xtea加密算法](https://bbs.kanxue.com/thread-272872.htm)
 [一个简单的STM32固件分析](https://mp.weixin.qq.com/s/2XeF67Rz8Tz5jPVevSHhpg)
+afx  hex  bin 文件 stm32练习
 
 ## ardruino hex
 https://stackoverflow.com/questions/17919704/arduino-disassemble-sketch-from-flash

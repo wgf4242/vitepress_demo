@@ -848,7 +848,7 @@ mimikatz.exe privilege::Debug ts::multirdp exit
 mimikatz.exe "lsadump::sam /system:system /sam:sam" exit
 ```
 
-## bloodhound/neo4j
+## bloodhound/sharphound/neo4j
 
 * neo4j
 * [download](https://neo4j.com/download-center/#community)
@@ -865,7 +865,7 @@ URL：neo4j://localhost:7687
 
 ```bash
 # 方式1
-SharpHound.exe -c all
+SharpHound.exe -c all # BloodHound\resources\app\Collectors\SharpHound.exe
 # 方式2
 powershell -exec bypass -command "Import-Module ./SharpHound.ps1; Invoke-BloodHound -c all"
 ```
@@ -876,11 +876,21 @@ zip 压缩包的格式保存，拷贝到 BloodHound 主机上，右侧图标 Upl
 ### neo4j安装 / bloodhound使用
 
 ```sh
-start http://localhost:7474/
+cmd /c start http://localhost:7474/
 # neo4j/neo4j
-# 改为 neo4j/neo4j123
+# 改为 neo4j/12345678
 bloodhound --nosandbox
 ```
+
+- 拖拽 20230620232158_BloodHound.zip 到中间导入。
+- 左上Analysis - 随便点击
+- 路径由粗到细的那边，就是xx对xx具有的权限或者说关系，所以路径如下
+
+### neo4 FAQ
+
+- neo4j.bat 找不到或无法加载主类 org.neo4j.server.startup.Neo4jCommand
+- neo4jHOME有问题，可以删除掉 或者设置为 当前路径
+
 # 团队协作 
 rocketchat 局域网聊天工具。web 可传文件
 synolog chat

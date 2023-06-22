@@ -179,6 +179,7 @@ https://github.com/APKLab/APKLab
 
 - [安全攻防 | APP 抓包大全](https://mp.weixin.qq.com/s/SoyZBDoPCX2crBmgM6uKfg)
 - [Android 渗透测试 HTTPS 证书校验绕过](https://mp.weixin.qq.com/s/X6efaPMF0Zb3ENsEy-H3gQ)
+[安卓高版本安装系统证书 HTTPS 抓包 - 终极解决方案](https://blog.51cto.com/u_15527932/6107429)
 
 ## 综合
 
@@ -275,6 +276,8 @@ https://github.com/APKLab/APKLab
 - [app 逆向--美图秀秀 sig 参数](https://mp.weixin.qq.com/s/HWMqHIZ8tBSnRPiTy4ymXA)
 - [安卓脱壳修复（腾讯御 xx）](https://mp.weixin.qq.com/s/_Q1vrztni5ODwSyaJ_Kz_Q)
 - [实战 | 记一次渗透中遇见的 apk 逆向 sign 解码分析](https://mp.weixin.qq.com/s/LQJfpy-bQB6lFi51O_OwPA)
+- [协议分析 | 对一个apk协议的继续分析—libsgmain反混淆与逆向](https://mp.weixin.qq.com/s/s06dvT056fqkENIYoEHZ3w)
+- [协议分析 | 【app渗透】破解apk app协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
 
 ## 混淆加密
 
