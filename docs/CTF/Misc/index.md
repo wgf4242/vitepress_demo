@@ -67,8 +67,8 @@ BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
 k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virustotal 扫程序和 IP。 分析出程序有连接 IP。扫 IP。 见 网刃杯 2022 FindMe 5. a3ed97e25583291767054a6a6b533a1c hash 解密
 
 .klr.enc1 - Kaspersky Rescue disk file, 异或 0xef
-## [流量分析](./misc_pcapng.md)
 
+## [流量分析](./misc_pcapng.md)
 
 ## RCE 绕过类题目
 
@@ -106,6 +106,7 @@ arr[$(cat /flag)]
 | png     | √      |        | cloacked-pixel          | py2 lsb.py extract mmm.png out.txt lovekfc |
 | png     | √      | √      | stegpy                  | stegpy <file> -p                           |
 | jpg     |        |        | steghide                | steghide extract -sf test.jpg -p 123456    |
+|         |        |        | stegseek 爆破 steghide  | stegseek cvr.jpg wordlist.txt              |
 | jpg     | √      |        | outguess                | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
 | jpg     | √      |        | SilentEye               | SilentEye                                  |
 | jpg     |        |        | F5-steganography-master | java Extract 生成图.jpg -p '密码'          |
@@ -363,11 +364,11 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 
 国外 https://lens.google/
 
-
 ## 视频/音频题目
 
-“安洵杯”全国精英赛SYCTF2023 cancellation `misc_video_audio_sstv.py`
-1. mediainfo查看
+“安洵杯”全国精英赛 SYCTF2023 cancellation `misc_video_audio_sstv.py`
+
+1. mediainfo 查看
 2. 音频提取 sstv 处理
 
 ## 音频题目

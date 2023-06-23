@@ -42,6 +42,7 @@
 [todesk 获取密码,rustdesk『红蓝对抗』远控软件小技巧](https://mp.weixin.qq.com/s/DvqFKMRzg6FCJtUdkk4hhA)
 [todesk 企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
 [todesk 记一次渗透测试遇到远程控制软件的深入利用](https://mp.weixin.qq.com/s/cjNwVbKjTUPgmIUAeq4PsA) todesk
+[todesk|向日葵|anydesk|gohttp| 内网渗透｜内网远程控制总结](https://mp.weixin.qq.com/s/5Z5y-YvfVYIcx8qIY60Ugw)
 
 [CS 权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
 
@@ -104,7 +105,7 @@ result.txt | 搜验证码
 [权限提升 | suid 提权及修复方式](https://mp.weixin.qq.com/s/QgV3mjg3OPGA5UBRRpYM0A)
 
 ## 渗透测试
-
+- https改http测试绕过
 [2021 年【Hacking 黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
 [渗透实战系列](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)

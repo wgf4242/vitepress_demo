@@ -170,9 +170,17 @@ rw_exp_joomla_CVE-2023-23752
 [Nacos | CTF | BackendService 权限绕过](https://juejin.cn/post/7133573986633383950)
 [Nacos | Nacos身份绕过漏洞](https://mp.weixin.qq.com/s/zGsAr9vM9Ec7AByycpTAHw)
 [Nacos | 身份绕过漏洞](https://mp.weixin.qq.com/s/zGsAr9vM9Ec7AByycpTAHw)
-[Nacos Jraft | 远程代码执行漏洞 附检测POC (nuclei)](https://mp.weixin.qq.com/s/jovBE_wVIGl_e__fXm71bw)
+[Nacos | Jraft | 远程代码执行漏洞 附检测POC (nuclei)](https://mp.weixin.qq.com/s/jovBE_wVIGl_e__fXm71bw)
+[Nacos | Hessian 反序列化 RCE](https://y4er.com/posts/nacos-hessian-rce/)
+[内网高频组件漏洞整理-Hadoop](http://www.nooemotion.com/2023/02/20/内网高频组件漏洞整理-hadoop/)
+[Nacos](http://www.nooemotion.com/2023/02/22/内网高频组件漏洞整理-nacos/)
+[内网高频组件漏洞整理-Memcached](http://www.nooemotion.com/2023/02/20/内网高频组件漏洞整理-memcached/)
+[内网高频组件漏洞整理-ActiveMQ](http://www.nooemotion.com/2023/02/17/内网高频漏洞组件漏洞整理-activemq/)
+[Exchange | ProxyShell](http://www.nooemotion.com/2023/02/17/域渗透笔记-exchange-proxyshell/)
 [MinIO | CVE-2023-28432 MinIO的信息泄露漏洞分析](https://mp.weixin.qq.com/s/sd0MmL3pYTfsUGJ0Sy2R2Q)
 [MinIO | 信息泄露漏洞(CVE-2023-28432)](https://mp.weixin.qq.com/s/Bb17fAJ8wB7x3w4mW40PGg)
+[MinIO | CVE-2023-28432 Minio信息泄露导致RCE](https://y4er.com/posts/minio-cve-2023-28432/)
+
 
 
 [Atlassian Bitbucket 登录绕过漏洞](https://mp.weixin.qq.com/s/w72e1WZKV2Qb7VDloc4DDw)
