@@ -4,6 +4,7 @@
 ## 信息收集
 
 ```shell
+# -- adfind信息收集
 net time /domain # 判断当前主机是否在域内 -- \\WIN-A46BVNA4HEK.tide1.org,  域主机为 WIN-A46BVNA4HEK
 net user /domain
 获取域内用户的详细信息：
@@ -32,7 +33,8 @@ beacon> net dclist
 ##3. 当前网络环境为工作组，不存在域
 ```
 
-- sharphound 查看收集的信息
+- [adfind收集信息](./domain/90_tools.md)
+- sharphound 查看收集的信息, cs偷个token, 或 Inject进程, 再执行
 - [域用户枚举_爆破-kerberos](#域用户枚举_爆破-kerberos)
 
 ## 域维护命令

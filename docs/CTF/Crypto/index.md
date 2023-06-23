@@ -63,6 +63,8 @@ $$
 * [RSA加密算法原理及JS实现](https://mp.weixin.qq.com/s/mXMey_uAAkt-W02KP78p_Q) 
 * [『CTF』AMM 算法详解与应用](https://mp.weixin.qq.com/s/Q_rzLaCp19ms-sYix-sHcA)
 * [LCG | ctf之lcg算法](https://blog.csdn.net/superprintf/article/details/108964563)
+* [现代密码学常用符号总结 ](https://www.cnblogs.com/max1z/p/16841472.html) 
+
 ---
 * [密码学从入门到大佬——Xenny密码学全系列课程导航](https://www.nssctf.cn/note/set/1698)**    
 * [wiener攻击](https://www.nssctf.cn/note/set/8)    
