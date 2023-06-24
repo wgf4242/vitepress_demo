@@ -60,6 +60,8 @@
 [用友 NC 命令执行漏洞(CNVD-2021-30167](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484782&idx=1&sn=0d12c08981028561c0b09a531af9cc10)
 
 [蓝凌 OA 任意文件写入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484910&idx=1&sn=3c4b2ad40c308407de499e3b4dee73ba)
+[蓝凌 OA treexml.tmpl 远程命令执行漏洞-方式2](https://mp.weixin.qq.com/s/S1-5R17Q2omigJodzcB_0w)
+
 [O2OA 系统 invoke 接口命令执行漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484887&idx=1&sn=d0eca62d2c3e4f8b2f2b8eaf9e25ffe6)
 [华天动力 OA 任意文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484844&idx=1&sn=a314754ee9d480691dc53a7295bc1fd7)
 
@@ -202,7 +204,9 @@ rw_exp_joomla_CVE-2023-23752
 [【漏洞复现】CVE-2022-4510：Binwalk 远程代码执行漏洞](https://mp.weixin.qq.com/s/Ss9d_RSX2RZnVASdbD_o7g)
 rw_exp_红帆OA_iOffice-udfmr-sqlvuln-master.zip
 rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
+[H3C | 用户网管登录系统jQuery-1.7.2存在任意文件读取](https://mp.weixin.qq.com/s/PnFzkwH4NZ0FhkKQ73l1IQ)
 
+[金蝶云星空RCE漏洞复现](https://mp.weixin.qq.com/s/d2Dt2l9qvSUTN5GT76xaZA)
 ### Exploit/CVE/实战漏洞/Windows
 
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
@@ -228,3 +232,5 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [海康威视代码执行漏洞](https://mp.weixin.qq.com/s/o3A7xOPLbdmo6WAZsygHYQ)
 [海康威视综合安防系统 iVMS-5000 iVMS-8700 任意文件上传漏洞复现（0day）](https://mp.weixin.qq.com/s/Wveo0X3857mBWFzNOcJHJw)
 [任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
+[漏洞复现 D-Link DCS 密码泄露漏洞](https://mp.weixin.qq.com/s/rbSBjKvX_STXUjxY8TKOOA)
+

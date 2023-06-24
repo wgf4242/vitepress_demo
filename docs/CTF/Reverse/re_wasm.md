@@ -1,3 +1,4 @@
+[wasm js逆向-初尝试](https://mp.weixin.qq.com/s/8W6tRC-gA0FG2OD5o-RmOg)
 [强网杯2019 | 一步步学习Webassembly逆向分析方法](https://www.anquanke.com/post/id/179556)
 [强网杯2019 | lebel:WASM](https://blog.csdn.net/q1uTruth/article/details/99409403)
 [wasm 在前端安全测试应用中的逆向实战](https://juejin.cn/post/7025562527681478663)

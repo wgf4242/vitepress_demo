@@ -108,9 +108,9 @@ arr[$(cat /flag)]
 | jpg     |        |        | steghide                | steghide extract -sf test.jpg -p 123456    |
 |         |        |        | stegseek 爆破 steghide  | stegseek cvr.jpg wordlist.txt              |
 | jpg     | √      |        | outguess                | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
-| jpg     | √      |        | SilentEye               | SilentEye                                  |
+| jpg     | √      |        | SilentEye               |                                            |
 | jpg     |        |        | F5-steganography-master | java Extract 生成图.jpg -p '密码'          |
-| bmp     | √      |        | SilentEye               | SilentEye                                  |
+| bmp     | √      |        | SilentEye               |                                            |
 | bmp     | √      |        | jphs05/Jphswin          | jphs05                                     |
 | `<all>` | √      |        | oursecret               | oursecret                                  |
 

@@ -1,38 +1,37 @@
-
-
 r2 -A libfoo.so
 
-parameter 
-```
+# parameter
+
+```sh
 -d 启动调试器
 -A 进行分析
 r2 -A libfoo.so
 ```
-```
+
+```sh
 $ afl # list all function
 $ s sym.Java_sg_vantagepoint_uncrackable2_CodeCheck_bar
 $ pdg # 显示CodeCheck_bar伪代码
 ```
 
-帮助 
-```
+帮助
+
+```sh
 pdg 查看decompiler的代码
 
 /?
 ```
 
+4.2 寻找 main 函数然后打印出来
 
-
-4.2 寻找main函数然后打印出来
-
-```
+```sh
 s main
 pdf
 ```
 
 视图模式
 
-```
+```sh
 # v 进入视图模式
 # p\P 返回 p返回反汇编视图
 # q 退出
@@ -49,7 +48,8 @@ pdf
 # :> ? 0x88 可以列出0x88的数据转换十进制，16禁制，浮点数等信息
 ```
 
-* 变量命名
+- 变量命名
+
 ```s
 # 跳转到main 显示寄存器和变量
 [0x08048360]> s main
@@ -78,7 +78,8 @@ var char * s1 @ ebp-0x18
 ```
 
 # Article
-* [教学](https://blog.csdn.net/qq_31507523/article/details/117200476)
-* [android-owasp-crackmes-level-2](https://enovella.github.io/android/reverse/2017/05/20/android-owasp-crackmes-level-2.html)
-* [manual](https://book.rada.re/analysis/variables.html)
-* [用Radare2模拟shellcode运行](https://mp.weixin.qq.com/s/EN1RIoJV68KaUEUq3IFQNg)
+
+- [教学](https://blog.csdn.net/qq_31507523/article/details/117200476)
+- [android-owasp-crackmes-level-2](https://enovella.github.io/android/reverse/2017/05/20/android-owasp-crackmes-level-2.html)
+- [manual](https://book.rada.re/analysis/variables.html)
+- [用 Radare2 模拟 shellcode 运行](https://mp.weixin.qq.com/s/EN1RIoJV68KaUEUq3IFQNg)

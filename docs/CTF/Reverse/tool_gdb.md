@@ -167,6 +167,7 @@ target remote ip:port 连接远程调试
 | tel 0x400100          | telescope 打印栈？还是地址？            |
 | tel &\_\_free_hook 1  |                                         |
 | tel cr_unpackData 100 |                                         |
+| tel "$esp - 40"       |
 | stack                 | 多次回车查看多个                        |
 | stack 40              | 查看 40 个栈数据                        |
 

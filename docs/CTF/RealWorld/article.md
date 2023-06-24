@@ -139,6 +139,11 @@ result.txt | 搜验证码
 [API | SRC漏洞挖掘之未授权接口](https://mp.weixin.qq.com/s/aw1Q3XlupCOIPQ-gi01N6w)
 [API | 协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
 [API |rw_API_爬网站JS文件自动fuzz api接口_jjjjjjjjjjjjjs-main.zip]()
+[API | 记一次由js突破发现的漏洞](https://mp.weixin.qq.com/s/najWvbTPj_Dk6SH2zV_ZSQ)
+[API | webpack | packer-fuzzer](rw_API_webpack_Packer-Fuzzer-master.zip)
+[API | swagger hakc main](rw_API_swagger-hack-main.zip)
+[API | swagger exp](rw_API_swagger-exp-master.zip)
+[API | webservice](https://mp.weixin.qq.com/s/e9x206e8EGBMPn_VGjrM1Q)
 
 ---
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
