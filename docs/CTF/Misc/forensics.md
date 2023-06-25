@@ -1,9 +1,11 @@
 各种取证工具 https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%8F%96%E8%AF%81.md
+[CTF成长之路丨Windows取证常用工具介绍](https://mp.weixin.qq.com/s/e1HzaeoKQLplGbmKN6cWYA)
+
 
 ## 取证题
 取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt 
 
-1. 直接010, strings
+1. 直接010, strings  flag
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
 1. systeminfo - 安装时间
 2. 看桌面 
