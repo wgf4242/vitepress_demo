@@ -22,3 +22,4 @@ cobalt strike
 - rw\_bypass\_免杀\_BypassAV.html
 - [有手就行的白加黑实战免杀 - FreeBuf 网络安全行业门户](https://www.freebuf.com/articles/system/333690.htm)
 - [一文读懂 DLL 劫持与白+黑样本原理](https://mp.weixin.qq.com/s/UZjLNPna7R2ZLs3r9kJEQg)
+- [写外挂时偶然想到的免杀思路](https://mp.weixin.qq.com/s/0c6D2aw9xk-NPKYuCkvoIg)

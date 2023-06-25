@@ -163,6 +163,7 @@ rw_exp_joomla_CVE-2023-23752
 [DreamerCMS 代码审计](https://n1k0la-t.github.io/2023/01/31/DreamerCMS代码审计/)
 [EyouCMS v1.6.1 0day 挖掘](https://n1k0la-t.github.io/2023/01/28/EyouCMS%20v1.6.1%200day%e6%8c%96%e6%8e%98/)
 [DedeCMS 组合漏洞分析](https://mp.weixin.qq.com/s/vzNIMszhneJCq5MznfrR0A)
+[DedeCMS-V5.7.109-UTF8 后台可getshell](https://mp.weixin.qq.com/s/FRbVHobj6l9m7YjtRReXTg)
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2 和 8.6.4.1 | CVE-2022-36537 未授权 RCE 漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos | QVD-2023-6271：Nacos 身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
@@ -183,7 +184,7 @@ rw_exp_joomla_CVE-2023-23752
 [MinIO | 信息泄露漏洞(CVE-2023-28432)](https://mp.weixin.qq.com/s/Bb17fAJ8wB7x3w4mW40PGg)
 [MinIO | CVE-2023-28432 Minio信息泄露导致RCE](https://y4er.com/posts/minio-cve-2023-28432/)
 
-
+[Grafana任意文件读取漏洞（CVE-2021-43798）](https://mp.weixin.qq.com/s/WK9dulwM84DVYgn6Ss1AcQ)
 
 [Atlassian Bitbucket 登录绕过漏洞](https://mp.weixin.qq.com/s/w72e1WZKV2Qb7VDloc4DDw)
 
