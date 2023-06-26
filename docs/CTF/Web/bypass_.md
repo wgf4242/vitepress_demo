@@ -1,6 +1,6 @@
 # Web bypass
 
-- [Bypass Linux Shell Restrictions](https://mp.weixin.qq.com/s/8QTax87lorWNnOQR8p1ORQ)
+- [Bypass Linux Shell Restrictions](#linux-shell-bypass)
 - 空格绕过 `a=system ('cat /flag');`
 - 大小写绕过
 - %0a 绕过
@@ -11,10 +11,12 @@
 - \_\_halt_compiler();来结束 php 代码执行流程 同上链接
 - [详细|waf 绕过学习](https://mp.weixin.qq.com/s/OeZsKohqe87-ieIuW7L9tA)
 
-[sql 注入 bypass waf 工具（1 月 18 日更新）](https://mp.weixin.qq.com/s/qritLmRwP-Q5OLskxNWSVw)
-[Sql注入过安全狗](https://mp.weixin.qq.com/s/Ighou2aYORZ7rGvJfpeeHg)
-[实战绕过某WAF+拿shell组合拳](https://mp.weixin.qq.com/s/Q57dOjq279kqOFtSA1mV8Q)
-[webshell检测算法实践](https://mp.weixin.qq.com/s/M4umpduFCI50zOO-5080cw)
+[实战绕过某 WAF+拿 shell 组合拳](https://mp.weixin.qq.com/s/Q57dOjq279kqOFtSA1mV8Q)
+[webshell 检测算法实践](https://mp.weixin.qq.com/s/M4umpduFCI50zOO-5080cw)
+
+| bypass | payload                                                |     |
+| ------ | ------------------------------------------------------ | --- |
+| <?     | `<script language="php">@eval($\_POST['1']);</script>` |     |
 
 ## bypass filter_var($url, FILTER_VALIDATE_URL)
 
@@ -33,12 +35,20 @@ copy /b 1.jpg+2.jpg 3 /y
 
 ```
 
-
 # Linux shell bypass
 
 [Bypass Linux Shell Restrictions](https://mp.weixin.qq.com/s/8QTax87lorWNnOQR8p1ORQ)
 
 # Sql bypass
 
-https://github.com/Xyntax/waf-bypass/blob/master/payload/sql.txt
-https://lexsd6.github.io/2021/01/31/%E5%85%B3%E4%BA%8Esql%E6%B3%A8%E5%85%A5bypass%E6%80%BB%E7%BB%93/#%E6%96%B9%E6%B3%95%E6%9B%BF%E6%8D%A2%E7%BB%95%E8%BF%87
+- https://github.com/Xyntax/waf-bypass/blob/master/payload/sql.txt
+- https://lexsd6.github.io/2021/01/31/%E5%85%B3%E4%BA%8Esql%E6%B3%A8%E5%85%A5bypass%E6%80%BB%E7%BB%93/#%E6%96%B9%E6%B3%95%E6%9B%BF%E6%8D%A2%E7%BB%95%E8%BF%87
+- [sql 注入 bypass waf 工具（1 月 18 日更新）](https://mp.weixin.qq.com/s/qritLmRwP-Q5OLskxNWSVw)
+- [Sql 注入过安全狗](https://mp.weixin.qq.com/s/Ighou2aYORZ7rGvJfpeeHg)
+
+| bypass |             |                                               |
+| ------ | ----------- | --------------------------------------------- |
+| 大小写 |             |                                               |
+| =      | like/regexp |  <> 等价于 !=                                             |
+| 空格   | /\*\*/ 或 + | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or后面可以跟上偶数个!、~可以替代空格 <br>and/or前的空格可用省略. <br>'后空格可省略 |
+|        |             |                                               |

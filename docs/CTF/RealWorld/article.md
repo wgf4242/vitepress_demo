@@ -144,6 +144,7 @@ result.txt | 搜验证码
 [API | swagger hakc main](rw_API_swagger-hack-main.zip)
 [API | swagger exp](rw_API_swagger-exp-master.zip)
 [API | webservice](https://mp.weixin.qq.com/s/e9x206e8EGBMPn_VGjrM1Q)
+[API | 越权漏洞检测系统](https://mp.weixin.qq.com/s/iwUB4ewDf8iZUyro9zapzw)
 
 ---
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
