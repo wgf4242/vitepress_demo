@@ -346,6 +346,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | Gemini-Pentest-v2 |红队打靶](https://mp.weixin.qq.com/s/6feMyfrBPoEje6xzv09PUg)
 - [Vulnhub | 实操笔记-LampSecurity-CTF4](https://mp.weixin.qq.com/s/1BOecn3aFys62xjKYqXeYg)
 - [VulnHub | Cereal |红队打靶](https://mp.weixin.qq.com/s/2wBrk0WIXalarsg9ITVzGw)
+- [VulnHub | Tomato | 红队打靶](https://mp.weixin.qq.com/s/8UuDcN91LSfWeqoCDbzhHw)
+- [VulnHub | Raven2 |红队打靶](https://mp.weixin.qq.com/s/d1Z1F2Zl870vREgnqX0n0w)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
