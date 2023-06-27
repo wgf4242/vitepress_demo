@@ -849,6 +849,7 @@ sub dialog_test {
 [分享个 CobaltStrike 插件 Bypass 防护添加用户（附下载）](https://mp.weixin.qq.com/s/6nu1dwdvdtnP_6C-nIpMVg)
 [Cobalt-Strike 之 CrossC2 插件安装与 linux 上线](https://mp.weixin.qq.com/s/Fty2S9ettdtTFgJWVTvQNQ)
 [CobaltStrike 加载插件](https://mp.weixin.qq.com/s/NtxhTkuMGhhRyLUREnZQcA)
+[免杀 | Arsenal-kit | 聊聊红队攻防中CobalStrike的多维度对抗](https://mp.weixin.qq.com/s/fF6frplnurl-rCivYs0fFA)
 
 ## Vocabulary
 
