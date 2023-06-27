@@ -32,6 +32,37 @@ reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLo
 # -- linux
 /etc/passwd
 /home/<username>/.bash_history
+/root/.mysql_history
+/etc/shadow
+/etc/my.cnf
+/proc/net/fib_trie        # 内网IP
+cat /proc/self/environ    # 环境变量
+/root/.ssh/authorized_keys
+/root/.ssh/id_rsa         # 私钥
+/root/.ssh/known_hosts    # 记录每个访问计算机用户的公钥
+
+
+# 应用配置
+## java站点
+/WEB-INF/web.xml
+/WEB-INF/classes/applicationContext.xml
+/WEB-INF/classes/xxx/xxx/xxx.class
+core.jar如果遇到Shiro站点，可以直接利用全路径找到core.jar，去下载core.jar，下载后反编译搜索Base64.decode直接找key，进而getshell。
+## tomcat
+/usr/local/tomcat/conf/tomcat-users.xml
+## nginx
+/www/nginx/conf/nginx.conf
+/etc/nginx/nginx.conf
+/usr/local/nginx/conf/nginx.conf
+/usr/local/etc/nginx/nginx.conf
+## apache
+/etc/httpd/conf/httpd.conf
+/etc/apache2/apache2.conf
+/etc/apache2/httpd.conf
+## redis
+/etc/redis.conf
+## ssh
+/etc/ssh/sshd_config
 ```
 
 - [查询数据库连接 IP 记录](./30_mssql_sqlserver.md#查询日志访问-ip数据库)

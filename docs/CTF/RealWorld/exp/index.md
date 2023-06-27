@@ -133,7 +133,9 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Apache | 春秋云镜-CVE-2022-33980（Apache Commons Configuration 远程命令执行漏洞）](https://mp.weixin.qq.com/s/EhatzI7QVmh_RQZYOWNBYg)
 [Apache | RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/iNvk0U3Wz5ShAf588GneAA)
 [Apache | RocketMQ CVE-2023-33246 RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/1GIATpldq29cVTR6Rw_DTw)
-[Apache | RocketMQ CVE-2023-33246命令执行复现分析](https://mp.weixin.qq.com/s/kHY5PMOy5m1g0QHCYwsT1A)
+[Apache | RocketMQ CVE-2023-33246 命令执行复现分析](https://mp.weixin.qq.com/s/kHY5PMOy5m1g0QHCYwsT1A)
+[Apache | RocketMQ CVE-2023-33246 远程代码执行漏洞](https://mp.weixin.qq.com/s/SGi_-wNC8WeETQSDetfvVg)
+
 rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [CVE-2023-27524 Apache Superset 身份认证绕过漏洞](https://mp.weixin.qq.com/s/ZqjT-s9_u6onp6m-OYV0Ag)
 

@@ -33,6 +33,8 @@ sudo make install
 |             | b \*main                             |
 |             | fmtargs 0x7fffe2d9                   | 查看 printf 计算参数位置                                                |
 |             | distance 0x90 0x86                   | 计算距离                                                                |
+|             | disassemble 0x40123d                 | 显示地址的汇编代码                                                      |
+|             | !disasm eb01                         | 将机器码 eb01 转汇编                                                    |
 |             | p $esp                               | 输出 esp, p/x 32 -- 0x20                                                |
 |             | tel <addr>                           | 查看地址值                                                              |
 |             | libc                                 | 查看 libc 地址                                                          |
