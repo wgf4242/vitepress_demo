@@ -30,6 +30,7 @@ netstat -lantp | grep ESTABLISHED # 关注sshd进程，即运维人员公司IP
 reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f # 管理员登录可读明文
 
 # -- linux
+## 无curl, wget下载文件 tools_get.sh
 /etc/passwd
 /home/<username>/.bash_history
 /root/.mysql_history
@@ -117,6 +118,8 @@ CS和msf联动
 ## * 远程软件保存的远程连接 mstsc/内网通/向日葵/todesk等
 
 ```
+- [映像劫持技术, 关不掉的程序！](https://www.bilibili.com/video/BV12X4y1t72e/)
+
 
 ### 多用户登录远程桌面
 

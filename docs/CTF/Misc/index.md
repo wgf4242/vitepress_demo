@@ -101,18 +101,19 @@ arr[$(cat /flag)]
 
 ## 图片题
 
-| format  | 支 key | 无 key | 工具                    | 使用                                       |
-| ------- | ------ | ------ | ----------------------- | ------------------------------------------ |
-| png     | √      |        | cloacked-pixel          | py2 lsb.py extract mmm.png out.txt lovekfc |
-| png     | √      | √      | stegpy                  | stegpy <file> -p                           |
-| jpg     |        |        | steghide                | steghide extract -sf test.jpg -p 123456    |
-|         |        |        | stegseek 爆破 steghide  | stegseek cvr.jpg wordlist.txt              |
-| jpg     | √      |        | outguess                | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
-| jpg     | √      |        | SilentEye               |                                            |
-| jpg     |        |        | F5-steganography-master | java Extract 生成图.jpg -p '密码'          |
-| bmp     | √      |        | SilentEye               |                                            |
-| bmp     | √      |        | jphs05/Jphswin          | jphs05                                     |
-| `<all>` | √      |        | oursecret               | oursecret                                  |
+| format   | 支 key | 无 key | 工具                    | 使用                                       |
+| -------- | ------ | ------ | ----------------------- | ------------------------------------------ |
+| png      | √      |        | cloacked-pixel          | py2 lsb.py extract mmm.png out.txt lovekfc |
+| png      | √      | √      | stegpy                  | stegpy <file> -p                           |
+| jpg      |        |        | steghide                | steghide extract -sf test.jpg -p 123456    |
+|          |        |        | stegseek 爆破 steghide  | stegseek cvr.jpg wordlist.txt              |
+| jpg      | √      |        | outguess                | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
+| jpg      | √      |        | SilentEye               |                                            |
+| jpg      |        |        | F5-steganography-master | java Extract 生成图.jpg -p '密码'          |
+| bmp      | √      |        | SilentEye               |                                            |
+| bmp      | √      |        | jphs05/Jphswin          | jphs05                                     |
+| `<all>`1 | √      |        | oursecret               | oursecret                                  |
+| `<all>`2 | √      |        | 傅利叶变换              | misc_blindWaterMark_02_fourier.py          |
 
 - https://www.aperisolve.com/
 - 看文件末尾、文件头

