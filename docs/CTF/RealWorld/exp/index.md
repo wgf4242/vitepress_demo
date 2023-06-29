@@ -185,6 +185,7 @@ rw_exp_joomla_CVE-2023-23752
 [MinIO | CVE-2023-28432 MinIO的信息泄露漏洞分析](https://mp.weixin.qq.com/s/sd0MmL3pYTfsUGJ0Sy2R2Q)
 [MinIO | 信息泄露漏洞(CVE-2023-28432)](https://mp.weixin.qq.com/s/Bb17fAJ8wB7x3w4mW40PGg)
 [MinIO | CVE-2023-28432 Minio信息泄露导致RCE](https://y4er.com/posts/minio-cve-2023-28432/)
+[MinIO | CVE-2023-28432 Minio信息泄露导致RCE](https://mp.weixin.qq.com/s/VOUSGtcETxkhHTezTlxm5w)
 
 [Grafana任意文件读取漏洞（CVE-2021-43798）](https://mp.weixin.qq.com/s/WK9dulwM84DVYgn6Ss1AcQ)
 

@@ -6,6 +6,7 @@
 * https://www.thestar0.cn/article/20f75995-1829-4fc6-9f33-13b64eb7e0be
 * [done-适合入门【和三叶草一起打基础】—程序的保护技术](https://www.bilibili.com/video/BV1wB4y1k7x9)
 * https://bbs.pediy.com/thread-225740.htm#msg_header_h1_3
+[什么是去除花指令的最高境界](https://mp.weixin.qq.com/s/yXt_BfTRRpqBGCI3MIriOA)
 
 ## IsDebuggerPresent()
 当进程处于调试状态时, PEB.BeingDebugged成员值被设为1,
