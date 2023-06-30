@@ -289,7 +289,6 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 # Article
 * [Debugging Tips](https://blog.wjhwjhn.com/archives/838/)
-* [C 函数调用过程分析](https://mp.weixin.qq.com/s/6vjw6K97btDpucEUo9Q4cg)
 > Advanced
 * [堆栈溢出保护机制 | 逆向工程](https://mp.weixin.qq.com/s/_15IO0tIY-ci305AEIwDGQ)
 ---

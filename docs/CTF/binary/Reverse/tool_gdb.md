@@ -384,3 +384,6 @@ pi # 进入 interpreter, 可输入多行命令
 # 执行脚本文件
 python exec(open('myscript.py').read())
 ```
+
+## Article
+[玩转C++调试之Python的GDB库增强](https://mp.weixin.qq.com/s/B8YLq-YSNw08u6yKoBcblg)

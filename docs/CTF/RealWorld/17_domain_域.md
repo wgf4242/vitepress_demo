@@ -447,3 +447,17 @@ rw_domain_域渗透 - 域控使用组策略下发文件并执行.rar
 [内网域渗透系列教程](https://www.bilibili.com/video/BV1xb4y1y7ju/)
 [内网域渗透之常用提权](https://www.cnblogs.com/first-kiss/articles/16213182.html)
 
+
+## Todo
+
+6-项目六完整的内网域渗透_10metasploit域内主机分析和整理【瑞客论坛 www.ruike1.com】.mp4
+6-项目六完整的内网域渗透_11metasploit开启代理跨路由使用proxychaninnmap扫描【瑞客论坛 www.ruike1.com】.mp4
+6-项目六完整的内网域渗透_12metasploit永恒之蓝ms17_010的使用【瑞客论坛 www.ruike1.com】.mp4
+6-项目六完整的内网域渗透_13metasploitms14-068（CVE-2014-6324）普通用户提权到域控【瑞客论坛 www.ruike1.com】.mp4
+6-项目六完整的内网域渗透_14metasploit生成正向攻击载荷获取域控系统权限【瑞客论坛 www.ruike1.com】.mp4
+6-项目六完整的内网域渗透_15metasploit获取域控登录凭证NTML明文【瑞客论坛 www.ruike1.com】.mp4
+6-项目六完整的内网域渗透_16metasploit开启域控远程端终并登录到桌面【瑞客论坛 www.ruike1.com】.mp4
+6-项目六完整的内网域渗透_17metasploit域控权限维持制作黄金票据访问dc域控【瑞客论坛 www.ruike1.com】.mp4
+7-项目七 渗透有防护的内网域_23 mimikatz pth 登录域控【瑞客论坛 www.ruike1.com】.mp4
+7-项目七 渗透有防护的内网域_24 破解域控NTLM并登录域控【瑞客论坛 www.ruike1.com】.mp4
+项目九40内网多域渗透利用mimikatz导出域控所有用户账号和hash【瑞客论坛 www.ruike1.com】.mp4
