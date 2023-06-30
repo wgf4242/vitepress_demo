@@ -33,3 +33,4 @@ int main()
 ```
 # Article
 [极安御信网络安全系列课程-Windows逆向基础-MFC源码分析(MFC窗口创建机制)](https://www.bilibili.com/video/BV1Ym4y1q7FD/) 
+[MFC逆向的小练习](https://mp.weixin.qq.com/s/OAD5BhKxDRfKKfkOuCF10g)

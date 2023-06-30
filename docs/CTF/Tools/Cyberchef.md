@@ -66,3 +66,6 @@ AND({'option':'Decimal','string':'127'})
 #recipe=From_Hex('Auto')AND(%7B'option':'Decimal','string':'127'%7D)&input=Yzg
 
 ```
+### subsection
+
+捕获组，后期替换都会在 subsection 的捕获组里进行处理。
