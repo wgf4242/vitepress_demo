@@ -8,7 +8,7 @@ https://blog.csdn.net/CSNN2019/article/details/115612259
 * [video](https://space.bilibili.com/386563875/video)
 * [Angr 使用技巧速通笔记](https://mp.weixin.qq.com/s/pyaYFcuImCgwPAkRujJhLQ)
 
-
+[angr学习-入门篇](https://mp.weixin.qq.com/s/wFgd0XPdlC05Uv7goRYvsQ)
 [深入浅出Angr（一）](https://xz.aliyun.com/t/3990)
 [深入浅出angr（二）](https://xz.aliyun.com/t/4039)
 [深入浅出angr（三）](https://xz.aliyun.com/t/4052)

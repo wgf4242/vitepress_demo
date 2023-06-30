@@ -135,11 +135,10 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Apache | RocketMQ CVE-2023-33246 RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/1GIATpldq29cVTR6Rw_DTw)
 [Apache | RocketMQ CVE-2023-33246 命令执行复现分析](https://mp.weixin.qq.com/s/kHY5PMOy5m1g0QHCYwsT1A)
 [Apache | RocketMQ CVE-2023-33246 远程代码执行漏洞](https://mp.weixin.qq.com/s/SGi_-wNC8WeETQSDetfvVg)
-
 rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [CVE-2023-27524 Apache Superset 身份认证绕过漏洞](https://mp.weixin.qq.com/s/ZqjT-s9_u6onp6m-OYV0Ag)
 
-[angr学习-入门篇](https://mp.weixin.qq.com/s/wFgd0XPdlC05Uv7goRYvsQ)[Nginx](http://www.xxx.com/logo.jpg/a.php) [exp2](http://www.xxx.com/logo.jpg%00.php)
+[WordPress | 超危漏洞CVE-2023-2982 附POC](https://mp.weixin.qq.com/s/_3Ds_0XVmBt9Uq6kubiKYw)
 
 [JBoss 未授权漏洞复现](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485334&idx=1&sn=0bba17412525af0cf9c5ff5cc63bf2a5)
 [JBoss 4.x JBossMQ JMS 反序列化漏洞（CVE-2017-7504）](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485314&idx=1&sn=5c66488436cf10de927df74cf35ca9ad)
