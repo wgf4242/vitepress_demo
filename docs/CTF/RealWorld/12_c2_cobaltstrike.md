@@ -859,10 +859,12 @@ sub dialog_test {
 [干货分享 | 魔改 cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
 [基于 Caddy 实现的 C2 前置代理 - RedCaddy](https://mp.weixin.qq.com/s/usHrpgxCvGsu9vvf0SMSBQ)
 [C2 隐藏 \_ 让你的流量更隐蔽（二）](https://mp.weixin.qq.com/s/6WJUTKPgg9OgtKVkUbPucg)
-
 ## 使用帮助
 
 [提取密码 | 对湾湾某网站的一次渗透测试](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484330&idx=1&sn=fa5f3c3de8737f3ddbc5622917b2c852)
+
+## 上线/转发/代理
+[Cobalt Strike : 转发重定向 上线](https://mp.weixin.qq.com/s/9ChG_ywmZkOXAGToSMIvZg)
 
 ## plugin
 
