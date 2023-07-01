@@ -145,7 +145,7 @@ result.txt | 搜验证码
 [API | swagger exp](rw_API_swagger-exp-master.zip)
 [API | webservice](https://mp.weixin.qq.com/s/e9x206e8EGBMPn_VGjrM1Q)
 [API | 越权漏洞检测系统](https://mp.weixin.qq.com/s/iwUB4ewDf8iZUyro9zapzw)
-
+[API | 打造 API 接口的堡垒](https://mp.weixin.qq.com/s/sIi49LYgZuTAjyrfv_oysg)
 ---
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
