@@ -4,10 +4,15 @@
 
 ## 题目提示
 
-| param       | desc         |     |
-| ----------- | ------------ | --- |
-| ?file/?page | LFI 文件包含 |     |
-| ?url=       | SSRF         |     |
+[弱类型](./web_php_001_weaktype)
+
+| param        | desc                           |     |
+| ------------ | ------------------------------ | --- |
+| ?file/?page  | LFI 文件包含                   |     |
+| ?url=        | SSRF                           |     |
+| 输入框       | ssti/xss/xxe                   |
+| 尝试协议     | [protocol](./web_php_protocol) |
+| 检查 Cookies |
 
 ## 非预期想法
 

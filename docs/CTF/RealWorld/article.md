@@ -208,14 +208,11 @@ _ [冰蝎4.0流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlK
 _ [Webshell | 绕过360主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
 - [Webshell | jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
 
-
-
-
 **Video**
 
 - [rkvir 逆向工程学院](https://space.bilibili.com/447734880/video)
 
-### Webshell/魔改特征
+### Webshell/bypass流量/魔改特征
 
 [冰蝎 jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
 [冰蝎流量免杀初探](https://mp.weixin.qq.com/s/1Llqwov2vFaaDNP1mLDtZg)
@@ -223,6 +220,7 @@ _ [Webshell | 绕过360主动防御执行命令](https://mp.weixin.qq.com/s/N8l8
 [冰蝎 Java WebShell 免杀生成 -- ByPassBehinder4J​](https://mp.weixin.qq.com/s/Gy6xAYVE3AOybr3CG4HV2A)
 [冰蝎 3 和冰蝎 4AES 爆破题目](https://byxs20.github.io/posts/5092.html)
 [内网穿透 nps 的魔改](https://mp.weixin.qq.com/s/Tueykyf0P5opuL3jY7UdHw)
+[【红队】一款C2设施前置流量控制工具](https://mp.weixin.qq.com/s/2m-DojrK6kOhluE5THfAGA)
 
 ### 伪装
 

