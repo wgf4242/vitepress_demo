@@ -56,7 +56,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 * [记一次全设备通杀未授权RCE的挖掘经历](https://mp.weixin.qq.com/s/62WZmT3fWQjerjeqqRiTdw)
 * [yichen的信安知识库 物联网安全](https://www.yuque.com/hxfqg9/iot)
 * [手把手玩转路由器漏洞挖掘系列 - 基础入门](https://mp.weixin.qq.com/s/-yUPKhjTpYEbzlVNRBo9XQ)
-
+* [模拟运行](./index#模拟运行)
 ## SRC 
 [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)
 [如何快速挖掘设备逻辑洞](https://mp.weixin.qq.com/s/jZd5BpAmwFZOZuNjc4-oqA)

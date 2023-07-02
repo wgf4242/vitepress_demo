@@ -350,7 +350,8 @@ https://github.com/acheong08/ChatGPT
 * [手动展开PE文件 | 二进制安全](https://mp.weixin.qq.com/s/VcKtwTn4fh8nyPVhYxkrmQ)
 
 ## 模拟运行
-* [Qiling框架模拟运行固件配合IDA动态调试](https://mp.weixin.qq.com/s/PsWTcazrgj0Lv-6ZNNkx3g)
+* [IoT | Qiling框架模拟运行固件配合IDA动态调试](https://mp.weixin.qq.com/s/PsWTcazrgj0Lv-6ZNNkx3g)
+* [IoT | Qiling框架分析实战：从 QilingLab 详解到 Qiling 源码分析](https://mp.weixin.qq.com/s/v9KRkhjnZ-f-PY9xjQjj5g)
 ## 地址计算
 so 中  Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地址 -800为base
 看 ida中exports 计算其他地址addr,  target_addr = base.add(addr)

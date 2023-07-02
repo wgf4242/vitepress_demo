@@ -124,7 +124,7 @@ copy /b 1.jpg+2.jpg 3 /y
 | 空格       | /\*\*/ 或 +                                | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or 后面可以跟上偶数个!、~可以替代空格 <br>and/or 前的空格可用省略. <br>'后空格可省略 |
 | select     | [handler](#handler)/updatexml/extractvalue |                                                                                                                                            |
 | 16 进制    | hex 自动转字符                             | 0x61 即 a                                                                                                                                  |
-| 1000       | `992\|8`<br>--1000<br>~~1000               |
+| 1000       | 0x38e<br>`992\|8`<br>--1000<br>~~1000<br>200^800               |
 | **Mysql8** |                                            |
 | select     | [table](#sqltable)                         | table myuser == select \* from myuser                                                                                                      |
 
@@ -159,11 +159,12 @@ handler yunensec close;
 
 ## sql/table
 
-[for mysql8](https://mp.weixin.qq.com/s/U65QGzQoR1EY0QFaTy5--g)
+[for mysql8](https://mp.weixin.qq.com/s/U65QGzQoR1EY0QFaTy5--g) -- Web_sql_一篇文章弄懂mysql8新特性注入.html
 
 1.TABLE 始终显示表的所有列 2.TABLE 不允许对行进行任意过滤，即 TABLE 不支持任何 WHERE 子句
 
 ```sh
 table user order by 2
 table user limit 2
+table user limit 0,1
 ```

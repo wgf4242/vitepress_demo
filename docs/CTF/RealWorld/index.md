@@ -14,6 +14,7 @@ Web漏洞分析
 * 黑盒测试该网站漏洞(手工、工具自动扫描)
 
 ## 渗透流程
+
 1. awd/index.md 红队
 1. 信息收集 > fscan/cscan/kscan(免杀), NMAP > AWVS > Appscan > Burpsuite > x-ray
     - scan - rw_scan_HCL.AppScan.Standard.v10.2.1.zip

@@ -1,4 +1,8 @@
 
+# SSTI
+
+![Alt text](../../public/imgs/ssti.png)
+
 ## GDOUCTF 2023 ez_ze
 [SSTI绕过 | [GDOUCTF 2023]<ez_ze>](https://www.nssctf.cn/problem/3745) [参考文章](https://zhuanlan.zhihu.com/p/619441473)
 
