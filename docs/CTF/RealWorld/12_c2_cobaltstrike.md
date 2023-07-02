@@ -212,6 +212,7 @@ HTTP Proxy: http://192.168.111.131:822
 ```
 
 #### 转发上线
+[Link](#上线转发代理)
 
 ```sh
 socat -d -d -lh -v TCP4-LISTEN:80,fork TCP4:192.168.1.215:80
@@ -497,6 +498,8 @@ rportfwd 本机端口 目标ip 目标端口
 ```
 
 ### Pivot Listeners
+
+[Pivot Listeners 当前域控与 CS 服务端不在同一网段内](https://mp.weixin.qq.com/s/KPZYKQNo8stlvr-USvR4kw)
 
 被控主机(POWERDC) 新建 - Pivot Listener
 
@@ -850,7 +853,8 @@ sub dialog_test {
 [安全工具开发-跨平台植入型框架 Sliver 生成 C2](https://www.bilibili.com/video/BV1xL411Q7hH/)
 
 # Article
-[CobaltStrike后渗透进阶篇](https://www.freebuf.com/articles/network/370390.html) [Link2](https://mp.weixin.qq.com/s/KPZYKQNo8stlvr-USvR4kw)
+
+[CobaltStrike 后渗透进阶篇](https://www.freebuf.com/articles/network/370390.html) [Link2](https://mp.weixin.qq.com/s/KPZYKQNo8stlvr-USvR4kw)
 
 [全网最全的 Cobalt Strike 使用教程系列-基础篇](https://mp.weixin.qq.com/s/4KvmV9cdyzPsYHtBlEKGFQ)
 [干货|两个超实用的上线 Cobaltstrike 技巧！](https://mp.weixin.qq.com/s/jGwrVr0iotelS4KivC8pwA)
@@ -859,13 +863,17 @@ sub dialog_test {
 [done 4/9 | Cobalt Strike Red Team Ops - Training Cours](https://www.youtube.com/playlist?list=PLcjpg2ik7YT6H5l9Jx-1ooRYpfvznAInJ)
 [干货分享 | 魔改 cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
 [基于 Caddy 实现的 C2 前置代理 - RedCaddy](https://mp.weixin.qq.com/s/usHrpgxCvGsu9vvf0SMSBQ)
+[C2 隐藏 \_ 让你的流量更隐蔽（一）](https://mp.weixin.qq.com/s/_TGeK41W56IfN8clmvsRtQ)
 [C2 隐藏 \_ 让你的流量更隐蔽（二）](https://mp.weixin.qq.com/s/6WJUTKPgg9OgtKVkUbPucg)
+
 ## 使用帮助
 
 [提取密码 | 对湾湾某网站的一次渗透测试](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484330&idx=1&sn=fa5f3c3de8737f3ddbc5622917b2c852)
 
 ## 上线/转发/代理
-[Cobalt Strike : 转发重定向 上线](https://mp.weixin.qq.com/s/9ChG_ywmZkOXAGToSMIvZg)
+
+- [Cobalt Strike : 转发重定向 上线](https://mp.weixin.qq.com/s/9ChG_ywmZkOXAGToSMIvZg)
+- [Pivot Listeners 当前域控与 CS 服务端不在同一网段内](https://mp.weixin.qq.com/s/KPZYKQNo8stlvr-USvR4kw)
 
 ## plugin
 

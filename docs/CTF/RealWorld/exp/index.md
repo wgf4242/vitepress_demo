@@ -226,7 +226,6 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [微信小程序渗透——反编译小程序](https://mp.weixin.qq.com/s/C5R_xX_69xiB3n5qS9TZJA)
 [企业微信 | appid 和 secret 泄露调用 api 服务](https://mp.weixin.qq.com/s/DNzupuzgubWBo-emjPH1Jg)
 [微信小程序文件下载两种方式](https://mp.weixin.qq.com/s/FhGJsX37c5HlFa-Gq6VA_w)
-[VX小程序逆向分析](https://mp.weixin.qq.com/s/7yZzf4V-2fcn-jRwm4uO-w)
 
 ### Exploit/CVE/实战漏洞/IOT
 

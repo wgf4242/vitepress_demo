@@ -14,6 +14,13 @@
 | 尝试协议     | [protocol](./web_php_protocol) |
 | 检查 Cookies |
 
+fuzz
+
+| url                                         | payload       |
+| ------------------------------------------- | ------------- |
+| `?name={{config}}`                          |               |
+| `?file=../../../../../../prox/self/environ` | 看 secret_key |
+
 ## 非预期想法
 
 - 读取 ~/.bash_history 历史文件
