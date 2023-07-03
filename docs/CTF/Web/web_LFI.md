@@ -1,3 +1,5 @@
+[实战 | 文件上传漏洞之最全代码检测绕过总结](https://mp.weixin.qq.com/s/6ArBgNYpsQH7WkaaJY6GfQ)
+
 # LFI/文件包含
 
 | Name                                                   | payload                                                |     |

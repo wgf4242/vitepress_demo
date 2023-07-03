@@ -216,6 +216,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 
 ### Exploit/CVE/实战漏洞/微信小程序
 
+[安卓渗透测试工具集 -- h4tools](https://mp.weixin.qq.com/s/z0pb-Z4pzk-eX5nXsrF8vg)
 [渗透实战|记一次微信小程序渗透测试](https://mp.weixin.qq.com/s/GQYqbKDiY_OfE4kdVgCMig)
 [记一次微信小程序渗透实战记录](https://mp.weixin.qq.com/s/LUDuOgBesn8xKGonE6R8tw)
 [针对微信小程序的渗透测试(附实战)](https://mp.weixin.qq.com/s/9XN2cbGZBtp-ZxyJTHkdKA)
@@ -226,6 +227,10 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [微信小程序渗透——反编译小程序](https://mp.weixin.qq.com/s/C5R_xX_69xiB3n5qS9TZJA)
 [企业微信 | appid 和 secret 泄露调用 api 服务](https://mp.weixin.qq.com/s/DNzupuzgubWBo-emjPH1Jg)
 [微信小程序文件下载两种方式](https://mp.weixin.qq.com/s/FhGJsX37c5HlFa-Gq6VA_w)
+[安全攻防 | 安卓APP/小程序渗透测试技巧总结](https://mp.weixin.qq.com/s/RJzT_shMGdhacpKKgN9pYA)
+[小程序测试流程](https://mp.weixin.qq.com/s/NVN73i8t0Ozy7bW8QimlNg)
+[小程序渗透工具 -- wxapkgUnpack](https://mp.weixin.qq.com/s/iGInWwvvnv6aC1cHoI_Z2g)
+[小程序绕过sign签名思路](https://mp.weixin.qq.com/s/LvTiFZGMuTaTq5duBoBcyA)
 
 ### Exploit/CVE/实战漏洞/IOT
 

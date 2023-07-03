@@ -152,10 +152,6 @@ result.txt | 搜验证码
 ---
 [支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 
-### Android
-
-[安卓渗透测试工具集 -- h4tools](https://mp.weixin.qq.com/s/z0pb-Z4pzk-eX5nXsrF8vg)
-[安全攻防 | 安卓APP/小程序渗透测试技巧总结](https://mp.weixin.qq.com/s/RJzT_shMGdhacpKKgN9pYA)
 
 ## 木马
 

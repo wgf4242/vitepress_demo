@@ -38,6 +38,7 @@ sudo make install
 |             | p $esp                               | 输出 esp, p/x 32 -- 0x20                                                |
 |             | tel <addr>                           | 查看地址值                                                              |
 |             | libc                                 | 查看 libc 地址                                                          |
+|             | search "AAAA"                        | 直接搜索 "AAAA" 的地址, 查找栈/内存位置                                 |
 | -- debug -- |                                      |
 |             | alsr off                             | 关闭 alsr                                                               |
 | -- heap --  |                                      | 查看堆,配合 x/addr 看位置                                               |
@@ -386,4 +387,5 @@ python exec(open('myscript.py').read())
 ```
 
 ## Article
-[玩转C++调试之Python的GDB库增强](https://mp.weixin.qq.com/s/B8YLq-YSNw08u6yKoBcblg)
+
+[玩转 C++调试之 Python 的 GDB 库增强](https://mp.weixin.qq.com/s/B8YLq-YSNw08u6yKoBcblg)

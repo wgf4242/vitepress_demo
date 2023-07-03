@@ -139,3 +139,4 @@ vi /boot/grub/grub.cfg
 
 [浏览器数据导出解密工具 -- HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
 [安全运维 | RDP登录日志取证和清除](https://mp.weixin.qq.com/s/7504YsCEEfiM8uXQVCGRqA)
+[『CTF』常见的 Windows 硬盘取证](https://mp.weixin.qq.com/s/iIf44oW_dn5RRFSq5mMqlA)
