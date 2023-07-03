@@ -351,6 +351,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | President |红队打靶](https://mp.weixin.qq.com/s/0y3FO_tUC1F4onaQfeBUHA)
 - [VulnHub | darkhole_2 |红队打靶](https://mp.weixin.qq.com/s/YGoGPkZ5Vo2eoCcSLwHWqw)
 - [VulnHub | school | 红队打靶](https://mp.weixin.qq.com/s/JOHm3hUMMkNHWIwlkydtDg)
+- [VulnHub | Tre |红队打靶](https://mp.weixin.qq.com/s/I9BQGEW9GIb_ApUvAhjKPA)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)
