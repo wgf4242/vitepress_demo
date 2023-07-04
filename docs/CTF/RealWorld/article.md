@@ -165,6 +165,7 @@ result.txt | 搜验证码
 
 [安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
 [木马 | ​ 将安卓远控 Apk 附加进普通的 App | a520ApkHook-1.0-jar-with-dependencies.jar](https://mp.weixin.qq.com/s/m7dz_C6RRcC-Ok5ct-Phjw)
+[推荐｜APK自动化漏洞检测工具](https://mp.weixin.qq.com/s/AgzfK0zIXG2tbgK_MrinJg)
 
 ## bypass
 

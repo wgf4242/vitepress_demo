@@ -38,18 +38,20 @@ sudo make install
 |             | p $esp                               | 输出 esp, p/x 32 -- 0x20                                                |
 |             | tel <addr>                           | 查看地址值                                                              |
 |             | libc                                 | 查看 libc 地址                                                          |
+|             | got                                  | 查看 got 表                                                             |
 |             | search "AAAA"                        | 直接搜索 "AAAA" 的地址, 查找栈/内存位置                                 |
 | -- debug -- |                                      |
 |             | alsr off                             | 关闭 alsr                                                               |
 | -- heap --  |                                      | 查看堆,配合 x/addr 看位置                                               |
-|             | parseheap                            |
+|             | heap                                 |
 |             | bins                                 | 查看 bins                                                               |
+|             | heapinfo                             |                                                                         |
+|             | parseheap                            |
 |             | chunkinfo <addr>                     | 查看 chunk                                                              |
 |             | hex 0x8e1000 2300                    | 查看 hex                                                                |
 |             | p &\_\_malloc_hook                   |
 |             | magic                                | 查看 malloc_hook system 等地址                                          |
 |             | fakefast <mallochook 地址>           |
-|             | chunkinfo 0x7fxxxx                   |
 |             | tel \*(0x7ffff588+0x30 + 4) = 0 赋值 |
 
 ## x/examine/查看
