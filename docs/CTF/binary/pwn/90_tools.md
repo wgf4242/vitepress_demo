@@ -25,7 +25,8 @@ patchelf --replace-needed libc.so.6 libc路径 文件名
 # 其他
 patchelf --print-soname iscc_reverse
 
-
+patchelf --set-interpreter /home/kali/archive/glibc-all-in-one-master/libs/2.27-3ubuntu1_amd64/ld-linux-x86-64.so.2 ./ACTF_2019_message
+patchelf --replace-needed libc.so.6 ./libc-2.27.so ./ACTF_2019_messages
 
 patchelf --set-interpreter /usr/local/glibc-2.34/build/elf/ld.so iscc_reverse
 patchelf --replace-needed libc.so.6 /usr/local/glibc-2.34/build/libc.so iscc_reverse
