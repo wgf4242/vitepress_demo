@@ -253,6 +253,7 @@ frida -p 0 --runtime=v8 --debug -UF -l a.js
 Chrome中F12, 点击绿色nodejs, 选中端口, 进入可下断点了。
 Webstorm 新建调试即可
 
+
 // Thread.sleep(3)
 
 ## api
@@ -272,6 +273,7 @@ https://www.anquanke.com/post/id/195215
 [初识Frida--Android逆向之Java层hook (二)](https://bbs.pediy.com/thread-227233.htm)
 [【实战篇】Frida-objection 基础使用获取FLAG ](https://bbs.pediy.com/thread-273733.htm)
 [某汽车社区App 签名和加解密分析 (二) : Frida Dump so](https://blog.51cto.com/u_15527932/5205322)
+[ART环境下dex加载流程分析及frida dump dex方案](https://mp.weixin.qq.com/s/WI3WYR_ABxorBoNACpju3A)
 
 [安卓协议逆向之frida hook百例](https://www.52pojie.cn/thread-1711668-1-1.html) 
 [安卓协议逆向之frida hook百例二](https://www.52pojie.cn/thread-1712752-1-1.html) 

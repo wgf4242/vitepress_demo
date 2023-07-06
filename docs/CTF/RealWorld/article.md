@@ -43,6 +43,7 @@
 [todesk 企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
 [todesk 记一次渗透测试遇到远程控制软件的深入利用](https://mp.weixin.qq.com/s/cjNwVbKjTUPgmIUAeq4PsA) todesk
 [todesk|向日葵|anydesk|gohttp| 内网渗透｜内网远程控制总结](https://mp.weixin.qq.com/s/5Z5y-YvfVYIcx8qIY60Ugw)
+[rustdesk | 实战 | 无视杀软使用远控工具进行横向移动Tips](https://mp.weixin.qq.com/s/Tnt3VjsAPb5LP5QVoPyizA)
 
 [CS 权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
 
@@ -73,7 +74,7 @@ result.txt | 搜验证码
 
 ## [Exploit/CVE/实战漏洞](./exp_exploit.md)
 
-## 钓鱼
+## 钓鱼/phishing
 
 [公共 WiFi 钓鱼 | wifipumpkin3 |全局 DoH+纯 HTTPS 网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
 [实战 | 记一次 Word 文档网络钓鱼以及绕过火绒，电脑管家和 Windows Defender](https://mp.weixin.qq.com/s/be8fDEYJTy1Yr0jFy6j7YA)
@@ -83,6 +84,7 @@ result.txt | 搜验证码
 [海莲花 APT 针对中国大陆的邮件钓鱼技战术手法总结](https://mp.weixin.qq.com/s/jz3lZtROK4piLdkpzPcJoA)
 [『红蓝对抗』EwoMail 结合 Gophish 的钓鱼邮件姿势](https://mp.weixin.qq.com/s/PyECTLG_LyzSVSTkQkhDWA)
 [实战 | 记一次企业钓鱼演练](https://mp.weixin.qq.com/s/5QIpZYwrido3VL9JMYPmqw)
+[实战 | 记一次企业钓鱼演练](https://mp.weixin.qq.com/s/alBizlUYBZWYstE2dlnNZQ)
 
 - 蓝队
   [钓鱼邮件攻击分析](https://mp.weixin.qq.com/s/F_eM1jm6CYnadCiv6oh0ng)
@@ -98,6 +100,10 @@ result.txt | 搜验证码
 ## Shellcode
 
 [使用 C++的 shellcode 注入技术（附工具）](https://mp.weixin.qq.com/s/t6MsLHzMKEFPm8aH-gT8sg)
+[极安御信网络安全系列课程-红队安全-shellcode加载器原理（go&c#&py）](https://www.bilibili.com/video/BV1gX4y1i7V3/) 
+[极安御信网络安全系列课程-红队安全-shellcode加载器原理（Heap&APC&Tls&ThreadContext&VEH）](https://www.bilibili.com/video/BV13P411v7C8/) 
+[免杀-分享利用C++多种方式执行Shellcode](https://www.bilibili.com/video/BV1fW4y1Z7NW/)
+[【红队攻防】C++ VEH实现shellcode加载器](https://www.bilibili.com/video/BV1jk4y1K7d4/)
 
 ## 提权
 
@@ -115,6 +121,8 @@ result.txt | 搜验证码
 [渗透测试之突破口 | 常见打点及漏洞利用](https://mp.weixin.qq.com/s/190z9ljqriHLLexEMRkJ5w)
 [任意账号密码重置的 6 种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
+[实战中常见的逻辑漏洞 | 水平越权](https://mp.weixin.qq.com/s/eTMvmLhoGCzsqwjRxEmdRA)
+[记录一次JWT的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
 ---
 [几次护网小结之红队打点及小技巧](https://mp.weixin.qq.com/s/dmpgGTo3qd2qbXrNcFeafw)
 ---
@@ -274,6 +282,9 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [Metasploit -- 攻击 Metasploitable2 靶机](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484255&idx=3&sn=3280a830c3da7243eccd086bc466a7b2)
 - [基于 docker 的网络安全靶场搭建](https://mp.weixin.qq.com/s/RJH7mHbbygENZTQzYU4CFg)
 - [JAVA 靶机和漏洞练习平台推荐](https://mp.weixin.qq.com/s/NJUNUxrMpvWKT-f_yQM_YA)
+- [渗透测试之靶场搭建&&漏洞挖掘与技巧-二一老师](https://www.bilibili.com/video/BV1bX4y1H7ZG/)
+
+
 
 ---
 
@@ -350,6 +361,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | school | 红队打靶](https://mp.weixin.qq.com/s/JOHm3hUMMkNHWIwlkydtDg)
 - [VulnHub | Tre |红队打靶](https://mp.weixin.qq.com/s/I9BQGEW9GIb_ApUvAhjKPA)
 - [VulnHub | Funbox2 |红队打靶](https://mp.weixin.qq.com/s/ZK41zuuFBvcfPpOptaCQ8g)
+- [VulnHub | Dawn | 红队打靶](https://mp.weixin.qq.com/s/R018SztPEFe0f94Uo6sOrA)
+- [VulnHub | Vegeta | 红队打靶](https://mp.weixin.qq.com/s/BRhHRzYb7lLQpVKNNe9aig)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

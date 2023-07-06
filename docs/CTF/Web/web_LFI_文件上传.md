@@ -14,3 +14,6 @@
 ```sh
 /download?file=../../../app/__pycache__/part.cpython-311.pyc
 ```
+
+# 文件上传
+- 压缩包软链接，传到/tmp/data下, ，这个软链接指向flag，即可获取flag

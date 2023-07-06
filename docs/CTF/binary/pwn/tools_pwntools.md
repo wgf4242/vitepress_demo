@@ -1,11 +1,13 @@
 pwndbg
 
-
 ## pwntools
 
 [pwntools 命令行工具](https://zero-mk.github.io/2019/01/01/pwntools-Command%20Line%20Tools/)
 [Link](https://www.jianshu.com/p/6e528b33e37a)
 [Link](https://docs.pwntools.com/en/stable/timeout.html)
+
+- [ancypwn 环境切换](#ancypwn) [网盘heap3_double-free.rar pwntools heap功能不正常 查看 pwn_2023_07_04_day2讲义.pdf](#ancypwn)
+
 
 ```py
 # timeout
@@ -137,13 +139,28 @@ kali@kali:/mnt/hgfs/vmware$ ldd guess_num
         /lib64/ld-linux-x86-64.so.2 (0x00007faeab8c1000)
 ```
 
+## ancypwn
+
+https://github.com/Escapingbug/ancypwn
+
+```sh
+ancypwn run --priv true --tag 16.04
+ancypwn end
+```
+
+没有切debug导致pwntools heap功能不正常
+
+```sh
+sudo rm -rf /usr/lib/debug
+sudo cp -r /home/hacker/glibc-all-in-one-master/libs/2.23-0ubuntu11.3_amd64/.debug/ /usr/lib/debug
+```
 # FAQ
 
 1. pwndbg Debugger always exiting
-[Link](https://github.com/Gallopsled/pwntools/issues/1677) [Solution](https://github.com/Gallopsled/pwntools/commit/7ececc6bce24ccf3fe9c19c12b225e5e85d56afc)
+   [Link](https://github.com/Gallopsled/pwntools/issues/1677) [Solution](https://github.com/Gallopsled/pwntools/commit/7ececc6bce24ccf3fe9c19c12b225e5e85d56afc)
 
 # Article
 
-[[分享] pwndbg+tmux真乃天作之合 ](https://bbs.kanxue.com/thread-276203.htm)
+[[分享] pwndbg+tmux 真乃天作之合 ](https://bbs.kanxue.com/thread-276203.htm)
 [baidu:IDA pwntools](https://www.baidu.com/s?wd=pwntools+ida+%E8%B0%83%E8%AF%95)
-[IDA配合pwntool调试环境](https://zhuanlan.zhihu.com/p/347107006)
+[IDA 配合 pwntool 调试环境](https://zhuanlan.zhihu.com/p/347107006)

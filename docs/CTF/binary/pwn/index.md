@@ -30,6 +30,10 @@
 [Glibc 高版本堆利用方法总结](https://mp.weixin.qq.com/s/NE0ujoNZUjlY_MALM1nObw)
 [『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
 
+[pwn -- 沙盒机制详解](https://blog.csdn.net/A951860555/article/details/116738676)
+[VM Pwn学习](https://www.anquanke.com/post/id/208450)
+[针对top chunk的一些特殊攻击手法](https://mp.weixin.qq.com/s/foraOTokROtCBsElgL2Y1Q)
+
 ## Tutorial
 
 [HITCON-Training](https://github.com/scwuaptx/HITCON-Training/tree/master/LAB)

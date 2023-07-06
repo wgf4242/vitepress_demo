@@ -208,6 +208,7 @@ rw_exp_joomla_CVE-2023-23752
 rw_exp_红帆OA_iOffice-udfmr-sqlvuln-master.zip
 rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [H3C | 用户网管登录系统jQuery-1.7.2存在任意文件读取](https://mp.weixin.qq.com/s/PnFzkwH4NZ0FhkKQ73l1IQ)
+[Smartbi 远程命令执行漏洞](https://mp.weixin.qq.com/s/TtwRRQwuhYGVHheJPb1Xag)
 
 [金蝶云星空RCE漏洞复现](https://mp.weixin.qq.com/s/d2Dt2l9qvSUTN5GT76xaZA)
 ### Exploit/CVE/实战漏洞/Windows
