@@ -10,6 +10,11 @@
 - [什么是去除花指令的最高境界](https://mp.weixin.qq.com/s/yXt_BfTRRpqBGCI3MIriOA)
 - [看开水团与 ARM 花指令构造与静态 Patch](https://mp.weixin.qq.com/s/TmTMRyDe_h4MjJxIVxn9Wg)
 
+编写花指令
+---
+[[CMake] 反ida内联汇编花指令](https://github.com/thinkerMid/anti_IDA)
+[Anti-Disassembly on ARM64](https://iosre.com/t/anti-disassembly-on-arm64/21006/1) [Link2](https://github.com/AppleReer/Anti-Disassembly-On-Arm64)
+
 ## IsDebuggerPresent()
 
 当进程处于调试状态时, PEB.BeingDebugged 成员值被设为 1,
@@ -275,3 +280,7 @@ int main() {
 ```
 
 ![](https://s2.loli.net/2022/09/17/iCH1lNo8BhDMqyv.jpg)
+
+## 示例
+### 绿城杯2021 easy_re.exe
+0040105A 处按U转机器码即可

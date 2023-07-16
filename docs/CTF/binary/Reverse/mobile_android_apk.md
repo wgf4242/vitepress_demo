@@ -3,6 +3,7 @@
 - [Android NDK 开发](https://gift1a.github.io/2022/09/06/Android-Learning/#Android-NDK%E5%BC%80%E5%8F%91)
 - [Android loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/zj5isP6dGu-mTNpJN1W3BQ)
 - [Android Studio 调试 Smali | 给大家分享一下这几年学习 Android 逆向遇到的环境问题吧，希望大家不要在这上面浪费时间](https://bbs.pediy.com/thread-275251.htm)
+- [移动应用安全与风控——汇编基础](https://mp.weixin.qq.com/s/tU-Aeh-IoVf_sIofD7-4dA)
 
 # APK
 

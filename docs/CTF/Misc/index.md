@@ -105,6 +105,7 @@ arr[$(cat /flag)]
 | -------- | ------ | ------ | ----------------------- | ------------------------------------------ |
 | png      | √      |        | cloacked-pixel          | py2 lsb.py extract mmm.png out.txt lovekfc |
 | png      | √      | √      | stegpy                  | stegpy <file> -p                           |
+| png      |        | √      | zsteg                   | zsteg -a x.png                             |
 | jpg      |        |        | steghide                | steghide extract -sf test.jpg -p 123456    |
 |          |        |        | stegseek 爆破 steghide  | stegseek cvr.jpg wordlist.txt              |
 | jpg      | √      |        | outguess                | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
@@ -129,7 +130,6 @@ arr[$(cat /flag)]
 - gif
   - ScreenToGif 查看时间帧, 以及差
 - 有图像, Google/baidu 搜图 可能是提示
-- zsteg -a x.png
 - 关键字:猫/猫脸变换/arnold 置乱
 - 做 fourier 变换。
 - pixel 像素题
