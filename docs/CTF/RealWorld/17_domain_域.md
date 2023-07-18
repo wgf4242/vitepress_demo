@@ -460,7 +460,8 @@ rw_domain_域渗透 - 域控使用组策略下发文件并执行.rar
 [域内定位个人 PC 的三种方式](https://mp.weixin.qq.com/s/uXTo2AbmvMeNesR8rAjImw)
 [内网域渗透系列教程](https://www.bilibili.com/video/BV1xb4y1y7ju/)
 [内网域渗透之常用提权](https://www.cnblogs.com/first-kiss/articles/16213182.html)
-
+[横向移动-域控提权](https://mp.weixin.qq.com/s/_g0WiGu045GCqhN3m2bsxA)
+[以攻促防丨霄壤实验室安全研究员亲传「如何自己伪造kerberos票据」](https://mp.weixin.qq.com/s/_zQZ3uRfAHB_6_ww5gT8Ew)
 
 ## Todo
 

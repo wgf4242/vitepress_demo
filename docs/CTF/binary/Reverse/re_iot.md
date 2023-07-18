@@ -66,6 +66,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [如何快速挖掘设备逻辑洞](https://mp.weixin.qq.com/s/jZd5BpAmwFZOZuNjc4-oqA)
 - [如何进行物联网渗透测试？](https://mp.weixin.qq.com/s/-p9-9ia_4aqXwL9ELW-BYg)
 - [路由器漏洞挖掘系列之未授权访问漏洞及常见绕过技巧](https://mp.weixin.qq.com/s/dQ9GL2wIME35uxAes3LzEg)
+- [利用MQTT协议缺陷攻击内网物联设备](https://mp.weixin.qq.com/s/EtpaAw-fq4XJGyiojUVdiw)
 
 ## Coding
 

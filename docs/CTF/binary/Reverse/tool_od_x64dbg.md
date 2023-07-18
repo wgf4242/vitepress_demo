@@ -1,14 +1,14 @@
 ## x64dbg 快捷键
 
-| cmd                 | Desc                           |
-| ------------------- | ------------------------------ |
-| g                   | 图表                           |
-| h                   | 点击变量，可以高亮。           |
+| cmd                 | Desc                     |
+| ------------------- | ------------------------ |
+| g                   | 图表                     |
+| h                   | 点击变量，可以高亮。     |
 | bp InternetOpenUrlA | 加载后才能用函数名下断点 |
-| bph esp             | 硬件断点                       |
-| bphc                | 删除硬件断点                   |
-| d <addr>            | 跳转                           |
-| d <function_name>   | d <fn+5> 跳转到 fn+5 处        |
+| bph esp             | 硬件断点                 |
+| bphc                | 删除硬件断点             |
+| d <addr>            | 跳转                     |
+| d <function_name>   | d <fn+5> 跳转到 fn+5 处  |
 
 ## IDA 地址转 OD 地址
 
@@ -47,3 +47,7 @@ Ctrl+9 Nop
 
 wininet.dll.InternetOpenUrlA
 wininet.dll.InternetConnectA
+
+# Article
+
+[通过 x64dbg 脚本功能修复 IAT 表](https://mp.weixin.qq.com/s/ZjxRNJr22H2val27mCeoUg)

@@ -7,7 +7,10 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 
 - 1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
   - Option - General - Strings - Default8bit - cp936 , 一定要在 Shift+F12 之前这样做。否则不要保存数据，重来
+	- 方式2 选中地址，按alt+a，设置c style即可
   - Shift+F12, 右击 Rebuild
+- General - Instruction indentation : 20
+- 关闭自动反汇编: 工具栏 绿色按钮切换/Analysis, 才能方便手动改机器码去花指令
 
 ## 入门
 
@@ -111,6 +114,7 @@ Ctrl-Shift-D, 点击 start, 再 F5
 ### keypatch//assemble
 
 16 进制 keypatch 要用 0x33, 不能 33h
+ida自带 assemble 要用 33h,  不能 0x33
 
 ## 使用技巧
 

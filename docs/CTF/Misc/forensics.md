@@ -16,6 +16,8 @@
    - 4.浏览历史
    - 4.进程信息
    - 5.dump内存 如dump下notepad进程的内存再foremost可能得压缩包
+3. 浏览器历史取证
+   - 带 paste 地址优先查看.
 4. [profile找不到详下 ](#profile找不到)
 5. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL查看器
 
@@ -105,6 +107,15 @@ python3 vol.py -f 1.mem banners.Banners
 
 ```bash
 sudo apt install -y linux-headers-5.4.0-84-generic linux-image-5.4.0-84-generic dwarfdump build-essential git zip
+# 切换内核 https://blog.csdn.net/baidu_37503452/article/details/127606656  ,  GRUB_DEFAULT="第一级菜单>第二级菜单”
+## 1.1 查看menu
+cat /boot/grub/grub.cfg | grep menu | cut -c -80
+## 1.2 修改 GRUB_DEFAULT, "一级>二级" 比如 "Advanced options for Ubuntu>Ubuntu, with Linux 5.4.0-42-generic"
+vi /etc/default/grub
+sudo update-grub
+
+# 重启
+uname -r # 检查
 
 git clone https://github.com/volatilityfoundation/volatility
 cd volatility/tools/linux
@@ -113,8 +124,8 @@ sudo zip $(lsb_release -i -s)_$(uname -r)_profile.zip module.dwarf /boot/System.
 ```
 
 多出的 zip 文件就是 profile，把它放在 volatility/volatility/plugins/overlays/linux/ 目录下即可
-/usr/lib/python2.7/dist-packages/volatility/plugins/overlays/linux/
 /usr/local/lib/python2.7/dist-packages/volatility-2.6.1-py2.7.egg/volatility/plugins/overlays/linux/
+/usr/lib/python2.7/dist-packages/volatility/plugins/overlays/linux/
 
 ```sh
 python vol.py --info | grep Linux  # 查看是否已经制作了目标系统的profile

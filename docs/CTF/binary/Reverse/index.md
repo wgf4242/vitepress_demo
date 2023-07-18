@@ -22,12 +22,13 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 1. 见 [程序执行顺序](#程序执行顺序), 有没 SEH
 1. ida 打不开/ghidra/cutter
 1. apk: jadx, jeb 都打开 jeb 能解些 brainfucks
-1. 输入 fuzz
+1. 输入 fuzz 模糊测试
    - L1. 输入 1 ascii: 49, -> out1
    - L1. 输入 b ascii: 98, -> out2
    - L1. 对比结果 out2/out1 看看是怎么变换的
    - L2. 输入 32 个 a, 看输出是不是等量 线性变换。能否输入全部字符直接换表
 1. 输入输出变换了大端小端
+2. 调试原生文件如dll/so, 关注导出表
 
 1.简单题目 patch 调试 set EIP 到后面执行一下 2.多用调试直接过逻辑看结果。 1.搜到关键字如 0x33445566, 先 google/baidu ctf 0x33445566 4.没去符号 函数调用少 C 代码复制出来改一改爆破更快的 5.或者 asm 改成 call puts 6.已知算法未成功执行，检查有符号 还是无符号，可能有改变。 6.调试时
 

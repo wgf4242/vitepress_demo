@@ -25,6 +25,7 @@
 [内网穿透 | 常见内网穿透工具使用总结](https://mp.weixin.qq.com/s/-rG5OA-CZYjkgzMn0dSazw)
 [内网穿透 | 一文让你熟练运用内网穿透(步骤详细), reGeorge, frp,ew,msf ＋ proxychains](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247486946&idx=1&sn=e796237b0bccbc06772f4d2b3a0eb0b6)
 [内网穿透 | 内网隧道的多种应用方式](https://mp.weixin.qq.com/s/iZxmQJQrLs7XP7XlhGfHmA)
+[内网穿透学习-5-Pingtunnel+iox（ICMP 隧道）](https://mp.weixin.qq.com/s/0TP1q9FsKnMSILxL3wtBwg)
 
 工具:
 端口转发 nps,frp,ew,lcx,gost,portfwd
@@ -43,7 +44,7 @@
 [todesk 企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
 [todesk 记一次渗透测试遇到远程控制软件的深入利用](https://mp.weixin.qq.com/s/cjNwVbKjTUPgmIUAeq4PsA) todesk
 [todesk|向日葵|anydesk|gohttp| 内网渗透｜内网远程控制总结](https://mp.weixin.qq.com/s/5Z5y-YvfVYIcx8qIY60Ugw)
-[rustdesk | 实战 | 无视杀软使用远控工具进行横向移动Tips](https://mp.weixin.qq.com/s/Tnt3VjsAPb5LP5QVoPyizA)
+[rustdesk | 实战 | 无视杀软使用远控工具进行横向移动 Tips](https://mp.weixin.qq.com/s/Tnt3VjsAPb5LP5QVoPyizA)
 
 [CS 权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
 
@@ -85,6 +86,7 @@ result.txt | 搜验证码
 [『红蓝对抗』EwoMail 结合 Gophish 的钓鱼邮件姿势](https://mp.weixin.qq.com/s/PyECTLG_LyzSVSTkQkhDWA)
 [实战 | 记一次企业钓鱼演练](https://mp.weixin.qq.com/s/5QIpZYwrido3VL9JMYPmqw)
 [实战 | 记一次企业钓鱼演练](https://mp.weixin.qq.com/s/alBizlUYBZWYstE2dlnNZQ)
+[一文就学会网络钓鱼“骚”姿势](https://mp.weixin.qq.com/s/87-lf_GUWswnm33WsVb7Xg)
 
 - 蓝队
   [钓鱼邮件攻击分析](https://mp.weixin.qq.com/s/F_eM1jm6CYnadCiv6oh0ng)
@@ -99,11 +101,12 @@ result.txt | 搜验证码
 
 ## Shellcode
 
-[使用 C++的 shellcode 注入技术（附工具）](https://mp.weixin.qq.com/s/t6MsLHzMKEFPm8aH-gT8sg)
-[极安御信网络安全系列课程-红队安全-shellcode加载器原理（go&c#&py）](https://www.bilibili.com/video/BV1gX4y1i7V3/) 
-[极安御信网络安全系列课程-红队安全-shellcode加载器原理（Heap&APC&Tls&ThreadContext&VEH）](https://www.bilibili.com/video/BV13P411v7C8/) 
-[免杀-分享利用C++多种方式执行Shellcode](https://www.bilibili.com/video/BV1fW4y1Z7NW/)
-[【红队攻防】C++ VEH实现shellcode加载器](https://www.bilibili.com/video/BV1jk4y1K7d4/)
+- [使用 C++的 shellcode 注入技术（附工具）](https://mp.weixin.qq.com/s/t6MsLHzMKEFPm8aH-gT8sg)
+- [极安御信网络安全系列课程-红队安全-shellcode 加载器原理（go&c#&py）](https://www.bilibili.com/video/BV1gX4y1i7V3/)
+- [极安御信网络安全系列课程-红队安全-shellcode 加载器原理（Heap&APC&Tls&ThreadContext&VEH）](https://www.bilibili.com/video/BV13P411v7C8/)
+- [免杀-分享利用 C++多种方式执行 Shellcode](https://www.bilibili.com/video/BV1fW4y1Z7NW/)
+- [【红队攻防】C++ VEH 实现 shellcode 加载器](https://www.bilibili.com/video/BV1jk4y1K7d4/)
+- [AV-Bypass-Learning 免杀学习笔记 shellcode 免杀的常用手法](https://github.com/colind0pe/AV-Bypass-Learning)
 
 ## 提权
 
@@ -111,7 +114,9 @@ result.txt | 搜验证码
 [权限提升 | suid 提权及修复方式](https://mp.weixin.qq.com/s/QgV3mjg3OPGA5UBRRpYM0A)
 
 ## 渗透测试
-- https改http测试绕过
+
+- https 改 http 测试绕过
+
 [2021 年【Hacking 黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
 [渗透实战系列](https://mp.weixin.qq.com/s/qeeSsgRqc_J9JdML7XiaLQ)
 [干货|通过边界代理一路打到三层内网+后渗透通用手法](https://mp.weixin.qq.com/s/uDPCkbWcp-upMH3r2x1WMA)
@@ -122,10 +127,18 @@ result.txt | 搜验证码
 [任意账号密码重置的 6 种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 [实战中常见的逻辑漏洞 | 水平越权](https://mp.weixin.qq.com/s/eTMvmLhoGCzsqwjRxEmdRA)
-[记录一次JWT的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
+[记录一次 JWT 的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
+
 ---
+
+[PHP | 关于js拿shell的尝试](https://mp.weixin.qq.com/s/xwt3LGfD1aXqnIgzfQ9frw)
+
+---
+
 [几次护网小结之红队打点及小技巧](https://mp.weixin.qq.com/s/dmpgGTo3qd2qbXrNcFeafw)
+
 ---
+
 [API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
 [API | 渗透实战|两个 0day 漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API 安全 01：crAPI 漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
@@ -144,22 +157,29 @@ result.txt | 搜验证码
 [API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/w44WyWWD60B3iqobHn6BQw)
 [API | API 安全基础理论](https://mp.weixin.qq.com/s/eFxfxVcXNu2QhnnaQVO2Og)
 [API | 水平越权漏洞检测工具 -- IDOR_detect_tool](_)
-[API | SRC漏洞挖掘之未授权接口](https://mp.weixin.qq.com/s/aw1Q3XlupCOIPQ-gi01N6w)
+[API | SRC 漏洞挖掘之未授权接口](https://mp.weixin.qq.com/s/aw1Q3XlupCOIPQ-gi01N6w)
 [API | 协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
-[API |rw_API_爬网站JS文件自动fuzz api接口_jjjjjjjjjjjjjs-main.zip]()
-[API | 记一次由js突破发现的漏洞](https://mp.weixin.qq.com/s/najWvbTPj_Dk6SH2zV_ZSQ)
+[API |rw*API*爬网站 JS 文件自动 fuzz api 接口\_jjjjjjjjjjjjjs-main.zip]()
+[API | 记一次由 js 突破发现的漏洞](https://mp.weixin.qq.com/s/najWvbTPj_Dk6SH2zV_ZSQ)
 [API | webpack | packer-fuzzer](rw_API_webpack_Packer-Fuzzer-master.zip)
 [API | swagger hakc main](rw_API_swagger-hack-main.zip)
 [API | swagger exp](rw_API_swagger-exp-master.zip)
 [API | webservice](https://mp.weixin.qq.com/s/e9x206e8EGBMPn_VGjrM1Q)
 [API | 越权漏洞检测系统](https://mp.weixin.qq.com/s/iwUB4ewDf8iZUyro9zapzw)
 [API | 打造 API 接口的堡垒](https://mp.weixin.qq.com/s/sIi49LYgZuTAjyrfv_oysg)
+
 ---
+
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
+
 ---
+
 [支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 
+## Java
+
+[Javaweb 中的权限绕过](https://mp.weixin.qq.com/s/9PmJnm_bkFqkWEv603VdjA)
 
 ## 木马
 
@@ -173,7 +193,7 @@ result.txt | 搜验证码
 
 [安卓渗透神器 -- phonesploit-pro](https://mp.weixin.qq.com/s/-i_1s7ZI1WqyTuH44ucKAA)
 [木马 | ​ 将安卓远控 Apk 附加进普通的 App | a520ApkHook-1.0-jar-with-dependencies.jar](https://mp.weixin.qq.com/s/m7dz_C6RRcC-Ok5ct-Phjw)
-[推荐｜APK自动化漏洞检测工具](https://mp.weixin.qq.com/s/AgzfK0zIXG2tbgK_MrinJg)
+[推荐｜ APK 自动化漏洞检测工具](https://mp.weixin.qq.com/s/AgzfK0zIXG2tbgK_MrinJg)
 
 ## bypass
 
@@ -207,17 +227,17 @@ result.txt | 搜验证码
 - [技术 | shellcode loader 的编写](https://mp.weixin.qq.com/s/sfxmWf9nCQeAc7PRRG5eaQ)
 - [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)
 - [小技巧 | 用一条命令来隐藏反向 Shell](https://mp.weixin.qq.com/s/TKCNTovBdBd_cWRlbSlKPA)
-- [绕过AV/EDR的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
-_ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
-_ [冰蝎4.0流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
-_ [Webshell | 绕过360主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
+- [绕过 AV/EDR 的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
+  _ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
+  _ [冰蝎 4.0 流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
+  \_ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
 - [Webshell | jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
 
 **Video**
 
 - [rkvir 逆向工程学院](https://space.bilibili.com/447734880/video)
 
-### Webshell/bypass流量/魔改特征
+### Webshell/bypass 流量/魔改特征
 
 [冰蝎 jsp webshell 阿里云免杀](https://mp.weixin.qq.com/s/9aXTEmg4IpJ642hOPcTyyw)
 [冰蝎流量免杀初探](https://mp.weixin.qq.com/s/1Llqwov2vFaaDNP1mLDtZg)
@@ -225,7 +245,7 @@ _ [Webshell | 绕过360主动防御执行命令](https://mp.weixin.qq.com/s/N8l8
 [冰蝎 Java WebShell 免杀生成 -- ByPassBehinder4J​](https://mp.weixin.qq.com/s/Gy6xAYVE3AOybr3CG4HV2A)
 [冰蝎 3 和冰蝎 4AES 爆破题目](https://byxs20.github.io/posts/5092.html)
 [内网穿透 nps 的魔改](https://mp.weixin.qq.com/s/Tueykyf0P5opuL3jY7UdHw)
-[【红队】一款C2设施前置流量控制工具](https://mp.weixin.qq.com/s/2m-DojrK6kOhluE5THfAGA)
+[【红队】一款 C2 设施前置流量控制工具](https://mp.weixin.qq.com/s/2m-DojrK6kOhluE5THfAGA)
 
 ### 伪装
 
@@ -284,8 +304,6 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [JAVA 靶机和漏洞练习平台推荐](https://mp.weixin.qq.com/s/NJUNUxrMpvWKT-f_yQM_YA)
 - [渗透测试之靶场搭建&&漏洞挖掘与技巧-二一老师](https://www.bilibili.com/video/BV1bX4y1H7ZG/)
 
-
-
 ---
 
 - [云尘 cloud-pentest | 记录一次坎坷的打靶经历·四（附靶场地址-内网、域控、cms 漏洞、frp 等）](https://mp.weixin.qq.com/s/RBJPuZICoXYpkND-Yl_8aQ)
@@ -314,6 +332,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [Done | Vulnhub |1-Breach1.0（端口、cms、sql 注入、keystore,keytool,ssl 证书解密 pcap,tomcat 后台 shell、nc 反弹）, tomcat 证书问题用 burp 代理访问](https://mp.weixin.qq.com/s/iYsRfk1Bi_lOumc4L-V_4g) [1](https://www.cnblogs.com/zhuxr/p/9848230.html)
 - [Vulnhub 渗透测试实战靶场笔记](https://blog.csdn.net/qq_37113223/article/details/104668136)
 - [Vulnhub 靶机实战 lampiao【适合刚接触的新人学习】](https://mp.weixin.qq.com/s/SWLJuWpPXZvjl57Y7QFDaQ) [link](https://www.vulnhub.com/entry/lampiao-1,249/)
+- [Vulnhub | 红队打靶系列 30 篇笔记 | 完结](https://mp.weixin.qq.com/s/mcUprFm9eabOUsyHSSnrlw)
 - [Vulnhub |1-实战中如何运用 msf 攻击 CMS、find 命令提权、破解管理员密码](https://mp.weixin.qq.com/s/8rgvLbOmmjcxVZT7BoW5Og)
 - [Vulnhub |2-Billu_b0x](https://mp.weixin.qq.com/s/L0uGEvaeJ0rgnXo2tsQ7Kw) [Download](https://download.vulnhub.com/billu/Billu_b0x.zip)
 - [Vulnhub | Me-and-My-Girlfriend(vulnhub)](https://mp.weixin.qq.com/s/nhqa_qZK6ELABfwczDdTbQ)

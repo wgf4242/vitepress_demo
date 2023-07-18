@@ -7,6 +7,17 @@
 
 [gdb 调试 | pwndbg+pwndbg 联合使用](https://blog.csdn.net/weixin_43092232/article/details/105648769)
 
+
+# 常用函数API
+
+system
+
+```sh
+system, ret_addr, bin_sh
+```
+
+
+
 # Article
 
 [里面找链接](https://faradaysec.com/reverse-engineering-and-game-hacking-resources-2/)
