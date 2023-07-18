@@ -59,6 +59,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [yichen 的信安知识库 物联网安全](https://www.yuque.com/hxfqg9/iot)
 - [手把手玩转路由器漏洞挖掘系列 - 基础入门](https://mp.weixin.qq.com/s/-yUPKhjTpYEbzlVNRBo9XQ)
 - [模拟运行](./index#模拟运行)
+- [TP-Link WR740 后门漏洞复现](https://mp.weixin.qq.com/s/mcAOxhih8Yq8tZe0dAdInA)
 
 ## 渗透/SRC
 
