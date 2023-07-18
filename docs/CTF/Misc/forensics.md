@@ -130,6 +130,9 @@ vi /boot/grub/grub.cfg
 1.将profile文件放到 plugins\overlays\linux\Ubuntu_5.4.0-84-generic_profile.zip
 2.volatility.exe --plugins=plugins --info
 ```
+### Firefox取证
+
+places.sqlite, 浏览历史 `moz_places`
 
 # Article
 [PC端微信个人信息与聊天记录取证](https://mp.weixin.qq.com/s/FPcIrouEAM_2RNZhfSRgoQ)

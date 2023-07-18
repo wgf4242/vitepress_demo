@@ -218,6 +218,7 @@ https://github.com/APKLab/APKLab
 - [Android 渗透 12：安卓逆向-IDA 动态调试 so](https://mp.weixin.qq.com/s/eJVicCY7Y4VEAg8U2dS4hg)
 - [【APP 逆向百例】Frida 初体验，root 检测与加密字符串定位](https://mp.weixin.qq.com/s/WfvTA9MJh-NS86LYDVTBzg)
 - [[分享]之前大家私信我 frida 的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm)
+- [对某app的加密定位与hook](https://mp.weixin.qq.com/s/7Wh5U8eyfL0GEWzqZx6uqA)
 
 ---
 
@@ -278,6 +279,7 @@ https://github.com/APKLab/APKLab
 - [实战 | 记一次渗透中遇见的 apk 逆向 sign 解码分析](https://mp.weixin.qq.com/s/LQJfpy-bQB6lFi51O_OwPA)
 - [协议分析 | 对一个apk协议的继续分析—libsgmain反混淆与逆向](https://mp.weixin.qq.com/s/s06dvT056fqkENIYoEHZ3w)
 - [协议分析 | 【app渗透】破解apk app协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
+- [协议分析 | APP协议分析心得](https://mp.weixin.qq.com/s/5XAbGzR1se9pLmx_d8-KNQ)
 
 ## 混淆加密
 

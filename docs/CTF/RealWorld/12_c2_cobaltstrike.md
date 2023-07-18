@@ -865,6 +865,7 @@ sub dialog_test {
 [基于 Caddy 实现的 C2 前置代理 - RedCaddy](https://mp.weixin.qq.com/s/usHrpgxCvGsu9vvf0SMSBQ)
 [C2 隐藏 \_ 让你的流量更隐蔽（一）](https://mp.weixin.qq.com/s/_TGeK41W56IfN8clmvsRtQ)
 [C2 隐藏 \_ 让你的流量更隐蔽（二）](https://mp.weixin.qq.com/s/6WJUTKPgg9OgtKVkUbPucg)
+[浅谈cobalt strike特征隐藏](https://mp.weixin.qq.com/s/zImEai6xDz1HNR6vHxL9gA)
 
 ## 使用帮助
 

