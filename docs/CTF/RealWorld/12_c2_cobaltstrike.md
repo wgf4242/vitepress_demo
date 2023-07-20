@@ -873,6 +873,7 @@ sub dialog_test {
 
 ## 上线/转发/代理
 
+- [实战下的内网中继攻击问题](https://mp.weixin.qq.com/s/y2gqX4_GtXD7DwYHE3SdIQ)
 - [Cobalt Strike : 转发重定向 上线](https://mp.weixin.qq.com/s/9ChG_ywmZkOXAGToSMIvZg)
 - [Pivot Listeners 当前域控与 CS 服务端不在同一网段内](https://mp.weixin.qq.com/s/KPZYKQNo8stlvr-USvR4kw)
 

@@ -19,3 +19,6 @@
 | CTRL + Z     | 撤销刚刚操作                                      | IDA7.2之后才有                                    |
 | CTRL+SHIFT+F | 交叉引用显示                                      | 与IDA中的交叉引用相似可以看到谁调用               |
 |              |                                                   |                                                   |
+
+# Article
+[逆向工程系列 | Ghidra for Beginner III](https://mp.weixin.qq.com/s/tDGTdPMEEvCRfL_R_Unfng)

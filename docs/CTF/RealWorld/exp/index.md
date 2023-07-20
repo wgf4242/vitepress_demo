@@ -28,6 +28,7 @@
 [泛微 E-Cology9 changeUserInfo 信息泄漏及 ofsLogin 任意用户登录检测工具](https://mp.weixin.qq.com/s/ac8v3G0Z_1QUQjro5fGR2Q)
 [泛微 ofslogin.jsp任意用户登录](https://mp.weixin.qq.com/s/z7zS7CUwKAaNA4Z-oLIQsA)
 [泛微OA SQL注入漏洞利用工具](https://mp.weixin.qq.com/s/s6E0bHmCmVGXENjru0so4w)
+[泛微 E-Office 9.5版本 文件上传漏洞(CVE-2023-2648)](https://mp.weixin.qq.com/s/bAADy7Ek1umIAVygBdKrcA)
 
 [信呼 OA RCE](https://mp.weixin.qq.com/s/s2x28qkAW13DIDFZOdO73g)
 
@@ -140,6 +141,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [CVE-2023-27524 Apache Superset 身份认证绕过漏洞](https://mp.weixin.qq.com/s/ZqjT-s9_u6onp6m-OYV0Ag)
 
+[WordPress | getshell](a02_wordpress.md)
 [WordPress | 超危漏洞CVE-2023-2982 附POC](https://mp.weixin.qq.com/s/_3Ds_0XVmBt9Uq6kubiKYw)
 
 [JBoss 未授权漏洞复现](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485334&idx=1&sn=0bba17412525af0cf9c5ff5cc63bf2a5)

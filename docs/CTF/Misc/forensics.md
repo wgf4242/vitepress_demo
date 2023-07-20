@@ -105,6 +105,8 @@ python3 vol.py -f 1.mem banners.Banners
 
 2.下载对应镜像安装 自己制作 volatility 的 profile
 
+[DownloadUrl](https://mirrors.ustc.edu.cn/ubuntu/pool/main/l/linux-hwe-5.4/)
+
 ```bash
 sudo apt install -y linux-headers-5.4.0-84-generic linux-image-5.4.0-84-generic dwarfdump build-essential git zip
 # 切换内核 https://blog.csdn.net/baidu_37503452/article/details/127606656  ,  GRUB_DEFAULT="第一级菜单>第二级菜单”
@@ -149,6 +151,7 @@ places.sqlite, 浏览历史 `moz_places`
 [PC端微信个人信息与聊天记录取证](https://mp.weixin.qq.com/s/FPcIrouEAM_2RNZhfSRgoQ)
 [PC微信 | 钓鱼场景下微信聊天记录回传](https://mp.weixin.qq.com/s/ROCTBw8hM8mDEuIq5Vyhsg)
 [PC微信 | 免登录读取别人的WX聊天记录](https://mp.weixin.qq.com/s/ub1eQespid6BeODGM7kh8w)
+[PC微信 | 攻防演练中解密微信聊天记录寻找密码的Tips](https://mp.weixin.qq.com/s/kG7Wlp3XwOlQQqNPEXOmiQ)
 [Android | 半自动微信数据库脱密及解析，生成词云和条状图 ](https://www.52pojie.cn/thread-1724737-1-1.html) 
 
 [浏览器数据导出解密工具 -- HackBrowserData](https://github.com/moonD4rk/HackBrowserData)

@@ -1,5 +1,6 @@
 [干货 | 域内敏感信息搜集](https://mp.weixin.qq.com/s/nFOAb__c162gMhve3MEh_Q)
 [横向移动之 PTH、PPT、PTK](https://mp.weixin.qq.com/s/uWuNqKYloTQCifKjsXMB2Q)
+[横向移动-域控提权](https://mp.weixin.qq.com/s/mNYJ0s5HahBUewWqDwF1Fg)
 
 ## 信息收集
 
@@ -462,7 +463,7 @@ rw_domain_域渗透 - 域控使用组策略下发文件并执行.rar
 [内网域渗透之常用提权](https://www.cnblogs.com/first-kiss/articles/16213182.html)
 [横向移动-域控提权](https://mp.weixin.qq.com/s/_g0WiGu045GCqhN3m2bsxA)
 [以攻促防丨霄壤实验室安全研究员亲传「如何自己伪造kerberos票据」](https://mp.weixin.qq.com/s/_zQZ3uRfAHB_6_ww5gT8Ew)
-
+[内网（笔记）-域内横向移动-续2 SPN工具](https://mp.weixin.qq.com/s/vMCVrAiesYibYCMbvJeAwg)
 ## Todo
 
 6-项目六完整的内网域渗透_10metasploit域内主机分析和整理【瑞客论坛 www.ruike1.com】.mp4
