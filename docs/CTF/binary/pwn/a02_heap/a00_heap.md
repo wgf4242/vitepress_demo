@@ -43,7 +43,7 @@ struct malloc_chunk{
         <td colspan="4">prev_size (x64 8B)</td>
       </tr>
       <tr>
-        <td></td>
+        <td>--(x64) 8Bytes--</td>
         <td>size</td>
         <td>N</td>
         <td>M</td>

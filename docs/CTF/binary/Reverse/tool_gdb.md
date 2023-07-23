@@ -44,6 +44,7 @@ sudo make install
 |             | backtrace                            | 查看调用栈, `frame` 切换调用栈                                          |
 | -- debug -- |                                      |
 |             | alsr off                             | 关闭 alsr                                                               |
+|             | `set *0x4007e48=0x7c6c`              | 修改值                                                                  |
 | -- heap --  |                                      | 查看堆,配合 x/addr 看位置                                               |
 |             | heap                                 |
 |             | bins                                 | 查看 bins                                                               |

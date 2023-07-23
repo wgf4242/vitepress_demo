@@ -82,11 +82,12 @@ https://hashcat.net/wiki/doku.php?id=example_hashes
 --custom-charset2 ?l?d，这里和?2 就等价于?h
 --custom-charset3 ?h!@-+
 
-## 实例
+## 爆破实例
 
 -O 速度快
 测试 rockyou.txt 字典
 爆破多尝试 admin/root + 数字 3.大写字母 +数字 4.小写字母 +数字
+用户名:身份证号 密码:后6位
 wifi 最多爆到 root12222
 
 ### MD5
@@ -155,6 +156,12 @@ hashcat -m 13000 -O -a 0 test.hash pwd.txt
 
 ```sh
 hashcat -O -m 1000 161cff084477fe596a5db81874498a24 dict.txt
+```
+
+### Kerberos 5, AS-REP
+
+```sh
+hashcat -m 18200 --force -a 0 '$krb5asrep$23$lixiuying@xiaorang.lab@XIAORANG.LAB:e5b9df0a854b830ce5f6e5ffe2499d71$d9d9dc060842070cd86a8ecae9e214d3a0ca14b815dc3c39e39c02a33d8e905757ff35a61a31e6dae59482b894e391be7ac67d4f7f484c37cc1dd80c93be6c30ac3a3e8217380170959db080a27cf29adff473385a7c554fe06c8512039f90255f853ce5be6e456377d5aec2530e674ac79c79bae51343f0150105c46703f0a7f1ba694e72c5b4d24aea907e04c33579b7601bda211fa28e0704115de88b9c073ab8863108a2013e8ec447163ec837615ca4dce0798bfdc3424400bdb37a5f0c0497ba4d7b4da0b56c726aca69ef6234ce75776b5bed88c814ec1d0b75b64cb38e94ff66ef5ef3b0a4b4ac8b' ./rockyou.txt 
 ```
 
 ### deepsound

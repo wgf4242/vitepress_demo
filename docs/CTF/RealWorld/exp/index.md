@@ -213,6 +213,7 @@ rw_exp_joomla_CVE-2023-23752
 rw_exp_红帆OA_iOffice-udfmr-sqlvuln-master.zip
 rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [H3C | 用户网管登录系统jQuery-1.7.2存在任意文件读取](https://mp.weixin.qq.com/s/PnFzkwH4NZ0FhkKQ73l1IQ)
+[H3C | Magic B1STV100R012远程代码执行漏洞(CVE-2023-34928)](https://mp.weixin.qq.com/s/fkg2ED-jhZlz9DaEAdh2WQ)
 [Smartbi 远程命令执行漏洞](https://mp.weixin.qq.com/s/TtwRRQwuhYGVHheJPb1Xag)
 
 [金蝶云星空RCE漏洞复现](https://mp.weixin.qq.com/s/d2Dt2l9qvSUTN5GT76xaZA)
@@ -245,6 +246,8 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [小米路由器任意文件读取及远程命令执行漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484929&idx=1&sn=8012fce68bf9eaccef59fc280b663077)
 [海康威视代码执行漏洞](https://mp.weixin.qq.com/s/o3A7xOPLbdmo6WAZsygHYQ)
 [海康威视综合安防系统 iVMS-5000 iVMS-8700 任意文件上传漏洞复现（0day）](https://mp.weixin.qq.com/s/Wveo0X3857mBWFzNOcJHJw)
+[海康威视综合安防（Fastjson） iVMS-8700 <= V2.9.2, iSecure Center <= V1.7.0](https://mp.weixin.qq.com/s/b3V-p8eUL1ycJIFKefQryA)
+
 [任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
 [漏洞复现 D-Link DCS 密码泄露漏洞](https://mp.weixin.qq.com/s/rbSBjKvX_STXUjxY8TKOOA)
 

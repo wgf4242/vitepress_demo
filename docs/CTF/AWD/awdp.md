@@ -9,6 +9,11 @@ A: 直接 javac 编译的一个 class 文件，然后替换进去
 
 - 替换删除 `<?`
 - 注入上 waf
+- 打包jar
+  - jar cf jar-file input-file(s)
+- mvn/jar ReCaf 进行字节码 patch 20230710_Web.mp4 
+  - `mvn package`命令打包 要有pom文件.
+- 准备一个高版本 1.xx 2.xx fastjson的jar文件.
 
 # Pwn
 - IDA插件 VulFi, Search - VulFi

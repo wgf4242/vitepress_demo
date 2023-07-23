@@ -1,7 +1,7 @@
 ## 精简
 
 https://www.52pojie.cn/forum.php?mod=viewthread&tid=1687434
-```sh
+```ps1
 zip -q -d burpsuite_pro_v2022.9.jar chromium-macosarm64-105.0.5195.102.zip
 zip -q -d burpsuite_pro_v2022.9.jar chromium-macosx64-105.0.5195.102.zip
 zip -q -d burpsuite_pro_v2022.9.jar chromium-linux64-105.0.5195.102.zip
@@ -35,9 +35,9 @@ java -jar <path-to-burp.jar> --install-plugin <path-to-plugin.jar>
 
 * Target - Scope - √ Use Advanced scope control
 * Target - Scope - Include in scope  - Add - any
-* Target - Scope - Exclude from scope - Add Any:(bdstatic|baidu|g-fox|firefox|mozilla|google|alicdn)
+* Target - Scope - Exclude from scope - Add Any:`(.*.baidu.com|.*.google.com|www.google-\.*|cdn\.jsdelivr\.net|a\.vdo\.ai|dida365\.com|mmstat\.com|csdn\.net|zhihu\.com|googleapis\.com|youtube\.com|github\.com)`
 * 2.Proxy - Option - Miscellaneous - Don't send items to Proxy history or live tasks, if out of scope
-* 2.1Proxy - Option - Intetcept Client - Requests - Add: And, Domain name, `(.*.baidu.com|.*.google.com)`
+* 2.1Proxy - Option - Intetcept Client - Requests - Add: And, Domain name, `(.*.baidu.com|.*.google.com|www.google-\.*|cdn\.jsdelivr\.net|a\.vdo\.ai|dida365\.com|mmstat\.com|csdn\.net|zhihu\.com|googleapis\.com|youtube\.com)`
 * 2.1Proxy - Option - Intetcept Server Response - Add: And, Domain name, `(.*.baidu.com|.*.google.com)`
 
 ###  配置 Upstream proxy

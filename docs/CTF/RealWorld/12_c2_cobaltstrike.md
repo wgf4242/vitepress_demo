@@ -1,6 +1,9 @@
 https://mp.weixin.qq.com/s/F1H4ReV71gK7JeoYxV3n5g
 https://github.com/k8gege/Aggressor/releases/tag/cs
 
+## 环境配置
+插件加载信息保存在 `%userprofile%\.aggressor.prop`
+
 ## 常用命令
 
 ```sh

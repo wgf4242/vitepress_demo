@@ -61,6 +61,9 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [模拟运行](./index#模拟运行)
 - [TP-Link WR740 后门漏洞复现](https://mp.weixin.qq.com/s/mcAOxhih8Yq8tZe0dAdInA)
 - [路由器初探之mips基础及mips栈溢出](https://mp.weixin.qq.com/s/fxQjS4KqNAjsPy-RX5gLVw)
+- [D-Link DIR-820L 1.05B03 命令注入漏洞CVE-2022-26258复现](https://mp.weixin.qq.com/s/Hc2DHKBlKhSwEoFaquKgzw)
+
+
 
 ## 渗透/SRC
 

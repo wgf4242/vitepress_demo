@@ -127,7 +127,6 @@ result.txt | 搜验证码
 [任意账号密码重置的 6 种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 [实战中常见的逻辑漏洞 | 水平越权](https://mp.weixin.qq.com/s/eTMvmLhoGCzsqwjRxEmdRA)
-[记录一次 JWT 的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
 
 ---
 
@@ -159,7 +158,7 @@ result.txt | 搜验证码
 [API | 水平越权漏洞检测工具 -- IDOR_detect_tool](_)
 [API | SRC 漏洞挖掘之未授权接口](https://mp.weixin.qq.com/s/aw1Q3XlupCOIPQ-gi01N6w)
 [API | 协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
-[API |rw*API*爬网站 JS 文件自动 fuzz api 接口\_jjjjjjjjjjjjjs-main.zip]()
+[API | API爬网站 JS 文件自动 fuzz api 接口\_jjjjjjjjjjjjjs-main.zip]()
 [API | 记一次由 js 突破发现的漏洞](https://mp.weixin.qq.com/s/najWvbTPj_Dk6SH2zV_ZSQ)
 [API | webpack | packer-fuzzer](rw_API_webpack_Packer-Fuzzer-master.zip)
 [API | swagger hakc main](rw_API_swagger-hack-main.zip)
@@ -167,7 +166,8 @@ result.txt | 搜验证码
 [API | webservice](https://mp.weixin.qq.com/s/e9x206e8EGBMPn_VGjrM1Q)
 [API | 越权漏洞检测系统](https://mp.weixin.qq.com/s/iwUB4ewDf8iZUyro9zapzw)
 [API | 打造 API 接口的堡垒](https://mp.weixin.qq.com/s/sIi49LYgZuTAjyrfv_oysg)
-
+[API | 记录一次 JWT 的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
+[API | 常见的API接口漏洞总结](https://mp.weixin.qq.com/s/IbsJ0n-sw1G0cWHz6PE6Jw)
 ---
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
