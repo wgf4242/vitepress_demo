@@ -5,6 +5,7 @@
 ## 信息收集
 
 ```shell
+whoami /priv # 看当前权限
 # -- adfind信息收集
 net time /domain # 判断当前主机是否在域内 -- \\WIN-A46BVNA4HEK.tide1.org,  域主机为 WIN-A46BVNA4HEK
 net user /domain
