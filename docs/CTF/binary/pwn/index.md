@@ -1,22 +1,18 @@
 # 解题思路
 
-* 指针不置0, uaf
-
+- 指针不置 0, uaf
 
 # 环境配置
 
 [gdb 调试 | pwndbg+pwndbg 联合使用](https://blog.csdn.net/weixin_43092232/article/details/105648769)
 
-
-# 常用函数API
+# 常用函数 API
 
 system
 
 ```sh
 system, ret_addr, bin_sh
 ```
-
-
 
 # Article
 
@@ -42,8 +38,8 @@ system, ret_addr, bin_sh
 [『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
 
 [pwn -- 沙盒机制详解](https://blog.csdn.net/A951860555/article/details/116738676)
-[VM Pwn学习](https://www.anquanke.com/post/id/208450)
-[针对top chunk的一些特殊攻击手法](https://mp.weixin.qq.com/s/foraOTokROtCBsElgL2Y1Q)
+[VM Pwn 学习](https://www.anquanke.com/post/id/208450)
+[针对 top chunk 的一些特殊攻击手法](https://mp.weixin.qq.com/s/foraOTokROtCBsElgL2Y1Q)
 
 ## Tutorial
 
@@ -65,7 +61,7 @@ system, ret_addr, bin_sh
 - [CTFHUB | 堆溢出 | UnsortedBin Attack](https://bbs.kanxue.com/thread-276457.htm)
 - [CTFHUB | 堆溢出 | LargeBin Attack|House of Storm](https://bbs.kanxue.com/thread-276516.htm)
 
---- 
+---
 
 - [CTFHUB | 堆溢出 | Largebin Attack(House of storm)](https://blog.csdn.net/KaliLinux_V/article/details/128915137)
 - [CTFHUB | 堆溢出 | off by one](https://blog.csdn.net/KaliLinux_V/article/details/128797268)
@@ -77,6 +73,10 @@ system, ret_addr, bin_sh
 - [CTFHUB | 堆溢出 | House of roman](https://blog.csdn.net/KaliLinux_V/article/details/128951462)
 - [CTFHUB | 堆溢出 | House of orange](https://blog.csdn.net/KaliLinux_V/article/details/128966835)
 - [CTFHUB | 堆溢出 | House of Lore](https://blog.csdn.net/KaliLinux_V/article/details/128969408)
+
+---
+
+- [Kerndel | kernel-pwn 之 ret2dir 利用技巧](https://mp.weixin.qq.com/s/PT__YBPRW0odcyzOxn7g8Q)
 
 ## Video
 

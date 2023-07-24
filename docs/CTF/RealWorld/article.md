@@ -258,6 +258,7 @@ result.txt | 搜验证码
 [实战 | Post 文件上传 WAF Bypass 总结](https://mp.weixin.qq.com/s/S9-4sMsyXQqtjS4A_ABNGg)
 [实战技巧 | WAF 绕过入狱指南](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=1&sn=6f6c9743c4cb4ef9db9a3656c93770cc)
 [阿里云 WAF3.0 命令执行 Bypass，也是 WAF 的通病](https://mp.weixin.qq.com/s/AuONhIYbnTZzIBpxpcXtIw)
+[从SQL注入绕过最新安全狗WAF中学习fuzz](https://mp.weixin.qq.com/s/ChwHSHGMd3GJDpYN4z1c9Q)
 
 ### bypass uac
 

