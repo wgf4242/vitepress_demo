@@ -4,8 +4,10 @@
 
 [hideandseek](https://www.baidu.com/s?wd=hctf2018+hideandseek)
 
-linux service 越权
-非预期 unicode 绕过
+- linux service 越权
+- [Python原型链污染+Flask Pin](../../../../../blog/text/docs/ctf/scripts/web/web_flask_pin_原型链污染.zip)
+- 非预期 unicode 绕过 \uxxxx 
+- 非预期 hex 绕过 \x32
 
 ### ssti smarty
 

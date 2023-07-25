@@ -238,6 +238,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [小程序测试流程](https://mp.weixin.qq.com/s/NVN73i8t0Ozy7bW8QimlNg)
 [小程序渗透工具 -- wxapkgUnpack](https://mp.weixin.qq.com/s/iGInWwvvnv6aC1cHoI_Z2g)
 [小程序绕过sign签名思路](https://mp.weixin.qq.com/s/LvTiFZGMuTaTq5duBoBcyA)
+[【小程序逆向】企查mao小程序逆向(二)](https://mp.weixin.qq.com/s/DUBpd6ebWDG-YXzmT7ml5Q)
 
 ### Exploit/CVE/实战漏洞/IOT
 
@@ -251,3 +252,6 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
 [漏洞复现 D-Link DCS 密码泄露漏洞](https://mp.weixin.qq.com/s/rbSBjKvX_STXUjxY8TKOOA)
 
+
+## Electron
+[注入任意代码到运行中的 Electron 应用](https://mp.weixin.qq.com/s/faYOXbn_4fNotEa8gs0CVw)

