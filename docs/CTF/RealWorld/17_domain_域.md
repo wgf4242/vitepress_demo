@@ -261,10 +261,12 @@ schtasks /create /tn "test123456" /tr C:\srn7final.exe /sc once /st 14.25 /S 192
 
 DCSync 攻击前提 一个用户想发起 DCSync 攻击，必须获得以下任一用户的权限：
 
+`whoami /all`
+
 - Administrators 组内的用户
 - Domain Admins 组内的用户
 - Enterprise Admins 组内的用户
-- ACL_ADMIN组 有WriteDACL权限
+- ACL_ADMIN组 或有WriteDACL权限
 - 域控制器的计算机帐户
 - 即：默认情况下域管理员组具有该权限。所以在域渗透中拿到域管理员账号就可以变相拿到整个域的控制权限。
 

