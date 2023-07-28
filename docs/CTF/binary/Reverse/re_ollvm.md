@@ -44,6 +44,7 @@
 [ollvm算法还原案例分享 看雪3W班5月题](https://bbs.pediy.com/thread-260655.htm) 
 [ollvm算法还原案例分享 8月ollvm题](https://bbs.pediy.com/thread-263211.htm) 
 [ollvm算法还原案例分享 看雪3W班12月ollvm](https://mp.weixin.qq.com/s/lCH_4CzfvLWLVpUJpGl7Xw)
+[LLVM字符串加密学习笔记](https://mp.weixin.qq.com/s/uH_kvrv3PYHyIuQC80BUsg)
 
 [基于Unicorn 的ARM64 OLLVM反混淆](https://bbs.pediy.com/thread-252321.htm) 
 [细说arm反类ollvm混淆-基本思想 ](https://bbs.pediy.com/thread-257878.htm) 

