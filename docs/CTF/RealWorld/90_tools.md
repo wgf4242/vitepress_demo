@@ -919,6 +919,7 @@ Multiple.Database.Utilization.Tools
 ## psexec
 
 ```bat
+PsExec.exe -accepteula -s -i -d cmd.exe # 进入system
 psexec \\ip -u administrator -p admin cmd  进⼊半交互式shell
 psexec -accepteula \\192.168.108.101 -s cmd.exe 建立交互的shell
 psexec \\ip - uadministrator -p admin -w c:\cmd 进⼊交互式shell，且c:\是⽬标机器的⼯作⽬录

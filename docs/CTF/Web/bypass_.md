@@ -9,6 +9,7 @@
 - [PHP_INCLUDE_TO_SHELL_CHAR_DICT](https://github.com/wupco/PHP_INCLUDE_TO_SHELL_CHAR_DICT)
 - splstack 绕过匹配 O 开头的序列化数据； [2023 安洵杯 4 号的罗纳尔多](https://mp.weixin.qq.com/s/azbY19cBgs3MgVdo7i-OhQ)
 - \_\_halt_compiler();来结束 php 代码执行流程 同上链接
+- [bypass | 『红蓝对抗』论 HTTP 分块传输的应用](https://mp.weixin.qq.com/s/QV445IhGIdV5rofFv7qitw)
 - [详细|waf 绕过学习](https://mp.weixin.qq.com/s/OeZsKohqe87-ieIuW7L9tA)
 
 [实战绕过某 WAF+拿 shell 组合拳](https://mp.weixin.qq.com/s/Q57dOjq279kqOFtSA1mV8Q)

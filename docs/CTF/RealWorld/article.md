@@ -129,6 +129,10 @@ result.txt | 搜验证码
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 [实战中常见的逻辑漏洞 | 水平越权](https://mp.weixin.qq.com/s/eTMvmLhoGCzsqwjRxEmdRA)
 
+--- 实战
+
+[某银行外网打点到内网核心区红队评估复盘](https://mp.weixin.qq.com/s/ULtkMJm_GLgdtvnLy-3HkQ)
+
 ---
 
 [PHP | 关于js拿shell的尝试](https://mp.weixin.qq.com/s/xwt3LGfD1aXqnIgzfQ9frw)

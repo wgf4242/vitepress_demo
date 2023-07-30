@@ -141,6 +141,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Apache | RocketMQ CVE-2023-33246 远程代码执行漏洞](https://mp.weixin.qq.com/s/SGi_-wNC8WeETQSDetfvVg)
 rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [CVE-2023-27524 Apache Superset 身份认证绕过漏洞](https://mp.weixin.qq.com/s/ZqjT-s9_u6onp6m-OYV0Ag)
+[Apache Kafka Connect JNDI注入漏洞(CVE-2023-25194)](https://mp.weixin.qq.com/s/4qEuU9G3mU5ZNea-_SkVPQ)
 
 [WordPress | getshell](a02_wordpress.md)
 [WordPress | 超危漏洞CVE-2023-2982 附POC](https://mp.weixin.qq.com/s/_3Ds_0XVmBt9Uq6kubiKYw)
@@ -217,6 +218,9 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [Smartbi 远程命令执行漏洞](https://mp.weixin.qq.com/s/TtwRRQwuhYGVHheJPb1Xag)
 
 [金蝶云星空RCE漏洞复现](https://mp.weixin.qq.com/s/d2Dt2l9qvSUTN5GT76xaZA)
+
+[Vcenter | VMware vSphere | CVE-2021-22005-rce、2021-21972-uoloadova 接口 rce 和 log4j](https://mp.weixin.qq.com/s/4jn2EDAt_YyFZQMfcxT21g)
+
 ### Exploit/CVE/实战漏洞/Windows
 
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
