@@ -1,4 +1,6 @@
 [反弹Shell大全与原理](https://mp.weixin.qq.com/s/ClqEAqpPxlscNJphSBfhKA)
+[Ladon | 22种反弹Shell方法 openssl\\java\\py\\php\\perl\\lua\\curl\\socat ncat ruby](https://mp.weixin.qq.com/s/oPFxDxaUb9eGm-zrJzP55g)
+
 - TheFatRat 创建反弹shell
 
 ## 反弹Shell
