@@ -139,6 +139,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Apache | RocketMQ CVE-2023-33246 RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/1GIATpldq29cVTR6Rw_DTw)
 [Apache | RocketMQ CVE-2023-33246 命令执行复现分析](https://mp.weixin.qq.com/s/kHY5PMOy5m1g0QHCYwsT1A)
 [Apache | RocketMQ CVE-2023-33246 远程代码执行漏洞](https://mp.weixin.qq.com/s/SGi_-wNC8WeETQSDetfvVg)
+[Apache | RocketMQ CVE-2023-37582 远程代码执行漏洞](https://mp.weixin.qq.com/s/hKEnY1tO2Ip7UW9JIK00yw)
 rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [CVE-2023-27524 Apache Superset 身份认证绕过漏洞](https://mp.weixin.qq.com/s/ZqjT-s9_u6onp6m-OYV0Ag)
 [Apache Kafka Connect JNDI注入漏洞(CVE-2023-25194)](https://mp.weixin.qq.com/s/4qEuU9G3mU5ZNea-_SkVPQ)
@@ -254,7 +255,8 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [海康威视综合安防（Fastjson） iVMS-8700 <= V2.9.2, iSecure Center <= V1.7.0](https://mp.weixin.qq.com/s/b3V-p8eUL1ycJIFKefQryA)
 
 [任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
-[漏洞复现 D-Link DCS 密码泄露漏洞](https://mp.weixin.qq.com/s/rbSBjKvX_STXUjxY8TKOOA)
+[D-Link DCS 密码泄露漏洞](https://mp.weixin.qq.com/s/rbSBjKvX_STXUjxY8TKOOA)
+[D-Link DSL-3782 <= v1.03](https://mp.weixin.qq.com/s/fUg9aF43QOHrzPqh2rsPnA)
 
 
 ## Electron

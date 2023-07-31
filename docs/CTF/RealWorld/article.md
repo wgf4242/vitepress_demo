@@ -44,6 +44,7 @@
 [todesk 企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
 [todesk 记一次渗透测试遇到远程控制软件的深入利用](https://mp.weixin.qq.com/s/cjNwVbKjTUPgmIUAeq4PsA) todesk
 [todesk|向日葵|anydesk|gohttp| 内网渗透｜内网远程控制总结](https://mp.weixin.qq.com/s/5Z5y-YvfVYIcx8qIY60Ugw)
+[向日葵 | 攻防演练 | 记一次打穿xx公司域控](https://mp.weixin.qq.com/s/QWZXgyC_LAGqnQ7_bidHig)
 [rustdesk | 实战 | 无视杀软使用远控工具进行横向移动 Tips](https://mp.weixin.qq.com/s/Tnt3VjsAPb5LP5QVoPyizA)
 
 [CS 权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
@@ -133,7 +134,11 @@ result.txt | 搜验证码
 --- 实战
 
 [某银行外网打点到内网核心区红队评估复盘](https://mp.weixin.qq.com/s/ULtkMJm_GLgdtvnLy-3HkQ)
+[攻防演练：渗透测试云上初体验](https://mp.weixin.qq.com/s/545e74HShfB480623uR8mA)
 
+* 阿里云
+  * https://github.com/teamssix/cf
+  * Aliyun-AK Tools
 ---
 
 [PHP | 关于js拿shell的尝试](https://mp.weixin.qq.com/s/xwt3LGfD1aXqnIgzfQ9frw)
@@ -265,6 +270,7 @@ result.txt | 搜验证码
 [实战技巧 | WAF 绕过入狱指南](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=1&sn=6f6c9743c4cb4ef9db9a3656c93770cc)
 [阿里云 WAF3.0 命令执行 Bypass，也是 WAF 的通病](https://mp.weixin.qq.com/s/AuONhIYbnTZzIBpxpcXtIw)
 [从SQL注入绕过最新安全狗WAF中学习fuzz](https://mp.weixin.qq.com/s/ChwHSHGMd3GJDpYN4z1c9Q)
+[【技术分享】SQL-FUZZ技巧及阿里云waf绕过方式](https://mp.weixin.qq.com/s/eUJ7J83EzrlfGvLD6b9JGQ)
 
 ### bypass uac
 

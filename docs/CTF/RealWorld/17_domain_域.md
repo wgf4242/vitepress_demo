@@ -5,6 +5,8 @@
 ## 信息收集
 
 ```shell
+"查看有没有域管进程，提权到 system 权限后 inject 到域管进程，Dcsync"
+
 whoami /priv # 看当前权限
 # -- adfind信息收集
 net time /domain # 判断当前主机是否在域内 -- \\WIN-A46BVNA4HEK.tide1.org,  域主机为 WIN-A46BVNA4HEK

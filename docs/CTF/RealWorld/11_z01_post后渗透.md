@@ -125,6 +125,26 @@ CS和msf联动
 ## * 浏览器保存的密码/微信/QQ文件夹/回收站/共享盘/邮件软件/协同软件
 ## * 远程软件保存的远程连接 mstsc/内网通/向日葵/todesk等
 
+# 密码收集
+dir /a /s /b d:\"*.txt" 
+dir /a /s /b d:\"*.xml" 
+dir /a /s /b d:\"*.mdb" 
+dir /a /s /b d:\"*.sql" 
+dir /a /s /b d:\"*.mdf" 
+dir /a /s /b d:\"*.eml" 
+dir /a /s /b d:\"*.pst" 
+dir /a /s /b d:\"*conf*" 
+dir /a /s /b d:\"*bak*" 
+dir /a /s /b d:\"*pwd*" 
+dir /a /s /b d:\"*pass*" 
+dir /a /s /b d:\"*login*" 
+dir /a /s /b d:\"*user*"
+dir /a /s /b c:\password.txt
+dir /a /s /b c:\*.conf *.ini *.inc *.config 
+dir /a /s /b c:\conf.* config.* 
+dir /a /s /b c:\*.txt *.xls *.xlsx *.docx | findstr "拓扑"
+dir /a /s /b c:\*.conf *.ini *.inc *.config | findstr "运维"
+dir /a /s /b c:\*.txt *.xls *.xlsx *.docx | findstr "密码" >C:\Users\1.txt
 ```
 - [映像劫持技术, 关不掉的程序！](https://www.bilibili.com/video/BV12X4y1t72e/)
 
