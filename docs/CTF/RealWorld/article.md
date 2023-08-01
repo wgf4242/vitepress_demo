@@ -44,7 +44,7 @@
 [todesk 企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
 [todesk 记一次渗透测试遇到远程控制软件的深入利用](https://mp.weixin.qq.com/s/cjNwVbKjTUPgmIUAeq4PsA) todesk
 [todesk|向日葵|anydesk|gohttp| 内网渗透｜内网远程控制总结](https://mp.weixin.qq.com/s/5Z5y-YvfVYIcx8qIY60Ugw)
-[向日葵 | 攻防演练 | 记一次打穿xx公司域控](https://mp.weixin.qq.com/s/QWZXgyC_LAGqnQ7_bidHig)
+[向日葵 | 攻防演练 | 记一次打穿 xx 公司域控](https://mp.weixin.qq.com/s/QWZXgyC_LAGqnQ7_bidHig)
 [rustdesk | 实战 | 无视杀软使用远控工具进行横向移动 Tips](https://mp.weixin.qq.com/s/Tnt3VjsAPb5LP5QVoPyizA)
 
 [CS 权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
@@ -136,12 +136,13 @@ result.txt | 搜验证码
 [某银行外网打点到内网核心区红队评估复盘](https://mp.weixin.qq.com/s/ULtkMJm_GLgdtvnLy-3HkQ)
 [攻防演练：渗透测试云上初体验](https://mp.weixin.qq.com/s/545e74HShfB480623uR8mA)
 
-* 阿里云
-  * https://github.com/teamssix/cf
-  * Aliyun-AK Tools
+- 阿里云
+  - https://github.com/teamssix/cf
+  - Aliyun-AK Tools
+
 ---
 
-[PHP | 关于js拿shell的尝试](https://mp.weixin.qq.com/s/xwt3LGfD1aXqnIgzfQ9frw)
+[PHP | 关于 js 拿 shell 的尝试](https://mp.weixin.qq.com/s/xwt3LGfD1aXqnIgzfQ9frw)
 
 ---
 
@@ -169,7 +170,7 @@ result.txt | 搜验证码
 [API | 水平越权漏洞检测工具 -- IDOR_detect_tool](_)
 [API | SRC 漏洞挖掘之未授权接口](https://mp.weixin.qq.com/s/aw1Q3XlupCOIPQ-gi01N6w)
 [API | 协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
-[API | API爬网站 JS 文件自动 fuzz api 接口\_jjjjjjjjjjjjjs-main.zip]()
+[API | API 爬网站 JS 文件自动 fuzz api 接口\_jjjjjjjjjjjjjs-main.zip]()
 [API | 记一次由 js 突破发现的漏洞](https://mp.weixin.qq.com/s/najWvbTPj_Dk6SH2zV_ZSQ)
 [API | webpack | packer-fuzzer](rw_API_webpack_Packer-Fuzzer-master.zip)
 [API | swagger hakc main](rw_API_swagger-hack-main.zip)
@@ -178,7 +179,8 @@ result.txt | 搜验证码
 [API | 越权漏洞检测系统](https://mp.weixin.qq.com/s/iwUB4ewDf8iZUyro9zapzw)
 [API | 打造 API 接口的堡垒](https://mp.weixin.qq.com/s/sIi49LYgZuTAjyrfv_oysg)
 [API | 记录一次 JWT 的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
-[API | 常见的API接口漏洞总结](https://mp.weixin.qq.com/s/IbsJ0n-sw1G0cWHz6PE6Jw)
+[API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/IbsJ0n-sw1G0cWHz6PE6Jw)
+
 ---
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
@@ -239,10 +241,11 @@ result.txt | 搜验证码
 - [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)
 - [小技巧 | 用一条命令来隐藏反向 Shell](https://mp.weixin.qq.com/s/TKCNTovBdBd_cWRlbSlKPA)
 - [绕过 AV/EDR 的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
-  _ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
-  _ [冰蝎 4.0 流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
-  \_ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
+_ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
+_ [冰蝎 4.0 流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
+_ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
 - [Webshell | jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
+- [Mimikatz 源码免杀](https://mp.weixin.qq.com/s/3dEmmGNkNLPhJnEudm69Nw)
 
 **Video**
 
@@ -269,8 +272,8 @@ result.txt | 搜验证码
 [实战 | Post 文件上传 WAF Bypass 总结](https://mp.weixin.qq.com/s/S9-4sMsyXQqtjS4A_ABNGg)
 [实战技巧 | WAF 绕过入狱指南](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=1&sn=6f6c9743c4cb4ef9db9a3656c93770cc)
 [阿里云 WAF3.0 命令执行 Bypass，也是 WAF 的通病](https://mp.weixin.qq.com/s/AuONhIYbnTZzIBpxpcXtIw)
-[从SQL注入绕过最新安全狗WAF中学习fuzz](https://mp.weixin.qq.com/s/ChwHSHGMd3GJDpYN4z1c9Q)
-[【技术分享】SQL-FUZZ技巧及阿里云waf绕过方式](https://mp.weixin.qq.com/s/eUJ7J83EzrlfGvLD6b9JGQ)
+[从 SQL 注入绕过最新安全狗 WAF 中学习 fuzz](https://mp.weixin.qq.com/s/ChwHSHGMd3GJDpYN4z1c9Q)
+[【技术分享】SQL-FUZZ 技巧及阿里云 waf 绕过方式](https://mp.weixin.qq.com/s/eUJ7J83EzrlfGvLD6b9JGQ)
 
 ### bypass uac
 
@@ -303,6 +306,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 [APP 漏洞挖掘](https://mp.weixin.qq.com/s/Q1Ll_ScFhGZmLJpd1YaWuA)
 [APP 漏洞挖掘之某下载量超 101 万的 APP 有几个漏洞可以 GetShell？](https://mp.weixin.qq.com/s/x8gaMehZ6A_ATdkodKNHyQ)
 [APP 漏洞挖掘之某款 APP 开发商通用漏洞的挖掘](https://mp.weixin.qq.com/s/T9H8dtFYCgck1PHB3zy_7Q)
+[云麦智能秤app账户接管漏洞](https://mp.weixin.qq.com/s/JoNX3k1eRazQh7Js46qgyQ)
 
 ## Docker
 

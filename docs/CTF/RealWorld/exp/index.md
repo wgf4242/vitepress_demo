@@ -244,6 +244,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [小程序渗透工具 -- wxapkgUnpack](https://mp.weixin.qq.com/s/iGInWwvvnv6aC1cHoI_Z2g)
 [小程序绕过sign签名思路](https://mp.weixin.qq.com/s/LvTiFZGMuTaTq5duBoBcyA)
 [【小程序逆向】企查mao小程序逆向(二)](https://mp.weixin.qq.com/s/DUBpd6ebWDG-YXzmT7ml5Q)
+[微信小程序渗透测试 -- 反编译小程序](https://mp.weixin.qq.com/s/ghYVqhBEv7Namr1P_Ew-bQ)
 
 ### Exploit/CVE/实战漏洞/IOT
 
