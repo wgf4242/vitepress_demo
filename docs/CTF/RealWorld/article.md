@@ -274,6 +274,7 @@ _ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8
 [阿里云 WAF3.0 命令执行 Bypass，也是 WAF 的通病](https://mp.weixin.qq.com/s/AuONhIYbnTZzIBpxpcXtIw)
 [从 SQL 注入绕过最新安全狗 WAF 中学习 fuzz](https://mp.weixin.qq.com/s/ChwHSHGMd3GJDpYN4z1c9Q)
 [【技术分享】SQL-FUZZ 技巧及阿里云 waf 绕过方式](https://mp.weixin.qq.com/s/eUJ7J83EzrlfGvLD6b9JGQ)
+[文件上传绕过360磐云WAF](https://mp.weixin.qq.com/s/QC0oZxMti4TvpWQE9VCqgQ)
 
 ### bypass uac
 

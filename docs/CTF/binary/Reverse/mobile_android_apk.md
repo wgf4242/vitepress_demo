@@ -183,6 +183,7 @@ https://github.com/APKLab/APKLab
 - [安卓高版本安装系统证书 HTTPS 抓包 - 终极解决方案](https://blog.51cto.com/u_15527932/6107429)
 - [【安卓逆向】解决淘系某猫等 App 抓包问题](https://mp.weixin.qq.com/s/BFFEGWDhjTdDlfWITSme8Q)
 - [抓不到包？不可能（上篇）](https://mp.weixin.qq.com/s/XqoLx0zjonCz_JcE13E1zA)
+- [史上最强安卓抓包/逆向/HOOK & 云手机/自动化辅助框架](https://mp.weixin.qq.com/s/533On0ejZXF42GT1KrpfmQ)
 
 ## 综合
 
