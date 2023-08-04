@@ -810,6 +810,7 @@ python3 neoreg.py -k password -u http://xx/tunnel.php
 [SoftEther VPN 内网穿透](https://mp.weixin.qq.com/s/Xim1SKnU41Z_rb9aI0QdDA)
 
 ## 端口复用
+[Linux远控的端口复用](https://mp.weixin.qq.com/s/mHCOuR1rq2ExEYYWhA4vQg)
 
 iptable
 

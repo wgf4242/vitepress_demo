@@ -286,7 +286,7 @@ https://github.com/APKLab/APKLab
 - [协议分析 | 对一个 apk 协议的继续分析—libsgmain 反混淆与逆向](https://mp.weixin.qq.com/s/s06dvT056fqkENIYoEHZ3w)
 - [协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
 - [协议分析 | APP 协议分析心得](https://mp.weixin.qq.com/s/5XAbGzR1se9pLmx_d8-KNQ)
-
+- [不寻常的手游反调试——反hook分析与绕过](https://mp.weixin.qq.com/s/zEJVBSV-BjrWr1Dl_pORXg)
 ## 混淆加密
 
 - [开箱即用的 SO 代码混淆器来啦！r0env2022 里的 as 集成 ollvm 混淆](https://www.bilibili.com/video/BV1z8411G79H/)

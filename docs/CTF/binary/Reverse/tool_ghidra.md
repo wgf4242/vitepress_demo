@@ -22,3 +22,4 @@
 
 # Article
 [逆向工程系列 | Ghidra for Beginner III](https://mp.weixin.qq.com/s/tDGTdPMEEvCRfL_R_Unfng)
+[逆向工程系列 | Ghidra for Beginner IV](https://mp.weixin.qq.com/s/yn8M54jLSgzhsWS00I4jHw)

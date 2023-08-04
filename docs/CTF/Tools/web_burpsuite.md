@@ -215,6 +215,9 @@ start attack
 [插件 | 武装你的BurpSuite（二）](https://mp.weixin.qq.com/s/pNMJhiCDbo_kLsNYGJnNmA) 
 [插件 |【Python+Java】Burpsuite插件开发](https://mp.weixin.qq.com/s/xEKSXm2-fCHhyvZxrQUQvQ)
 [插件 | xp_CAPTCHA 4.2 - Burp验证码识别插件](https://mp.weixin.qq.com/s/nCcZ8gNutfPNz7X0lsxsdQ)
+[插件 | 武装你的Burpsuite](https://mp.weixin.qq.com/s/ulIp4w1dQv7y6yC4ZHlP8g)
+[插件 | 一个集成的BurpSuite漏洞探测插件](https://mp.weixin.qq.com/s/H0uRQ45NI0SQtT8mRckU_g)
+
 ## Tips
 [干货 | Burpsuite的使用tips总结](https://mp.weixin.qq.com/s/4XkYFCr2L-yJNLDBUYoIqA)
 [Burpsuite+Proxifier抓取exe数据包](https://mp.weixin.qq.com/s/tt2IrE6627QfQ44N_mGpcw)
