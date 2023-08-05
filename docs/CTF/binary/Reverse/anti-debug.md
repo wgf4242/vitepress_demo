@@ -93,6 +93,15 @@ ptrace是 process trace的缩写,是linux中父进程对子进程进行跟踪控
 对于进程来说,每个进程只允许被PTRACE＿TRACEME一次.所以如果在程序开头就先进行一次调用,那么再用调试器调试时就无法进行调试了.
 
 
+# android 安卓反调试
+
+```bash
+# 1.更改IDA调式默认端口：
+root@phone:/data/local/tmp # ./as_64 -p12346
+# 2. 特征文件检测 更改 android_server64 为 as_64
+# 3. Tracepid 检测
+```
+
 # 花指令
 
 [RE - Anti IDA 反反编译与反反反编译](http://note.youdao%2ecom/noteshare?id=3eb748f7bc67698d08107f963af77ab4&sub=6DC9E91DB3B24EC98DFA09E3AC3D6857)

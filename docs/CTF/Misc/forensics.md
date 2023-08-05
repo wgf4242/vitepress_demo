@@ -153,6 +153,8 @@ places.sqlite, 浏览历史 `moz_places`
 [PC微信 | 免登录读取别人的WX聊天记录](https://mp.weixin.qq.com/s/ub1eQespid6BeODGM7kh8w)
 [PC微信 | 攻防演练中解密微信聊天记录寻找密码的Tips](https://mp.weixin.qq.com/s/kG7Wlp3XwOlQQqNPEXOmiQ)
 [Android | 半自动微信数据库脱密及解析，生成词云和条状图 ](https://www.52pojie.cn/thread-1724737-1-1.html) 
+[Android | 取证之微信8.0.38版本数据库解密分析](https://mp.weixin.qq.com/s/OAzhnQPd_sHT5J1oMrrKFw)
+
 
 [浏览器数据导出解密工具 -- HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
 [安全运维 | RDP登录日志取证和清除](https://mp.weixin.qq.com/s/7504YsCEEfiM8uXQVCGRqA)

@@ -175,6 +175,8 @@ https://github.com/APKLab/APKLab
 ## 课程
 
 [Awesome-Android-Reverse-Engineering](https://github.com/user1342/Awesome-Android-Reverse-Engineering)
+## 环境
+[使用ADB链接夜神的方式与吐槽](https://mp.weixin.qq.com/s/kWrfK19bOYUy1tXQs_JRKg)
 
 ## 抓包
 
@@ -184,6 +186,7 @@ https://github.com/APKLab/APKLab
 - [【安卓逆向】解决淘系某猫等 App 抓包问题](https://mp.weixin.qq.com/s/BFFEGWDhjTdDlfWITSme8Q)
 - [抓不到包？不可能（上篇）](https://mp.weixin.qq.com/s/XqoLx0zjonCz_JcE13E1zA)
 - [史上最强安卓抓包/逆向/HOOK & 云手机/自动化辅助框架](https://mp.weixin.qq.com/s/533On0ejZXF42GT1KrpfmQ)
+- [【小记】Frida 绕过闲鱼 Spdy 协议进行抓包](https://mp.weixin.qq.com/s/FEIoSB2gWBb9NAAE7i0bXA)
 
 ## 综合
 

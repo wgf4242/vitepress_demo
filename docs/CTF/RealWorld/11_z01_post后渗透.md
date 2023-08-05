@@ -35,8 +35,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLo
 
 net use # 查看网络连接
 quser   # 查看远程连接过来的用户 配合incognito, 再 net use
-net use 
-
+有没有winrm 连接 # 5985端口
 
 # -- linux
 ## 无curl, wget下载文件 tools_get.sh
