@@ -147,7 +147,7 @@ crunch 3 3 0123456789 -o START -z gzip
 
 -p 字符集组合 min,max 随便填
 
-```
+```sh
 crunch 0 0 -p a b c
 crunch 0 0 -p abc
 
@@ -160,6 +160,8 @@ crunch 0 0 -p xiaoming 0101 .
 # xiaoming.0101
 # xiaoming0101.
 
+
+
 sandrex198526        # ..社工 账号加生日
 Xjiabao@             # 拼音加任意字符
 xcj$19680308         # 拼音缩写+特殊字符+生日
@@ -167,13 +169,14 @@ Xbj+13359839551      # 拼音缩写+特殊字符+电话
 WANGXUEping123       # 全拼大小写+数字
 Wanggui2@2022        # 首字母大写+特殊字符+年
 Wanggui123456@       # 首字母大写+123456+特殊字符
+LZ/LZSH              # 企业名或企业名前2位字母+其他字符
 
 
 -r参数 生成字典过程中异常中断，-r可以从上次中断的位置继续生成字典 -- 必须和-o一起用
 crunch 0 6 0123456789 -o pwd.txt
 crunch 0 6 0123456789 -o pwd.txt -r
 ```
+社工密码字典在线生成：
+[link1](https://api.xiaobaibk.com/lab/guess/)
 
-```
-hashcat -m 13400 keepass.txt -a 0 password.txt --force
-```
+[link2](https://www.bugku.com/mima/)

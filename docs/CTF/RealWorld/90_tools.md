@@ -28,6 +28,10 @@ kscan.exe -t 10.0.0.0/8 --hydra --hydra-pass file:pwd.txt
 ```bash
 crackmapexec smb <ip>/24 -u <useranme> -p <password>
 crackmapexec smb 172.22.3.0/24 -u a -p a
+crackmapexec smb 172.22.3.0/24 -u ./ufile -p ./pfile
+# 检查用户名密码字典使用时，一行用户对应一行密码，不进行交叉测试：
+crackmapexec smb 192.168.1.101 -u user.txt -p password.txt --no-bruteforce --continue-on-succes
+# --continue-on-success 在爆破成功后继续爆破
 ```
 
 ## C2 工具类似 msf

