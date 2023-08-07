@@ -7,7 +7,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 
 - 1.显示中文 https://blog.csdn.net/fuchaosz/article/details/104827280
   - Option - General - Strings - Default8bit - cp936 , 一定要在 Shift+F12 之前这样做。否则不要保存数据，重来
-	- 方式2 选中地址，按alt+a，设置c style即可
+  - 方式 2 选中地址，按 alt+a，设置 c style 即可
   - Shift+F12, 右击 Rebuild
 - General - Instruction indentation : 20
 - 关闭自动反汇编: 工具栏 绿色按钮切换/Analysis, 才能方便手动改机器码去花指令
@@ -24,6 +24,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 *(&::ptr + (unsigned int)cnt) = ptr;
 // void* ptr -> void* ptr[]
 ```
+
 ## 快捷键
 
 | 快捷键         | 描述                               |
@@ -39,6 +40,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 | ;              | Insert repeatable comment          |
 | Alt+A          | String literials - 转长度(如 UTF8) |
 | Alt+Q          | Struct var                         |
+| Alt+F7         | Run Script                         |
 
 ## 窗口介绍
 
@@ -114,7 +116,7 @@ Ctrl-Shift-D, 点击 start, 再 F5
 ### keypatch//assemble
 
 16 进制 keypatch 要用 0x33, 不能 33h
-ida自带 assemble 要用 33h,  不能 0x33
+ida 自带 assemble 要用 33h, 不能 0x33
 
 ## 使用技巧
 
@@ -137,6 +139,7 @@ gcc -static main.c
 ```
 
 ## FAQ
+
 [Link](https://blog.csdn.net/CSNN2019/article/details/117219906)
 
 ### 1. graph is too big , more than 1000 nodes
@@ -251,7 +254,6 @@ https://github.com/ioncodes/idacode
 ## Gepetto/ChatGPT AI 版反编译
 
 https://github.com/JusticeRage/Gepetto
-
 
 # Article
 

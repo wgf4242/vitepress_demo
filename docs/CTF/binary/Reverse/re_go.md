@@ -1,10 +1,20 @@
 ## Go语言
+使用 ida8.3 free 或 ida77 加载后 Alt+F7 go_parser.py
+
 入口 main_main
 os_stdout, fmt_Fprint fmt_Fprintln fmt_Fscanf
 
-
+```bash
 go version xx.exe
 go version -m xxx.exe
+# 去符号
+go build -o hello -ldflags '-s -w' hello.go
+-s
+	Omit the symbol table and debug information.
+-w
+	Omit the DWARF symbol table.
+# 所有标志位含义: https://pkg.go.dev/cmd/link  ,可以通过一些脚本恢复回来 https://www.cnblogs.com/-rvy-/p/16837987.html
+```
 ## 代码示例
 
 ```sh
