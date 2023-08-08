@@ -38,7 +38,8 @@ system, ret_addr, bin_sh
 [『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
 
 [pwn -- 沙盒机制详解](https://blog.csdn.net/A951860555/article/details/116738676)
-[VM Pwn 学习](https://www.anquanke.com/post/id/208450)
+[VMPwn 学习](https://www.anquanke.com/post/id/208450)
+[VMpwn 总结](https://mp.weixin.qq.com/s/ONZHWfg3UBIvPVsYeszN_Q) 
 [针对 top chunk 的一些特殊攻击手法](https://mp.weixin.qq.com/s/foraOTokROtCBsElgL2Y1Q)
 
 ## Tutorial
@@ -82,3 +83,4 @@ system, ret_addr, bin_sh
 
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
 [ret2shellcode](https://www.bilibili.com/video/BV1Ws4y137xa/)
+

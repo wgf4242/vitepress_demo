@@ -68,6 +68,8 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 
 .klr.enc1 - Kaspersky Rescue disk file, 异或 0xef
 
+- [.img 文件](forensics.md#取证题)
+
 ## [流量分析](./misc_pcapng.md)
 
 ## RCE 绕过类题目
@@ -101,21 +103,20 @@ arr[$(cat /flag)]
 
 ## 图片题
 
-| format   | 支 key | 无 key | 工具                    | 使用                                       |
-| -------- | ------ | ------ | ----------------------- | ------------------------------------------ |
+| format   | 支 key | 无 key | 工具                         | 使用                                       |
+| -------- | ------ | ------ | ---------------------------- | ------------------------------------------ |
 | png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc |
-| png      | √      | √      | stegpy                  | stegpy <file> -p                           |
-| png      |        | √      | zsteg                   | zsteg -a x.png                             |
-| jpg      |        |        | steghide                | steghide extract -sf test.jpg -p 123456    |
-|          |        |        | stegseek 爆破 steghide  | stegseek cvr.jpg wordlist.txt              |
-| jpg      | √      |        | outguess                | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
-| jpg      | √      |        | SilentEye               |                                            |
-| jpg      |        |        | F5-steganography-master | java Extract 生成图.jpg -p '密码'          |
-| bmp      | √      |        | SilentEye               |                                            |
-| bmp      | √      |        | jphs05/Jphswin          | jphs05                                     |
-| `<all>`1 | √      |        | oursecret               | oursecret                                  |
-| `<all>`2 | √      |        | 傅利叶变换              | misc_blindWaterMark_02_fourier.py          |
-
+| png      | √      | √      | stegpy                       | stegpy <file> -p                           |
+| png      |        | √      | zsteg                        | zsteg -a x.png                             |
+| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456    |
+|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt              |
+| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
+| jpg      | √      |        | SilentEye                    |                                            |
+| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'          |
+| bmp      | √      |        | SilentEye                    |                                            |
+| bmp      | √      |        | jphs05/Jphswin               | jphs05                                     |
+| `<all>`1 | √      |        | oursecret                    | oursecret                                  |
+| `<all>`2 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py          |
 
 - https://www.aperisolve.com/
 - 看文件末尾、文件头

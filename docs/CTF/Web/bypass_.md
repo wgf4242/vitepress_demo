@@ -25,6 +25,7 @@
 | \             | ?filename=..%5c..%5c/windows/win.ini                  |
 | is_numeric    | is_numeric ('0xFFFF') 16 进制绕过                     |
 | 反码绕        | urlencode(~'system');                                 |
+| xor bypass    | bypass_xorshell.py                                    |
 
 ## bypass functions
 

@@ -61,13 +61,13 @@ sudo make install
 
 x/countFormatSize addr
 
-| count | size | type | desc         | type | desc   |
-| ----- | ---- | ---- | ------------ | ---- | ------ |
-| b     | 1    | o    | 八进制       | f    | 浮点数 |
-| h     | 2    | d    | 十进制       | a    | 地址   |
-| w     | 4    | x    | 十六进制     | i    | 指令   |
-| g     | 8    | u    | 无符号十进制 | c    | 字符   |
-|       |      | t    | 二进制       | s    | 字符串 |
+| count | size | type | desc         | type | desc      |
+| ----- | ---- | ---- | ------------ | ---- | --------- |
+| b     | 1    | o    | 八进制       | f    | 浮点数    |
+| h     | 2    | d    | 十进制       | a    | 地址      |
+| w     | 4    | x    | 十六进制     | i    | 指令/汇编 |
+| g     | 8    | u    | 无符号十进制 | c    | 字符      |
+|       |      | t    | 二进制       | s    | 字符串    |
 
 格式: x /nfu <addr>
 

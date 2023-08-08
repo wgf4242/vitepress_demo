@@ -1,34 +1,40 @@
 各种取证工具 https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%8F%96%E8%AF%81.md
-[CTF成长之路丨Windows取证常用工具介绍](https://mp.weixin.qq.com/s/e1HzaeoKQLplGbmKN6cWYA)
-
+[CTF 成长之路丨 Windows 取证常用工具介绍](https://mp.weixin.qq.com/s/e1HzaeoKQLplGbmKN6cWYA)
 
 ## 取证题
-取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt 
 
-1. 直接010, strings  flag
+取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt
+
+1. 直接 010, strings flag
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
 1. systeminfo - 安装时间
-2. 看桌面 
+1. 看桌面
    - 2.0 Filter: Desktop\
    - 2.1 Magnet AXIOM 收集信息
    - 3.Firefox key3.db 恢复密码
-   - 3.Firefox浏览器记录 places.sqlite
+   - 3.Firefox 浏览器记录 places.sqlite
    - 4.浏览历史
    - 4.进程信息
-   - 5.dump内存 如dump下notepad进程的内存再foremost可能得压缩包
-3. 浏览器历史取证
+   - 5.dump 内存 如 dump 下 notepad 进程的内存再 foremost 可能得压缩包
+1. 浏览器历史取证
    - 带 paste 地址优先查看.
-4. [profile找不到详下 ](#profile找不到)
-5. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL查看器
+1. [profile 找不到详下 ](#profile找不到)
+1. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL 查看器
+
+| ext  | software |                        |
+| ---- | -------- | ---------------------- |
+| .img | winhex   | 查看每个块看有没有提示 |
 
 ### windows
-powershell 最后一条命令 或 运行powershell向上翻
+
+powershell 最后一条命令 或 运行 powershell 向上翻
 appData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 
-wsl相关
+wsl 相关
 appdata/local/Packages/xxxxUbuntu/LocalState/rootfs/etc/mysql/debian.cnf
 
 ### linux
+
 https://blog.csdn.net/NFMSR?type=blog
 https://github.com/volatilityfoundation/volatility
 
@@ -44,7 +50,9 @@ python vol.py -f ../1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linu
 python vol.py -f ../1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_find_file -i 0xffff97ce37a94568 -O secret.zip
 volatility -f 1.mem --profile=LinuxUbuntu180484x64 linux_recover_filesystem -D filesystem # 导出全部缓存文件
 ```
-### 数据库sql
+
+### 数据库 sql
+
 mysql 记录
 /data/mysql/db/xxx.log
 
@@ -53,23 +61,27 @@ mysql 记录
 修改 update
 login_time
 ```
-### 浏览器取证  Firefox
+
+### 浏览器取证 Firefox
+
 https://github.com/lclevy/firepwd
 各种取证工具 https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%8F%96%E8%AF%81.md
 
-恢复 Firefox\Profiles\xx.default-release 下的key4.db和logins.json
+恢复 Firefox\Profiles\xx.default-release 下的 key4.db 和 logins.json
 python firepwd.py -d ..\Profiles
 
 ```
 places.sqlite  # 浏览记录
 ```
-###  模拟器取证 .npbk
 
-2.[雷电APP智能分析](https://www.forensix.cn/products/info.aspx?itemid=1127&lcid=5)
+### 模拟器取证 .npbk
 
-[2023西湖论剑-机你太美](https://mp.weixin.qq.com/s/vSI5nTZVcwm5qwh2iwomcg)
+2.[雷电 APP 智能分析](https://www.forensix.cn/products/info.aspx?itemid=1127&lcid=5)
 
-__夜神模拟器去除锁屏密码__
+[2023 西湖论剑-机你太美](https://mp.weixin.qq.com/s/vSI5nTZVcwm5qwh2iwomcg)
+
+**夜神模拟器去除锁屏密码**
+
 ```sh
 adb devices
 adb shell
@@ -81,18 +93,19 @@ rm /data/system/locksettings.db-wal
 reboot
 # 重启之后就进去了。
 ```
-### sqlmap 
-.db  .db-wal 都导出，然后用工具打开
+
+### sqlmap
+
+.db .db-wal 都导出，然后用工具打开
 .db-wal 会定期写入到.db
 
-
-### profile找不到
+### profile 找不到
 
 kali 中 autopsy 可以取证一部分
 
 1. https://blog.bi0s.in/2021/08/20/Forensics/InCTFi21-TheBigScore/
 2. 团队赛决赛 Xiaoming
-3. [Linux新版内核下内存取证分析附CTF题](http://tttang.com/archive/1762/) https://mp.weixin.qq.com/s/dbHGBzjcMoF8aPqIkCN_Fg
+3. [Linux 新版内核下内存取证分析附 CTF 题](http://tttang.com/archive/1762/) https://mp.weixin.qq.com/s/dbHGBzjcMoF8aPqIkCN_Fg
 4. [『CTF』制作新内核版本的 Volatility Profile](https://mp.weixin.qq.com/s/RWZ_MzPakLT63yYsO8mZ2w)
 
 ```sh
@@ -134,28 +147,29 @@ python vol.py --info | grep Linux  # 查看是否已经制作了目标系统的p
 python vol.py -f the_big_score.lime --profile=LinuxUbuntu1804x64 linux_bash
 ```
 
-ubuntu如何更换 kernel启动, 下面文件修改
+ubuntu 如何更换 kernel 启动, 下面文件修改
 vi /boot/grub/grub.cfg
 
-4.volatility.exe 添加自定义profile的使用
+4.volatility.exe 添加自定义 profile 的使用
 
 ```
 1.将profile文件放到 plugins\overlays\linux\Ubuntu_5.4.0-84-generic_profile.zip
 2.volatility.exe --plugins=plugins --info
 ```
-### Firefox取证
+
+### Firefox 取证
 
 places.sqlite, 浏览历史 `moz_places`
 
 # Article
-[PC端微信个人信息与聊天记录取证](https://mp.weixin.qq.com/s/FPcIrouEAM_2RNZhfSRgoQ)
-[PC微信 | 钓鱼场景下微信聊天记录回传](https://mp.weixin.qq.com/s/ROCTBw8hM8mDEuIq5Vyhsg)
-[PC微信 | 免登录读取别人的WX聊天记录](https://mp.weixin.qq.com/s/ub1eQespid6BeODGM7kh8w)
-[PC微信 | 攻防演练中解密微信聊天记录寻找密码的Tips](https://mp.weixin.qq.com/s/kG7Wlp3XwOlQQqNPEXOmiQ)
-[Android | 半自动微信数据库脱密及解析，生成词云和条状图 ](https://www.52pojie.cn/thread-1724737-1-1.html) 
-[Android | 取证之微信8.0.38版本数据库解密分析](https://mp.weixin.qq.com/s/OAzhnQPd_sHT5J1oMrrKFw)
 
+[PC 端微信个人信息与聊天记录取证](https://mp.weixin.qq.com/s/FPcIrouEAM_2RNZhfSRgoQ)
+[PC 微信 | 钓鱼场景下微信聊天记录回传](https://mp.weixin.qq.com/s/ROCTBw8hM8mDEuIq5Vyhsg)
+[PC 微信 | 免登录读取别人的 WX 聊天记录](https://mp.weixin.qq.com/s/ub1eQespid6BeODGM7kh8w)
+[PC 微信 | 攻防演练中解密微信聊天记录寻找密码的 Tips](https://mp.weixin.qq.com/s/kG7Wlp3XwOlQQqNPEXOmiQ)
+[Android | 半自动微信数据库脱密及解析，生成词云和条状图 ](https://www.52pojie.cn/thread-1724737-1-1.html)
+[Android | 取证之微信 8.0.38 版本数据库解密分析](https://mp.weixin.qq.com/s/OAzhnQPd_sHT5J1oMrrKFw)
 
 [浏览器数据导出解密工具 -- HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
-[安全运维 | RDP登录日志取证和清除](https://mp.weixin.qq.com/s/7504YsCEEfiM8uXQVCGRqA)
+[安全运维 | RDP 登录日志取证和清除](https://mp.weixin.qq.com/s/7504YsCEEfiM8uXQVCGRqA)
 [『CTF』常见的 Windows 硬盘取证](https://mp.weixin.qq.com/s/iIf44oW_dn5RRFSq5mMqlA)
