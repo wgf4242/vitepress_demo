@@ -14,6 +14,7 @@ rm htaccess
 ```
 
 __windows__
+事件日志调大一点
 
 ```shell
 tar zxcf www.tar.gz /var/www/html
@@ -30,6 +31,10 @@ rwinsta /server:wowhvdev1 RemoteID
 mstsc /console # 强行登录
 mstsc /console /admin # 强行登录
 ```
+
+__tomcat__
+
+需要记录post请求信息
 
 __mysql__
 

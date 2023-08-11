@@ -39,6 +39,8 @@
 [linux 下进程隐藏的一些研究](https://mp.weixin.qq.com/s/AtLifo1OVerH1Uhl8KKfuQ)
 [安全攻防 | 多种方式关闭讨厌的 defender！](https://mp.weixin.qq.com/s/W8fTA0gJTBtT_UjUa-HxUg)
 [反弹 Shell | 一款基于 SSH 的反向 Shell 工具](https://mp.weixin.qq.com/s/0Rx_FvSMV5l4mdf9qCMZrg)
+
+[内网远程控制总结](https://mp.weixin.qq.com/s/ijFpuZ-KS9gRGVYSF2hXaw)
 [todesk 在红队中的使用](https://mp.weixin.qq.com/s/XhHdLt2HJMUOJFF6aRtygw)
 [todesk 获取密码,rustdesk『红蓝对抗』远控软件小技巧](https://mp.weixin.qq.com/s/DvqFKMRzg6FCJtUdkk4hhA)
 [todesk 企业版制作远控免杀一切；](https://mp.weixin.qq.com/s/R_i4CfIji78AyYp4U3yEJA)
@@ -48,6 +50,7 @@
 [rustdesk | 实战 | 无视杀软使用远控工具进行横向移动 Tips](https://mp.weixin.qq.com/s/Tnt3VjsAPb5LP5QVoPyizA)
 
 [CS 权限维持](https://mp.weixin.qq.com/s/HhW20nTwzyq81DFYrcNwHQ)
+[微信聊天记录之自动化回传](https://mp.weixin.qq.com/s/rk7NyF808XIOsVoMKysWcw)
 
 ## Sql/Database
 

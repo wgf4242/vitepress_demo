@@ -308,6 +308,8 @@ https://github.com/APKLab/APKLab
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 XOR 解密](https://www.bilibili.com/video/BV1Lv4y1i7hJ/)
 - [​ 微信小程序逆向分析](https://mp.weixin.qq.com/s/r9VVeXnT_PFX7C8mq7ej_w)
 - [VX 小程序逆向分析](https://mp.weixin.qq.com/s/7yZzf4V-2fcn-jRwm4uO-w)
+- [【小程序逆向】百达星系signature、mid](https://mp.weixin.qq.com/s/RU6et-_V8JXTiSl7cOYnMg)
+
 
 ## 普通文章
 
