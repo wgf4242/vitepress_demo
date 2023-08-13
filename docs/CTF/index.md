@@ -68,10 +68,12 @@ cat test
 - [基于树莓派实现 IOT 流量抓取](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492289&idx=1&sn=900759780e235368e5ec1ff54f6ac800)
 - [固件符号表恢复](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247491846&idx=1&sn=b04846dbd9d5a72601f2469674f3c7d9)
 
-## 网络安全
+## 网络安全/项目/毕业设计
 
 [科普大作：等保、分保、关保、密评（附下载）](https://mp.weixin.qq.com/s/B6itiRBUkm8dSgX9VGBQgw)
 [实验室 2023 届 本科优秀毕业设计展示一——操作系统实践、代码保护](https://mp.weixin.qq.com/s/C_Ias9xu02c1MpQo0CSzRQ)
 [实验室 2023 届 本科优秀毕业设计展示二——网络安全](https://mp.weixin.qq.com/s/IIMm-h6Fxota7XfN_07OJg)
 [实验室 2023 届 本科优秀毕业设计展示三——安全工具](https://mp.weixin.qq.com/s/UM-gCy9MIw9PQMN7X3ofyg)
 [实验室 2023 届 本科优秀毕业设计展示四——应用安全](https://mp.weixin.qq.com/s/-qTDBayECI8i11n-W1GEBg)
+[获奖！立项！结题！](https://mp.weixin.qq.com/s/Q6n8JZ1VGdiAnEZNJZdDYw)
+

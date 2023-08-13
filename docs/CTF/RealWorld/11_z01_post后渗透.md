@@ -8,6 +8,7 @@
 
 ```sh
 # -- windows
+# --- [Windows server 80端口复用后门](https://mp.weixin.qq.com/s/unZEw-0r4LJKCGTAIsHYUA)
 ../../../../../../windows/win.ini
 arp -a
 ipconfig /all

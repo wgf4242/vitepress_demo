@@ -248,6 +248,7 @@ _ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://m
 _ [冰蝎 4.0 流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
 _ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
 - [Webshell | jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
+- [Webshell | Jsp两种免杀思路](https://mp.weixin.qq.com/s/HP9mDU0POphIUZKZuza1jA)
 - [Mimikatz 源码免杀](https://mp.weixin.qq.com/s/3dEmmGNkNLPhJnEudm69Nw)
 _ [使用进程镂空技术免杀360Defender](https://mp.weixin.qq.com/s/pyALO84x82aPb10AqV1eKA)
 **Video**

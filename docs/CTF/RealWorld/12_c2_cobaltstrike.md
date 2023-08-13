@@ -888,6 +888,7 @@ sub dialog_test {
 [Cobalt-Strike 之 CrossC2 插件安装与 linux 上线](https://mp.weixin.qq.com/s/Fty2S9ettdtTFgJWVTvQNQ)
 [CobaltStrike 加载插件](https://mp.weixin.qq.com/s/NtxhTkuMGhhRyLUREnZQcA)
 [免杀 | Arsenal-kit | 聊聊红队攻防中 CobalStrike 的多维度对抗](https://mp.weixin.qq.com/s/fF6frplnurl-rCivYs0fFA)
+[红队工具推荐：Cobalt Strike的远程桌面](https://mp.weixin.qq.com/s/_cVF-JyTkdeJZznEXZ9uqQ)
 
 ## Vocabulary
 
