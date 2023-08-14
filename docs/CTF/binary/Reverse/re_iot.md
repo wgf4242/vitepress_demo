@@ -75,6 +75,8 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [路由器漏洞挖掘系列之未授权访问漏洞及常见绕过技巧](https://mp.weixin.qq.com/s/dQ9GL2wIME35uxAes3LzEg)
 - [利用 MQTT 协议缺陷攻击内网物联设备](https://mp.weixin.qq.com/s/EtpaAw-fq4XJGyiojUVdiw)
 - [针对基于 mavlink 协议的无人机进行攻击](https://mp.weixin.qq.com/s/HfFqgQcgOyA_rmb3UFXhww)
+- [路由器挖掘基础教程-by-HRP](https://hgreed.vip/2023/08/02/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%8C%96%E6%8E%98%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-by-HRP/)
+
 
 ## Coding
 

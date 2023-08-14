@@ -89,6 +89,8 @@ INV_B取反字节 60=>-60
 [工控CTF中常见题型介绍](https://mp.weixin.qq.com/s/LW0jQAoD5VLygHyooyUXlw)
 [工控安全竞赛之应用程序逆向分析技术](https://mp.weixin.qq.com/s/6sb6q0959Nb-Z1eTi5Uprg)
 [工业控制靶场-虚拟化体验分享（一）](https://mp.weixin.qq.com/s/Q26EpfVOsPKXzVFVoIPbqQ)
+## 使用
+- [S7-1200模拟量处理](https://mp.weixin.qq.com/s/9Y_SVgVdAQG6ffCCTIy4cQ)
 
 ## 漏洞平台
 https://ics.cnvd.org.cn/index

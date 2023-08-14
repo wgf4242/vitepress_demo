@@ -239,6 +239,7 @@ result.txt | 搜验证码
 - [免杀 36x 和火 x 的 shellcode 加载器 -- c2-shellcode-py](https://github.com/langsasec/c2-shellcode-py)
 - [技术 | 进程重影](http://s0rry.cn/archives/jin-cheng-zhong-ying)
 - [技术 | 白加黑的初步探究](https://mp.weixin.qq.com/s/23hMrZEI2p_8i8LIbJQsWg)
+- [技术 | 免杀技术之白加黑的攻击防御](https://mp.weixin.qq.com/s/r8o0UH9HcKtTQmdVbey5FQ)
 - [BypassAV](https://github.com/CMEPW/BypassAV)
 - [技术 | shellcode loader 的编写](https://mp.weixin.qq.com/s/sfxmWf9nCQeAc7PRRG5eaQ)
 - [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)

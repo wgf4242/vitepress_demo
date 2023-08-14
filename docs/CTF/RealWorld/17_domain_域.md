@@ -478,6 +478,8 @@ rw*domain*域渗透 - 域控使用组策略下发文件并执行.rar
 [横向移动-域控提权](https://mp.weixin.qq.com/s/_g0WiGu045GCqhN3m2bsxA)
 [以攻促防丨霄壤实验室安全研究员亲传「如何自己伪造 kerberos 票据」](https://mp.weixin.qq.com/s/_zQZ3uRfAHB_6_ww5gT8Ew)
 [内网（笔记）-域内横向移动-续 2 SPN 工具](https://mp.weixin.qq.com/s/vMCVrAiesYibYCMbvJeAwg)
+[Kerberos攻击 | 钻石票据与蓝宝石票据](https://mp.weixin.qq.com/s/xoNuJwgZfxJCeQPa4BGSBA)
+
 
 ## Todo
 

@@ -79,6 +79,7 @@ __int64 __fastcall RegisterNatives(JNIEnv *a1) // 改为JNIEnv*,
 
 ## jeb 调试 apk
 
+
 最佳：
 
 1. jeb_wincon.bat -c --makeapkdebug -- EXAMPLE.apk
@@ -224,6 +225,7 @@ https://github.com/APKLab/APKLab
 - [Android 渗透 07：安卓 CTF 系列-案例 4](https://mp.weixin.qq.com/s/JxcJX4H73Xqur5br45ad4g)
 - [Android 渗透 11：AS 与 Jeb 动态调试 Apk](https://mp.weixin.qq.com/s/SOPjvPkuCB2zFZiJ5L7tew)
 - [Android 渗透 12：安卓逆向-IDA 动态调试 so](https://mp.weixin.qq.com/s/eJVicCY7Y4VEAg8U2dS4hg)
+- [【安卓】IDA调试so与JNI_OnLoad](http://www.qfrost.com/posts/android/%E5%AE%89%E5%8D%93ida%E8%B0%83%E8%AF%95so%E4%B8%8Ejni_load/)
 - [【APP 逆向百例】Frida 初体验，root 检测与加密字符串定位](https://mp.weixin.qq.com/s/WfvTA9MJh-NS86LYDVTBzg)
 - [[分享]之前大家私信我 frida 的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm)
 - [对某 app 的加密定位与 hook](https://mp.weixin.qq.com/s/7Wh5U8eyfL0GEWzqZx6uqA)
@@ -319,6 +321,7 @@ https://github.com/APKLab/APKLab
 ## 安卓/木马
 
 [简单的安卓木马制作（实现外网控制）](https://mp.weixin.qq.com/s/7vbzKsxbOXLz99t0O7NLfw)
+[《Cypher Rat控制+安卓木马加固与免杀+渗透手机程序化》](https://www.bilibili.com/video/BV18p4y137mZ/)
 
 ## 关注列表
 

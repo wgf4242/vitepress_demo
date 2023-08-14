@@ -99,3 +99,5 @@ SELECT DISTINCT MACHINE, PROGRAM, LOGON_TIME FROM V$SESSION WHERE TYPE='USER' OR
 [红队必修课之针对 MSSQL 数据库攻击尝试](https://forum.butian.net/share/1390)
 [关于 mssql 注入的知识分享](https://mp.weixin.qq.com/s/sXt9zd18lD4Al4OC3mmsKw)
 [MSSQL 渗透 tips 总结](https://mp.weixin.qq.com/s/TjZGGQY9blMMv-ERtCklDw)
+
+[XP_CmdShell平替CLR的基础利用](https://mp.weixin.qq.com/s/KFniCQMJ0ApCW68CqecIaQ)
