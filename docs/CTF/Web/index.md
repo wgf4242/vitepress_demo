@@ -22,10 +22,12 @@ fuzz
 | `?name={{config}}`                          |               |
 | `?file=../../../../../../prox/self/environ` | 看 secret_key |
 
+- Shiro 检测
+
 ## 非预期想法
 
 - 读取 ~/.bash_history 历史文件
-- 读取环境变量
+- 读取环境变量, 2.`../../../proc/1/environ`
 
 ## Web 渗透
 
