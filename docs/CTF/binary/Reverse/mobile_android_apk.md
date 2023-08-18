@@ -298,6 +298,8 @@ https://github.com/APKLab/APKLab
 - [开箱即用的 SO 代码混淆器来啦！r0env2022 里的 as 集成 ollvm 混淆](https://www.bilibili.com/video/BV1z8411G79H/)
 - [Dex 控制流混淆-AS 插件版](https://www.bilibili.com/video/BV1MG4y1574m/)
 
+检测混淆类型 去混淆 gda deobfuscator threadtear, bytecodeviewer cfr
+
 ## 底层研究
 
 - [loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/L4LmF1M4gN21r8uYL0BDJg)
