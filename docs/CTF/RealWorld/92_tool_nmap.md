@@ -10,6 +10,7 @@ nmap -sV -Pn -n --proxies socks4://127.0.0.1:9050 scanme.nmap.org
 
 - 检测指定端口服务
 - nmap -p 80 192.168.91.129 -Pn -sV
+- nmap -sT -sV -O -sC -p1337,3306 192.168.203.118
 - 扫描单个主机
 - nmap 192.168.1.2
 - 扫描整个子网,命令如下:

