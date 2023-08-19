@@ -280,6 +280,7 @@ _ [使用进程镂空技术免杀360Defender](https://mp.weixin.qq.com/s/pyALO84
 [从 SQL 注入绕过最新安全狗 WAF 中学习 fuzz](https://mp.weixin.qq.com/s/ChwHSHGMd3GJDpYN4z1c9Q)
 [【技术分享】SQL-FUZZ 技巧及阿里云 waf 绕过方式](https://mp.weixin.qq.com/s/eUJ7J83EzrlfGvLD6b9JGQ)
 [文件上传绕过360磐云WAF](https://mp.weixin.qq.com/s/QC0oZxMti4TvpWQE9VCqgQ)
+[web渗透测试中WAF绕过讲解（一）针对CDN类型的WAF绕过](https://mp.weixin.qq.com/s/0Ea0p7QopMj9t2xiD0uokw)
 
 ### bypass uac
 

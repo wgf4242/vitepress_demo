@@ -35,7 +35,8 @@ vm.setVerbose(false);  // 设置为true时日志太多
 [利用unidbg进行一次电子取证](https://mp.weixin.qq.com/s/Yd0veyI9iNaQq7_0h3yMqw)
 [unidbg调用sgmain的doCommandNative函数生成某酷encryptR_client参数 ](https://www.52pojie.cn/thread-1680816-1-1.html) 
 [Unicorn及Unidbg学习记录](http://43.138.162.163:8090/archives/unicornji-unidbgxue-xi-ji-lu) 
-
+[unidbg|模拟执行so函数](https://mp.weixin.qq.com/s/4UblRmk3E5PjW9s3wcYo2w)
+[android逆向|unidbg去花指令](https://mp.weixin.qq.com/s/WSccv02CooGonrnq_U2KlQ)
 
 ---
 __Video__

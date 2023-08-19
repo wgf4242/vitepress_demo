@@ -870,7 +870,7 @@ sub dialog_test {
 [C2 隐藏 \_ 让你的流量更隐蔽（二）](https://mp.weixin.qq.com/s/6WJUTKPgg9OgtKVkUbPucg)
 [浅谈cobalt strike特征隐藏](https://mp.weixin.qq.com/s/zImEai6xDz1HNR6vHxL9gA)
 [干货分享 | 魔改cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
-
+[内网神器Cobalt Strike隐藏特征与流量混淆.](https://mp.weixin.qq.com/s/TUldKUINcofoGZtRApMc0Q)
 
 ## 使用帮助
 
