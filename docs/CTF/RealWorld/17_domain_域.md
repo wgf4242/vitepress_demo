@@ -384,7 +384,7 @@ python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd93596983261
 
 ### Rubeus
 
-Rubeus 是用于测试 Kerberos 的利用工具。
+Rubeus 是用于测试 Kerberos 的利用工具。 如TGT请求/ST请求/AS-REP Roasting攻击/，Kerberoasting攻击/委派攻击/黄金票据/白银票据等。
 
 Rubeus kerberoast 查看哪些域用户注册了 SPN，也为后续 Kerberoasting 做准备：
 

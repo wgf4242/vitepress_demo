@@ -79,7 +79,7 @@ ncrack -p 3389 -v -user admin -P ./6位数字.txt 192.168.52.143 -T2 -oN output.
 ```
 
 # medusa
-
+medusa 比 hydra快一些
 ```bash
 # FTP
 medusa -h 192.168.1.1 -u admin -P /top1000_password.txt -M ftp -e ns -t 10 -f -r 0 -O ./result_ftp.txt

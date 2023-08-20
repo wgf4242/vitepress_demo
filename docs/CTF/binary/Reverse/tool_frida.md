@@ -279,6 +279,9 @@ https://www.anquanke.com/post/id/195215
 [安卓协议逆向之frida hook百例二](https://www.52pojie.cn/thread-1712752-1-1.html) 
 [『工具使用』Frida 工程师备忘录](https://mp.weixin.qq.com/s/UqJSwsxkV8iTRTbUsS58Kg)
 
+- 反调试
+[移动安全之【魔改frida自编译去特征】超详细全过程](https://mp.weixin.qq.com/s/4MOTfYm-GMpZQFsLKOOHwQ)
+
 ## Brida
 [[原创]Frida配合BurpSuite的Brida插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
 [Android渗透测试frida——Brida插件加解密实战演示](https://xz.aliyun.com/t/7562?page=34)

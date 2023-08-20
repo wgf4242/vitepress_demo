@@ -60,6 +60,7 @@
 
 - [LLVM Pass PWN（上）](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247496124&idx=1&sn=af2d0a9f7d60e6903423a7ca64bd76a5)
 - [LLVM Pass PWN（下）](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247496199&idx=1&sn=17cf42f584ca910302bd2c46f9fe4757)
+- [llvm pass总结](https://mp.weixin.qq.com/s/CTiYMaXvh9NIk2DtLY0NZQ)
 
 字符串
 [字符串混淆 | 2020-06-05-Frida辅助分析OLLVM混淆的算法](https://huhu0706.github.io/2020/06/05/2020-06-05-Frida%E8%BE%85%E5%8A%A9%E5%88%86%E6%9E%90OLLVM%E6%B7%B7%E6%B7%86%E7%9A%84%E7%AE%97%E6%B3%95/)
