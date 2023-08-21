@@ -26,6 +26,7 @@
 | is_numeric    | is_numeric ('0xFFFF') 16 进制绕过                     |
 | 反码绕        | urlencode(~'system');                                 |
 | xor bypass    | bypass_xorshell.py                                    |
+| php\|strstr   | 大小写绕过, strstri 才是大小写不敏感                  |
 
 ## bypass functions
 
@@ -130,16 +131,22 @@ copy /b 1.jpg+2.jpg 3 /y
 
 - 猜 列为 flag, 表为 flag , select flag from flag
 
-| bypass     |                                                  |                                                                                                                                            |
+| bypass     | string                                           |                                                                                                                                            |
 | ---------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | 大小写     |                                                  |                                                                                                                                            |
 | =          | like/rlike/regexp                                | 或用 !<> , rlike 支持正则                                                                                                                  |
-| 空格       | /\*\*/ 或 +                                      | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or 后面可以跟上偶数个!、~可以替代空格 <br>and/or 前的空格可用省略. <br>'后空格可省略 |
+| 空格       | /\*\*/ 或 + 或 ()                                | php 可用 %09、%0A、 %0B、 %0C、 %0D、%A0、%20 <br>and/or 后面可以跟上偶数个!、~可以替代空格 <br>and/or 前的空格可用省略. <br>'后空格可省略 |
+| and        | &&                                               |
+| or         | \|\|                                             |
 | select     | [handler](#handler)/updatexml/extractvalue       |                                                                                                                                            |
 | 16 进制    | hex 自动转字符                                   | 0x61 即 a                                                                                                                                  |
 | 1000       | 0x38e<br>`992\|8`<br>--1000<br>~~1000<br>200^800 |
+| substr     | mid,left,right                                   |
+| ,逗号      | `from . for . `                                  | `select substr(database() from 1 for 1);`, mid 相同 <br> limit 0,1 => limit 1 offset 0                                                     |
 | **Mysql8** |                                                  |
 | select     | [table](#sqltable)                               | table myuser == select \* from myuser                                                                                                      |
+
+`reverse` 可配合报错注入截取
 
 ## Test Regex
 

@@ -24,5 +24,7 @@ syscall: 0x0f 0x05  # print(disasm(asm('syscall')))
 | ------------ | ----------- | --- |
 | rt_sigreturn | mov rax,0Fh |     |
 | execve()     | rax=59      |     |
+| sys_read     | 0           |
+| sys_write    | 1           |
 
 ## 示例见 hook_lief_patch1

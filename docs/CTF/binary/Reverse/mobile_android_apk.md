@@ -202,8 +202,8 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》九、密码学基础、算法自吐、非标准加密对抗](https://mp.weixin.qq.com/s/jIId9oEchhU4W7jplYcyJg)
 - [《安卓逆向这档事》十、不是我说，有了 IDA 还要什么女朋友？](https://mp.weixin.qq.com/s/odbZ9F9u5nh9Bp2gK-YbxA) [video](https://www.bilibili.com/video/BV1ho4y1F7Vz/)
 - [《安卓逆向这档事》十二、大佬帮我分析一下](https://www.bilibili.com/video/BV1u8411S7xZ/)
+- [《安卓逆向这档事》十三、是时候学习一下Frida一把梭了(上)](https://mp.weixin.qq.com/s/T0K5RmTsDZ0RIc8Y-S325Q)
 - [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
-
 ---
 
 八、参考文档
