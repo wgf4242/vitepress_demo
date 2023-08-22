@@ -31,6 +31,10 @@ javaw -noverify -Dsun.java2d.uiScale=1 -javaagent:burploader.jar -jar burpsuite_
 # 安装插件
 java -jar <path-to-burp.jar> --install-plugin <path-to-plugin.jar>
 ```
+
+__工具__
+- Battering ram .用户名和密码是用同样的,进行爆破 
+
 ### 配置 proxy history
 
 * Target - Scope - √ Use Advanced scope control

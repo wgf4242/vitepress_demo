@@ -5,7 +5,9 @@
 ```shell
 # 常用
 proxychains4 nmap -Pn -sT -T4 -p21,22,135,445,80,53,3389,8080,1433,8080 192.168.183.129
+proxychains4 nmap -Pn -sS -T4 -p21,22,135,445,80,53,3389,8080,1433,8080 192.168.183.129
 nmap -sV -Pn -n --proxies socks4://127.0.0.1:9050 scanme.nmap.org
+nmap -Pn --script vuln -p8080 192.168.1.1
 ```
 
 - 检测指定端口服务

@@ -3,8 +3,8 @@
 
 # Web
 
+尽量使用 burp 测试, 比如 /admin/../
 
-尽量使用burp测试, 比如 /admin/../
 ## 题目提示
 
 [弱类型](./web_php_001_weaktype)
@@ -24,7 +24,9 @@ fuzz
 | `?name={{config}}`                          |               |
 | `?file=../../../../../../prox/self/environ` | 看 secret_key |
 
+- ssrf/发送连接时,可以本地启动nc监听试一下发送信息是否正确.
 - Shiro 检测
+- 发送时进行1次或多次url编码。
 
 ## 非预期想法
 
@@ -233,10 +235,13 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [Reverse Shell Cheat Sheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
 [史上最全一句话木马](https://mp.weixin.qq.com/s/o_HUnlubJdPRdQdpnMJeEw)
 [ChatGPT 写了“木马”](https://mp.weixin.qq.com/s/C3taCJVQP0RwNSBXoBnJFg)
+
 ## 代码审计
 
 [DreamerCMS 代码审计](https://n1k0la-t.github.io/2023/01/31/DreamerCMS代码审计/)
-[记一次较为详细的某CMS代码审计](https://mp.weixin.qq.com/s/WXvbSAZ2HkLWxgqpvwQOcg)
+[记一次较为详细的某 CMS 代码审计](https://mp.weixin.qq.com/s/WXvbSAZ2HkLWxgqpvwQOcg)
+[【代码审计】若依后台管理系统](https://mp.weixin.qq.com/s/ITt-_ntxOu0ArwNQ1tjXQg)
+
 ## 免杀
 
 [免杀学习——PHP 免杀](https://blog.csdn.net/ZxC789456302/article/details/127473366): 白白白无-免杀学习——PHP 免杀----🔥 热度:9113

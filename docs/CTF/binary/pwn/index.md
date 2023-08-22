@@ -84,3 +84,5 @@ system, ret_addr, bin_sh
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
 [ret2shellcode](https://www.bilibili.com/video/BV1Ws4y137xa/)
 
+## pwn shellcode
+[CTF竞赛 -- Shellcode学习](https://mp.weixin.qq.com/s/HmLp_yBKcm_aoLJH4kQuZg)

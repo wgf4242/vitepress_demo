@@ -62,6 +62,8 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [TP-Link WR740 后门漏洞复现](https://mp.weixin.qq.com/s/mcAOxhih8Yq8tZe0dAdInA)
 - [路由器初探之 mips 基础及 mips 栈溢出](https://mp.weixin.qq.com/s/fxQjS4KqNAjsPy-RX5gLVw)
 - [D-Link DIR-820L 1.05B03 命令注入漏洞 CVE-2022-26258 复现](https://mp.weixin.qq.com/s/Hc2DHKBlKhSwEoFaquKgzw)
+- [TOTOLINK CVE-2022-25084 漏洞分析&复现](https://mp.weixin.qq.com/s/hD0a_AQAtM8npD7mHizrIA)
+- [Cisco RV340，RV340W，RV345和RV345P从零开始复现 CVE-2023-20073](https://mp.weixin.qq.com/s/xCKzdaRq4D5svTc__tXPFQ)
 
 ## 门卡 m1 卡
 

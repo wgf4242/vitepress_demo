@@ -113,6 +113,7 @@ result.txt | 搜验证码
 - [免杀-分享利用 C++多种方式执行 Shellcode](https://www.bilibili.com/video/BV1fW4y1Z7NW/)
 - [【红队攻防】C++ VEH 实现 shellcode 加载器](https://www.bilibili.com/video/BV1jk4y1K7d4/)
 - [AV-Bypass-Learning 免杀学习笔记 shellcode 免杀的常用手法](https://github.com/colind0pe/AV-Bypass-Learning)
+- [红队免杀系列之其一](https://mp.weixin.qq.com/s/vy77tmRkbztR_XHXU9NDvQ)
 
 ## 提权
 
@@ -184,15 +185,12 @@ result.txt | 搜验证码
 [API | 记录一次 JWT 的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
 [API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/IbsJ0n-sw1G0cWHz6PE6Jw)
 
----
-
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
 
----
-
 [支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 
+[(SRC漏洞挖掘三) 二维码功能点](https://mp.weixin.qq.com/s/AmEXavw4G7YLZEZZAHOZUw)
 ## Java
 
 [Javaweb 中的权限绕过](https://mp.weixin.qq.com/s/9PmJnm_bkFqkWEv603VdjA)
