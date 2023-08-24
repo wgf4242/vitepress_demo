@@ -23,6 +23,7 @@
   - 转二维码
 - unknown 数据
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
+  - 字频统计
   - 查 md5
   - To Hex, 16 位可能是 md5, 如果是 2 层 md5, flag 可能是一层 md5
   - 看不懂/外文, 使用 Cyberchef Text Encoding Brute Force 选 Decode

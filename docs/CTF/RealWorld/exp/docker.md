@@ -1,8 +1,14 @@
 
 # docker 逃逸
+
+启动时如果添加了 `--privileged` 参数，就会以特权模式启动docker，具备所有的Capabilities
+
 ```shell
-# 查看是否在 docker中
+# 1.1 方式1 查看是否在 docker中
 ls -alh /.dockerenv
+# 1.2 方式2
+cat /proc/self/status|grepCapEff
+## CapEff: 0000003fffffffff -- 以特权模式的
 
 $ fdisk -l
 # * Linux 表示是宿主机

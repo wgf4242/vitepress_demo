@@ -245,6 +245,7 @@ result.txt | 搜验证码
 - [绕过 AV/EDR 的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
 _ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
 _ [冰蝎 4.0 流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
+- [Webshell | php_webshell免杀--从0改造你的AntSword](https://mp.weixin.qq.com/s/yTmipL9HlPB4a0oQ-qy_3Q)
 _ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
 - [Webshell | jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
 - [Webshell | Jsp两种免杀思路](https://mp.weixin.qq.com/s/HP9mDU0POphIUZKZuza1jA)
