@@ -539,6 +539,9 @@ proxy tcp -p ":23080" -T tcp -P "22.22.22.33:33080"
 #  Kali 上执行
 ssh -CfNg -L 222:10.10.10.2:22 root@172.20.10.4
 ssh root@127.0.0.1 -p 222
+
+# eg.2
+ssh -L 2121:www.example.com:80 tunnel-host -N # 访问本机的 2121 端⼝，就是访问 www.example.com 的80
 ```
 
 - 远程转发: 在远程主机上监听一个端口，所有远程主机指定的数据都会通过 SSH 隧道传输到本地主机的对应端口，远程转发相当于反向代理。
@@ -547,6 +550,9 @@ ssh root@127.0.0.1 -p 222
 ```bash
 Linux$ ssh -CfNg -R 222:10.10.10.2:22 root@172.20.10.5
  Kali$ ssh root@127.0.0.1 -p 222
+
+# eg.2
+ssh -R 8080:localhost:80 -N my.public.server # ⽤户访问 my.public.server:8080 ，就会⾃动映射到 localhost:80
 ```
 
 - 动态转发: 代理
