@@ -63,6 +63,7 @@
 [Burpsuite 技巧之 MD5 加密密码爆破、带验证码爆破](https://mp.weixin.qq.com/s/r9pQVqIKOxXY-6QQobJruQ)
 [验证码 | 爆破总结](https://mp.weixin.qq.com/s/z9hkE0XBMwrdx09QHQC_1Q)
 [验证码 | 缺失/绕过](https://mp.weixin.qq.com/s/0_kCK5AggNYHCcNzMSQAtg)
+[验证码 | 关于验证码的那些漏洞](https://mp.weixin.qq.com/s/ZwmI0aoZbZfaZawgqX96yw)
 result.txt | 搜验证码
 [干货 | 漏洞挖掘绕过登录页面的七种常见方法](https://mp.weixin.qq.com/s/L5-uqiRJH9ozSGzXDSu73A)
 

@@ -1,4 +1,6 @@
 [Second_BC の BloG | 格式化字符串](https://secondbc.github.io/SecondBC/2023/04/13/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/)
+[CTF竞赛：从格式化输出函数到完全控制](https://mp.weixin.qq.com/s/1eXd6cBxNVwqjgu-A-KbCw)
+
 
 - gets() 无限写溢出.\n时停止
 

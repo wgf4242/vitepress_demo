@@ -81,6 +81,8 @@
 [禅道 17.4 以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞分析](https://mp.weixin.qq.com/s/ZHsYaU31WkzAJijy1V0U1w)
 [禅道 17.4 以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞](https://mp.weixin.qq.com/s/xcOvFx2nUDUGkdXqXj0iMw)
 [禅道 18.1 版本 RCE 分析](https://mp.weixin.qq.com/s/QYISEFl3rTVnGY1ONFLIPw)
+[禅道 18.0b1 后台命令执行漏洞](https://mp.weixin.qq.com/s/G2H6Na96FtU942ICRlrhsQ)
+
 [奇安信VPN | 存在任意账号密码修改漏洞](https://github.com/fork778/qax-vpn)
 
 
@@ -143,6 +145,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Tomcat | 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Tomcat | 7.0.0-7.0.81 任意文件写入(CVE-2017-12615)](https://mp.weixin.qq.com/s/_Pw2jqKx21RtrZFDSM6xCQ)
 [Apache Solr JMX 服务 RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
+[Apache Spark远程代码执行漏洞(CVE-2023-32007)](https://mp.weixin.qq.com/s/jCvb9e_lPWLS01cjw2wqjw)
 [Apache | 春秋云镜-CVE-2022-33980（Apache Commons Configuration 远程命令执行漏洞）](https://mp.weixin.qq.com/s/EhatzI7QVmh_RQZYOWNBYg)
 [Apache | RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/iNvk0U3Wz5ShAf588GneAA)
 [Apache | RocketMQ CVE-2023-33246 RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/1GIATpldq29cVTR6Rw_DTw)
@@ -232,6 +235,9 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 
 [Vcenter | VMware vSphere | CVE-2021-22005-rce、2021-21972-uoloadova 接口 rce 和 log4j](https://mp.weixin.qq.com/s/4jn2EDAt_YyFZQMfcxT21g)
 [jeecgboot | jimureport(jmreport) | CVE-2023-4450 RCE漏洞（附EXP）](https://mp.weixin.qq.com/s/fXTXiy0Z67ExHGN7zWIs2w)
+
+[CobaltStrike | CS < 4.7.1 RCE 复现踩坑记录](https://mp.weixin.qq.com/s/0rnIjQYDRn1GVPD9XIOHJQ)
+
 
 ### Exploit/CVE/实战漏洞/Windows
 
