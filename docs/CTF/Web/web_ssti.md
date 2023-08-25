@@ -8,6 +8,7 @@
 - [Python原型链污染+Flask Pin](../../../../../blog/text/docs/ctf/scripts/web/web_flask_pin_原型链污染.zip)
 - 非预期 unicode 绕过 \uxxxx 
 - 非预期 hex 绕过 \x32
+- python2 tphmap.py -u "url" [--level=3] --os-shell
 
 ### ssti smarty
 
