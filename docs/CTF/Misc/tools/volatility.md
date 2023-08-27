@@ -2,6 +2,8 @@
 收费的取证大师，火眼数据分析和Arsenal。
 vsadmin - 只能分析卷影、
 
+[Documentation](https://volatilityfoundation.github.io/volatility/d9/d2d/classvolatility_1_1plugins_1_1linux_1_1recover__filesystem_1_1linux__recover__filesystem.html)
+
 cheat sheet https://blog.onfvp.com/post/volatility-cheatsheet/
 https://book.hacktricks.xyz/forensics/basic-forensic-methodology/memory-dump-analysis/volatility-examples
 
@@ -44,6 +46,8 @@ volatility -f raw.raw --profile=Win7SP1x64 cmdscan  # 命令行的记录  搜索
 volatility -f raw.raw --profile=Win7SP1x64 lsadump  #lsadump 查看最后登录的用户
 volatility -f raw.raw --profile=Win7SP1x64 consoles # CONSOLE_INFORMATION，比cmdscan详细 能查看到输入的指令以及缓冲区的输出(即键入和键出)
 volatility -f raw.raw --profile=Win7SP1x64 cmdline
+
+python vol.py -f $file --profile=$profile linux_recover_filesystem -D ./filesystem # 恢复系统
 ```
 
 恢复删除的文件

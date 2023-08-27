@@ -18,7 +18,7 @@
    - 5.dump 内存 如 dump 下 notepad 进程的内存再 foremost 可能得压缩包
 1. 浏览器历史取证
    - 带 paste 地址优先查看.
-1. [profile 找不到详下 ](#profile找不到)
+1. [profile 找不到详下 ](#profile-找不到)
 1. 打印相关信息 Software\Microsoft\Print\Components, Windows\System32\spool\printers\ , SPL 查看器
 
 | ext  | software |                        |
@@ -100,6 +100,7 @@ reboot
 .db-wal 会定期写入到.db
 
 ### profile 找不到
+[Link1](https://heisenberk.github.io/Profile-Memory-Dump/)
 
 kali 中 autopsy 可以取证一部分
 

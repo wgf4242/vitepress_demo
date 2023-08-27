@@ -230,6 +230,9 @@ UPX1       00010000  00009000   00000400  00008400   E0000040                   
 2.脱壳方式
 修复头后, 搜 popad, 运行跳后走几步到 push ebp dump
 
+3.检查overlay_offset位置有没有写数据, 把overlay_offset的位置 补上去p_info字段的偏移 就可以用upx -d了
+
+
 ### VMP
 
 https://bbs.pediy.com/thread-271546-1.htm

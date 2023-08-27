@@ -79,6 +79,7 @@
 [LLVM入坑笔记(一):正式开始前的准备](https://blog.t0hka.top/archives/llvm入坑笔记一正式开始前的准备)
 [LLVM入坑笔记(二):LLVM Pass初探](https://blog.t0hka.top/archives/llvm入坑二llvmpass初探)
 [2023安卓逆向工具篇（windows下ollvm的使用）-哔哩哔哩](https://www.bilibili.com/video/BV1824y1s7tP)
+[将 OLLVM 从 LLVM4 移植到 LLVM16](https://mp.weixin.qq.com/s/W-WHuFqmD_W9IhCxIFEIZA)
 
 ## 脚本 
 https://github.com/mFallW1nd/deflat

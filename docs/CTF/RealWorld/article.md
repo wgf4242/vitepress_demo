@@ -94,6 +94,7 @@ result.txt | 搜验证码
 [一文就学会网络钓鱼“骚”姿势](https://mp.weixin.qq.com/s/87-lf_GUWswnm33WsVb7Xg)
 [【2023】无痕制作钓鱼邮件](https://mp.weixin.qq.com/s/Ro7ETfw9R0xeGrMEFSSekA)
 [攻防演练 | 记一次社工钓鱼全过程](https://mp.weixin.qq.com/s/z7VpDx1duMYauT9Cf0HfQg)
+[黑客(红队)攻防中内网利用chm文件进行getshell上线](https://mp.weixin.qq.com/s/_bD_-MbNujn6P_y18xUk0g)
 
 - 蓝队
   [钓鱼邮件攻击分析](https://mp.weixin.qq.com/s/F_eM1jm6CYnadCiv6oh0ng)

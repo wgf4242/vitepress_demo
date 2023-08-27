@@ -7,7 +7,7 @@
 ## 解题思路
 
 - 1.不要路径有空格, 不要中文路径
-- grep -r "flag"
+- grep -ri "flag"
 - strings ./file | grep flag
 - 010 1.全局搜索 2. Unicode 型搜索
 - 丢云沙箱检查相关信息
@@ -22,6 +22,7 @@
   - 分成 8 个一组，尝试前后补 0, 以及 python int(011, 2)
   - 转二维码
 - unknown 数据
+  - ciphey
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
   - 查 md5
@@ -29,6 +30,7 @@
   - 看不懂/外文, 使用 Cyberchef Text Encoding Brute Force 选 Decode
   - 每行字符的第一个/最后一个 组合提取密码
   - 观察文件尾 文件头 50 4b 03 04 正序反序
+  - 不明的2段 , 其中一段是不重复的 -- base64换表
   - 拆成 2 段 base64 例 enlyZ2h3eXlmeHc0ezhpMAMX1tMzk3amNpNXZqdDRrZg====
   - Fence Code
   - 画图, 比如 01 多行，把 1 画出来。连上看看效果。

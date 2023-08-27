@@ -38,6 +38,10 @@ sqlmap.py -u "<url>" --file-write "./mst.txt" --file-dest "d:/www/1.html" # 写�
 sqlmap.py -u "<url>" --tamper="randomcase.py" # 使用Tamper脚本
 sqlmap.py -m url_list.txt      # 批量检测SQL注入, 每行一个
 sqlmap.py -l burp.log --batch -smart # 对burp.log中保存的所有 reqest进行注入扫描, burp设置： Logger: On, √上Proxy或其他
+
+--user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0"
+--proxy=http://127.0.0.1:8080
+--delay=1
 ```
 
 ## manual
@@ -75,6 +79,16 @@ Boolean-based blind, Error-based, Union query-based, Stacked queries(对文件�
 | --second-order | 有些时候注入点输入的数据，返回的结果并不是当前页面，而是另外一个页面。使用此参数指定到哪个页面获取响应判断真假，--second-order 后面跟一个判断页面的 URL 地址。例如：--second-order="http://1.1.1.1/a.php" |
 
 [SQLMap 中 tamper 的简介](https://blog.csdn.net/Litbai_zhang/article/details/99681398)
+
+--tamper
+```bash
+# 普通tamper搭配方式:
+tamper=apostrophemask,apostrophenullencode,base64encode,between,chardoubleencode,charencode,charunicodeencode,equaltolike,greatest,ifnull2ifisnull,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2plus,space2randomblank,unionalltounion,unmagicquotes
+# 数据库为MSSQL的搭配方式:
+tamper=between,charencode,charunicodeencode,equaltolike,greatest,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,sp_password,space2comment,space2dash,space2mssqlblank,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes
+# 数据库为MySql的搭配方式:
+tamper=between,bluecoat,charencode,charunicodeencode,concat2concatws,equaltolike,greatest,halfversionedmorekeywords,ifnull2ifisnull,modsecurityversioned,modsecurityzeroversioned,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2hash,space2morehash,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes,versionedkeywords,versionedmorekeywords,xforwardedfor
+```
 
 ## level, risk
 
@@ -188,3 +202,6 @@ def tamper(payload, **kwargs):
 ## technique
 
 --technique=T 基于时间盲注
+
+# Article
+[实战sqlmap绕过WAF](https://mp.weixin.qq.com/s/Vog5qN8orga_GmuHI7yK2w)

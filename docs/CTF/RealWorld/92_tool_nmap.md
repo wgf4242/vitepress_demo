@@ -1,4 +1,5 @@
 ## Nmap
+[最新Nmap入门技术](https://mp.weixin.qq.com/s/nWZlBIzi8vaMxlKOhnJz9w)
 
 主机探测(一)
 
@@ -71,18 +72,18 @@ Client 端主动断开连接.
 nmap -T4 -F 192.168.93.20
 sudo nmap -sS -Pn -p 445 -n --open --min-hostgroup 1024 --min-parallelism 10 --host-timeout 30 -T4 -v -oG results-all.txt 192.168.52.0/24
 sudo nmap -sS -Pn -p 445 -n --open --min-hostgroup 1024 --min-parallelism 10 --host-timeout 30 -T4 -v -oG results-all.txt -iL ip.txt
-nmap -PU 192.168.1.0/24 # UDP ping探测主机:
-nmap -sV 192.168.1.1    # -sV: 扫描运行服务/软件版本
-nmap -P0 192.168.1.131  # 无Ping扫描，可以躲避某些防火墙的防护
-nmap -sP 192.168.0.0/24 # ping扫描
+nmap -PU 192.168.1.0/24                                  # UDP ping探测主机:
+nmap -sV 192.168.1.1                                     # -sV: 扫描运行服务/软件版本
+nmap -P0 192.168.1.131                                   # 无Ping扫描，可以躲避某些防火墙的防护
+nmap -sP 192.168.0.0/24                                  # ping扫描
 nmap -Pn -sV --script unusual-port 192.168.1.1
 nmap -Pn -sV --script unusual-port 192.168.1.1 -p 9527
-nmap -T4 -A -v 192.168.1.1 # 快速扫描主机全部信息
-nmap -PS80,8080,21-30 192.168.1.131 #TCP SYN Ping扫描,可以躲避防火墙
-nmap -PA80,8080,21-30 192.168.1.131 #TCP ACK Ping扫描,可以躲避防火墙
-nmap -R 192.168.1.131/24 #反响域名解析,扫描一个C段，可以知道那个ip上存在网站
-nmap --traceroute 192.168.1.131 #路由追踪，查看本地计算机到目标之间所经过的网络节点
-nmap -PY -v 192.168.1.131 #SCTP INIT Ping扫描，通过向目标发送INIT包，根据目标主机的相应判断目标主机是否存活
+nmap -T4 -A -v 192.168.1.1                               # 快速扫描主机全部信息
+nmap -PS80,8080,21-30 192.168.1.131                      #TCP SYN Ping扫描,可以躲避防火墙
+nmap -PA80,8080,21-30 192.168.1.131                      #TCP ACK Ping扫描,可以躲避防火墙
+nmap -R 192.168.1.131/24                                 #反响域名解析,扫描一个C段，可以知道那个ip上存在网站
+nmap --traceroute 192.168.1.131                          #路由追踪，查看本地计算机到目标之间所经过的网络节点
+nmap -PY -v 192.168.1.131                                #SCTP INIT Ping扫描，通过向目标发送INIT包，根据目标主机的相应判断目标主机是否存活
 
 dirb http://192.168.1.1        # Web扫描
 nikto -host http://192.168.1.1 # Web扫描

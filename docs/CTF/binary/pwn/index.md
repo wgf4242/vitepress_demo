@@ -79,6 +79,11 @@ system, ret_addr, bin_sh
 
 - [Kerndel | kernel-pwn 之 ret2dir 利用技巧](https://mp.weixin.qq.com/s/PT__YBPRW0odcyzOxn7g8Q)
 
+- video
+[「Pwn教学」有趣的Pwn博主的Tcache Bin Attack堆攻击教学](https://www.bilibili.com/video/BV1Jy4y1d7oz/)
+[「Pwn教学」有趣的Pwn博主的Unsorted Bin Attack堆攻击教学](https://www.bilibili.com/video/BV1X3411Z7Ba/)
+[「Pwn教学」有趣的Pwn博主的Unlink堆攻击教学](https://www.bilibili.com/video/BV1kP4y1k7RD/)
+
 ## Video
 
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
