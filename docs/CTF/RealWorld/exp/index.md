@@ -82,6 +82,7 @@
 [禅道 17.4 以下 ~ 18.0.beta1 系统权限绕过与命令执行漏洞](https://mp.weixin.qq.com/s/xcOvFx2nUDUGkdXqXj0iMw)
 [禅道 18.1 版本 RCE 分析](https://mp.weixin.qq.com/s/QYISEFl3rTVnGY1ONFLIPw)
 [禅道 18.0b1 后台命令执行漏洞](https://mp.weixin.qq.com/s/G2H6Na96FtU942ICRlrhsQ)
+[禅道后台命令执行漏洞 （二）](https://mp.weixin.qq.com/s/FzjApm71lLx1SHAKvSAztg)
 
 [奇安信VPN | 存在任意账号密码修改漏洞](https://github.com/fork778/qax-vpn)
 
@@ -239,6 +240,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [CobaltStrike | CS < 4.7.1 RCE 复现踩坑记录](https://mp.weixin.qq.com/s/0rnIjQYDRn1GVPD9XIOHJQ)
 
 [WinRAR 0day CVE-2023-38831分析复现](https://mp.weixin.qq.com/s/ef_Fz0bhXW6gGLBZ6qoh0Q)
+[Typora 远程代码执行漏洞(CVE-2023-2317)](https://mp.weixin.qq.com/s/xj08AP19KyFLYwWtHwmDrQ)
 
 ### Exploit/CVE/实战漏洞/Windows
 
