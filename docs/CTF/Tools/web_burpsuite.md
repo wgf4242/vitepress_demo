@@ -221,6 +221,8 @@ start attack
 [插件 | xp_CAPTCHA 4.2 - Burp验证码识别插件](https://mp.weixin.qq.com/s/nCcZ8gNutfPNz7X0lsxsdQ)
 [插件 | 武装你的Burpsuite](https://mp.weixin.qq.com/s/ulIp4w1dQv7y6yC4ZHlP8g)
 [插件 | 一个集成的BurpSuite漏洞探测插件](https://mp.weixin.qq.com/s/H0uRQ45NI0SQtT8mRckU_g)
+[插件 | App渗透：BurpSuite插件-Brida(0.6) 2023新版使用教程2](https://www.bilibili.com/video/BV16N411i7A2/) 
+
 
 ## Tips
 [干货 | Burpsuite的使用tips总结](https://mp.weixin.qq.com/s/4XkYFCr2L-yJNLDBUYoIqA)
