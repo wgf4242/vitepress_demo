@@ -84,10 +84,13 @@ system, ret_addr, bin_sh
 [「Pwn教学」有趣的Pwn博主的Unsorted Bin Attack堆攻击教学](https://www.bilibili.com/video/BV1X3411Z7Ba/)
 [「Pwn教学」有趣的Pwn博主的Unlink堆攻击教学](https://www.bilibili.com/video/BV1kP4y1k7RD/)
 
+- 整理
+[CTF竞赛 -- Shellcode学习](https://mp.weixin.qq.com/s/HmLp_yBKcm_aoLJH4kQuZg)
+[CTF竞赛 -- 关于整数溢出](https://mp.weixin.qq.com/s/ZxqP1DOB4g2OTuwPggAIFg)
+[CTF竞赛：从格式化输出函数到完全控制](https://mp.weixin.qq.com/s/1eXd6cBxNVwqjgu-A-KbCw)
+[CTF竞赛 -- SROP详解](https://mp.weixin.qq.com/s/Z0r1v-a0l30sEm6rqvny_A)
+[CTF竞赛 -- 堆漏洞利用](https://mp.weixin.qq.com/s/Qo1ltzI0jh7Zz76bQ22zmA)
 ## Video
 
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
 [ret2shellcode](https://www.bilibili.com/video/BV1Ws4y137xa/)
-
-## pwn shellcode
-[CTF竞赛 -- Shellcode学习](https://mp.weixin.qq.com/s/HmLp_yBKcm_aoLJH4kQuZg)

