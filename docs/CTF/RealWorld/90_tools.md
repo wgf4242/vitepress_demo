@@ -868,6 +868,8 @@ DNS 隧道
 ## xfreerdp
 
 ```bash
+xfreerdp /u:test /p:1qaz@WSX /v:192.168.127.137 /sec:rdp
+xfreerdp  -u test -p 1qaz@WSX -sec rdp -v 192.168.127.137
 xfreerdp /proxy:socks5://47.92.64.139:1234 /v:172.22.4.45 /u:'WIN19\Adrian' /p:babygirl1
 xfreerdp /u:CONTOSO\JohnDoe /p:Pwd123! /v:1.2.3.4
 xfreerdp /drive:kali,home/kali/vmware /v:127.0.0.1 /u:MyUser /p:MyPasswd

@@ -45,6 +45,13 @@ hydra -l wenber -V -x 3:3:1 rdp://127.0.0.1:3389
 | -e nsr  | "n" for null password, additional checks,                                       |
 |         | "s" try login as pass                                                           |
 |         | "r" try the reverse login as pass                                               |
+### FAQ
+
+1. hydra [ERROR] freerdp: The connection failed to establish.
+```sh
+# update freerdp
+kali_099_freerdp.sh
+```
 
 # rdp
 
@@ -97,6 +104,8 @@ medusa -M ssh -h 192.168.75.141 -u flag4 -P top1000.txt -V
 medusa -h 192.168.137.133 -u root -P /wordlist.txt -M mysql
 # postgres
 medusa -H /ip.txt -u postgres -n 5432 -P /tmp/pass.txt -e ns -M postgres -T 255 -f -O /tmp/good.txt -r 0
+# rdp
+medusa -M rdp -m PASS:HASH -u Administrator -p 31D78236327B9619B14ED8EC9AB454C1
 ```
 
 | params      | desc                                        |

@@ -147,6 +147,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Tomcat | 7.0.0-7.0.81 任意文件写入(CVE-2017-12615)](https://mp.weixin.qq.com/s/_Pw2jqKx21RtrZFDSM6xCQ)
 [Apache Solr JMX 服务 RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
 [Apache Spark远程代码执行漏洞(CVE-2023-32007)](https://mp.weixin.qq.com/s/jCvb9e_lPWLS01cjw2wqjw)
+[Apache Spark 3.1.1 <= Apache Spark < 3.2.2 | CVE-2023-32007 RCE漏洞（附EXP）](https://mp.weixin.qq.com/s/5T4zktpEyKYLM5Qzs3RS7A)
 [Apache | 春秋云镜-CVE-2022-33980（Apache Commons Configuration 远程命令执行漏洞）](https://mp.weixin.qq.com/s/EhatzI7QVmh_RQZYOWNBYg)
 [Apache | RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/iNvk0U3Wz5ShAf588GneAA)
 [Apache | RocketMQ CVE-2023-33246 RocketMQ 远程代码执行漏洞](https://mp.weixin.qq.com/s/1GIATpldq29cVTR6Rw_DTw)

