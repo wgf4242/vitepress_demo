@@ -983,6 +983,12 @@ sc start gupdate
 /home/kali/.local/bin/secretsdump.py LOCAL -sam /tmp/sam -security /tmp/security -system /tmp/system
 ```
 
+| pyfile     | commands         |
+| ---------- | ---------------- |
+| psexec.py  | impacket-psexec  |
+| smbexec.py | impacket-smbexec |
+|            |                  |
+
 ## mstsc
 
 ```bat

