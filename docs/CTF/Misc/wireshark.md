@@ -97,6 +97,7 @@ contains 是指文本部分。
 
 ```
 http contains "GET / foo.cgi?a=bar"
+http and not (http.referer contains "text")
 tcp contains "TP"
 tcp and frame contains "secret"
 !(ip.src == 192.168.43.103) && s7comm
