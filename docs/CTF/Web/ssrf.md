@@ -13,6 +13,7 @@ dict:// # dict://127.0.0.1:6379 //探测redis是否存活
 ```
 
 ## gopher
+[gopher协议的利用](https://mp.weixin.qq.com/s/lVzMSXn42SjTPb5EnY8NgA)
 
 如果 redis 有验证用 `gophper-redis-auth.py`
 

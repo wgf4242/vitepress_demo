@@ -1,5 +1,6 @@
 [手把手教你编写 SQLMap 的 Tamper 脚本过狗](https://mp.weixin.qq.com/s/2Nw1CbXsrEz0sM3GbOo68g)
 [最新SQLMap进阶技术](https://mp.weixin.qq.com/s/xJgS2HYLVRmX1TuTEwHZCg)
+[Sqlmap学习 -- Tapmer绕过脚本(三)](https://mp.weixin.qq.com/s/D83ULFfD0Shpcrbd13zAqg)
 
 # sqlmap
 
