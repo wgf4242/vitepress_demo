@@ -171,6 +171,7 @@ result.txt | 搜验证码
 [API | 你不得不会的安全漏洞-API 安全](https://www.bilibili.com/video/BV1HD4y1P7v6/)
 [API | js 文件中的敏感信息&swagger 接口测试](https://mp.weixin.qq.com/s/79xMwEcJaqTfc7BIKG6gDA)
 [Api | 接口安全测试方法大全-Wsdl&Swagger&Webpack（附一键化扫描工具）](https://mp.weixin.qq.com/s/4EYox2aFJC2HNIExIi15Kw)
+[API | JS文件中的敏感信息+swagger接口测试](https://mp.weixin.qq.com/s/t6CXUmdwva9ARIQ9ayOgeA)
 [API | 五大 API 安全漏洞及缓解措施](https://mp.weixin.qq.com/s/jzCnR9cfuRj0J4sgYnJDWQ)
 [API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/w44WyWWD60B3iqobHn6BQw)
 [API | API 安全基础理论](https://mp.weixin.qq.com/s/eFxfxVcXNu2QhnnaQVO2Og)
@@ -187,6 +188,7 @@ result.txt | 搜验证码
 [API | 打造 API 接口的堡垒](https://mp.weixin.qq.com/s/sIi49LYgZuTAjyrfv_oysg)
 [API | 记录一次 JWT 的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
 [API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/IbsJ0n-sw1G0cWHz6PE6Jw)
+[API | 攻击与防御](https://mp.weixin.qq.com/s/xcdnd3QKeHzfCEXoBCTKLg)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
@@ -217,6 +219,7 @@ result.txt | 搜验证码
 ### bypass_AV/免杀/安全开发 C/Cpp
 
 - 50_Anti-AntiVirus_EXE.md
+- [Bypass | 无回显用浏览器下载 | Windows通用下载绕过姿势总结](https://mp.weixin.qq.com/s/rGDCp6jS50VKddqftZrRiQ)
 - [Mimikatz 的 18 种免杀姿势及防御策略 | msf 加载 bin](https://www.freebuf.com/articles/system/234365.html)
 - [绕过 windows defender 上线 cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 - re_dll.md

@@ -13,6 +13,7 @@ dict:// # dict://127.0.0.1:6379 //探测redis是否存活
 ```
 
 ## gopher
+[gopher协议的利用](https://mp.weixin.qq.com/s/lVzMSXn42SjTPb5EnY8NgA)
 
 如果 redis 有验证用 `gophper-redis-auth.py`
 
@@ -41,3 +42,9 @@ url=http://xxx@127.0.0.1
 url=http://0/flag.php
 0.0.0.0
 ```
+
+# Article
+
+[实战 | 利用SSRF渗透内网主机-下](https://mp.weixin.qq.com/s/oq7IC6Av4_fY7HBxH-8p0Q)
+[实战 | 利用SSRF渗透内网主机-中](https://mp.weixin.qq.com/s/bEhNuMJpI5y9fj5RGzYhXA)
+[实战 | 利用SSRF渗透内网主机-上](https://mp.weixin.qq.com/s/zmOLO3ilJdSl02s6aWLpXw)

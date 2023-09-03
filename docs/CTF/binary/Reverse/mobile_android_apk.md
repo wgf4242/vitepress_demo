@@ -77,6 +77,34 @@ __int64 __fastcall RegisterNatives(JNIEnv *a1) // 改为JNIEnv*,
 
 ![](https://s2.loli.net/2022/09/28/qImO3XignjZTytp.jpg)
 
+## 调试 apk
+by mprop
+```sh
+adb push mprop /data/local/tmp/
+adb shell
+
+chmod +x /data/local/tmp/mprop
+su
+
+/data/local/tmp/mprop
+# verbose mode ==> dump memory 
+# /data/local/tmp/mprop -v > myprop.txt
+
+# restore
+# /data/local/tmp/mprop -r
+
+setprop ro.debuggable 1
+```
+
+by magisk
+
+```bash
+# 手机需要安装magisk并获取root权限
+adb shell #adb进入命令行模式
+su #切换至超级用户
+magisk resetprop ro.debuggable 1
+stop;start; #一定要通过这种方式重启手机
+```
 ## jeb 调试 apk
 
 
@@ -319,6 +347,8 @@ https://github.com/APKLab/APKLab
 
 [安卓 app 四大组件的攻击面分析](https://mp.weixin.qq.com/s/MQ7gNnIkzGBkaJLtAsSORQ)
 [eBPF 公开课-安卓 eBPF 开发环境搭建方案](https://mp.weixin.qq.com/s/cQvv7WhCPGNuRhF7DiX_-g)
+[eBPF秀肌肉过百分之99.99的Frida检测](https://www.bilibili.com/video/BV1v14y1C7Us/) 
+[strong-frida过常见壳的Frida检测](https://www.bilibili.com/video/BV1gp4y1N7Cx/) 
 
 ## 安卓/木马
 

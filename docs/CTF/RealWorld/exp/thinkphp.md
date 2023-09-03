@@ -7,6 +7,9 @@
 [ThinkPHP-Lang v6.0.0~v6.0.13 v5.0.0~5.0.12 v5.1.0~5.1.8 Lang文件包含To远程代码执行漏洞复现—CNVD-2022-86535](https://mp.weixin.qq.com/s/8eeQO-3kAtKKTW5H13aabQ)
 msf > searchsploit thinkphpk
 
+## 根目录
+
+在 /var/www/html/public
 
 ## 5.0.22
 

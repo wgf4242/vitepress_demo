@@ -21,6 +21,7 @@ tshark怎样确定协议字段?
 参数
 ```
 -R 过滤器 相当于 Ctrl+/
+-Y "http.request.method == ""POST"""
 -Y "Something_UDP.field1 or Something_UDP.field2"
 -Y "modbus && ip.dst==192.168.111.138"
 ```
@@ -133,6 +134,12 @@ tshark -r flag.pcap -T fields -e usb.capdata|sed /^$/d > usbdata.txt
 # 有多个时分别过滤提取
 tshark -r "ez_usb.pcapng" -Y "usb.src==\"2.8.1\" && usb.dst==host" -T fields -e usbhid.data > keyboarda.txt
 tshark -r "ez_usb.pcapng" -Y "usb.src==\"2.10.1\" && usb.dst==host" -T fields -e usbhid.data > keyboardb.txt
+
+# 提取为json
+tshark -r hard_web.pcap -Y "http.request.method == ""POST""" -T json -e urlencoded-form.key -e urlencoded-form.value -x > 12.json
+
+# 过滤POST另存，但是会丢失前面数据无法解析
+tshark -r hard_web.pcap -Y "http.request.method == ""POST""" -w bbb.pcapng
 ```
 
 键盘数据包的数据长度为8个字节，击键信息集中在第3个字节以后

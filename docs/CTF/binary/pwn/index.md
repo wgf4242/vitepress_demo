@@ -55,6 +55,7 @@ system, ret_addr, bin_sh
 - [jarvisoj_fm](https://mp.weixin.qq.com/s/7rI3I0M6BcM6UGR119cAbQ)
 - [CTFHUB | 栈溢出 | ret2VDSO](https://bbs.kanxue.com/thread-276433.htm)
 - [CTFHUB | 栈溢出 | ret2dl_resolve](https://bbs.kanxue.com/thread-276450.htm)
+- [ret2resolve练习](https://mp.weixin.qq.com/s/4oTctnawJ3dgzACC1HKzVg)
 
 ---
 

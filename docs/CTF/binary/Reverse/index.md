@@ -204,6 +204,7 @@ js -- decodeObfuscator
 [脱壳学习（二）- 反“反调试”篇](https://mp.weixin.qq.com/s/pSaTZSd0ouacZ3A4RxeWfg)
 [逆向脱壳（三） - 完结篇](https://mp.weixin.qq.com/s/svh_jfph_PiSpN3enGtYXQ)
 [常见的壳与脱壳方式](https://mp.weixin.qq.com/s/4uZxbSFPnkRFR_3hqsQvKg)
+[android | 脱壳实战-Frida-Apk-Unpack](https://mp.weixin.qq.com/s/gvWaSaBiD-bQCgtH7-agQA)
 
 ### UPX/ESP 定律
 

@@ -241,6 +241,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [CobaltStrike | CS < 4.7.1 RCE 复现踩坑记录](https://mp.weixin.qq.com/s/0rnIjQYDRn1GVPD9XIOHJQ)
 
 [WinRAR 0day CVE-2023-38831分析复现](https://mp.weixin.qq.com/s/ef_Fz0bhXW6gGLBZ6qoh0Q)
+[WinRAR 代码执行漏洞(CVE-2023-38831)【需要交互】](https://mp.weixin.qq.com/s/1Feg1PcSBwpg3Co9k_HzMA)
 [Typora 远程代码执行漏洞(CVE-2023-2317)](https://mp.weixin.qq.com/s/xj08AP19KyFLYwWtHwmDrQ)
 
 ### Exploit/CVE/实战漏洞/Windows

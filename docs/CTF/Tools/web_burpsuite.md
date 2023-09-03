@@ -207,6 +207,13 @@ payload 选项卡 中有 Payload Encoding √要去掉 （否则会编码/符号
 start attack
 在结果列表， Filter 只勾2xx
 ```
+## 联动xray
+
+```bash
+./xray_windows_amd64.exe webscan --listen 127.0.0.1:8888 --html-output proxy.html
+# Settings - Network - Connections 设置 Upstream proxy servers, Destination Host: *
+```
+
 
 # Article
 [实现 BurpSuite 多级代理的两种常用方法](https://mp.weixin.qq.com/s/x4_ZlE8H01ULjXrknIpKxg)
