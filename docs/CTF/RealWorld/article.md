@@ -444,6 +444,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 [日志管理与分析（一）--日志收集及来源](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484255&idx=2&sn=b0fb2ceeb94129071d4285d6c30f4b79)
 [日志管理与分析（二）--日志分析与报告](https://mp.weixin.qq.com/s?__biz=MzAxNDM3NTM0NQ==&mid=2657034743&idx=1&sn=c279fdcbb2d16ded9e67287d88fe8cae)
 [日志管理与分析（三）--对日志系统的攻击](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484257&idx=2&sn=df40b069d70743343a06abe063dd2f18)
+[CobaltStrike溯源反制](https://mp.weixin.qq.com/s/5MF-WjduNaBWuhILv6MPSw)
 
 # Other
 
