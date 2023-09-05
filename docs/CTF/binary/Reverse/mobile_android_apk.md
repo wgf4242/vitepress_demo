@@ -341,6 +341,8 @@ https://github.com/APKLab/APKLab
 - [​ 微信小程序逆向分析](https://mp.weixin.qq.com/s/r9VVeXnT_PFX7C8mq7ej_w)
 - [VX 小程序逆向分析](https://mp.weixin.qq.com/s/7yZzf4V-2fcn-jRwm4uO-w)
 - [【小程序逆向】百达星系signature、mid](https://mp.weixin.qq.com/s/RU6et-_V8JXTiSl7cOYnMg)
+- [大麦反编译sign—小程序逆向-哔哩哔哩](https://www.bilibili.com/video/BV1z94y147GD/)
+
 
 
 ## 普通文章
