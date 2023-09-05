@@ -66,9 +66,10 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [Cisco RV340，RV340W，RV345和RV345P从零开始复现 CVE-2023-20073](https://mp.weixin.qq.com/s/xCKzdaRq4D5svTc__tXPFQ)
 - [锐捷 RG-EW1200G远程代码执行漏洞(CVE-2023-3306)](https://mp.weixin.qq.com/s/N2WFXkEpbeFQ4wMrYJ0bMw)
 
-## 门卡 m1 卡
+## 门卡 m1/ic/id
 
 [通过一道 CTF 题目学习 M1 卡的 AES 认证机制](https://mp.weixin.qq.com/s/PdJgVDsOnOAcid0DQTUrvg)
+[实战｜记通过手机复制澡卡的辛酸历程](https://mp.weixin.qq.com/s/cDXyPFDeE6S_xGBL3NucPQ)
 
 ## 渗透/SRC
 
