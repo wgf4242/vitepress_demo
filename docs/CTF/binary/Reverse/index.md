@@ -208,8 +208,7 @@ js -- decodeObfuscator
 
 ### UPX/ESP 定律
 
-https://www.52pojie.cn/thread-326995-1-1.html
-
+- [UPX防脱壳机脱壳、去除特征码、添加花指令小探](https://www.52pojie.cn/thread-326995-1-1.html)
 - [完美 UPX 脱壳------之投怀送抱篇（适合所有变形）](https://www.52pojie.cn/thread-1673206-1-1.html)
 
   1.检查是 UPX，但无法脱壳。

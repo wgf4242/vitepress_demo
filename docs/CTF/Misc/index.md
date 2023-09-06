@@ -7,6 +7,7 @@
 ## 解题思路
 
 - 1.不要路径有空格, 不要中文路径
+- 所有文件 尤其txt，  用sublime打开全选查看。 有没\t, space, 可能是莫斯。
 - grep -ri "flag"
 - strings ./file | grep flag
 - 010 1.全局搜索 2. Unicode 型搜索
@@ -56,6 +57,7 @@
   - key | OurSecret 隐写 - 提示:我们的秘密
 
 - 爆破密码 考虑
+  - 主办方名字, 如 dasctf
   - root+数字
   - admin+数字
   - KEY+大写字母

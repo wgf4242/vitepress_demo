@@ -142,6 +142,9 @@ gcc -static main.c
 
 [Link](https://blog.csdn.net/CSNN2019/article/details/117219906)
 
+### 变量按a后，还是不能显示中文，自动恢复少了2个bytes.变成旧的字符了。
+按n重命名变量。
+
 ### 1. graph is too big , more than 1000 nodes
 
 options - general - graph
@@ -238,6 +241,20 @@ var_4C6= byte ptr -4C6h
 var_4B8= byte ptr -4B8h
 arg_1E7FBF= byte ptr  1E7FC7h ; 5.双击这里 进栈按u， 再按F5即可
 ```
+### main2   endp ； sp-analysis failed  修复sp
+* 可能是1个函数被拆分错了，把下面的function u掉。main u掉。在main 处按p即可。见 lld的附件.zip
+
+一. --
+ 一个明显错误的地方就是0X00403C22到0X00403C27处，在调用了firstClass_Init函数(有一个参数)后，栈顶指针还是02C，没有变成028，解决办法：
+
+1、在0X00403C22处点击02C栈顶，右键点击Change stack pointer…（快捷键Alt+K），修改成0X4，如下图：
+
+2. --
+
+但是 main 函数报了错两种方法修复
+0000004021E9 main            endp ; sp-analysis failed (Alt+K)
+1.main的 endp出错下方的函数 全部按u, 直到0x402220, 右击main, edit function修改到0x402220。然后在分析的代码处点击按C。
+2.main包含的全部函数按u,按u, 回到main头部0x402219, 按p
 
 ### ida python 调试
 

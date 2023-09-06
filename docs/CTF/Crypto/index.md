@@ -66,7 +66,8 @@ $$
 * [现代密码学常用符号总结 ](https://www.cnblogs.com/max1z/p/16841472.html) 
 * [密码学基础之抽象代数基础](https://mp.weixin.qq.com/s/nhDjqP9UnjG4D0sa_B_NvA)
 - [密码学基础之数论四大定理](https://mp.weixin.qq.com/s/dJAJ5_m3TiF4P75Z9gJWsg)
-[『CTF』密码学中的行列式计算](https://mp.weixin.qq.com/s/vPAu3XCoBM6AghhVYLb17A)
+- [『CTF』密码学中的行列式计算](https://mp.weixin.qq.com/s/vPAu3XCoBM6AghhVYLb17A)
+- [密码学基础之线性代数 Ⅰ](https://mp.weixin.qq.com/s/zOp7JvpmQDToCUHEcmokyw)
 
 ---
 * [密码学从入门到大佬——Xenny密码学全系列课程导航](https://www.nssctf.cn/note/set/1698)**    
