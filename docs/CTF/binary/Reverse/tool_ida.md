@@ -41,6 +41,8 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 | Alt+A          | String literials - 转长度(如 UTF8) |
 | Alt+Q          | Struct var                         |
 | Alt+F7         | Run Script                         |
+| Alt+P          | Patch Bytes                        |
+| 右击 E         | Edit Function                      |
 
 ## 窗口介绍
 
@@ -279,6 +281,6 @@ https://github.com/JusticeRage/Gepetto
 
 [IDAPython 系列 —— 画出两个函数的交叉引用图](https://mp.weixin.qq.com/s/p_YHwFuXmPWXGDhpLa9Cyg)
 
-
 ## plugin
-[IDA插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)
+
+[IDA 插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)

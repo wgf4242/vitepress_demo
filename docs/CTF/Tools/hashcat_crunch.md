@@ -39,6 +39,7 @@ crunch 7 7 –t ddd^,@% -p a b c
 crunch 7 7 -t p@ss,%^ -l a@aaaaa -o pass_dict.txt    # cmd下^需要转义 用powershell执行吧
 crunch 11 11 -t "@@@@Mes@2.0" -l "aaaaaaa@aaa" -o 1.txt  # 4个小写 + Mes@2.0结尾
 crunch 11 11 -t "@@@@Mes@2.0" -f charset.lst mixalpha -l "aaaaaaa@aaa" -o 1.txt
+crunch 2 2 -t ",@" -o tmp.txt # 一大一小
 #生成7位密码，格式为"字符p@ss"+大写字母+数字+符号     比如  p@ssZ9>  ......\\
 #  -l 指定t中哪些字符为普通字符, 一一对应
 ```
