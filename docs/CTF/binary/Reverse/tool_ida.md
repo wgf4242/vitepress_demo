@@ -261,3 +261,7 @@ https://github.com/JusticeRage/Gepetto
 [IDAPython/Tracing calls tutorial](https://magiclantern.fandom.com/wiki/IDAPython/Tracing_calls_tutorial)
 
 [IDAPython 系列 —— 画出两个函数的交叉引用图](https://mp.weixin.qq.com/s/p_YHwFuXmPWXGDhpLa9Cyg)
+
+
+## plugin
+[IDA插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)

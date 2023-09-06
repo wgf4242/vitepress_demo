@@ -19,11 +19,12 @@ tshark怎样确定协议字段?
 2.右击字段 - Wiki 协议页面
 
 参数
-```
+```sh
 -R 过滤器 相当于 Ctrl+/
 -Y "http.request.method == ""POST"""
 -Y "Something_UDP.field1 or Something_UDP.field2"
 -Y "modbus && ip.dst==192.168.111.138"
+-w a.pcapng # 过滤后保存为新的 pcapng 
 ```
 过滤协议
 tshark -Y http
