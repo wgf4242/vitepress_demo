@@ -205,6 +205,7 @@ result.txt | 搜验证码
 [WebSocket 内存马，一种新型内存马技术](https://mp.weixin.qq.com/s/9DGocSaN-hfjxFtxufx2XA)
 [一款功能强大的内存 WebShell 生成工具](https://mp.weixin.qq.com/s/pViMjM3fD9sa2Ih9jDnurg)
 [Web | 内存马 | 内存 Shell 生成器](https://mp.weixin.qq.com/s/7YPuChR7anVAninHOMB6aA)
+[Web | 内存马 | 内存马再学不会我给你（二）拳奥](https://mp.weixin.qq.com/s/A5HQp0Vfswhk-c5KBRFSOg)
 [冰蝎内存马生成工具 -- ysoserialbtl](https://mp.weixin.qq.com/s/5B_kcFnKVoHewvgGEiVhBg)
 [内存马流程理解与手写 EXP](https://mp.weixin.qq.com/s/2BSrWaB0B7cn0ng4BAwUHA)
 

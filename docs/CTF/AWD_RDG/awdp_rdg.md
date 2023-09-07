@@ -24,7 +24,7 @@ cd /etc/nginx/sites-enabled && ls
 # update.sh
 cp -rf default /etc/nginx/sites-enabled/
 
-# create archive
+# create archive, 经测试 windows 也可以
 tar zcvf fix.tar.gz *
 ```
 
@@ -45,6 +45,7 @@ tar zcvf fix.tar.gz *
 - functions 找 read 函数 ,view - open subviews - function calls 找出所有调用。
 - 格式化字符串漏洞
   - printf 修复: 改为 puts。 改为 call .plt \_puts 地址。直接输入\_puts 不行。
+      - printf没有换行符, puts会有换行符. 产生多余的换行可能 check失败.
   - gets 函数 ret2text 通过 syscall 改 read
 
 # 中间件防御检查
