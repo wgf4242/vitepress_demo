@@ -86,8 +86,6 @@
 
 [奇安信VPN | 存在任意账号密码修改漏洞](https://github.com/fork778/qax-vpn)
 
-
-
 [KindEditor 文件上传漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484734&idx=1&sn=7508249f8d3a867617020338d3988404)
 [phpcms v9.6.0 会员注册界面远程文件下载 getshell](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484720&idx=1&sn=31a54a15eb8602d9fdd7b1f36f1067c0)
 [PHPCMS v9.6.0 前端任意文件上传漏洞分析](https://mp.weixin.qq.com/s/ECArepyqeUt7MLL8W7uy-Q)

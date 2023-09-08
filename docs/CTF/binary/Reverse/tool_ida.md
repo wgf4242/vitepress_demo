@@ -115,10 +115,32 @@ copy plugin_files IDA_Pro_7.7\plugins\
 
 Ctrl-Shift-D, 点击 start, 再 F5
 
-### keypatch//assemble
+### keypatch/assemble/汇编修改
 
 16 进制 keypatch 要用 0x33, 不能 33h
 ida 自带 assemble 要用 33h, 不能 0x33
+
+printf 改 puts, 注意printf没有换行符, puts会有换行符. 产生多余的换行可能 check失败.
+```sh
+# 需要 plt段的 puts地址
+# .plt.sec:0010C0                               ; int puts
+
+# keypatch call地址时会自动修改偏移
+Assembly: call 0x10c0
+```
+
+ 如何手动计算偏移值
+```py
+# .plt.sec:0010C0                               ; int puts
+.text:0000000000001462 E8 59 FC FF FF                call    _puts          
+.text:0000000000001467 48 8D 3D EA 0C 00 00          lea     rdi, byte_2158 
+.text:000000000000146E E8 4D FC FF FF                call    _puts
+.text:0000000000001473 83 45 FC 01                   add     [rbp+var_4], 1
+
+# E8是call的机器码
+hex(0x10C0-0x1467 & 0xffffffff) # 0xfffffc59
+hex(0x10C0-0x1473 & 0xffffffff) # 0xfffffc4d
+```
 
 ## 使用技巧
 
