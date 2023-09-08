@@ -27,6 +27,7 @@
 | 反码绕           | urlencode(~'system');                                 |
 | xor bypass       | bypass_xorshell.py                                    |
 | php\|strstr      | 大小写绕过, strstri 才是大小写不敏感                  |
+| pathinfo         | `filename/.`可以绕过 见 php_bypass_pathinfo.py        |
 | ---              |
 | disable_function | 蚁剑插件                                              |
 

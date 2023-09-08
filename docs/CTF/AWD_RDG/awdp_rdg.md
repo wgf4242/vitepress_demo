@@ -18,7 +18,9 @@ rz
 cd /etc/nginx/sites-enabled && ls
 ```
 
-打防御包时
+打防御包时, 不要用windows. 用linux或wsl, 打包完用 winrar 打开
+
+* 看路径是 `.\xxx` 就可能失败
 
 ```bash
 # update.sh

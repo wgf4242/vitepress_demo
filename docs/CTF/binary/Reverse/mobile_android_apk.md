@@ -290,6 +290,8 @@ https://github.com/APKLab/APKLab
 - [2023 安卓 Hook 框架源码入门（一 YAHFA 框架）（2 使用）](https://www.bilibili.com/video/BV1Dx4y1M76f/)
 - [2023 安卓 Hook 框架源码入门（一 YAHFA 框架）（1 概述）](https://www.bilibili.com/video/BV1TY4y1f7rw/)
 
+---
+- [Android系统内核漏洞利用技术入门](https://mp.weixin.qq.com/s/a8A0g7-S0FiMuRa3YOg89Q)
 ### bypass
 
 [『杂项』root 绕过的几种方式](https://mp.weixin.qq.com/s/7RZRXjP3zXRX8gvZSkDxqg)
@@ -360,3 +362,8 @@ https://github.com/APKLab/APKLab
 ## 关注列表
 
 [和沐阳学逆向](https://space.bilibili.com/439348342)
+
+# Tools
+
+[hook xweb/webview](https://github.com/WankkoRee/WebViewPP)
+
