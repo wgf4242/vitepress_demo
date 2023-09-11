@@ -7,7 +7,7 @@
 ## 解题思路
 
 - 1.不要路径有空格, 不要中文路径
-- 所有文件 尤其txt，  用sublime打开全选查看。 有没\t, space, 可能是莫斯。
+- 所有文件 尤其 txt， 用 sublime 打开全选查看。 有没\t, space, 可能是莫斯。
 - grep -ri "flag"
 - strings ./file | grep flag
 - 010 1.全局搜索 2. Unicode 型搜索
@@ -27,11 +27,12 @@
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
   - 查 md5
+  - 像 base64, 解b64看不懂。 直接 ^ flag 试试。 或者不解b64 异或 ZmxhZw
   - To Hex, 16 位可能是 md5, 如果是 2 层 md5, flag 可能是一层 md5
   - 看不懂/外文, 使用 Cyberchef Text Encoding Brute Force 选 Decode
   - 每行字符的第一个/最后一个 组合提取密码
   - 观察文件尾 文件头 50 4b 03 04 正序反序
-  - 不明的2段 , 其中一段是不重复的 -- base64换表
+  - 不明的 2 段 , 其中一段是不重复的 -- base64 换表
   - 拆成 2 段 base64 例 enlyZ2h3eXlmeHc0ezhpMAMX1tMzk3amNpNXZqdDRrZg====
   - Fence Code
   - 画图, 比如 01 多行，把 1 画出来。连上看看效果。
@@ -108,20 +109,21 @@ arr[$(cat /flag)]
 
 ## 图片题
 
-| format   | 支 key | 无 key | 工具                         | 使用                                       |
-| -------- | ------ | ------ | ---------------------------- | ------------------------------------------ |
-| png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc |
-| png      | √      | √      | stegpy                       | stegpy <file> -p                           |
-| png      |        | √      | zsteg                        | zsteg -a x.png                             |
-| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456    |
-|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt              |
-| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt      |
-| jpg      | √      |        | SilentEye                    |                                            |
-| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'          |
-| bmp      | √      |        | SilentEye                    |                                            |
-| bmp      | √      |        | jphs05/Jphswin               | jphs05                                     |
-| `<all>`1 | √      |        | oursecret                    | oursecret                                  |
-| `<all>`2 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py          |
+| format   | 支 key | 无 key | 工具                         | 使用                                                                                   |
+| -------- | ------ | ------ | ---------------------------- | -------------------------------------------------------------------------------------- |
+| png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                             |
+| png      | √      | √      | stegpy                       | stegpy <file> -p                                                                       |
+| png      |        | √      | zsteg                        | zsteg -a x.png                                                                         |
+| png      |        |        |                              | 有明显剪裁效果, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib` |
+| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                |
+|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                          |
+| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                  |
+| jpg      | √      |        | SilentEye                    |                                                                                        |
+| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                      |
+| bmp      | √      |        | SilentEye                    |                                                                                        |
+| bmp      | √      |        | jphs05/Jphswin               | jphs05                                                                                 |
+| `<all>`1 | √      |        | oursecret                    | oursecret                                                                              |
+| `<all>`2 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py                                                      |
 
 - https://www.aperisolve.com/
 - 看文件末尾、文件头

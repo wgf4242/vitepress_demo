@@ -12,6 +12,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 
 前置准备
 
+1. [反调试, 开插件 | 打补丁](anti-debug_%E5%8F%8D%E8%B0%83%E8%AF%95.md)
 1. 资源文件 0x80, 0xff 异或
 1. 二进制搜索
 1. 找 ip 端口 上传微步

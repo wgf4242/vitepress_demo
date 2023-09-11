@@ -122,7 +122,7 @@ ida 自带 assemble 要用 33h, 不能 0x33
 
 printf 改 puts, 注意printf没有换行符, puts会有换行符. 产生多余的换行可能 check失败.
 ```sh
-# 需要 plt段的 puts地址
+# printf改 puts 使用 plt段的 puts地址, 而不是 _puts
 # .plt.sec:0010C0                               ; int puts
 
 # keypatch call地址时会自动修改偏移

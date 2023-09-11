@@ -1,3 +1,7 @@
+解决方法
+1. 跳转到前10行的代码造成死循环然后，附加调试。  https://www.52pojie.cn/thread-1831696-1-1.html
+2. scyllahide等插件
+
 # 反调试
 * [anti_all_in_one](https://github.com/Hipepper/anti_all_in_one/wiki)
 * [反调试技术整理](https://www.cnblogs.com/hed10ne/p/anti-debug-techs.html)

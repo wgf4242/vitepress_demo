@@ -1,3 +1,10 @@
+
+注意显示为
+```sh
+movzx eax,byte ptr ss:[ebp+edx-3C]
+自己修改指令时要修改为
+movzx eax,byte ptr ss:[ebp+edx-0x3C]
+```
 ## x64dbg 快捷键
 
 | cmd                 | Desc                     |
@@ -5,10 +12,12 @@
 | g                   | 图表                     |
 | h                   | 点击变量，可以高亮。     |
 | bp InternetOpenUrlA | 加载后才能用函数名下断点 |
-| bph esp             | 硬件断点                 |
-| bphc                | 删除硬件断点             |
+| bph esp             | 硬件断点  `bph addr,[rwx],[1/2/4/8]`                |
+| bphc                | 删除硬件断点 `bphc <addr>`不指定时删除全部            |
 | d <addr>            | 跳转                     |
 | d <function_name>   | d <fn+5> 跳转到 fn+5 处  |
+| Ctrl + 9            | Nop                      |
+| Ctrl+space | 恢复修改
 
 ## IDA 地址转 OD 地址
 

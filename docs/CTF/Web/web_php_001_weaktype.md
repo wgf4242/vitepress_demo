@@ -88,6 +88,7 @@ $data2="\xd1\x31\xdd\x02\xc5\xe6\xee\xc4\x69\x3d\x9a\x06\x98\xaf\xf9\x5c\x2f\xca
 3. md5 强类型绕过 2 - Error 类绕过 md5 和 sha1
 
 ```php
+# 一定要写在一行
 $c = new Error($shell,1);$d = new Error($shell,2);
 echo md5($c) === md5($d);
 ```
