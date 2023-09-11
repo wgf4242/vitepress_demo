@@ -26,6 +26,8 @@
   - ciphey
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
+  - 有空格和tab 可能是摩斯码或二进制
+  - 补全文件头 和 文件尾部
   - 查 md5
   - 像 base64, 解b64看不懂。 直接 ^ flag 试试。 或者不解b64 异或 ZmxhZw
   - To Hex, 16 位可能是 md5, 如果是 2 层 md5, flag 可能是一层 md5
