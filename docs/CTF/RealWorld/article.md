@@ -81,6 +81,7 @@ result.txt | 搜验证码
 ## [Exploit/CVE/实战漏洞](./exp_exploit.md)
 
 ## 钓鱼/phishing
+[社会工程学工具包：Social-Engineer Toolkit（SET）](https://mp.weixin.qq.com/s/U-dJtrJXy6jGw3MTW6XY5w)
 
 [公共 WiFi 钓鱼 | wifipumpkin3 |全局 DoH+纯 HTTPS 网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
 [实战 | 记一次 Word 文档网络钓鱼以及绕过火绒，电脑管家和 Windows Defender](https://mp.weixin.qq.com/s/be8fDEYJTy1Yr0jFy6j7YA)

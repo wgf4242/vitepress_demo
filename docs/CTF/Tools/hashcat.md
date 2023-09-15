@@ -116,6 +116,7 @@ hashcat.exe -a 3 -O -m 0 --force 4488cec2aea535179e085367d8a17d75 --increment --
 
 1-8位小写字母+数字破解
 hashcat.exe -a 3 -O -m 0 --force ab65d749cba1656ca11dfa1cc2383102 --increment --increment-min 1 --increment-max 8 ?h?h?h?h?h?h?h?h
+hashcat.exe -a 3 -O -m 0 --force ab65d749cba1656ca11dfa1cc2383102  --increment --increment-min 1 --increment-max 8 --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
 
 
 特定字符集: 123456abcdf!@+-

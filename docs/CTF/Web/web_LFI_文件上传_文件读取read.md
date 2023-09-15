@@ -31,3 +31,8 @@
 - 压缩包软链接，传到/tmp/data 下, ，这个软链接指向 flag，即可获取 flag
 - %00 截断 php 版本小于 5.3.4
 - 上传时考虑 phar 反序列化
+
+# 文件读取
+
+url=file://127.0.0.1/etc/passwd
+url=file:///etc/passwd

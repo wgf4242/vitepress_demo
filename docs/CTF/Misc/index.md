@@ -6,6 +6,7 @@
 
 ## 解题思路
 
+- Misc*password*密码字典\_dictionary_wordlists_fuzzing_SecLists-2023.2_5.zip
 - 1.不要路径有空格, 不要中文路径
 - 所有文件 尤其 txt， 用 sublime 打开全选查看。 有没\t, space, 可能是莫斯。
 - grep -ri "flag"
@@ -26,10 +27,11 @@
   - ciphey
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
-  - 有空格和tab 可能是摩斯码或二进制
+  - 符合16进制,  base64 加密数据
+  - 有空格和 tab 可能是摩斯码或二进制
   - 补全文件头 和 文件尾部
   - 查 md5
-  - 像 base64, 解b64看不懂。 直接 ^ flag 试试。 或者不解b64 异或 ZmxhZw
+  - 像 base64, 解 b64 看不懂。 直接 ^ flag 试试。 或者不解 b64 异或 ZmxhZw
   - To Hex, 16 位可能是 md5, 如果是 2 层 md5, flag 可能是一层 md5
   - 看不懂/外文, 使用 Cyberchef Text Encoding Brute Force 选 Decode
   - 每行字符的第一个/最后一个 组合提取密码
@@ -261,28 +263,46 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 
   压缩工具要相同，如果产生CRC32不同。换工具试， 算法也要相同
-  1.压缩方式要选 1存储 2zip
-  pkcrack.exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d decrypt_file.zip -a
-  Advanced Archive Password Recovery 比上面慢。提示尝试找回口令的时候---停止。然后用3个密钥解密。
+  1.压缩方式要选 1存储 2zip , 下面工具使用 --help 查看帮助
 
   bkcrack
+  -- bkcrack -C flag.zip -c hint.txt -P hint.zip -p hint.txt
+  -- bkcrack -C flag.zip -k a923d145 ecc0362d 296a6ff5 -U 123.zip 123  # 修改密码为 123, 保存到 123zip
   -- bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt
   -- bkcrack -C test5.zip -c 2.png -k b21e5df4 ab9a9430 8c336475  -d 2.png # 解密非破解文件, 用inflate.py 2次处理
   -- python3 inflate.py < 2.png > 2_out.png
+```
 
+| bkcrack-param |     |
+| ------------- | --- |
+| -p plainfile  |     |
+| -P plainzip   |     |
+|               |     |
+
+````
   rbkcrack只需要知道加密压缩包内容的连续12个字节， .exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
   -- 文件开头有可能存在\r\n+10个连续空格，可以进行尝试
+  -- rbkcrack.exe -C flag.zip -c hint.txt -p hint.txt -P hint.zip
   -- rbkcrack.exe -C ecryptedzip.zip -c LICENSE -p LICENCE.txt
   -- zip文件名攻击
     -- rbkcrack.exe -C ecryptedzip.zip -c flagornot.zip -p plain.txt -o 30 # plain.txt内容为 flagornot.txt
+    ```
+    ecryptedzip.zip
+    |--flagornot.zip # 这里面是plain.txt
+    ```
   -- 3组key解密 rbkcrack.exe -C ecryptedzip.zip -c README.md -k 32cc3495 7f955ff5 58291af3 -d README.md
     -- 所以解密后注意得到的out.png是deflate的数据流，用rbkcrack/tools里 python inflate.py < out.png > out1.png
   github搜索文件, advance search - Code options 处可搜索文件名, 文件大小。
 
+  pkcrack -c flag.zip -p hint.txt -P hint.zip # 用bkcrack快一些
+  pkcrack.exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d decrypt_file.zip -a
+  Advanced Archive Password Recovery 比上面慢。提示尝试找回口令的时候---停止。然后用3个密钥解密。
+
+
 -- 小文件爆破 (原始)大小 <=6 可以考虑CRC32爆破攻击
   压缩包里是4b 就是4个字母, 3b就是3个字母。
     python crc32.py reverse 0x1b2e6194
-```
+````
 
 ### zip CRC32 检验
 
