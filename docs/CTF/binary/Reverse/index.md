@@ -12,7 +12,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 
 前置准备
 
-1. go语言用ida8
+1. go 语言用 ida8
 1. [反调试, 开插件 | 打补丁](anti-debug_%E5%8F%8D%E8%B0%83%E8%AF%95.md)
 1. 资源文件 0x80, 0xff 异或
 1. 二进制搜索
@@ -30,7 +30,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
    - L1. 对比结果 out2/out1 看看是怎么变换的
    - L2. 输入 32 个 a, 看输出是不是等量 线性变换。能否输入全部字符直接换表
 1. 输入输出变换了大端小端
-2. 调试原生文件如dll/so, 关注导出表
+1. 调试原生文件如 dll/so, 关注导出表
 
 1.简单题目 patch 调试 set EIP 到后面执行一下 2.多用调试直接过逻辑看结果。 1.搜到关键字如 0x33445566, 先 google/baidu ctf 0x33445566 4.没去符号 函数调用少 C 代码复制出来改一改爆破更快的 5.或者 asm 改成 call puts 6.已知算法未成功执行，检查有符号 还是无符号，可能有改变。 6.调试时
 
@@ -210,7 +210,7 @@ js -- decodeObfuscator
 
 ### UPX/ESP 定律
 
-- [UPX防脱壳机脱壳、去除特征码、添加花指令小探](https://www.52pojie.cn/thread-326995-1-1.html)
+- [UPX 防脱壳机脱壳、去除特征码、添加花指令小探](https://www.52pojie.cn/thread-326995-1-1.html)
 - [完美 UPX 脱壳------之投怀送抱篇（适合所有变形）](https://www.52pojie.cn/thread-1673206-1-1.html)
 
   1.检查是 UPX，但无法脱壳。
@@ -232,8 +232,7 @@ UPX1       00010000  00009000   00000400  00008400   E0000040                   
 2.脱壳方式
 修复头后, 搜 popad, 运行跳后走几步到 push ebp dump
 
-3.检查overlay_offset位置有没有写数据, 把overlay_offset的位置 补上去p_info字段的偏移 就可以用upx -d了
-
+3.检查 overlay_offset 位置有没有写数据, 把 overlay_offset 的位置 补上去 p_info 字段的偏移 就可以用 upx -d 了
 
 ### VMP
 
@@ -360,7 +359,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 - [Dll 注入入门](https://blog.csdn.net/weixin_43360152/article/details/109066011)
 - [DLL 注入与 HOOK](https://secondbc.github.io/SecondBC/2022/12/12/DLL注入与HOOK/)
-- [无线程注入-DLL通知注入](https://www.bilibili.com/video/BV1Cp4y1P7rt/) 
+- [无线程注入-DLL 通知注入](https://www.bilibili.com/video/BV1Cp4y1P7rt/)
 
 ## Windows/hook
 
@@ -453,6 +452,40 @@ so 中 Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地
 .text:00413D1A                 nop
 .text:00413D1B                 call    ds:__imp_exit
 ```
+
+## windows
+
+### PEB - Proces Enviroment Block
+
+- Storage for process-specific informationEnvironment variableso
+  - Commandline
+  - Working directory
+  - Module list
+  - Heap pointer
+
+Process creation(kernel)
+
+- Initialize address space
+  - MapKUSER SHARED DATA
+  - Map the executable
+  - Map ntdll.dll
+  - Allocate PEB
+- Create initial thread
+  - Allocate stack
+  - Allocate TEBo
+  - ntdl1.LdrInitializeThunk
+
+### TEB - Thread Environment Block
+
+- Small memory range
+- Storage for thread-specific information
+  - ThreadID
+  - Stack rangeo
+  - `GetLastError`
+  - TLS: `Thread Local Storage`
+- gs:[X] = [IA32_KERNEL_GS_BASE+X]
+
+通过 GS 寄存器访问 TEB
 
 ## 工具
 

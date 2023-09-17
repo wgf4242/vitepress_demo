@@ -16,7 +16,7 @@ flask-unsign --decode --cookie "eyJsb2dnZWRfaW4iOmZhbHNlfQ.XDuWxQ.E2Pyb6x3w-NODu
 
 ## 原型链污染
 
-覆盖 SECRET_KEY, 然后伪造 session
+1. 覆盖 SECRET_KEY, 然后伪造 session
 
 ```json
 {
@@ -34,7 +34,7 @@ flask-unsign --decode --cookie "eyJsb2dnZWRfaW4iOmZhbHNlfQ.XDuWxQ.E2Pyb6x3w-NODu
 }
 ```
 
-覆盖 SECRET_KEY, 然后读 http://x.x/static/etc/passwd
+2. 覆盖 `_static_folder` 静态文件路径, 然后读 http://x.x/static/etc/passwd
 
 ```json
 {

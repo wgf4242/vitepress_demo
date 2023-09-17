@@ -1,6 +1,7 @@
 ## volatility 内存取证
 收费的取证大师，火眼数据分析和Arsenal。
 vsadmin - 只能分析卷影、
+[010手动提取](../forensics.md#取证题)
 
 [Documentation](https://volatilityfoundation.github.io/volatility/d9/d2d/classvolatility_1_1plugins_1_1linux_1_1recover__filesystem_1_1linux__recover__filesystem.html)
 

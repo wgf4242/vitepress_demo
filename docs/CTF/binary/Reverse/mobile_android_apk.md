@@ -325,6 +325,7 @@ https://github.com/APKLab/APKLab
 - [协议分析 | APP 协议分析心得](https://mp.weixin.qq.com/s/5XAbGzR1se9pLmx_d8-KNQ)
 - [不寻常的手游反调试——反hook分析与绕过](https://mp.weixin.qq.com/s/zEJVBSV-BjrWr1Dl_pORXg)
 - [App接口参数还原调用](https://mp.weixin.qq.com/s/jnRHO9mUuwheW27B7iES-w)
+- [APP的登录协议分析](https://mp.weixin.qq.com/s/Z4hI_8FO_77dHLcjKMeXFw)
 ## 混淆加密
 
 - [开箱即用的 SO 代码混淆器来啦！r0env2022 里的 as 集成 ollvm 混淆](https://www.bilibili.com/video/BV1z8411G79H/)

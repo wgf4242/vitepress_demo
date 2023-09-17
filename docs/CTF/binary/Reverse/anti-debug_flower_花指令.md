@@ -10,9 +10,9 @@
 - [什么是去除花指令的最高境界](https://mp.weixin.qq.com/s/yXt_BfTRRpqBGCI3MIriOA)
 - [看开水团与 ARM 花指令构造与静态 Patch](https://mp.weixin.qq.com/s/TmTMRyDe_h4MjJxIVxn9Wg)
 
-编写花指令
----
-[[CMake] 反ida内联汇编花指令](https://github.com/thinkerMid/anti_IDA)
+## 编写花指令
+
+[[CMake] 反 ida 内联汇编花指令](https://github.com/thinkerMid/anti_IDA)
 [Anti-Disassembly on ARM64](https://iosre.com/t/anti-disassembly-on-arm64/21006/1) [Link2](https://github.com/AppleReer/Anti-Disassembly-On-Arm64)
 
 ## IsDebuggerPresent()
@@ -219,6 +219,13 @@ moectf2022 chicken_soup.zip
 方式 1 mark1 处 nop, 导致 mark1-1 栈不平衡，要修复栈
 方式 2 mark2 处 nop. 在 0x401640 处按 P 创建函数并 F5，首先观察他的 else 分支：
 
+## call $+5
+
+| 花指令                                                                                                                                  | 去花后              |     |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | --- |
+| push ebp<br>call $+5<br>pop ebp<br>dec eax<br>add ebp, (offset sub_411B8E - offset loc_411B86)<br>push ebp<br>retn<br>db 90h<br>pop ebp | push ebp<br>pop ebp |     |
+|                                                                                                                                         |                     |
+
 ## [HDCTF2019]Maze
 
 IDA 载入
@@ -282,5 +289,7 @@ int main() {
 ![](https://s2.loli.net/2022/09/17/iCH1lNo8BhDMqyv.jpg)
 
 ## 示例
-### 绿城杯2021 easy_re.exe
-0040105A 处按U转机器码即可
+
+### 绿城杯 2021 easy_re.exe
+
+0040105A 处按 U 转机器码即可

