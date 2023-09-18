@@ -1,7 +1,7 @@
 ## Q & A 提问
 - Windows 本地怎样启环境 运行 angr，像 linux 启动 pwn 题目那样。。想迷宫爆破。 -- 想 win 下启动迷宫题目支持 nc/telnet 连接
+- web JustUpload-v2  反序列化
 - png_4 题目怎么做
-- re 集团公司 迷宫题 正常怎么调
 - 你文件没了快打钱.zip -- smc 题目 ， 1.多次运行后 sp 错误。 2.怎样解码后 patch 出来。并且能运行。
 - fmtarg ($ecx) 怎么写用 ecx
 
