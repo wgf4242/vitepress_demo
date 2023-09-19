@@ -14,6 +14,7 @@
 - 010 1.全局搜索 2. Unicode 型搜索
 - 丢云沙箱检查相关信息
 - 文件名 hxcode 汉信码
+- 搜索 文件名 + encryption
 - 32 位长度 AES 的秘钥
 - swp 文件 vim -r index.php.swp
 - Base64 解出来看不懂
@@ -27,7 +28,7 @@
   - ciphey
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
-  - 符合16进制,  base64 加密数据
+  - 符合 16 进制, base64 加密数据
   - 提示逆向，可能是指加密
   - 有空格和 tab 可能是摩斯码或二进制
   - 补全文件头 和 文件尾部
@@ -114,21 +115,27 @@ arr[$(cat /flag)]
 
 ## 图片题
 
-| format   | 支 key | 无 key | 工具                         | 使用                                                                                   |
-| -------- | ------ | ------ | ---------------------------- | -------------------------------------------------------------------------------------- |
-| png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                             |
-| png      | √      | √      | stegpy                       | stegpy <file> -p                                                                       |
-| png      |        | √      | zsteg                        | zsteg -a x.png                                                                         |
-| png      |        |        |                              | 有明显剪裁效果, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib` |
-| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                |
-|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                          |
-| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                  |
-| jpg      | √      |        | SilentEye                    |                                                                                        |
-| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                      |
-| bmp      | √      |        | SilentEye                    |                                                                                        |
-| bmp      | √      |        | jphs05/Jphswin               | jphs05                                                                                 |
-| `<all>`1 | √      |        | oursecret                    | oursecret                                                                              |
-| `<all>`2 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py                                                      |
+| format   | 支 key | 无 key | 工具                         | 使用                                                                                       |
+| -------- | ------ | ------ | ---------------------------- | ------------------------------------------------------------------------------------------ |
+| png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                                 |
+| png      | √      | √      | stegpy                       | stegpy <file> -p                                                                           |
+| png      |        | √      | zsteg                        | zsteg -a x.png                                                                             |
+| png      |        |        |                              | 有明显剪裁效果, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`     |
+| png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制 |
+| png 多图 |        |        | beyond compare               | 打开 2 张图, 点击容差，修改容差大小                                                        |
+| png 多图 |        |        | 盲水印                       |
+| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                    |
+|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                              |
+| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                      |
+| jpg      | √      |        | SilentEye                    |                                                                                            |
+| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                          |
+| jpg      |        |        | jphs                         |
+| bmp      | √      |        | SilentEye                    |                                                                                            |
+| bmp      | √      |        | jphs05/Jphswin               | jphs05                                                                                     |
+| gif      |        |        | identify                     | 时间轴信息隐藏 `identify -format "%T\n" 100.gif` , 010中可看  `GRAPHICCONTROLEXTENSION >ushort DelayTime` <br> 分离文件 `convert a.gif flag.png` <br> 拼图变透明色 `convert a.gif -transparent white result.gif`                                            |
+| `<all>`1 | √      |        | 010 查看头信息中的编辑器     | 用对应编辑器打开, 可能有隐藏图层                                                           |
+| `<all>`2 | √      |        | oursecret                    | oursecret                                                                                  |
+| `<all>`3 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py                                                          |
 
 - https://www.aperisolve.com/
 - 看文件末尾、文件头
@@ -170,6 +177,11 @@ Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 - bmp 图片
   - 注意文件格式, 对比其他图 06h 08h 必须为 0 否则有信息
 
+- convert
+```sh
+sudo apt-get install imagemagick
+convert a.gif qr.jpg
+```
 ### 二维码
 
 - 旋转 180 度然后 填充 version1. -- ezQR 2023 贝格通杯 MISC

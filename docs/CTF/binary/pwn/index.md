@@ -12,6 +12,8 @@ system
 
 ```sh
 system, ret_addr, bin_sh
+
+system("$0")  == system('bin/sh') # 可以再来一行 exec 1>&2
 ```
 
 # Article

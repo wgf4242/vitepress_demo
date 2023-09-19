@@ -23,6 +23,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 1. bindiff, 恢复符号, 见 re_symbols.md
 1. 见 [程序执行顺序](#程序执行顺序), 有没 SEH
 1. ida 打不开/ghidra/cutter
+2. 用汇编patch, 然后 jmp循环, attach程序来过反调试。
 1. apk: jadx, jeb 都打开 jeb 能解些 brainfucks
 1. 输入 fuzz 模糊测试
    - L1. 输入 1 ascii: 49, -> out1
@@ -318,6 +319,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 - [Debugging Tips](https://blog.wjhwjhn.com/archives/838/)
   > Advanced
 - [堆栈溢出保护机制 | 逆向工程](https://mp.weixin.qq.com/s/_15IO0tIY-ci305AEIwDGQ)
+- [常见的五个ELF二进制程序头讲解](https://mp.weixin.qq.com/s/DHTGAxfL_C5ip3CWdbKK-w)
 
 ---
 
