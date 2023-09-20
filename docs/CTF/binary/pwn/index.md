@@ -13,7 +13,7 @@ system
 ```sh
 system, ret_addr, bin_sh
 
-system("$0")  == system('bin/sh') # 可以再来一行 exec 1>&2
+system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 ```
 
 # Article
