@@ -30,7 +30,18 @@
 
 - 压缩包软链接，传到/tmp/data 下, ，这个软链接指向 flag，即可获取 flag
 - %00 截断 php 版本小于 5.3.4
-- 上传时有 `file_exists($filename)` 考虑 phar 反序列化 `phar://abc.phar.gif/test.txt`
+- 上传时和文件相关都可能是phar反序列化,如 `file_exists($filename)` 考虑 phar 反序列化 `phar://abc.phar.gif/test.txt`
+  - 能进行攻击的远不至于file_get_contents，所有的文件函数都会导致这个问题
+```sh
+fileatime / filectime / filemtime
+stat / fileinode / fileowner / filegroup / fileperms
+file / file_get_contents / readfile / fopen
+file_exists / is_dir / is_executable / is_file / is_link / is_readable / is_writeable / is writable.
+parse_ini_file
+unlink
+copy
+```
+
 
 # 文件读取
 
