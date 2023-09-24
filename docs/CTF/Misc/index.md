@@ -115,27 +115,27 @@ arr[$(cat /flag)]
 
 ## 图片题
 
-| format   | 支 key | 无 key | 工具                         | 使用                                                                                       |
-| -------- | ------ | ------ | ---------------------------- | ------------------------------------------------------------------------------------------ |
-| png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                                 |
-| png      | √      | √      | stegpy                       | stegpy <file> -p                                                                           |
-| png      |        | √      | zsteg                        | zsteg -a x.png                                                                             |
-| png      |        |        |                              | 有明显剪裁效果, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`     |
-| png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制 |
-| png 多图 |        |        | beyond compare               | 打开 2 张图, 点击容差，修改容差大小                                                        |
+| format   | 支 key | 无 key | 工具                         | 使用                                                                                                                                                                                                             |
+| -------- | ------ | ------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                                                                                                                                                       |
+| png      | √      | √      | stegpy                       | stegpy <file> -p                                                                                                                                                                                                 |
+| png      |        | √      | zsteg                        | zsteg -a x.png                                                                                                                                                                                                   |
+| png      |        |        |                              | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |
+| png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
+| png 多图 |        |        | beyond compare               | 打开 2 张图, 点击容差，修改容差大小                                                                                                                                                                              |
 | png 多图 |        |        | 盲水印                       |
-| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                    |
-|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                              |
-| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                      |
-| jpg      | √      |        | SilentEye                    |                                                                                            |
-| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                          |
+| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
+|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
+| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
+| jpg      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
+| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                                                                                                                                                |
 | jpg      |        |        | jphs                         |
-| bmp      | √      |        | SilentEye                    |                                                                                            |
-| bmp      | √      |        | jphs05/Jphswin               | jphs05                                                                                     |
-| gif      |        |        | identify                     | 时间轴信息隐藏 `identify -format "%T\n" 100.gif` , 010中可看  `GRAPHICCONTROLEXTENSION >ushort DelayTime` <br> 分离文件 `convert a.gif flag.png` <br> 拼图变透明色 `convert a.gif -transparent white result.gif`                                            |
-| `<all>`1 | √      |        | 010 查看头信息中的编辑器     | 用对应编辑器打开, 可能有隐藏图层                                                           |
-| `<all>`2 | √      |        | oursecret                    | oursecret                                                                                  |
-| `<all>`3 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py                                                          |
+| bmp      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
+| bmp      | √      |        | jphs05/Jphswin               | jphs05                                                                                                                                                                                                           |
+| gif      |        |        | identify                     | 时间轴信息隐藏 `identify -format "%T\n" 100.gif` , 010 中可看 `GRAPHICCONTROLEXTENSION >ushort DelayTime` <br> 分离文件 `convert a.gif flag.png` <br> 拼图变透明色 `convert a.gif -transparent white result.gif` |
+| `<all>`1 | √      |        | 010 查看头信息中的编辑器     | 用对应编辑器打开, 可能有隐藏图层                                                                                                                                                                                 |
+| `<all>`2 | √      |        | oursecret                    | oursecret                                                                                                                                                                                                        |
+| `<all>`3 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py                                                                                                                                                                                |
 
 - https://www.aperisolve.com/
 - 看文件末尾、文件头
@@ -175,13 +175,16 @@ arr[$(cat /flag)]
 Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 
 - bmp 图片
+
   - 注意文件格式, 对比其他图 06h 08h 必须为 0 否则有信息
 
 - convert
+
 ```sh
 sudo apt-get install imagemagick
 convert a.gif qr.jpg
 ```
+
 ### 二维码
 
 - 旋转 180 度然后 填充 version1. -- ezQR 2023 贝格通杯 MISC

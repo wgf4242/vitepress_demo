@@ -216,6 +216,8 @@ https://github.com/APKLab/APKLab
 - [抓不到包？不可能（上篇）](https://mp.weixin.qq.com/s/XqoLx0zjonCz_JcE13E1zA)
 - [史上最强安卓抓包/逆向/HOOK & 云手机/自动化辅助框架](https://mp.weixin.qq.com/s/533On0ejZXF42GT1KrpfmQ)
 - [【小记】Frida 绕过闲鱼 Spdy 协议进行抓包](https://mp.weixin.qq.com/s/FEIoSB2gWBb9NAAE7i0bXA)
+- [r0capture！安卓应用层抓包通杀脚本](https://mp.weixin.qq.com/s/lCtr6ZZZaiHNodZxxnrLMQ)
+
 
 ## 综合
 

@@ -42,6 +42,8 @@ system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 [pwn -- 沙盒机制详解](https://blog.csdn.net/A951860555/article/details/116738676)
 [VMPwn 学习](https://www.anquanke.com/post/id/208450)
 [VMpwn 总结](https://mp.weixin.qq.com/s/ONZHWfg3UBIvPVsYeszN_Q) 
+[VMPWN的入门系列-1](https://mp.weixin.qq.com/s/lpDpFOk4VaXiG8odgb9KEQ)
+[VMPWN的入门系列-2](https://mp.weixin.qq.com/s/Q7bgUWVn8UKWwa-Vv0_SEA)
 [针对 top chunk 的一些特殊攻击手法](https://mp.weixin.qq.com/s/foraOTokROtCBsElgL2Y1Q)
 
 ## Tutorial
@@ -78,9 +80,17 @@ system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 - [CTFHUB | 堆溢出 | House of orange](https://blog.csdn.net/KaliLinux_V/article/details/128966835)
 - [CTFHUB | 堆溢出 | House of Lore](https://blog.csdn.net/KaliLinux_V/article/details/128969408)
 
+--- 堆喷
+[堆喷 | 从2023蓝帽杯0解题heapSpary入门堆喷](https://mp.weixin.qq.com/s/ZEpkRkXtqfKFJS59vduM4g)
+
 ---
 
-- [Kerndel | kernel-pwn 之 ret2dir 利用技巧](https://mp.weixin.qq.com/s/PT__YBPRW0odcyzOxn7g8Q)
+- [Kernel | kernel-pwn 之 ret2dir 利用技巧](https://mp.weixin.qq.com/s/PT__YBPRW0odcyzOxn7g8Q)
+- [kernel pwn入门](https://mp.weixin.qq.com/s/lDyJERTkUJ9cyMR_mrvpGA)
+
+---
+- [glibc2.35-通过tls_dtor_list劫持exit执行流程](https://mp.weixin.qq.com/s/jdpR_Ago_SK3qRRw3ghZ4A)
+
 
 - video
 [「Pwn教学」有趣的Pwn博主的Tcache Bin Attack堆攻击教学](https://www.bilibili.com/video/BV1Jy4y1d7oz/)

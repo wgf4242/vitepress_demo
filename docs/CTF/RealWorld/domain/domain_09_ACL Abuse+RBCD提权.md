@@ -1,6 +1,6 @@
 <!-- https://blog.csdn.net/longlangci/article/details/131686439 -->
 
-- 前提: `GenericWrite` 权限
+- 前提: `GenericWrite` 权限/`ACCOUNT OPERATORS组`
 
 ```bash
 # 1. 枚举一下当前用户（lixiuying）对当前机器的DACL。

