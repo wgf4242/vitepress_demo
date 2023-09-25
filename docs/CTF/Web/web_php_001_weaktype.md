@@ -92,3 +92,14 @@ $data2="\xd1\x31\xdd\x02\xc5\xe6\xee\xc4\x69\x3d\x9a\x06\x98\xaf\xf9\x5c\x2f\xca
 $c = new Error($shell,1);$d = new Error($shell,2);
 echo md5($c) === md5($d);
 ```
+
+## sha1(a) == sha1(b)
+
+```
+aaroZmOk
+aaK1STfy
+```
+
+## `md5($_POST['key3']) === sha1($_POST['key3']`
+
+key3[]=1

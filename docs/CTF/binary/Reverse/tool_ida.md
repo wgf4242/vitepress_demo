@@ -17,6 +17,8 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - 连续的内存可设置 struct
 - import 可看到 GetMessageBoxA, 在 import 处双击跳转
 - 读取卡死 载入选择 Binary
+### 界面
+蓝色变量 - 全局变量
 
 ### 符号修复
 

