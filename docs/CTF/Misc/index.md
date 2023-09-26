@@ -24,6 +24,7 @@
 - 2 种数据/2 进制
   - 分成 8 个一组，尝试前后补 0, 以及 python int(011, 2)
   - 转二维码
+- 时间 转字母 00:01-A, 00:02-B, 00:03-C
 - unknown 数据
   - ciphey
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
@@ -122,7 +123,8 @@ arr[$(cat /flag)]
 | png      |        | √      | zsteg                        | zsteg -a x.png                                                                                                                                                                                                   |
 | png      |        |        |                              | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |
 | png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
-| png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. xor两张图                                                                                                                                                                            |
+| png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
+| png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
 | png 多图 |        |        | 盲水印                       |
 | jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
 |          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
