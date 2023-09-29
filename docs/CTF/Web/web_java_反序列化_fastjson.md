@@ -29,3 +29,7 @@ Content-Type: application/json
  }
 }
 ```
+
+
+[FastJson1.68&1.80版本反序列化利用](https://mp.weixin.qq.com/s/0C5Bny9LxRP62lTq3jRrvQ)
+[fastjson-BCEL不出网打法原理分析](https://mp.weixin.qq.com/s/OwuCNHd9dU6sRMTwLnifCw)
