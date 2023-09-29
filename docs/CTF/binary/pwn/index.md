@@ -1,6 +1,9 @@
 # 解题思路
 
-- 指针不置 0, uaf
+0. 指针不置 0, uaf
+1. ROPgadget --ropchain  --binary ./file
+2. ret2bss    : 1.gets栈溢出, 2.有plt.system 3.有bss  可以直接ret2bss手动写入 getshell
+3. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
 
 # 环境配置
 

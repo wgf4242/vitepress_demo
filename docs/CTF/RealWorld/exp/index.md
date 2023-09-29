@@ -34,6 +34,8 @@
 [泛微 E-Cology9 changeUserInfo 信息泄漏及 ofsLogin 任意用户登录检测工具](https://mp.weixin.qq.com/s/ac8v3G0Z_1QUQjro5fGR2Q)
 [泛微 E-Cology SQL注入漏洞利用工具](https://mp.weixin.qq.com/s/s6E0bHmCmVGXENjru0so4w)
 [泛微 | E-Mobile | 6.0远程命令执行漏洞](https://mp.weixin.qq.com/s/z-WN2_MTxdk3z4LvchXkXw)
+[泛微 | 通过emobile打e-cology前台RCE](https://mp.weixin.qq.com/s/MN3x1zmi3dLNKp6_5B68LA)
+
 
 [信呼 OA RCE](https://mp.weixin.qq.com/s/s2x28qkAW13DIDFZOdO73g)
 

@@ -25,11 +25,15 @@
   - 分成 8 个一组，尝试前后补 0, 以及 python int(011, 2)
   - 转二维码
 - 时间 转字母 00:01-A, 00:02-B, 00:03-C
+- 得到密码
+  - 可能转小写 `Watermark_is_fun -> watermark_is_fun`
 - unknown 数据
+  - 多用 sublime 看可能有零宽
   - ciphey
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
-  - 符合 16 进制, base64 加密数据
+  - base64 换表
+  - 符合 16 进制 data, base64.encode(data)
   - 提示逆向，可能是指加密
   - 有空格和 tab 可能是摩斯码或二进制
   - 补全文件头 和 文件尾部
@@ -43,6 +47,7 @@
   - 拆成 2 段 base64 例 enlyZ2h3eXlmeHc0ezhpMAMX1tMzk3amNpNXZqdDRrZg====
   - Fence Code
   - 画图, 比如 01 多行，把 1 画出来。连上看看效果。
+  - 大文件: 1.混乱字节且 2.大小整数 20mb 倍数 测veracrypt（或 truecrypt）
 - 不明数字+字母
   - Caesar 后过滤 16 进制。
 - 不明 16 进制/字符串
@@ -119,6 +124,7 @@ arr[$(cat /flag)]
 | format   | 支 key | 无 key | 工具                         | 使用                                                                                                                                                                                                             |
 | -------- | ------ | ------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                                                                                                                                                       |
+| png      |        |        | steg-solve/cloacked-pixel    | 低位有 lsb 但提取 rgb0 没信息，可能为 cloacked-pixel                                                                                                                                                             |
 | png      | √      | √      | stegpy                       | stegpy <file> -p                                                                                                                                                                                                 |
 | png      |        | √      | zsteg                        | zsteg -a x.png                                                                                                                                                                                                   |
 | png      |        |        |                              | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |

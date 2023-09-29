@@ -25,37 +25,37 @@ sudo make install
 
 ## 常用命令
 
-|             | cmd                                  | desc                                                                    |
-| ----------- | ------------------------------------ | ----------------------------------------------------------------------- |
-|             | set args <args>                      | set args Hello World <br>run                                            |
-|             | entry                                | Set a breakpoint at the first instruction executed in the target binary |
-|             | ctx                                  | 默认的 context 信息                                                     |
-|             | b \_\_libc_start_main                | 条件断点 `break *0x56556228 if argc==1`                                 |
-|             | b \*main                             | 禁用启用断点 `dis(able) Num` 和 `enable Num`                            |
-|             | fmtargs 0x7fffe2d9                   | 查看 printf 计算参数位置                                                |
-|             | distance 0x90 0x86                   | 计算距离                                                                |
-|             | disassemble 0x40123d                 | 显示地址的汇编代码                                                      |
-|             | !disasm eb01                         | 将机器码 eb01 转汇编                                                    |
-|             | p $esp                               | 输出 esp, p/x 32 -- 0x20                                                |
-|             | tel <addr>                           | 查看地址值                                                              |
-|             | libc                                 | 查看 libc 地址                                                          |
-|             | got                                  | 查看 got 表                                                             |
-|             | search "AAAA"                        | 直接搜索 "AAAA" 的地址, 查找栈/内存位置                                 |
-|             | backtrace                            | 查看调用栈, `frame` 切换调用栈                                          |
-| -- debug -- |                                      |
-|             | alsr off                             | 关闭 alsr                                                               |
-|             | `set *0x4007e48=0x7c6c`              | 修改值                                                                  |
-| -- heap --  |                                      | 查看堆,配合 x/addr 看位置                                               |
-|             | heap                                 |
-|             | bins                                 | 查看 bins                                                               |
-|             | heapinfo                             |                                                                         |
-|             | parseheap                            |
-|             | chunkinfo <addr>                     | 查看 chunk                                                              |
-|             | hex 0x8e1000 2300                    | 查看 hex                                                                |
-|             | p &\_\_malloc_hook                   |
-|             | magic                                | 查看 malloc_hook system 等地址                                          |
-|             | fakefast <mallochook 地址>           |
-|             | tel \*(0x7ffff588+0x30 + 4) = 0 赋值 |
+|             | cmd                                     | desc                                                                    |
+| ----------- | --------------------------------------- | ----------------------------------------------------------------------- |
+|             | set args <args>                         | set args Hello World <br>run                                            |
+|             | entry                                   | Set a breakpoint at the first instruction executed in the target binary |
+|             | ctx                                     | 默认的 context 信息                                                     |
+|             | b \_\_libc_start_main                   | 条件断点 `break *0x56556228 if argc==1`                                 |
+|             | b \*main                                | 禁用启用断点 `dis(able) Num` 和 `enable Num`                            |
+|             | fmtargs 0x7fffe2d9                      | 查看 printf 计算参数位置                                                |
+|             | distance 0x90 0x86                      | 计算距离                                                                |
+|             | disass `Input` <br>disassemble 0x40123d | `disass(emble)` 查看 函数/地址 汇编                                     |
+|             | !disasm eb01                            | 将机器码 eb01 转汇编                                                    |
+|             | p $esp                                  | 输出 esp, p/x 32 -- 0x20                                                |
+|             | tel <addr>                              | 查看地址值                                                              |
+|             | libc                                    | 查看 libc 地址                                                          |
+|             | got                                     | 查看 got 表                                                             |
+|             | search "AAAA"                           | 直接搜索 "AAAA" 的地址, 查找栈/内存位置                                 |
+|             | backtrace                               | 查看调用栈, `frame` 切换调用栈                                          |
+| -- debug -- |                                         |
+|             | alsr off                                | 关闭 alsr                                                               |
+|             | `set *0x4007e48=0x7c6c`                 | 修改值                                                                  |
+| -- heap --  |                                         | 查看堆,配合 x/addr 看位置                                               |
+|             | heap                                    |
+|             | bins                                    | 查看 bins                                                               |
+|             | heapinfo                                |                                                                         |
+|             | parseheap                               |
+|             | chunkinfo <addr>                        | 查看 chunk                                                              |
+|             | hex 0x8e1000 2300                       | 查看 hex                                                                |
+|             | p &\_\_malloc_hook                      |
+|             | magic                                   | 查看 malloc_hook system 等地址                                          |
+|             | fakefast <mallochook 地址>              |
+|             | tel \*(0x7ffff588+0x30 + 4) = 0 赋值    |
 
 ## x/examine/查看
 

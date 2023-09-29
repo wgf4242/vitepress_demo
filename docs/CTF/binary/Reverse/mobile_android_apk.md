@@ -78,7 +78,9 @@ __int64 __fastcall RegisterNatives(JNIEnv *a1) // 改为JNIEnv*,
 ![](https://s2.loli.net/2022/09/28/qImO3XignjZTytp.jpg)
 
 ## 调试 apk
+
 by mprop
+
 ```sh
 adb push mprop /data/local/tmp/
 adb shell
@@ -87,7 +89,7 @@ chmod +x /data/local/tmp/mprop
 su
 
 /data/local/tmp/mprop
-# verbose mode ==> dump memory 
+# verbose mode ==> dump memory
 # /data/local/tmp/mprop -v > myprop.txt
 
 # restore
@@ -105,8 +107,8 @@ su #切换至超级用户
 magisk resetprop ro.debuggable 1
 stop;start; #一定要通过这种方式重启手机
 ```
-## jeb 调试 apk
 
+## jeb 调试 apk
 
 最佳：
 
@@ -204,8 +206,10 @@ https://github.com/APKLab/APKLab
 ## 课程
 
 [Awesome-Android-Reverse-Engineering](https://github.com/user1342/Awesome-Android-Reverse-Engineering)
+
 ## 环境
-[使用ADB链接夜神的方式与吐槽](https://mp.weixin.qq.com/s/kWrfK19bOYUy1tXQs_JRKg)
+
+[使用 ADB 链接夜神的方式与吐槽](https://mp.weixin.qq.com/s/kWrfK19bOYUy1tXQs_JRKg)
 
 ## 抓包
 
@@ -217,7 +221,6 @@ https://github.com/APKLab/APKLab
 - [史上最强安卓抓包/逆向/HOOK & 云手机/自动化辅助框架](https://mp.weixin.qq.com/s/533On0ejZXF42GT1KrpfmQ)
 - [【小记】Frida 绕过闲鱼 Spdy 协议进行抓包](https://mp.weixin.qq.com/s/FEIoSB2gWBb9NAAE7i0bXA)
 - [r0capture！安卓应用层抓包通杀脚本](https://mp.weixin.qq.com/s/lCtr6ZZZaiHNodZxxnrLMQ)
-
 
 ## 综合
 
@@ -232,9 +235,11 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》九、密码学基础、算法自吐、非标准加密对抗](https://mp.weixin.qq.com/s/jIId9oEchhU4W7jplYcyJg)
 - [《安卓逆向这档事》十、不是我说，有了 IDA 还要什么女朋友？](https://mp.weixin.qq.com/s/odbZ9F9u5nh9Bp2gK-YbxA) [video](https://www.bilibili.com/video/BV1ho4y1F7Vz/)
 - [《安卓逆向这档事》十二、大佬帮我分析一下](https://www.bilibili.com/video/BV1u8411S7xZ/)
-- [《安卓逆向这档事》十三、是时候学习一下Frida一把梭了(上)](https://mp.weixin.qq.com/s/T0K5RmTsDZ0RIc8Y-S325Q)
+- [《安卓逆向这档事》十三、是时候学习一下 Frida 一把梭了(上)](https://mp.weixin.qq.com/s/T0K5RmTsDZ0RIc8Y-S325Q)
+- [《安卓逆向这档事》十四、是时候学习一下 Frida 一把梭了(中)](https://mp.weixin.qq.com/s/HZfiX6VI3G6X6If_4IfFRg)
 - [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
-- [Android逆向技术高阶大法](https://mp.weixin.qq.com/s/zMXOpxW6E5klbsjKVHZudg)
+- [Android 逆向技术高阶大法](https://mp.weixin.qq.com/s/zMXOpxW6E5klbsjKVHZudg)
+
 ---
 
 八、参考文档
@@ -256,7 +261,7 @@ https://github.com/APKLab/APKLab
 - [Android 渗透 07：安卓 CTF 系列-案例 4](https://mp.weixin.qq.com/s/JxcJX4H73Xqur5br45ad4g)
 - [Android 渗透 11：AS 与 Jeb 动态调试 Apk](https://mp.weixin.qq.com/s/SOPjvPkuCB2zFZiJ5L7tew)
 - [Android 渗透 12：安卓逆向-IDA 动态调试 so](https://mp.weixin.qq.com/s/eJVicCY7Y4VEAg8U2dS4hg)
-- [【安卓】IDA调试so与JNI_OnLoad](http://www.qfrost.com/posts/android/%E5%AE%89%E5%8D%93ida%E8%B0%83%E8%AF%95so%E4%B8%8Ejni_load/)
+- [【安卓】IDA 调试 so 与 JNI_OnLoad](http://www.qfrost.com/posts/android/%E5%AE%89%E5%8D%93ida%E8%B0%83%E8%AF%95so%E4%B8%8Ejni_load/)
 - [【APP 逆向百例】Frida 初体验，root 检测与加密字符串定位](https://mp.weixin.qq.com/s/WfvTA9MJh-NS86LYDVTBzg)
 - [[分享]之前大家私信我 frida 的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm)
 - [对某 app 的加密定位与 hook](https://mp.weixin.qq.com/s/7Wh5U8eyfL0GEWzqZx6uqA)
@@ -294,7 +299,8 @@ https://github.com/APKLab/APKLab
 - [2023 安卓 Hook 框架源码入门（一 YAHFA 框架）（1 概述）](https://www.bilibili.com/video/BV1TY4y1f7rw/)
 
 ---
-- [Android系统内核漏洞利用技术入门](https://mp.weixin.qq.com/s/a8A0g7-S0FiMuRa3YOg89Q)
+
+- [Android 系统内核漏洞利用技术入门](https://mp.weixin.qq.com/s/a8A0g7-S0FiMuRa3YOg89Q)
 - [Android 逆向 设备指纹 Settings 类对抗终极方案](https://www.bilibili.com/video/BV1hP411s7Js/)
 
 ### bypass
@@ -326,9 +332,10 @@ https://github.com/APKLab/APKLab
 - [协议分析 | 对一个 apk 协议的继续分析—libsgmain 反混淆与逆向](https://mp.weixin.qq.com/s/s06dvT056fqkENIYoEHZ3w)
 - [协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
 - [协议分析 | APP 协议分析心得](https://mp.weixin.qq.com/s/5XAbGzR1se9pLmx_d8-KNQ)
-- [不寻常的手游反调试——反hook分析与绕过](https://mp.weixin.qq.com/s/zEJVBSV-BjrWr1Dl_pORXg)
-- [App接口参数还原调用](https://mp.weixin.qq.com/s/jnRHO9mUuwheW27B7iES-w)
-- [APP的登录协议分析](https://mp.weixin.qq.com/s/Z4hI_8FO_77dHLcjKMeXFw)
+- [不寻常的手游反调试——反 hook 分析与绕过](https://mp.weixin.qq.com/s/zEJVBSV-BjrWr1Dl_pORXg)
+- [App 接口参数还原调用](https://mp.weixin.qq.com/s/jnRHO9mUuwheW27B7iES-w)
+- [APP 的登录协议分析](https://mp.weixin.qq.com/s/Z4hI_8FO_77dHLcjKMeXFw)
+
 ## 混淆加密
 
 - [开箱即用的 SO 代码混淆器来啦！r0env2022 里的 as 集成 ollvm 混淆](https://www.bilibili.com/video/BV1z8411G79H/)
@@ -348,22 +355,24 @@ https://github.com/APKLab/APKLab
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 XOR 解密](https://www.bilibili.com/video/BV1Lv4y1i7hJ/)
 - [​ 微信小程序逆向分析](https://mp.weixin.qq.com/s/r9VVeXnT_PFX7C8mq7ej_w)
 - [VX 小程序逆向分析](https://mp.weixin.qq.com/s/7yZzf4V-2fcn-jRwm4uO-w)
-- [【小程序逆向】百达星系signature、mid](https://mp.weixin.qq.com/s/RU6et-_V8JXTiSl7cOYnMg)
-- [大麦反编译sign—小程序逆向-哔哩哔哩](https://www.bilibili.com/video/BV1z94y147GD/)
-
-
+- [【小程序逆向】百达星系 signature、mid](https://mp.weixin.qq.com/s/RU6et-_V8JXTiSl7cOYnMg)
+- [大麦反编译 sign—小程序逆向-哔哩哔哩](https://www.bilibili.com/video/BV1z94y147GD/)
 
 ## 普通文章
-
+[『杂项』APP 权限调用查看方法](https://mp.weixin.qq.com/s/qB9_UuRrmrP18ARNX44lvA)
 [安卓 app 四大组件的攻击面分析](https://mp.weixin.qq.com/s/MQ7gNnIkzGBkaJLtAsSORQ)
+[strong-frida 过常见壳的 Frida 检测](https://www.bilibili.com/video/BV1gp4y1N7Cx/)
+[frida | 对APP的检测以及参数计算分析](https://mp.weixin.qq.com/s/x59ZoVGclcjdElxb8Y0R7w)
+
+## eBPF
+
 [eBPF 公开课-安卓 eBPF 开发环境搭建方案](https://mp.weixin.qq.com/s/cQvv7WhCPGNuRhF7DiX_-g)
-[eBPF秀肌肉过百分之99.99的Frida检测](https://www.bilibili.com/video/BV1v14y1C7Us/) 
-[strong-frida过常见壳的Frida检测](https://www.bilibili.com/video/BV1gp4y1N7Cx/) 
+[eBPF 秀肌肉过百分之 99.99 的 Frida 检测](https://www.bilibili.com/video/BV1v14y1C7Us/)
 
 ## 安卓/木马
 
 [简单的安卓木马制作（实现外网控制）](https://mp.weixin.qq.com/s/7vbzKsxbOXLz99t0O7NLfw)
-[《Cypher Rat控制+安卓木马加固与免杀+渗透手机程序化》](https://www.bilibili.com/video/BV18p4y137mZ/)
+[《Cypher Rat 控制+安卓木马加固与免杀+渗透手机程序化》](https://www.bilibili.com/video/BV18p4y137mZ/)
 
 ## 关注列表
 
@@ -372,4 +381,3 @@ https://github.com/APKLab/APKLab
 # Tools
 
 [hook xweb/webview](https://github.com/WankkoRee/WebViewPP)
-

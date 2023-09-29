@@ -90,6 +90,7 @@ INV_B取反字节 60=>-60
 [工控安全竞赛之应用程序逆向分析技术](https://mp.weixin.qq.com/s/6sb6q0959Nb-Z1eTi5Uprg)
 [工业控制靶场-虚拟化体验分享（一）](https://mp.weixin.qq.com/s/Q26EpfVOsPKXzVFVoIPbqQ)
 [赛宁工控靶场场景实操：PROFIBUS-DP通讯应用](https://mp.weixin.qq.com/s/RipAkH0-rHOljNpRkoDIsw)
+[赛宁工控靶场场景实操：工控协议模糊测试 Modbus-TCP](https://mp.weixin.qq.com/s/rmkuNLk4HLS9sm9YHCVlBQ)
 ## 使用
 - [S7-1200模拟量处理](https://mp.weixin.qq.com/s/9Y_SVgVdAQG6ffCCTIy4cQ)
 
