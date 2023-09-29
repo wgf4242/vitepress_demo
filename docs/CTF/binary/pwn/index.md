@@ -1,8 +1,8 @@
 # 解题思路
 
 0. 指针不置 0, uaf
-1. ROPgadget --ropchain  --binary ./file
-2. ret2bss    : 1.gets栈溢出, 2.有plt.system 3.有bss  可以直接ret2bss手动写入 getshell
+1. ROPgadget --ropchain --binary ./file
+2. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell
 3. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
 
 # 环境配置
@@ -44,9 +44,9 @@ system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 
 [pwn -- 沙盒机制详解](https://blog.csdn.net/A951860555/article/details/116738676)
 [VMPwn 学习](https://www.anquanke.com/post/id/208450)
-[VMpwn 总结](https://mp.weixin.qq.com/s/ONZHWfg3UBIvPVsYeszN_Q) 
-[VMPWN的入门系列-1](https://mp.weixin.qq.com/s/lpDpFOk4VaXiG8odgb9KEQ)
-[VMPWN的入门系列-2](https://mp.weixin.qq.com/s/Q7bgUWVn8UKWwa-Vv0_SEA)
+[VMpwn 总结](https://mp.weixin.qq.com/s/ONZHWfg3UBIvPVsYeszN_Q)
+[VMPWN 的入门系列-1](https://mp.weixin.qq.com/s/lpDpFOk4VaXiG8odgb9KEQ)
+[VMPWN 的入门系列-2](https://mp.weixin.qq.com/s/Q7bgUWVn8UKWwa-Vv0_SEA)
 [针对 top chunk 的一些特殊攻击手法](https://mp.weixin.qq.com/s/foraOTokROtCBsElgL2Y1Q)
 
 ## Tutorial
@@ -62,7 +62,7 @@ system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 - [jarvisoj_fm](https://mp.weixin.qq.com/s/7rI3I0M6BcM6UGR119cAbQ)
 - [CTFHUB | 栈溢出 | ret2VDSO](https://bbs.kanxue.com/thread-276433.htm)
 - [CTFHUB | 栈溢出 | ret2dl_resolve](https://bbs.kanxue.com/thread-276450.htm)
-- [ret2resolve练习](https://mp.weixin.qq.com/s/4oTctnawJ3dgzACC1HKzVg)
+- [ret2resolve 练习](https://mp.weixin.qq.com/s/4oTctnawJ3dgzACC1HKzVg)
 
 ---
 
@@ -84,29 +84,64 @@ system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 - [CTFHUB | 堆溢出 | House of Lore](https://blog.csdn.net/KaliLinux_V/article/details/128969408)
 
 --- 堆喷
-[堆喷 | 从2023蓝帽杯0解题heapSpary入门堆喷](https://mp.weixin.qq.com/s/ZEpkRkXtqfKFJS59vduM4g)
+[堆喷 | 从 2023 蓝帽杯 0 解题 heapSpary 入门堆喷](https://mp.weixin.qq.com/s/ZEpkRkXtqfKFJS59vduM4g)
 
 ---
 
 - [Kernel | kernel-pwn 之 ret2dir 利用技巧](https://mp.weixin.qq.com/s/PT__YBPRW0odcyzOxn7g8Q)
-- [kernel pwn入门](https://mp.weixin.qq.com/s/lDyJERTkUJ9cyMR_mrvpGA)
+- [kernel pwn 入门](https://mp.weixin.qq.com/s/lDyJERTkUJ9cyMR_mrvpGA)
 
 ---
-- [glibc2.35-通过tls_dtor_list劫持exit执行流程](https://mp.weixin.qq.com/s/jdpR_Ago_SK3qRRw3ghZ4A)
 
+- [glibc2.35-通过 tls_dtor_list 劫持 exit 执行流程](https://mp.weixin.qq.com/s/jdpR_Ago_SK3qRRw3ghZ4A)
 
 - video
-[「Pwn教学」有趣的Pwn博主的Tcache Bin Attack堆攻击教学](https://www.bilibili.com/video/BV1Jy4y1d7oz/)
-[「Pwn教学」有趣的Pwn博主的Unsorted Bin Attack堆攻击教学](https://www.bilibili.com/video/BV1X3411Z7Ba/)
-[「Pwn教学」有趣的Pwn博主的Unlink堆攻击教学](https://www.bilibili.com/video/BV1kP4y1k7RD/)
+- [「Pwn 教学」有趣的 Pwn 博主的 Tcache Bin Attack 堆攻击教学](https://www.bilibili.com/video/BV1Jy4y1d7oz/)
+- [「Pwn 教学」有趣的 Pwn 博主的 Unsorted Bin Attack 堆攻击教学](https://www.bilibili.com/video/BV1X3411Z7Ba/)
+- [「Pwn 教学」有趣的 Pwn 博主的 Unlink 堆攻击教学](https://www.bilibili.com/video/BV1kP4y1k7RD/)
 
 - 整理
-[CTF竞赛 -- Shellcode学习](https://mp.weixin.qq.com/s/HmLp_yBKcm_aoLJH4kQuZg)
-[CTF竞赛 -- 关于整数溢出](https://mp.weixin.qq.com/s/ZxqP1DOB4g2OTuwPggAIFg)
-[CTF竞赛：从格式化输出函数到完全控制](https://mp.weixin.qq.com/s/1eXd6cBxNVwqjgu-A-KbCw)
-[CTF竞赛 -- SROP详解](https://mp.weixin.qq.com/s/Z0r1v-a0l30sEm6rqvny_A)
-[CTF竞赛 -- 堆漏洞利用](https://mp.weixin.qq.com/s/Qo1ltzI0jh7Zz76bQ22zmA)
-[Tcache | House of Botcake](https://mp.weixin.qq.com/s/ottZtwI2kRoSBek9IPxnJw)
+- [CTF 竞赛 -- Shellcode 学习](https://mp.weixin.qq.com/s/HmLp_yBKcm_aoLJH4kQuZg)
+- [CTF 竞赛 -- 关于整数溢出](https://mp.weixin.qq.com/s/ZxqP1DOB4g2OTuwPggAIFg)
+- [CTF 竞赛：从格式化输出函数到完全控制](https://mp.weixin.qq.com/s/1eXd6cBxNVwqjgu-A-KbCw)
+- [CTF 竞赛 -- SROP 详解](https://mp.weixin.qq.com/s/Z0r1v-a0l30sEm6rqvny_A)
+- [CTF 竞赛 -- 堆漏洞利用](https://mp.weixin.qq.com/s/Qo1ltzI0jh7Zz76bQ22zmA)
+- [Tcache | House of Botcake](https://mp.weixin.qq.com/s/ottZtwI2kRoSBek9IPxnJw)
+
+## Untitled
+
+- [好好说话之 ret2shellcode](https://blog.csdn.net/qq_41202237/article/details/105913330)
+- [好好说话之格式化字符串漏洞利用](https://blog.csdn.net/qq_41202237/article/details/107662273)
+- [好好说话之 64 位格式化字符串漏洞](https://blog.csdn.net/qq_41202237/article/details/107833668)
+- [好好说话之整数溢出](https://blog.csdn.net/qq_41202237/article/details/107972712)
+- [好好说话之 hijack GOT](https://blog.csdn.net/qq_41202237/article/details/107837452)
+- [好好说话之 hijack retaddr](https://blog.csdn.net/qq_41202237/article/details/107911677)
+- [好好说话之 ret2text](https://blog.csdn.net/qq_41202237/article/details/105913166)
+- [好好说话之 ret2syscall](https://blog.csdn.net/qq_41202237/article/details/105913384)
+- [好好说话之 ret2libc1](https://blog.csdn.net/qq_41202237/article/details/105913479)
+- [好好说话之 ret2libc2](https://blog.csdn.net/qq_41202237/article/details/105913529)
+- [好好说话之 ret2libc3](https://blog.csdn.net/qq_41202237/article/details/105913563)
+- [好好说话之 ret2csu](https://blog.csdn.net/qq_41202237/article/details/105913597)
+- [好好说话之 ret2_dl_runtime_resolve](https://blog.csdn.net/qq_41202237/article/details/107378159)
+- [好好说话之 Fastbin Attack（1）：Fastbin Double Free](https://blog.csdn.net/qq_41202237/article/details/109199077)
+- [好好说话之 Fastbin Attack（2）：House Of Spirit](https://blog.csdn.net/qq_41202237/article/details/109284167)
+- [好好说话之 Fastbin Attack（3）：Alloc to Stack](https://blog.csdn.net/qq_41202237/article/details/111300546)
+- [好好说话之 Fastbin Attack（4）：Arbitrary Alloc](https://blog.csdn.net/qq_41202237/article/details/112320919)
+- [好好说话之 Use After Free](https://blog.csdn.net/qq_41202237/article/details/108797478)
+- [好好说话之 off-by-one](https://blog.csdn.net/qq_41202237/article/details/108116618)
+- [好好说话之 unlink](https://blog.csdn.net/qq_41202237/article/details/108481889)
+- [好好说话之 Chunk Extend/Overlapping](https://blog.csdn.net/qq_41202237/article/details/108320408)
+- [好好说话之 IO_FILE 利用（1）：利用\_IO_2_1_stdout 泄露 libc](https://blog.csdn.net/qq_41202237/article/details/113845320)
+- [好好说话之 House Of Einherjar](https://blog.csdn.net/qq_41202237/article/details/117112930)
+- [好好说话之 SROP](https://blog.csdn.net/qq_41202237/article/details/107512670)
+- [好好说话之 Large Bin Attack](https://blog.csdn.net/qq_41202237/article/details/112825556)
+- [好好说话之 Unsorted Bin Attack](https://blog.csdn.net/qq_41202237/article/details/112589899)
+- [好好说话之 Stack smash](https://blog.csdn.net/qq_41202237/article/details/107628831)
+- [好好说话之 re2reg](https://blog.csdn.net/qq_41202237/article/details/105913705)
+- [好好说话之 Tcache Attack（1）：tcache 基础与 tcache poisoning](https://blog.csdn.net/qq_41202237/article/details/113400567)
+- [好好说话之 Tcache Attack（2）：tcache dup 与 tcache house of spirit](https://blog.csdn.net/qq_41202237/article/details/113527665)
+- [好好说话之 Tcache Attack（3）：tcache stashing unlink attack](https://blog.csdn.net/qq_41202237/article/details/113604261)
+
 ## Video
 
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
