@@ -289,6 +289,14 @@ gdb-peda$ p shell
 r2$ afl~shell
 ```
 
+### objdump
+
+```sh
+# 只显示汇编, 不显示地址
+objdump -d --no-show-raw-insn stack_pivotingx86 | perl -p -e 's/^\s+(\S+):\t//;'
+objdump -d --no-show-raw-insn stack_pivotingx86 | grep "^ " | cut -f2,3
+```
+
 ## peda
 
 ```
