@@ -2,6 +2,10 @@
 https://github.com/mattnotmax/cyberchef-recipes
 
 复制时使用Output按钮, Copy raw output to the clipboard      -- 不要手动复制
+### 怎样对每一位字符操作
+
+1. From hex, 或者其他 => 变成二进制
+2. ADD/SUB -> 这都是对每一位字符操作的
 
 ### Caesar
 

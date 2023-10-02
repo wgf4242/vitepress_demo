@@ -2,8 +2,10 @@
 
 0. 指针不置 0, uaf
 1. ROPgadget --ropchain --binary ./file
-2. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell
+2. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell   *Ubuntu18以上 bss段不能覆盖 stdin, stdout, 可覆盖 stderr*
+3. gets 直接打 orw
 3. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
+4. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为strlen遇到 \x00 会停止
 
 # 环境配置
 
@@ -18,6 +20,15 @@ system, ret_addr, bin_sh
 
 system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 ```
+
+
+# FAQ
+
+Q1. 本地打通远程打不通
+
+1. U18以上 栈对齐
+1. *Ubuntu18以上 bss段不能覆盖 stdin, stdout, 可覆盖 stderr*
+
 
 # Article
 

@@ -21,11 +21,11 @@
   - To Hex, 16 位可能是 md5, 如果是 2 层 md5, flag 可能是一层 md5
   - 尝试 rot13, 尝试 base32
 - 多组颜色(8 组), 7 进制加分隔符, -- 2022 长城杯办公室爱情
-- 2 种数据/2 进制/2种颜色
+- 2 种数据/2 进制/2 种颜色
   - 分成 8 个一组，尝试前后补 0, 以及 python int(011, 2)
   - 转二维码
-  - 2种颜色 - 转二进制
-- 时间 转字母 00:01-A, 00:02-B, 00:03-C , 也可能是 00:00是A。根据情况试着移位吧
+  - 2 种颜色 - 转二进制
+- 时间 转字母 00:01-A, 00:02-B, 00:03-C , 也可能是 00:00 是 A。根据情况试着移位吧
 - 得到密码
   - 可能转小写 `Watermark_is_fun -> watermark_is_fun`
 - unknown 数据
@@ -48,7 +48,7 @@
   - 拆成 2 段 base64 例 enlyZ2h3eXlmeHc0ezhpMAMX1tMzk3amNpNXZqdDRrZg====
   - Fence Code
   - 画图, 比如 01 多行，把 1 画出来。连上看看效果。
-  - 大文件: 1.混乱字节且 2.大小整数 20mb 倍数 测veracrypt（或 truecrypt）
+  - 大文件: 1.混乱字节且 2.大小整数 20mb 倍数 测 veracrypt（或 truecrypt）
 - 不明数字+字母
   - Caesar 后过滤 16 进制。
 - 不明 16 进制/字符串
@@ -133,6 +133,7 @@ arr[$(cat /flag)]
 | png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
 | png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
 | png 多图 |        |        | 盲水印                       |
+| 多图     |        |        |                              | 不同的像素点可能是 flag                                                                                                                                                                                          |
 | jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
 |          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
 | jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
