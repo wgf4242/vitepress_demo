@@ -2,10 +2,10 @@
 
 0. 指针不置 0, uaf
 1. ROPgadget --ropchain --binary ./file
-2. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell   *Ubuntu18以上 bss段不能覆盖 stdin, stdout, 可覆盖 stderr*
+2. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell _Ubuntu18 以上 bss 段不能覆盖 stdin, stdout, 可覆盖 stderr_
 3. gets 直接打 orw
-3. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
-4. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为strlen遇到 \x00 会停止
+4. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
+5. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止
 
 # 环境配置
 
@@ -21,14 +21,12 @@ system, ret_addr, bin_sh
 system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 ```
 
-
 # FAQ
 
 Q1. 本地打通远程打不通
 
-1. U18以上 栈对齐
-1. *Ubuntu18以上 bss段不能覆盖 stdin, stdout, 可覆盖 stderr*
-
+1. U18 以上 栈对齐
+1. _Ubuntu18 以上 bss 段不能覆盖 stdin, stdout, 可覆盖 stderr_
 
 # Article
 
@@ -47,18 +45,22 @@ Q1. 本地打通远程打不通
 [heap | 新人 PWN 堆 Heap 总结](https://mp.weixin.qq.com/s/Dk11gRLVsh4-KstotEGb7g)
 [tcache bin 利用总结](https://mp.weixin.qq.com/s/7kytfB0oFy2xcccwy3cxMA)
 
-[linux kernel ROP 下的保护机制绕过](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497175&idx=1&sn=4ea7737c33bf2d6f5c627e5a3bde840f)
-[linux kernel 结构体利用 — tty,seq](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497382&idx=1&sn=3af9f1d3e1410968f4e79f8c7d4cb7af)
-[Linux 内核 pwn 之基础 rop 提权](https://mp.weixin.qq.com/s/VNlTOgRaQF3KqxKMEJDuBw)
-[Glibc 高版本堆利用方法总结](https://mp.weixin.qq.com/s/NE0ujoNZUjlY_MALM1nObw)
-[『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
-
 [pwn -- 沙盒机制详解](https://blog.csdn.net/A951860555/article/details/116738676)
 [VMPwn 学习](https://www.anquanke.com/post/id/208450)
 [VMpwn 总结](https://mp.weixin.qq.com/s/ONZHWfg3UBIvPVsYeszN_Q)
 [VMPWN 的入门系列-1](https://mp.weixin.qq.com/s/lpDpFOk4VaXiG8odgb9KEQ)
 [VMPWN 的入门系列-2](https://mp.weixin.qq.com/s/Q7bgUWVn8UKWwa-Vv0_SEA)
 [针对 top chunk 的一些特殊攻击手法](https://mp.weixin.qq.com/s/foraOTokROtCBsElgL2Y1Q)
+
+## kernel pwn
+
+[【kernel-pwn】从 CISCN-babydriver 入门题带你学习 tty_struct、seq_file、msg_msg、pt_regs 结构体的利用](https://www.bilibili.com/video/BV1E94y1Y7FR/)
+[【kernel-pwn】西湖论剑 2021-easykernel](https://www.bilibili.com/video/BV1nN411J72U/)
+[linux kernel ROP 下的保护机制绕过](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497175&idx=1&sn=4ea7737c33bf2d6f5c627e5a3bde840f)
+[linux kernel 结构体利用 — tty,seq](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247497382&idx=1&sn=3af9f1d3e1410968f4e79f8c7d4cb7af)
+[Linux 内核 pwn 之基础 rop 提权](https://mp.weixin.qq.com/s/VNlTOgRaQF3KqxKMEJDuBw)
+[Glibc 高版本堆利用方法总结](https://mp.weixin.qq.com/s/NE0ujoNZUjlY_MALM1nObw)
+[『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
 
 ## Tutorial
 
