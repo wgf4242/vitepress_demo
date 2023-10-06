@@ -7,3 +7,4 @@ https://www.cnblogs.com/Here-is-SG/p/16285687.html
 [TLS回调函数的学习](https://mp.weixin.qq.com/s/yFO_KX-OZopPe9qZogYYHg)
 [x32TLS回调函数实验](https://mp.weixin.qq.com/s/78af_8lRoz19q_C8IpBXUA)
 [【第三届陕西省赛】REVERSE](https://www.bilibili.com/video/BV1Sh4y1G73t/)
+[【逆向学习】TLS_Callback TLS回调函数学习以及出题思路](https://www.xunflash.top/archives/TLS_Callback.html) 

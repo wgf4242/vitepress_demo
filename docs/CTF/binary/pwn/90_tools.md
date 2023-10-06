@@ -1,4 +1,4 @@
-# 缺少 so/缺少依赖/更新 glibc/指定运行程序所需要的.so 文件路径的四种方式
+# 修改so/缺少 so/缺少依赖/更新 glibc/指定运行程序所需要的.so 文件路径的四种方式
 
 https://blog.csdn.net/huashuolin001/article/details/103028422
 

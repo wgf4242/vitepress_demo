@@ -94,6 +94,35 @@ int main() {
 }
 ```
 
+#### 只能处理地址
+
+只能处理地址, `%12p%6$hhn` 比如 0xffa2a4a8 —▸ 0xffa2a4c4 —▸ 0x804bfb8 可改写的是 0xffa2a4c4 指向的值 即`0x804bfb8`改写为`0x804bf0c`
+
+不能直接修改 `0xffa2a4cc` 指向的值。
+
+```sh
+    00:0000│ esp 0xffa2a490 —▸ 0xffa2a4ac ◂— 0x70333225 ('%23p')
+    01:0004│     0xffa2a494 —▸ 0xffa2a4ac ◂— 0x70333225 ('%23p')
+    02:0008│     0xffa2a498 ◂— 0x10
+    03:000c│     0xffa2a49c —▸ 0x804963e (talk+16) ◂— add ebx, 0x297a
+    04:0010│     0xffa2a4a0 —▸ 0xf7f49620 (_IO_2_1_stdin_) ◂— 0xfbad208b
+√   05:0014│     0xffa2a4a4 —▸ 0x804a231 ◂— 0x47006425 /* '%d' */                 # 可改写 0x47006425
+√   06:0018│     0xffa2a4a8 —▸ 0xffa2a4c4 —▸ 0x804bfb8  —▸ 0x804bec0 (_DYNAMIC) # 可改写 0x804bfb8
+    07:001c│ eax 0xffa2a4ac ◂— 0x70333225 ('%23p')
+    08:0020│     0xffa2a4b0 ◂— 0x24303125 ('%10$')
+    09:0024│     0xffa2a4b4 ◂— 0x616e6868 ('hhna')
+√   0a:0028│     0xffa2a4b8 —▸ 0xffa2a4ec —▸ 0x8049797 (main+30) ◂— mov eax, 0
+    0b:002c│     0xffa2a4bc ◂— 0x80893a00
+√   0c:0030│     0xffa2a4c0 —▸ 0x804a231 ◂— 0x47006425 /* '%d' */
+√   0d:0034│     0xffa2a4c4 —▸ 0xffa2a4cc—▸ 0x804974a
+√   0e:0038│ ebp 0xffa2a4c8 —▸ 0xffa2a4e8 —▸ 0xffa2a4f8 ◂— 0x0
+    0f:003c│     0xffa2a4cc —▸ 0x804974a (game+121) ◂— jmp 0x804976d
+```
+* 怎样修改 0xffa2a4cc 中的返回值 0x804974a？
+```sh
+06:0018│     0xffa2a4a8 —▸ 0xffa2a4c4 —▸ 0x804bfb8  # 1. 修改它的值为 0xffa2a4c4 而 0xffa2a4c4 指向  0xffa2a4cc,  2. 通过0xffa2a4c4 来修改即可
+06:0018│     0xffa2a4a8 —▸ 0xffa2a4b8 —▸ 0xffa2a4c4 =>
+```
 ### printf
 
 [Link](https://blog.csdn.net/qinying001/article/details/98527949) 可以理解成 %n 是对变量赋值, 值为长度数

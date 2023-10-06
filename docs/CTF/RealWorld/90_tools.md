@@ -435,6 +435,7 @@ Ladon url.txt pythonpoc.ini
 [ICMP/TCP 隧道 | 内网代理和穿透工具的分析记录](https://mp.weixin.qq.com/s/jpmi7CfvcOmL4qkSBKLvKQ)
 [Linux 或 Windows 上实现端口映射](https://mp.weixin.qq.com/s/V9iw_Z0B-dTJikvnwLUEAQ)
 [DNS 隧道 | Cobalt Strike 的使用（二）](https://mp.weixin.qq.com/s/qLtfmiBVEb9pEfmcAb0RMw)
+[内网代理和穿透工具的分析记录 | Vemon](https://mp.weixin.qq.com/s/pV9nQ6uzLTT2cqO1ZaJz6w)
 
 多层代理攻击方式
 

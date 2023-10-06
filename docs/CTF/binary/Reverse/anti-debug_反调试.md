@@ -10,6 +10,7 @@
 * https://www.thestar0.cn/article/20f75995-1829-4fc6-9f33-13b64eb7e0be
 * [done-适合入门【和三叶草一起打基础】—程序的保护技术](https://www.bilibili.com/video/BV1wB4y1k7x9)
 * https://bbs.pediy.com/thread-225740.htm#msg_header_h1_3
+* [反调试与反虚拟机](https://mp.weixin.qq.com/s/Ywf0Tg3fZDNBLqOLD7BRjg)
 
 ## IsDebuggerPresent()
 当进程处于调试状态时, PEB.BeingDebugged成员值被设为1,

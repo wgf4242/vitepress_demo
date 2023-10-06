@@ -298,6 +298,18 @@ https://github.com/ioncodes/idacode
 
 https://github.com/JusticeRage/Gepetto
 
+
+## pwntools 和 ida 联合调试
+
+```bash
+sudo ./linuxserver64
+
+socat TCP-LISTEN:12345,fork,reuseaddr EXEC:./test,pty,rawer
+# pwntools
+remote('127.0.0.1', 12345)
+# ida attach to process
+```
+
 # Article
 
 [IDAPython 速查表](https://www.cnblogs.com/hed10ne/p/idapython_cheatsheet.html)

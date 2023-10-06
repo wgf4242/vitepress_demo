@@ -345,7 +345,6 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 ## 基础学习
 
-- [『杂项』SMC 加密技术（二）](https://mp.weixin.qq.com/s/fJW9qUxedFStTHm7r1AADg)
 - [ELF](https://stevens.netmeister.org/631/elf.html)
 
 ### Video

@@ -1,11 +1,13 @@
 # 解题思路
 
+0. checksec, seccomp-tools 检测, 缩减为 `c <file>` 
 0. 指针不置 0, uaf
 1. ROPgadget --ropchain --binary ./file
 2. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell _Ubuntu18 以上 bss 段不能覆盖 stdin, stdout, 可覆盖 stderr_
 3. gets 直接打 orw
 4. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
-5. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止
+5. pie : 目标地址接近，栈溢出覆盖最低位地址即可 pie_02_partial_overwrite.py
+6. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止
 
 # 环境配置
 
@@ -25,8 +27,38 @@ system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 
 Q1. 本地打通远程打不通
 
-1. U18 以上 栈对齐
+* 1. U18 以上 栈对齐
 1. _Ubuntu18 以上 bss 段不能覆盖 stdin, stdout, 可覆盖 stderr_
+[Link](https://blog.csdn.net/weixin_42016744/article/details/122422452)
+```bash
+得知glibc2.27以后引入xmm寄存器, 记录程序状态, 会执行movaps指令, 要求rsp是按16字节对齐的, 所以如果payload这样写
+payload = cyclic(0x20 + 8) + p64(pop_rdi_addr) + p64(binsh_addr) + p64(system_addr)
+弹出的数据是奇数个, 本地就会报错
+但是改成偶数个pop
+payload = cyclic(0x20 + 8) + p64(pop_rdi_addr) + p64(binsh_addr) + p64(ret_addr) + p64(system_addr)
+就能打通本地了
+原因: xmm寄存器的问题，当glibc版本大于2.27的时候，系统调用system("/bin/sh")之前有个xmm寄存器使用。要确保rsp是与16对齐的，也就是末尾必须是0.
+
+* 找奇数个pop指令就能对齐了, pop 加入
+0x0000000000001321 : pop rsi ; pop r15 ; ret
+# 对齐1, bin_sh后
+payload1 = flat('a' * (0x58), pop_rdi, bin_sh, pop_rsi_r15, 0, 0, system, 0)
+
+* 用rop函数更容易
+rop.call(system, [bin_sh, 0])  # 加个0用来栈对齐的
+```
+
+* Q2. `rop.call(puts_plt, [puts_got])`  无法输出地址, 可能是00截断了,
+
+A2. 使用其他地址比如 read_got, setvbuf_got, __libc_start_main
+或者你got地址加一, 把最后一个字节跳过  ( 未验证 )
+## 截断字符
+
+[Link](https://www.cnblogs.com/ZIKH26/articles/15845766.html)
+
+
+
+
 
 # Article
 
@@ -61,6 +93,18 @@ Q1. 本地打通远程打不通
 [Linux 内核 pwn 之基础 rop 提权](https://mp.weixin.qq.com/s/VNlTOgRaQF3KqxKMEJDuBw)
 [Glibc 高版本堆利用方法总结](https://mp.weixin.qq.com/s/NE0ujoNZUjlY_MALM1nObw)
 [『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
+
+```sh
+pwn.college 有一些
+https://sysprog21.github.io/lkmpg/
+https://blog.kylebot.net/2022/01/10/VULNCON-2021-IPS/
+https://blog.dbouman.nl/
+https://www.willsroot.io/
+https://github.com/sefcom/KHeaps
+https://bbs.kanxue.com/homepage-thread-876323-1.htm
+https://googleprojectzero.blogspot.com/2022/12/exploiting-CVE-2022-42703-bringing-back-the-stack-attack.html
+https://syst3mfailure.io/
+```
 
 ## Tutorial
 

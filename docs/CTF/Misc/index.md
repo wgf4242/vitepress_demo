@@ -128,12 +128,14 @@ arr[$(cat /flag)]
 | png      |        |        | steg-solve/cloacked-pixel    | 低位有 lsb 但提取 rgb0 没信息，可能为 cloacked-pixel                                                                                                                                                             |
 | png      | √      | √      | stegpy                       | stegpy <file> -p                                                                                                                                                                                                 |
 | png      |        | √      | zsteg                        | zsteg -a x.png                                                                                                                                                                                                   |
+| png      |        |        | Misc_png_width2.py           | 爆破宽度                                                                                                                                                                                                         |
 | png      |        |        |                              | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |
 | png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
 | png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
 | png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
 | png 多图 |        |        | 盲水印                       |
-| 多图     |        |        |                              | 不同的像素点可能是 flag                                                                                                                                                                                          |
+| 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是flag                                                                                                                                                                                          |
+| 图片     |        |        |                              | 看看每行的颜色和个数  `Misc_picture_other_count_num.py`                                                                                                                                                                                           |
 | jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
 |          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
 | jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
@@ -290,23 +292,30 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
   压缩工具要相同，如果产生CRC32不同。换工具试， 算法也要相同
   1.压缩方式要选 1存储 2zip , 下面工具使用 --help 查看帮助
-
-  bkcrack
-  -- bkcrack -C flag.zip -c hint.txt -P hint.zip -p hint.txt
-  -- bkcrack -C flag.zip -k a923d145 ecc0362d 296a6ff5 -U 123.zip 123  # 修改密码为 123, 保存到 123zip
-  -- bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt
-  -- bkcrack -C test5.zip -c 2.png -k b21e5df4 ab9a9430 8c336475  -d 2.png # 解密非破解文件, 用inflate.py 2次处理
-  -- python3 inflate.py < 2.png > 2_out.png
 ```
 
-| bkcrack-param |     |
-| ------------- | --- |
-| -p plainfile  |     |
-| -P plainzip   |     |
-|               |     |
+bkcrack, 明文只需要满足 8 字节连续，一共 12 字节已知即可
+
+| Cmds                                                                        | Desc                                                   |
+| --------------------------------------------------------------------------- | ------------------------------------------------------ |
+| `bkcrack -C flag.zip -c hint.txt -P hint.zip -p hint.txt`                   |
+| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -x 0 4B444D5601000000030000`         | -x `[offset] [16进制]`                                 |
+| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -p keys.txt`                         | 把`4B444D5601000000030000` 16 进制写入 keys.txt 也可以 |
+| `bkcrack -C flag.zip -k a923d145 ecc0362d 296a6ff5 -U 123.zip 123 `         | 修改密码为 123, 保存到 123zip                          |
+| `bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt` |                                                        |
+| `bkcrack -C test5.zip -c 2.png -k b21e5df4 ab9a9430 8c336475  -d 2.png`     | # 解密非破解文件, 用 inflate.py 2 次处理               |
+| `python3 inflate.py < 2.png > 2_out.png`                                    |                                                        |
+
+| bkcrack-param          |     |
+| ---------------------- | --- |
+| -p plainfile           |     |
+| -P plainzip            |     |
+| `-x [offset] [16进制]` |     |
+
+rbkcrack
 
 ````
-  rbkcrack只需要知道加密压缩包内容的连续12个字节， .exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
+  只需要知道加密压缩包内容的连续12个字节， .exe -C 1.zip -c hhh.jpg -P 2.zip -p hhh.jpg -d re.zip -a
   -- 文件开头有可能存在\r\n+10个连续空格，可以进行尝试
   -- rbkcrack.exe -C flag.zip -c hint.txt -p hint.txt -P hint.zip
   -- rbkcrack.exe -C ecryptedzip.zip -c LICENSE -p LICENCE.txt
