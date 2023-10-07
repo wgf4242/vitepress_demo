@@ -1,4 +1,4 @@
-# 修改so/缺少 so/缺少依赖/更新 glibc/指定运行程序所需要的.so 文件路径的四种方式
+# 修改 so/缺少 so/缺少依赖/更新 glibc/指定运行程序所需要的.so 文件路径的四种方式
 
 https://blog.csdn.net/huashuolin001/article/details/103028422
 
@@ -55,3 +55,36 @@ patchelf --set-interpreter /glibc-2.36/build/libc.so.6 --set-rpath /glibc-2.36/b
 | 2.27          | Ubuntu 18.04 |
 | 2.31          | Ubuntu 20.04 |
 | 2.35-0ubuntu3 |              |
+
+## GLIBC Download
+
+| Link                                                                                                                              | Size    | Date             |
+| --------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------------- |
+| [libc6_2.23-0ubuntu11.3_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.23-0ubuntu11.3_amd64.deb) | 2.5 MiB | 2021/5/14 02:58  |
+| [libc6_2.23-0ubuntu3_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.23-0ubuntu3_amd64.deb)       | 2.5 MiB | 2016/4/15 06:39  |
+| [libc6_2.23-0ubuntu3_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.23-0ubuntu3_i386.deb)         | 2.2 MiB | 2016/4/15 07:25  |
+| [libc6_2.27-3ubuntu1_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1_amd64.deb)       | 2.7 MiB | 2018/4/17 11:18  |
+| [libc6_2.27-3ubuntu1_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1_i386.deb)         | 2.4 MiB | 2018/4/17 11:18  |
+| [libc6_2.31-0ubuntu9_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.31-0ubuntu9_amd64.deb)       | 2.6 MiB | 2020/4/16 15:04  |
+| [libc6_2.31-0ubuntu9_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.31-0ubuntu9_i386.deb)         | 2.5 MiB | 2020/4/16 15:04  |
+| [libc6_2.23-0ubuntu11.3_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.23-0ubuntu11.3_i386.deb)   | 2.2 MiB | 2021/5/14 02:58  |
+| [libc6_2.27-3ubuntu1.5_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1.5_amd64.deb)   | 2.7 MiB | 2022/3/1 23:23   |
+| [libc6_2.27-3ubuntu1.5_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1.5_i386.deb)     | 2.4 MiB | 2022/3/1 23:23   |
+| [libc6_2.31-0ubuntu9.7_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.31-0ubuntu9.7_amd64.deb)   | 2.6 MiB | 2022/3/1 23:24   |
+| [libc6_2.31-0ubuntu9.7_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.31-0ubuntu9.7_i386.deb)     | 2.5 MiB | 2022/3/1 23:24   |
+| [libc6_2.35-0ubuntu3_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.35-0ubuntu3_i386.deb)         | 2.9 MiB | 2022/3/4 11:49   |
+| [libc6_2.35-0ubuntu3_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.35-0ubuntu3_amd64.deb)       | 3.1 MiB | 2022/3/4 12:28   |
+| [libc6_2.27-3ubuntu1.6_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1.6_amd64.deb)   | 2.7 MiB | 2022/5/12 00:14  |
+| [libc6_2.27-3ubuntu1.6_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1.6_i386.deb)     | 2.4 MiB | 2022/5/12 00:14  |
+| [libc6_2.37-0ubuntu2_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.37-0ubuntu2_i386.deb)         | 2.8 MiB | 2023/3/16 19:09  |
+| [libc6_2.37-0ubuntu2_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.37-0ubuntu2_amd64.deb)       | 3.0 MiB | 2023/3/16 20:09  |
+| [libc6_2.31-0ubuntu9.12_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.31-0ubuntu9.12_amd64.deb) | 2.6 MiB | 2023/7/29 04:19  |
+| [libc6_2.31-0ubuntu9.12_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.31-0ubuntu9.12_i386.deb)   | 2.5 MiB | 2023/7/29 04:19  |
+| [libc6_2.38-1ubuntu5_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.38-1ubuntu5_amd64.deb)       | 3.1 MiB | 2023/9/28 00:54  |
+| [libc6_2.38-1ubuntu5_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.38-1ubuntu5_i386.deb)         | 2.9 MiB | 2023/9/28 00:54  |
+| [libc6_2.35-0ubuntu3.4_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.35-0ubuntu3.4_amd64.deb)   | 3.1 MiB | 2023/10/4 02:18  |
+| [libc6_2.35-0ubuntu3.4_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.35-0ubuntu3.4_i386.deb)     | 2.9 MiB | 2023/10/4 02:18  |
+| [libc6_2.37-0ubuntu2.1_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.37-0ubuntu2.1_amd64.deb)   | 3.0 MiB | 2023/10/4 02:18  |
+| [libc6_2.37-0ubuntu2.1_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.37-0ubuntu2.1_i386.deb)     | 2.8 MiB | 2023/10/4 02:18  |
+| [libc6_2.38-1ubuntu6_amd64.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.38-1ubuntu6_amd64.deb)       | 3.1 MiB | 2023/10/4 03:58  |
+| [libc6_2.38-1ubuntu6_i386.deb](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.38-1ubuntu6_i386.deb)         | 4.0 MiB | 2023-10-04 03:58 |

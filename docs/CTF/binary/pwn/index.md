@@ -12,6 +12,7 @@
 # 环境配置
 
 [gdb 调试 | pwndbg+pwndbg 联合使用](https://blog.csdn.net/weixin_43092232/article/details/105648769)
+[glibc download](https://mirror.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/glibc/libc6_2.23-0ubuntu10_i386.deb)
 
 # 常用函数 API
 

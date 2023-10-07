@@ -191,6 +191,7 @@ result.txt | 搜验证码
 [API | 记录一次 JWT 的越权渗透测试](https://mp.weixin.qq.com/s/aPAGhNIRL5GhM1uLieIEiQ)
 [API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/IbsJ0n-sw1G0cWHz6PE6Jw)
 [API | 攻击与防御](https://mp.weixin.qq.com/s/xcdnd3QKeHzfCEXoBCTKLg)
+[API | 漏洞挖掘](https://mp.weixin.qq.com/s/Uu4_OBp1Ye6ZCSgWPQKbFA)
 
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
