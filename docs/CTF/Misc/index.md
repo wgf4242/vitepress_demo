@@ -52,9 +52,11 @@
 - 不明数字+字母
   - Caesar 后过滤 16 进制。
 - 不明 16 进制/字符串
-
   - 1.fromhex - to binary - reverse - from binary - reverse
   - 2.to binary, 去掉前面的 1，再 from binary, - iscc 隐秘的信息
+- 终端terminal类题目
+  - 1.向上翻阅 历史记录， 如果默认进入了其他程序, Ctrl+C, Ctrl+D退出回到shell
+  - 2.history相关查阅
 
 - 多文件
   - 涉及顺序, 不用 rglob(1 10 2 顺序有问题), 多用 range

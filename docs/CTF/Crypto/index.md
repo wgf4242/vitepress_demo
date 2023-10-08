@@ -69,6 +69,7 @@ $$
 - [密码学攻击之RSA：初见](https://mp.weixin.qq.com/s/TVZkY2MUG9NAlt_xKXeVuA)
 - [『CTF』密码学中的行列式计算](https://mp.weixin.qq.com/s/vPAu3XCoBM6AghhVYLb17A)
 - [密码学基础之线性代数 Ⅰ](https://mp.weixin.qq.com/s/zOp7JvpmQDToCUHEcmokyw)
+* [密码学基础之格理论基础](https://mp.weixin.qq.com/s/QVZQoNGyfDkQ0FLuvDYdHw)
 
 ---
 * [密码学从入门到大佬——Xenny密码学全系列课程导航](https://www.nssctf.cn/note/set/1698)**    

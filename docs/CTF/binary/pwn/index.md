@@ -7,7 +7,9 @@
 3. gets 直接打 orw
 4. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
 5. pie : 目标地址接近，栈溢出覆盖最低位地址即可 pie_02_partial_overwrite.py
-6. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止
+6. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止 见[截断字符](#截断字符)
+7. read(0, name, 0x20uLL); 一写要输到0x20看有没泄露 见[截断字符](#截断字符)
+
 
 # 环境配置
 
@@ -40,7 +42,8 @@ payload = cyclic(0x20 + 8) + p64(pop_rdi_addr) + p64(binsh_addr) + p64(ret_addr)
 就能打通本地了
 原因: xmm寄存器的问题，当glibc版本大于2.27的时候，系统调用system("/bin/sh")之前有个xmm寄存器使用。要确保rsp是与16对齐的，也就是末尾必须是0.
 
-* 找奇数个pop指令就能对齐了, pop 加入
+* 1.找ret加入
+* 2.找奇数个pop指令就能对齐了, pop 加入
 0x0000000000001321 : pop rsi ; pop r15 ; ret
 # 对齐1, bin_sh后
 payload1 = flat('a' * (0x58), pop_rdi, bin_sh, pop_rsi_r15, 0, 0, system, 0)
@@ -57,6 +60,15 @@ A2. 使用其他地址比如 read_got, setvbuf_got, __libc_start_main
 
 [Link](https://www.cnblogs.com/ZIKH26/articles/15845766.html)
 
+0xGame2023 字符串和随机数f
+```sh
+read(0, name, 0x20uLL);
+
+# 这里 name 0x20, 输入0x20长度后可以泄露下面的 seed
+.bss:404140 name db 20h dup(?)
+.bss:404160 ; unsigned int seed
+.bss:404160 seed dd ?   
+```
 
 
 

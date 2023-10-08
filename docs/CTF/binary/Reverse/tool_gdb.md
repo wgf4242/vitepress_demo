@@ -32,12 +32,14 @@ sudo make install
 |             | ctx                                     | 默认的 context 信息                                                     |
 |             | b \_\_libc_start_main                   | 条件断点 `break *0x56556228 if argc==1`                                 |
 |             | b \*main                                | 禁用启用断点 `dis(able) Num` 和 `enable Num`                            |
-|             | b 21                                  | 有源代码时断在 21 行 <br>需编译时: `gcc -g main.c`                      |
+|             | b 21                                    | 有源代码时断在 21 行 <br>需编译时: `gcc -g main.c`                      |
 |             | fmtargs 0x7fffe2d9                      | 查看 printf 计算参数位置                                                |
 |             | distance 0x90 0x86                      | 计算距离                                                                |
 |             | disass `Input` <br>disassemble 0x40123d | `disass(emble)` 查看 函数/地址 汇编                                     |
 |             | !disasm eb01                            | 将机器码 eb01 转汇编                                                    |
 |             | p $esp <br>p stdout                     | 输出 esp, p/x 32 -- 0x20 <br>输出 stdout 函数地址                       |
+|             | `p (char**)environ`                     | 输出 environ 指针                                                       |
+|             | `p (char**)&environ`                    | 输出 libc 中的 environ                                                  |
 |             | ptype stdout                            | 输出 stdout 结构体                                                      |
 |             | tel <addr>                              | 查看地址值                                                              |
 |             | libc                                    | 查看 libc 地址                                                          |
@@ -49,7 +51,7 @@ sudo make install
 |             | `source <file>`                         | 执行文件中的命令                                                        |
 |             | `!ls <arg>`                             | 执行命令 如 ls,                                                         |
 |             | until <br>until location                | 跳过循环体 <br> 运行到指定位置                                          |
-|| list | 显示源代码, 需要编译时 -g 
+|             | list                                    | 显示源代码, 需要编译时 -g                                               |
 | -- debug -- |                                         |
 |             | alsr off                                | 关闭 alsr                                                               |
 |             | `set *0x4007e48=0x7c6c`                 | 修改值                                                                  |

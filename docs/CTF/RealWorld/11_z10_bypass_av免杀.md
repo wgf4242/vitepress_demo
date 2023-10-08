@@ -25,6 +25,7 @@ cobalt strike
 - [写外挂时偶然想到的免杀思路](https://mp.weixin.qq.com/s/0c6D2aw9xk-NPKYuCkvoIg)
 - [Rust免杀 - Shellcode加载与混淆](https://mp.weixin.qq.com/s/5SP0FerVIsEk3P-eH3PmKw)
 - [常用工具免杀-助你护网](https://mp.weixin.qq.com/s/HBLpmCAoPRzvWq5akmLBTw)
+- [『杂项』利用 Windows 白名单免杀](https://mp.weixin.qq.com/s/oZLhkFDKOxFUqePqT6HoRA)
 7-项目七 渗透有防护的内网域_18 msf 正向木马免杀过360 全家桶【瑞客论坛 www.ruike1.com】.mp4
 26-红队攻击指南工具免杀篇01mimikatz免杀过360安全卫士和360安全杀毒【瑞客论坛 www.ruike1.com】.mp4
 26-红队攻击指南工具免杀篇02PrintSpoofer免杀过360杀毒360安全卫士【瑞客论坛 www.ruike1.com】.mp4
