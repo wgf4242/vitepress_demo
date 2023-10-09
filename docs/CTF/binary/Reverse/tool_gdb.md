@@ -40,6 +40,7 @@ sudo make install
 |             | p $esp <br>p stdout                     | 输出 esp, p/x 32 -- 0x20 <br>输出 stdout 函数地址                       |
 |             | `p (char**)environ`                     | 输出 environ 指针                                                       |
 |             | `p (char**)&environ`                    | 输出 libc 中的 environ                                                  |
+|             | `p/x &__bss_start`                      | bss 段起始位置, ida 中能看到起始有这个标签                              |
 |             | ptype stdout                            | 输出 stdout 结构体                                                      |
 |             | tel <addr>                              | 查看地址值                                                              |
 |             | libc                                    | 查看 libc 地址                                                          |
@@ -52,6 +53,7 @@ sudo make install
 |             | `!ls <arg>`                             | 执行命令 如 ls,                                                         |
 |             | until <br>until location                | 跳过循环体 <br> 运行到指定位置                                          |
 |             | list                                    | 显示源代码, 需要编译时 -g                                               |
+|             | info proc mappings                      | 显示 进程内存段                                                         |
 | -- debug -- |                                         |
 |             | alsr off                                | 关闭 alsr                                                               |
 |             | `set *0x4007e48=0x7c6c`                 | 修改值                                                                  |

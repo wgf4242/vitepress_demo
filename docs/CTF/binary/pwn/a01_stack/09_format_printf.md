@@ -2,6 +2,7 @@
 [CTF 竞赛：从格式化输出函数到完全控制](https://mp.weixin.qq.com/s/1eXd6cBxNVwqjgu-A-KbCw)
 
 - gets() 无限写溢出.\n 时停止
+- 可以一次泄露多个目标值 `aaaaaaa,%11$p,%17$p`
 
 ### fmt/format/printf/格式化字符串
 
