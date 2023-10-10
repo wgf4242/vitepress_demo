@@ -41,6 +41,7 @@
 
 [yii && gii ctf 篇 | 第五空间 codereview](https://mp.weixin.qq.com/s/Ivq3E3ubj-A1sWGp1zpbTA)
 [Log4j2 漏洞实战案例](https://mp.weixin.qq.com/s/1I_cNwHso1LqXkRk0LARlg)
+[Log4j2的JNDI注入漏洞（CVE-2021-44228）原理分析与思考](https://mp.weixin.qq.com/s/HBrHTxsk3VD603geZfKZFQ)
 [2022 年最常被利用的十大漏洞](https://mp.weixin.qq.com/s/hdlHQNIgTF7PS7lHY8slCw)
 
 [WebSocket 安全漏洞-攻击示例](https://mp.weixin.qq.com/s/-VazGZD9GLTqVPBiHFnccw)

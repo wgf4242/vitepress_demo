@@ -54,6 +54,7 @@ sudo make install
 |             | until <br>until location                | 跳过循环体 <br> 运行到指定位置                                          |
 |             | list                                    | 显示源代码, 需要编译时 -g                                               |
 |             | info proc mappings                      | 显示 进程内存段                                                         |
+|             | shell clear                             | 清空屏幕 cls                                                            |
 | -- debug -- |                                         |
 |             | alsr off                                | 关闭 alsr                                                               |
 |             | `set *0x4007e48=0x7c6c`                 | 修改值                                                                  |
