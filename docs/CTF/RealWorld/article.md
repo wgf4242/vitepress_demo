@@ -262,6 +262,12 @@ _ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8
 - [Mimikatz 源码免杀](https://mp.weixin.qq.com/s/3dEmmGNkNLPhJnEudm69Nw)
 _ [使用进程镂空技术免杀360Defender](https://mp.weixin.qq.com/s/pyALO84x82aPb10AqV1eKA)
 - [Sign-Sacker (签名掠夺者) - 2.0](https://mp.weixin.qq.com/s/cC5ylFBXEPHylKW9NIZVqw)
+- #安全: c_cpp_tutorial\Article.md
+
+
+- Android
+[Android免杀小结](https://mp.weixin.qq.com/s/kTn5OoqWDqtL-qW4Ph5QUg)
+
 
 **Video**
 

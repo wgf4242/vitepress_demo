@@ -3,7 +3,7 @@
 
 - gets() 无限写溢出.\n 时停止
 - 可以一次泄露多个目标值 `aaaaaaa,%11$p,%17$p`
-- 覆盖00来泄露地址, 比如 `read(0, buf, 8uLL)` 就输出8个泄露libc地址。
+- printf的%s只有遇到'\x00'才会停止输出, 通过覆盖泄露地址, 比如 `read(0, buf, 8uLL)` 就输出8个泄露libc地址。
 
 ### fmt/format/printf/格式化字符串
 

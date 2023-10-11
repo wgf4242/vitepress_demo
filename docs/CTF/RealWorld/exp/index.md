@@ -283,6 +283,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
 [D-Link DCS 密码泄露漏洞](https://mp.weixin.qq.com/s/rbSBjKvX_STXUjxY8TKOOA)
 [D-Link DSL-3782 <= v1.03](https://mp.weixin.qq.com/s/fUg9aF43QOHrzPqh2rsPnA)
+[D-Link DAR-8000操作系统命令注入漏洞(CVE-2023-4542)](https://mp.weixin.qq.com/s/FsuY_RenIGXCZk6HYf7htw)
 
 
 ## Electron

