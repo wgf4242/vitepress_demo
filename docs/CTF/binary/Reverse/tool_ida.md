@@ -316,6 +316,7 @@ remote('127.0.0.1', 12345)
 [IDAPython/Tracing calls tutorial](https://magiclantern.fandom.com/wiki/IDAPython/Tracing_calls_tutorial)
 
 [IDAPython 系列 —— 画出两个函数的交叉引用图](https://mp.weixin.qq.com/s/p_YHwFuXmPWXGDhpLa9Cyg)
+[IDA Python 去混淆](https://mp.weixin.qq.com/s/a7RLme8bTWiB6MfNT-5AKg)
 
 ## plugin
 

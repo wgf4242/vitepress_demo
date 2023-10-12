@@ -54,9 +54,10 @@
 - 不明 16 进制/字符串
   - 1.fromhex - to binary - reverse - from binary - reverse
   - 2.to binary, 去掉前面的 1，再 from binary, - iscc 隐秘的信息
-- 终端terminal类题目
-  - 1.向上翻阅 历史记录， 如果默认进入了其他程序, Ctrl+C, Ctrl+D退出回到shell
-  - 2.history相关查阅
+- 终端 terminal 类题目
+
+  - 1.向上翻阅 历史记录， 如果默认进入了其他程序, Ctrl+C, Ctrl+D 退出回到 shell
+  - 2.history 相关查阅
 
 - 多文件
   - 涉及顺序, 不用 rglob(1 10 2 顺序有问题), 多用 range
@@ -136,8 +137,8 @@ arr[$(cat /flag)]
 | png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
 | png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
 | png 多图 |        |        | 盲水印                       |
-| 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是flag                                                                                                                                                                                          |
-| 图片     |        |        |                              | 看看每行的颜色和个数  `Misc_picture_other_count_num.py`                                                                                                                                                                                           |
+| 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
+| 图片     |        |        |                              | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
 | jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
 |          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
 | jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
@@ -244,6 +245,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 - CRC32 校验 ### zip CRC32 检验
 
 - 伪解密, 文件报错, 是加密位去掉了, 用 101 手动恢复多处, 见下面
+- 压缩包套压缩包有密码, 已知文件名 - 明文攻击
 
 ### 压缩包/rar/gzip
 
@@ -298,15 +300,17 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 bkcrack, 明文只需要满足 8 字节连续，一共 12 字节已知即可
 
-| Cmds                                                                        | Desc                                                   |
-| --------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Cmds                                                                        | Desc                                                                                                                                              |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `bkcrack -C flag.zip -c hint.txt -P hint.zip -p hint.txt`                   |
-| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -x 0 4B444D5601000000030000`         | -x `[offset] [16进制]`                                 |
-| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -p keys.txt`                         | 把`4B444D5601000000030000` 16 进制写入 keys.txt 也可以 |
-| `bkcrack -C flag.zip -k a923d145 ecc0362d 296a6ff5 -U 123.zip 123 `         | 修改密码为 123, 保存到 123zip                          |
-| `bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt` |                                                        |
-| `bkcrack -C test5.zip -c 2.png -k b21e5df4 ab9a9430 8c336475  -d 2.png`     | # 解密非破解文件, 用 inflate.py 2 次处理               |
-| `python3 inflate.py < 2.png > 2_out.png`                                    |                                                        |
+| `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 150 504B050600000000`      | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt , 为啥是 150: zip 大小-22, 打开 a 查看 b 大小为 172 则 172-22=150, `f18d1f04aa82_4266.zip` |
+| `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 30 666C61672E747874`       | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt                                                                                            |
+| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -x 0 4B444D5601000000030000`         | -x `[offset] [16进制]`                                                                                                                            |
+| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -p keys.txt`                         | 把`4B444D5601000000030000` 16 进制写入 keys.txt 也可以                                                                                            |
+| `bkcrack -C flag.zip -k a923d145 ecc0362d 296a6ff5 -U 123.zip 123 `         | 修改密码为 123, 保存到 123zip                                                                                                                     |
+| `bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt` |                                                                                                                                                   |
+| `bkcrack -C test5.zip -c 2.png -k b21e5df4 ab9a9430 8c336475  -d 2.png`     | # 解密非破解文件, 用 inflate.py 2 次处理                                                                                                          |
+| `python3 inflate.py < 2.png > 2_out.png`                                    |                                                                                                                                                   |
 
 | bkcrack-param          |     |
 | ---------------------- | --- |

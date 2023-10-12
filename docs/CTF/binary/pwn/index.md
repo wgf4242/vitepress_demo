@@ -9,6 +9,9 @@
 5. pie : 目标地址接近，栈溢出覆盖最低位地址即可 pie_02_partial_overwrite.py
 6. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止 见[截断字符](#截断字符)
 7. read(0, name, 0x20uLL); 一写要输到0x20看有没泄露 见[截断字符](#截断字符)
+10. shellcode: 限制字符串 [Video](https://www.bilibili.com/video/BV1Z14y1B7ji/) ,NewstarCTF2023 shellcode revenge
+  1. ret2 sys_read, 在read中不会限制。然后在read中输入shellcode
+
 
 
 # 环境配置
