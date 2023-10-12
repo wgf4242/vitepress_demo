@@ -302,6 +302,7 @@ https://github.com/APKLab/APKLab
 
 - [Android 系统内核漏洞利用技术入门](https://mp.weixin.qq.com/s/a8A0g7-S0FiMuRa3YOg89Q)
 - [Android 逆向 设备指纹 Settings 类对抗终极方案](https://www.bilibili.com/video/BV1hP411s7Js/)
+- [Qual+Android方案Unlock学习 以Oneplus7Pro为例](https://mp.weixin.qq.com/s/XFAYXV90y52bYTHYWSFJcA)
 
 ### bypass
 

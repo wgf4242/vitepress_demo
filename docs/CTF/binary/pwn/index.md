@@ -106,6 +106,7 @@ read(0, name, 0x20uLL);
 [Linux 内核 pwn 之基础 rop 提权](https://mp.weixin.qq.com/s/VNlTOgRaQF3KqxKMEJDuBw)
 [Glibc 高版本堆利用方法总结](https://mp.weixin.qq.com/s/NE0ujoNZUjlY_MALM1nObw)
 [『CTF』异构 Pwn 之 Mips32](https://mp.weixin.qq.com/s/vmreCm_a4rL6HhsxwWpmMA)
+[Kernel Heap - Cross Cache Overflow](https://mp.weixin.qq.com/s/N9LVwbRxTKo4oVdQ0bF-rQ)
 
 ```sh
 pwn.college 有一些
