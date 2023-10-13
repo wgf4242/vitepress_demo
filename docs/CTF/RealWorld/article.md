@@ -119,6 +119,8 @@ result.txt | 搜验证码
 - [【红队攻防】C++ VEH 实现 shellcode 加载器](https://www.bilibili.com/video/BV1jk4y1K7d4/)
 - [AV-Bypass-Learning 免杀学习笔记 shellcode 免杀的常用手法](https://github.com/colind0pe/AV-Bypass-Learning)
 - [红队免杀系列之其一](https://mp.weixin.qq.com/s/vy77tmRkbztR_XHXU9NDvQ)
+- [将shellcode注入Linux中正在运行的进程（C/C++代码实现）](https://mp.weixin.qq.com/s/WrN2ErTGFfFTY3Q6qrbqvg)
+
 
 ## 提权
 
