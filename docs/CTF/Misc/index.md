@@ -34,6 +34,7 @@
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
   - base64 换表
+  - 像base64但=号位置不对 `bYeNQXYZXbXZQfW31FGzzD0m0FHQ9RR85FFQYMB9M=lmo2ku11z0uiz=`  Caesar Box Cipher 14后 base64解
   - 符合 16 进制 data, base64.encode(data)
   - 提示逆向，可能是指加密
   - 有空格和 tab 可能是摩斯码或二进制
@@ -81,6 +82,7 @@
   - 1-8 数字
   - 1-8 大写
   - 1-8 小写
+  - seclist压缩包里找找
 - DTMF http://dialabc.com/sound/detect/index.html
 
 波形图 高为 1 低为 0 转二进制
@@ -136,7 +138,8 @@ arr[$(cat /flag)]
 | png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
 | png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
 | png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
-| png 多图 |        |        | 盲水印                       |
+| png 单图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试
+| png 多图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试
 | 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
 | 图片     |        |        |                              | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
 | jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |

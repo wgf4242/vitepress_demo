@@ -5,6 +5,23 @@ windows 用 6.2.3
 https://www.cnblogs.com/chk141/p/12220288.html
 
 不支持 rar4 文件。
+### john hash处理
+```sh
+1help.zip/1help:$zip2$*0*3*0*07aa3a0e1c77224a9311*$/zip2$:1help:1help.zip:1help.zip
+# 删除两侧$外的文件名及内容
+zip2$*0*3*0*07aa3a0e1c77224a9311*$/zip2$
+```
+
+### 常用参数
+```sh
+hashcat -m 13600 test.hash -O wordlist.txt
+hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
+hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 5 --increment-max 8 root?d?d?d?d?d?d?d?d
+hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 5 --increment-max 9 admin?d?d?d?d?d?d?d?d
+hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 3 --increment-max 8 KEY?u?u?u?u?u?u?u?u
+hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 1 --increment-max 6 ?l?l?l?l?l?l?l?l
+hashcat -m 13600 test.hash -O -a 3 -1 ?l?u?d?s  --increment --increment-min 1 --increment-max 4 ?1?1?1?1?1?1
+```
 
 ### 参数
 
@@ -132,6 +149,8 @@ hashcat -m 17210 -O -a 3 test.hash --increment --increment-min 1 --increment-max
 hashcat -m 17210 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 --custom-charset1=?l?d ?1?1?1?1?1?1?1?1
 hashcat -m 17210 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
 hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
+hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d ?1?1?1?1?1?1?1?1
+hashcat -m 17210 -O -a 3 test.hash -1 ?l?u?d ?1?1?1?1?1?1?1?1  # 简写
 hashcat -m 17210 -O -a 3 test.hash --custom-charset1=?l?u?d  --increment --increment-min 1 --increment-max 8  ?1?1?1?1?1?1?1?1
 hashcat -m 17200 -O -a 3 test.hash --custom-charset1=?l?u?d  --increment --increment-min 1 --increment-max 8  ?1?1?1?1?1?1?1?1
 
@@ -142,6 +161,17 @@ hashcat --restore
 # with session name
 hashcat -m 17220 -O -a 3 test.hash --session session_name --increment --increment-min 1 --increment-max 8 --custom-charset1=?u?d ?1?1?1?1?1?1?1?1
 hashcat --session session_name --restore
+```
+### zip 攻击/AES-256
+
+```sh
+zip2john.exe run.zip > hash.txt
+# john 也可以爆破 慢一点
+# john hash.txt -w=F:\downloads\@CTF\hashcat-6.2.3\rockyou.txt --format=zip
+
+cut -d ':' -f 2 hash.txt > test.hash
+hashcat -m 13600 test.hash -O rockyou.txt
+hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
 ```
 
 ### rar5 攻击
@@ -253,4 +283,7 @@ hashcat -m 13100 output.txt rockyou.txt --force
 unshadow passwd.txt shadow.txt > passwords.txt
 john --wordlist=/usr/share/wordlists/sqlmap.txt passwords.txt
 john shadow --format=NT # filename: shadow
+
+
+john -1='02' -mask=091?1?d?d?d?d?d?d --stdout | head # ?1 表示使用占位符1 即 02
 ```

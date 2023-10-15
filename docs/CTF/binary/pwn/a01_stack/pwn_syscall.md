@@ -3,11 +3,11 @@
 
 ```sh
 int 0x80; 32bit
-syscall ; 64bit
+syscall ; 64bit \x0f\x05
 ```
 
 ```bash
-# 64位
+# 64位 
 # sigreturn 代表可以触发sigreturn调用的地址
 # 其gadgets如下，只要使rax = 0xf，然后进行系统调用
 """

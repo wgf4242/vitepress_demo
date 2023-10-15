@@ -57,6 +57,10 @@ patchelf --set-interpreter /glibc-2.36/build/libc.so.6 --set-rpath /glibc-2.36/b
 | 2.35-0ubuntu3 |              |
 
 ## GLIBC Download
+直接改后面目录就能进到源码下载, 好像版本都有的
+[手动编译](https://launchpad.net/ubuntu/+source/glibc/2.31-0ubuntu9.9)
+
+已编译
 
 | Link                                                                                                                              | Size    | Date             |
 | --------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------------- |

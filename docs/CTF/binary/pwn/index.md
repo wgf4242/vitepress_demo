@@ -1,18 +1,16 @@
 # 解题思路
 
-0. checksec, seccomp-tools 检测, 缩减为 `c <file>` 
-0. 指针不置 0, uaf
-1. ROPgadget --ropchain --binary ./file
-2. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell _Ubuntu18 以上 bss 段不能覆盖 stdin, stdout, 可覆盖 stderr_
-3. gets 直接打 orw
-4. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
-5. pie : 目标地址接近，栈溢出覆盖最低位地址即可 pie_02_partial_overwrite.py
-6. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止 见[截断字符](#截断字符)
-7. read(0, name, 0x20uLL); 一写要输到0x20看有没泄露 见[截断字符](#截断字符)
-10. shellcode: 限制字符串 [Video](https://www.bilibili.com/video/BV1Z14y1B7ji/) ,NewstarCTF2023 shellcode revenge
-  1. ret2 sys_read, 在read中不会限制。然后在read中输入shellcode
-
-
+0. checksec, seccomp-tools 检测, 缩减为 `c <file>`
+1. 指针不置 0, uaf
+2. ROPgadget --ropchain --binary ./file
+3. ret2bss : 1.gets 栈溢出, 2.有 plt.system 3.有 bss 可以直接 ret2bss 手动写入 getshell _Ubuntu18 以上 bss 段不能覆盖 stdin, stdout, 可覆盖 stderr_
+4. gets 直接打 orw
+5. ret2syscall: 存在 int 0x80, 可控栈溢出, pop eax, ebx,ecx,edx
+6. pie : 目标地址接近，栈溢出覆盖最低位地址即可 pie_02_partial_overwrite.py
+7. strncmp/strlen , 首字符输入为 \x00 可以绕过, 因为 strlen 遇到 \x00 会停止 见[截断字符](#截断字符)
+8. read(0, name, 0x20uLL); 一写要输到 0x20 看有没泄露 见[截断字符](#截断字符)
+9. shellcode: 限制字符串 [Video](https://www.bilibili.com/video/BV1Z14y1B7ji/) ,NewstarCTF2023 shellcode revenge
+   1. ret2 sys_read, 在 read 中不会限制。然后在 read 中输入 shellcode
 
 # 环境配置
 
@@ -33,9 +31,11 @@ system("$0")  == system('bin/sh') # 修改输入输出流: exec 1>&2
 
 Q1. 本地打通远程打不通
 
-* 1. U18 以上 栈对齐
+- 1. U18 以上 栈对齐
+
 1. _Ubuntu18 以上 bss 段不能覆盖 stdin, stdout, 可覆盖 stderr_
-[Link](https://blog.csdn.net/weixin_42016744/article/details/122422452)
+   [Link](https://blog.csdn.net/weixin_42016744/article/details/122422452)
+
 ```bash
 得知glibc2.27以后引入xmm寄存器, 记录程序状态, 会执行movaps指令, 要求rsp是按16字节对齐的, 所以如果payload这样写
 payload = cyclic(0x20 + 8) + p64(pop_rdi_addr) + p64(binsh_addr) + p64(system_addr)
@@ -55,26 +55,25 @@ payload1 = flat('a' * (0x58), pop_rdi, bin_sh, pop_rsi_r15, 0, 0, system, 0)
 rop.call(system, [bin_sh, 0])  # 加个0用来栈对齐的
 ```
 
-* Q2. `rop.call(puts_plt, [puts_got])`  无法输出地址, 可能是00截断了,
+- Q2. `rop.call(puts_plt, [puts_got])` 无法输出地址, 可能是 00 截断了,
 
-A2. 使用其他地址比如 read_got, setvbuf_got, __libc_start_main
-或者你got地址加一, 把最后一个字节跳过  ( 未验证 )
+A2. 使用其他地址比如 read_got, setvbuf_got, \_\_libc_start_main
+或者你 got 地址加一, 把最后一个字节跳过 ( 未验证 )
+
 ## 截断字符
 
 [Link](https://www.cnblogs.com/ZIKH26/articles/15845766.html)
 
-0xGame2023 字符串和随机数f
+0xGame2023 字符串和随机数 f
+
 ```sh
 read(0, name, 0x20uLL);
 
 # 这里 name 0x20, 输入0x20长度后可以泄露下面的 seed
 .bss:404140 name db 20h dup(?)
 .bss:404160 ; unsigned int seed
-.bss:404160 seed dd ?   
+.bss:404160 seed dd ?
 ```
-
-
-
 
 # Article
 

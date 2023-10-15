@@ -6,6 +6,7 @@
 - 你文件没了快打钱.zip -- smc 题目 ， 1.多次运行后 sp 错误。 2.怎样解码后 patch 出来。并且能运行。
 - my_asm 怎样重写为asm并编译运行
 - fmtarg ($ecx) 怎么写用 ecx
+- Misc  run.zip 有密码的什么东西
 
 ### cobalt strike
 
