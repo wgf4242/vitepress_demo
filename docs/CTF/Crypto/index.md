@@ -7,6 +7,8 @@ head:
 
 # RSA
 
+1. 部分public base64时直接搜第一行, google, bing, baidu. 
+
 ## 分析
 
 pq相邻 - yafu

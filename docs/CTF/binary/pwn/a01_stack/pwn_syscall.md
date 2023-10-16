@@ -32,4 +32,13 @@ syscall: 0x0f 0x05  # print(disasm(asm('syscall')))
 601050 -> 4007BB: mov rax,3B;syscall  # call 0x601050,而不是 4007BB
 ```
 
+## sys_read
+```sh
+rax = 0
+rdi = 0
+rsi = 0x1000
+rdx = 0x100
+syscall # 0f05
+```
+
 ## 示例见 hook_lief_patch1
