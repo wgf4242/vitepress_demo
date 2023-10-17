@@ -5,6 +5,7 @@ head:
       href: https://cdn.staticfile.org/KaTeX/0.5.1/katex.min.css
 ---
 
+* 搜关键字， 看有没有 npqe, 有无原题
 # RSA
 
 1. 部分public base64时直接搜第一行, google, bing, baidu. 
@@ -72,7 +73,7 @@ $$
 - [『CTF』密码学中的行列式计算](https://mp.weixin.qq.com/s/vPAu3XCoBM6AghhVYLb17A)
 - [密码学基础之线性代数 Ⅰ](https://mp.weixin.qq.com/s/zOp7JvpmQDToCUHEcmokyw)
 * [密码学基础之格理论基础](https://mp.weixin.qq.com/s/QVZQoNGyfDkQ0FLuvDYdHw)
-
+* [密码学基础之格中难题与格基规约](https://mp.weixin.qq.com/s/nzFRgOUkffeUaF9PqtEnQA)
 ---
 * [密码学从入门到大佬——Xenny密码学全系列课程导航](https://www.nssctf.cn/note/set/1698)**    
 * [wiener攻击](https://www.nssctf.cn/note/set/8)    

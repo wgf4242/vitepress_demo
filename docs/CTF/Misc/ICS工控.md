@@ -5,6 +5,7 @@
 * wincc
 
 解题思路
+* strings如果有假flag也搜一下，可能有原题
 * 科来网络分析系统 查一下包
 * common
   * 1.筛选协议 
@@ -91,6 +92,7 @@ INV_B取反字节 60=>-60
 [工业控制靶场-虚拟化体验分享（一）](https://mp.weixin.qq.com/s/Q26EpfVOsPKXzVFVoIPbqQ)
 [赛宁工控靶场场景实操：PROFIBUS-DP通讯应用](https://mp.weixin.qq.com/s/RipAkH0-rHOljNpRkoDIsw)
 [赛宁工控靶场场景实操：工控协议模糊测试 Modbus-TCP](https://mp.weixin.qq.com/s/rmkuNLk4HLS9sm9YHCVlBQ)
+[工控CTF | 44期](https://mp.weixin.qq.com/s/h_ptEqT4NJYszJOoX8dqVA)
 ## 使用
 - [S7-1200模拟量处理](https://mp.weixin.qq.com/s/9Y_SVgVdAQG6ffCCTIy4cQ)
 

@@ -25,6 +25,15 @@ qemu-arm -L ./tbox_app.bin
 [一个简单的 STM32 固件分析](https://mp.weixin.qq.com/s/2XeF67Rz8Tz5jPVevSHhpg)
 afx hex bin 文件 stm32 练习
 
+ida 载入时
+```
+Processor Option
+ARMv7-M , 确定
+ROM start address: 0x8000000
+ROM Size: 0x484
+Loading start address: 0x8000000
+```
+
 ## ardruino hex
 
 https://stackoverflow.com/questions/17919704/arduino-disassemble-sketch-from-flash
