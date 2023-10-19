@@ -353,10 +353,6 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 - [0x02 Delphi 逆向游乐园第二关](https://www.bilibili.com/video/BV1dk4y1j7ei)
 - [0x03 Delphi 逆向游乐园第三关](https://www.bilibili.com/video/BV1224y1K7ip/)
 
-### 协议分析
-
-- [USB基础知识介绍](https://mp.weixin.qq.com/s/i9tJ1gMOyGiw-wwQQ-g_-w)
-
 ## 高级学习/调试/反调试
 
 [无限硬件中断的代码实现](https://mp.weixin.qq.com/s/8mrJFA8Xvf_qfzX2dwpIEQ)

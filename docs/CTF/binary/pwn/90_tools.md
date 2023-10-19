@@ -49,14 +49,15 @@ patchelf --set-interpreter /glibc-2.36/build/libc.so.6 --set-rpath /glibc-2.36/b
 
 或切换系统, 使用系统 so
 
-| ver           | os           |
-| ------------- | ------------ |
-| 2.23          | Ubuntu 16.04 |
-| 2.27          | Ubuntu 18.04 |
-| 2.31          | Ubuntu 20.04 |
-| 2.35-0ubuntu3 |              |
+| ver             | os           |
+| --------------- | ------------ |
+| 2.23            | Ubuntu 16.04 |
+| 2.27            | Ubuntu 18.04 |
+| 2.31            | Ubuntu 20.04 |
+| 2.35-0ubuntu3.1 | Ubuntu 22.04 |
 
 ## GLIBC Download
+
 直接改后面目录就能进到源码下载, 好像版本都有的
 [手动编译](https://launchpad.net/ubuntu/+source/glibc/2.31-0ubuntu9.9)
 

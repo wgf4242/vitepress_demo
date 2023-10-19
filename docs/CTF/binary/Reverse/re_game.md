@@ -13,6 +13,7 @@ https://gamehacking.academy/about
 
 
 ## PC
+* [腾讯游戏安全实验室 技术入门](https://gslab.qq.com/js/)
 * [分析怪物和玩家标志位并封装自动打怪(1)](https://www.bilibili.com/video/BV1jG4y1D7DT/)
 * [分析小控件遍历的数据结构](https://www.bilibili.com/video/BV13W4y1G7ZN/)
 * [演示python大漠多线程框架](https://www.bilibili.com/video/BV1CM411F76t/)

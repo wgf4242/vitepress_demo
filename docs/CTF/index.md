@@ -7,6 +7,7 @@
 - my_asm 怎样重写为asm并编译运行
 - fmtarg ($ecx) 怎么写用 ecx
 - Misc  run.zip 有密码的什么东西
+- re: 鹏城锦标赛\工控-驱动\drive.zip
 
 ### cobalt strike
 
@@ -50,7 +51,7 @@ cat test
 
 829089482 赛事群
 
-## Protocol/IoT
+## 协议分析/Protocol/IoT
 
 - [MQTT 安全分析](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492664&idx=1&sn=e18c8c1e7209f6bacddb85397eab85c9)
 - [协议分析 | Bluetooth 蓝牙协议栈技术初探](https://mp.weixin.qq.com/s/1pG6jnvt3aqPrz5Vl6FIqg)
@@ -60,6 +61,8 @@ cat test
 - [协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
 - [TLS 1.2 协议解析流程学习（一）](https://mp.weixin.qq.com/s/DS3ZMVSlHvIV0wIDrrmHpg)
 - [HLS 无损下载 B 站直播 | HLS 协议从入门到实践](https://www.bilibili.com/video/BV1yL411k7DK/)
+- [USB | USB基础知识介绍](https://mp.weixin.qq.com/s/i9tJ1gMOyGiw-wwQQ-g_-w)
+- [USB | 用协议分析仪直观理解USB传输的核心概念](https://mp.weixin.qq.com/s/FXM1Kf0KCaVPEJapLysj3Q)
 
 ---
 
