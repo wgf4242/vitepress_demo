@@ -18,7 +18,9 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - 连续的内存可设置 struct
 - import 可看到 GetMessageBoxA, 在 import 处双击跳转
 - 读取卡死 载入选择 Binary
+
 ### 界面
+
 蓝色变量 - 全局变量
 
 ### 符号修复
@@ -32,6 +34,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 
 | 快捷键         | 描述                               |
 | -------------- | ---------------------------------- |
+| Ctrl+E         | entrypoit                          |
 | v              | convert function to void           |
 | Ctrl+N         | Set ip, 设置下一步走到哪个位置。   |
 | Alt+D          | 修改变量类型                       |
@@ -123,7 +126,8 @@ Ctrl-Shift-D, 点击 start, 再 F5
 16 进制 keypatch 要用 0x33, 不能 33h
 ida 自带 assemble 要用 33h, 不能 0x33
 
-printf 改 puts, 注意printf没有换行符, puts会有换行符. 产生多余的换行可能 check失败.
+printf 改 puts, 注意 printf 没有换行符, puts 会有换行符. 产生多余的换行可能 check 失败.
+
 ```sh
 # printf改 puts 使用 plt段的 puts地址, 而不是 _puts
 # .plt.sec:0010C0                               ; int puts
@@ -132,11 +136,12 @@ printf 改 puts, 注意printf没有换行符, puts会有换行符. 产生多余�
 Assembly: call 0x10c0
 ```
 
- 如何手动计算偏移值
+如何手动计算偏移值
+
 ```py
 # .plt.sec:0010C0                               ; int puts
-.text:0000000000001462 E8 59 FC FF FF                call    _puts          
-.text:0000000000001467 48 8D 3D EA 0C 00 00          lea     rdi, byte_2158 
+.text:0000000000001462 E8 59 FC FF FF                call    _puts
+.text:0000000000001467 48 8D 3D EA 0C 00 00          lea     rdi, byte_2158
 .text:000000000000146E E8 4D FC FF FF                call    _puts
 .text:0000000000001473 83 45 FC 01                   add     [rbp+var_4], 1
 
@@ -169,8 +174,9 @@ gcc -static main.c
 
 [Link](https://blog.csdn.net/CSNN2019/article/details/117219906)
 
-### 变量按a后，还是不能显示中文，自动恢复少了2个bytes.变成旧的字符了。
-按n重命名变量。
+### 变量按 a 后，还是不能显示中文，自动恢复少了 2 个 bytes.变成旧的字符了。
+
+按 n 重命名变量。
 
 ### 1. graph is too big , more than 1000 nodes
 
@@ -268,20 +274,22 @@ var_4C6= byte ptr -4C6h
 var_4B8= byte ptr -4B8h
 arg_1E7FBF= byte ptr  1E7FC7h ; 5.双击这里 进栈按u， 再按F5即可
 ```
-### main2   endp ； sp-analysis failed  修复sp
-* 可能是1个函数被拆分错了，把下面的function u掉。main u掉。在main 处按p即可。见 lld的附件.zip
+
+### main2 endp ； sp-analysis failed 修复 sp
+
+- 可能是 1 个函数被拆分错了，把下面的 function u 掉。main u 掉。在 main 处按 p 即可。见 lld 的附件.zip
 
 一. --
- 一个明显错误的地方就是0X00403C22到0X00403C27处，在调用了firstClass_Init函数(有一个参数)后，栈顶指针还是02C，没有变成028，解决办法：
+一个明显错误的地方就是 0X00403C22 到 0X00403C27 处，在调用了 firstClass_Init 函数(有一个参数)后，栈顶指针还是 02C，没有变成 028，解决办法：
 
-1、在0X00403C22处点击02C栈顶，右键点击Change stack pointer…（快捷键Alt+K），修改成0X4，如下图：
+1、在 0X00403C22 处点击 02C 栈顶，右键点击 Change stack pointer…（快捷键 Alt+K），修改成 0X4，如下图：
 
 2. --
 
 但是 main 函数报了错两种方法修复
-0000004021E9 main            endp ; sp-analysis failed (Alt+K)
-1.main的 endp出错下方的函数 全部按u, 直到0x402220, 右击main, edit function修改到0x402220。然后在分析的代码处点击按C。
-2.main包含的全部函数按u,按u, 回到main头部0x402219, 按p
+0000004021E9 main endp ; sp-analysis failed (Alt+K)
+1.main 的 endp 出错下方的函数 全部按 u, 直到 0x402220, 右击 main, edit function 修改到 0x402220。然后在分析的代码处点击按 C。
+2.main 包含的全部函数按 u,按 u, 回到 main 头部 0x402219, 按 p
 
 ### ida python 调试
 
@@ -298,7 +306,6 @@ https://github.com/ioncodes/idacode
 ## Gepetto/ChatGPT AI 版反编译
 
 https://github.com/JusticeRage/Gepetto
-
 
 ## pwntools 和 ida 联合调试
 
