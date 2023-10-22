@@ -8,6 +8,7 @@
 - fmtarg ($ecx) 怎么写用 ecx
 - Misc  run.zip 有密码的什么东西
 - re: 鹏城锦标赛\工控-驱动\drive.zip
+- pwn:  为什么patchelf后不能运行 _要买些东西吗
 
 ### cobalt strike
 

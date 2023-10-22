@@ -41,6 +41,8 @@ sudo make install
 |             | `p (char**)environ`                     | 输出 environ 指针                                                       |
 |             | `p (char**)&environ`                    | 输出 libc 中的 environ                                                  |
 |             | `p/x &__bss_start`                      | bss 段起始位置, ida 中能看到起始有这个标签                              |
+|             | `x/16bx $fs_base + 0x28`                | fs 寄存器                                                               |
+|             | `auxv`                                  | 系统地址 , at_random 末尾改为00 就是canary                                                          |
 |             | ptype stdout                            | 输出 stdout 结构体                                                      |
 |             | tel <addr>                              | 查看地址值                                                              |
 |             | libc                                    | 查看 libc 地址                                                          |

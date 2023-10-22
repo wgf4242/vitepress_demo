@@ -11,6 +11,7 @@
 8. read(0, name, 0x20uLL); 一写要输到 0x20 看有没泄露 见[截断字符](#截断字符)
 9. shellcode: 限制字符串 [Video](https://www.bilibili.com/video/BV1Z14y1B7ji/) ,NewstarCTF2023 shellcode revenge
    1. ret2 sys_read, 在 read 中不会限制。然后在 read 中输入 shellcode
+1. syscall/syswrite 遇到 00 不断截断，会输出指定字节数, 看汇编有时没 rbp 直接ret
 
 # 环境配置
 

