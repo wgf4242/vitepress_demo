@@ -11,6 +11,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
   - Shift+F12, 右击 Rebuild
 - General - Instruction indentation : 20
 - 关闭自动反汇编: 工具栏 绿色按钮切换/Analysis, 才能方便手动改机器码去花指令
+- 汇编窗口不能显示伪代码: `HKEY_CURRENT_USER\Software\Hex-Rays\IDA\Hidden Messages`
 
 ## 入门
 

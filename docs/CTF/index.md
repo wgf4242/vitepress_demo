@@ -9,6 +9,7 @@
 - Misc  run.zip 有密码的什么东西
 - re: 鹏城锦标赛\工控-驱动\drive.zip
 - pwn:  为什么patchelf后不能运行 _要买些东西吗
+- pwn: pwntools怎样设置编码来输出中文 shctf call_call_would_backdoor。
 
 ### cobalt strike
 
