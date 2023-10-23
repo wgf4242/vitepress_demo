@@ -15,3 +15,10 @@
 5D => pop rbp
 5C => pop rsp
 ```
+
+# execve pop链
+
+```sh
+libc.address + 0x23b63 = pop r12;pop r13;pop r14;pop r15;ret # 传 0,0,0,0进去再执行下面
+libc.address + 0xe3afe = mov rdx, r12;mov rsi, r15;lea rdi, lea rdi, aBinSh;call execve <execve>; # execve("/bin/sh", r12, r15);
+```
