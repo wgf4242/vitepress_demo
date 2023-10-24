@@ -281,3 +281,4 @@ getsystem
 
 [后渗透之 windows 中无文件落地执行方法](https://mp.weixin.qq.com/s/GqgFDi8hJ3NcN8c98yIXuw)
 [后渗透之 windows 中远程下载文件 tips](https://mp.weixin.qq.com/s/Ax0CaErM3F6VCctTB2KaHA)
+[远程桌面禁止拷贝文件到本地](https://mp.weixin.qq.com/s/DSs6qQ9ex7hQwt6LuMfKrA)

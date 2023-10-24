@@ -24,7 +24,9 @@ sudo make install
 ```
 
 ## 常用命令
-调试 shellcode 使用 si, 而且由于 execve 会 fork进程, 所以可能要删除其他断点按 c 继续.
+
+调试 shellcode 使用 si, 而且由于 execve 会 fork 进程, 所以可能要删除其他断点按 c 继续.
+[Link](https://blog.csdn.net/qq_39563369/article/details/103950922)
 
 |             | cmd                                     | desc                                                                    |
 | ----------- | --------------------------------------- | ----------------------------------------------------------------------- |
@@ -43,14 +45,19 @@ sudo make install
 |             | `p (char**)&environ`                    | 输出 libc 中的 environ                                                  |
 |             | `p/x &__bss_start`                      | bss 段起始位置, ida 中能看到起始有这个标签                              |
 |             | `x/16bx $fs_base + 0x28`                | fs 寄存器                                                               |
-|             | `auxv`                                  | 系统地址 , at_random 末尾改为00 就是canary                                                          |
+|             | `auxv`                                  | 系统地址 , at_random 末尾改为 00 就是 canary                            |
+|             | xuntil [-h] target                      | Continue execution until an address or function                         |
+|             | piebase                                 |
+|             | dumpargs                                | 显示 rdi rsi 等参数信息                                                 |
 |             | ptype stdout                            | 输出 stdout 结构体                                                      |
 |             | tel <addr>                              | 查看地址值                                                              |
 |             | libc                                    | 查看 libc 地址                                                          |
 |             | got                                     | 查看 got 表                                                             |
 |             | search "AAAA"                           | 直接搜索 "AAAA" 的地址, 查找栈/内存位置                                 |
 |             | search -t dword 0x12a4b081              | 搜索指定数值                                                            |
-|             | backtrace                               | 查看调用栈, `frame` 切换调用栈                                          |
+|             | search -t bytes "/bin/ls"               | 搜索 bytes                                                              |
+|             | search -x 4138                          | 搜索 0x41, 0x38                                                         |
+|             | k/backtrace                               | 查看调用栈, `frame` 切换调用栈                                          |
 |             | f                                       | frame 可以看到当前在哪个模块哪个 c 文件中                               |
 |             | `source <file>`                         | 执行文件中的命令                                                        |
 |             | `!ls <arg>`                             | 执行命令 如 ls,                                                         |

@@ -423,6 +423,7 @@ User Exploitation
 - `hashdump` recovers local account hashes
   - Use `dcsync` for domain accounts, `dcsync [DOMAIN.fqdn] <DOMAIN\user>`
   - `mimikatz !lasdump::sam` for local
+  - hashdump 3524 x64 # `hashdump <pid> [x86|x64]`
 - `View -> Credentials` to manage
 
 ### Port Scanning
@@ -871,6 +872,9 @@ sub dialog_test {
 [浅谈cobalt strike特征隐藏](https://mp.weixin.qq.com/s/zImEai6xDz1HNR6vHxL9gA)
 [干货分享 | 魔改cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
 [内网神器Cobalt Strike隐藏特征与流量混淆.](https://mp.weixin.qq.com/s/TUldKUINcofoGZtRApMc0Q)
+
+[4.9 | 【第一部分】CobaltStrike v4.9 新功能尝鲜](https://www.bilibili.com/video/BV1pp4y1F7mt/)
+
 
 ## 使用帮助
 

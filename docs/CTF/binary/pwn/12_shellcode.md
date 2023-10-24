@@ -11,7 +11,7 @@ push 0x3b
 pop rax
 syscall
 ```
-
+## 执行到指定位置可以使用 pop rsi 这种滑板 或者 nop 滑板
 
 ## 绕过
 
@@ -29,3 +29,20 @@ push 超过一个字节的数，会自动补全成32位，比如push 0x6873，�
 
 但是如果只是push一个字节，就会编译为2个字节，比如push 0x8，机器码为 j\x08
 
+## 使用 xor rip 的方式不错
+
+```sh
+    xor rax,rax
+    mov esi,0x20230000
+    xor dword ptr [rip],0x9f
+    nop
+    """
+```
+
+```sh
+*RIP  0x20230008 ◂— xor dword ptr [rip], 0x9f /* 0x9f000000003581 */
+pwndbg> x/32bx  0x20230008                
+0x20230008:     0x81    0x35    0x00    0x00    0x00    0x00    0x9f    0x00   
+0x20230010:     0x00    0x00    0x90    0x05    0x00    0x00    0x00    0x00   
+-- xor dword ptr [rip] -- 0x9f8135000000009f000000, rip指向的是下一条 0x90, 0x90 ^ 0x9f = 0xf 构成 0f05 - syscall
+```
