@@ -46,7 +46,7 @@ sudo make install
 |             | `p/x &__bss_start`                      | bss 段起始位置, ida 中能看到起始有这个标签                              |
 |             | `x/16bx $fs_base + 0x28`                | fs 寄存器                                                               |
 |             | `auxv`                                  | 系统地址 , at_random 末尾改为 00 就是 canary                            |
-|             | xuntil [-h] target                      | Continue execution until an address or function                         |
+|             | xuntil target                      | Continue execution until an address or function                         |
 |             | piebase                                 |
 |             | dumpargs                                | 显示 rdi rsi 等参数信息                                                 |
 |             | ptype stdout                            | 输出 stdout 结构体                                                      |

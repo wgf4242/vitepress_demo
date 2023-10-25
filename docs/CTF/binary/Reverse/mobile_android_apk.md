@@ -299,7 +299,7 @@ https://github.com/APKLab/APKLab
 - [2023 安卓 Hook 框架源码入门（一 YAHFA 框架）（1 概述）](https://www.bilibili.com/video/BV1TY4y1f7rw/)
 
 ---
-
+- [Android 对 so 进行简单 hook](https://mp.weixin.qq.com/s/3b_isZSTBlerYyy5ViLhdA)
 - [Android 系统内核漏洞利用技术入门](https://mp.weixin.qq.com/s/a8A0g7-S0FiMuRa3YOg89Q)
 - [Android 逆向 设备指纹 Settings 类对抗终极方案](https://www.bilibili.com/video/BV1hP411s7Js/)
 - [Qual+Android方案Unlock学习 以Oneplus7Pro为例](https://mp.weixin.qq.com/s/XFAYXV90y52bYTHYWSFJcA)
