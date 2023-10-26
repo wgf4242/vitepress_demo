@@ -329,3 +329,4 @@ remote('127.0.0.1', 12345)
 ## plugin
 
 [IDA 插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)
+[给IDA写个small插件](https://mp.weixin.qq.com/s/B1rRYFEmZoTRd0KHxDLF7g)

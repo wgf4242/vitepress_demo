@@ -362,6 +362,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 - [Dll 注入入门](https://blog.csdn.net/weixin_43360152/article/details/109066011)
 - [DLL 注入与 HOOK](https://secondbc.github.io/SecondBC/2022/12/12/DLL注入与HOOK/)
 - [无线程注入-DLL 通知注入](https://www.bilibili.com/video/BV1Cp4y1P7rt/)
+- [Perfect DLL Hijacking](https://elliotonsecurity.com/perfect-dll-hijacking/)
 
 ## Windows/hook
 
