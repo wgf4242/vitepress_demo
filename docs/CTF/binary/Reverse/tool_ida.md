@@ -32,23 +32,25 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 
 ## 快捷键
 
-| 快捷键         | 描述                               |
-| -------------- | ---------------------------------- |
-| Ctrl+E         | entrypoit                          |
-| v              | convert function to void           |
-| Ctrl+N         | Set ip, 设置下一步走到哪个位置。   |
-| Alt+D          | 修改变量类型                       |
-| Go to Segments | Ctrl+S                             |
-| %              | 跳转括号                           |
-| Ins            | Insert anterior comment            |
-| Shift + Ins    | Insert posterior comment           |
-| :              | Insert inline comment              |
-| ;              | Insert repeatable comment          |
-| Alt+A          | String literials - 转长度(如 UTF8) |
-| Alt+Q          | Struct var                         |
-| Alt+F7         | Run Script                         |
-| Alt+P          | Patch Bytes                        |
-| 右击 E         | Edit Function                      |
+| 快捷键          | 描述                               |
+| --------------- | ---------------------------------- |
+| Ctrl+E          | entrypoit                          |
+| v               | convert function to void           |
+| Ctrl+N          | Set ip, 设置下一步走到哪个位置。   |
+| Alt+D           | 修改变量类型                       |
+| Go to Segments  | Ctrl+S                             |
+| %               | 跳转括号                           |
+| Ins             | Insert anterior comment            |
+| Shift + Ins     | Insert posterior comment           |
+| :               | Insert inline comment              |
+| ;               | Insert repeatable comment          |
+| Alt+A           | String literials - 转长度(如 UTF8) |
+| Alt+Q           | Struct var                         |
+| Alt+F7          | Run Script                         |
+| Alt+P           | Patch Bytes                        |
+| 右击 E          | Edit Function                      |
+| Debug \| Ctrl+E | SetIP                              |
+| Debug \| F4 | 运行到光标                              |
 
 ## 窗口介绍
 
@@ -329,4 +331,4 @@ remote('127.0.0.1', 12345)
 ## plugin
 
 [IDA 插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)
-[给IDA写个small插件](https://mp.weixin.qq.com/s/B1rRYFEmZoTRd0KHxDLF7g)
+[给 IDA 写个 small 插件](https://mp.weixin.qq.com/s/B1rRYFEmZoTRd0KHxDLF7g)

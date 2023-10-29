@@ -442,6 +442,7 @@ so 中 Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地
 - [透视 CobaltStrike（一）——PE 类 Beacon 分析](https://www.anquanke.com/post/id/228123)
 - [CobaltStrike 木马 artifact.exe 规避火绒，360，node32 沙盒的方法分析](https://blog.csdn.net/u012998306/article/details/102830991)
 - [CobaltStrike 分析-beacon 解析](https://mp.weixin.qq.com/s/NZkVwRC2VB9_3-Om9rVVCg)
+- [如何快速从 64 位转储文件中找到异常发生时的线程上下文](https://mp.weixin.qq.com/s/AO0eTo9dpAkAcDlP0jFfaA)
 
 ## 解题技巧
 

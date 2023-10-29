@@ -828,6 +828,7 @@ python3 neoreg.py -k password -u http://xx/tunnel.php
 
 [Linux 远控的端口复用](https://mp.weixin.qq.com/s/mHCOuR1rq2ExEYYWhA4vQg)
 [Windows server 80 端口复用后门](https://mp.weixin.qq.com/s/unZEw-0r4LJKCGTAIsHYUA)
+[不同中间件端口复用代理解决方案](https://mp.weixin.qq.com/s/fBy9qiu9ELNB2TiFIgGMAQ)
 
 iptable
 

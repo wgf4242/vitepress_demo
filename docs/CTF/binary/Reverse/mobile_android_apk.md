@@ -41,8 +41,8 @@ Shift+F7 - Segments 看 .init_array , init_array 是我们程序代码可以控�
 
 ## ida native 函数处理
 
-a1 改类型为 JNIEnv \*
-a2 - jobject/jclass
+- a1 改类型为 JNIEnv \*
+- a2 - jobject/jclass
 
 ```c
 // a3 没用, a2可能是MainActivity
@@ -339,6 +339,7 @@ https://github.com/APKLab/APKLab
 - [不寻常的手游反调试——反 hook 分析与绕过](https://mp.weixin.qq.com/s/zEJVBSV-BjrWr1Dl_pORXg)
 - [App 接口参数还原调用](https://mp.weixin.qq.com/s/jnRHO9mUuwheW27B7iES-w)
 - [APP 的登录协议分析](https://mp.weixin.qq.com/s/Z4hI_8FO_77dHLcjKMeXFw)
+- [逆向工程技术在移动应用渗透测试的应用](https://mp.weixin.qq.com/s/AyvnUoDKtewiIvExk5Ih0w)
 
 ## 混淆加密
 
