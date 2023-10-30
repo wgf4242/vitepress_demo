@@ -280,6 +280,7 @@ https://www.anquanke.com/post/id/195215
 [安卓协议逆向之frida hook百例二](https://www.52pojie.cn/thread-1712752-1-1.html) 
 [『工具使用』Frida 工程师备忘录](https://mp.weixin.qq.com/s/UqJSwsxkV8iTRTbUsS58Kg)
 [Frida开启PC端小程序调试模式](https://mp.weixin.qq.com/s/8p1_s1QoTGdiZ8ocKC-tDA)
+[使用Frida在Windows中拦截C++函数](https://mp.weixin.qq.com/s/g2p6jGtsTC2GhoyoUYwwhA)
 
 - 反调试
 [移动安全之【魔改frida自编译去特征】超详细全过程](https://mp.weixin.qq.com/s/4MOTfYm-GMpZQFsLKOOHwQ)
