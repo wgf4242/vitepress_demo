@@ -28,6 +28,7 @@
 - 时间 转字母 00:01-A, 00:02-B, 00:03-C , 也可能是 00:00 是 A。根据情况试着移位吧
 - 得到密码
   - 可能转小写 `Watermark_is_fun -> watermark_is_fun`
+- 得到 flag{pNg_and_Md5_SO_GreaT} 同时给出 32位 md5 可能是提示大小写换一下爆破。Png_AnD_md5_so_GReAt
 - unknown 数据
   - 多用 sublime 看可能有零宽
   - ciphey

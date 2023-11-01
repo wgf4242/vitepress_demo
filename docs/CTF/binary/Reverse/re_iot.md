@@ -12,6 +12,8 @@ IOT 车联网问题。启动不了找问题 patch 掉。可能是没有某些设
 ida 定位字符串。都 patch
 qemu-arm -L ./tbox_app.bin
 
+
+
 ## 题目
 
 [openwrt | AntCTF x D³CTF 2023 d3op 复盘笔记](https://mp.weixin.qq.com/s/97TfeJgZeG-lLzWc95teBw)
@@ -69,7 +71,6 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [手把手玩转路由器漏洞挖掘系列 - 基础入门](https://mp.weixin.qq.com/s/-yUPKhjTpYEbzlVNRBo9XQ)
 - [模拟运行](./index#模拟运行)
 - [TP-Link WR740 后门漏洞复现](https://mp.weixin.qq.com/s/mcAOxhih8Yq8tZe0dAdInA)
-- [路由器初探之 mips 基础及 mips 栈溢出](https://mp.weixin.qq.com/s/fxQjS4KqNAjsPy-RX5gLVw)
 - [D-Link DIR-820L 1.05B03 命令注入漏洞 CVE-2022-26258 复现](https://mp.weixin.qq.com/s/Hc2DHKBlKhSwEoFaquKgzw)
 - [TOTOLINK CVE-2022-25084 漏洞分析&复现](https://mp.weixin.qq.com/s/hD0a_AQAtM8npD7mHizrIA)
 - [Cisco RV340，RV340W，RV345和RV345P从零开始复现 CVE-2023-20073](https://mp.weixin.qq.com/s/xCKzdaRq4D5svTc__tXPFQ)
