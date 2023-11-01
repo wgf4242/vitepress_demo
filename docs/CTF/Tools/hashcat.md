@@ -192,7 +192,8 @@ john 1.hash
 
 7z
 
-```ps1
+```sh
+7z2john 7zdecrypt.txt.7z > 7z.hash
 hashcat.exe -m 11600 -a 3 $7z$2$19$0$$16$abc477f84f711f5530432e64418c8392$3167568243$16$12$40a31f0f88ac7b9a9acdc6cbb7d23f23$8$00
 # 6位小写字母+数字破解
 .\hashcat.exe -m 11600 -a 3 test.hash ?h?h?h?h?h?h

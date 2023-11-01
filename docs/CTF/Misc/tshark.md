@@ -31,10 +31,12 @@ tshark -Y http
 tshark -Y modbus -r 3.pcapng
 
 #### 导出http文件
-```
+```sh
 path D:\Program Files\Wireshark;%path%
 tshark -r ctf.pcapng --export-objects "http,F:/Fshare/"
 
+# modbus
+tshark -r a.pcapng -Y modbus -T fields -e modbus.regval_uint16  > out1.txt
 ```
 #### 导出http uri
 tshark -r x.pcap -T fields -e http.request.full_uri | sed "/^\s*$/d" > usbdata.txt

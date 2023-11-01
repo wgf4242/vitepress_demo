@@ -308,7 +308,7 @@ bkcrack, 明文只需要满足 8 字节连续，一共 12 字节已知即可
 | `bkcrack -C flag.zip -c hint.txt -P hint.zip -p hint.txt`                   |
 | `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 150 504B050600000000`      | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt , 为啥是 150: zip 大小-22, 打开 a 查看 b 大小为 172 则 172-22=150, `f18d1f04aa82_4266.zip` |
 | `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 30 666C61672E747874`       | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt                                                                                            |
-| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -x 0 4B444D5601000000030000`         | -x `[offset] [16进制]`                                                                                                                            |
+| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -x 0 4B444D5601000000030000`         | -x `[offset] [16进制]` , offset默认10进制可用 `0xD0`                                                                                                                            |
 | `bkcrack -C Easy_VMDK.zip -c flag.vmdk -p keys.txt`                         | 把`4B444D5601000000030000` 16 进制写入 keys.txt 也可以                                                                                            |
 | `bkcrack -C flag.zip -k a923d145 ecc0362d 296a6ff5 -U 123.zip 123 `         | 修改密码为 123, 保存到 123zip                                                                                                                     |
 | `bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt` |                                                                                                                                                   |
