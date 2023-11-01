@@ -61,6 +61,7 @@ cat test
 - [协议分析 | 简析 ARP 欺骗](https://mp.weixin.qq.com/s/WyFPxxjSLF-diSUA-cTRZA)
 - [协议分析 | 对一个 apk 协议的继续分析—libsgmain 反混淆与逆向](https://mp.weixin.qq.com/s/s06dvT056fqkENIYoEHZ3w)
 - [协议分析 | 【app 渗透】破解 apk app 协议 测试接口等安全](https://mp.weixin.qq.com/s/jAzwLDjrIWhGSSYcA1PyYw)
+- [协议分析 | SNMP | 手把手玩转路由器漏洞挖掘系列 - SNMP协议分析](https://mp.weixin.qq.com/s/cceDMM4dJbC_IpexrMO8jg)
 - [TLS 1.2 协议解析流程学习（一）](https://mp.weixin.qq.com/s/DS3ZMVSlHvIV0wIDrrmHpg)
 - [HLS 无损下载 B 站直播 | HLS 协议从入门到实践](https://www.bilibili.com/video/BV1yL411k7DK/)
 - [USB | USB基础知识介绍](https://mp.weixin.qq.com/s/i9tJ1gMOyGiw-wwQQ-g_-w)

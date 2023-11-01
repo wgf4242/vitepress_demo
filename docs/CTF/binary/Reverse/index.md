@@ -384,6 +384,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ### DLL 注入
 
 - [初探 DLL 注入](https://mp.weixin.qq.com/s/fhUAqM1hIC-xm5Pl8-qt6w)
+- [PE-自实现拉伸运行dll](https://mp.weixin.qq.com/s/QVeVSijWTW9e-UqjNDPWqg)
 
 ### x64dbg/ollydbg
 

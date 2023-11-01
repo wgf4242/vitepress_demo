@@ -18,6 +18,8 @@
    - 4.浏览历史
    - 4.进程信息
    - 5.dump 内存 如 dump 下 notepad 进程的内存再 foremost 可能得压缩包
+   - 6. dump 下 mspaint.exe 用gimp里调整查看图片
+2. Passware Kit Forensic 查看开机密码
 1. 浏览器历史取证
    - 带 paste 地址优先查看.
 1. [profile 找不到详下 ](#profile-找不到)

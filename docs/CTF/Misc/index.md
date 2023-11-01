@@ -137,6 +137,7 @@ arr[$(cat /flag)]
 | png      |        |        | Misc_png_width2.py           | 爆破宽度                                                                                                                                                                                                         |
 | png      |        |        |                              | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |
 | png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
+| png      |        |        | puzzlesolver | fft 变换，多选项, 都试一下
 | png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
 | png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
 | png 单图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试

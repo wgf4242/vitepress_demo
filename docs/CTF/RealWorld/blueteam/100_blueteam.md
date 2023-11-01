@@ -55,3 +55,4 @@ local_infile = 0
 [漏洞修复建议大全](https://mp.weixin.qq.com/s/3ltiNkxyRPViXmeI2-PJvQ)
 [安全运维 | RDP登录日志取证和清除](https://mp.weixin.qq.com/s/7504YsCEEfiM8uXQVCGRqA)
 [Safe008一键安全加固 防止黑客横向攻击](https://mp.weixin.qq.com/s/14y8Qmowz76ouD67CTCtUQ)
+[反制红队 | 关于NPS未授权访问漏洞的三种场景(附插件)](https://mp.weixin.qq.com/s/F1o-LMXmUeDLR3qj8aP06g)
