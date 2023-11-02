@@ -28,16 +28,20 @@ qemu-mips -g 1234 ./re  # gdb/ida 可连接到1234端口
 汇编
 https://blog.csdn.net/weixin_38669561/article/details/104445763
 
-返回值通常放在 $v0  , rt就是register
+返回值通常放在 $v0 , rt 就是 register
 
-| 1           | 2                    |                                                            |
-| ----------- | -------------------- | ---------------------------------------------------------- | --- | ------ |
-| sw ra,0(s8) | # memory[s8 +0] ← v0 | 把寄存器 ra 里的 32 位数写出到内存地址为 s8+0              |
-| lb          | lb $v1, 0($v0)       | 8 位加载, 0($v0) 取 v0 的第一个字节给 v1                   |
-| SEB         | SEB rd, rt           | 字节符号扩展                                               |
-| LUI         | lui $v0,0x4a         | v0=004A0000 取立即数到高位 GPR[rt] ← sign_extend(immediate |     | 0 16 ) |
-| SB/SW/SD    | SB rt, offset(base)  | Save Byte/Word/DWORD 存字节                                |
-| LW          | LW rt, offset(base)  | 加载字                                                     |
+| 1           | 2                    |                                                                                         |
+| ----------- | -------------------- | --------------------------------------------------------------------------------------- |
+| sw ra,0(s8) | # memory[s8 +0] ← v0 | 把寄存器 ra 里的 32 位数写出到内存地址为 s8+0                                           |
+| lb          | lb $v1, 0($v0)       | 8 位加载, To load a byte from memory as a signed value , 0($v0) 取 v0 的第一个字节给 v1 |
+| SEB         | SEB rd, rt           | 字节符号扩展                                                                            |
+| ADDU        | ADDU rd, rs, rt      | 无溢出检测加法 addu t0,a0,a1 # t0=a0+a1                                                 |
+| LI          | LI rt, immediate     | 取立即数到寄存器 。                                                                     |
+| LUI         | lui $v0,0x4a         | v0=004A0000 取立即数到高位 `GPR[rt] ← sign_extend(immediate \|\| 0 16 )`                |
+| SB/SW/SD    | SB rt, offset(base)  | Save Byte/Word/DWORD 存字节                                                             |
+| LW          | LW rt, offset(base)  | 加载字                                                                                  |
+| SLL         | SLL rd, rt, sa       | 逻辑左移 GPR[rd] ← GPR[rt] << sa， sa 为常量 取值 0-31                                  |
+| SRL         | SRL rd, rt, sa       | 逻辑右移                                                                                |
 
 # Artcile
 
