@@ -1,6 +1,7 @@
 [干货 | 域内敏感信息搜集](https://mp.weixin.qq.com/s/nFOAb__c162gMhve3MEh_Q)
 [横向移动之 PTH、PPT、PTK](https://mp.weixin.qq.com/s/uWuNqKYloTQCifKjsXMB2Q)
 [横向移动-域控提权](https://mp.weixin.qq.com/s/mNYJ0s5HahBUewWqDwF1Fg)
+[ntds.dit | esedbexport |  攻击域控丝滑小连招~](https://mp.weixin.qq.com/s/_fmPrngyWwnuPNLyeY6VgA)
 
 ## 信息收集
 

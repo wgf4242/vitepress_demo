@@ -63,6 +63,8 @@
 
 [致远 OA A6 test.jsp 存在 sql 注入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247485042&idx=1&sn=3dfac475ca4db76b412ed7c546e273a0)
 [致远 OA wpsAssistServlet 任意文件上传漏洞 A6、A8、A8N (V8.0SP2, V8.1, V8.1SP1) // G6、G6N (V8.1、V8.1SP1)](https://mp.weixin.qq.com/s/lOk7rt26z33e-ogLmFlE0Q)
+
+[用友漏洞利用流程](https://yhnx97pvjc.feishu.cn/file/FeMdbGcaTo9lqPx5nUicLl8Bngf)
 [用友致远 A6 协同管理系统多处敏感信息泄露](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247485029&idx=1&sn=1bbe24fd063d75e35a4d24db5e8edd0f)
 [用友 U8-OA 和致远 A6 系统从信息泄露到伪造用户登录](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484871&idx=1&sn=bf0f160929200fb9104189680092f68e)
 [用友 畅捷通 T+ 漏洞复现](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484859&idx=1&sn=beb56c8e035ef8a945a73c49481c7ed1)

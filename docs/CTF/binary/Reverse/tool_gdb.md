@@ -424,3 +424,4 @@ python exec(open('myscript.py').read())
 ## Article
 
 [玩转 C++调试之 Python 的 GDB 库增强](https://mp.weixin.qq.com/s/B8YLq-YSNw08u6yKoBcblg)
+[Linux多线程调试没那么难，可别再用printf了](https://mp.weixin.qq.com/s/qJTnEDT3xO9T7koDk5kVdQ)

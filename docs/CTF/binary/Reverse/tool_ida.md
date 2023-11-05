@@ -19,6 +19,18 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - import 可看到 GetMessageBoxA, 在 import 处双击跳转
 - 读取卡死 载入选择 Binary
 
+### ida 中的汇编与类型
+
+defs.h
+
+| Type   | value      |       |
+| ------ | ---------- | ----- |
+| BYTE1  | 0x11223344 | 取 33 |
+| BYTE2  | 0x11223344 | 取 22 |
+| HIBYTE | 0x11223344 | 取 11 |
+|        |            |       |
+|        |            |       |
+
 ### 界面
 
 蓝色变量 - 全局变量
@@ -50,7 +62,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 | Alt+P           | Patch Bytes                        |
 | 右击 E          | Edit Function                      |
 | Debug \| Ctrl+E | SetIP                              |
-| Debug \| F4 | 运行到光标                              |
+| Debug \| F4     | 运行到光标                         |
 
 ## 窗口介绍
 

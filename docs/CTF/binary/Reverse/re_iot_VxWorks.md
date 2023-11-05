@@ -13,3 +13,6 @@ netsh interface set interface "VMware Network Adapter VMnet1" disabled
 netsh interface set interface "VMware Network Adapter VMnet1" enabled
 2. 禁用 VMNet1, 再启用 VMNet1
 ```
+
+# Article
+[与风河专家深入探讨系列视频](https://www.eefocus.com/course/1073684.html)

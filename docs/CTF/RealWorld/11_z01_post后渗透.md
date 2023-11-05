@@ -10,6 +10,9 @@
 # -- windows
 # --- [Windows server 80端口复用后门](https://mp.weixin.qq.com/s/unZEw-0r4LJKCGTAIsHYUA)
 ../../../../../../windows/win.ini
+dir C:\Users\Administrator\Desktop
+dir %userprofile%\Desktop
+
 arp -a
 ipconfig /all
 dir /a C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent
@@ -17,6 +20,7 @@ dir /a C:\Users\Administrator\Desktop
 dir /a C:\Users\public\Desktop
 reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 echo "检查是否有其他用户的进程, 窃取令牌"
+echo "查看浏览器历史"
 # for /f "tokens=2 delims==" %a in ('wmic useraccount where name^="%username%" get sid /value') do set current_sid=%a
 # reg query HKEY_USERS\%current_sid%\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 # reg query HKEY_USERS\S-1-5-21-3921407625-4142045542-3089788233-500\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU  # 远程连接信息
@@ -41,6 +45,7 @@ crackmapexec # 横向使用
 
 # -- linux
 ## 无curl, wget下载文件 tools_get.sh
+history
 /etc/passwd
 /home/<username>/.bash_history
 /root/.mysql_history
@@ -54,6 +59,7 @@ cat /proc/self/environ    # 环境变量
 
 
 # 应用配置
+## Firefox/Chrome 查看密码管理
 ## java站点
 /WEB-INF/web.xml
 /WEB-INF/classes/applicationContext.xml
