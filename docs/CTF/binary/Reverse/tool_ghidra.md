@@ -19,6 +19,7 @@
 |              |                                                   |                                                   |
 
 # Article
+[逆向工具Ghidra介绍及应用](https://live.freebuf.com/live/719e1138a016a5bffbfe0daeb4533b4f/s_710)
 
 [逆向工程系列 | Ghidra for Beginner III](https://mp.weixin.qq.com/s/tDGTdPMEEvCRfL_R_Unfng)
 [逆向工程系列 | Ghidra for Beginner IV](https://mp.weixin.qq.com/s/yn8M54jLSgzhsWS00I4jHw)
