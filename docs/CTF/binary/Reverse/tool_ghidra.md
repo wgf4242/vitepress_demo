@@ -5,6 +5,7 @@
 
 | 功能键       | 功能                                              | 说明 反汇编界面操作                               |
 | ------------ | ------------------------------------------------- | ------------------------------------------------- |
+| 鼠标中键     | 变量代码高亮                                      |
 | Ctrl + E     | 伪代码显示                                        | 在反汇编界面操作,就是 IDA 中的 F5                 |
 | L            | rename                                            | 在反汇编界面操作,类似于 IDA 中的 n 重命名         |
 | C            | 将汇编转为字节来查看                              | 在反汇编界面选中按 C 即可                         |
@@ -18,8 +19,12 @@
 | CTRL+SHIFT+F | 交叉引用显示                                      | 与 IDA 中的交叉引用相似可以看到谁调用             |
 |              |                                                   |                                                   |
 
+### plugins
+ghidraida 可以改成 ida 的快捷键
+
 # Article
-[逆向工具Ghidra介绍及应用](https://live.freebuf.com/live/719e1138a016a5bffbfe0daeb4533b4f/s_710)
+
+[逆向工具 Ghidra 介绍及应用](https://live.freebuf.com/live/719e1138a016a5bffbfe0daeb4533b4f/s_710)
 
 [逆向工程系列 | Ghidra for Beginner III](https://mp.weixin.qq.com/s/tDGTdPMEEvCRfL_R_Unfng)
 [逆向工程系列 | Ghidra for Beginner IV](https://mp.weixin.qq.com/s/yn8M54jLSgzhsWS00I4jHw)
