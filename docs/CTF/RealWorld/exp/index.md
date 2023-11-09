@@ -74,6 +74,7 @@
 [用友 NC 任意文件读取漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484843&idx=2&sn=a7a51e7a522b95463ba3d17f0c5b9dfa)
 [用友 NC 命令执行漏洞(CNVD-2021-30167](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484782&idx=1&sn=0d12c08981028561c0b09a531af9cc10)
 [用友NC6.5 文件上传漏洞（附EXP）](https://mp.weixin.qq.com/s/rIywjhzM2eyHVR7xtJDuyQ)
+[用友NC6.5 FileReceiveServlet 任意文件上传漏洞](https://mp.weixin.qq.com/s/NXYqYbp_xvrxS9tBaOYycA)
 
 [蓝凌 OA 任意文件写入漏洞](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484910&idx=1&sn=3c4b2ad40c308407de499e3b4dee73ba)
 [蓝凌 OA treexml.tmpl 远程命令执行漏洞-方式2](https://mp.weixin.qq.com/s/S1-5R17Q2omigJodzcB_0w)

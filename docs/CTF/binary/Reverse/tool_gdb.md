@@ -28,57 +28,58 @@ sudo make install
 调试 shellcode 使用 si, 而且由于 execve 会 fork 进程, 所以可能要删除其他断点按 c 继续.
 [Link](https://blog.csdn.net/qq_39563369/article/details/103950922)
 
-|             | cmd                                     | desc                                                                    |
-| ----------- | --------------------------------------- | ----------------------------------------------------------------------- |
-|             | set args <args>                         | set args Hello World <br>run                                            |
-|             | entry                                   | Set a breakpoint at the first instruction executed in the target binary |
-|             | ctx                                     | 默认的 context 信息                                                     |
-|             | b \_\_libc_start_main                   | 条件断点 `break *0x56556228 if argc==1`                                 |
-|             | b \*main                                | 禁用启用断点 `dis(able) Num` 和 `enable Num`                            |
-|             | b 21                                    | 有源代码时断在 21 行 <br>需编译时: `gcc -g main.c`                      |
-|             | fmtargs 0x7fffe2d9                      | 查看 printf 计算参数位置                                                |
-|             | distance 0x90 0x86                      | 计算距离                                                                |
-|             | disass `Input` <br>disassemble 0x40123d | `disass(emble)` 查看 函数/地址 汇编                                     |
-|             | !disasm eb01                            | 将机器码 eb01 转汇编                                                    |
-|             | p $esp <br>p stdout                     | 输出 esp, p/x 32 -- 0x20 <br>输出 stdout 函数地址                       |
-|             | `p (char**)environ`                     | 输出 environ 指针                                                       |
-|             | `p (char**)&environ`                    | 输出 libc 中的 environ                                                  |
-|             | `p/x &__bss_start`                      | bss 段起始位置, ida 中能看到起始有这个标签                              |
-|             | `x/16bx $fs_base + 0x28`                | fs 寄存器                                                               |
-|             | `auxv`                                  | 系统地址 , at_random 末尾改为 00 就是 canary                            |
-|             | xuntil target                      | Continue execution until an address or function                         |
-|             | piebase                                 |
-|             | dumpargs                                | 显示 rdi rsi 等参数信息                                                 |
-|             | ptype stdout                            | 输出 stdout 结构体                                                      |
-|             | tel <addr>                              | 查看地址值                                                              |
-|             | libc                                    | 查看 libc 地址                                                          |
-|             | got                                     | 查看 got 表                                                             |
-|             | search "AAAA"                           | 直接搜索 "AAAA" 的地址, 查找栈/内存位置                                 |
-|             | search -t dword 0x12a4b081              | 搜索指定数值                                                            |
-|             | search -t bytes "/bin/ls"               | 搜索 bytes                                                              |
-|             | search -x 4138                          | 搜索 0x41, 0x38                                                         |
-|             | k/backtrace                               | 查看调用栈, `frame` 切换调用栈                                          |
-|             | f                                       | frame 可以看到当前在哪个模块哪个 c 文件中                               |
-|             | `source <file>`                         | 执行文件中的命令                                                        |
-|             | `!ls <arg>`                             | 执行命令 如 ls,                                                         |
-|             | until <br>until location                | 跳过循环体 <br> 运行到指定位置                                          |
-|             | list                                    | 显示源代码, 需要编译时 -g                                               |
-|             | info proc mappings                      | 显示 进程内存段                                                         |
-|             | shell clear                             | 清空屏幕 cls                                                            |
-| -- debug -- |                                         |
-|             | alsr off                                | 关闭 alsr                                                               |
-|             | `set *0x4007e48=0x7c6c`                 | 修改值                                                                  |
-| -- heap --  |                                         | 查看堆,配合 x/addr 看位置                                               |
-|             | heap                                    |
-|             | bins                                    | 查看 bins                                                               |
-|             | heapinfo                                |                                                                         |
-|             | parseheap                               |
-|             | chunkinfo <addr>                        | 查看 chunk                                                              |
-|             | hex 0x8e1000 2300                       | 查看 hex                                                                |
-|             | p &\_\_malloc_hook                      |
-|             | magic                                   | 查看 malloc_hook system 等地址                                          |
-|             | fakefast <mallochook 地址>              |
-|             | tel \*(0x7ffff588+0x30 + 4) = 0 赋值    |
+|             | cmd                                                      | desc                                                                    |
+| ----------- | -------------------------------------------------------- | ----------------------------------------------------------------------- |
+|             | set args <args>                                          | set args Hello World <br>run                                            |
+|             | entry                                                    | Set a breakpoint at the first instruction executed in the target binary |
+|             | ctx                                                      | 默认的 context 信息                                                     |
+|             | b \_\_libc_start_main                                    | 条件断点 `break *0x56556228 if argc==1`                                 |
+|             | b \*main                                                 | 禁用启用断点 `dis(able) Num` 和 `enable Num`                            |
+|             | b 21                                                     | 有源代码时断在 21 行 <br>需编译时: `gcc -g main.c`                      |
+|             | fmtargs 0x7fffe2d9                                       | 查看 printf 计算参数位置                                                |
+|             | distance 0x90 0x86                                       | 计算距离                                                                |
+|             | disass `Input` <br>disassemble 0x40123d                  | `disass(emble)` 查看 函数/地址 汇编                                     |
+|             | !disasm eb01                                             | 将机器码 eb01 转汇编                                                    |
+|             | p $esp <br>p stdout                                      | 输出 esp, p/x 32 -- 0x20 <br>输出 stdout 函数地址                       |
+|             | `p (char**)environ`                                      | 输出 environ 指针                                                       |
+|             | `p (char**)&environ`                                     | 输出 libc 中的 environ                                                  |
+|             | `p/x &__bss_start`                                       | bss 段起始位置, ida 中能看到起始有这个标签                              |
+|             | `x/16bx $fs_base + 0x28`                                 | fs 寄存器                                                               |
+|             | `auxv`                                                   | 系统地址 , at_random 末尾改为 00 就是 canary                            |
+|             | xuntil target                                            | Continue execution until an address or function                         |
+|             | piebase                                                  |
+|             | dumpargs                                                 | 显示 rdi rsi 等参数信息                                                 |
+|             | ptype stdout                                             | 输出 stdout 结构体                                                      |
+|             | tel <addr>                                               | 查看地址值                                                              |
+|             | libc                                                     | 查看 libc 地址                                                          |
+|             | got                                                      | 查看 got 表                                                             |
+|             | search "AAAA"                                            | 直接搜索 "AAAA" 的地址, 查找栈/内存位置                                 |
+|             | search -t dword 0x12a4b081                               | 搜索指定数值                                                            |
+|             | search -t bytes "/bin/ls"                                | 搜索 bytes                                                              |
+|             | search -x 4138                                           | 搜索 0x41, 0x38                                                         |
+|             | k/backtrace                                              | 查看调用栈, `frame` 切换调用栈                                          |
+|             | f                                                        | frame 可以看到当前在哪个模块哪个 c 文件中                               |
+|             | `source <file>`                                          | 执行文件中的命令                                                        |
+|             | `!ls <arg>`                                              | 执行命令 如 ls,                                                         |
+|             | until <br>until location                                 | 跳过循环体 <br> 运行到指定位置                                          |
+|             | list                                                     | 显示源代码, 需要编译时 -g                                               |
+|             | info proc mappings                                       | 显示 进程内存段                                                         |
+|             | [commands](#commands)                                                 | 到达断点时自动执行多个命令,                                             |
+|             | shell clear                                              | 清空屏幕 cls                                                            |
+| -- debug -- |                                                          |
+|             | alsr off                                                 | 关闭 alsr                                                               |
+|             | `set *0x4007e48=0x7c6c`<br>`set $eax=*(int*)($rsp+0x50)` | 修改值                                                                  |
+| -- heap --  |                                                          | 查看堆,配合 x/addr 看位置                                               |
+|             | heap                                                     |
+|             | bins                                                     | 查看 bins                                                               |
+|             | heapinfo                                                 |                                                                         |
+|             | parseheap                                                |
+|             | chunkinfo <addr>                                         | 查看 chunk                                                              |
+|             | hex 0x8e1000 2300                                        | 查看 hex                                                                |
+|             | p &\_\_malloc_hook                                       |
+|             | magic                                                    | 查看 malloc_hook system 等地址                                          |
+|             | fakefast <mallochook 地址>                               |
+|             | tel \*(0x7ffff588+0x30 + 4) = 0 赋值                     |
 
 ## x/examine/查看
 
@@ -145,6 +146,16 @@ p /x value 16进制输出
 ```
 
 find 命令查找"/bin/sh" 字符串
+
+## commands
+
+```sh
+b *0x00007FFFF7F97E9B
+commands 1 # 1号断点时自动执行下面的命令
+set $eax=*(int*)($rsp+0x50)
+continue
+end
+```
 
 ## breakpoint
 
@@ -424,4 +435,4 @@ python exec(open('myscript.py').read())
 ## Article
 
 [玩转 C++调试之 Python 的 GDB 库增强](https://mp.weixin.qq.com/s/B8YLq-YSNw08u6yKoBcblg)
-[Linux多线程调试没那么难，可别再用printf了](https://mp.weixin.qq.com/s/qJTnEDT3xO9T7koDk5kVdQ)
+[Linux 多线程调试没那么难，可别再用 printf 了](https://mp.weixin.qq.com/s/qJTnEDT3xO9T7koDk5kVdQ)

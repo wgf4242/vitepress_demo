@@ -28,14 +28,14 @@
 - 时间 转字母 00:01-A, 00:02-B, 00:03-C , 也可能是 00:00 是 A。根据情况试着移位吧
 - 得到密码
   - 可能转小写 `Watermark_is_fun -> watermark_is_fun`
-- 得到 flag{pNg_and_Md5_SO_GreaT} 同时给出 32位 md5 可能是提示大小写换一下爆破。Png_AnD_md5_so_GReAt
+- 得到 flag{pNg_and_Md5_SO_GreaT} 同时给出 32 位 md5 可能是提示大小写换一下爆破。Png_AnD_md5_so_GReAt
 - unknown 数据
   - 多用 sublime 看可能有零宽
   - ciphey
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
   - base64 换表
-  - 像base64但=号位置不对 `bYeNQXYZXbXZQfW31FGzzD0m0FHQ9RR85FFQYMB9M=lmo2ku11z0uiz=`  Caesar Box Cipher 14后 base64解
+  - 像 base64 但=号位置不对 `bYeNQXYZXbXZQfW31FGzzD0m0FHQ9RR85FFQYMB9M=lmo2ku11z0uiz=` Caesar Box Cipher 14 后 base64 解
   - 符合 16 进制 data, base64.encode(data)
   - 提示逆向，可能是指加密
   - 有空格和 tab 可能是摩斯码或二进制
@@ -83,7 +83,7 @@
   - 1-8 数字
   - 1-8 大写
   - 1-8 小写
-  - seclist压缩包里找找
+  - seclist 压缩包里找找
 - DTMF http://dialabc.com/sound/detect/index.html
 
 波形图 高为 1 低为 0 转二进制
@@ -137,11 +137,11 @@ arr[$(cat /flag)]
 | png      |        |        | Misc_png_width2.py           | 爆破宽度                                                                                                                                                                                                         |
 | png      |        |        |                              | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |
 | png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
-| png      |        |        | puzzlesolver | fft 变换，多选项, 都试一下
+| png      |        |        | puzzlesolver                 | fft 变换，多选项, 都试一下                                                                                                                                                                                       |
 | png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
 | png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
-| png 单图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试
-| png 多图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试
+| png 单图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试                                                                                                                                                                                     |
+| png 多图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试                                                                                                                                                                                     |
 | 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
 | 图片     |        |        |                              | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
 | jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
@@ -258,12 +258,12 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 ```
 -- 解压密码 空格 转 _
--- 伪加密
+-- 伪加密 , [VNCTF 2021]冰冰好像藏着秘密.rar  , 伪加密时010识别的位置不对。
   -- rar  直接拖出来/或解压, 提示密码点确定
       -- 修复 Ctrl+G, 22回车, 7A改为74
-        -- 也可能是  第24位的84改成80
+        -- 也可能是  第0x17(24)位的84改成80,  主要就是4改0
       -- F9 81 74 85 改成 F9 81 74 80
-      -- rar4 24 90 -> 20 90 , 用010看  FileHeadFlags HEAD_FLAGS - PASSWORD_ENCRYPTED。
+      -- rar4 24 90 -> 20 90 , 用010看  struct RarBlock block[0] > struct FileHeadFlags > HEAD_FLAGS - PASSWORD_ENCRYPTED
 
 -- 伪解密, 文件报错, 是加密位去掉了, 用101手动恢复多处
    -- 010查看有 dataDescr, 有加密?
@@ -310,7 +310,7 @@ bkcrack, 明文只需要满足 8 字节连续，一共 12 字节已知即可
 | `bkcrack -C flag.zip -c hint.txt -P hint.zip -p hint.txt`                   |
 | `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 150 504B050600000000`      | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt , 为啥是 150: zip 大小-22, 打开 a 查看 b 大小为 172 则 172-22=150, `f18d1f04aa82_4266.zip` |
 | `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 30 666C61672E747874`       | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt                                                                                            |
-| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -x 0 4B444D5601000000030000`         | -x `[offset] [16进制]` , offset默认10进制可用 `0xD0`                                                                                                                            |
+| `bkcrack -C Easy_VMDK.zip -c flag.vmdk -x 0 4B444D5601000000030000`         | -x `[offset] [16进制]` , offset 默认 10 进制可用 `0xD0`                                                                                           |
 | `bkcrack -C Easy_VMDK.zip -c flag.vmdk -p keys.txt`                         | 把`4B444D5601000000030000` 16 进制写入 keys.txt 也可以                                                                                            |
 | `bkcrack -C flag.zip -k a923d145 ecc0362d 296a6ff5 -U 123.zip 123 `         | 修改密码为 123, 保存到 123zip                                                                                                                     |
 | `bkcrack -C png4.zip -c flag.txt -k e0be8d5d 70bb3140 7e983fff -d flag.txt` |                                                                                                                                                   |
@@ -456,38 +456,40 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
 
 11. wav/音频隐写 https://www.sqlsec.com/2018/01/ctfwav.html https://blog.csdn.net/qq_51652400/article/details/123504708
-    -- 1.Audition/Audacity 看 多是摩斯码,
-    -- 2.看频谱 spectrogram(视图-频谱)/ audacity 轨道左侧文件名箭头-频谱
-    ---------- 频谱完整视图, 右击 - Zoom to fit
-    -- DB 波谱: 右击 左侧刻度 -> db
-    -- 3.听歌
-    -- 4. misc_dtmf / http://dialabc.com/sound/detect/index.html
-    -- 本地 dtmf 有时会有重复值 [DTMF](https://gitcode.net/mirrors/ribt/dtmf-decoder?utm_source=csdn_github_accelerator)
-    -- 效果-反向 听声音。
-    -- 删除多余文件头，可能有 2 段 riff
-    -- SilentEye
-    -- 1.参数调整 low,normal,high
-    -- 2.参数调整 去掉 Compressed data: low,normal,high
-    -- Deepsound , deepsound2john.py 可爆破
-    -- MP3Stego: decode.exe -X target.mp3
-    -- decode.exe -P password -X target.mp3
-    -- decode.exe -P pass -X target.mp3
-    -- decode.exe -P 主办单位 -X target.mp3
-    -- 摩斯码音频 自动解码：
-    -- 1.Audition 禁用 其他声道, 将目标声道提高
-    -- 2.右击声道，提取为单声道， 导出 mp3
-    -- 3. https://morsecode.world/international/decoder/audio-decoder-adaptive.html 上传解码 play
-    -- SSTV 扫描
-    -- 1.频谱图比较平均 dididi 的声音 见 ### sstv
-    -- 2.长度 36 秒 Robot36
-    -- MIDI 隐写，见本章链接。
-    -- PT2242 信号： 用短的一段表示是 0，长的一段表示是 1 前面 4bit 表示同步码，中间的 20bit 表示地址码，后面的 4bit 表示功能码，最后一位是停止码。
-    -- 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
-    -- PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html
+    - 1.Audition/Audacity 看 多是摩斯码,
+    - 2.看频谱 spectrogram(视图-频谱)/ audacity 轨道左侧文件名箭头-频谱
+    --------- 频谱完整视图, 右击 - Zoom to fit
+    - DB 波谱: 右击 左侧刻度 -> db
+    - 3.听歌
+    - 4. misc_dtmf / http://dialabc.com/sound/detect/index.html
+    - 本地 dtmf 有时会有重复值 [DTMF](https://gitcode.net/mirrors/ribt/dtmf-decoder?utm_source=csdn_github_accelerator)
+    - 效果-反向 听声音。
+    - 删除多余文件头，可能有 2 段 riff
+    - SilentEye
+    - 1.参数调整 low,normal,high
+    - 2.参数调整 去掉 Compressed data: low,normal,high
+    - Deepsound , deepsound2john.py 可爆破
+    - MP3Stego: decode.exe -X target.mp3
+    - decode.exe -P password -X target.mp3
+    - decode.exe -P pass -X target.mp3
+    - decode.exe -P 主办单位 -X target.mp3
+    - 摩斯码音频 自动解码：
+    - 1.Audition 禁用 其他声道, 将目标声道提高
+    - 2.右击声道，提取为单声道， 导出 mp3
+    - 3. https://morsecode.world/international/decoder/audio-decoder-adaptive.html 上传解码 play
+    - [SSTV](#音频隐写-sstv)
+    - 1.频谱图比较平均 dididi 的声音 见 ### sstv
+    - 2.长度 36 秒 Robot36
+    - MIDI 隐写，见本章链接。
+    - PT2242 信号： 用短的一段表示是 0，长的一段表示是 1 前面 4bit 表示同步码，中间的 20bit 表示地址码，后面的 4bit 表示功能码，最后一位是停止码。
+    - 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
+    - PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html
 
 LSB 隐写 用 uint8 读取 wav 然后提取每一个帧的 LSB
 
-### 音频隐写 sstv
+## 音频隐写 sstv
+
+扫描 `sstd -d 'flag.wav' -o 1.png`
 
 长度 36 秒 Robot36
 

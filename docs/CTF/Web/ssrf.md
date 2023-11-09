@@ -6,14 +6,16 @@ curl_exec() curl_exec函数⽤于执⾏指定的cURL会话。
 
 ## 涉及协议
 
-```bash
-file://
-gopher://     #gopher://<host>:<port>/<gopher-path>
-dict:// # dict://127.0.0.1:6379 //探测redis是否存活
-```
+| Protocol       | Details                                     | 3                       |
+| -------------- | ------------------------------------------- | ----------------------- |
+| file://        |
+| gopher://      | `gopher://<host>:<port>/<gopher-path>`      |
+| dict://        | dict://127.0.0.1:6379 //探测 redis 是否存活 |
+| (仅 java) url: | `url?url:=file:/flag%23.html`               | file 和 netdoc 都可以读 |
 
 ## gopher
-[gopher协议的利用](https://mp.weixin.qq.com/s/lVzMSXn42SjTPb5EnY8NgA)
+
+[gopher 协议的利用](https://mp.weixin.qq.com/s/lVzMSXn42SjTPb5EnY8NgA)
 
 如果 redis 有验证用 `gophper-redis-auth.py`
 
@@ -45,6 +47,6 @@ url=http://0/flag.php
 
 # Article
 
-[实战 | 利用SSRF渗透内网主机-下](https://mp.weixin.qq.com/s/oq7IC6Av4_fY7HBxH-8p0Q)
-[实战 | 利用SSRF渗透内网主机-中](https://mp.weixin.qq.com/s/bEhNuMJpI5y9fj5RGzYhXA)
-[实战 | 利用SSRF渗透内网主机-上](https://mp.weixin.qq.com/s/zmOLO3ilJdSl02s6aWLpXw)
+[实战 | 利用 SSRF 渗透内网主机-下](https://mp.weixin.qq.com/s/oq7IC6Av4_fY7HBxH-8p0Q)
+[实战 | 利用 SSRF 渗透内网主机-中](https://mp.weixin.qq.com/s/bEhNuMJpI5y9fj5RGzYhXA)
+[实战 | 利用 SSRF 渗透内网主机-上](https://mp.weixin.qq.com/s/zmOLO3ilJdSl02s6aWLpXw)
