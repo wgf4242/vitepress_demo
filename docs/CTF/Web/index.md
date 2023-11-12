@@ -203,8 +203,6 @@ select writefile('/home/ctf/'||(SELECT substr(sqlite_version(),2,1))||'sqliterc'
 [【安全练兵场】| BurpSuite 靶场系列之 SQL 注入](https://mp.weixin.qq.com/s/RqB-vMifxn0-4hrn0OEoHQ)
 [【安全练兵场】| BurpSuite 靶场系列之身份验证](https://mp.weixin.qq.com/s/wDWcdTdFRkI8cMK1_pv94w)
 
-[PHP 反序列化从 0 到 1](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247496642&idx=1&sn=d1c120b862c75f586492ee9daf011f95)
-[详解 PHP 反序列化字符逃匿](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247495677&idx=1&sn=8b5d7efcb290219f1af7029078d81012)
 [详解 PHP 弱类型安全问题](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247494684&idx=1&sn=8264be9d89d29cc3c2c493b9aaa8d35f)
 [Bypass_disable_function 总结](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247493192&idx=1&sn=e6ec9ea78e2faccc013787376aced1cc)
 [bypass\_无参数读文件和 RCE 的利用](http://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247492577&idx=1&sn=3011d1eebe62226644ad83e9f6fee67a)

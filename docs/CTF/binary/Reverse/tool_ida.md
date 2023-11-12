@@ -327,9 +327,10 @@ https://github.com/JusticeRage/Gepetto
 sudo ./linuxserver64
 
 socat TCP-LISTEN:12345,fork,reuseaddr EXEC:./test,pty,rawer
-# pwntools
+# 1. pwntools
 remote('127.0.0.1', 12345)
-# ida attach to process
+pause()
+# 2. ida attach to process
 ```
 
 # Article

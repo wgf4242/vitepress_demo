@@ -12,6 +12,12 @@ zip -q -d burpsuite_pro_v2022.9.jar chromium-linux64-105.0.5195.102.zip
 
 (Get-ChildItem burp*.jar)[0].Name | %{7z d -r $_ chromium-linux* chromium-macos*}
 ```
+## 条件竞争 
+ver: 2023.10.3.2
+
+在 Repeater中比如创建 20 请求加到同一个Group, 
+
+点击  Send 边的箭头 -> Send group by parallel (last-byte sync)
 
 ## 配置
 
@@ -53,6 +59,7 @@ java -jar <path-to-burp.jar> --install-plugin <path-to-plugin.jar>
 Destination host:  *
 别的正常填上级代理
 ```
+
 
 ## Reading
 

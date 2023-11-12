@@ -426,13 +426,7 @@ so 中 Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地
 - [Windows 平台用户层二进制漏洞模糊测试入门](https://mp.weixin.qq.com/s/nHuo1i21mI-TyqYL21l0RQ)
 - [ALF | 基于覆盖率的 Fuzzer 和 AFL](https://mp.weixin.qq.com/s/Xe8GL3pG7Bjmk5Hv8esLMw)
 
-## 实践与练习
-
-- [[原创]EXP 编写学习 之 栈溢出（一）](https://bbs.kanxue.com/thread-272505.htm)
-- [[原创]EXP 编写学习 之 SEH 利用 （二）](https://bbs.kanxue.com/thread-272555.htm)
-- [[原创]EXP 编写学习 之 网络上的 EXP（三）](https://bbs.kanxue.com/thread-272583.htm)
-- [[原创]EXP 编写学习 之 绕过 GS（四）](https://bbs.kanxue.com/thread-272598.htm)
-- [[原创]EXP 编写学习 之 绕过 SafeSEH（五）](https://bbs.kanxue.com/thread-272603.htm)
+## [实践与练习](index_30_%E5%AE%9E%E6%88%98.md)
 
 ### 实战分析
 

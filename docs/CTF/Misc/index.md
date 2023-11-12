@@ -6,6 +6,7 @@
 
 ## 解题思路
 
+- [文本处理/文字隐写](#文本隐写空白隐写)
 - Misc*password*密码字典\_dictionary_wordlists_fuzzing_SecLists-2023.2_5.zip
 - 1.不要路径有空格, 不要中文路径
 - 所有文件 尤其 txt， 用 sublime 打开全选查看。 有没\t, space, 可能是莫斯。
@@ -204,6 +205,21 @@ Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 sudo apt-get install imagemagick
 convert a.gif qr.jpg
 ```
+
+### 文本隐写/空白隐写
+
+| cmd                          | param                                                                                                                 | Description                                                                       |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 词频分析/统计                | 一堆字母的时候                                                                                                        |
+| 去重复                       |
+| 二进制                       | 只有 2 种字符<br>比如 8 空格 4 空格组成 <br>每 8 位<br>可能是二维码, 复制到 Excel 转黑白, 选中后条件格式突出显示      |
+| snow                         | `snow -C flag.txt`<br>`snow -C -p [pwd] snow.txt`                                                                     | Google:space tab steg, baidu: 空格 制表符 隐写 , http://www.darkside.com.au/snow/ |
+| nfs 流                       | misc_ntfs_stream_pyads.py<br>notepad 1.txt:flag.txt<br>NtfsStreamsEditor                                              |                                                                                   |
+| TTL 隐写                     | `127\|63\|255\|191` 2 进制前 2 位变化 `[SWPU2019]Network` ,63/127/191/255                                             |
+| sublime 查看                 | 是否有 0 宽隐写                                                                                                       |                                                                                   |
+| stegosaurus 剑龙             | python stegosaurus.py -x O_O.pyc                                                                                      |
+| base64 隐写                  | 多行 base64                                                                                                           |
+| 单词拼写错误的字母可能是 key | [google-10000-english.txt](https://github.com/first20hours/google-10000-english/blob/master/google-10000-english.txt) |
 
 ### 二维码
 
@@ -458,7 +474,7 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
 11. wav/音频隐写 https://www.sqlsec.com/2018/01/ctfwav.html https://blog.csdn.net/qq_51652400/article/details/123504708
     - 1.Audition/Audacity 看 多是摩斯码,
     - 2.看频谱 spectrogram(视图-频谱)/ audacity 轨道左侧文件名箭头-频谱
-    --------- 频谱完整视图, 右击 - Zoom to fit
+      --------- 频谱完整视图, 右击 - Zoom to fit
     - DB 波谱: 右击 左侧刻度 -> db
     - 3.听歌
     - 4. misc_dtmf / http://dialabc.com/sound/detect/index.html
@@ -489,7 +505,7 @@ LSB 隐写 用 uint8 读取 wav 然后提取每一个帧的 LSB
 
 ## 音频隐写 sstv
 
-扫描 `sstd -d 'flag.wav' -o 1.png`
+扫描 `sstv -d 'flag.wav' -o 1.png`
 
 长度 36 秒 Robot36
 

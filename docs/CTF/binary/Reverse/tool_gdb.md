@@ -64,9 +64,11 @@ sudo make install
 |             | until <br>until location                                 | 跳过循环体 <br> 运行到指定位置                                          |
 |             | list                                                     | 显示源代码, 需要编译时 -g                                               |
 |             | info proc mappings                                       | 显示 进程内存段                                                         |
-|             | [commands](#commands)                                                 | 到达断点时自动执行多个命令,                                             |
+|             | [commands](#commands)                                    | 到达断点时自动执行多个命令,                                             |
 |             | shell clear                                              | 清空屏幕 cls                                                            |
 | -- debug -- |                                                          |
+|             | list                                                     | 显示源码 , 见下面                                                       |
+|             | set disassembly-flavor intel                             | 设置 intel 风格汇编, 也可以 bash 中设置再进 gdb                         |
 |             | alsr off                                                 | 关闭 alsr                                                               |
 |             | `set *0x4007e48=0x7c6c`<br>`set $eax=*(int*)($rsp+0x50)` | 修改值                                                                  |
 | -- heap --  |                                                          | 查看堆,配合 x/addr 看位置                                               |
