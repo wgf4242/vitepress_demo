@@ -5,6 +5,9 @@
 
 # Web
 
+1. robots.txt
+2. 在 robots.txt 列表中访问 xxx.bak 测试 bak 文件。 
+3. 所有可访问页面 .bak 测试有没有
 尽量使用 burp 测试, 比如 /admin/../
 
 ## 题目提示

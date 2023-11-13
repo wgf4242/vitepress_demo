@@ -286,6 +286,7 @@ https://www.anquanke.com/post/id/195215
 [Frida04 - 基本API用法](http://mp.weixin.qq.com/s?__biz=MzU2NTkxMTU1NA==&mid=2247484558&idx=1&sn=b54b5f896ab2e829db67bba65d57bd49)
 [Frida05 - 高级API用法](http://mp.weixin.qq.com/s?__biz=MzU2NTkxMTU1NA==&mid=2247484569&idx=1&sn=0ff71bfee96bebebc7aa79a356d56ee7)
 [Frida06 - 一个简单的综合案例](http://mp.weixin.qq.com/s?__biz=MzU2NTkxMTU1NA==&mid=2247484585&idx=1&sn=bf1cee37d60309dbf89e2dc51eb95cba)
+[魔法打败魔法：Frida过Frida检测](https://mp.weixin.qq.com/s/UI0L_tOyv78kNkbAYsObdQ)
 
 - 反调试
 [移动安全之【魔改frida自编译去特征】超详细全过程](https://mp.weixin.qq.com/s/4MOTfYm-GMpZQFsLKOOHwQ)
