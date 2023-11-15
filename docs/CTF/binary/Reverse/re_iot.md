@@ -96,9 +96,17 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 [汽车CAN总线-01 介绍](https://mp.weixin.qq.com/s/Jognd-QPI6J9wO6V9OjnoA)
 
 ## 门卡 m1/ic/id
-
+[tools proxmark3 pm3](https://proxmarkbuilds.org/)
 [通过一道 CTF 题目学习 M1 卡的 AES 认证机制](https://mp.weixin.qq.com/s/PdJgVDsOnOAcid0DQTUrvg)
 [实战｜记通过手机复制澡卡的辛酸历程](https://mp.weixin.qq.com/s/cDXyPFDeE6S_xGBL3NucPQ)
+### pm3
+```sh
+cd client
+call setup.bat
+proxmark3.exe
+data load <file.bin>
+trace load -f <file.trace>
+```
 
 ## 渗透/SRC
 

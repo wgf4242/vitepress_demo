@@ -305,7 +305,9 @@ arg_1E7FBF= byte ptr  1E7FC7h ; 5.双击这里 进栈按u， 再按F5即可
 1.main 的 endp 出错下方的函数 全部按 u, 直到 0x402220, 右击 main, edit function 修改到 0x402220。然后在分析的代码处点击按 C。
 2.main 包含的全部函数按 u,按 u, 回到 main 头部 0x402219, 按 p
 
-### ida python 调试
+### ida python/调试
+[函数名变化 ](https://hex-rays.com/products/ida/support/ida74_idapython_no_bc695_porting_guide.shtml)
+
 
 https://github.com/ioncodes/idacode
 
