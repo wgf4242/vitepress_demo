@@ -71,7 +71,7 @@ sudo make install
 | -- debug -- |                                                          |
 |             | list                                                     | 显示源码 , 见下面                                                       |
 |             | set disassembly-flavor intel                             | 设置 intel 风格汇编, 也可以 bash 中设置再进 gdb                         |
-|             | alsr off                                                 | 关闭 alsr                                                               |
+|             | aslr off                                                 | 关闭 aslr                                                               |
 |             | `set *0x4007e48=0x7c6c`<br>`set $eax=*(int*)($rsp+0x50)` | 修改值                                                                  |
 |             | x/s &msg1                                                | 输出变量值
 | -- heap --  |                                                          | 查看堆,配合 x/addr 看位置                                               |
@@ -85,6 +85,17 @@ sudo make install
 |             | magic                                                    | 查看 malloc_hook system 等地址                                          |
 |             | fakefast <mallochook 地址>                               |
 |             | tel \*(0x7ffff588+0x30 + 4) = 0 赋值                     |
+
+## ASLR
+```sh
+$ cat /proc/sys/kernel/randomize_va_space       # 查看 ASLR
+$ echo 0 > /proc/sys/kernel/randomize_va_space  # 关闭 ASLR
+
+# 当使用  gdb 调试一个程序时，GDB 会自动关掉 ASLR。可以通过以下命令将它打开：
+$ (gdb) set disable-randomization off
+$ (gdb) info poc map # 查看进程地址映射表
+```
+
 
 ## x/examine/查看
 

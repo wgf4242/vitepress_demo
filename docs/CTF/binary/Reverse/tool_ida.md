@@ -19,6 +19,8 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - import 可看到 GetMessageBoxA, 在 import 处双击跳转
 - 读取卡死 载入选择 Binary
 
+
+- 基址设置: See Edit-->Segments-->Rebase program
 ### ida 中的汇编与类型
 
 defs.h
