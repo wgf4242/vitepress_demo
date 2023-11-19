@@ -95,10 +95,20 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 ## iot/car/汽车
 [汽车CAN总线-01 介绍](https://mp.weixin.qq.com/s/Jognd-QPI6J9wO6V9OjnoA)
 
-## 门卡 m1/ic/id
+## 门卡 m1/ICCard/id
 [tools proxmark3 pm3](https://proxmarkbuilds.org/)
 [通过一道 CTF 题目学习 M1 卡的 AES 认证机制](https://mp.weixin.qq.com/s/PdJgVDsOnOAcid0DQTUrvg)
 [实战｜记通过手机复制澡卡的辛酸历程](https://mp.weixin.qq.com/s/cDXyPFDeE6S_xGBL3NucPQ)
+
+可能是大端UTF8, GBK都试试
+```sh
+\u5F20 张 \u4E09 三
+5F 20 4E 09 20 30 34 30 34 30 39 00 00 00 00 00 # 张三 040409 (生日20040409)
+31 38 38 38 38 38 38 38 38 38 38 20 35 38 30 00 # 18888888888 580 (手机号18888888888 余额580)
+FF FF FF FF FF FF 08 77 8F 00 FF FF FF FF FF FF # 扇区分隔
+00 00 00 00 13 66 13 47 13 36 13 E6 13 37 13 17 # 明显数据倒置了, 正常00是在最后面 改成 71 31 73 ...
+```
+
 ### pm3
 ```sh
 cd client

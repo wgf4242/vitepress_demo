@@ -36,7 +36,7 @@ push 超过一个字节的数，会自动补全成32位，比如push 0x6873，�
     mov esi,0x20230000
     xor dword ptr [rip],0x9f
     nop
-    """
+
 ```
 
 ```sh

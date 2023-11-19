@@ -37,6 +37,7 @@ vm.setVerbose(false);  // 设置为true时日志太多
 [Unicorn及Unidbg学习记录](http://43.138.162.163:8090/archives/unicornji-unidbgxue-xi-ji-lu) 
 [unidbg|模拟执行so函数](https://mp.weixin.qq.com/s/4UblRmk3E5PjW9s3wcYo2w)
 [android逆向|unidbg去花指令](https://mp.weixin.qq.com/s/WSccv02CooGonrnq_U2KlQ)
+[自研Unidbg trace工具实战ollvm反混淆](https://mp.weixin.qq.com/s/uzaFsgnuOI8QFoaT_O10MQ)
 
 ---
 __Video__

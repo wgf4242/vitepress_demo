@@ -301,6 +301,12 @@ filehash: md5(cookie_secret+md5(filename))
 {{/with}}
 ```
 
+其他形式
+```js
+// pug 模板
+#{name}
+```
+
 ## Article
 
 [Python 沙箱逃逸-离线也有](https://mp.weixin.qq.com/s/_cYKlPzUgokvJ17ZVRhMxw)

@@ -23,6 +23,7 @@
 [frida辅助分析ollvm](https://bbs.pediy.com/thread-275265.htm) 
 [从开发的角度看看ollvm](https://bbs.pediy.com/thread-274996.htm) 
 [OLLVM-deflat 脚本学习](https://mp.weixin.qq.com/s/3ZiBPRK4NcOR_o4gnjO8GQ)
+[自研Unidbg trace工具实战ollvm反混淆](https://mp.weixin.qq.com/s/uzaFsgnuOI8QFoaT_O10MQ)
 
 看雪
 [ollvm分析及反混淆](https://mp.weixin.qq.com/s/ih-ysrNUkxFVXCeaUIcMkQ)
