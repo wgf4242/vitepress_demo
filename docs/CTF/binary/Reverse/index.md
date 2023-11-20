@@ -12,6 +12,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 
 前置准备
 
+1. 单字节对比类型 - 直接改汇编输出爆破
 1. go 语言用 ida8
 1. [反调试, 开插件 | 打补丁](anti-debug_%E5%8F%8D%E8%B0%83%E8%AF%95.md)
 1. 资源文件 0x80, 0xff 异或
@@ -51,6 +52,9 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 1. mrb 文件 - ruby 字节码 16 进制显示 RITE0300 , CISCN2022 babycode https://docs.qq.com/doc/DRmhseWVMV1dJbUR1
 2. swift ast https://docs.qq.com/doc/DRmhseWVMV1dJbUR1 CISCN2022 babytree
 3. ebpf 程序，使用 bpftool 提取字节码, [西湖论剑 2023-Berkeley](http://lu1u.bxsteam.tk/2023/02/03/2023XHLJ-RE/#Berkeley) , [2022 虎符 ftype](https://lu1u.bxsteam.tk/2022/03/28/RE_Challenge/) [字节码逆向](https://tttang.com/archive/1550/)
+
+- 算法相关
+    - rc4类型 直接内存改数据自动解
 
 解题技巧
 

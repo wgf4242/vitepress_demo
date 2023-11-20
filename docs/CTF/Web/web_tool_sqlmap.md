@@ -118,7 +118,7 @@ tamper=between,bluecoat,charencode,charunicodeencode,concat2concatws,equaltolike
 | ----------- | ------------------------------------------------------------------------ |
 | doc/        | 具体使用说明,例如多种语言的简要说明、PDF 版的详细说明、FAQ、作者信息等.  |
 | extra/      | 多种额外功能,例如发出声响 (beep)、运行 cmd、安全执行、shellcode 等.      |
-| Iib/        | 多种连接库,如五种注入类型请求的参数、提权操作等.                         |
+| lib/        | 多种连接库,如五种注入类型请求的参数、提权操作等.                         |
 | plugins/    | 各种数据库的信息和数据库通用事项.                                        |
 | procs/      | mssqlserver、mysql、. Oracle 和 postgresql 的触发程序                    |
 | shell/      | 多种注入成功后的多种 shell 远程连接命令执行和管理数据库                  |

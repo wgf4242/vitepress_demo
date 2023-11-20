@@ -264,6 +264,7 @@ hashcat -m 16500 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTc0OD
 ## domain
 
 ### NTLM
+[流量包分析](../Misc/misc_pcapng.md#ntlm)
 
 ```sh
 hashcat -O -m 1000 161cff084477fe596a5db81874498a24 dict.txt
