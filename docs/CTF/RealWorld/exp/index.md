@@ -251,6 +251,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [WinRAR 代码执行漏洞(CVE-2023-38831)【需要交互】](https://mp.weixin.qq.com/s/1Feg1PcSBwpg3Co9k_HzMA)
 [Typora 远程代码执行漏洞(CVE-2023-2317)](https://mp.weixin.qq.com/s/xj08AP19KyFLYwWtHwmDrQ)
 
+[Chrome XXE 漏洞 POC，实现对访客者本地文件读取工具（11月20日更新）](https://mp.weixin.qq.com/s/DmBpOKKkx2PbLSHY-nrO5w)
 ### Exploit/CVE/实战漏洞/Windows
 
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
