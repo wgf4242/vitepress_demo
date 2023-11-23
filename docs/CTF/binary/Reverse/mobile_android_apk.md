@@ -239,6 +239,8 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十二、大佬帮我分析一下](https://www.bilibili.com/video/BV1u8411S7xZ/)
 - [《安卓逆向这档事》十三、是时候学习一下 Frida 一把梭了(上)](https://mp.weixin.qq.com/s/T0K5RmTsDZ0RIc8Y-S325Q)
 - [《安卓逆向这档事》十四、是时候学习一下 Frida 一把梭了(中)](https://mp.weixin.qq.com/s/HZfiX6VI3G6X6If_4IfFRg)
+- [《安卓逆向这档事》十五、是时候学习一下Frida一把梭了(下)](https://mp.weixin.qq.com/s/97o3fX9AN_kl2GCLhHAfig)
+- [《安卓逆向这档事》十六、是时候学习一下Frida一把梭了(终)](https://mp.weixin.qq.com/s/BqqDsxB4u7QyTmBozZjMnw)
 - [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
 - [Android 逆向技术高阶大法](https://mp.weixin.qq.com/s/zMXOpxW6E5klbsjKVHZudg)
 

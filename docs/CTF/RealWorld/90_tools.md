@@ -1044,10 +1044,14 @@ URL：neo4j://localhost:7687
 ```bash
 # 方式1
 SharpHound.exe -c all # BloodHound\resources\app\Collectors\SharpHound.exe
+SharpHound.exe --ldapusername yangdming --ldappassword kier@n10 -c all
+
 # 方式2
 powershell -exec bypass -command "Import-Module ./SharpHound.ps1; Invoke-BloodHound -c all"
 # 方式3
 proxychains python3 bloodhound.py -u yangmei -p xrihGHgoNZQ -d xiaorang.lab --dns-tcp -ns 172.22.11.6 -c all --zip
+# 4
+proxychains bloodhound-python -d xiaorang.lab -u yangdming -p kier@n10 -gc dc.xiaorang.lab -c all
 ```
 
 zip 压缩包的格式保存，拷贝到 BloodHound 主机上，右侧图标 Upload Data

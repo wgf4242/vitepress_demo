@@ -9,3 +9,4 @@ main_arena - 0x10 == malloc_hook #  x &__malooc_hook 查看地址
 [『CTF』堆入门](https://mp.weixin.qq.com/s/lClNp8Hgess6z6VwLVyG_A)
 [ctfshow-pwn入门-堆前置-pwn135-140](https://mp.weixin.qq.com/s/ZbEG-3PN79ALVWi7pFJBSg)
 [ctfshow-pwn150-unsafe_unlink-2.23](https://mp.weixin.qq.com/s/gBm9-nnRuPe3g-mwkDQTHg)
+[ctfshow-pwn151-house_of_spirit-2.23](https://mp.weixin.qq.com/s/oS_T3pWcmEFcPP1rWc1qEA)
