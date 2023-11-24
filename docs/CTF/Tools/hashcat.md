@@ -182,7 +182,12 @@ $rar5$16$db3d60d27258f6210cc73f57c0f40e65$15$d8e6585d8f8d4843e21c3ca16160c6cb$8$
 hashcat -m 13000 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
 hashcat -m 13000 -O -a 0 test.hash pwd.txt
 ```
+### crc32
 
+```sh
+hashcat -m 11500 d2b184ff:00000000 -O -a 3  --increment --increment-min 1 --increment-max 4 ?a?a?a?a
+hashcat -m 11500 -a 0 hash.txt passwordlist.txt
+```
 ### deepsound
 
 ```s
