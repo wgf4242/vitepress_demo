@@ -64,7 +64,7 @@ nc
 边界代理
 
 - 代理类别：HTTP 代理、socks 代理、telnet 代理、ssl 代理
-- 代理工具：EarthWorm、reGeorg(http 代理)、proxifier(win)、sockscap64(win)、proxychains(linux)
+- 代理工具： [EarthWorm](https://mp.weixin.qq.com/s/Ss9IhP0WEWVmABxZfYXXgQ) 、reGeorg(http 代理)、proxifier(win)、sockscap64(win)、proxychains(linux)
 
 ### tcptunnel 端口转发
 

@@ -154,6 +154,7 @@ arr[$(cat /flag)]
 | jpg      |        |        | stegdetect                   | stegdetect -tjopi -s 10.0 ./a.jpg
 |          |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
 |          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
+|          |        |        | stegdetect                   | ./stegdetect -tF test.jpg                                                                                                                                                                                                   |
 | jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
 | jpg      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
 | jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                                                                                                                                                |
@@ -268,7 +269,10 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 [Format](https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html)
 
-伪加密
+
+1. rockyou.txt 破解
+
+2. 伪加密
 
 - ZipCenOp.jar r filename
 - 010 -> Ctrl+G -> 6, 奇数加密，偶数未加密。改为偶数尝试, 010 editor 看 - ushort flags
