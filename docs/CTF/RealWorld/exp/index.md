@@ -277,6 +277,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [微信小程序渗透测试 -- 反编译小程序](https://mp.weixin.qq.com/s/ghYVqhBEv7Namr1P_Ew-bQ)
 * [小程序逆向案例-某新闻sign之md5加密](https://mp.weixin.qq.com/s/NwQUyQNfplu6D8Xsm3_-zw)
 [微信小程序漏洞之accesskey泄露](https://mp.weixin.qq.com/s/l3titZiKqFKsC14hEDRarg)
+[Web实战】零基础微信小程序逆向](https://mp.weixin.qq.com/s/5RHvNd6jwsCh_Mqz2u18IA)
 
 ### Exploit/CVE/实战漏洞/IOT
 

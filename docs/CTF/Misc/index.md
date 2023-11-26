@@ -6,6 +6,7 @@
 
 ## 解题思路
 
+- 1.binwalk foremost
 - [文本处理/文字隐写](#文本隐写空白隐写)
 - Misc*password*密码字典\_dictionary_wordlists_fuzzing_SecLists-2023.2_5.zip
 - 1.不要路径有空格, 不要中文路径
@@ -88,6 +89,8 @@
   - 1-8 小写
   - seclist 压缩包里找找
 - DTMF http://dialabc.com/sound/detect/index.html
+- vmdk
+  - 挂载到虚拟机, 比如 qnx 硬盘 mount -t qnx6 /dev/sdc1 /mnt
 
 波形图 高为 1 低为 0 转二进制
 BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)
@@ -148,7 +151,8 @@ arr[$(cat /flag)]
 | 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
 | 多图     |        |        |                              | 1.修改日期排序, 看区别 <br>2.创建时间排序, 看区别                                                                                                                                                                |
 | 图片     |        |        |                              | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
-| jpg      |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
+| jpg      |        |        | stegdetect                   | stegdetect -tjopi -s 10.0 ./a.jpg
+|          |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
 |          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
 | jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
 | jpg      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
@@ -235,6 +239,9 @@ convert a.gif qr.jpg
 - [二维码之 QR 码生成原理与损坏修复 ](https://www.cnblogs.com/luogi/p/15469106.html)
 - [ez-qrcode](https://yous.be/2014/12/07/seccon-ctf-2014-qr-easy-write-up/)
 - [CTFSHOW-36D 杯: ez-qrcode](https://byxs20.github.io/posts/15890.html#4-%E6%95%B0%E6%8D%AE%E8%A7%A3%E7%A0%81)
+
+[二维码 QRCode 标准阅读](https://note.tonycrane.cc/ctf/misc/qrcode/)
+[二维码 QRCode 标准阅读 - En](https://gcore.jsdelivr.net/gh/tonycrane/tonycrane.github.io/p/409d352d/ISO_IEC18004-2015.pdf)
 
 ## PDF 文件
 

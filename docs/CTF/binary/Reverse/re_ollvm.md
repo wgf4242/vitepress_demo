@@ -55,6 +55,7 @@
 [ollvm算法还原案例分享 安卓高研3w班（8月班）](https://mp.weixin.qq.com/s/tbWaCy41kVSegGd6Sqi3EA)
 [浅尝ollvm轻度混淆后的加密算法分析](https://mp.weixin.qq.com/s/f_faZEZo9qxwRxkF2qiA9A)
 [ollvm反混淆学习](https://mp.weixin.qq.com/s/4Wyyaa14CHWyKhqLPPIsqw)
+[同盾ollvm分析](https://mp.weixin.qq.com/s/PMU888FvcSeVTRZwqJPL9w)
 
 [Here-is-SG | LLVM学习笔记](https://www.cnblogs.com/Here-is-SG/p/16708170.html)
 [Here-is-SG | llvm - 基本块分割](https://www.cnblogs.com/Here-is-SG/p/16744957.html)

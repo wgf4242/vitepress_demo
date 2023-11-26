@@ -28,12 +28,14 @@ qemu-arm -L ./tbox_app.bin
 
 4. 脚本恢复符号表
 
+## S19
+[label](iot/re_iot_s19.md)
 
 ## 题目
 
 [openwrt | AntCTF x D³CTF 2023 d3op 复盘笔记](https://mp.weixin.qq.com/s/97TfeJgZeG-lLzWc95teBw)
 
-## stm32
+## STM32
 
 [按这个配置](https://www.bilibili.com/video/BV1LX4y157TP/)
 [IOT 安全——stm32 从做题到复现](https://www.anquanke.com/post/id/229321)
@@ -92,8 +94,10 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [锐捷 RG-EW1200G远程代码执行漏洞(CVE-2023-3306)](https://mp.weixin.qq.com/s/N2WFXkEpbeFQ4wMrYJ0bMw)
 - [手把手玩转路由器漏洞挖掘系列 - 固件加解密](https://mp.weixin.qq.com/s/mbL0MYNAjkPrMix6hg2CYw)
 
-## iot/car/汽车
+## IoT/car/汽车
 [汽车CAN总线-01 介绍](https://mp.weixin.qq.com/s/Jognd-QPI6J9wO6V9OjnoA)
+[深入理解CAN总线](https://mp.weixin.qq.com/s/dnZaM9rjhBImS0vQ5yLQ3A)
+
 
 ## 门卡 m1/ICCard/id
 [tools proxmark3 pm3](https://proxmarkbuilds.org/)

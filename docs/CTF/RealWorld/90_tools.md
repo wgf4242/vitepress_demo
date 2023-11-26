@@ -436,6 +436,7 @@ Ladon url.txt pythonpoc.ini
 [Linux 或 Windows 上实现端口映射](https://mp.weixin.qq.com/s/V9iw_Z0B-dTJikvnwLUEAQ)
 [DNS 隧道 | Cobalt Strike 的使用（二）](https://mp.weixin.qq.com/s/qLtfmiBVEb9pEfmcAb0RMw)
 [内网代理和穿透工具的分析记录 | Vemon](https://mp.weixin.qq.com/s/pV9nQ6uzLTT2cqO1ZaJz6w)
+[【Tips+1】IOX 反向穿透四层网段](https://mp.weixin.qq.com/s/9mcF_Snk-loPO-ApI5ECag)
 
 多层代理攻击方式
 

