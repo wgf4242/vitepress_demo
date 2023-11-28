@@ -409,3 +409,9 @@ pointer， address
 ·利用第一個 address 來改寫第二個 address ，用第二個 address 來建構真的要的 address。
 
 √ RBP Chain
+
+# FAQ
+
+## 如果出错了 `formatxxx [rbx]`
+
+看一下rbx的值是什么..
