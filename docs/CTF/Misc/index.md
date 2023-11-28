@@ -75,6 +75,8 @@
   - 二进制数据 大端|小端 都要看
   - 魔改文件头 对比搜索文件头前 1-2Bytes，中 3-4Bytes，有无对应文件头
   - veracrypt
+- PPT
+  - 1.看每页备注, 2.pptx 解压notesSlide1.xml `<a:t>`标签
 - 隐写
 
   - key | OurSecret 隐写 - 提示:我们的秘密
