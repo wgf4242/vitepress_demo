@@ -1,3 +1,4 @@
+[工具IDARustDemangler/IDARustDemangler: Rust Demangler & Normalizer plugin for IDA](https://github.com/timetravelthree/IDARustDemangler)
 [几道rust逆向](https://www.cnblogs.com/Here-is-SG/p/17216822.html) 
 [一道Rust逆向Writeup](https://blog.fullstackpentest.com/a-rust-reverse-writeup.html) 
 [Rust 逆向——00.Hello,World](https://pxiaoer.blog/2021/12/26/rust-reverse-00/)
