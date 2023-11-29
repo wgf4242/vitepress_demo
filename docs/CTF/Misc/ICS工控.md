@@ -36,7 +36,7 @@
 | .mwp .smart    | STEP 7-MicroWIN SMART                                    |
 | .pcz           | 力控 ForceControl,                                       |
 |                | 恢复 - 开发 - 忽略, 可解压看图片(恢复后找工程路径也可以) |
-| .cmp           | 组太王                                                   |
+| .cmp           | 组态王                                                   |
 
 ## Download
 

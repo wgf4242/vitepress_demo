@@ -35,3 +35,10 @@ call_user_func(array($myobject, 'say_hello'));
  O:7:"Student":1:{s:1:"a";i:123;}  # =>
 O:+7:"Student":1:{s:1:"a";i:123;}
 ```
+
+`if(!preg_match('/^[Oa]:[\d]+|Array|Iterator|Object|List/i',$_GET['Pochy'])){`
+```sh
+# php_unserialize_03_startwith_C.php
+O:7:"Student":1:{s:1:"a";i:123;} =>
+C:7:"Student":1:{s:1:"a";i:123;}
+```

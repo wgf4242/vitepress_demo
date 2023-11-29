@@ -1,3 +1,10 @@
+直接ida打开s19文件，显示为 Motorola S-record Format, type选ARM Little-endian。直接有函数解析 
+
+- 下面先不用看
+
+
+010 Editor打开后自动转成bin文件了，直接保存即可。
+
 [痞子衡嵌入式：ARM Cortex-M 文件那些事（8）- 镜像文件(.bin/.hex/.s19) - 掘金](https://juejin.cn/post/6964716708204380173)
 
 Motorola 镜像文件标准 S-Record
