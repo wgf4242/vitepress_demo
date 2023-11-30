@@ -53,6 +53,7 @@
   - Fence Code
   - 画图, 比如 01 多行，把 1 画出来。连上看看效果。
   - 大文件: 1.混乱字节且 2.大小整数 20mb 倍数 测 veracrypt（或 truecrypt）
+  - 小白说：zo23n，小黑说：f5s7e `zero(0)one(1)23nine(9) four(4)five(5)six(7)eight(8)`
 - 不明数字+字母
   - Caesar 后过滤 16 进制。
 - 不明 16 进制/字符串
@@ -138,6 +139,7 @@ arr[$(cat /flag)]
 
 | format   | 支 key | 无 key | 工具                         | 使用                                                                                                                                                                                                             |
 | -------- | ------ | ------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| png      |        |        | Misc_steg_lsb_extract.py     |
 | png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                                                                                                                                                       |
 | png      |        |        | steg-solve/cloacked-pixel    | 低位有 lsb 但提取 rgb0 没信息，可能为 cloacked-pixel                                                                                                                                                             |
 | png      | √      | √      | stegpy                       | stegpy <file> -p                                                                                                                                                                                                 |

