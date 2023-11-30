@@ -280,6 +280,7 @@ start attack
 [使用插件加密处理密码](https://mp.weixin.qq.com/s/72S-mYCHEnQZBPEIcKME3Q)
 [服务器端漏洞篇之身份验证专题](https://mp.weixin.qq.com/s/xto4_GFykjYC1it0bgQNJQ)
 [Burpsuite 指纹特征绕过](https://mp.weixin.qq.com/s/GVVZYKQsuWXqRap9zGfFDA)
+[九维团队-绿队（改进）| APP安全-Frida联动BurpSuite实现自动加解密](https://mp.weixin.qq.com/s/jdeEmwz8fsySUkszFbZwpA)
 
 ## plugins
 

@@ -75,6 +75,8 @@
   - 二进制数据 大端|小端 都要看
   - 魔改文件头 对比搜索文件头前 1-2Bytes，中 3-4Bytes，有无对应文件头
   - veracrypt
+- PPT
+  - 1.看每页备注, 2.pptx 解压 notesSlide1.xml `<a:t>`标签
 - 隐写
 
   - key | OurSecret 隐写 - 提示:我们的秘密
@@ -132,7 +134,7 @@ arr[$(cat /flag)]
 
 3 替换 z yihr{Pfit3bf_Q3_NQM} 中 quipquip 不支持数字 3 改成 z -- yihr{Pfitzbf_Qz_NQM}，用 quipquip 解得 flag{Welcome_To_RTS} => flag{Welcome_To_CTF}
 
-## 图片题
+## 图片题/wav
 
 | format   | 支 key | 无 key | 工具                         | 使用                                                                                                                                                                                                             |
 | -------- | ------ | ------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -151,14 +153,15 @@ arr[$(cat /flag)]
 | 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
 | 多图     |        |        |                              | 1.修改日期排序, 看区别 <br>2.创建时间排序, 看区别                                                                                                                                                                |
 | 图片     |        |        |                              | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
-| jpg      |        |        | stegdetect                   | stegdetect -tjopi -s 10.0 ./a.jpg
+| jpg      |        |        | stegdetect                   | stegdetect -tjopi -s 10.0 ./a.jpg                                                                                                                                                                                |
 |          |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
 |          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
-|          |        |        | stegdetect                   | ./stegdetect -tF test.jpg                                                                                                                                                                                                   |
+|          |        |        | stegdetect                   | ./stegdetect -tF test.jpg                                                                                                                                                                                        |
 | jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
 | jpg      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
 | jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                                                                                                                                                |
 | jpg      |        |        | jphs                         |
+| wav      | √      |        | SilentEye                    |
 | bmp      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
 | bmp      | √      |        | jphs05/Jphswin               | jphs05                                                                                                                                                                                                           |
 | gif      |        |        | identify                     | 时间轴信息隐藏 `identify -format "%T\n" 100.gif` , 010 中可看 `GRAPHICCONTROLEXTENSION >ushort DelayTime` <br> 分离文件 `convert a.gif flag.png` <br> 拼图变透明色 `convert a.gif -transparent white result.gif` |
@@ -268,7 +271,6 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 ### 压缩包/zip
 
 [Format](https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html)
-
 
 1. rockyou.txt 破解
 
@@ -480,7 +482,7 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 1. mediainfo 查看
 2. 音频提取 sstv 处理
 
-## 音频题目
+## 音频题目/wav/mp3
 
 [关于音频隐写的一些总结](https://mp.weixin.qq.com/s/8U_UGZh9NujVKxJ-_tku8w)
 多个相同音频, 通过导入后反相识图。链接如下。
@@ -518,7 +520,7 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
 
 LSB 隐写 用 uint8 读取 wav 然后提取每一个帧的 LSB
 
-## 音频隐写 sstv
+### 音频隐写 sstv
 
 扫描 `sstv -d 'flag.wav' -o 1.png`
 
