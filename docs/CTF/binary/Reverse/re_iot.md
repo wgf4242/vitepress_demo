@@ -4,6 +4,7 @@
 sudo apt-get install liblzo2-dev liblzma-dev
 pip3 install git+https://github.com/sviehb/jefferson.git
 binwalk -Me rootfs.img
+-  再随便 file ./usr/bin/xxx 看文件架构 ELF 32-bit LSB executable表示最低有效位 小端
 方式 2.取证大师
 
 # IOT

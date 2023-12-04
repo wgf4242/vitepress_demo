@@ -226,7 +226,7 @@ convert a.gif qr.jpg
 | 词频分析/统计                | 一堆字母的时候                                                                                                        |
 | 去重复                       |
 | 二进制                       | 只有 2 种字符<br>比如 8 空格 4 空格组成 <br>每 8 位<br>可能是二维码, 复制到 Excel 转黑白, 选中后条件格式突出显示      |
-| snow                         | `snow -C flag.txt`<br>`snow -C -p [pwd] snow.txt`                                                                     | Google:space tab steg, baidu: 空格 制表符 隐写 , http://www.darkside.com.au/snow/ |
+| snow/Tab/空格                | `snow -C flag.txt`<br>`snow -C -p [pwd] snow.txt`                                                                     | Google:space tab steg, baidu: 空格 制表符 隐写 , http://www.darkside.com.au/snow/ |
 | nfs 流                       | misc_ntfs_stream_pyads.py<br>notepad 1.txt:flag.txt<br>NtfsStreamsEditor                                              |                                                                                   |
 | TTL 隐写                     | `127\|63\|255\|191` 2 进制前 2 位变化 `[SWPU2019]Network` ,63/127/191/255                                             |
 | sublime 查看                 | 是否有 0 宽隐写                                                                                                       |                                                                                   |

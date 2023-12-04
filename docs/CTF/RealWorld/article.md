@@ -455,6 +455,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 
 [2021 年【Hacking 黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
 [Cobalt Strike的各类反向上线操作](https://mp.weixin.qq.com/s/lISljMJGxxZaRz92-PgE4Q)
+[浅谈IP地址溯源方法](https://mp.weixin.qq.com/s/NT6C5ySbzmAWDLtskuHuyw)
 
 ## 溯源
 

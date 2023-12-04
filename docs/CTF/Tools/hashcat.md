@@ -187,6 +187,7 @@ hashcat -m 13000 -O -a 0 test.hash pwd.txt
 ```sh
 hashcat -m 11500 d2b184ff:00000000 -O -a 3  --increment --increment-min 1 --increment-max 4 ?a?a?a?a
 hashcat -m 11500 -a 0 hash.txt passwordlist.txt
+hashcat -m 11500 -a 3 crc32.txt ?b?b?b
 ```
 ### deepsound
 

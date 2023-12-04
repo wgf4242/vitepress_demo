@@ -216,6 +216,8 @@ https://syst3mfailure.io/
 - [好好说话之 Tcache Attack（1）：tcache 基础与 tcache poisoning](https://blog.csdn.net/qq_41202237/article/details/113400567)
 - [好好说话之 Tcache Attack（2）：tcache dup 与 tcache house of spirit](https://blog.csdn.net/qq_41202237/article/details/113527665)
 - [好好说话之 Tcache Attack（3）：tcache stashing unlink attack](https://blog.csdn.net/qq_41202237/article/details/113604261)
+- [PWN学习之LLVM入门](https://mp.weixin.qq.com/s/s7dQyS5DuKmtTZGq4J78iA)
+
 
 ## Video
 

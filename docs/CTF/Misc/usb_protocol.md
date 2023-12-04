@@ -1,5 +1,14 @@
 
 # USB协议/提取 usb 信息
+
+设备的信息都在 GET DESCRIPTOR Response DEVICE, 看IdProduct
+
+过滤 usb.idProduct 看 IdProduct 值为设备名
+
+* 键盘流量中39对应的是大写锁定
+* 02开头代表按键时同时按下了shift
+* usbhid.data 导出不了 用 usb.capdata
+
 ## 介绍
 https://blog.csdn.net/qq_43625917/article/details/107723635
 https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf

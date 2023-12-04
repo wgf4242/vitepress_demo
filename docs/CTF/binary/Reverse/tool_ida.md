@@ -9,6 +9,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
   - Option - General - Strings - Default8bit - cp936 , 一定要在 Shift+F12 之前这样做。否则不要保存数据，重来
   - 方式 2 选中地址，按 alt+a，设置 c style 即可
   - Shift+F12, 右击 Rebuild
+- 加载程序后 选项 - Auto Comments √
 - General - Instruction indentation : 20
 - 关闭自动反汇编: 工具栏 绿色按钮切换/Analysis, 才能方便手动改机器码去花指令
 - 汇编窗口不能显示伪代码: `HKEY_CURRENT_USER\Software\Hex-Rays\IDA\Hidden Messages`
@@ -19,8 +20,8 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - import 可看到 GetMessageBoxA, 在 import 处双击跳转
 - 读取卡死 载入选择 Binary
 
-
 - 基址设置: See Edit-->Segments-->Rebase program
+
 ### ida 中的汇编与类型
 
 defs.h
@@ -44,6 +45,16 @@ defs.h
 // void* ptr -> void* ptr[]
 ```
 
+### 枚举值修复
+
+举例 ptrace: `sub_44CC50(12LL, a1, 0LL, v7);`
+伪代码里面的 sub_44CC50 就是 ptrace 函数，点进去可以看到 sys_ptrace 的调用。
+
+选中 12 这个数字，按下快捷键 "M"，在弹出的窗口中选择对应的常量值，在弹出的窗口 CTRL + F 搜索 ptrace 相关的常量值，可以找到 PTRACE_GETREGS，不知道常量值名字可以去查查开
+`sub_44CC50)(PTRACE_GETREGS, a1, 0LL, v7);`
+
+快捷键 CTRL + ALT + X，查看全局对 field_40 这个字段的交叉引用, 再进一步修正
+
 ## 快捷键
 
 | 快捷键          | 描述                               |
@@ -65,6 +76,7 @@ defs.h
 | 右击 E          | Edit Function                      |
 | Debug \| Ctrl+E | SetIP                              |
 | Debug \| F4     | 运行到光标                         |
+| CTRL + ALT + X  | 全局对 field_40 字段引用           |
 
 ## 窗口介绍
 
@@ -308,8 +320,8 @@ arg_1E7FBF= byte ptr  1E7FC7h ; 5.双击这里 进栈按u， 再按F5即可
 2.main 包含的全部函数按 u,按 u, 回到 main 头部 0x402219, 按 p
 
 ### ida python/调试
-[函数名变化 ](https://hex-rays.com/products/ida/support/ida74_idapython_no_bc695_porting_guide.shtml)
 
+[函数名变化 ](https://hex-rays.com/products/ida/support/ida74_idapython_no_bc695_porting_guide.shtml)
 
 https://github.com/ioncodes/idacode
 

