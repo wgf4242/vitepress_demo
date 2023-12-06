@@ -52,6 +52,7 @@ $$
 * [密码学 ｜ 使用z3-solver破解随机数](https://mp.weixin.qq.com/s/UWKmWQnchRyz5a8zQo_HyA)
 * [密码学 ｜ 6.4.2 椭圆Elgamal公钥密码系统](https://mp.weixin.qq.com/s/EjhPlck9-7MzIZvstriaOg)
 * [密码学 ｜ 6.5 公钥密码学的发展](https://mp.weixin.qq.com/s/DsuUBRn7raqAwgfi181S4w)
+* [密码学 | Lenstra的椭圆曲线分解算法](https://mp.weixin.qq.com/s/S5sesERQIlJnFVoDi4bxMA)
 * [恶意代码系列 ｜基于图的恶意代码检测方法](https://mp.weixin.qq.com/s/BLoqSpdjokbRHSIMp8Femw)
 * [RSA专题——泄露与攻击](https://mp.weixin.qq.com/s/uQLwGfFRndDwa204WH81lQ)
 * [RSA专题——coppersmith](https://mp.weixin.qq.com/s/9-kf1bsftcpuA8OoSeUJ5w)

@@ -172,6 +172,7 @@ places.sqlite, 浏览历史 `moz_places`
 [PC 微信 | 钓鱼场景下微信聊天记录回传](https://mp.weixin.qq.com/s/ROCTBw8hM8mDEuIq5Vyhsg)
 [PC 微信 | 免登录读取别人的 WX 聊天记录](https://mp.weixin.qq.com/s/ub1eQespid6BeODGM7kh8w)
 [PC 微信 | 攻防演练中解密微信聊天记录寻找密码的 Tips](https://mp.weixin.qq.com/s/kG7Wlp3XwOlQQqNPEXOmiQ)
+[PC 微信 | 提取微信记录](https://github.com/LC044/WeChatMsg)
 [Android | 半自动微信数据库脱密及解析，生成词云和条状图 ](https://www.52pojie.cn/thread-1724737-1-1.html)
 [Android | 取证之微信 8.0.38 版本数据库解密分析](https://mp.weixin.qq.com/s/OAzhnQPd_sHT5J1oMrrKFw)
 [【Android取证篇】Android设备USB调试打开方式(开发者模式)](https://mp.weixin.qq.com/s/9-AXZ35v_zRnTO70R4K5bg)

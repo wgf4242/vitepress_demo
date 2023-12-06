@@ -47,4 +47,10 @@ path E:\Software\CTF\wabt-1.0.30\bin;%path%
 wasm2c crypt.wasm -o wasm.c
 # 只链接不编译，不报错
 gcc -c wasm.c -o w
+
 ```
+
+
+# Article
+[JS逆向之wasm逆向(二进制)](https://mp.weixin.qq.com/s/urN5QOX0trRND3z9OsNVoA)
+[JS逆向之wasm逆向（二）](https://mp.weixin.qq.com/s/BIAVTWpxc9OvvuWFRNfhNg)
