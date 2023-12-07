@@ -34,6 +34,7 @@
 - unknown 数据
   - 多用 sublime 看可能有零宽
   - ciphey
+  - 每2个字符换位置
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
   - base64 换表
