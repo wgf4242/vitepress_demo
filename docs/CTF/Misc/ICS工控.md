@@ -37,6 +37,7 @@
 | .pcz           | 力控 ForceControl,                                       |
 |                | 恢复 - 开发 - 忽略, 可解压看图片(恢复后找工程路径也可以) |
 | .cmp           | 组态王                                                   |
+| .mcp           | [McgsPro ](https://mcgs.lanzoue.com/b01kua46h)           |
 
 ## Download
 
@@ -47,13 +48,13 @@
 [TIA V17](https://support.industry.siemens.com/cs/document/109784440/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v17-trial-download?dti=0&lc=en-WW)
 [TIA V18](https://support.industry.siemens.com/cs/document/109807109/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v18-trial-download?dti=0&lc=en-WW)
 
-## pcap 包 Trailer 导出
+### pcap 包 Trailer 导出
 
 看一下异常信息的包序号，去查看完整信息。
 
 tshark -r 04.pcap -T fields -e eth.trailer | sed -e "/^\s\*$/d" -e "s/://g" >aa
 
-## AutoThink 使用
+### AutoThink 使用
 
 工控编程题:
 IW: Word
@@ -64,17 +65,22 @@ ID: DWORD
 
 双击 IW2 值修改。再点空白处。
 
-### 运行仿真
+#### 运行仿真
 
 在线 - 仿真， 在线 - 运行。(可点图标)
 
-## s7comm
+### s7comm
 
 Ethernet - Trailer 字段,要注意有时有信息
 
 ## Wincc
 
 怎样搜索？ 全选 - 右键链接 - 文本
+
+### McgsPro
+
+工具 - 模拟运行 - 工程下载 -启动运行。 看用户窗口。。。每个点一下。有没有出问题 的界面。
+或者不模拟的情况下每个窗口看看有没有 奇怪字符。。
 
 ## 常用 PLC 指令
 
