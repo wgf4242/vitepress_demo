@@ -30,6 +30,11 @@ tshark怎样确定协议字段?
 tshark -Y http
 tshark -Y modbus -r 3.pcapng
 
+```sh
+# 导出16进制hexdump型 原始数据
+tshark -r a.pcapng -Y 'frame.number == 24044' -x
+```
+
 #### 导出http文件
 ```sh
 path D:\Program Files\Wireshark;%path%

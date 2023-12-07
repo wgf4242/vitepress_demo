@@ -107,7 +107,7 @@ sudo sysdig -r test.scap -c spy_users
 [doc ByteCTF2022 ](https://bytedance.feishu.cn/docx/doxcnWmtkIItrGokckfo1puBtCh)
 
 ### NTLM
-
+可用 [NTLMRawUnhide](https://github.com/mlgualtieri/NTLMRawUnhide) 从流量包提取数据
 
 通过数据包拼接出NTLM hash:username::domain:challenge:HMAC-MD5:blob
 - username:User name
