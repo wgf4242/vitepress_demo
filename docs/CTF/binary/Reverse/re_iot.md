@@ -4,8 +4,9 @@
 sudo apt-get install liblzo2-dev liblzma-dev
 pip3 install git+https://github.com/sviehb/jefferson.git
 binwalk -Me rootfs.img
--  再随便 file ./usr/bin/xxx 看文件架构 ELF 32-bit LSB executable表示最低有效位 小端
-方式 2.取证大师
+
+- 再随便 file ./usr/bin/xxx 看文件架构 ELF 32-bit LSB executable 表示最低有效位 小端
+  方式 2.取证大师
 
 # IOT
 
@@ -16,20 +17,21 @@ qemu-arm -L ./tbox_app.bin
 ## 分析方式
 
 4. binwalk file 有没有符号表
-   1. 没有信息时 
+   1. 没有信息时
    2. binwalk -e file.bin
    3. binwalk -Me file
-   , 再 binwalk file
-1. Binwalk -A 命令来获取目标固件的CPU架构等信息(比如是 Big Endian的指令)
-2. 其次，使用IDA Pro加载PowerPC big endian架构的反汇编引擎进行分析。
-   1. 比如找到 lis    r9, ((unk_339AB8+0x10000)@h)  可能0x10000为固件加载地址。
-3. 重新使用IDA Pro加载固件文件，并按照下图进行配置。配置完成后，IDA Pro能够正常的分析固件的函数调用关系。
+      , 再 binwalk file
+1. Binwalk -A 命令来获取目标固件的 CPU 架构等信息(比如是 Big Endian 的指令)
+1. 其次，使用 IDA Pro 加载 PowerPC big endian 架构的反汇编引擎进行分析。
+   1. 比如找到 lis r9, ((unk_339AB8+0x10000)@h) 可能 0x10000 为固件加载地址。
+1. 重新使用 IDA Pro 加载固件文件，并按照下图进行配置。配置完成后，IDA Pro 能够正常的分析固件的函数调用关系。
 
 ![Alt text](../../../public/imgs/re_iot_rom.jpg)
 
 4. 脚本恢复符号表
 
 ## S19
+
 [label](iot/re_iot_s19.md)
 
 ## 题目
@@ -46,6 +48,7 @@ qemu-arm -L ./tbox_app.bin
 afx hex bin 文件 stm32 练习
 
 ida 载入时
+
 ```
 Processor Option
 ARMv7-M , 确定
@@ -91,21 +94,25 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [TP-Link WR740 后门漏洞复现](https://mp.weixin.qq.com/s/mcAOxhih8Yq8tZe0dAdInA)
 - [D-Link DIR-820L 1.05B03 命令注入漏洞 CVE-2022-26258 复现](https://mp.weixin.qq.com/s/Hc2DHKBlKhSwEoFaquKgzw)
 - [TOTOLINK CVE-2022-25084 漏洞分析&复现](https://mp.weixin.qq.com/s/hD0a_AQAtM8npD7mHizrIA)
-- [Cisco RV340，RV340W，RV345和RV345P从零开始复现 CVE-2023-20073](https://mp.weixin.qq.com/s/xCKzdaRq4D5svTc__tXPFQ)
-- [锐捷 RG-EW1200G远程代码执行漏洞(CVE-2023-3306)](https://mp.weixin.qq.com/s/N2WFXkEpbeFQ4wMrYJ0bMw)
+- [Cisco RV340，RV340W，RV345 和 RV345P 从零开始复现 CVE-2023-20073](https://mp.weixin.qq.com/s/xCKzdaRq4D5svTc__tXPFQ)
+- [锐捷 RG-EW1200G 远程代码执行漏洞(CVE-2023-3306)](https://mp.weixin.qq.com/s/N2WFXkEpbeFQ4wMrYJ0bMw)
 - [手把手玩转路由器漏洞挖掘系列 - 固件加解密](https://mp.weixin.qq.com/s/mbL0MYNAjkPrMix6hg2CYw)
 
 ## IoT/car/汽车
-[汽车CAN总线-01 介绍](https://mp.weixin.qq.com/s/Jognd-QPI6J9wO6V9OjnoA)
-[深入理解CAN总线](https://mp.weixin.qq.com/s/dnZaM9rjhBImS0vQ5yLQ3A)
+
+- [汽车 CAN 总线-01 介绍](https://mp.weixin.qq.com/s/Jognd-QPI6J9wO6V9OjnoA)
+- [深入理解 CAN 总线](https://mp.weixin.qq.com/s/dnZaM9rjhBImS0vQ5yLQ3A)
+- [天刃 - 车联网安全渗透测试系统 测试 ivi、tbox、gw、分析固件以及逆向工程](https://mp.weixin.qq.com/s/nAJeM60ooKNF-AzZFx4ACw) [Github](https://github.com/TianWen-Lab/TranSec/) [Pan](https://pan.baidu.com/s/1jWFxiawgiC57gLCYiSvnyA#r4x7)
 
 
 ## 门卡 m1/ICCard/id
+
 [tools proxmark3 pm3](https://proxmarkbuilds.org/)
 [通过一道 CTF 题目学习 M1 卡的 AES 认证机制](https://mp.weixin.qq.com/s/PdJgVDsOnOAcid0DQTUrvg)
 [实战｜记通过手机复制澡卡的辛酸历程](https://mp.weixin.qq.com/s/cDXyPFDeE6S_xGBL3NucPQ)
 
-可能是大端UTF8, GBK都试试
+可能是大端 UTF8, GBK 都试试
+
 ```sh
 \u5F20 张 \u4E09 三
 5F 20 4E 09 20 30 34 30 34 30 39 00 00 00 00 00 # 张三 040409 (生日20040409)
@@ -115,6 +122,7 @@ FF FF FF FF FF FF 08 77 8F 00 FF FF FF FF FF FF # 扇区分隔
 ```
 
 ### pm3
+
 ```sh
 cd client
 call setup.bat
@@ -132,7 +140,7 @@ trace load -f <file.trace>
 - [利用 MQTT 协议缺陷攻击内网物联设备](https://mp.weixin.qq.com/s/EtpaAw-fq4XJGyiojUVdiw)
 - [针对基于 mavlink 协议的无人机进行攻击](https://mp.weixin.qq.com/s/HfFqgQcgOyA_rmb3UFXhww)
 - [路由器挖掘基础教程-by-HRP](https://hgreed.vip/2023/08/02/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%8C%96%E6%8E%98%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-by-HRP/)
-- [从命令注入到空指针：IoT漏洞的挖掘](https://mp.weixin.qq.com/s/clNo72GdFnGShSQXuNHY3g)
+- [从命令注入到空指针：IoT 漏洞的挖掘](https://mp.weixin.qq.com/s/clNo72GdFnGShSQXuNHY3g)
 
 ## Coding
 

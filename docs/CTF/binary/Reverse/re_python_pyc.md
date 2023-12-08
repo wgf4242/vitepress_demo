@@ -2,6 +2,8 @@
 
 https://docs.python.org/3/library/dis.html
 [Python3 字节码详解](https://blog.csdn.net/weixin_46263782/article/details/120930191)
+[Python代码保护技术及其破解](https://mp.weixin.qq.com/s/y1atfJ-vf0wZBtMooeSw4A)
+[从TPCTF 2023 学习Python逆向](https://mp.weixin.qq.com/s/0nJHKJjDFrWHgspoVF23xA)
 
 ## bytecode disassembly
 

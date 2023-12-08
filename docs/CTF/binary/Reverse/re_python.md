@@ -13,3 +13,4 @@ $ find <src> -name '*.py' -type f -print -exec rm {} \;
 * [如何保护你的 Python 代码 （一）—— 现有加密方案](https://zhuanlan.zhihu.com/p/54296517)
 * [Python代码加密 - 4种方案](https://blog.csdn.net/SeafyLiang/article/details/111573911)
 * [python逆向总结-离线也有](https://mp.weixin.qq.com/s/qnT-H-T74Mj8jzG0Xqzq4Q)
+* [Python代码保护技术及其破解](https://mp.weixin.qq.com/s/y1atfJ-vf0wZBtMooeSw4A)
