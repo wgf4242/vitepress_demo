@@ -138,6 +138,11 @@ arr[$(cat /flag)]
 
 ## 图片题/wav
 
+* key可能是题目/文件名的拼音, 或英文。
+  - 比如 `ez签到` key: `qiandao`
+  - SQL注入的 key: `sql`
+  - 图片有数字 key: `图片中的数字`
+
 | format   | 支 key | 无 key | 工具                         | 使用                                                                                                                                                                                                             |
 | -------- | ------ | ------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | png      |        |        | Misc_steg_lsb_extract.py     |
@@ -162,7 +167,7 @@ arr[$(cat /flag)]
 |          |        |        | stegdetect                   | ./stegdetect -tF test.jpg                                                                                                                                                                                        |
 | jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
 | jpg      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
-| jpg      |        |        | F5-steganography-master      | java Extract 生成图.jpg -p '密码'                                                                                                                                                                                |
+| jpg      |        |        | F5-steganography-master<br>comment有`JPEG Encoder Copyright 1998`      | java Extract 生成图.jpg -p '密码'                                                                                                                                                                                |
 | jpg      |        |        | jphs                         |
 | wav      | √      |        | SilentEye                    |
 | bmp      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |

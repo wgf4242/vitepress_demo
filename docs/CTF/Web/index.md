@@ -32,7 +32,7 @@ fuzz
 | url                                         | payload       |
 | ------------------------------------------- | ------------- |
 | `?name={{config}}`                          |               |
-| `?file=../../../../../../prox/self/environ` | 看 secret_key |
+| `?file=../../../../../../proc/self/environ` | 看 secret_key |
 
 - ssrf/发送连接时,可以本地启动nc监听试一下发送信息是否正确.
 - Shiro 检测

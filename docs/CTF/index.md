@@ -11,7 +11,7 @@
   -  Challenges\@todo 1.png
 - re: 鹏城锦标赛\工控-驱动\drive.zip
 - re_iot: 钢铁行业锦标赛\06firmware_reverse
-- pwn:  为什么patchelf后不能运行 _要买些东西吗
+- pwn:  为什么patchelf后不能运行 _怎么办？
 - pwn: pwntools怎样设置编码来输出中文 shctf call_call_would_backdoor。
 
 ### cobalt strike
