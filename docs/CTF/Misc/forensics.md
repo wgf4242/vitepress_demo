@@ -9,6 +9,7 @@
    1. 010手动提取 rar: `Rar!\x1a\x07\x01\x00.{1,100}<文件名>`
    1. 010手动提取2: 搜索压缩包的文件名来定位, 比如`flag2.txt`
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
+1. vhd: NTFS日志-> NTFS Log Tracker
 1. systeminfo - 安装时间
 1. 看桌面
    - 2.0 Filter: Desktop\
