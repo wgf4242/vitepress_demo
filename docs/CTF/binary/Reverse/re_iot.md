@@ -133,6 +133,7 @@ trace load -f <file.trace>
 
 ## 渗透/SRC
 
+- [物联网固件分析指南](https://www.bilibili.com/video/BV1rG411Y78x/)
 - [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)
 - [如何快速挖掘设备逻辑洞](https://mp.weixin.qq.com/s/jZd5BpAmwFZOZuNjc4-oqA)
 - [如何进行物联网渗透测试？](https://mp.weixin.qq.com/s/-p9-9ia_4aqXwL9ELW-BYg)
