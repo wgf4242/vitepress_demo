@@ -64,6 +64,7 @@
 [验证码 | 爆破总结](https://mp.weixin.qq.com/s/z9hkE0XBMwrdx09QHQC_1Q)
 [验证码 | 缺失/绕过](https://mp.weixin.qq.com/s/0_kCK5AggNYHCcNzMSQAtg)
 [验证码 | 关于验证码的那些漏洞](https://mp.weixin.qq.com/s/ZwmI0aoZbZfaZawgqX96yw)
+[验证码 | 验证码渗透最全总结](https://mp.weixin.qq.com/s/I2LvDcpdUH6FGaBKYZJ5vQ)
 result.txt | 搜验证码
 [干货 | 漏洞挖掘绕过登录页面的七种常见方法](https://mp.weixin.qq.com/s/L5-uqiRJH9ozSGzXDSu73A)
 
@@ -427,6 +428,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 - [VulnHub | Funbox2 |红队打靶](https://mp.weixin.qq.com/s/ZK41zuuFBvcfPpOptaCQ8g)
 - [VulnHub | Dawn | 红队打靶](https://mp.weixin.qq.com/s/R018SztPEFe0f94Uo6sOrA)
 - [VulnHub | Vegeta | 红队打靶](https://mp.weixin.qq.com/s/BRhHRzYb7lLQpVKNNe9aig)
+- [VulnHub | 1 —Earth](https://mp.weixin.qq.com/s/zt9qiOHODvUwC93kgUHs4A)
 - [基于 docker 的网络安全靶场搭建（建议收藏 -实战靶场）](https://mp.weixin.qq.com/s/yBgIVQm8fo5qYoAL1n3Mrg)
 - [实战|红队渗透项目之 MinUv1](https://mp.weixin.qq.com/s/WXWi5-DtW2oVWS27tbmjTw)
 - [DroopyCTF 靶机渗透](https://mp.weixin.qq.com/s/Pio0FUDaNFv2dW3iJSCGxw)

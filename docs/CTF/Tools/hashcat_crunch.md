@@ -7,8 +7,14 @@ xx 石化 xxsh + 4 位[小写/数字]
 不指定字符集默认是 26 个小写字母
 
 ```bash
-crunch 5 5 0123456789 -o password.txt # 0-9选5位
-crunch 5 5 0123456789 -o password.txt -z 7z # 0-9选5位
+# 4位数字
+  crunch 4 4 -t %%%% -o password.txt    # 0-9选4位
+  crunch 4 4 0123456789 -o password.txt # 0-9选4位
+  crunch 4 4 0123456789 -o password.txt -z 7z # 0-9选4位
+# 小写字母
+  crunch 4 4 -t @@@@ -o passwords.txt    # 4位小写密码
+  crunch 3 3 -t @@@ -o passwords.txt    # 3位小写密码
+  crunch 1 2 -o passwords.txt           # 1-2位小写密码
 
 crunch 3 3 1234567890 -c 10           # 只生成10行字典后面的不要
 crunch 1 5 -o START -c 6000 -z bzip2  # 6000个密码/每文件
@@ -91,15 +97,6 @@ crunch 8 8 -d 2@
 # crunch will generate 8 characters that limit the same number of lower case characters to 2.  Crunch will start at aabaabaa and end at zzyzzyzz.
 ```
 
-## -p 参数
-
-min, max 失效
-
-```sh
-crunch 4 5 -p dog cat # 单词组合 catdog dogcat
-crunch 4 5 -p dog     # 字母组合 dgo dog gdo god odg ogd
-```
-
 ## -t 占位符
 
 | symbol | desc                  |
@@ -144,11 +141,16 @@ crunch 3 3 0123456789 -o START -z gzip
 
 ## -p,-q 连接字符
 
+忽略 min, max
+
 -p 参数 和 -q 参数效果一样，不过-q 是从文件读入字符集
 
--p 字符集组合 min,max 随便填
+-p 字符集组合 min,max 随便填 , -o 要放前面
 
 ```sh
+crunch 4 5 -p dog cat # 单词组合 catdog dogcat
+crunch 4 5 -p dog     # 字母组合 dgo dog gdo god odg ogd
+
 crunch 0 0 -p a b c
 crunch 0 0 -p abc
 
@@ -162,7 +164,6 @@ crunch 0 0 -p xiaoming 0101 .
 # xiaoming0101.
 
 
-
 sandrex198526        # ..社工 账号加生日
 Xjiabao@             # 拼音加任意字符
 xcj$19680308         # 拼音缩写+特殊字符+生日
@@ -172,11 +173,11 @@ Wanggui2@2022        # 首字母大写+特殊字符+年
 Wanggui123456@       # 首字母大写+123456+特殊字符
 LZ/LZSH              # 企业名或企业名前2位字母+其他字符
 
-
 -r参数 生成字典过程中异常中断，-r可以从上次中断的位置继续生成字典 -- 必须和-o一起用
 crunch 0 6 0123456789 -o pwd.txt
 crunch 0 6 0123456789 -o pwd.txt -r
 ```
+
 社工密码字典在线生成：
 [link1](https://api.xiaobaibk.com/lab/guess/)
 
