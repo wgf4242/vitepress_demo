@@ -1,5 +1,6 @@
 各种取证工具 https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%8F%96%E8%AF%81.md
 [CTF 成长之路丨 Windows 取证常用工具介绍](https://mp.weixin.qq.com/s/e1HzaeoKQLplGbmKN6cWYA)
+[Linux C/C++ 从内存转储中恢复64位ELF可执行文件](https://mp.weixin.qq.com/s/0mxxy-UkPSnCki_axwx-KA)
 
 ## 取证题
 

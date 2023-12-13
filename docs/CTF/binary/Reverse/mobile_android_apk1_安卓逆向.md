@@ -13,6 +13,7 @@
 [示例APK1](https://github.com/xyxdaily/lessons/raw/main/2023%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91CTF%E7%B3%BB%E5%88%97%E8%A7%86%E9%A2%91/2023%E5%AE%89%E5%8D%93%E9%80%86%E5%90%91CTF%E7%B3%BB%E5%88%97%E8%A7%86%E9%A2%91%EF%BC%88%E4%B8%80%EF%BC%89/%E8%AE%B2%E4%B9%89/Crakeme01.apk)
 
 [Android中JNI&NDK入门(三) 之 动态注册Native函数](https://blog.csdn.net/lyz_zyx/article/details/88690930)
+[安卓逆向-安卓开发-动态注册JNI](https://www.bilibili.com/video/BV1mu4y1j7P6/)
 
 [frida_hook_register_native](https://github.com/lasting-yang/frida_hook_libart)
 

