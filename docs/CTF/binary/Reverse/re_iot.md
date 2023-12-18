@@ -39,7 +39,7 @@ qemu-arm -L ./tbox_app.bin
 [openwrt | AntCTF x D³CTF 2023 d3op 复盘笔记](https://mp.weixin.qq.com/s/97TfeJgZeG-lLzWc95teBw)
 
 ## STM32
-
+[STM32在CTF中的应用和快速解题](https://mp.weixin.qq.com/s/lwHh7ToXWjHy4wGjFxGxtA) hello-20231209193113-otxbka4.bin
 [按这个配置](https://www.bilibili.com/video/BV1LX4y157TP/)
 [IOT 安全——stm32 从做题到复现](https://www.anquanke.com/post/id/229321)
 [[原创]STM32 固件逆向 ](https://bbs.kanxue.com/thread-272811.htm)

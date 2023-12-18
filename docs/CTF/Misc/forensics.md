@@ -9,6 +9,12 @@
 1. 直接 010, strings flag
    1. 010手动提取 rar: `Rar!\x1a\x07\x01\x00.{1,100}<文件名>`
    1. 010手动提取2: 搜索压缩包的文件名来定位, 比如`flag2.txt`
+2. 010 搜索 /home/.... 找 username
+   2. /home/$USER/Desktop/......  搜关键文件, 比如找到叫 /home/$USER/Desktop/have_your_fun
+   1. 下面用Text View来搜索, 不要用 hex 显示来搜
+   3. `have_your_fun` 去掉路径搜到关键文件 一个一个看过去。有没有关键内容。
+   4. `"have_your_fun` 带双引号搜
+   4. `'have_your_fun` 带单引号搜
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
 1. vhd: NTFS日志-> NTFS Log Tracker
 1. systeminfo - 安装时间
@@ -108,6 +114,8 @@ reboot
 ### profile 找不到
 [Link1](https://heisenberk.github.io/Profile-Memory-Dump/)
 
+出题有时通过 LiME制作内存镜像文件, 
+
 kali 中 autopsy 可以取证一部分
 
 1. https://blog.bi0s.in/2021/08/20/Forensics/InCTFi21-TheBigScore/
@@ -121,6 +129,7 @@ uname -r # 查看当前内核
 找到version和kernel 为 Ubuntu 18.04，linux 内核版本为 5.4.0-42-generic
 方式2 vol3
 python3 vol.py -f 1.mem banners.Banners
+python3 vol.py -f a.mem banners
 ```
 
 2.下载对应镜像安装 自己制作 volatility 的 profile
@@ -163,6 +172,32 @@ vi /boot/grub/grub.cfg
 1.将profile文件放到 plugins\overlays\linux\Ubuntu_5.4.0-84-generic_profile.zip
 2.volatility.exe --plugins=plugins --info
 ```
+
+### profile vol3
+[Windows Table](https://github.com/JPCERTCC/Windows-Symbol-Tables.git)
+[Linux Table](https://github.com/leludo84/vol3-linux-profiles)
+[Create symbol in windows](https://blogs.jpcert.or.jp/en/2021/09/volatility3_offline.html)
+
+
+```sh
+# wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
+## 下载对应的dbgsyn, 可通过类似这种地址搜索 https://answers.launchpad.net/ubuntu/focal 搜 5.4.0-100-lowlatency-dbgsym
+wget http://launchpadlibrarian.net/313821743/linux-image-4.4.0-72-lowlatency-dbgsym_4.4.0-72.93_amd64.ddeb
+wget http://launchpadlibrarian.net/676611326/linux-image-unsigned-5.15.0-79-generic-dbgsym_5.15.0-79.86_amd64.ddeb
+dpkg -i /volatility/linux-image-4.4.0-72-lowlatency-dbgsym_4.4.0-72.93_amd64.ddeb
+
+git clone git@github.com:volatilityfoundation/dwarf2json
+cd dwarf2json
+go buid
+./dwarf2json linux --elf /usr/lib/debug/boot/vmlinux-4.4.0-137-generic > output.json
+# 生成的 output.json 名字要改成对应的内核安装包名做参考 linux-image-5.4.0-100-amd64-dbg_5.4.0-100.113_amd64.json.xz
+# 名字 其实这样就可以了 linux-image-5.4.0-100-lowlatency-amd64.json.xz
+
+python3 vol.py -vvv -f ../a.mem banner # 看到 symbols path 任选一个
+cp linux-image-4.4.0-72-lowlatency-amd64.json <volatility3>/symbols/
+volatility3 -f dump.raw linux.pstree.PsTree
+```
+
 
 ### Firefox 取证
 

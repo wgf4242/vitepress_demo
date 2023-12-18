@@ -433,7 +433,9 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 2. %128
 3. 每个 - n 再对比, 构成等差数列 对比 flag/ctf/**主办方**名字 ascii 值 参考 NISACTF2022 funnycaeser， key 为 5
 
-## 文件头
+## 文件头/文件格式解析
+[wav文件格式解析](https://blog.csdn.net/chen06130/article/details/118881999)
+
 
 字符串 PK 是 zip 的开头, 5d480506xxxxx 为尾部
 
