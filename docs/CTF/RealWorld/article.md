@@ -268,6 +268,7 @@ _ [使用进程镂空技术免杀360Defender](https://mp.weixin.qq.com/s/pyALO84
 - [Sign-Sacker (签名掠夺者) - 2.0](https://mp.weixin.qq.com/s/cC5ylFBXEPHylKW9NIZVqw)
 - [综合 | 红队技术 | 隐藏上传的程序木马](https://mp.weixin.qq.com/s/QglaTxTSvw37Cg1dzlfabw)
 - #安全: c_cpp_tutorial\Article.md
+- [LoaderGo-快速生成免杀木马GUI版本，bypass主流杀软](https://mp.weixin.qq.com/s/gXpDWXMXqAf4Vt_24CLc5g)
 
 
 - Android

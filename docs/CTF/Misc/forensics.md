@@ -15,6 +15,7 @@
    3. `have_your_fun` 去掉路径搜到关键文件 一个一个看过去。有没有关键内容。
    4. `"have_your_fun` 带双引号搜
    4. `'have_your_fun` 带单引号搜
+   5. 有时搜文件内容 加密前内容搜不到 `搜的加密后的内容`
 1. Magnet AXIOM/FTK/DiskGenius 打开 vmdk
 1. vhd: NTFS日志-> NTFS Log Tracker
 1. systeminfo - 安装时间
