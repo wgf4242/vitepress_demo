@@ -103,7 +103,10 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 
 .klr.enc1 - Kaspersky Rescue disk file, 异或 0xef
 
+- ascii chart 文字图用 Akelpad 查看效果不错。
+
 - [.img 文件](forensics.md#取证题)
+
 
 ## [流量分析](./misc_pcapng.md)
 
