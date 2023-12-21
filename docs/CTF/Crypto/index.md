@@ -77,6 +77,7 @@ $$
 * [密码学基础之格中难题与格基规约](https://mp.weixin.qq.com/s/nzFRgOUkffeUaF9PqtEnQA)
 * [密码学基础之LLL算法](https://mp.weixin.qq.com/s/XbqNq4UhwyPOcr1ymBF2Lg)
 * [密码学基础之Coppersmith](https://mp.weixin.qq.com/s/nZAHJuQLdNVJEOzIma7aBg)
+* [CTF-密码学题目解析之格密码](https://mp.weixin.qq.com/s/S18FQq2mSUO6p1vwA1ErAg)
 ---
 * [密码学从入门到大佬——Xenny密码学全系列课程导航](https://www.nssctf.cn/note/set/1698)**    
 * [wiener攻击](https://www.nssctf.cn/note/set/8)    

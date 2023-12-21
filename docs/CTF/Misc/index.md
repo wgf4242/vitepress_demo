@@ -34,12 +34,13 @@
 - unknown 数据
   - 多用 sublime 看可能有零宽
   - ciphey
-  - 每2个字符换位置
+  - 每 2 个字符换位置
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
   - base64 换表
   - 像 base64 但=号位置不对 `bYeNQXYZXbXZQfW31FGzzD0m0FHQ9RR85FFQYMB9M=lmo2ku11z0uiz=` Caesar Box Cipher 14 后 base64 解
   - 符合 16 进制 data, base64.encode(data)
+  - 逆序试一下
   - 提示逆向，可能是指加密
   - 有空格和 tab 可能是摩斯码或二进制
   - 补全文件头 和 文件尾部
@@ -107,7 +108,6 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 
 - [.img 文件](forensics.md#取证题)
 
-
 ## [流量分析](./misc_pcapng.md)
 
 ## RCE 绕过类题目
@@ -141,44 +141,45 @@ arr[$(cat /flag)]
 
 ## 图片题/wav
 
-* key可能是题目/文件名的拼音或英文/图片中的数字。
+- key 可能是题目/文件名的拼音或英文/图片中的数字。
   - 比如 `ez签到` key: `qiandao`
-  - SQL注入的 key: `sql`
+  - SQL 注入的 key: `sql`
   - 图片有数字 key: `图片中的数字`
 
-| format   | 支 key | 无 key | 工具                         | 使用                                                                                                                                                                                                             |
-| -------- | ------ | ------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| png      |        |        | Misc_steg_lsb_extract.py     |
-| png      | √      |        | 提示:aes/lsb, cloacked-pixel | py2 lsb.py extract mmm.png out.txt lovekfc                                                                                                                                                                       |
-| png      |        |        | steg-solve/cloacked-pixel    | 低位有 lsb 但提取 rgb0 没信息，可能为 cloacked-pixel                                                                                                                                                             |
-| png      | √      | √      | stegpy                       | stegpy <file> -p                                                                                                                                                                                                 |
-| png      |        | √      | zsteg                        | zsteg -a x.png                                                                                                                                                                                                   |
-| png      |        |        | Misc_png_width2.py           | 爆破宽度                                                                                                                                                                                                         |
-| png      |        |        |                              | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |
-| png      |        |        | stegsolve                    | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
-| png      |        |        | puzzlesolver                 | fft 变换，多选项, 都试一下                                                                                                                                                                                       |
-| png 多图 |        |        | beyond compare               | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
-| png 多图 |        |        | stegsolve                    | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
-| png 单图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试                                                                                                                                                                                     |
-| png 多图 |        |        | 盲水印                       | misc_BlindWatermark.bat 都试                                                                                                                                                                                     |
-| 多图     |        |        |                              | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
-| 多图     |        |        |                              | 1.修改日期排序, 看区别 <br>2.创建时间排序, 看区别                                                                                                                                                                |
-| 图片     |        |        |                              | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
-| jpg      |        |        | stegdetect                   | stegdetect -tjopi -s 10.0 ./a.jpg                                                                                                                                                                                |
-|          |        |        | steghide                     | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
-|          |        |        | stegseek 爆破 steghide       | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
-|          |        |        | stegdetect                   | ./stegdetect -tF test.jpg                                                                                                                                                                                        |
-| jpg      | √      |        | outguess                     | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
-| jpg      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
-| jpg      |        |        | F5-steganography-master<br>comment有`JPEG Encoder Copyright 1998`      | java Extract 生成图.jpg -p '密码'                                                                                                                                                                                |
-| jpg      |        |        | jphs                         |
-| wav      | √      |        | SilentEye                    |
-| bmp      | √      |        | SilentEye                    |                                                                                                                                                                                                                  |
-| bmp      | √      |        | jphs05/Jphswin               | jphs05                                                                                                                                                                                                           |
-| gif      |        |        | identify                     | 时间轴信息隐藏 `identify -format "%T\n" 100.gif` , 010 中可看 `GRAPHICCONTROLEXTENSION >ushort DelayTime` <br> 分离文件 `convert a.gif flag.png` <br> 拼图变透明色 `convert a.gif -transparent white result.gif` |
-| `<all>`1 | √      |        | 010 查看头信息中的编辑器     | 用对应编辑器打开, 可能有隐藏图层                                                                                                                                                                                 |
-| `<all>`2 | √      |        | oursecret                    | oursecret                                                                                                                                                                                                        |
-| `<all>`3 | √      |        | 傅利叶变换                   | misc_blindWaterMark_02_fourier.py                                                                                                                                                                                |
+| format   | 支 key | 无 key | 工具                                                               | 使用                                                                                                                                                                                                             |
+| -------- | ------ | ------ | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| png      |        |        | Misc_steg_lsb_extract.py                                           |
+| png      | √      |        | 提示:aes/lsb, cloacked-pixel                                       | py2 lsb.py extract mmm.png out.txt lovekfc                                                                                                                                                                       |
+| png      |        |        | steg-solve/cloacked-pixel                                          | 低位有 lsb 但提取 rgb0 没信息，可能为 cloacked-pixel                                                                                                                                                             |
+| png      | √      | √      | stegpy                                                             | stegpy <file> -p                                                                                                                                                                                                 |
+| png      |        | √      | zsteg                                                              | zsteg -a x.png                                                                                                                                                                                                   |
+| png      |        |        | Misc_png_width2.py                                                 | 爆破宽度                                                                                                                                                                                                         |
+| png      |        |        |                                                                    | 有明显剪裁效果,或者多个 iend, cve-2023-28303 Acropalypse-Multi-Tool, win 下运行要 注释`from gif_lib`                                                                                                             |
+| png      |        |        | stegsolve                                                          | 检查 IDAT 块是否正常排列, 正常填充满 65524 才会写下一块, 010 中选择该块的 ubtye_data, 复制                                                                                                                       |
+| png      |        |        | puzzlesolver                                                       | fft 变换，多选项, 都试一下                                                                                                                                                                                       |
+| png 多图 |        |        | beyond compare                                                     | 打开 2 张图, 1. 点击容差，修改容差大小 2. stegsolve xor 两张图                                                                                                                                                   |
+| png 多图 |        |        | stegsolve                                                          | xor, 蓝色的线盲水印, 非蓝色 排除盲水印                                                                                                                                                                           |
+| png 单图 |        |        | 盲水印                                                             | misc_BlindWatermark.bat 都试                                                                                                                                                                                     |
+| png 多图 |        |        | 盲水印                                                             | misc_BlindWatermark.bat 都试                                                                                                                                                                                     |
+| 多图     |        |        |                                                                    | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
+| 多图     |        |        |                                                                    | 1.修改日期排序, 看区别 <br>2.创建时间排序, 看区别                                                                                                                                                                |
+| 图片     |        |        |                                                                    | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
+| jpg      |        |        | stegdetect                                                         | stegdetect -tjopi -s 10.0 ./a.jpg                                                                                                                                                                                |
+|          |        |        | steghide                                                           | steghide extract -sf test.jpg -p 123456                                                                                                                                                                          |
+|          |        |        | stegseek 爆破 steghide                                             | stegseek cvr.jpg wordlist.txt                                                                                                                                                                                    |
+|          |        |        | stegdetect                                                         | ./stegdetect -tF test.jpg                                                                                                                                                                                        |
+| jpg      | √      |        | outguess                                                           | outguess -k 'abc' -r mmm.jpg -t 1.txt                                                                                                                                                                            |
+| jpg      | √      |        | SilentEye                                                          |                                                                                                                                                                                                                  |
+| jpg      |        |        | F5-steganography-master<br>comment 有`JPEG Encoder Copyright 1998` | java Extract 生成图.jpg -p '密码'                                                                                                                                                                                |
+| jpg      |        |        | jphs                                                               |
+| wav      | √      |        | SilentEye                                                          |
+| bmp      | √      |        | SilentEye                                                          |                                                                                                                                                                                                                  |
+| bmp      | √      |        | jphs05/Jphswin                                                     | jphs05                                                                                                                                                                                                           |
+| gif      |        |        | identify                                                           | 时间轴信息隐藏 `identify -format "%T\n" 100.gif` , 010 中可看 `GRAPHICCONTROLEXTENSION >ushort DelayTime` <br> 分离文件 `convert a.gif flag.png` <br> 拼图变透明色 `convert a.gif -transparent white result.gif` |
+| `<all>`  |        |        | stegsolve                                                          | Analyse - Stereogram Solver, 看 offset                                                                                                                                                                                                        |
+| `<all>`1 | √      |        | 010 查看头信息中的编辑器                                           | 用对应编辑器打开, 可能有隐藏图层                                                                                                                                                                                 |
+| `<all>`2 | √      |        | oursecret                                                          | oursecret                                                                                                                                                                                                        |
+| `<all>`3 | √      |        | 傅利叶变换                                                         | misc_blindWaterMark_02_fourier.py                                                                                                                                                                                |
 
 - https://www.aperisolve.com/
 - 看文件末尾、文件头
@@ -437,8 +438,8 @@ abe.jar 或者用 https://github.com/lclevy/ab_decrypt
 3. 每个 - n 再对比, 构成等差数列 对比 flag/ctf/**主办方**名字 ascii 值 参考 NISACTF2022 funnycaeser， key 为 5
 
 ## 文件头/文件格式解析
-[wav文件格式解析](https://blog.csdn.net/chen06130/article/details/118881999)
 
+[wav 文件格式解析](https://blog.csdn.net/chen06130/article/details/118881999)
 
 字符串 PK 是 zip 的开头, 5d480506xxxxx 为尾部
 

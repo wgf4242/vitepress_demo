@@ -281,7 +281,7 @@ start attack
 [服务器端漏洞篇之身份验证专题](https://mp.weixin.qq.com/s/xto4_GFykjYC1it0bgQNJQ)
 [Burpsuite 指纹特征绕过](https://mp.weixin.qq.com/s/GVVZYKQsuWXqRap9zGfFDA)
 [九维团队-绿队（改进）| APP安全-Frida联动BurpSuite实现自动加解密](https://mp.weixin.qq.com/s/jdeEmwz8fsySUkszFbZwpA)
-
+[2023一整年BurpSuite都更新了什么?](https://mp.weixin.qq.com/s/-YI6Y8rMMBLXr1sBqOas5A)
 ## plugins
 
 [burp 结合 mitmproxy 实战解决网站请求加解密](https://www.bilibili.com/video/BV17u4y1Y7eg/)
