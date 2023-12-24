@@ -15,9 +15,17 @@ xx 石化 xxsh + 4 位[小写/数字]
   crunch 4 4 -t @@@@ -o passwords.txt    # 4位小写密码
   crunch 3 3 -t @@@ -o passwords.txt    # 3位小写密码
   crunch 1 2 -o passwords.txt           # 1-2位小写密码
+# 任意字符
+  ## [abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789] ,  带掩码版
+  crunch 2 2 -f /usr/share/crunch/charset.lst mixalpha-numeric-all-space -o wordlist.txt -t @d
+  crunch 1 8 -f /usr/share/crunch/charset.lst mixalpha-numeric -o lstpwd.txt
+  ## 全部可打印字符
+  crunch 1 8 -f /usr/share/crunch/charset.lst mixalpha-numeric-all-space -o lstpwd.txt
+
 
 crunch 3 3 1234567890 -c 10           # 只生成10行字典后面的不要
 crunch 1 5 -o START -c 6000 -z bzip2  # 6000个密码/每文件
+
 
 crunch 3 3 0123456789 -o pwd.txt
 crunch 3 3 0123456789 > pwd.txt
