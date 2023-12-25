@@ -15,6 +15,7 @@ zip2$*0*3*0*07aa3a0e1c77224a9311*$/zip2$
 ### 常用参数
 ```sh
 hashcat -m 13600 test.hash -O wordlist.txt
+hashcat -m 17200 test.hash -O rockyou.txt  # zip
 hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
 hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 5 --increment-max 8 root?d?d?d?d?d?d?d?d
 hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 5 --increment-max 9 admin?d?d?d?d?d?d?d?d
