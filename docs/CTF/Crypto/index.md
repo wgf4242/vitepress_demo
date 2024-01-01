@@ -59,6 +59,7 @@ $$
 * [RSA专题——模数分解](https://mp.weixin.qq.com/s/sNEyaJ6qioIMdsJxZ3Hccw)
 * [RSA专题——”误用“攻击](https://mp.weixin.qq.com/s/BB8euI5ytK0A5sfc6Gv-fw)
 * [RSA专题——参数误用](https://mp.weixin.qq.com/s/oicoXceIeqOWEvcJECbkWg)
+
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)
@@ -78,6 +79,8 @@ $$
 * [密码学基础之LLL算法](https://mp.weixin.qq.com/s/XbqNq4UhwyPOcr1ymBF2Lg)
 * [密码学基础之Coppersmith](https://mp.weixin.qq.com/s/nZAHJuQLdNVJEOzIma7aBg)
 * [CTF-密码学题目解析之格密码](https://mp.weixin.qq.com/s/S18FQq2mSUO6p1vwA1ErAg)
+* [密码学攻击之RSA：惊艳](https://mp.weixin.qq.com/s/S79_EqjJ-gi2zopC0ZT6-Q)
+
 ---
 * [密码学从入门到大佬——Xenny密码学全系列课程导航](https://www.nssctf.cn/note/set/1698)**    
 * [wiener攻击](https://www.nssctf.cn/note/set/8)    
