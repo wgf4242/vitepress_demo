@@ -2,6 +2,7 @@
 - [练习 | UnCrackable Mobile Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)
 - [OWASP 实战分析 level 3](https://mp.weixin.qq.com/s/_dAnLlSM9eon5_SR0_0imw)
 - [Android NDK 开发](https://gift1a.github.io/2022/09/06/Android-Learning/#Android-NDK%E5%BC%80%E5%8F%91)
+- [移动安全之 NDK 开发学习一](https://mp.weixin.qq.com/s/AGy-lyTYs-gt2wGk-ZNFVg)
 - [Android loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/zj5isP6dGu-mTNpJN1W3BQ)
 - [Android Studio 调试 Smali | 给大家分享一下这几年学习 Android 逆向遇到的环境问题吧，希望大家不要在这上面浪费时间](https://bbs.pediy.com/thread-275251.htm)
 - [移动应用安全与风控——汇编基础](https://mp.weixin.qq.com/s/tU-Aeh-IoVf_sIofD7-4dA)
@@ -28,6 +29,16 @@ https://github.com/MiDuoKi/AndroidSafeStudy
 https://blog.csdn.net/m0_64604636/article/details/121885541
 https://blog.csdn.net/weixin_44032232/article/details/109676945
 https://blog.51cto.com/yeshaochen/2496524
+
+- blackdex
+
+- dex-dump
+
+```sh
+frida-dexdump -U -f com.ivi.remote
+# 或者打开app后，用下面的命令
+frida-dexdump -FU -d -o .
+```
 
 # 执行流程
 
@@ -199,7 +210,9 @@ java -jar abe.jar unpack 1.ab 1.tar
 ## APKlab
 
 https://github.com/APKLab/APKLab
+
 ## Adb Command
+
 [Link](file:///D:/wgf/My%20Documents/GitHub/pyprojects/django_learning/android_01/adb.md)
 
 # Article
@@ -219,12 +232,11 @@ https://github.com/APKLab/APKLab
 - [Android 渗透测试 HTTPS 证书校验绕过](https://mp.weixin.qq.com/s/X6efaPMF0Zb3ENsEy-H3gQ)
 - [安卓高版本安装系统证书 HTTPS 抓包 - 终极解决方案](https://blog.51cto.com/u_15527932/6107429)
 - [淘系 | 【安卓逆向】解决淘系某猫等 App 抓包问题](https://mp.weixin.qq.com/s/BFFEGWDhjTdDlfWITSme8Q)
-- [淘系 | 【安卓逆向】某鱼hook抓包姿势](https://mp.weixin.qq.com/s/dpyYdg1xip1Rb-_-M77HAw)
+- [淘系 | 【安卓逆向】某鱼 hook 抓包姿势](https://mp.weixin.qq.com/s/dpyYdg1xip1Rb-_-M77HAw)
 - [抓不到包？不可能（上篇）](https://mp.weixin.qq.com/s/XqoLx0zjonCz_JcE13E1zA)
 - [史上最强安卓抓包/逆向/HOOK & 云手机/自动化辅助框架](https://mp.weixin.qq.com/s/533On0ejZXF42GT1KrpfmQ)
 - [【小记】Frida 绕过闲鱼 Spdy 协议进行抓包](https://mp.weixin.qq.com/s/FEIoSB2gWBb9NAAE7i0bXA)
 - [r0capture！安卓应用层抓包通杀脚本](https://mp.weixin.qq.com/s/lCtr6ZZZaiHNodZxxnrLMQ)
-
 
 ## 综合
 
@@ -241,8 +253,8 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十二、大佬帮我分析一下](https://www.bilibili.com/video/BV1u8411S7xZ/)
 - [《安卓逆向这档事》十三、是时候学习一下 Frida 一把梭了(上)](https://mp.weixin.qq.com/s/T0K5RmTsDZ0RIc8Y-S325Q)
 - [《安卓逆向这档事》十四、是时候学习一下 Frida 一把梭了(中)](https://mp.weixin.qq.com/s/HZfiX6VI3G6X6If_4IfFRg)
-- [《安卓逆向这档事》十五、是时候学习一下Frida一把梭了(下)](https://mp.weixin.qq.com/s/97o3fX9AN_kl2GCLhHAfig)
-- [《安卓逆向这档事》十六、是时候学习一下Frida一把梭了(终)](https://mp.weixin.qq.com/s/BqqDsxB4u7QyTmBozZjMnw)
+- [《安卓逆向这档事》十五、是时候学习一下 Frida 一把梭了(下)](https://mp.weixin.qq.com/s/97o3fX9AN_kl2GCLhHAfig)
+- [《安卓逆向这档事》十六、是时候学习一下 Frida 一把梭了(终)](https://mp.weixin.qq.com/s/BqqDsxB4u7QyTmBozZjMnw)
 - [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
 - [Android 逆向技术高阶大法](https://mp.weixin.qq.com/s/zMXOpxW6E5klbsjKVHZudg)
 
@@ -305,10 +317,11 @@ https://github.com/APKLab/APKLab
 - [2023 安卓 Hook 框架源码入门（一 YAHFA 框架）（1 概述）](https://www.bilibili.com/video/BV1TY4y1f7rw/)
 
 ---
+
 - [Android 对 so 进行简单 hook](https://mp.weixin.qq.com/s/3b_isZSTBlerYyy5ViLhdA)
 - [Android 系统内核漏洞利用技术入门](https://mp.weixin.qq.com/s/a8A0g7-S0FiMuRa3YOg89Q)
 - [Android 逆向 设备指纹 Settings 类对抗终极方案](https://www.bilibili.com/video/BV1hP411s7Js/)
-- [Qual+Android方案Unlock学习 以Oneplus7Pro为例](https://mp.weixin.qq.com/s/XFAYXV90y52bYTHYWSFJcA)
+- [Qual+Android 方案 Unlock 学习 以 Oneplus7Pro 为例](https://mp.weixin.qq.com/s/XFAYXV90y52bYTHYWSFJcA)
 
 ### bypass
 
@@ -368,11 +381,12 @@ https://github.com/APKLab/APKLab
 - [大麦反编译 sign—小程序逆向-哔哩哔哩](https://www.bilibili.com/video/BV1z94y147GD/)
 
 ## 普通文章
+
 [『杂项』APP 权限调用查看方法](https://mp.weixin.qq.com/s/qB9_UuRrmrP18ARNX44lvA)
 [安卓 app 四大组件的攻击面分析](https://mp.weixin.qq.com/s/MQ7gNnIkzGBkaJLtAsSORQ)
 [strong-frida 过常见壳的 Frida 检测](https://www.bilibili.com/video/BV1gp4y1N7Cx/)
-[frida | 对APP的检测以及参数计算分析](https://mp.weixin.qq.com/s/x59ZoVGclcjdElxb8Y0R7w)
-[patch某哩frida检测](https://mp.weixin.qq.com/s/cm5kHfE-z2HaBOc-mZUnsw)
+[frida | 对 APP 的检测以及参数计算分析](https://mp.weixin.qq.com/s/x59ZoVGclcjdElxb8Y0R7w)
+[patch 某哩 frida 检测](https://mp.weixin.qq.com/s/cm5kHfE-z2HaBOc-mZUnsw)
 
 ## eBPF
 

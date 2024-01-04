@@ -142,6 +142,8 @@ result.txt | 搜验证码
 [任意账号密码重置的 6 种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 [实战中常见的逻辑漏洞 | 水平越权](https://mp.weixin.qq.com/s/eTMvmLhoGCzsqwjRxEmdRA)
+[登录页面渗透的骚操作](https://mp.weixin.qq.com/s/LSj26A7WceXelbfOfRanLQ)
+[3句话，让AI给我找SQL注入](https://mp.weixin.qq.com/s/9V8-K3YRHDOAX1cAKfpKnw)
 
 --- 实战
 

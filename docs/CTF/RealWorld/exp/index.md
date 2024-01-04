@@ -243,6 +243,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [金蝶云星空RCE漏洞复现](https://mp.weixin.qq.com/s/d2Dt2l9qvSUTN5GT76xaZA)
 
 [Vcenter | VMware vSphere | CVE-2021-22005-rce、2021-21972-uoloadova 接口 rce 和 log4j](https://mp.weixin.qq.com/s/4jn2EDAt_YyFZQMfcxT21g)
+[Vcenter | 获取vCenter锁屏主机hash](https://mp.weixin.qq.com/s/XomBcHD9G1zvLhDjihdHxw)
 [jeecgboot | jimureport(jmreport) | CVE-2023-4450 RCE漏洞（附EXP）](https://mp.weixin.qq.com/s/fXTXiy0Z67ExHGN7zWIs2w)
 
 [CobaltStrike | CS < 4.7.1 RCE 复现踩坑记录](https://mp.weixin.qq.com/s/0rnIjQYDRn1GVPD9XIOHJQ)

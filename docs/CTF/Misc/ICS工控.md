@@ -119,6 +119,8 @@ INV_B取反字节 60=>-60
 [赛宁工控靶场场景实操：PROFIBUS-DP 通讯应用](https://mp.weixin.qq.com/s/RipAkH0-rHOljNpRkoDIsw)
 [赛宁工控靶场场景实操：工控协议模糊测试 Modbus-TCP](https://mp.weixin.qq.com/s/rmkuNLk4HLS9sm9YHCVlBQ)
 [工控 CTF | 44 期](https://mp.weixin.qq.com/s/h_ptEqT4NJYszJOoX8dqVA)
+## pwn
+[工业控制互联网组态王软件漏洞测试验证与利用](https://mp.weixin.qq.com/s/vYAl31hpbhZlvRJjJdQlnA)
 
 ## 使用
 

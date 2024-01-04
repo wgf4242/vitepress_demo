@@ -22,9 +22,9 @@ hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 5 --increment-ma
 hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 3 --increment-max 8 KEY?u?u?u?u?u?u?u?u
 hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 1 --increment-max 6 ?l?l?l?l?l?l?l?l
 hashcat -m 13600 test.hash -O -a 3 -1 ?l?u?d?s  --increment --increment-min 1 --increment-max 4 ?1?1?1?1?1?1
-# NTLM 3字母+@+4数字
+## NTLM 3字母+@+4数字
 hashcat -O -m 1000 5bf4cb79033c48ce90a613a2c04aa6d3 -a 3 ?l?l?l?a?d?d?d?d --force
-# NTLM 4字母(首字母大写)+@+3数字
+## NTLM 4字母(首字母大写)+@+3数字
 hashcat -O -m 1000 8443248e2eb382500141a033f4ad5534 -a 3 -1 ?l?u ?1?l?l?l?a?d?d?d --force
 ```
 

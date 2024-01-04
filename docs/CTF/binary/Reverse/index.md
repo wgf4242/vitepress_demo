@@ -492,6 +492,9 @@ Process creation(kernel)
 
 通过 GS 寄存器访问 TEB
 
+### PDF
+Windows恶意软件常见API一览.pdf
+
 ## 工具
 
 LIEF | 对 ELF 添加 section, segment

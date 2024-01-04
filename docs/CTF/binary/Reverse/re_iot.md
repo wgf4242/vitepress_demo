@@ -8,6 +8,12 @@ binwalk -Me rootfs.img
 - 再随便 file ./usr/bin/xxx 看文件架构 ELF 32-bit LSB executable 表示最低有效位 小端
   方式 2.取证大师
 
+# 硬件设备
+
+* 无线: EDIMAX EW-7822UAn
+* HackRF ONE
+* ARM仿真器, PCAN USB, 蓝牙适配器 kali下用.
+
 # IOT
 
 IOT 车联网问题。启动不了找问题 patch 掉。可能是没有某些设备
@@ -103,7 +109,11 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [汽车 CAN 总线-01 介绍](https://mp.weixin.qq.com/s/Jognd-QPI6J9wO6V9OjnoA)
 - [深入理解 CAN 总线](https://mp.weixin.qq.com/s/dnZaM9rjhBImS0vQ5yLQ3A)
 - [天刃 - 车联网安全渗透测试系统 测试 ivi、tbox、gw、分析固件以及逆向工程](https://mp.weixin.qq.com/s/nAJeM60ooKNF-AzZFx4ACw) [Github](https://github.com/TianWen-Lab/TranSec/) [Pan](https://pan.baidu.com/s/1jWFxiawgiC57gLCYiSvnyA#r4x7)
+- [车联网安全进阶之Trick——Android车机运行Python](https://mp.weixin.qq.com/s/mPA2akY2pYXbbG59NkbAfg)
 
+* 固件用JLINK
+* 车辆总线安全使用 PCAN 设备 接入口为 OBD 接口
+* 控车APP 需要在安卓且非 ROOT手机上使用
 
 ## 门卡 m1/ICCard/id
 

