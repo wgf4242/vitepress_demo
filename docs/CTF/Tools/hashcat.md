@@ -5,7 +5,9 @@ windows 用 6.2.3
 https://www.cnblogs.com/chk141/p/12220288.html
 
 不支持 rar4 文件。
-### john hash处理
+
+### john hash 处理
+
 ```sh
 1help.zip/1help:$zip2$*0*3*0*07aa3a0e1c77224a9311*$/zip2$:1help:1help.zip:1help.zip
 # 删除两侧$外的文件名及内容
@@ -13,6 +15,7 @@ zip2$*0*3*0*07aa3a0e1c77224a9311*$/zip2$
 ```
 
 ### 常用参数
+
 ```sh
 hashcat -m 13600 test.hash -O wordlist.txt
 hashcat -m 17200 test.hash -O rockyou.txt  # zip
@@ -167,6 +170,7 @@ hashcat --restore
 hashcat -m 17220 -O -a 3 test.hash --session session_name --increment --increment-min 1 --increment-max 8 --custom-charset1=?u?d ?1?1?1?1?1?1?1?1
 hashcat --session session_name --restore
 ```
+
 ### zip 攻击/AES-256
 
 ```sh
@@ -187,6 +191,7 @@ $rar5$16$db3d60d27258f6210cc73f57c0f40e65$15$d8e6585d8f8d4843e21c3ca16160c6cb$8$
 hashcat -m 13000 -O -a 3 test.hash --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
 hashcat -m 13000 -O -a 0 test.hash pwd.txt
 ```
+
 ### crc32
 
 ```sh
@@ -196,6 +201,7 @@ hashcat -m 11500 -a 3 crc32.txt ?b?b?b
 hashcat -m 11500 crc32.txt -O -a 3 ?b?b?b --outfile-format=1,3
 hashcat -m 11500 crc32.txt -O -a 3 ?b?b?b --outfile-format=1,3 --show -o result.txt
 ```
+
 ### deepsound
 
 ```s
@@ -277,6 +283,7 @@ hashcat -m 16500 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTc0OD
 ## domain
 
 ### NTLM
+
 [流量包分析](../Misc/misc_pcapng.md#ntlm)
 
 ```sh
@@ -295,6 +302,7 @@ hashcat -m 18200 --force -a 0 '$krb5asrep$23$lixiuying@xiaorang.lab@XIAORANG.LAB
 ### SPN ST, TGS-REP
 
 13100 - Kerberos 5, etype 23, TGS-REP
+
 ```bash
 hashcat -m 13100 output.txt rockyou.txt --force
 ```
@@ -310,4 +318,28 @@ john shadow --format=NT # filename: shadow
 
 
 john -1='02' -mask=091?1?d?d?d?d?d?d --stdout | head # ?1 表示使用占位符1 即 02
+
+
+/etc/shadow中密码格式：
+$id$salt$encrypted
+$1$2eWq10AC$NaQqalCk3
+# $1表示使用了基于MD5的加密算法。
+# $2a$04$NZJWn7W2skvQRC5lW3H7q.ZTE8bz4xbC 2a表示Blowfish算法。
+
+# 示例 root:$1$NAkZFH1u$byy9Vl8PSU3dJl5MicArx1:18446:0:99999:7:::
+hashcat -m 500 -a 0 1 1NAkZFH1u$byy9Vl8PSU3dJl5MicArx1 wordlist.txt
+# crack2.hash  $6$Cqi.....1R/
+hashcat -m 1800 test.hash -a 3 --force  ?l?l?l?l
+hashcat -m 1800 -a 0 -o found2.txt --remove crack2.hash 500_passwords.txt
+hashcat -m 1800 -a 3 --force $6$mxuA5cdy$XZRk0CvnPFqOgVopqiPEFAFK72SogKVwwwp7gWaUOb7b6tVwfCpcSUsCEk64ktLLYmzyew/xd0O0hPG/yrm2X. ?l?l?l?l
 ```
+
+| ID  | 算法     | -m   | Desc                                      |
+| --- | -------- | ---- | ----------------------------------------- |
+| 1   | MD5      | 0500 | md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5) |
+| 2a  | Blowfish | 3200 | bcrypt $2*$, Blowfish (Unix)              |
+| 5   | SHA-256  | 7400 | sha256crypt $5$, SHA256 (Unix)            |
+| 6   | SHA-512  | 1800 | sha512crypt $6$, SHA512 (Unix)            |
+|     |          | 122  | macOS v10.4, MacOS v10.5, MacOS v10.6     |
+|     |          | 1722 | macOS v10.7                               |
+|     |          | 7100 | macOS v10.8+ (PBKDF2-SHA512)              |
