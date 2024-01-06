@@ -60,3 +60,27 @@ AdFind.exe -b "DC=tide1,DC=org" -f "(&(samAccountType=805306369)(userAccountCont
 AdFind.exe -b "DC=tide1,DC=org" -f "(&(samAccountType=805306368)(userAccountControl:1.2.840.113556.1.4.803:=524288))" cn distinguishedName
 
 ```
+
+# nxc/NetExec
+
+[command](https://t1sts.github.io/#/docs/tool/domain_information/nxc)
+
+```sh
+proxychains4 -q nxc smb 172.30.12.5/24
+## 验证账号
+proxychains4 -q nxc rdp 172.30.12.6 -u admin -p 1qaz@WSX --local-auth
+```
+
+* issue rdp not working
+```
+Working:
+
+3.10.13 (probably 3.10.*)
+3.11.0
+3.11.4
+Not working:
+
+3.11.6
+3.11.5
+3.12.0
+```
