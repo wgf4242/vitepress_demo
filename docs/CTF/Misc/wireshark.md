@@ -143,29 +143,30 @@ tcpdump -n -r nmapll.pcapng 'tcp[13] = 18' | awk '{print $3}' | sort -u
 
 按 `Ctrl+/` 进入过滤
 
-```
+```sh
 frame contains "flag"           // 过滤 Info/数据中包含flag
+
+# http
 http.request.full_uri  contains skyflag_is_here2333
 http.request && !http.request.uri contains "login"
 http.file_data contains Hello
 urlencoded-form.value contains "testd"     // 表单value包含test
-//根据返回结果，text data包含Hello，看对应的request frame 编号
+## 根据返回结果，text data包含Hello，看对应的request frame 编号
 http.host contains weixin
+## 过滤http响应状态码为302的数据包
 http.response.code==302
-//过滤http响应状态码为302的数据包
 http.response==1
-// 响应首部：
+## 过滤所有的http响应包
+http.response
 http.response.line
-
-//过滤所有的http响应包
+#根据content_length的数值过滤
 http.content_type == “text/html”
 http.content_length == 279
 http.content_length_header == “279″
-//根据content_length的数值过滤
 
-// http response
-http.response
-
+# 过滤Info列, 4.2.0之后支持
+## Info 包含 Read
+_ws.col.info contains "Read"
 ```
 
 过滤从 192.168.0.9 发往 192.168.0.99 并且是 icmp 协议
