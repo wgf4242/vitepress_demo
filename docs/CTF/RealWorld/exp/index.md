@@ -210,6 +210,7 @@ rw_exp_joomla_CVE-2023-23752
 [内网高频组件漏洞整理-Memcached](http://www.nooemotion.com/2023/02/20/内网高频组件漏洞整理-memcached/)
 [内网高频组件漏洞整理-ActiveMQ](http://www.nooemotion.com/2023/02/17/内网高频漏洞组件漏洞整理-activemq/)
 [Exchange | ProxyShell](http://www.nooemotion.com/2023/02/17/域渗透笔记-exchange-proxyshell/)
+[Exchange | 在渗透测试中的利用](https://mp.weixin.qq.com/s/xv2Ft7tfOyWJSUI8TTCt1g)
 [MinIO | CVE-2023-28432 MinIO的信息泄露漏洞分析](https://mp.weixin.qq.com/s/sd0MmL3pYTfsUGJ0Sy2R2Q)
 [MinIO | 信息泄露漏洞(CVE-2023-28432)](https://mp.weixin.qq.com/s/Bb17fAJ8wB7x3w4mW40PGg)
 [MinIO | CVE-2023-28432 Minio信息泄露导致RCE](https://y4er.com/posts/minio-cve-2023-28432/)

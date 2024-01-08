@@ -164,6 +164,15 @@ result.txt | 搜验证码
 
 ---
 
+
+[登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
+[注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
+
+[支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
+
+[(SRC漏洞挖掘三) 二维码功能点](https://mp.weixin.qq.com/s/AmEXavw4G7YLZEZZAHOZUw)
+### 渗透测试/API
+
 [API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
 [API | 渗透实战|两个 0day 漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
 [API | API 安全 01：crAPI 漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
@@ -198,13 +207,8 @@ result.txt | 搜验证码
 [API | 攻击与防御](https://mp.weixin.qq.com/s/xcdnd3QKeHzfCEXoBCTKLg)
 [API | 漏洞挖掘](https://mp.weixin.qq.com/s/Uu4_OBp1Ye6ZCSgWPQKbFA)
 [API | 【精选推荐】3款强大的API渗透测试工具](https://mp.weixin.qq.com/s/SuRkm_klAnFbtD23tRiPqA)
+[API | 通过分析JS源代码来发现api漏洞](https://mp.weixin.qq.com/s/Mk-DhFTvLfxgjd1IXXQSmg)
 
-[登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
-[注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
-
-[支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
-
-[(SRC漏洞挖掘三) 二维码功能点](https://mp.weixin.qq.com/s/AmEXavw4G7YLZEZZAHOZUw)
 ## Java
 
 [Javaweb 中的权限绕过](https://mp.weixin.qq.com/s/9PmJnm_bkFqkWEv603VdjA)
