@@ -40,6 +40,7 @@ hashcat -O -m 0 da974531914a7c2c56df745574a5bd3a -a 3 mask_file.hcmask
 ```
 
 mask_file.hcmask
+
 ```sh
 ?d
 ?d?d
@@ -344,6 +345,13 @@ hashcat -O -m 500 -a 3 -o cracked.txt shadow ?l?l?l?l
 
 ```sh
 hashcat -m 16500 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTc0ODM1MzE0LCJleHAiOjE1Nzc0MjczMTR9.GXWX72f5PQi4unRvF3eh6oPziUUr_iVxMyUL5NFlulU rockyou.txt
+```
+
+## veracrypt
+
+```sh
+## 通常是29421-29423
+hashcat -a 3 -m 29421 2.txt ?d?d?d?d?d?d
 ```
 
 ## domain

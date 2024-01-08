@@ -1,3 +1,5 @@
+[tips](https://psql-tips.org/psql_tips_all.html)
+
 ```sh
 postgres=# select version();
 postgres=# SHOW is_superuser;
