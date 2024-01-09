@@ -82,6 +82,7 @@ result.txt | 搜验证码
 ## [Exploit/CVE/实战漏洞](./exp_exploit.md)
 
 ## 钓鱼/phishing
+
 [社会工程学工具包：Social-Engineer Toolkit（SET）](https://mp.weixin.qq.com/s/U-dJtrJXy6jGw3MTW6XY5w)
 
 [公共 WiFi 钓鱼 | wifipumpkin3 |全局 DoH+纯 HTTPS 网站+不信任自签证书](https://www.bilibili.com/video/BV1he4y1S7Q8)
@@ -96,7 +97,7 @@ result.txt | 搜验证码
 [一文就学会网络钓鱼“骚”姿势](https://mp.weixin.qq.com/s/87-lf_GUWswnm33WsVb7Xg)
 [【2023】无痕制作钓鱼邮件](https://mp.weixin.qq.com/s/Ro7ETfw9R0xeGrMEFSSekA)
 [攻防演练 | 记一次社工钓鱼全过程](https://mp.weixin.qq.com/s/z7VpDx1duMYauT9Cf0HfQg)
-[黑客(红队)攻防中内网利用chm文件进行getshell上线](https://mp.weixin.qq.com/s/_bD_-MbNujn6P_y18xUk0g)
+[黑客(红队)攻防中内网利用 chm 文件进行 getshell 上线](https://mp.weixin.qq.com/s/_bD_-MbNujn6P_y18xUk0g)
 [社工思路和防范措施](https://mp.weixin.qq.com/s/33TRodxI6y9CoDOdKrX9NA)
 [社工钓鱼基本流程](https://mp.weixin.qq.com/s/jfynHjEZ_R8dmES5XYwC9w)
 
@@ -120,8 +121,7 @@ result.txt | 搜验证码
 - [【红队攻防】C++ VEH 实现 shellcode 加载器](https://www.bilibili.com/video/BV1jk4y1K7d4/)
 - [AV-Bypass-Learning 免杀学习笔记 shellcode 免杀的常用手法](https://github.com/colind0pe/AV-Bypass-Learning)
 - [红队免杀系列之其一](https://mp.weixin.qq.com/s/vy77tmRkbztR_XHXU9NDvQ)
-- [将shellcode注入Linux中正在运行的进程（C/C++代码实现）](https://mp.weixin.qq.com/s/WrN2ErTGFfFTY3Q6qrbqvg)
-
+- [将 shellcode 注入 Linux 中正在运行的进程（C/C++代码实现）](https://mp.weixin.qq.com/s/WrN2ErTGFfFTY3Q6qrbqvg)
 
 ## 提权
 
@@ -143,7 +143,7 @@ result.txt | 搜验证码
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 [实战中常见的逻辑漏洞 | 水平越权](https://mp.weixin.qq.com/s/eTMvmLhoGCzsqwjRxEmdRA)
 [登录页面渗透的骚操作](https://mp.weixin.qq.com/s/LSj26A7WceXelbfOfRanLQ)
-[3句话，让AI给我找SQL注入](https://mp.weixin.qq.com/s/9V8-K3YRHDOAX1cAKfpKnw)
+[3 句话，让 AI 给我找 SQL 注入](https://mp.weixin.qq.com/s/9V8-K3YRHDOAX1cAKfpKnw)
 
 --- 实战
 
@@ -164,14 +164,21 @@ result.txt | 搜验证码
 
 ---
 
-
 [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
 [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
 
 [支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 
-[(SRC漏洞挖掘三) 二维码功能点](https://mp.weixin.qq.com/s/AmEXavw4G7YLZEZZAHOZUw)
+[(SRC 漏洞挖掘三) 二维码功能点](https://mp.weixin.qq.com/s/AmEXavw4G7YLZEZZAHOZUw)
+
 ### 渗透测试/API
+
+提取
+
+```sh
+\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b
+https?://[^"]+
+```
 
 [API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
 [API | 渗透实战|两个 0day 漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
@@ -187,7 +194,7 @@ result.txt | 搜验证码
 [API | 你不得不会的安全漏洞-API 安全](https://www.bilibili.com/video/BV1HD4y1P7v6/)
 [API | js 文件中的敏感信息&swagger 接口测试](https://mp.weixin.qq.com/s/79xMwEcJaqTfc7BIKG6gDA)
 [Api | 接口安全测试方法大全-Wsdl&Swagger&Webpack（附一键化扫描工具）](https://mp.weixin.qq.com/s/4EYox2aFJC2HNIExIi15Kw)
-[API | JS文件中的敏感信息+swagger接口测试](https://mp.weixin.qq.com/s/t6CXUmdwva9ARIQ9ayOgeA)
+[API | JS 文件中的敏感信息+swagger 接口测试](https://mp.weixin.qq.com/s/t6CXUmdwva9ARIQ9ayOgeA)
 [API | 五大 API 安全漏洞及缓解措施](https://mp.weixin.qq.com/s/jzCnR9cfuRj0J4sgYnJDWQ)
 [API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/w44WyWWD60B3iqobHn6BQw)
 [API | API 安全基础理论](https://mp.weixin.qq.com/s/eFxfxVcXNu2QhnnaQVO2Og)
@@ -206,8 +213,8 @@ result.txt | 搜验证码
 [API | 常见的 API 接口漏洞总结](https://mp.weixin.qq.com/s/IbsJ0n-sw1G0cWHz6PE6Jw)
 [API | 攻击与防御](https://mp.weixin.qq.com/s/xcdnd3QKeHzfCEXoBCTKLg)
 [API | 漏洞挖掘](https://mp.weixin.qq.com/s/Uu4_OBp1Ye6ZCSgWPQKbFA)
-[API | 【精选推荐】3款强大的API渗透测试工具](https://mp.weixin.qq.com/s/SuRkm_klAnFbtD23tRiPqA)
-[API | 通过分析JS源代码来发现api漏洞](https://mp.weixin.qq.com/s/Mk-DhFTvLfxgjd1IXXQSmg)
+[API | 【精选推荐】3 款强大的 API 渗透测试工具](https://mp.weixin.qq.com/s/SuRkm_klAnFbtD23tRiPqA)
+[API | 通过分析 JS 源代码来发现 api 漏洞](https://mp.weixin.qq.com/s/Mk-DhFTvLfxgjd1IXXQSmg)
 
 ## Java
 
@@ -233,7 +240,7 @@ result.txt | 搜验证码
 ### bypass_AV/免杀/安全开发 C/Cpp
 
 - 50_Anti-AntiVirus_EXE.md
-- [Bypass | 无回显用浏览器下载 | Windows通用下载绕过姿势总结](https://mp.weixin.qq.com/s/rGDCp6jS50VKddqftZrRiQ)
+- [Bypass | 无回显用浏览器下载 | Windows 通用下载绕过姿势总结](https://mp.weixin.qq.com/s/rGDCp6jS50VKddqftZrRiQ)
 - [Mimikatz 的 18 种免杀姿势及防御策略 | msf 加载 bin](https://www.freebuf.com/articles/system/234365.html)
 - [绕过 windows defender 上线 cs](https://mp.weixin.qq.com/s/aIC504L3jPMKbty6u5rEnw)
 - re_dll.md
@@ -263,23 +270,21 @@ result.txt | 搜验证码
 - [往期优秀学员分享绕过核晶专题](https://mp.weixin.qq.com/s/DbjUNeiodubGjeXwNSgknQ)
 - [小技巧 | 用一条命令来隐藏反向 Shell](https://mp.weixin.qq.com/s/TKCNTovBdBd_cWRlbSlKPA)
 - [绕过 AV/EDR 的代码例子](https://mp.weixin.qq.com/s/IFm1nAni8osT4wY0t-o4OQ)
-_ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
-_ [冰蝎 4.0 流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
-- [Webshell | php_webshell免杀--从0改造你的AntSword](https://mp.weixin.qq.com/s/yTmipL9HlPB4a0oQ-qy_3Q)
-_ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
+  _ [渗透技巧分享-sqlserver-os-shell(有杀软)绕过免杀上线](https://mp.weixin.qq.com/s/KACY6S9SROFZ2vkApNaqkA)
+  _ [冰蝎 4.0 流量分析及魔改](https://mp.weixin.qq.com/s/V4qsKa_r01G2EcjJlKK8Nw)
+- [Webshell | php_webshell 免杀--从 0 改造你的 AntSword](https://mp.weixin.qq.com/s/yTmipL9HlPB4a0oQ-qy_3Q)
+  \_ [Webshell | 绕过 360 主动防御执行命令](https://mp.weixin.qq.com/s/N8l8Cy6HyjTeDKPs2XBbGg)
 - [Webshell | jsp](https://github.com/LandGrey/webshell-detect-bypass/blob/master/webshell/jsp/Runtime-reflect-cmd.jsp)
-- [Webshell | Jsp两种免杀思路](https://mp.weixin.qq.com/s/HP9mDU0POphIUZKZuza1jA)
+- [Webshell | Jsp 两种免杀思路](https://mp.weixin.qq.com/s/HP9mDU0POphIUZKZuza1jA)
 - [Mimikatz 源码免杀](https://mp.weixin.qq.com/s/3dEmmGNkNLPhJnEudm69Nw)
-_ [使用进程镂空技术免杀360Defender](https://mp.weixin.qq.com/s/pyALO84x82aPb10AqV1eKA)
+  \_ [使用进程镂空技术免杀 360Defender](https://mp.weixin.qq.com/s/pyALO84x82aPb10AqV1eKA)
 - [Sign-Sacker (签名掠夺者) - 2.0](https://mp.weixin.qq.com/s/cC5ylFBXEPHylKW9NIZVqw)
 - [综合 | 红队技术 | 隐藏上传的程序木马](https://mp.weixin.qq.com/s/QglaTxTSvw37Cg1dzlfabw)
 - #安全: c_cpp_tutorial\Article.md
-- [LoaderGo-快速生成免杀木马GUI版本，bypass主流杀软](https://mp.weixin.qq.com/s/gXpDWXMXqAf4Vt_24CLc5g)
-
+- [LoaderGo-快速生成免杀木马 GUI 版本，bypass 主流杀软](https://mp.weixin.qq.com/s/gXpDWXMXqAf4Vt_24CLc5g)
 
 - Android
-[Android免杀小结](https://mp.weixin.qq.com/s/kTn5OoqWDqtL-qW4Ph5QUg)
-
+  [Android 免杀小结](https://mp.weixin.qq.com/s/kTn5OoqWDqtL-qW4Ph5QUg)
 
 **Video**
 
@@ -308,8 +313,8 @@ _ [使用进程镂空技术免杀360Defender](https://mp.weixin.qq.com/s/pyALO84
 [阿里云 WAF3.0 命令执行 Bypass，也是 WAF 的通病](https://mp.weixin.qq.com/s/AuONhIYbnTZzIBpxpcXtIw)
 [从 SQL 注入绕过最新安全狗 WAF 中学习 fuzz](https://mp.weixin.qq.com/s/ChwHSHGMd3GJDpYN4z1c9Q)
 [【技术分享】SQL-FUZZ 技巧及阿里云 waf 绕过方式](https://mp.weixin.qq.com/s/eUJ7J83EzrlfGvLD6b9JGQ)
-[文件上传绕过360磐云WAF](https://mp.weixin.qq.com/s/QC0oZxMti4TvpWQE9VCqgQ)
-[web渗透测试中WAF绕过讲解（一）针对CDN类型的WAF绕过](https://mp.weixin.qq.com/s/0Ea0p7QopMj9t2xiD0uokw)
+[文件上传绕过 360 磐云 WAF](https://mp.weixin.qq.com/s/QC0oZxMti4TvpWQE9VCqgQ)
+[web 渗透测试中 WAF 绕过讲解（一）针对 CDN 类型的 WAF 绕过](https://mp.weixin.qq.com/s/0Ea0p7QopMj9t2xiD0uokw)
 
 ### bypass uac
 
@@ -342,7 +347,7 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 [APP 漏洞挖掘](https://mp.weixin.qq.com/s/Q1Ll_ScFhGZmLJpd1YaWuA)
 [APP 漏洞挖掘之某下载量超 101 万的 APP 有几个漏洞可以 GetShell？](https://mp.weixin.qq.com/s/x8gaMehZ6A_ATdkodKNHyQ)
 [APP 漏洞挖掘之某款 APP 开发商通用漏洞的挖掘](https://mp.weixin.qq.com/s/T9H8dtFYCgck1PHB3zy_7Q)
-[云麦智能秤app账户接管漏洞](https://mp.weixin.qq.com/s/JoNX3k1eRazQh7Js46qgyQ)
+[云麦智能秤 app 账户接管漏洞](https://mp.weixin.qq.com/s/JoNX3k1eRazQh7Js46qgyQ)
 
 ## Docker
 
@@ -463,15 +468,15 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 # 蓝队
 
 [2021 年【Hacking 黑白红】公众号文章年终总结](https://mp.weixin.qq.com/s/mawQ0ARRHcH6Yt3UADUVhA)
-[Cobalt Strike的各类反向上线操作](https://mp.weixin.qq.com/s/lISljMJGxxZaRz92-PgE4Q)
-[浅谈IP地址溯源方法](https://mp.weixin.qq.com/s/NT6C5ySbzmAWDLtskuHuyw)
+[Cobalt Strike 的各类反向上线操作](https://mp.weixin.qq.com/s/lISljMJGxxZaRz92-PgE4Q)
+[浅谈 IP 地址溯源方法](https://mp.weixin.qq.com/s/NT6C5ySbzmAWDLtskuHuyw)
 
 ## 溯源
 
 [日志管理与分析（一）--日志收集及来源](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484255&idx=2&sn=b0fb2ceeb94129071d4285d6c30f4b79)
 [日志管理与分析（二）--日志分析与报告](https://mp.weixin.qq.com/s?__biz=MzAxNDM3NTM0NQ==&mid=2657034743&idx=1&sn=c279fdcbb2d16ded9e67287d88fe8cae)
 [日志管理与分析（三）--对日志系统的攻击](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484257&idx=2&sn=df40b069d70743343a06abe063dd2f18)
-[CobaltStrike溯源反制](https://mp.weixin.qq.com/s/5MF-WjduNaBWuhILv6MPSw)
+[CobaltStrike 溯源反制](https://mp.weixin.qq.com/s/5MF-WjduNaBWuhILv6MPSw)
 
 # Other
 
