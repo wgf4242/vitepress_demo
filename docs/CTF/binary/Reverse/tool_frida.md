@@ -1,6 +1,9 @@
 [[toc]]
 2022-04-13-RE-上午.mp4
 
+[hulda | frida加强版](https://github.com/hzzheyang/strongR-frida-android/releases)
+
+
 ## 环境
 
 安装 x64 的 python
