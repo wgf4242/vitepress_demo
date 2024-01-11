@@ -261,6 +261,16 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 
 ### Exploit/CVE/实战漏洞/微信小程序
 
+- [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
+- [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 AES 密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)
+- [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 XOR 解密](https://www.bilibili.com/video/BV1Lv4y1i7hJ/)
+- [​ 微信小程序逆向分析](https://mp.weixin.qq.com/s/r9VVeXnT_PFX7C8mq7ej_w)
+- [VX 小程序逆向分析](https://mp.weixin.qq.com/s/7yZzf4V-2fcn-jRwm4uO-w)
+- [【小程序逆向】百达星系 signature、mid](https://mp.weixin.qq.com/s/RU6et-_V8JXTiSl7cOYnMg)
+- [大麦反编译 sign—小程序逆向-哔哩哔哩](https://www.bilibili.com/video/BV1z94y147GD/)
+[强开小程序f12 秒杀动态RSA+AES加密](https://www.bilibili.com/video/BV1oT4y1J77u/) 
+[小程序逆向之国密SM2加密](https://www.bilibili.com/video/BV1jh4y127TN/) 
+
 [安卓渗透测试工具集 -- h4tools](https://mp.weixin.qq.com/s/z0pb-Z4pzk-eX5nXsrF8vg)
 [渗透实战|记一次微信小程序渗透测试](https://mp.weixin.qq.com/s/GQYqbKDiY_OfE4kdVgCMig)
 [记一次微信小程序渗透实战记录](https://mp.weixin.qq.com/s/LUDuOgBesn8xKGonE6R8tw)

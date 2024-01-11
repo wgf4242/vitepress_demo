@@ -370,16 +370,6 @@ https://github.com/APKLab/APKLab
 - [loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/L4LmF1M4gN21r8uYL0BDJg)
 - [Android 使用 ASM 修改函数](https://mp.weixin.qq.com/s/883DG-SRoJgy58je2R1Ibg)
 
-## 小程序
-
-- [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
-- [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 AES 密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)
-- [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 XOR 解密](https://www.bilibili.com/video/BV1Lv4y1i7hJ/)
-- [​ 微信小程序逆向分析](https://mp.weixin.qq.com/s/r9VVeXnT_PFX7C8mq7ej_w)
-- [VX 小程序逆向分析](https://mp.weixin.qq.com/s/7yZzf4V-2fcn-jRwm4uO-w)
-- [【小程序逆向】百达星系 signature、mid](https://mp.weixin.qq.com/s/RU6et-_V8JXTiSl7cOYnMg)
-- [大麦反编译 sign—小程序逆向-哔哩哔哩](https://www.bilibili.com/video/BV1z94y147GD/)
-
 ## 普通文章
 
 [『杂项』APP 权限调用查看方法](https://mp.weixin.qq.com/s/qB9_UuRrmrP18ARNX44lvA)
