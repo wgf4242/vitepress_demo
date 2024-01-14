@@ -359,6 +359,7 @@ pause()
 [IDA Python 去混淆](https://mp.weixin.qq.com/s/a7RLme8bTWiB6MfNT-5AKg)
 
 ## plugin
+[ida脚本开发环境配置idapython&idacpp三端环境(win、mac、linux)](https://mp.weixin.qq.com/s/uU67NR1lHpIMS1gGnZcfOw)
 
 [IDA 插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)
 [给 IDA 写个 small 插件](https://mp.weixin.qq.com/s/B1rRYFEmZoTRd0KHxDLF7g)

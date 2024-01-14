@@ -162,14 +162,17 @@ result.txt | 搜验证码
 
 [几次护网小结之红队打点及小技巧](https://mp.weixin.qq.com/s/dmpgGTo3qd2qbXrNcFeafw)
 
----
 
-[登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
-[注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
 
 [支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 
 [(SRC 漏洞挖掘三) 二维码功能点](https://mp.weixin.qq.com/s/AmEXavw4G7YLZEZZAHOZUw)
+
+### 登录测试
+
+- [登录测试 | 登录功能设计缺陷](https://mp.weixin.qq.com/s/mm_CO3RfgqGSI610zt60jQ)
+- [注册功能设计缺陷](https://mp.weixin.qq.com/s/vnNTBN3fOSIkelYushth8Q)
+- 设置密码为`123456` 进行账号爆破
 
 ### 渗透测试/API
 

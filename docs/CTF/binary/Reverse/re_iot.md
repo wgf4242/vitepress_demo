@@ -107,6 +107,10 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [锐捷 RG-EW1200G 远程代码执行漏洞(CVE-2023-3306)](https://mp.weixin.qq.com/s/N2WFXkEpbeFQ4wMrYJ0bMw)
 - [手把手玩转路由器漏洞挖掘系列 - 固件加解密](https://mp.weixin.qq.com/s/mbL0MYNAjkPrMix6hg2CYw)
 
+## IoT/控车App
+[某控车app的测试记录](https://mp.weixin.qq.com/s/gBfWLgkcHLldpNTGuh67lA)
+[[车联网攻防入门]常见控车app加固措施及绕过方式](https://mp.weixin.qq.com/s/hgc1ad1q76kQu5il6m2NhQ)
+
 ## IoT/car/汽车
 
 - [汽车 CAN 总线-01 介绍](https://mp.weixin.qq.com/s/Jognd-QPI6J9wO6V9OjnoA)

