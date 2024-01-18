@@ -257,7 +257,8 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 
 [Chrome XXE 漏洞 POC，实现对访客者本地文件读取工具（11月20日更新）](https://mp.weixin.qq.com/s/DmBpOKKkx2PbLSHY-nrO5w)
 
-[GitLab | 漏洞复现 | CVE-2023-7028 GitLab 任意用户密码重置](https://mp.weixin.qq.com/s/Yn6CmiGticzxB2F8P1X0KA)
+[GitLab | 任意用户密码重置漏洞（CVE-2023-7028）](https://mp.weixin.qq.com/s/jnXXOK7lxRG1U-FXZxsy-w)
+[GitLab | CVE-2023-7028 GitLab 任意用户密码重置](https://mp.weixin.qq.com/s/Yn6CmiGticzxB2F8P1X0KA)
 ### Exploit/CVE/实战漏洞/Windows
 
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
