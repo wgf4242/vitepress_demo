@@ -109,7 +109,7 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 
 - [.img 文件](forensics.md#取证题)
 
-## [流量分析](./misc_pcapng.md)
+## [流量分析](./misc_pcapng_流量分析.md)
 
 ## RCE 绕过类题目
 

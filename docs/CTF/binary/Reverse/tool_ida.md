@@ -22,6 +22,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - 读取卡死 载入选择 Binary
 
 - 基址设置: See Edit-->Segments-->Rebase program
+- 创建结构体 struct: 右击  `func(__int64 a1)` 中的 a1  -> Create new struct type
 
 ### ida 中的汇编与类型
 

@@ -37,6 +37,13 @@ hashcat --stdout -a 3 hash.txt mask_file.hcmask | head # hcmask 内可为多行�
 
 hashcat -O -m 0 da974531914a7c2c56df745574a5bd3a -a 3 rockyou.txt
 hashcat -O -m 0 da974531914a7c2c56df745574a5bd3a -a 3 mask_file.hcmask
+
+# echo -n admin888 |openssl md5 # 7fef6171469e80d32c0559f88b377245
+# 6 | Hybrid Wordlist + Mask, 每个pass后面加上?d?d?d 爆破
+hashcat -a 6 -m 0 <$hash> rockyou.txt ?d?d?d
+# 7 | Hybrid Mask + Wordlist, 生成每个 ?d?d?d 组合所有 pass 爆破
+hashcat -a 7 -m 0 <$hash> ?d?d?d rockyou.txt
+hashcat -a 7 -m 0 7fef6171469e80d32c0559f88b377245 admi?l?d?d?d hashpass.txt  -O
 ```
 
 ### 参数
