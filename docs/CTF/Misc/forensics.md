@@ -39,6 +39,8 @@
 | .img | winhex   | 查看每个块看有没有提示 |
 
 ### windows
+[【Windows取证篇】Window日志分析基础知识（一）](https://mp.weixin.qq.com/s/saC5B3zZC7zx9DWdYwxtBQ)
+
 
 powershell 最后一条命令 或 运行 powershell 向上翻
 appData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
