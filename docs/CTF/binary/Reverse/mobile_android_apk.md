@@ -255,6 +255,9 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十四、是时候学习一下 Frida 一把梭了(中)](https://mp.weixin.qq.com/s/HZfiX6VI3G6X6If_4IfFRg)
 - [《安卓逆向这档事》十五、是时候学习一下 Frida 一把梭了(下)](https://mp.weixin.qq.com/s/97o3fX9AN_kl2GCLhHAfig)
 - [《安卓逆向这档事》十六、是时候学习一下 Frida 一把梭了(终)](https://mp.weixin.qq.com/s/BqqDsxB4u7QyTmBozZjMnw)
+- [番外篇之安卓CRC检测（上）](https://www.bilibili.com/video/BV1Le411Y7Rx/) 
+- [番外篇之安卓CRC检测（下）](https://www.bilibili.com/video/BV1jN4y1H7FP/) 
+
 - [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
 - [Android 逆向技术高阶大法](https://mp.weixin.qq.com/s/zMXOpxW6E5klbsjKVHZudg)
 

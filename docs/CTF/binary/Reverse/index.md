@@ -37,6 +37,8 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 1. 输入输出变换了大端小端
 1. 调试原生文件如 dll/so, 关注导出表
 2. 爆破时可能用到 `^ flag, ^ DASCTF, ^ 主办方` 来确认值的前几位
+3. 随机种子 srand/seed/rand, 关注rand函数/clock_gettime。 [link](https://mp.weixin.qq.com/s/ksGjGGeYjvWpgmRA5xyBpg)
+
 
 1.简单题目 patch 调试 set EIP 到后面执行一下 2.多用调试直接过逻辑看结果。 1.搜到关键字如 0x33445566, 先 google/baidu ctf 0x33445566 4.没去符号 函数调用少 C 代码复制出来改一改爆破更快的 5.或者 asm 改成 call puts 6.已知算法未成功执行，检查有符号 还是无符号，可能有改变。 6.调试时
 
