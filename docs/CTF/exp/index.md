@@ -195,6 +195,7 @@ rw_exp_joomla_CVE-2023-23752
 [DedeCMS 组合漏洞分析](https://mp.weixin.qq.com/s/vzNIMszhneJCq5MznfrR0A)
 [DedeCMS-V5.7.109-UTF8 后台可getshell](https://mp.weixin.qq.com/s/FRbVHobj6l9m7YjtRReXTg)
 [Dedecms V110最新版RCE---Tricks](https://mp.weixin.qq.com/s/UM1rFRAIauAdhaZ6vJj9Zw)
+[Dedecms V5.7.112 SP2 RCE, 打开搜ezdede]((https://mp.weixin.qq.com/s/o9hHsqryVgcommIBmynGWA))
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2 和 8.6.4.1 | CVE-2022-36537 未授权 RCE 漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos | QVD-2023-6271：Nacos 身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
