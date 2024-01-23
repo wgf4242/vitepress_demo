@@ -337,8 +337,9 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
   -- zip Advanced Archive Password Recovery
   -- rar hashcat + rar2john
   -- zip 掩码爆破 NCTF2018-havefun, 用ARCH, 开始wcy00000 结束wcy00000, 长度8, 暴力
-
--- 明文攻击, 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
+```
+### 明文攻击
+  -- 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
   -- arch 尝试 winrar/7z/bandizip/360 压缩尝试明文攻击
   -- https://blog.csdn.net/q851579181q/article/details/109767425
   -- 压缩为ZipCrypto 的压缩才能明文攻击
@@ -346,9 +347,22 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
   -- zip同名txt接用文件名作为明文攻击。 #见@list.md 第四届2021美团网络安全高校挑战赛
 
 
+ZipCrypto Deflate
+
+ZipCrypto Store
+
+AES-256 Deflate
+
+AES-256 Store
+
+ZipCrypto算是传统的zip加密方式。只有使用ZipCrypto Deflate /Store才可以使用 ZIP已知明文攻击进行破解。
+
+Winrar（v5.80）、7zip（v19.00）默认是AES256算法，直接排除。
+360压缩（v4.0.0.1220）、好压（v6.2）使用的是ZipCrypto，不固定使用Store或Deflate（如果要固定使用ZipCrypto Store算法加密，可以在压缩的时候指定压缩方式为“存储”
+
+
   压缩工具要相同，如果产生CRC32不同。换工具试， 算法也要相同
   1.压缩方式要选 1存储 2zip , 下面工具使用 --help 查看帮助
-```
 
 bkcrack, 明文只需要满足 8 字节连续，一共 12 字节已知即可
 

@@ -39,6 +39,8 @@
 | .img | winhex   | 查看每个块看有没有提示 |
 
 ### windows
+[【Windows取证篇】Window日志分析基础知识（一）](https://mp.weixin.qq.com/s/saC5B3zZC7zx9DWdYwxtBQ)
+
 
 powershell 最后一条命令 或 运行 powershell 向上翻
 appData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
@@ -62,6 +64,9 @@ grep -R '/Desktop' 01files >01_files_Desktop
 python vol.py -f ../1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_find_file -F "/home/bob/Desktop/app.py"
 python vol.py -f ../1.mem --profile=LinuxUbuntu_5_4_0-84-generic_profilex64 linux_find_file -i 0xffff97ce37a94568 -O secret.zip
 volatility -f 1.mem --profile=LinuxUbuntu180484x64 linux_recover_filesystem -D filesystem # 导出全部缓存文件
+
+# apache
+## /var/log/apache2/access.log  出现ua头为实际攻击者行为
 ```
 
 ### 数据库 sql

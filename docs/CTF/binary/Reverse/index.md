@@ -14,6 +14,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 
 1. 单字节对比类型 - 直接改汇编输出爆破
 1. 用相同长度字符编码 `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!` 填入表看替换状态。然后换表。通过规律找原文
+2. 用相同长度字符编码 `flag00000000000000000000000000000000000000` 填入观察状态 `f0000000000lg0000000000000000000a000000000` 通过规律找原文
 2. 调试: 先运行, Strings窗口看字符串 重建, 关键点下访问断点, 继续运行
 1. go 语言用 ida8
 1. [反调试, 开插件 | 打补丁](anti-debug_%E5%8F%8D%E8%B0%83%E8%AF%95.md)
@@ -36,6 +37,8 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 1. 输入输出变换了大端小端
 1. 调试原生文件如 dll/so, 关注导出表
 2. 爆破时可能用到 `^ flag, ^ DASCTF, ^ 主办方` 来确认值的前几位
+3. 随机种子 srand/seed/rand, 关注rand函数/clock_gettime。 [link](https://mp.weixin.qq.com/s/ksGjGGeYjvWpgmRA5xyBpg)
+
 
 1.简单题目 patch 调试 set EIP 到后面执行一下 2.多用调试直接过逻辑看结果。 1.搜到关键字如 0x33445566, 先 google/baidu ctf 0x33445566 4.没去符号 函数调用少 C 代码复制出来改一改爆破更快的 5.或者 asm 改成 call puts 6.已知算法未成功执行，检查有符号 还是无符号，可能有改变。 6.调试时
 
