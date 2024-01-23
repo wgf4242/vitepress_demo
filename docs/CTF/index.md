@@ -92,3 +92,6 @@ cat test
 [实验室 2023 届 本科优秀毕业设计展示四——应用安全](https://mp.weixin.qq.com/s/-qTDBayECI8i11n-W1GEBg)
 [获奖！立项！结题！](https://mp.weixin.qq.com/s/Q6n8JZ1VGdiAnEZNJZdDYw)
 
+
+## 出题相关/题目设计
+[CTF设计的七个经验教训](https://mp.weixin.qq.com/s/jondfZ08dy-NXeTQyzKHsg)
