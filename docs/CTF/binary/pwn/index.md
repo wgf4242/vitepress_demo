@@ -155,7 +155,7 @@ https://syst3mfailure.io/
 - [CTFHUB | 堆溢出 | House of Einherjar](https://blog.csdn.net/KaliLinux_V/article/details/128933128)
 - [CTFHUB | 堆溢出 | House of spirit](https://blog.csdn.net/KaliLinux_V/article/details/128944591) [FastBin Attack：House of spirit attack](https://bbs.kanxue.com/thread-277106.htm)
 - [CTFHUB | 堆溢出 | House of roman](https://blog.csdn.net/KaliLinux_V/article/details/128951462)
-- [CTFHUB | 堆溢出 | House of orange](https://blog.csdn.net/KaliLinux_V/article/details/128966835)
+- [CTFHUB | 堆溢出 | House of orange](https://blog.csdn.net/KaliLinux_V/article/details/128966835) [house of orange](https://mp.weixin.qq.com/s/PDCceypsuVmgv1Cv8KyluA)
 - [CTFHUB | 堆溢出 | House of Lore](https://blog.csdn.net/KaliLinux_V/article/details/128969408)
 
 --- 堆喷
