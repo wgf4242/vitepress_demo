@@ -3,6 +3,7 @@
 2. scyllahide等插件
 
 # 反调试
+* [Windows | 反调试技术学习](https://mp.weixin.qq.com/s/KPOt_ezHVwSNPlyblLByXQ)
 * [anti_all_in_one](https://github.com/Hipepper/anti_all_in_one/wiki)
 * [反调试技术整理](https://www.cnblogs.com/hed10ne/p/anti-debug-techs.html)
 * https://ctf-wiki.org/reverse/windows/anti-debug/zwsetinformationthread/
