@@ -364,3 +364,5 @@ pause()
 
 [IDA 插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)
 [给 IDA 写个 small 插件](https://mp.weixin.qq.com/s/B1rRYFEmZoTRd0KHxDLF7g)
+
+[plugins | 小巧可爱的IDA插件——uEmu超级模拟器](https://mp.weixin.qq.com/s/Bksot8q9qn6OveXyPnPrrA)
