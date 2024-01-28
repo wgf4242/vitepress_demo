@@ -1,3 +1,5 @@
+[批量扫描脚本-Jenkins任意文件读取(CVE-2024-23897)](https://mp.weixin.qq.com/s/eES8iWuu1MNJQFUCib5L3Q)
+
 # 查找密码
 Jenkins 用户名为 admin, 服务密码在
 ```bash

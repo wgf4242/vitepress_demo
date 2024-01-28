@@ -60,6 +60,7 @@ $$
 * [RSA专题——”误用“攻击](https://mp.weixin.qq.com/s/BB8euI5ytK0A5sfc6Gv-fw)
 * [RSA专题——参数误用](https://mp.weixin.qq.com/s/oicoXceIeqOWEvcJECbkWg)
 
+* [密码人速戳！一篇文章带你明白根与多项式](https://mp.weixin.qq.com/s/KGLYE5CY4UyCjTa3jQWtng)
 ---
 * [『CTF』什么是威尔逊定理？](https://mp.weixin.qq.com/s/qAlWPcPs5pqr3IAJ1JhXMw)
 * [AES](https://bbs.pediy.com/thread-253884.htm)
