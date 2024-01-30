@@ -5,6 +5,8 @@ https://docs.python.org/3/library/dis.html
 [Python代码保护技术及其破解](https://mp.weixin.qq.com/s/y1atfJ-vf0wZBtMooeSw4A)
 [从TPCTF 2023 学习Python逆向](https://mp.weixin.qq.com/s/0nJHKJjDFrWHgspoVF23xA)
 
+magic word 在 /Lib/importlib/_bootstrap_external.py 路径下找到各版本对应的16bits整数。
+
 ## bytecode disassembly
 
 ### STORE
