@@ -56,6 +56,8 @@
   - 画图, 比如 01 多行，把 1 画出来。连上看看效果。
   - 大文件: 1.混乱字节且 2.大小整数 20mb 倍数 测 veracrypt（或 truecrypt）
   - 小白说：zo23n，小黑说：f5s7e `zero(0)one(1)23nine(9) four(4)five(5)six(7)eight(8)`
+- 数字
+  - 1个数据 比较长tupper
 - 不明数字+字母
   - Caesar 后过滤 16 进制。
 - 不明 16 进制/字符串

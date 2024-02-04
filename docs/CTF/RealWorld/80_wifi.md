@@ -85,5 +85,6 @@ mdk4 wlan0 d -c 36,40,44,48,149,153,157,161,165
 
 ## Article
 [零度WIFI安全测试](https://www.youtube.com/watch?v=_9q9Cl555wg)
+[Kali Linux 暴力破解学校办公室WiFi](https://mp.weixin.qq.com/s/EZ7i1uI44LTyv2HhZbUgyg)
 ## Tools
 Elcomsoft Wireless Security Auditor
