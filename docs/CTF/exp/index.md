@@ -265,6 +265,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
 ### Exploit/CVE/实战漏洞/微信小程序
+- [微信 | 如何绕过“请在微信客户端打开链接”的限制0x00 限制原理](https://mp.weixin.qq.com/s/VRPv8_hO4Qfu4a_BoeDYmQ)
 - [云函数抓包 | windows下通杀wx小程序云函数实战](https://mp.weixin.qq.com/s/FALxsjmAE3XDfuwjRgMvQg)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 AES 密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)

@@ -230,6 +230,8 @@ https://github.com/APKLab/APKLab
 
 ## 抓包
 
+工具: httpcanary(旧版) reqable(新版)
+
 - [Android 渗透测试 HTTPS 证书校验绕过](https://mp.weixin.qq.com/s/X6efaPMF0Zb3ENsEy-H3gQ)
 - [安卓高版本安装系统证书 HTTPS 抓包 - 终极解决方案](https://blog.51cto.com/u_15527932/6107429)
 - [淘系 | 【安卓逆向】解决淘系某猫等 App 抓包问题](https://mp.weixin.qq.com/s/BFFEGWDhjTdDlfWITSme8Q)
