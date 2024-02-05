@@ -219,6 +219,7 @@ https?://[^"]+
 [API | 【精选推荐】3 款强大的 API 渗透测试工具](https://mp.weixin.qq.com/s/SuRkm_klAnFbtD23tRiPqA)
 [API | 通过分析 JS 源代码来发现 api 漏洞](https://mp.weixin.qq.com/s/Mk-DhFTvLfxgjd1IXXQSmg)
 [API | JWT渗透姿势](https://mp.weixin.qq.com/s/1e94h4NFiIbVDMiIXtjgGQ)
+[API | JWT的认证bypass](https://mp.weixin.qq.com/s/-4XT3rWZs4o-fnzt5plIHA)
 
 ## Java
 
