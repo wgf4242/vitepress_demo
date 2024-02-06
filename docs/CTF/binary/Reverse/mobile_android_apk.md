@@ -308,6 +308,7 @@ https://github.com/APKLab/APKLab
 - [移动安全（九）|TengXun 加固动态脱壳（上篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=2&sn=c6abc2fc1f945d5f4c60fa6a92bb9106)
 - [移动安全（十）|TengXun 加固动态脱壳（下篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=3&sn=40d185a659934c45851273d88353199a)
 - [Android 逆向之脱壳实战篇](https://mp.weixin.qq.com/s/zmCVxorHy_juPnV_I-8Inw)
+- [脱壳_Xposed+反射大师(360壳)](https://www.bilibili.com/video/BV17K411h7QC/)
 
 ---
 
