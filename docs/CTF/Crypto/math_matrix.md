@@ -1,4 +1,5 @@
 # 矩阵
+
 [行列式](https://mp.weixin.qq.com/s/h7dcAPRs55xcljAWDbOpgQ) determinant
 
 确认可逆 行列式不为 0
@@ -30,7 +31,8 @@ sage: B = A.inverse()
 sage: B
 [ 8/43 -7/43]
 [-3/43  8/43]
-# 算出来应该是 [2,21] [9,12]
+# 计算A的行列式 mod 26 的逆元  = 23,  23[[8,-7], [-3,8]] mod 26
+# 结果为 [2,21] [9,12]
 ```
 
 $$
@@ -38,6 +40,38 @@ $$
 \LARGE \frac d{ad-bc} & \LARGE \frac {-b}{ad-bc} \\
 \LARGE \frac {-c}{ad-bc} & \LARGE \frac {a}{ad-bc} \\
 \end{bmatrix}
+$$
+
+[计算视频](https://www.bilibili.com/video/BV1Do4y1f76U/)
+
+$$
+A = \begin{bmatrix}
+5 & 6 \\
+2 & 3 \\
+\end{bmatrix} \\ 
+\\
+. \\ 
+求伴随, 主 5,3 对调, 副变号 -6 -2 \\ 
+. \\ 
+A^{*} = \begin{bmatrix}
+3 & -6 \\
+-2 & 5 \\
+\end{bmatrix} \\ 
+
+求行列式 det(A) =  3 * 5 - (2 * 6) = 3 \\ 
+求3mod26的逆元  = 9 \\
+A^{-1}  = 9A^{*} = 9 \begin{bmatrix}
+3 & -6 \\
+-2 & 5 \\
+\end{bmatrix} \ mod \ 26 \\ 
+$$
+
+## 图例
+
+$$
+|A| 行列式 \\
+A^{*} 伴随矩阵 \\
+矩阵求逆 A^{-1} = \frac{A^{*}}{|A|} \\
 $$
 
 
