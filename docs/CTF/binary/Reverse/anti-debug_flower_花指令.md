@@ -1,6 +1,7 @@
 # 反调试
 
 - [anti_all_in_one](https://github.com/Hipepper/anti_all_in_one/wiki)
+- [由易到难全面解析CTF中的花指令](https://mp.weixin.qq.com/s/oyu85TX4-fnwSVDddPy4oA)
 - [反调试技术整理](https://www.cnblogs.com/hed10ne/p/anti-debug-techs.html)
 - https://ctf-wiki.org/reverse/windows/anti-debug/zwsetinformationthread/
 - ZwSetInformationThread 第 2 个参数为 ThreadHideFromDebugger，若为 0x11 修改为其他值

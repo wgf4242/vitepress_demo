@@ -218,6 +218,7 @@ https://github.com/APKLab/APKLab
 # Article
 
 - [Android 逆向环境搭建](https://mp.weixin.qq.com/s/3Zd4PBMxXpj21BuOu7tBiQ)
+- [APP渗透测试环境搭建](https://mp.weixin.qq.com/s/CnP79CUGxx-2utrywHckxA)
 - [Done | 入门 | 移动应用安全与风控——应用分析](https://mp.weixin.qq.com/s/LFl6dRodhBk6djYJGN6qAQ)
 
 ## 课程

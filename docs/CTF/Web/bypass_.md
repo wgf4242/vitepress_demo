@@ -1,5 +1,6 @@
 # Web - PHP bypass
 
+- [命令执行bypass分享](https://mp.weixin.qq.com/s/L4JVjedgW6lu6GlWt3VXDA)
 - [Bypass Linux Shell Restrictions](#linux-shell-bypass)
 - 空格绕过 `a=system ('cat /flag');`
 - 大小写绕过

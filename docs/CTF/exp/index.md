@@ -123,10 +123,13 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某 OJ 渗透测试记录\_bypass_winapi.h\_\_asm_shellcode_c#\_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
+
+[宝塔 | 宝塔最新未授权访问漏洞及SQL注入](https://mp.weixin.qq.com/s/yUGSaAw_sh082z2q7Kwwjw)
 [宝塔 | 后渗透-添加用户|反弹 shell](https://mp.weixin.qq.com/s/-MQ36nY6YbAPf6pVecregg)
 [宝塔 | 密码生成规则 当我在内网遇到宝塔......](https://mp.weixin.qq.com/s/5Uhq1t4DIE28jlt85SX3BQ)
 [宝塔 | Windows版宝塔bypass到RDP登录](https://mp.weixin.qq.com/s/PROqOqcMgF-s2CJ5B1aHew)
 [宝塔 | 宝塔渗透手法总结，从常见漏洞 聊到 宝塔维权 再到 bypass disable_functions原理](https://mp.weixin.qq.com/s/sPdYf1jrJMfQ2Qh7uxKhQA)
+
 [yxcms 后台模板写 shell](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [2](https://blog.csdn.net/qq_40638006/article/details/122033546)
 [Spring-Core-RCE 漏洞 | 漏洞图形化 GUI 一键利用工具](https://mp.weixin.qq.com/s/FSDTz_yWUXrJsJBEibxAQg)
 [Spring | CVE-2022-22965 Spring RCE 漏洞复现](https://mp.weixin.qq.com/s/KEmd9O2A121vd3vO97rdkw)
