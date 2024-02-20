@@ -34,7 +34,7 @@
 - unknown 数据
   - 多用 sublime 看可能有零宽
   - ciphey
-  - 邮件 | `Dear E-Commerce professional`  https://spammimic.com/decode.cgi
+  - 邮件 | `Dear E-Commerce professional` https://spammimic.com/decode.cgi
   - 每 2 个字符换位置
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
   - 字频统计
@@ -111,6 +111,7 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 - ascii chart 文字图用 Akelpad 查看效果不错。
 
 - [.img 文件](forensics.md#取证题)
+- [拼图 gaps](#拼图-gaps)
 
 ## [流量分析](./misc_pcapng_流量分析.md)
 
@@ -169,7 +170,7 @@ arr[$(cat /flag)]
 | png 多图        |        |        | 盲水印                                                                     | misc_BlindWatermark.bat 都试                                                                                                                                                                                     |
 | 多图            |        |        |                                                                            | 相减, 不同的像素点可能是 flag, 统计个数可能是 flag                                                                                                                                                               |
 | 多图            |        |        |                                                                            | 1.修改日期排序, 看区别 <br>2.创建时间排序, 看区别                                                                                                                                                                |
-| 多图 (像素一致) |        |        | Hgame2024 Week2 ezWord - StegSolve原版 Image Combiner 
+| 多图 (像素一致) |        |        | Hgame2024 Week2 ezWord - StegSolve 原版 Image Combiner                     |
 | 图片            |        |        |                                                                            | 看看每行的颜色和个数 `Misc_picture_other_count_num.py`                                                                                                                                                           |
 | jpg             |        |        | stegdetect                                                                 | stegdetect -tjopi -s 10.0 ./a.jpg                                                                                                                                                                                |
 |                 |        |        | stegdetect                                                                 | ./stegdetect -tF test.jpg                                                                                                                                                                                        |
@@ -250,6 +251,32 @@ convert a.gif qr.jpg
 | stegosaurus 剑龙             | python stegosaurus.py -x O_O.pyc                                                                                      |
 | base64 隐写                  | 多行 base64                                                                                                           |
 | 单词拼写错误的字母可能是 key | [google-10000-english.txt](https://github.com/first20hours/google-10000-english/blob/master/google-10000-english.txt) |
+
+### 拼图 gaps
+
+kali 图形界面终端执行完成
+
+\[MRCTF2020\]不眠之夜 [Link2](https://www.cnblogs.com/wrnan/p/12912705.html) [Link3](https://blog.csdn.net/mochu7777777/article/details/109649446)
+
+[使用自动拼图工具gaps进行自动拼图](https://mp.weixin.qq.com/s/QlrpOEdFH8YwZlnosXznrQ)
+```sh
+montage *.png -tile 图片摆放格式 -geometry 输出图片分辨率 flag.png  , +0+0 -- 设置图片无间隙, 设置分辨率会不清晰
+# tile后是从左往右张数x从上往下张数（宽的图片数x长的图片数）, 要拼的图为120张，长有10张，宽有12张，所以是10x12, 每块大小是200x100 或 400x200 即放大为2倍
+
+## -1-
+montage -tile 10x12 -geometry 200x100+0+0 *jpg flag.jpg
+montage -tile 3x3 -geometry +0+0 *.png flag.png
+montage *.jpg -tile 66x100 -geometry +0+0 ../flag02.png
+# gaps乱序的图像还原拼图 “–generations” 最好就等于原始图片的数量，即piece的数量
+# - –generations 遗传算法的代的数量(个体数量 tile的大小) –population 个体数量
+# size为小拼图的像素宽度
+gaps --image=flag.jpg --generations=40 --population=120 --size=100
+
+## -2-
+montage *.jpg -tile 10x12 -geometry +0+0 out.jpg
+gaps --image=out.jpg --size=200 --save
+# （--size是小图的宽）
+```
 
 ### 二维码
 
