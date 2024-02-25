@@ -259,6 +259,7 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十四、是时候学习一下 Frida 一把梭了(中)](https://mp.weixin.qq.com/s/HZfiX6VI3G6X6If_4IfFRg)
 - [《安卓逆向这档事》十五、是时候学习一下 Frida 一把梭了(下)](https://mp.weixin.qq.com/s/97o3fX9AN_kl2GCLhHAfig)
 - [《安卓逆向这档事》十六、是时候学习一下 Frida 一把梭了(终)](https://mp.weixin.qq.com/s/BqqDsxB4u7QyTmBozZjMnw)
+- [《安卓逆向这档事》十七、你的RPCvs佬的RPC](https://mp.weixin.qq.com/s/5TI4sPbrfdEyIGKqkbWGcQ) [Video](https://www.bilibili.com/video/BV1gA4m1G7vV/)
 - [番外篇之安卓CRC检测（上）](https://www.bilibili.com/video/BV1Le411Y7Rx/) 
 - [番外篇之安卓CRC检测（下）](https://www.bilibili.com/video/BV1jN4y1H7FP/) 
 
