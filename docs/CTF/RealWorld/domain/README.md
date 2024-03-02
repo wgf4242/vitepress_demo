@@ -1,6 +1,7 @@
 
+* 有账户时批量探测  `proxychains crackmapexec smb 172.22.17.6 -u chen -p chen@0813`
 
-某一点攻击成功后, bloodhound
+# 进入域后, 某一点攻击成功后, bloodhound
 
 ```sh
 proxychains bloodhound-python -d xiaorang.lab -u yangdming -p kier@n10 -gc dc.xiaorang.lab -c all
