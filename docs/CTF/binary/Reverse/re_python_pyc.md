@@ -1,25 +1,39 @@
-有时uncompyle和pycdc还原的效果不一致。需要手动还原
+有时 uncompyle 和 pycdc 还原的效果不一致。需要手动还原
+decompyle3 -- python3.8
 
 https://docs.python.org/3/library/dis.html
 [Python3 字节码详解](https://blog.csdn.net/weixin_46263782/article/details/120930191)
-[Python代码保护技术及其破解](https://mp.weixin.qq.com/s/y1atfJ-vf0wZBtMooeSw4A)
-[从TPCTF 2023 学习Python逆向](https://mp.weixin.qq.com/s/0nJHKJjDFrWHgspoVF23xA)
+[Python 代码保护技术及其破解](https://mp.weixin.qq.com/s/y1atfJ-vf0wZBtMooeSw4A)
+[从 TPCTF 2023 学习 Python 逆向](https://mp.weixin.qq.com/s/0nJHKJjDFrWHgspoVF23xA)
+
+magic word 在 /Lib/importlib/\_bootstrap_external.py 路径下找到各版本对应的 16bits 整数。
+
+| 1          | 2                            |
+| ---------- | ---------------------------- | ---------------------- |
+| uncompyle6 | uncompyle6 -o out.py app.pyc | python3.6 及以下       |
+| decompyle3 | decompyle3 -o out.py app.pyc | python3.7、python3.8   |
+| pycdc      |                              | 全版本, 单独弄个小目录 |
+| pydumpck   | pydumpck hello.exe           | 自动反编译出 py        |
 
 ## bytecode disassembly
 
 ### STORE
+
 STORE_FAST
+
 ```
 0 LOAD_CONST               1 (10)
 2 STORE_FAST               0 (a)
 a = 10
 ```
+
 STORE_ATTR
+
 ```
 790     LOAD_FAST               2: sP
 792     LOAD_FAST               0: self
 794     STORE_ATTR              13: sP
-1 -- 
+1 --
 self.sP = sP
 
 
@@ -49,7 +63,7 @@ nD = []
 84      LOAD_METHOD             5: write
 86      LOAD_FAST               3: eP
 88      LOAD_CONST              1: 0
-90      BINARY_SUBSCR           
+90      BINARY_SUBSCR
 self.write(eP[0])
 ```
 
@@ -68,7 +82,9 @@ self.write(eP[0])
            690 POP_TOP                  # 退缩进
 self.write(cP[0], cP[1], 2, 3)
 ```
+
 ### CALL_FUCTION
+
 ```
 13  i = 0
 14  c = '1234'
@@ -90,6 +106,7 @@ self.write(cP[0], cP[1], 2, 3)
              26 RETURN_VALUE
 
 ```
+
 ### Tuple
 
 ```
@@ -105,8 +122,11 @@ self.write(cP[0], cP[1], 2, 3)
            710 STORE_FAST               4 (cP)
 cP = (cP[0], cP[1] + 1)
 ```
+
 ### For loop
-示例1
+
+示例 1
+
 ```
 19    c=2
 20    for i in range(1,5,c+1):
@@ -118,7 +138,7 @@ cP = (cP[0], cP[1] + 1)
               8 LOAD_CONST               3 (5)
              10 LOAD_FAST                0 (c)
              12 LOAD_CONST               2 (1)
-             14 BINARY_ADD                         # 前俩加 c+1    
+             14 BINARY_ADD                         # 前俩加 c+1
              16 CALL_FUNCTION            3
              18 GET_ITER
         >>   20 FOR_ITER                 2 (to 26)
@@ -127,7 +147,9 @@ cP = (cP[0], cP[1] + 1)
  20     >>   26 LOAD_CONST               0 (None)
              28 RETURN_VALUE
 ```
-示例2
+
+示例 2
+
 ```
     for ii in lst:
         ii
@@ -140,8 +162,10 @@ cP = (cP[0], cP[1] + 1)
  21           8 LOAD_FAST                0 (ii)
              10 POP_TOP
              12 JUMP_ABSOLUTE            2 (to 4)
-```                 
+```
+
 ### Slice
+
 ```
       c = '123'
       i = 2
@@ -155,7 +179,9 @@ cP = (cP[0], cP[1] + 1)
              18 BUILD_SLICE              2
              20 BINARY_SUBSCR
 ```
+
 ### try except
+
 ```
 def try_test():
 13    try:
@@ -206,7 +232,9 @@ def try_test():
 ```
 
 ### if/if and
+
 if
+
 ```
 12def try_test():
 13    cp=[]
@@ -231,7 +259,9 @@ if
              24 LOAD_CONST               0 (None)
              26 RETURN_VALUE
 ```
+
 if and
+
 ```
 13def try_test():
 14    a = 8

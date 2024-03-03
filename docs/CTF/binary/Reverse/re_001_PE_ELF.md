@@ -1,4 +1,6 @@
 # PE
+[PE解析思路](https://mp.weixin.qq.com/s/VJBfrR0-53o2MC25LiURNw)
+
 ## 修改段信息、可执行权限、地址随机化
 
 - 段改为可执行

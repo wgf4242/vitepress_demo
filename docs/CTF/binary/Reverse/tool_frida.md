@@ -2,6 +2,7 @@
 2022-04-13-RE-上午.mp4
 
 [hulda | frida加强版](https://github.com/hzzheyang/strongR-frida-android/releases)
+[练习](https://github.com/DERE-ad2001/Frida-Labs)
 
 
 ## 环境

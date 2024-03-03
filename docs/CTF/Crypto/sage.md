@@ -1,3 +1,5 @@
+
+[Link](https://blog.csdn.net/m0_46161993/article/details/105163075)
 ## env
 
 sage -pip install tqdm
@@ -7,8 +9,26 @@ $$
 gamma(x+1) = factorial(x)
 $$
 
-```sh
+```python
+# 阶乘
+factorial(5)
 gamma(2^27+1) == 2^27!
+
+# 求行、列值
+mt.nrows() #将返回矩阵行数
+mt.ncols() #将返回矩阵列数
+
+# 求行列式的值
+mt.determinant()
+
+# 求是否为可逆矩阵
+是可逆矩阵则输出TRUE，否则输出FALSE
+
+mt.is_invertible()
+
+# 求逆
+mt.inverse()
+mt = mt^(-1)
 ```
 
 ## 序列查询 OEIS

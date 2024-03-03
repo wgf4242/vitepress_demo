@@ -123,10 +123,13 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某 OJ 渗透测试记录\_bypass_winapi.h\_\_asm_shellcode_c#\_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
+
+[宝塔 | 宝塔最新未授权访问漏洞及SQL注入](https://mp.weixin.qq.com/s/yUGSaAw_sh082z2q7Kwwjw)
 [宝塔 | 后渗透-添加用户|反弹 shell](https://mp.weixin.qq.com/s/-MQ36nY6YbAPf6pVecregg)
 [宝塔 | 密码生成规则 当我在内网遇到宝塔......](https://mp.weixin.qq.com/s/5Uhq1t4DIE28jlt85SX3BQ)
 [宝塔 | Windows版宝塔bypass到RDP登录](https://mp.weixin.qq.com/s/PROqOqcMgF-s2CJ5B1aHew)
 [宝塔 | 宝塔渗透手法总结，从常见漏洞 聊到 宝塔维权 再到 bypass disable_functions原理](https://mp.weixin.qq.com/s/sPdYf1jrJMfQ2Qh7uxKhQA)
+
 [yxcms 后台模板写 shell](https://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e) [2](https://blog.csdn.net/qq_40638006/article/details/122033546)
 [Spring-Core-RCE 漏洞 | 漏洞图形化 GUI 一键利用工具](https://mp.weixin.qq.com/s/FSDTz_yWUXrJsJBEibxAQg)
 [Spring | CVE-2022-22965 Spring RCE 漏洞复现](https://mp.weixin.qq.com/s/KEmd9O2A121vd3vO97rdkw)
@@ -265,6 +268,8 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
 ### Exploit/CVE/实战漏洞/微信小程序
+- [微信 | 如何绕过“请在微信客户端打开链接”的限制0x00 限制原理](https://mp.weixin.qq.com/s/VRPv8_hO4Qfu4a_BoeDYmQ)
+- [微信 | 0day漏洞？恶意代码成功执行！附恶意代码构造](https://mp.weixin.qq.com/s/pdcwkAE-EkO2y8IAd0L9jg)
 - [云函数抓包 | windows下通杀wx小程序云函数实战](https://mp.weixin.qq.com/s/FALxsjmAE3XDfuwjRgMvQg)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 AES 密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)
@@ -277,6 +282,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [小程序逆向之国密SM2加密](https://www.bilibili.com/video/BV1jh4y127TN/) 
 [某微信小程序未授权漏洞挖掘（置空查询思路）](https://mp.weixin.qq.com/s/_wHvNSZCrx2uvUBF8PBTIA)
 
+[浅谈微信小程序测试技巧](https://mp.weixin.qq.com/s/zbLQNZLBUTLt7kq-rJpkdg)
 [安卓渗透测试工具集 -- h4tools](https://mp.weixin.qq.com/s/z0pb-Z4pzk-eX5nXsrF8vg)
 [渗透实战|记一次微信小程序渗透测试](https://mp.weixin.qq.com/s/GQYqbKDiY_OfE4kdVgCMig)
 [记一次微信小程序渗透实战记录](https://mp.weixin.qq.com/s/LUDuOgBesn8xKGonE6R8tw)

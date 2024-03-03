@@ -218,6 +218,8 @@ https://github.com/APKLab/APKLab
 # Article
 
 - [Android 逆向环境搭建](https://mp.weixin.qq.com/s/3Zd4PBMxXpj21BuOu7tBiQ)
+- [APP 渗透测试环境搭建](https://mp.weixin.qq.com/s/CnP79CUGxx-2utrywHckxA)
+- [Done | 入门 | 移动应用安全与风控——应用分析](https://mp.weixin.qq.com/s/LFl6dRodhBk6djYJGN6qAQ)
 
 ## 课程
 
@@ -228,6 +230,8 @@ https://github.com/APKLab/APKLab
 [使用 ADB 链接夜神的方式与吐槽](https://mp.weixin.qq.com/s/kWrfK19bOYUy1tXQs_JRKg)
 
 ## 抓包
+
+工具: httpcanary(旧版) reqable(新版)
 
 - [Android 渗透测试 HTTPS 证书校验绕过](https://mp.weixin.qq.com/s/X6efaPMF0Zb3ENsEy-H3gQ)
 - [安卓高版本安装系统证书 HTTPS 抓包 - 终极解决方案](https://blog.51cto.com/u_15527932/6107429)
@@ -255,8 +259,9 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十四、是时候学习一下 Frida 一把梭了(中)](https://mp.weixin.qq.com/s/HZfiX6VI3G6X6If_4IfFRg)
 - [《安卓逆向这档事》十五、是时候学习一下 Frida 一把梭了(下)](https://mp.weixin.qq.com/s/97o3fX9AN_kl2GCLhHAfig)
 - [《安卓逆向这档事》十六、是时候学习一下 Frida 一把梭了(终)](https://mp.weixin.qq.com/s/BqqDsxB4u7QyTmBozZjMnw)
-- [番外篇之安卓CRC检测（上）](https://www.bilibili.com/video/BV1Le411Y7Rx/) 
-- [番外篇之安卓CRC检测（下）](https://www.bilibili.com/video/BV1jN4y1H7FP/) 
+- [《安卓逆向这档事》十七、你的 RPCvs 佬的 RPC](https://mp.weixin.qq.com/s/5TI4sPbrfdEyIGKqkbWGcQ) [Video](https://www.bilibili.com/video/BV1gA4m1G7vV/)
+- [番外篇之安卓 CRC 检测（上）](https://www.bilibili.com/video/BV1Le411Y7Rx/)
+- [番外篇之安卓 CRC 检测（下）](https://www.bilibili.com/video/BV1jN4y1H7FP/)
 
 - [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
 - [Android 逆向技术高阶大法](https://mp.weixin.qq.com/s/zMXOpxW6E5klbsjKVHZudg)
@@ -305,6 +310,7 @@ https://github.com/APKLab/APKLab
 - [移动安全（九）|TengXun 加固动态脱壳（上篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484399&idx=2&sn=c6abc2fc1f945d5f4c60fa6a92bb9106)
 - [移动安全（十）|TengXun 加固动态脱壳（下篇）](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=3&sn=40d185a659934c45851273d88353199a)
 - [Android 逆向之脱壳实战篇](https://mp.weixin.qq.com/s/zmCVxorHy_juPnV_I-8Inw)
+- [脱壳\_Xposed+反射大师(360 壳)](https://www.bilibili.com/video/BV17K411h7QC/)
 
 ---
 
@@ -390,6 +396,10 @@ https://github.com/APKLab/APKLab
 
 [简单的安卓木马制作（实现外网控制）](https://mp.weixin.qq.com/s/7vbzKsxbOXLz99t0O7NLfw)
 [《Cypher Rat 控制+安卓木马加固与免杀+渗透手机程序化》](https://www.bilibili.com/video/BV18p4y137mZ/)
+
+## Game/游戏修改
+
+[安卓真机无 root 环境下的单机游戏修改-IL2CPP](https://mp.weixin.qq.com/s/43V_rxkvyCjHkJuXbtAfqw)
 
 ## 关注列表
 

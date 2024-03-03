@@ -8,6 +8,7 @@ NSSCTF ROUND 4 wasm
 [minil2022](https://hzlg.github.io/2022/05/04/game/minil2022/wasm/)
 [wasm转c调用实战 | 猿人学2022新春题 | 腾讯视频ckey参数获取](https://www.52pojie.cn/thread-1581887-1-1.html) 
 [JS逆向之wasm逆向(二进制)](https://mp.weixin.qq.com/s/urN5QOX0trRND3z9OsNVoA)
+[[原创]CTF 丛林的秘密：算法分析 ](https://bbs.kanxue.com/thread-280260.htm)
 
 方式0
 [ghidra-wasm-plugin](https://github.com/nneonneo/ghidra-wasm-plugin)

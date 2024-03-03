@@ -443,8 +443,10 @@ Ladon url.txt pythonpoc.ini
 # proxy 代理
 
 [ICMP/TCP 隧道 | 内网代理和穿透工具的分析记录](https://mp.weixin.qq.com/s/jpmi7CfvcOmL4qkSBKLvKQ)
-[Linux 或 Windows 上实现端口映射](https://mp.weixin.qq.com/s/V9iw_Z0B-dTJikvnwLUEAQ)
+[ICMP隧道 | ICMP协议隧道穿透之pingtunnel](https://mp.weixin.qq.com/s/7nrLU_QcDGpotz77n-NsKQ)
+[ICMP隧道 | 内网知识之ICMP隧道搭建](https://mp.weixin.qq.com/s/lPiYez6ZrVqlRg54dOG4Tg)
 [DNS 隧道 | Cobalt Strike 的使用（二）](https://mp.weixin.qq.com/s/qLtfmiBVEb9pEfmcAb0RMw)
+[Linux 或 Windows 上实现端口映射](https://mp.weixin.qq.com/s/V9iw_Z0B-dTJikvnwLUEAQ)
 [内网代理和穿透工具的分析记录 | Vemon](https://mp.weixin.qq.com/s/pV9nQ6uzLTT2cqO1ZaJz6w)
 [【Tips+1】IOX 反向穿透四层网段](https://mp.weixin.qq.com/s/9mcF_Snk-loPO-ApI5ECag)
 

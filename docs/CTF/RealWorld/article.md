@@ -20,8 +20,12 @@
 [一个内网安全攻防的知识仓库](https://mp.weixin.qq.com/s/sP6t_TjAt0H1ELViqhzVlg)
 [红队实战（一）学习内网渗透](http://mp.weixin.qq.com/s?__biz=MzIwMDcyNzM0Mw==&mid=2247484470&idx=1&sn=b2f7b56028ddf701a903d981e58e324e)
 
+[不出网 | 内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
+[不出网 | 【知识整理】内网渗透之目标不出网上线思路（3）](https://mp.weixin.qq.com/s/1HCOAkhLT1FOBOJaQ9-XEA)
+[不出网 | dns隧道 | 参考云境]
+[不出网 | 内网渗透之主机出网 OR 不出网隧道搭建](https://www.freebuf.com/articles/web/255801.html)
+
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
-[内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
 [内网穿透 | 常见内网穿透工具使用总结](https://mp.weixin.qq.com/s/-rG5OA-CZYjkgzMn0dSazw)
 [内网穿透 | 一文让你熟练运用内网穿透(步骤详细), reGeorge, frp,ew,msf ＋ proxychains](http://mp.weixin.qq.com/s?__biz=Mzg2NDYwMDA1NA==&mid=2247486946&idx=1&sn=e796237b0bccbc06772f4d2b3a0eb0b6)
 [内网穿透 | 内网隧道的多种应用方式](https://mp.weixin.qq.com/s/iZxmQJQrLs7XP7XlhGfHmA)
@@ -218,6 +222,8 @@ https?://[^"]+
 [API | 漏洞挖掘](https://mp.weixin.qq.com/s/Uu4_OBp1Ye6ZCSgWPQKbFA)
 [API | 【精选推荐】3 款强大的 API 渗透测试工具](https://mp.weixin.qq.com/s/SuRkm_klAnFbtD23tRiPqA)
 [API | 通过分析 JS 源代码来发现 api 漏洞](https://mp.weixin.qq.com/s/Mk-DhFTvLfxgjd1IXXQSmg)
+[API | JWT渗透姿势](https://mp.weixin.qq.com/s/1e94h4NFiIbVDMiIXtjgGQ)
+[API | JWT的认证bypass](https://mp.weixin.qq.com/s/-4XT3rWZs4o-fnzt5plIHA)
 
 ## Java
 

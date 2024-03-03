@@ -117,6 +117,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [深入理解 CAN 总线](https://mp.weixin.qq.com/s/dnZaM9rjhBImS0vQ5yLQ3A)
 - [天刃 - 车联网安全渗透测试系统 测试 ivi、tbox、gw、分析固件以及逆向工程](https://mp.weixin.qq.com/s/nAJeM60ooKNF-AzZFx4ACw) [Github](https://github.com/TianWen-Lab/TranSec/) [Pan](https://pan.baidu.com/s/1jWFxiawgiC57gLCYiSvnyA#r4x7)
 - [车联网安全进阶之Trick——Android车机运行Python](https://mp.weixin.qq.com/s/mPA2akY2pYXbbG59NkbAfg)
+- [车联网攻防](https://mp.weixin.qq.com/s/1xRD1DBiXD5LbuAoyfCgEQ)
 
 ## 门卡 m1/ICCard/id
 

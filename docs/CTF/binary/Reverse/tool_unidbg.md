@@ -23,6 +23,7 @@ vm.setVerbose(false);  // 设置为true时日志太多
 ```
 
 # Article
+[使用Unidbg在CTF-Android题目的快速解题](https://mp.weixin.qq.com/s/oZjTxpexVn4VkK71YlsUwg)
 [Unidbg + Web = Unidbg-server 手把手教你搭个签名服务器](https://blog.51cto.com/u_15527932/5205378)
 [代码还原的技术: Unidbg调试浮点数运算(一)](https://blog.51cto.com/u_15527932/5205368)
 [Unidbg模拟执行某段子so实操教程(二) LoadSo对比](https://blog.51cto.com/u_15527932/5218089)
@@ -70,6 +71,7 @@ __Video__
 [14.unidbg马蜂窝zzzghostsigh算法还原魔改SHA-1](https://www.bilibili.com/video/BV1Bd4y1m7ZP/)
 [13.安卓逆向实战unidbg补环境-马蜂窝zzzghostsigh协议字段解析](https://www.bilibili.com/video/BV1sd4y1m7iw/)
 [《和沐阳一起学unidbg》从入门到精通系列](https://www.bilibili.com/video/BV1tv4y1u7X1/)
+[记一次汽车app白盒aes还原过程](https://mp.weixin.qq.com/s/iaS_mfEtK2e-yakE14IvxQ)
 
 ## Trace 技巧
 简单写几个分析trace的技巧：
