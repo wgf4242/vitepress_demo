@@ -159,10 +159,10 @@ ida 自带 assemble 要用 33h, 不能 0x33
 printf 改 puts, 注意 printf 没有换行符, puts 会有换行符. 产生多余的换行可能 check 失败.
 
 ```sh
-# printf改 puts 使用 plt段的 puts地址, 而不是 _puts
+# printf改 puts 使用 plt段的 puts地址, 而不是 _puts, 用.puts
 # .plt.sec:0010C0                               ; int puts
 
-# keypatch call地址时会自动修改偏移
+# keypatch call地址时会自动修改偏移, 可以 call .puts
 Assembly: call 0x10c0
 ```
 
