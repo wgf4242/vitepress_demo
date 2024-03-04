@@ -17,6 +17,8 @@
 frida-ps -Ua
 frida-dexdump -p 27815 -U
 ```
+## JADX
+查看 string对应的值: 资源文件 - resources.arsc - res - values - strings.xml
 
 ## 资源
 
