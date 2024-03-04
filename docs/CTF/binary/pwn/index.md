@@ -169,6 +169,7 @@ https://syst3mfailure.io/
 ---
 
 - [glibc2.35-通过 tls_dtor_list 劫持 exit 执行流程](https://mp.weixin.qq.com/s/jdpR_Ago_SK3qRRw3ghZ4A)
+- [Glibc-2.35下对tls_dtor_list的利用详解](https://mp.weixin.qq.com/s/K5ix399X9sd0-nMAJS9KZA)
 
 - video
 - [「Pwn 教学」有趣的 Pwn 博主的 Tcache Bin Attack 堆攻击教学](https://www.bilibili.com/video/BV1Jy4y1d7oz/)
