@@ -206,6 +206,7 @@ rw_exp_joomla_CVE-2023-23752
 [Nacos | 漏洞问题及修复(CVE-2021-29441) 任意用户注册和管理员密码修改](https://blog.csdn.net/Hoopy_Hoopy/article/details/120283270)
 [Nacos | CTF | BackendService](https://mp.weixin.qq.com/s/2TDV2L-o1MlbYU0PSjb65Q)
 [Nacos | CTF | BackendService 权限绕过](https://juejin.cn/post/7133573986633383950)
+[Nacos | 『漏洞复现』Nacos 身份认证绕过漏洞](https://mp.weixin.qq.com/s/-vFvUI9aD3auHkWt20QmGA)
 [Nacos | Nacos身份绕过漏洞](https://mp.weixin.qq.com/s/zGsAr9vM9Ec7AByycpTAHw)
 [Nacos | 身份绕过漏洞](https://mp.weixin.qq.com/s/zGsAr9vM9Ec7AByycpTAHw)
 [Nacos | Jraft | 远程代码执行漏洞 附检测POC (nuclei)](https://mp.weixin.qq.com/s/jovBE_wVIGl_e__fXm71bw)
