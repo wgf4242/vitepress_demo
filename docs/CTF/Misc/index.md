@@ -236,6 +236,9 @@ Stegsolve - Analyse - Sterogram Sovler , "眼神得好"
 ```sh
 sudo apt-get install imagemagick
 convert a.gif qr.jpg
+## png多图转透明背景合并
+ls *.png | while read filename; do convert $filename -transparent white $filename; done;
+ls *.png | while read filename;  do convert $filename 00.png --gravity center -composite(组合) 00.png ; done
 ```
 
 ### 文本隐写/空白隐写
@@ -578,7 +581,7 @@ https://mp.weixin.qq.com/s/LXQb_fUW0-3By8xibke-EA
     - MIDI 隐写，见本章链接。
     - PT2242 信号： 用短的一段表示是 0，长的一段表示是 1 前面 4bit 表示同步码，中间的 20bit 表示地址码，后面的 4bit 表示功能码，最后一位是停止码。
     - 也就是 0。。。01110100101010100110。0010。0 -- flag 为中间 20bit
-    - PT226X 见 [HDCTF2019]信号分析 https://www.shawroot.cc/1047.html
+    - PT226X 见 `[HDCTF2019]信号分析` https://www.shawroot.cc/1047.html
 
 LSB 隐写 用 uint8 读取 wav 然后提取每一个帧的 LSB
 
