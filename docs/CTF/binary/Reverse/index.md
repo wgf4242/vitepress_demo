@@ -12,6 +12,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 
 前置准备
 
+1. 密文用 cyberchef xor bruteforce 爆破
 1. 单字节对比类型 - 直接改汇编输出爆破
 1. 用相同长度字符编码 `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!` 填入表看替换状态。然后换表。通过规律找原文
 2. 用相同长度字符编码 `flag00000000000000000000000000000000000000` 填入观察状态 `f0000000000lg0000000000000000000a000000000` 通过规律找原文
