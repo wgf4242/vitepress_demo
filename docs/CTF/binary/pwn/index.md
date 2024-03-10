@@ -190,6 +190,7 @@ https://syst3mfailure.io/
 ### ctfshow
 [ctfshow-pwn入门-pwn37-48](https://mp.weixin.qq.com/s/p6_ZHNiy6uikfEf12KnL-A)
 [ctfshow-pwn入门-pwn49](https://mp.weixin.qq.com/s/6ZhMDMTOQHE2ZeQcfSnJFg)
+[ctfshow-pwn入门-pwn50](https://mp.weixin.qq.com/s/hoU0OUPNiIrmNNO8PUZMoQ)
 
 ## Untitled
 

