@@ -141,6 +141,8 @@ https://syst3mfailure.io/
 
 ---
 
+- [Video  | CTFHUB | 只适合纯萌新的 pwn堆基础 - 1](https://www.bilibili.com/video/BV1Bt421t7UV/?spm_id_from=333.788&vd_source=7631821c3a79f04a4fb0ef78db2c0814)
+- [Video  | CTFHUB | pwn堆溢出之off-by-nullの低版本和高版本例题讲解利用](https://www.bilibili.com/video/BV1BF4m157T7/)
 - [CTFHUB | 堆溢出 | FastBin Attack](https://bbs.kanxue.com/thread-276456.htm) -- [WP2](https://blog.csdn.net/KaliLinux_V/article/details/128787055) --[FastBin Attack：House of spirit attack](https://bbs.kanxue.com/thread-277106.htm)
 - [CTFHUB | 堆溢出 | UnsortedBin Attack](https://bbs.kanxue.com/thread-276457.htm)
 - [CTFHUB | 堆溢出 | LargeBin Attack|House of Storm](https://bbs.kanxue.com/thread-276516.htm)
@@ -191,6 +193,7 @@ https://syst3mfailure.io/
 [ctfshow-pwn入门-pwn37-48](https://mp.weixin.qq.com/s/p6_ZHNiy6uikfEf12KnL-A)
 [ctfshow-pwn入门-pwn49](https://mp.weixin.qq.com/s/6ZhMDMTOQHE2ZeQcfSnJFg)
 [ctfshow-pwn入门-pwn50](https://mp.weixin.qq.com/s/hoU0OUPNiIrmNNO8PUZMoQ)
+[ctfshow-pwn入门-pwn51](https://mp.weixin.qq.com/s/hNV5V3yDzfr14ycpuOQJvQ)
 
 ## Untitled
 
