@@ -20,6 +20,7 @@ cobalt strike
 # Article
 
 - rw\_bypass\_免杀\_BypassAV.html
+- [Cobalt Strike已死？如何真正意义上的入门免杀](https://mp.weixin.qq.com/s/FnHD0f1lueqOOhTVimoSLw)
 - [不会写代码，但你可以免杀三件套](https://mp.weixin.qq.com/s/NqH7kKS7XQmxaVUDacocZA)
 - [有手就行的白加黑实战免杀 - FreeBuf 网络安全行业门户](https://www.freebuf.com/articles/system/333690.htm)
 - [一文读懂 DLL 劫持与白+黑样本原理](https://mp.weixin.qq.com/s/UZjLNPna7R2ZLs3r9kJEQg)

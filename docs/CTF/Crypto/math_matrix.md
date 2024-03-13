@@ -26,12 +26,12 @@ $$
 [矩阵逆运算](https://blog.csdn.net/charlotte0000/article/details/121184887)
 
 ```sage
-sage: A = matrix(2, 2, [8,7,3,8])
+sage: A = matrix(2, 2, [8,7,3,8])       # ad - bc = 8*8 - 7*3 = 43
 sage: B = A.inverse()
 sage: B
 [ 8/43 -7/43]
 [-3/43  8/43]
-# 计算A的行列式 mod 26 的逆元  = 23,  23[[8,-7], [-3,8]] mod 26
+# 计算A的行列式43 mod 26 的逆元  = 23,  23[[8,-7], [-3,8]] mod 26
 # 结果为 [2,21] [9,12]
 ```
 

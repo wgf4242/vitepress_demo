@@ -17,6 +17,7 @@ zip2$*0*3*0*07aa3a0e1c77224a9311*$/zip2$
 ### 常用参数
 
 ```sh
+-w 3 # 高速模式 https://canutethegreat.medium.com/how-to-use-hashcat-to-crack-hashes-from-mode-22000-wi-fi-captures-1e77a2f9283e
 hashcat -m 13600 test.hash -O wordlist.txt
 hashcat -m 17200 test.hash -O rockyou.txt  # zip
 hashcat -m 13600 test.hash -O -a 3  --increment --increment-min 1 --increment-max 8 ?d?d?d?d?d?d?d?d
@@ -267,9 +268,11 @@ hashcat -m 1400 -O -a 3 26d601e47a170bf796f0c1568febbc6fd40ba7a894668c2829e31dfc
 WPA/CAP/Wifi
 
 ```sh
-# 转成 hashcat 格式
-aircrack-ng 01.cap -j hashcat
+# 转成 hashcat 格式, 推荐 22000 模式
+hcxpcapngtool -o test.22000 123456789_19901013ld.cap
+hashcat -O -a 3 -m 22000 test.22000 1391040?d?d?d?d #跑4位数字密码
 
+aircrack-ng 01.cap -j hashcat
 hashcat -m 2500 test.hccap pass.txt
 hashcat -a 0 -O -m 2500 hashcat.hccapx dic.txt
 hashcat -O -a 3 -m 2500 hashcat.hccapx --increment --increment-min 1 --increment-max 9 root?d?d?d?d?d?d?d?d?d
