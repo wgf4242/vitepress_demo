@@ -195,6 +195,7 @@ https://syst3mfailure.io/
 [ctfshow-pwn入门-pwn50](https://mp.weixin.qq.com/s/hoU0OUPNiIrmNNO8PUZMoQ)
 [ctfshow-pwn入门-pwn51](https://mp.weixin.qq.com/s/hNV5V3yDzfr14ycpuOQJvQ)
 [ctfshow-pwn入门-pwn52](https://mp.weixin.qq.com/s/qNo_G9dPB4S2FksHOeYWag)
+[ctfshow-pwn入门-pwn53](https://mp.weixin.qq.com/s/4QmSzAhaA_7p-H69WTSXkw)
 
 ## Untitled
 

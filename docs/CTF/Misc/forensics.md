@@ -227,3 +227,5 @@ places.sqlite, 浏览历史 `moz_places`
 [『CTF』常见的 Windows 硬盘取证](https://mp.weixin.qq.com/s/iIf44oW_dn5RRFSq5mMqlA)
 [Windows | 『杂项』取证之 EFS 加解密流程及解题方法](https://mp.weixin.qq.com/s/wZh6vgnKIh5lb-JaczKIuQ)
 [『杂项』电子取证之磁盘格式转换 E01 -> VMDK](https://mp.weixin.qq.com/s/qQHoeFxX0j3A9-FLplSGfg)
+
+[获取远程管理软件保存的凭据](https://mp.weixin.qq.com/s/sq37oau0o-C5_2_RpC-Jdw)
