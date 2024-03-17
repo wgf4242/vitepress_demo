@@ -1,3 +1,5 @@
+fkpt脱壳ROM 找一下
+
 - [函数搜索](http://androidxref.com/)
 - [练习 | UnCrackable Mobile Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)
 - [OWASP 实战分析 level 3](https://mp.weixin.qq.com/s/_dAnLlSM9eon5_SR0_0imw)
@@ -334,9 +336,10 @@ https://github.com/APKLab/APKLab
 - [Android 逆向 设备指纹 Settings 类对抗终极方案](https://www.bilibili.com/video/BV1hP411s7Js/)
 - [Qual+Android 方案 Unlock 学习 以 Oneplus7Pro 为例](https://mp.weixin.qq.com/s/XFAYXV90y52bYTHYWSFJcA)
 
-### bypass
+### bypass/反调试
 
 [『杂项』root 绕过的几种方式](https://mp.weixin.qq.com/s/7RZRXjP3zXRX8gvZSkDxqg)
+[bpf在android逆向中的辅助效果](https://mp.weixin.qq.com/s/Gdv6_ihpdgctgSUO5DHJ4w)
 
 ### 抓包
 

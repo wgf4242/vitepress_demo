@@ -120,6 +120,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [FastJson 利用工具 -- fastjson-exp](https://mp.weixin.qq.com/s/dyeOlw2SyjgCGE3C8MDjfg)
 [若依 | 系统前后台漏洞大全](https://mp.weixin.qq.com/s/LZxZZ3ZLQg2Wz3xX4iCE8w)
 [若依 | 记一次实战之若依SSTI注入绕过玄某盾](https://mp.weixin.qq.com/s/rB-TK7rK300U66gZXsIF6A)
+[若依 | 最新版后台RCE](https://mp.weixin.qq.com/s/e0SvORpUGZmB899TfjyXiQ)
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某 OJ 渗透测试记录\_bypass_winapi.h\_\_asm_shellcode_c#\_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
