@@ -172,6 +172,7 @@ rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [WordPress | getshell](a02_wordpress.md)
 [WordPress | 超危漏洞CVE-2023-2982 附POC](https://mp.weixin.qq.com/s/_3Ds_0XVmBt9Uq6kubiKYw)
 [WordPress wp-file-manager 文件上传漏洞 CVE-2020-25213](https://mp.weixin.qq.com/s/EBTwjqxMragW9XhbmDKkVg)
+[WordPress存在远程命令执行漏洞](https://mp.weixin.qq.com/s/ZhNjpb6pXlFkzDDZZTx67A)
 
 [JBoss 未授权漏洞复现](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485334&idx=1&sn=0bba17412525af0cf9c5ff5cc63bf2a5)
 [JBoss 4.x JBossMQ JMS 反序列化漏洞（CVE-2017-7504）](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247485314&idx=1&sn=5c66488436cf10de927df74cf35ca9ad)
@@ -212,6 +213,7 @@ rw_exp_joomla_CVE-2023-23752
 [Nacos | 身份绕过漏洞](https://mp.weixin.qq.com/s/zGsAr9vM9Ec7AByycpTAHw)
 [Nacos | Jraft | 远程代码执行漏洞 附检测POC (nuclei)](https://mp.weixin.qq.com/s/jovBE_wVIGl_e__fXm71bw)
 [Nacos | Hessian 反序列化 RCE](https://y4er.com/posts/nacos-hessian-rce/)
+[Nacos | 攻防实战 | 记一次nacos到接管阿里云&百万数据泄露](https://mp.weixin.qq.com/s/gtDcYePB8MvgD700djyj_A)
 [内网高频组件漏洞整理-Hadoop](http://www.nooemotion.com/2023/02/20/内网高频组件漏洞整理-hadoop/)
 [Nacos](http://www.nooemotion.com/2023/02/22/内网高频组件漏洞整理-nacos/)
 [内网高频组件漏洞整理-Memcached](http://www.nooemotion.com/2023/02/20/内网高频组件漏洞整理-memcached/)
