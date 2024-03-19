@@ -6,7 +6,7 @@ Web漏洞分析
 * 我们要挖掘什么漏洞?
 * 应该从哪里挖掘?
 * 网站源码分析
-* 路径穿越 见 ## nginx 路径穿越
+* 路径穿越 见 [nginx路径穿越](#nginx-路径穿越)
 * https://github.com/swisskyrepo/PayloadsAllTheThings
 * 已知源码
 * 我们可以下载其源码本地分析

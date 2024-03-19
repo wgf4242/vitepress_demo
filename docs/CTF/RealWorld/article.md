@@ -306,6 +306,7 @@ https?://[^"]+
 [冰蝎各版本工具分析与魔改思路](https://mp.weixin.qq.com/s/3lIOABAiuZd4rOM7SshOEA)
 [冰蝎 Java WebShell 免杀生成 -- ByPassBehinder4J​](https://mp.weixin.qq.com/s/Gy6xAYVE3AOybr3CG4HV2A)
 [冰蝎（behinder）免杀魔改](https://mp.weixin.qq.com/s/AKIKMlx0NPzuLmW7za7AJw)
+[冰蝎4：一键修改特征，轻松打造专属传输协议！](https://mp.weixin.qq.com/s/2GnaqCE0fWiQw1fQPuNGyw)
 [冰蝎 3 和冰蝎 4AES 爆破题目](https://byxs20.github.io/posts/5092.html)
 [内网穿透 nps 的魔改](https://mp.weixin.qq.com/s/Tueykyf0P5opuL3jY7UdHw)
 [【红队】一款 C2 设施前置流量控制工具](https://mp.weixin.qq.com/s/2m-DojrK6kOhluE5THfAGA)

@@ -944,6 +944,7 @@ sub dialog_test {
 [CobaltStrike 加载插件](https://mp.weixin.qq.com/s/NtxhTkuMGhhRyLUREnZQcA)
 [免杀 | Arsenal-kit | 聊聊红队攻防中 CobalStrike 的多维度对抗](https://mp.weixin.qq.com/s/fF6frplnurl-rCivYs0fFA)
 [红队工具推荐：Cobalt Strike 的远程桌面](https://mp.weixin.qq.com/s/_cVF-JyTkdeJZznEXZ9uqQ)
+[一款cobalt strike后渗透模块插件 | OLa](https://mp.weixin.qq.com/s/ZBKOHcWiKIRiu8XOS_WS5A)
 
 ## Vocabulary
 
