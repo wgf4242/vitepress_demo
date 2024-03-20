@@ -12,6 +12,7 @@
 * [done-适合入门【和三叶草一起打基础】—程序的保护技术](https://www.bilibili.com/video/BV1wB4y1k7x9)
 * https://bbs.pediy.com/thread-225740.htm#msg_header_h1_3
 * [反调试与反虚拟机](https://mp.weixin.qq.com/s/Ywf0Tg3fZDNBLqOLD7BRjg)
+* [32位转64位 | 天堂之门-调试器的末路](https://mp.weixin.qq.com/s/oO2WBqksPSULYSP9of9_Og)
 
 ## IsDebuggerPresent()
 当进程处于调试状态时, PEB.BeingDebugged成员值被设为1,
