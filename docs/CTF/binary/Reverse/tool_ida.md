@@ -22,19 +22,20 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
 - 读取卡死 载入选择 Binary
 
 - 基址设置: See Edit-->Segments-->Rebase program
-- 创建结构体 struct: 右击  `func(__int64 a1)` 中的 a1  -> Create new struct type
+- 创建结构体 struct: 右击 `func(__int64 a1)` 中的 a1 -> Create new struct type
 
 ### ida 中的汇编与类型
 
 defs.h
 
-| Type   | value      |       |
-| ------ | ---------- | ----- |
-| BYTE1  | 0x11223344 | 取 33 |
-| BYTE2  | 0x11223344 | 取 22 |
-| HIBYTE | 0x11223344 | 取 11 |
-|        |            |       |
-|        |            |       |
+| Type         | value      |       |
+| ------------ | ---------- | ----- |
+| BYTE0/LOBYTE | 0x11223344 | 取 44 |
+| BYTE1        | 0x11223344 | 取 33 |
+| BYTE2        | 0x11223344 | 取 22 |
+| HIBYTE       | 0x11223344 | 取 11 |
+|              |            |       |
+|              |            |       |
 
 ### 界面
 
@@ -360,9 +361,10 @@ pause()
 [IDA Python 去混淆](https://mp.weixin.qq.com/s/a7RLme8bTWiB6MfNT-5AKg)
 
 ## plugin
-[ida脚本开发环境配置idapython&idacpp三端环境(win、mac、linux)](https://mp.weixin.qq.com/s/uU67NR1lHpIMS1gGnZcfOw)
+
+[ida 脚本开发环境配置 idapython&idacpp 三端环境(win、mac、linux)](https://mp.weixin.qq.com/s/uU67NR1lHpIMS1gGnZcfOw)
 
 [IDA 插件编写入门及油管博主种草](https://www.bilibili.com/video/BV1Uj41117BY/)
 [给 IDA 写个 small 插件](https://mp.weixin.qq.com/s/B1rRYFEmZoTRd0KHxDLF7g)
 
-[plugins | 小巧可爱的IDA插件——uEmu超级模拟器](https://mp.weixin.qq.com/s/Bksot8q9qn6OveXyPnPrrA)
+[plugins | 小巧可爱的 IDA 插件——uEmu 超级模拟器](https://mp.weixin.qq.com/s/Bksot8q9qn6OveXyPnPrrA)
