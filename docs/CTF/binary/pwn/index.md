@@ -11,8 +11,9 @@
 8. read(0, name, 0x20uLL); 一写要输到 0x20 看有没泄露 见[截断字符](#截断字符)
 9. shellcode: 限制字符串 [Video](https://www.bilibili.com/video/BV1Z14y1B7ji/) ,NewstarCTF2023 shellcode revenge
    1. ret2 sys_read, 在 read 中不会限制。然后在 read 中输入 shellcode
-1. syscall/syswrite 遇到 00 不断截断，会输出指定字节数, 看汇编有时没 rbp 直接ret
-1. system("$0")  == system('bin/sh') # 记得用
+10. syscall/syswrite 遇到 00 不断截断，会输出指定字节数, 看汇编有时没 rbp 直接 ret
+11. system("$0") == system('bin/sh') # 记得用
+12. 权限不够 -- 尝试 setuid
 
 # 环境配置
 
@@ -141,8 +142,8 @@ https://syst3mfailure.io/
 
 ---
 
-- [Video  | CTFHUB | 只适合纯萌新的 pwn堆基础 - 1](https://www.bilibili.com/video/BV1Bt421t7UV/?spm_id_from=333.788&vd_source=7631821c3a79f04a4fb0ef78db2c0814)
-- [Video  | CTFHUB | pwn堆溢出之off-by-nullの低版本和高版本例题讲解利用](https://www.bilibili.com/video/BV1BF4m157T7/)
+- [Video | CTFHUB | 只适合纯萌新的 pwn 堆基础 - 1](https://www.bilibili.com/video/BV1Bt421t7UV/?spm_id_from=333.788&vd_source=7631821c3a79f04a4fb0ef78db2c0814)
+- [Video | CTFHUB | pwn 堆溢出之 off-by-null の低版本和高版本例题讲解利用](https://www.bilibili.com/video/BV1BF4m157T7/)
 - [CTFHUB | 堆溢出 | FastBin Attack](https://bbs.kanxue.com/thread-276456.htm) -- [WP2](https://blog.csdn.net/KaliLinux_V/article/details/128787055) --[FastBin Attack：House of spirit attack](https://bbs.kanxue.com/thread-277106.htm)
 - [CTFHUB | 堆溢出 | UnsortedBin Attack](https://bbs.kanxue.com/thread-276457.htm)
 - [CTFHUB | 堆溢出 | LargeBin Attack|House of Storm](https://bbs.kanxue.com/thread-276516.htm)
@@ -171,7 +172,7 @@ https://syst3mfailure.io/
 ---
 
 - [glibc2.35-通过 tls_dtor_list 劫持 exit 执行流程](https://mp.weixin.qq.com/s/jdpR_Ago_SK3qRRw3ghZ4A)
-- [Glibc-2.35下对tls_dtor_list的利用详解](https://mp.weixin.qq.com/s/K5ix399X9sd0-nMAJS9KZA)
+- [Glibc-2.35 下对 tls_dtor_list 的利用详解](https://mp.weixin.qq.com/s/K5ix399X9sd0-nMAJS9KZA)
 
 - video
 - [「Pwn 教学」有趣的 Pwn 博主的 Tcache Bin Attack 堆攻击教学](https://www.bilibili.com/video/BV1Jy4y1d7oz/)
@@ -190,14 +191,17 @@ https://syst3mfailure.io/
 - [house of storm](https://mp.weixin.qq.com/s/Li63L0Dqf7y8EsVdVve7qA)
 
 ### ctfshow
-[ctfshow-pwn入门-pwn37-48](https://mp.weixin.qq.com/s/p6_ZHNiy6uikfEf12KnL-A)
-[ctfshow-pwn入门-pwn49](https://mp.weixin.qq.com/s/6ZhMDMTOQHE2ZeQcfSnJFg)
-[ctfshow-pwn入门-pwn50](https://mp.weixin.qq.com/s/hoU0OUPNiIrmNNO8PUZMoQ)
-[ctfshow-pwn入门-pwn51](https://mp.weixin.qq.com/s/hNV5V3yDzfr14ycpuOQJvQ)
-[ctfshow-pwn入门-pwn52](https://mp.weixin.qq.com/s/qNo_G9dPB4S2FksHOeYWag)
-[ctfshow-pwn入门-pwn53](https://mp.weixin.qq.com/s/4QmSzAhaA_7p-H69WTSXkw)
-[ctfshow-pwn入门-pwn54](https://mp.weixin.qq.com/s/coEQY-PWDEC1exTXS6dWkw)
-[ctfshow-pwn入门-pwn55](https://mp.weixin.qq.com/s/kDUpcuzbBu3wf8FDbGavjg)
+
+[ctfshow-pwn 入门-pwn37-48](https://mp.weixin.qq.com/s/p6_ZHNiy6uikfEf12KnL-A)
+[ctfshow-pwn 入门-pwn49](https://mp.weixin.qq.com/s/6ZhMDMTOQHE2ZeQcfSnJFg)
+[ctfshow-pwn 入门-pwn50](https://mp.weixin.qq.com/s/hoU0OUPNiIrmNNO8PUZMoQ)
+[ctfshow-pwn 入门-pwn51](https://mp.weixin.qq.com/s/hNV5V3yDzfr14ycpuOQJvQ)
+[ctfshow-pwn 入门-pwn52](https://mp.weixin.qq.com/s/qNo_G9dPB4S2FksHOeYWag)
+[ctfshow-pwn 入门-pwn53](https://mp.weixin.qq.com/s/4QmSzAhaA_7p-H69WTSXkw)
+[ctfshow-pwn 入门-pwn54](https://mp.weixin.qq.com/s/coEQY-PWDEC1exTXS6dWkw)
+[ctfshow-pwn 入门-pwn55](https://mp.weixin.qq.com/s/kDUpcuzbBu3wf8FDbGavjg)
+[ctfshow-pwn 入门-pwn56-66 shellcode 合集](https://mp.weixin.qq.com/s/JpyVXkMXU7HlBxrZrHtB0g)
+
 ## Untitled
 
 - [好好说话之 ret2shellcode](https://blog.csdn.net/qq_41202237/article/details/105913330)
@@ -231,8 +235,7 @@ https://syst3mfailure.io/
 - [好好说话之 Tcache Attack（1）：tcache 基础与 tcache poisoning](https://blog.csdn.net/qq_41202237/article/details/113400567)
 - [好好说话之 Tcache Attack（2）：tcache dup 与 tcache house of spirit](https://blog.csdn.net/qq_41202237/article/details/113527665)
 - [好好说话之 Tcache Attack（3）：tcache stashing unlink attack](https://blog.csdn.net/qq_41202237/article/details/113604261)
-- [PWN学习之LLVM入门](https://mp.weixin.qq.com/s/s7dQyS5DuKmtTZGq4J78iA)
-
+- [PWN 学习之 LLVM 入门](https://mp.weixin.qq.com/s/s7dQyS5DuKmtTZGq4J78iA)
 
 ## Video
 

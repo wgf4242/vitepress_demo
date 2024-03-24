@@ -317,6 +317,8 @@ https://www.anquanke.com/post/id/195215
 - Windows
   [使用 Frida 在 Windows 中拦截 C++函数](https://mp.weixin.qq.com/s/g2p6jGtsTC2GhoyoUYwwhA)
 
+[Frida + IDA 开启小程序 devtools](https://mp.weixin.qq.com/s/hAvFEgYrejYAfFGk9gY50Q)
+
 ## Brida
 
 [[原创]Frida 配合 BurpSuite 的 Brida 插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)

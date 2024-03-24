@@ -285,6 +285,7 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [强开小程序f12 秒杀动态RSA+AES加密](https://www.bilibili.com/video/BV1oT4y1J77u/) 
 [小程序逆向之国密SM2加密](https://www.bilibili.com/video/BV1jh4y127TN/) 
 [某微信小程序未授权漏洞挖掘（置空查询思路）](https://mp.weixin.qq.com/s/_wHvNSZCrx2uvUBF8PBTIA)
+[Frida + IDA 开启小程序 devtools](https://mp.weixin.qq.com/s/hAvFEgYrejYAfFGk9gY50Q)
 
 [浅谈微信小程序测试技巧](https://mp.weixin.qq.com/s/zbLQNZLBUTLt7kq-rJpkdg)
 [安卓渗透测试工具集 -- h4tools](https://mp.weixin.qq.com/s/z0pb-Z4pzk-eX5nXsrF8vg)

@@ -371,6 +371,7 @@ https://github.com/APKLab/APKLab
 - [App 接口参数还原调用](https://mp.weixin.qq.com/s/jnRHO9mUuwheW27B7iES-w)
 - [APP 的登录协议分析](https://mp.weixin.qq.com/s/Z4hI_8FO_77dHLcjKMeXFw)
 - [逆向工程技术在移动应用渗透测试的应用](https://mp.weixin.qq.com/s/AyvnUoDKtewiIvExk5Ih0w)
+- [APP sign签名参数分析](https://mp.weixin.qq.com/s/grYRp34tUWytkRfhsm0eOQ)
 
 ## 混淆加密
 
