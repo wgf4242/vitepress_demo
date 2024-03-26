@@ -925,6 +925,7 @@ sub dialog_test {
 
 [4.9 | 【第一部分】CobaltStrike v4.9 新功能尝鲜](https://www.bilibili.com/video/BV1pp4y1F7mt/)
 [CobaltStrike 逆向学习系列(番外篇)-自定义 RDI 功能添加](https://mp.weixin.qq.com/s/k3n6gEU26EO7cvwT1mGoxA)
+- [DLL转发劫持还能这么玩？](https://mp.weixin.qq.com/s/a_om1z4H_PTUjIJAepXTzA)
 
 ## 使用帮助
 

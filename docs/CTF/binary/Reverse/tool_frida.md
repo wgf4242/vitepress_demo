@@ -283,6 +283,7 @@ Frida 常用方法汇总 https://www.996station.com/1030
 https://www.anquanke.com/post/id/195215
 
 # Article
+[练习 | Frida 实战 KGB Messenger](https://mp.weixin.qq.com/s/sZCAlqG-C9GoQzF7k_qINw)
 
 [frida-snippets](https://github.com/iddoeldor/frida-snippets)
 [Frida 学习笔记](https://zyzling.gitee.io/2020/05/12/Frida学习笔记/)
