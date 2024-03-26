@@ -372,6 +372,7 @@ https://github.com/APKLab/APKLab
 - [APP 的登录协议分析](https://mp.weixin.qq.com/s/Z4hI_8FO_77dHLcjKMeXFw)
 - [逆向工程技术在移动应用渗透测试的应用](https://mp.weixin.qq.com/s/AyvnUoDKtewiIvExk5Ih0w)
 - [APP sign签名参数分析](https://mp.weixin.qq.com/s/grYRp34tUWytkRfhsm0eOQ)
+- [App渗透 -人脸识别登录绕过](https://mp.weixin.qq.com/s/ELY7rS1yojMw2lO3Z8BGRg)
 
 ## 混淆加密
 

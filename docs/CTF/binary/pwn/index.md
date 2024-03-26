@@ -202,6 +202,7 @@ https://syst3mfailure.io/
 [ctfshow-pwn 入门-pwn55](https://mp.weixin.qq.com/s/kDUpcuzbBu3wf8FDbGavjg)
 [ctfshow-pwn 入门-pwn56-66 shellcode 合集](https://mp.weixin.qq.com/s/JpyVXkMXU7HlBxrZrHtB0g)
 [ctfshow-pwn入门-pwn67-68 nop sled](https://mp.weixin.qq.com/s/z5WsC_KFvuamuIygmXTiIQ)
+[ctfshow-pwn入门-pwn69 ORW-SHELLCODE](https://mp.weixin.qq.com/s/tUjD0gKbmW_Ygg8TU3ZawQ)
 
 ## Untitled
 
