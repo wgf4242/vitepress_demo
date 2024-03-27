@@ -286,6 +286,7 @@ https://www.anquanke.com/post/id/195215
 [练习 | Frida 实战 KGB Messenger](https://mp.weixin.qq.com/s/sZCAlqG-C9GoQzF7k_qINw)
 
 [frida-snippets](https://github.com/iddoeldor/frida-snippets)
+[Frida-Hook-Java层操作大全](https://mp.weixin.qq.com/s/Tef03zO_tgbuqYWng9sz2A)
 [Frida 学习笔记](https://zyzling.gitee.io/2020/05/12/Frida学习笔记/)
 [实用 FRIDA 进阶：内存漫游、hook anywhere、抓包/objection](https://www.anquanke.com/post/id/197657)
 [之前大家私信我 frida 的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm)
