@@ -204,7 +204,8 @@ https://syst3mfailure.io/
 [ctfshow-pwn入门-pwn67-68 nop sled](https://mp.weixin.qq.com/s/z5WsC_KFvuamuIygmXTiIQ)
 [ctfshow-pwn入门-pwn69 ORW-SHELLCODE](https://mp.weixin.qq.com/s/tUjD0gKbmW_Ygg8TU3ZawQ)
 [ctfshow-pwn入门-pwn70](https://mp.weixin.qq.com/s/WtpRYSOhxsWLKDRgzblGJA)
-[ctfshow-pwn入门-pwn71-73 静态编译](https://mp.weixin.qq.com/s/afiHnHcUXGzmqug_ZxWBWg)
+[ctfshow-pwn入门-pwn74-one_gadget](https://mp.weixin.qq.com/s/OTIScIklqkSNRLAX_aqiIw)
+[ctfshow-pwn入门-pwn75-栈迁移](https://mp.weixin.qq.com/s/ulUI_GvijiUS2BdNJrWGxg)
 
 ## Untitled
 
