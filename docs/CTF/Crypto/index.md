@@ -24,6 +24,9 @@ $$
 非对称加密 RSA DSA ECC
 
 # Article
+- [【Crypto】有限域常识（1）](https://www.bilibili.com/video/BV1UE421g7Xr/)
+- [【Crypto】有限域常识（2）](https://www.bilibili.com/video/BV1yt421E7HW/)
+
 * [《DASCTF开学第一课：密码篇》](https://www.bilibili.com/video/BV1ba411R7QK/)
 * [数论](https://oi-wiki.org/math/number-theory/basic/)
 * [密码学-费马小定理在RSA中的应用1](https://mp.weixin.qq.com/s/9AjOCrw9g_cvgsH6X_PnXQ)

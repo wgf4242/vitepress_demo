@@ -9,7 +9,6 @@ fkpt脱壳ROM 找一下
 - [Android loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/zj5isP6dGu-mTNpJN1W3BQ)
 - [Android Studio 调试 Smali | 给大家分享一下这几年学习 Android 逆向遇到的环境问题吧，希望大家不要在这上面浪费时间](https://bbs.pediy.com/thread-275251.htm)
 - [移动应用安全与风控——汇编基础](https://mp.weixin.qq.com/s/tU-Aeh-IoVf_sIofD7-4dA)
-
 # APK
 
 1.PKID 查壳、BlackDex 脱壳、jadx 打开(报用 gda) 2.看资源文件 看 dex
@@ -225,6 +224,8 @@ https://github.com/APKLab/APKLab
 - [Android 逆向环境搭建](https://mp.weixin.qq.com/s/3Zd4PBMxXpj21BuOu7tBiQ)
 - [APP 渗透测试环境搭建](https://mp.weixin.qq.com/s/CnP79CUGxx-2utrywHckxA)
 - [Done | 入门 | 移动应用安全与风控——应用分析](https://mp.weixin.qq.com/s/LFl6dRodhBk6djYJGN6qAQ)
+- [通过 USB 或网络控制安卓设备：无需 root 权限 | 开源日报 No.231](https://mp.weixin.qq.com/s/SgvCbYdV6z20FfyXc7V_oQ)
+
 
 ## 课程
 

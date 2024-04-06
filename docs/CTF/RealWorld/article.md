@@ -22,7 +22,7 @@
 
 [不出网 | 内网渗透：不出网渗透技巧](https://mp.weixin.qq.com/s/ufF5waoynKJs8wypSLhE2g)
 [不出网 | 【知识整理】内网渗透之目标不出网上线思路（3）](https://mp.weixin.qq.com/s/1HCOAkhLT1FOBOJaQ9-XEA)
-[不出网 | dns隧道 | 参考云境]
+[不出网 | dns 隧道 | 参考云境]
 [不出网 | 内网渗透之主机出网 OR 不出网隧道搭建](https://www.freebuf.com/articles/web/255801.html)
 
 [『红蓝对抗』内网横向移动方法大全之不是很全](https://mp.weixin.qq.com/s/K8tccZyUKLuHuIwM3--trw)
@@ -82,6 +82,10 @@ result.txt | 搜验证码
 [域内用户 Hash 获取方式总结](https://mp.weixin.qq.com/s/k-VUKcivMw3bncK5RW2Mvg)
 [某内网域渗透靶场的 writeup](https://mp.weixin.qq.com/s/WEDE7Lzsx2Lxq8RUvEkYxg)
 [内网渗透 | 最全的内网凭据密码收集方法和技巧总结](https://mp.weixin.qq.com/s/m9lrOYPi73BmXcx8ZnSapA)
+
+## 云管/云平台
+
+[记一次信息泄露到云服务接管](https://mp.weixin.qq.com/s/phA8PbezsOYoUoVS7nDWIA)
 
 ## [Exploit/CVE/实战漏洞](./exp_exploit.md)
 
@@ -166,8 +170,6 @@ result.txt | 搜验证码
 
 [几次护网小结之红队打点及小技巧](https://mp.weixin.qq.com/s/dmpgGTo3qd2qbXrNcFeafw)
 
-
-
 [支付 | 支付与并发漏洞挖掘技巧](https://mp.weixin.qq.com/s/5HXRWR3Roc2Nx4Dop6kI_A)
 
 [(SRC 漏洞挖掘三) 二维码功能点](https://mp.weixin.qq.com/s/AmEXavw4G7YLZEZZAHOZUw)
@@ -180,7 +182,7 @@ result.txt | 搜验证码
 
 ### 渗透测试/API
 
-提取 1. IP 2. http 开头的文字 3.搜 admin 4.\b中文[2,3]\b 
+提取 1. IP 2. http 开头的文字 3.搜 admin 4.\b 中文[2,3]\b
 
 ```sh
 \b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b
@@ -222,8 +224,8 @@ https?://[^"]+
 [API | 漏洞挖掘](https://mp.weixin.qq.com/s/Uu4_OBp1Ye6ZCSgWPQKbFA)
 [API | 【精选推荐】3 款强大的 API 渗透测试工具](https://mp.weixin.qq.com/s/SuRkm_klAnFbtD23tRiPqA)
 [API | 通过分析 JS 源代码来发现 api 漏洞](https://mp.weixin.qq.com/s/Mk-DhFTvLfxgjd1IXXQSmg)
-[API | JWT渗透姿势](https://mp.weixin.qq.com/s/1e94h4NFiIbVDMiIXtjgGQ)
-[API | JWT的认证bypass](https://mp.weixin.qq.com/s/-4XT3rWZs4o-fnzt5plIHA)
+[API | JWT 渗透姿势](https://mp.weixin.qq.com/s/1e94h4NFiIbVDMiIXtjgGQ)
+[API | JWT 的认证 bypass](https://mp.weixin.qq.com/s/-4XT3rWZs4o-fnzt5plIHA)
 
 ## Java
 
@@ -306,7 +308,7 @@ https?://[^"]+
 [冰蝎各版本工具分析与魔改思路](https://mp.weixin.qq.com/s/3lIOABAiuZd4rOM7SshOEA)
 [冰蝎 Java WebShell 免杀生成 -- ByPassBehinder4J​](https://mp.weixin.qq.com/s/Gy6xAYVE3AOybr3CG4HV2A)
 [冰蝎（behinder）免杀魔改](https://mp.weixin.qq.com/s/AKIKMlx0NPzuLmW7za7AJw)
-[冰蝎4：一键修改特征，轻松打造专属传输协议！](https://mp.weixin.qq.com/s/2GnaqCE0fWiQw1fQPuNGyw)
+[冰蝎 4：一键修改特征，轻松打造专属传输协议！](https://mp.weixin.qq.com/s/2GnaqCE0fWiQw1fQPuNGyw)
 [冰蝎 3 和冰蝎 4AES 爆破题目](https://byxs20.github.io/posts/5092.html)
 [内网穿透 nps 的魔改](https://mp.weixin.qq.com/s/Tueykyf0P5opuL3jY7UdHw)
 [【红队】一款 C2 设施前置流量控制工具](https://mp.weixin.qq.com/s/2m-DojrK6kOhluE5THfAGA)
