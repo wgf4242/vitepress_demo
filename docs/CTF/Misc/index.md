@@ -403,6 +403,7 @@ bkcrack, 明文只需要满足 8 字节连续，一共 12 字节已知即可
 | Cmds                                                                        | Desc                                                                                                                                              |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `bkcrack -C flag.zip -c hint.txt -P hint.zip -p hint.txt`                   | 压缩方式不同,有时要用 -P xxx.zip
+| `bkcrack -C flag.zip -c flag/SYCTF{aditziczrh} -P flag1.zip -p flag/SYCTF{aditziczrh}` | 
 | `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 150 504B050600000000`      | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt , 为啥是 150: zip 大小-22, 打开 a 查看 b 大小为 172 则 172-22=150, `f18d1f04aa82_4266.zip` |
 | `bkcrack -C out.zip -c flag.zip -x 0 504B0304 -x 30 666C61672E747874`       | 针对压缩包 a 里有压缩包 b 的情况, 知道 b 中是 flag.txt                                                                                            |
 | `bkcrack -C 1.zip -c 1.png -x 0 89504E470D0A1A0A0000000D49484452`           | 解 PNG 明文                                                                                                                                       |
