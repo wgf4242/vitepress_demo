@@ -38,7 +38,7 @@
 | ---- | -------- | ---------------------- |
 | .img | winhex   | 查看每个块看有没有提示 |
 
-### windows
+### windows/病毒取证
 [【Windows取证篇】Window日志分析基础知识（一）](https://mp.weixin.qq.com/s/saC5B3zZC7zx9DWdYwxtBQ)
 
 
@@ -49,6 +49,7 @@ wsl 相关
 appdata/local/Packages/xxxxUbuntu/LocalState/rootfs/etc/mysql/debian.cnf
 
 sysmon 记录日志在重启过程中进行所有记录，进程的调用关系。
+[免杀初探(一)](https://mp.weixin.qq.com/s/OD91v3unkC7g4dyWkHru4Q)
 ### linux
 
 https://blog.csdn.net/NFMSR?type=blog
