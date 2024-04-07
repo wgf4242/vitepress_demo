@@ -90,6 +90,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [车联网安全入门之从 CAN 模拟环境搭建到重放攻击](https://mp.weixin.qq.com/s/LzrqCOq6BjPC6s3SjNvXcw)
 - [物联网固件逆向工程基础](https://xz.aliyun.com/t/12320)
 - [西湖论剑 IoT 复现（一）](https://mp.weixin.qq.com/s/xfkm4zwZ9e8OtQq--MH8fA)
+- [固件 | 常见的固件加解密方式与D-Link固件解密实战分析](https://mp.weixin.qq.com/s/7OP6xtsli9L-LHkPuS3K3Q)
 - [2022 西湖论剑 IoT-AWD 赛题官方 WriteUp （上篇）：一号固件&二号固件](https://mp.weixin.qq.com/s/tRmWsRfF2yRszwSeXws5xg)
 - [2022 西湖论剑 IoT-AWD 赛题官方 WriteUp （下篇）：三号固件](https://mp.weixin.qq.com/s/_1uLWXSPEiCFST6dsi0YBA)
 - [解密固件实践及 firmwalker 脚本利用](https://www.bilibili.com/video/BV1Fs4y1K76J/)
