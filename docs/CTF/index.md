@@ -11,6 +11,7 @@
 - Misc  run.zip 有密码的什么东西
   -  Challenges\@todo 1.png
 - re: 鹏城锦标赛\工控-驱动\drive.zip
+- re: ida: IDAPython： Introduction to choosers [VkysIhG_luI].mkv 中的22:45 是怎样保存后即时运行到ida的
 - re_iot: 钢铁行业锦标赛\06firmware_reverse
 - pwn:  为什么patchelf后不能运行 _怎么办？
 - pwn: pwntools怎样设置编码来输出中文 shctf call_call_would_backdoor。

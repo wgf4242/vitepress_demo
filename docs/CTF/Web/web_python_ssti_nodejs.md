@@ -306,6 +306,10 @@ filehash: md5(cookie_secret+md5(filename))
 // pug 模板
 #{name}
 ```
+## Picles
+
+[『漏洞复现』不安全的 Python Pickles](https://mp.weixin.qq.com/s/HBQGVI_wFSmDPrTwlc8tPw)
+
 
 ## Article
 
