@@ -9,7 +9,7 @@ movzx eax,byte ptr ss:[ebp+edx-0x3C]
 ## x64dbg 快捷键
 
 | cmd                 | Desc                                       |
-| ------------------- | ------------------------------------------ |
+| ------------------- | ------------------------------------------ | ---------------------------------------------------------------------------- |
 | F                   | 二进制填充                                 |
 | g                   | 图表                                       |
 | h                   | 点击变量，可以高亮。                       |
@@ -20,6 +20,7 @@ movzx eax,byte ptr ss:[ebp+edx-0x3C]
 | d <function_name>   | d <fn+5> 跳转到 fn+5 处                    |
 | Ctrl + 9            | Nop                                        |
 | Ctrl+space          | 恢复修改                                   |
+| Alt+;               | 标记地址                                   | mov rax, ds:[0x00007FF708FEC450] => mov rax, ds:[callHp] |
 
 ## IDA 地址转 OD 地址
 
@@ -62,4 +63,4 @@ wininet.dll.InternetConnectA
 # Article
 
 [通过 x64dbg 脚本功能修复 IAT 表](https://mp.weixin.qq.com/s/ZjxRNJr22H2val27mCeoUg)
-[OD定位消息-事件](https://mp.weixin.qq.com/s/d57aOp_fN6eqLx6MAl01nQ)
+[OD 定位消息-事件](https://mp.weixin.qq.com/s/d57aOp_fN6eqLx6MAl01nQ)

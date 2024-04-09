@@ -339,6 +339,7 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 使用 unzip 或者 winrar 打开 逐个解压，因为包里可能有不需要密码的。
 
 ```
+-- 解压不了用 7z/360zip/好压/试试
 -- 解压密码 空格 转 _
 -- 伪加密 , [VNCTF 2021]冰冰好像藏着秘密.rar  , 伪加密时010识别的位置不对。
   -- rar  直接拖出来/或解压, 提示密码点确定
