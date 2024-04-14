@@ -1,3 +1,8 @@
+[pwn技术分享-FSOP之耍一道题【Polar24春季赛-Emo_Chunk2】](https://www.bilibili.com/video/BV1LJ4m177sg/)
+[pwn技术分享-FSOP之_IO_str_jumps_](https://www.bilibili.com/video/BV1JF4m1F7cb/)
+[pwn技术分享-FSOP之2.23伪造vtable | libc2.28之后已失效j](https://www.bilibili.com/video/BV1Nx4y1D76o/)
+
+
 # fd
 
 | fd  | description |     |
@@ -15,6 +20,7 @@ close（2）关闭了标准错误
 看文件 [利用 _IO_2_1_stdout_ 泄露libc](https://www.jianshu.com/p/27152c14e2e7)
 [IOFILE exploit入门](https://mp.weixin.qq.com/s/yrXGg_r-9p9m1qbNolI-5g)
 [IO_file 利用总结](https://mp.weixin.qq.com/s/U4XNbjiaSogo9m91ZKaG3g)
+[pwn技术分享-利用_IO_2_1_stdout泄露libc](https://www.bilibili.com/video/BV12t421L7iL/)
 
 1. FILE结构体
 
