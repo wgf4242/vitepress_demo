@@ -352,6 +352,23 @@ remote('127.0.0.1', 12345)
 pause()
 # 2. ida attach to process
 ```
+## WinDBG/API hooks
+attach时用 WinDBG
+
+load DMP文件时自动加载
+```sh
+WinDBG
+# register
+WinDBG>r
+# threads
+WinDBG>~
+WinDBG>!for_each_module !chkimg -d @#ModuleName
+WinDBG>!chkimg -d user32.dll
+```
+API attach
+1. vs调试状态下启动程序
+2. ida: Debugger - Attach - Windbg - Debug options - set specific optons  - None Invasive user-mode process attach
+*  右击 Module 窗口的 Debug文件,  Load debug symbol
 
 # Article
 

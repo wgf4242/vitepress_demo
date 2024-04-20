@@ -221,6 +221,7 @@ js -- decodeObfuscator
 [android | 脱壳实战-Frida-Apk-Unpack](https://mp.weixin.qq.com/s/gvWaSaBiD-bQCgtH7-agQA)
 [脱壳 ASProtect v1.31 (手动修复IAT乱序)](https://mp.weixin.qq.com/s/Vlto5aGq5KzugIF4447eSg)
 [脱壳 SLVcodeProtector v1.12 （全保护）](https://mp.weixin.qq.com/s/sHKugQPjfaKU9h6CdhzqbA)
+[手脱TMD壳](https://mp.weixin.qq.com/s/r7oQe6xUVkNzEscGgkmjIA)
 
 ### UPX/ESP 定律
 

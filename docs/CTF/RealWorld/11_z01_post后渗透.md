@@ -59,6 +59,7 @@ cat /proc/self/environ    # 环境变量
 /root/.ssh/known_hosts    # 记录每个访问计算机用户的公钥
 
 
+
 # 应用配置
 ## Firefox/Chrome 查看密码管理
 ## java站点
@@ -252,6 +253,12 @@ Host Information Gathering Script：HIGS.bat
 https://github.com/myh0st/scripts/blob/master/Windows%E4%B8%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/HIGS.bat
 privilege-escalation-awesome-scripts：winPEAS.bat
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASbat/winPEAS.bat
+
+# 痕迹清理 | 文件清理 | linux
+
+```sh
+history -c
+```
 
 # 提权工具脚本
 
