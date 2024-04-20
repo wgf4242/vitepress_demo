@@ -204,7 +204,7 @@ arr[$(cat /flag)]
 - gif
   - ScreenToGif 查看时间帧, 以及差
 - 有图像, Google/baidu 搜图 可能是提示
-- 关键字:猫/猫脸变换/arnold 置乱
+- 关键字:猫/猫脸变换/arnold 置乱  [一文带你了解Arnold猫脸变换](https://1cepeak.cn/post/arnold/)
 - 做 fourier 变换。
 - pixel 像素题
   - r,g,b 中 b 一直是 255，有时不是 255，非 255 输出 chr 尝试

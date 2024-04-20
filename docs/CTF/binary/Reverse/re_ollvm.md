@@ -1,4 +1,7 @@
 ## Article
+[搜 "知道控制流平坦化后" | ESCTF-逆向赛题WP](https://mp.weixin.qq.com/s/uCg-CEGIE6-c2nAsWGV1YA)
+[deflat.py](https://github.com/SnowGirls/deflat)
+
 [符号执行去除BR指令混淆](https://mp.weixin.qq.com/s/t8IWOlFSz4C6Gj7Ju9nEdQ)
 
 [示例 xnuca-Strange Interpreter-浅谈逆向小技巧](https://xz.aliyun.com/t/3464)

@@ -2,6 +2,8 @@
 
 [fields](https://www.wireshark.org/docs/dfref/)
 
+Ctrl+Shift+O 选中内容 可用html渲染
+
 ## 环境配置
 
 视图 - 着色规则
