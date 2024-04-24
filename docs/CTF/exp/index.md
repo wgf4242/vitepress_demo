@@ -118,7 +118,10 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [向日葵 | 远程代码执行(CNVD-2022-10270)漏洞复现](https://mp.weixin.qq.com/s/BxjcYL94SGJ4xSox_BPgLg)
 
 [FastJson 利用工具 -- fastjson-exp](https://mp.weixin.qq.com/s/dyeOlw2SyjgCGE3C8MDjfg)
+
+- 若依 admin/admin123 ry/admin123   druid控制台：ruoyi/123456，接口地址 **/druid **
 [若依 | ruoyi 系统前后台漏洞大全](https://mp.weixin.qq.com/s/LZxZZ3ZLQg2Wz3xX4iCE8w)
+[若依 | RuoYi全系列漏洞详解](https://blog.takake.com/posts/60498/)
 [若依 | 记一次实战之若依SSTI注入绕过玄某盾](https://mp.weixin.qq.com/s/rB-TK7rK300U66gZXsIF6A)
 [若依 | 最新版后台RCE](https://mp.weixin.qq.com/s/e0SvORpUGZmB899TfjyXiQ)
 [若依 | ruoyi框架管理系统漏洞](https://mp.weixin.qq.com/s/Fxa6EKSBfmB59VyfABvxqA)
@@ -155,6 +158,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [Struts 2.1.2 ~ 2.3.33，2.5 ~ 2.5.12【漏洞复现】S2-052 远程代码执行漏洞(CVE-2017-9805)](https://mp.weixin.qq.com/s/pyNA_tQflMcaNrIptWcQYg)
 [Struts 2.0.1 ~ 2.3.33，2.5 ~ 2.5.10【漏洞复现】S2-053 远程代码执行漏洞(CVE-2017-12611)](https://mp.weixin.qq.com/s/mlMCNyGu9KlLTAogrsIPlQ)
 
+[Tomcat | 漏洞利用工具 -- TomcatVuln](https://mp.weixin.qq.com/s/zilcg58Ds3VYHFdKQS7t8w)
 [Tomcat | 系列漏洞总结](https://mp.weixin.qq.com/s/iTWctaWSgBnNqeEYgEDUzQ)
 [Tomcat | 7.0.0-7.0.81 任意文件写入(CVE-2017-12615)](https://mp.weixin.qq.com/s/_Pw2jqKx21RtrZFDSM6xCQ)
 [Apache Solr JMX 服务 RCE](http://mp.weixin.qq.com/s?__biz=MzkzNzQyMDkxMQ==&mid=2247483678&idx=1&sn=24efd9d616d2fce60427542c29ff6e05)
@@ -207,6 +211,7 @@ rw_exp_joomla_CVE-2023-23752
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2 和 8.6.4.1 | CVE-2022-36537 未授权 RCE 漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos 漏洞利用总结](https://h0ny.github.io/posts/Nacos-%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%80%BB%E7%BB%93/)
+[Nacos的系列漏洞和利用技巧](https://mp.weixin.qq.com/s/hTnM1DbPo0suyZCqkS4jKw)
 [Nacos | QVD-2023-6271：Nacos 身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
 [Nacos | 身份绕过漏洞利用（QVD-2023-6271）](https://mp.weixin.qq.com/s/lt2FoK2wCxYz_I7QyeRMyw)
 [Nacos | 漏洞问题及修复(CVE-2021-29441) 任意用户注册和管理员密码修改](https://blog.csdn.net/Hoopy_Hoopy/article/details/120283270)

