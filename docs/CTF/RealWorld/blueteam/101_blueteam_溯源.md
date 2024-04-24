@@ -52,6 +52,9 @@ tac /var/log/secure           - 包含类似于 auth.log 的信息，但在某�
 tac /var/log/messages         - 记录系统的各种消息和事件，包括登录尝试。
 /var/log/syslog               - 包含系统日志的综合记录，可能包括登录尝试。
 
+
+/usr/bin  查看
+/usr/lib  查看
 # 6、分析数据库的日志
 # 4、分析中间件日志
 ## apache

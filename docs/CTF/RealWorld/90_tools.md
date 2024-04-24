@@ -8,6 +8,9 @@ https://gitee.com/windyjxx/projects
 [隧道？代理？端口转发？（一文读懂）](https://mp.weixin.qq.com/s/PDIWU-xej9SffRXlDEJYdA)
 [常用的端口转发方式](https://mp.weixin.qq.com/s/VjFb77ALUKSzenKQYI42jA)
 
+
+[云资产 | LC 多云攻击面资产梳理开源工具](https://mp.weixin.qq.com/s/fmMVkNUkWGgXlHuVdbkGgA)
+
 ### fscan
 
 ```bash
@@ -880,7 +883,7 @@ python3 neoreg.py -k password -u http://xx/tunnel.php
 
 [SoftEther VPN 内网穿透](https://mp.weixin.qq.com/s/Xim1SKnU41Z_rb9aI0QdDA)
 
-## 端口复用
+## [端口复用](90_tools_01_端口复用.md)
 
 [Linux 远控的端口复用](https://mp.weixin.qq.com/s/mHCOuR1rq2ExEYYWhA4vQg)
 [Linux 持久化—IPTables 端口复用](https://mp.weixin.qq.com/s/k_C2d_H2Z_sRlJR_QRh55g)

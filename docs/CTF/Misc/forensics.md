@@ -10,9 +10,10 @@
 1. 取证软件
 如平航全家桶、弘连全家桶、美亚全家桶、奇安信全家桶等
 2. 其他工具及网站
-Encase、 X-Ways Forensics、 R-studio、 CSI-Mounter、 WinHex、 BCompare、 VMware、 FTKImager、
+Encase、 X-Ways Forensics、 R-studio、 WinHex、 BCompare、 VMware、
 Navicat、 IDA-PRO、 010Editor、 LogParser、 SQLServer、 Jadx-gui、 dbg系列动态调试⼯具、 frida、
 hashcat、 Python、 github.com、 cmd5.com等
+磁盘挂载: FTKImager, VeraCrypt, Arsenal Image Mounter v3.0.64 Beta, CSI-Mounter
 
 
 1. 直接 010, strings flag

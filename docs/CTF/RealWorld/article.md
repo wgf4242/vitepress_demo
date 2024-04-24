@@ -148,6 +148,7 @@ result.txt | 搜验证码
 [渗透测试中 403/401 页面绕过的思路总结](https://mp.weixin.qq.com/s/RcEL4uw9DbM98hUsmws5_Q)
 [渗透测试之突破口 | 常见打点及漏洞利用](https://mp.weixin.qq.com/s/190z9ljqriHLLexEMRkJ5w)
 [任意账号密码重置的 6 种方法](https://mp.weixin.qq.com/s/BHXwFYLYyZ3dCFXyzsk8SQ)
+[浅谈SRC中关于密码重置漏洞的相关思路](https://mp.weixin.qq.com/s/iFsEa2IYLo9gOZBPYIHssw)
 [企业级 SRC 挖掘-前端 sessionStorage 绕过](https://mp.weixin.qq.com/s/wKjwRymNWhr8RI4xWb5sXg)
 [实战中常见的逻辑漏洞 | 水平越权](https://mp.weixin.qq.com/s/eTMvmLhoGCzsqwjRxEmdRA)
 [登录页面渗透的骚操作](https://mp.weixin.qq.com/s/LSj26A7WceXelbfOfRanLQ)
@@ -191,6 +192,7 @@ https?://[^"]+
 
 [API Penetration Testing](https://university.apisec.ai/products/api-penetration-testing)
 [API | 渗透实战|两个 0day 漏洞挖掘案例](https://mp.weixin.qq.com/s/Q8OQ4I4TZy9N61P0xFIbCQ)
+[API | 浅谈API漏洞挖掘](https://mp.weixin.qq.com/s/VprGwAb8Wf0GrRvOTDTtUw)
 [API | API 安全 01：crAPI 漏洞靶场与打靶思路](https://mp.weixin.qq.com/s/9CZAJJ0TDZ2reFWTR9i2UA)
 [API | 工具|10 大 API 安全测试工具](https://mp.weixin.qq.com/s/f9LFuL65yK8I9WGDvY3iOQ)
 [API | 挖洞随记-js 接口泄露隱藏接口导致文件上传漏洞](https://mp.weixin.qq.com/s/DPJtJEYgyo15kX4FLw1pRQ)

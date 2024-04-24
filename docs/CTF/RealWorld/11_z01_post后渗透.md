@@ -28,6 +28,8 @@ reg query HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\T
 reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" Winlogon.reg
 dir D:\ /s | findstr /i ora >c:\tmp.txt # 查找ora文件
 dir /s /b *admin*                       # 查找admin相关文件.
+# 查找 包含 b 的文件
+findstr /S /M /C:"b" F:\aaa\*.*
 REG ADD "HKLM\System\CurrentControlSet\Control\Lsa" /v DisableRestrictedAdmin /t REG_DWORD /d 00000000 /f   # 允许pth登录
 shell net user defaultuser1 123 /add && net localgroup administrators defaultuser1 /add
 
@@ -210,7 +212,7 @@ iptables -L    # 列出iptable的配置规则
 ```
 
 wmic qfe get Caption,Description,HotFixID,InstalledOn
-wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:“KBxxxxxx”
+wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:"KBxxxxxx"
 
 ## 权限维持
 

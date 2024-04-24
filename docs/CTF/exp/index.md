@@ -209,6 +209,7 @@ rw_exp_joomla_CVE-2023-23752
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2 和 8.6.4.1 | CVE-2022-36537 未授权 RCE 漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos 漏洞利用总结](https://h0ny.github.io/posts/Nacos-%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%80%BB%E7%BB%93/)
+[Nacos的系列漏洞和利用技巧](https://mp.weixin.qq.com/s/hTnM1DbPo0suyZCqkS4jKw)
 [Nacos | QVD-2023-6271：Nacos 身份认证绕过漏洞](https://mp.weixin.qq.com/s/jWhlmwK4nbveukXyltdVfw)
 [Nacos | 身份绕过漏洞利用（QVD-2023-6271）](https://mp.weixin.qq.com/s/lt2FoK2wCxYz_I7QyeRMyw)
 [Nacos | 漏洞问题及修复(CVE-2021-29441) 任意用户注册和管理员密码修改](https://blog.csdn.net/Hoopy_Hoopy/article/details/120283270)
