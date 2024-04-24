@@ -304,6 +304,7 @@ Edit-----preference------protocols----tcp---relative sequence numbers
 ```bash
 # Usage: editcap [options] ... <infile> <outfile> [ <packet#>[-<packet#>] ... ]
 # 拆分new_output.pcapng文件，拆分每个pcap文件最多包含10条数据
+# -i <seconds per file>
 .\editcap.exe "C:\Users\fd\Desktop\new_output.pcapng" -c 10 "C:\Users\fd\Desktop\pc\split.pcap"
 ```
 

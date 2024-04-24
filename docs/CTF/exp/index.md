@@ -186,6 +186,8 @@ rw_exp_Apache RocketMQ RCE_CVE-2023-3324.1.0.7z
 [Keepass 附 EXP CVE-2023-24055](https://mp.weixin.qq.com/s/_yNcIuvl5UmbyMenoKtxyw)
 [Keepass CVE-2023-24055 KeePass 敏感信息明文传输漏洞复现](https://mp.weixin.qq.com/s/0-qIbnxOIx4bJJrrVtvseg)
 
+[群晖 | D-Link NAS | CVE-2024-3273](https://github.com/Chocapikk/CVE-2024-3273)
+
 [Joomla 未授权访问漏洞(CVE-2023-23752)](https://mp.weixin.qq.com/s/N_fSww8Hjylnrha6EvlSjg)
 [Joomla CVE-2023-23752：Joomla 未授权访问漏洞](https://mp.weixin.qq.com/s/p-LDGXaC_jTsLYxuYQvR7w)
 [Joomla CVE-2023-23752—Joomla未授权访问Rest API漏洞](https://mp.weixin.qq.com/s/C-t3TAtnWIX7xY-1AChauw)
@@ -269,6 +271,10 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 
 [GitLab | 任意用户密码重置漏洞（CVE-2023-7028）](https://mp.weixin.qq.com/s/jnXXOK7lxRG1U-FXZxsy-w)
 [GitLab | CVE-2023-7028 GitLab 任意用户密码重置](https://mp.weixin.qq.com/s/Yn6CmiGticzxB2F8P1X0KA)
+
+
+poc-yaml-go-pprof-leak 访问 /debug/pprof/
+
 ### Exploit/CVE/实战漏洞/Windows
 
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
