@@ -196,7 +196,7 @@ moectf2022 chicken_soup.zip
 
 ## 连续的 push, buuoj Findkey,
 
-```
+```sh
 .text:00401640                                         ; 这里开始变灰了，分析不了了。
 .text:00401640 loc_401640:                             ; CODE XREF: sub_401014↑j
 .text:00401640                 push    ebp
@@ -220,12 +220,23 @@ moectf2022 chicken_soup.zip
 方式 1 mark1 处 nop, 导致 mark1-1 栈不平衡，要修复栈
 方式 2 mark2 处 nop. 在 0x401640 处按 P 创建函数并 F5，首先观察他的 else 分支：
 
-## call $+5
+## call $+5 pop eax
 
 | 花指令                                                                                                                                  | 去花后              |     |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | --- |
 | push ebp<br>call $+5<br>pop ebp<br>dec eax<br>add ebp, (offset sub_411B8E - offset loc_411B86)<br>push ebp<br>retn<br>db 90h<br>pop ebp | push ebp<br>pop ebp |     |
 |                                                                                                                                         |                     |
+
+
+```sh
+00413931 E8 00 00 00 00  call $+5         ; call指令=push ip(下行地址), 跳转 $+5 即 413936
+00413936 5D              pop rbp          ; rbp = 0x413936 , 这两行= mov rbp,eip
+00413937 48 83 C5 08     add     rbp, 8   ; rbp + 8 作为返回地址
+0041393B 55              push    rbp      ; 
+0041393C C3              retn             ; 跳转到0041393E
+0041393D E8              db 0E8h          ; junk 跳过了
+0041393E 5D              pop     rbp
+```
 
 ## [HDCTF2019]Maze
 

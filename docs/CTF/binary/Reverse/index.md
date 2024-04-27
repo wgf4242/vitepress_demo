@@ -13,6 +13,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 前置准备
 
 1. 密文用 cyberchef xor bruteforce 爆破
+3. Menu-CTF-re_xorbf(010填.data段位置), 找到明文节点, 确认明文字符。xor爆破明文 grep flag , 通常保存在 `.data`段
 1. 单字节对比类型 - 直接改汇编输出爆破
 1. 用相同长度字符编码 `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!` 填入表看替换状态。然后换表。通过规律找原文
 2. 用相同长度字符编码 `flag00000000000000000000000000000000000000` 填入观察状态 `f0000000000lg0000000000000000000a000000000` 通过规律找原文
@@ -215,54 +216,7 @@ js -- decodeObfuscator
 
 [movfuscator 混淆了解一下 CTF](https://blog.csdn.net/qq_33438733/article/details/79860304)
 
-## PE/壳
 
-[脱壳学习（一）- 计算机底层基础](https://mp.weixin.qq.com/s/98xIIROLQPjsxQ1rAiSDkg)
-[脱壳学习（二）- 反“反调试”篇](https://mp.weixin.qq.com/s/pSaTZSd0ouacZ3A4RxeWfg)
-[逆向脱壳（三） - 完结篇](https://mp.weixin.qq.com/s/svh_jfph_PiSpN3enGtYXQ)
-[常见的壳与脱壳方式](https://mp.weixin.qq.com/s/4uZxbSFPnkRFR_3hqsQvKg)
-[android | 脱壳实战-Frida-Apk-Unpack](https://mp.weixin.qq.com/s/gvWaSaBiD-bQCgtH7-agQA)
-[脱壳 ASProtect v1.31 (手动修复IAT乱序)](https://mp.weixin.qq.com/s/Vlto5aGq5KzugIF4447eSg)
-[脱壳 SLVcodeProtector v1.12 （全保护）](https://mp.weixin.qq.com/s/sHKugQPjfaKU9h6CdhzqbA)
-[手脱TMD壳](https://mp.weixin.qq.com/s/r7oQe6xUVkNzEscGgkmjIA)
-[逆向日记p4-脱壳系列 （后顾总结，elf文件格式，dex文件格式，blackdex原理简单介绍，fart）fart没说完 下期继续](https://www.bilibili.com/video/BV1rJ4m1H7wv/)
-
-
-### UPX/ESP 定律
-
-- [UPX 防脱壳机脱壳、去除特征码、添加花指令小探](https://www.52pojie.cn/thread-326995-1-1.html)
-- [完美 UPX 脱壳------之投怀送抱篇（适合所有变形）](https://www.52pojie.cn/thread-1673206-1-1.html)
-
-  1.检查是 UPX，但无法脱壳。
-
-  1)段头部(Section Header) 错误。如 2022 网鼎杯青龙-fakeshell, 010 搜索 FUK 替换为 UPX。
-
-- Functions 向右拉也看得到 Segments 不对
-- 可用 die 查看 全部节, 找到 FUK 节, 双击 × 只读 可修改值
-
-UPX 标识修改
-
-```sh
-UPX0       00001000  0000F000   00000400  00000000   E0000080                   # 第1处
-UPX1       00010000  00009000   00000400  00008400   E0000040                   # 第2处
-000003D0   00 00 00 00 00 00 00 00  00 00 00 33 2E 39 31 00              3.91   #
-000003E0   55 50 58 21 0D 09 02 08  5A 34 28 27 60 95 D0 97   UPX!    `         # 第3处
-```
-
-2.脱壳方式
-修复头后, 搜 popad, 运行跳后走几步到 push ebp dump
-
-3.检查 overlay_offset 位置有没有写数据, 把 overlay_offset 的位置 补上去 p_info 字段的偏移 就可以用 upx -d 了
-
-### VMP
-
-https://bbs.pediy.com/thread-271546-1.htm
-[某驱动脱壳 vmp](https://wbglil.github.io/2021/04/05/%E6%9F%90%E9%A9%B1%E5%8A%A8%E8%84%B1%E5%A3%B3%20vmp/)
-
-### Themida/WinLicense
-
-[unlicense 脱](https://www.52pojie.cn/forum.php?mod=viewthread&tid=1647083)
-[Download](https://github.com/ergrelet/unlicense/releases)
 
 ## frida
 
@@ -416,10 +370,13 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 https://github.com/acheong08/ChatGPT
 
-## PE
+## PE/DIE
 
 - [详解二进制 PE 文件 | 导入表技术](https://mp.weixin.qq.com/s/eu14EHuNup0Y504qY3rsDg)
 - [手动展开 PE 文件 | 二进制安全](https://mp.weixin.qq.com/s/VcKtwTn4fh8nyPVhYxkrmQ)
+
+Die看段时点 `>` 看 PointerToRawData对应 010实际地址。
+
 
 ## 模拟运行
 

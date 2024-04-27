@@ -123,6 +123,20 @@ hashcat -m 5600 a::192.168.62.139:c0b5429111f9c5f4:a5f1c47844e5b3b9c6f67736a2e19
 过滤 ntlmssp找其他信息
 过滤 ntlmssp.ntlmserverchallenge 找到 NTLM Server Challenge
 
+### 冰蝎/哥斯拉/蚁剑流量解密
+
+- 冰蝎: 直接POST base64信息。
+- 哥斯拉： 传passswd
+- 蚁剑: 直接base64解码 前面删除几个字符
+
+- 冰蝎3 默认IV 0123456789abcdef , CBC模式
+- [冰蝎4 解密](https://github.com/Threekiii/Awesome-Redteam/blob/98e374fdae125bec00228fa364b72f2ffbff407c/tips/%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-Webshell.md?plain=1#L289)
+
+冰蝎明文 b64解
+- [L1](file:///E:/CTF/Software_CyberChef_v9.46.0/CyberChef_v9.46.0.html#recipe=Find_/_Replace(%7B'option':'Regex','string':'%5C%5C%5C%5C%22'%7D,'%22',true,false,true,false)Regular_expression('User%20defined',':%22(%5B%5E%22%5D%2B)%22',true,true,false,false,false,false,'List%20capture%20groups')Fork('%5C%5Cn','%5C%5Cn',false)From_Base64('A-Za-z0-9%2B/%3D',true,false))
+- [L2](file:///E:/CTF/Software_CyberChef_v9.46.0/CyberChef_v9.46.0.html#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)AES_Decrypt(%7B'option':'UTF8','string':'e10adc3949ba59ab'%7D,%7B'option':'Hex','string':''%7D,'ECB/NoPadding','Raw','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D))
+
+
 # Article
 [流量分析之常见协议解题技巧](https://mp.weixin.qq.com/s/NwoHi8AMqZrE9HvPJo6ABw)
 

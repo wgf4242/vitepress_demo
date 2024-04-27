@@ -5,10 +5,10 @@
 [[toc]]
 
 ## 解题思路
-
 - 1.binwalk foremost
 - [文本处理/文字隐写](#文本隐写空白隐写)
 - Misc*password*密码字典\_dictionary_wordlists_fuzzing_SecLists-2023.2_5.zip
+- [加密与解密 密码](../Crypto/index.md#%解题思路)
 - 1.不要路径有空格, 不要中文路径
 - 所有文件 尤其 txt， 用 sublime 打开全选查看。 有没\t, space, 可能是莫斯。
 - grep -ri "flag"

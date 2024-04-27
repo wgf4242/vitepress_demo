@@ -1,6 +1,9 @@
 [[toc]]
 
 ## Wireshark/tshark 使用
+```sh
+tshark -r data.pcapng -e "goose.integer" -T fields  # Win下的结果和Linux下不一样 win下多一点
+```
 
 https://mymanfile.com/?p=1973
 docs https://www.wireshark.org/docs/dfref/
@@ -44,6 +47,12 @@ tshark -r ctf.pcapng --export-objects "http,F:/Fshare/"
 
 # modbus
 tshark -r a.pcapng -Y modbus -T fields -e modbus.regval_uint16  > out1.txt
+```
+##### 导出 truncated 内容
+```sh
+# tshark -e data可以导出完整内容。
+tshark -r data.pcapng -Y "http.response.code == 200" -T fields -e data | sed '/^\s*$/d' > http.txt
+awk -F ' ' '{ print $1 }' http.txt | while read -r line; do echo -n "$line" | xxd -r -p; echo; done > 2
 ```
 
 #### 导出 http uri

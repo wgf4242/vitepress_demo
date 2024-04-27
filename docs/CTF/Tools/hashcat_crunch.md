@@ -10,7 +10,7 @@ xx 石化 xxsh + 4 位[小写/数字]
 # 4位数字
   crunch 4 4 -t %%%% -o password.txt    # 0-9选4位
   crunch 4 4 0123456789 -o password.txt # 0-9选4位
-  crunch 4 4 0123456789 -o password.txt -z 7z # 0-9选4位
+  crunch 4 4 0123456789 -o password.txt -z 7z # 0-9选4位, 同时生成一份7z
 # 小写字母
   crunch 4 4 -t @@@@ -o passwords.txt    # 4位小写密码
   crunch 3 3 -t @@@ -o passwords.txt    # 3位小写密码

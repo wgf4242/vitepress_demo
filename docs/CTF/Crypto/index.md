@@ -6,6 +6,9 @@ head:
 ---
 
 * 搜关键字， 看有没有 npqe, 有无原题
+# 解题思路
+- AES/DES/RC4/Rabiit 先爆破4-6位数字, 考虑加负号 爆破。
+
 # RSA
 
 1. 部分public base64时直接搜第一行, google, bing, baidu. 

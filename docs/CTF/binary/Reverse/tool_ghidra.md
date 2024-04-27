@@ -30,3 +30,4 @@ ghidraida 可以改成 ida 的快捷键
 
 [逆向工程系列 | Ghidra for Beginner III](https://mp.weixin.qq.com/s/tDGTdPMEEvCRfL_R_Unfng)
 [逆向工程系列 | Ghidra for Beginner IV](https://mp.weixin.qq.com/s/yn8M54jLSgzhsWS00I4jHw)
+[实践调试Ghidra代码和Ghidra脚本](https://mp.weixin.qq.com/s/TV8JIStpX7pwvz4Py4-svg)
