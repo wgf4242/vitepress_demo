@@ -1,3 +1,6 @@
+[Volatility工具使用详解](https://mp.weixin.qq.com/s/25XFSKLrpJvIElKv-xW-zg)
+[内存取证_Browser 转载](https://blog.51cto.com/u_15072914/4350312 )
+
 ## volatility 内存取证
 收费的取证大师，火眼数据分析和Arsenal。
 vsadmin - 只能分析卷影、

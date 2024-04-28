@@ -13,7 +13,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 前置准备
 
 1. 密文用 cyberchef xor bruteforce 爆破
-3. Menu-CTF-re_xorbf(010填.data段位置), 找到明文节点, 确认明文字符。xor爆破明文 grep flag , 通常保存在 `.data`段
+3. AHKMenu-CTF-re_xor_bruteforce (010填.data段位置), 找到明文节点, 确认明文字符。xor爆破明文 grep flag , 通常保存在 `.data`段
 1. 单字节对比类型 - 直接改汇编输出爆破
 1. 用相同长度字符编码 `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!` 填入表看替换状态。然后换表。通过规律找原文
 2. 用相同长度字符编码 `flag00000000000000000000000000000000000000` 填入观察状态 `f0000000000lg0000000000000000000a000000000` 通过规律找原文

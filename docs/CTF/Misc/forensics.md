@@ -223,6 +223,7 @@ volatility3 -f dump.raw linux.pstree.PsTree
 places.sqlite, 浏览历史 `moz_places`
 
 # Article
+[【镜像仿真篇】磁盘镜像仿真常见错误](https://mp.weixin.qq.com/s/fckgYx7HU59_pzAFvFphJw)
 
 [PC 端微信个人信息与聊天记录取证](https://mp.weixin.qq.com/s/FPcIrouEAM_2RNZhfSRgoQ)
 [PC 微信 | 钓鱼场景下微信聊天记录回传](https://mp.weixin.qq.com/s/ROCTBw8hM8mDEuIq5Vyhsg)

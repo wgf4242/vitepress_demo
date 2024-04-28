@@ -915,7 +915,7 @@ echo threathunterleaving | socat ‐ tcp:192.168.245.135:8000
 
 ## 其他隧道
 
-ICMP 隧道
+ICMP 隧道 [icmp隧道](https://mp.weixin.qq.com/s/Iuk7vENAOq6PPDHAzJNJxA)
 
 - icmpsh
 - pingtunnnel
