@@ -66,6 +66,10 @@ sysmon 记录日志在重启过程中进行所有记录，进程的调用关系�
 https://blog.csdn.net/NFMSR?type=blog
 https://github.com/volatilityfoundation/volatility
 
+* Autospy
+* The Sleuth kit
+
+
 history
 搜 gdm-password 可能找到 用户密码
 

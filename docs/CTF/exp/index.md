@@ -90,6 +90,9 @@
 [禅道 18.1 版本 RCE 分析](https://mp.weixin.qq.com/s/QYISEFl3rTVnGY1ONFLIPw)
 [禅道 18.0b1 后台命令执行漏洞](https://mp.weixin.qq.com/s/G2H6Na96FtU942ICRlrhsQ)
 [禅道后台命令执行漏洞 （二）](https://mp.weixin.qq.com/s/FzjApm71lLx1SHAKvSAztg)
+[禅道 16.x <= ~ < 18.12 身份认证绕过漏洞QVD-2024-15263【已复现】](https://mp.weixin.qq.com/s/HRGE5e0c78U9aROHNeG44Q)
+[禅道最新身份认证绕过漏洞利用工具（4月29日更新）](https://mp.weixin.qq.com/s/e3HyJTMcpgfokIxpuBXVCg)
+
 
 [奇安信VPN | 存在任意账号密码修改漏洞](https://github.com/fork778/qax-vpn)
 

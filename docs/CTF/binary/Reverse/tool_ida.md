@@ -378,6 +378,8 @@ API attach
 [IDAPython 系列 —— 画出两个函数的交叉引用图](https://mp.weixin.qq.com/s/p_YHwFuXmPWXGDhpLa9Cyg)
 [IDA Python 去混淆](https://mp.weixin.qq.com/s/a7RLme8bTWiB6MfNT-5AKg)
 
+[怎么让 IDA 的 F5 支持一种新指令集？](https://mp.weixin.qq.com/s/b8TeuClegr6Bj0cveaPkIA)
+
 ## plugin
 
 [ida 脚本开发环境配置 idapython&idacpp 三端环境(win、mac、linux)](https://mp.weixin.qq.com/s/uU67NR1lHpIMS1gGnZcfOw)

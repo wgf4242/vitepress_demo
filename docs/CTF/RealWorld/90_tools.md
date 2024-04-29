@@ -8,8 +8,9 @@ https://gitee.com/windyjxx/projects
 [隧道？代理？端口转发？（一文读懂）](https://mp.weixin.qq.com/s/PDIWU-xej9SffRXlDEJYdA)
 [常用的端口转发方式](https://mp.weixin.qq.com/s/VjFb77ALUKSzenKQYI42jA)
 
-
 [云资产 | LC 多云攻击面资产梳理开源工具](https://mp.weixin.qq.com/s/fmMVkNUkWGgXlHuVdbkGgA)
+
+[JS敏感泄露小帮手----WIH](https://mp.weixin.qq.com/s/AF2n260g0Q3GyRFNycrm4Q)
 
 ### fscan
 

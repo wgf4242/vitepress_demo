@@ -8,6 +8,8 @@ head:
 * 搜关键字， 看有没有 npqe, 有无原题
 # 解题思路
 - AES/DES/RC4/Rabiit 先爆破4-6位数字, 考虑加负号 爆破。
+# Tools
+用 ToolsFx 解码
 
 # RSA
 

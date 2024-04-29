@@ -1,5 +1,6 @@
 [批量扫描脚本-Jenkins任意文件读取(CVE-2024-23897)](https://mp.weixin.qq.com/s/eES8iWuu1MNJQFUCib5L3Q)
 [CVE-2024-23897 Jenkins 任意文件读取一键利用](https://mp.weixin.qq.com/s/fQd193hBrqKGpC-L7kxHBQ)
+[CVE-2024-23897 Jenkins 存在文件读取漏洞](https://mp.weixin.qq.com/s/CY4jxfP07HTWjQSMpRtiqQ)
 春秋云境 Privilege
 
 # 查找密码

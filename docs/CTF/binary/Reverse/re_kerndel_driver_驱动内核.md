@@ -1,9 +1,14 @@
+工具
+debugview, windows驱动调试的小工具
+windbg
 
 # Win10禁用驱动签名
 1. 设置 - 更改高级启动选项 - 高级启动, 疑难解答 - 启动设置
 2. 启动后显示出菜单, 禁用驱动签名, 进入系统。
 3. 管理员身份启动 Openark,  驱动管理 - 驱动工具箱 - 选择 sys 文件 - 写入注册表, 安装。
 4. 管理员身份启动 DebugView(如果显示 Not Connected 为失败) 进行调试。
+## Win7
+重启时直接 F8 禁用驱动签名
 
 
 
@@ -17,3 +22,11 @@
 
 下载后 使用PowerShell 进入windbg.msixbundle所在目录​
 运行 Add-AppxPackage .\windbg.msixbundle
+
+# Article
+
+[HITCON CTF 2022 Writeup-checker](https://www.bilibili.com/read/cv20807188/)
+[2019 RoarCTF driverCuora.c](https://github.com/berTrAM888/RoarCTF-Writeup-some-Source-Code/blob/master/Reverse/zprotect/src/driverCuora.c)
+[2019 RoarCTF driverCuora.c wp](https://www.secpulse.com/archives/115908.html)
+
+
