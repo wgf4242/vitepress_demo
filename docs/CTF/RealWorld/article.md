@@ -65,6 +65,7 @@
 [SOAP 注入的介绍与实战](https://mp.weixin.qq.com/s/FV6eyLdtZ6oIS52O1CWpaQ)
 [干货|爆破带有验证码的 Web 登录表单](https://mp.weixin.qq.com/s/rW2QS5aCJ1RMt8GP6XbnEQ)
 [Burpsuite 技巧之 MD5 加密密码爆破、带验证码爆破](https://mp.weixin.qq.com/s/r9pQVqIKOxXY-6QQobJruQ)
+[验证码渗透最全总结](https://mp.weixin.qq.com/s/vgOdIcIGqbQRqUhUZogKqg)
 [验证码 | 爆破总结](https://mp.weixin.qq.com/s/z9hkE0XBMwrdx09QHQC_1Q)
 [验证码 | 缺失/绕过](https://mp.weixin.qq.com/s/0_kCK5AggNYHCcNzMSQAtg)
 [验证码 | 关于验证码的那些漏洞](https://mp.weixin.qq.com/s/ZwmI0aoZbZfaZawgqX96yw)

