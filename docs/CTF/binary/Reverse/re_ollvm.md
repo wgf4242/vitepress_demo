@@ -1,4 +1,5 @@
 ## Article
+[二进制安全之自控制流劫持混淆及其恢复研究](https://mp.weixin.qq.com/s/DC10NRqv7kT8S33_uW5Big)
 [搜 "知道控制流平坦化后" | ESCTF-逆向赛题WP](https://mp.weixin.qq.com/s/uCg-CEGIE6-c2nAsWGV1YA)
 [deflat.py](https://github.com/SnowGirls/deflat)
 

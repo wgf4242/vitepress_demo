@@ -23,6 +23,12 @@ movzx eax,byte ptr ss:[ebp+edx-0x3C]
 | Alt+;               | 标记地址                                   | mov rax, ds:[0x00007FF708FEC450] => mov rax, ds:[callHp] |
 | +/-                 | 前进/后退                                  |
 
+### Ollydbg 快捷键
+
+```
+hr esp ;  esp下硬件断点  
+```
+
 ## IDA 地址转 OD 地址
 
 查看并计算 ida 偏移。

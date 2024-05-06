@@ -288,6 +288,7 @@ poc-yaml-go-pprof-leak 访问 /debug/pprof/
 [安全攻防 | 浅谈 ms17-010 多种利用方式](https://mp.weixin.qq.com/s/J5ntr_YHGVHEyHNav4o84w)
 
 ### Exploit/CVE/实战漏洞/微信小程序
+- [『杂项』如何对小程序进行反编译？](https://mp.weixin.qq.com/s/k25MSfXXWlgGaB_XzBetwQ)
 - [微信 | 如何绕过“请在微信客户端打开链接”的限制0x00 限制原理](https://mp.weixin.qq.com/s/VRPv8_hO4Qfu4a_BoeDYmQ)
 - [微信 | 0day漏洞？恶意代码成功执行！附恶意代码构造](https://mp.weixin.qq.com/s/pdcwkAE-EkO2y8IAd0L9jg)
 - [云函数抓包 | windows下通杀wx小程序云函数实战](https://mp.weixin.qq.com/s/FALxsjmAE3XDfuwjRgMvQg)
