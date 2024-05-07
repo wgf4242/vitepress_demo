@@ -108,6 +108,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [Cisco RV340，RV340W，RV345 和 RV345P 从零开始复现 CVE-2023-20073](https://mp.weixin.qq.com/s/xCKzdaRq4D5svTc__tXPFQ)
 - [锐捷 RG-EW1200G 远程代码执行漏洞(CVE-2023-3306)](https://mp.weixin.qq.com/s/N2WFXkEpbeFQ4wMrYJ0bMw)
 - [手把手玩转路由器漏洞挖掘系列 - 固件加解密](https://mp.weixin.qq.com/s/mbL0MYNAjkPrMix6hg2CYw)
+- [西湖论剑 2020 IoT闯关赛 赛后整理 | Clang裁缝店](https://xuanxuanblingbling.github.io/iot/2020/11/17/iot/)
 
 ## IoT/控车App
 [某控车app的测试记录](https://mp.weixin.qq.com/s/gBfWLgkcHLldpNTGuh67lA)

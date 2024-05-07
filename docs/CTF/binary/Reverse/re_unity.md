@@ -14,6 +14,7 @@ Il2CppDumper.exe GameAssembly.dll global-metadata.dat ..\output
 使用script file 导入文件，依次选择ida py3和script.json
 
 方式二.
+Dnspy 打开 Assembly-CSharp.dll, 查看CheckkkkkFlag,  RVA 0x27C1F0
 启动后 x64dbg Attach: baby unity, x64dbg查看符号 FC0000 gameassembly.dll, 如果函数的RVA值为 0x27C1F0, 直接 FC0000 + 0x27C1F0 下断
 
 ## Article
