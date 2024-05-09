@@ -283,5 +283,5 @@ start attack
 [九维团队-绿队（改进）| APP安全-Frida联动BurpSuite实现自动加解密](https://mp.weixin.qq.com/s/jdeEmwz8fsySUkszFbZwpA)
 [2023一整年BurpSuite都更新了什么?](https://mp.weixin.qq.com/s/-YI6Y8rMMBLXr1sBqOas5A)
 ## plugins
-
+[干货|burpsuite插件整理](https://mp.weixin.qq.com/s/nj0AKKqUmOtAdWIoIqHmkg)
 [burp 结合 mitmproxy 实战解决网站请求加解密](https://www.bilibili.com/video/BV17u4y1Y7eg/)

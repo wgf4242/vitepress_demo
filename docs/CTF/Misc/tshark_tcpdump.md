@@ -57,7 +57,7 @@ awk -F ' ' '{ print $1 }' http.txt | while read -r line; do echo -n "$line" | xx
 
 #### 导出 http uri
 
-tshark -r x.pcap -T fields -e http.request.full_uri | sed "/^\s\*$/d" > usbdata.txt
+tshark -r x.pcap -T fields -e http.request.full_uri | sed "/^\s\*$/d" > http.txt
 
 #### 导出 tcp stream
 
@@ -86,7 +86,7 @@ tshark -r out.pcap -T fields -Y "ip.proto == \"ICMP\"" -e data > data.txt
 #### 提取多个 fields, 例 form key,value
 
 ```
-tshark -r ctf.pcap -T fields -e urlencoded-form.key  -e urlencoded-form.value|sed "/^\s*$/d" > usbdata.txt
+tshark -r ctf.pcap -T fields -e urlencoded-form.key  -e urlencoded-form.value|sed "/^\s*$/d" > urlform.txt
 ```
 
 #### 导出前两列, ip 地址和端口
