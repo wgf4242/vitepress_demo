@@ -291,6 +291,7 @@ poc-yaml-go-pprof-leak 访问 /debug/pprof/
 - [『杂项』如何对小程序进行反编译？](https://mp.weixin.qq.com/s/k25MSfXXWlgGaB_XzBetwQ)
 - [微信 | 如何绕过“请在微信客户端打开链接”的限制0x00 限制原理](https://mp.weixin.qq.com/s/VRPv8_hO4Qfu4a_BoeDYmQ)
 - [微信 | 0day漏洞？恶意代码成功执行！附恶意代码构造](https://mp.weixin.qq.com/s/pdcwkAE-EkO2y8IAd0L9jg)
+- [小程序渗透:Burp+Fiddler+Proxifier](https://mp.weixin.qq.com/s/GcHc5nlH1PqV7Tf4SmIaNg)
 - [云函数抓包 | windows下通杀wx小程序云函数实战](https://mp.weixin.qq.com/s/FALxsjmAE3XDfuwjRgMvQg)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法](https://www.bilibili.com/video/BV1iR4y127r6/)
 - [【微信&反汇编&x64dbg】小程序加密反汇编分析算法 AES 密钥分析](https://www.bilibili.com/video/BV1Sd4y157q3/)
