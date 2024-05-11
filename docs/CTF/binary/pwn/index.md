@@ -206,6 +206,7 @@ https://syst3mfailure.io/
 [ctfshow-pwn入门-pwn70](https://mp.weixin.qq.com/s/WtpRYSOhxsWLKDRgzblGJA)
 [ctfshow-pwn入门-pwn74-one_gadget](https://mp.weixin.qq.com/s/OTIScIklqkSNRLAX_aqiIw)
 [ctfshow-pwn入门-pwn75-栈迁移](https://mp.weixin.qq.com/s/ulUI_GvijiUS2BdNJrWGxg)
+[ctfshow-pwn入门-pwn76-ebp劫持-栈迁移](https://mp.weixin.qq.com/s/1EkQmZMvt3OmX8-ODh1chw)
 
 ## Untitled
 

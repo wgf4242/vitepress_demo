@@ -122,6 +122,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [车联网安全进阶之Trick——Android车机运行Python](https://mp.weixin.qq.com/s/mPA2akY2pYXbbG59NkbAfg)
 - [车联网攻防](https://mp.weixin.qq.com/s/1xRD1DBiXD5LbuAoyfCgEQ)
 - [如何利用 NFC 安全漏洞攻破一台特斯拉 Model Y，成功解锁和启动汽车](https://mp.weixin.qq.com/s/OmPycoN_tWEgSD2wMiyqqw)
+- [【车联网安全第一集】适合web宝宝们的车联网入门扫盲](https://www.bilibili.com/video/BV14E421L7uG/)
 
 ## 门卡 m1/ICCard/id
 
