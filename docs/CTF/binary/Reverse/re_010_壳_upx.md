@@ -1,6 +1,7 @@
-
-
-
+```sh
+# 最佳压缩
+upx --lzma -9 main.exe
+```
 
 ## PE/壳
 
@@ -9,11 +10,10 @@
 [逆向脱壳（三） - 完结篇](https://mp.weixin.qq.com/s/svh_jfph_PiSpN3enGtYXQ)
 [常见的壳与脱壳方式](https://mp.weixin.qq.com/s/4uZxbSFPnkRFR_3hqsQvKg)
 [android | 脱壳实战-Frida-Apk-Unpack](https://mp.weixin.qq.com/s/gvWaSaBiD-bQCgtH7-agQA)
-[脱壳 ASProtect v1.31 (手动修复IAT乱序)](https://mp.weixin.qq.com/s/Vlto5aGq5KzugIF4447eSg)
+[脱壳 ASProtect v1.31 (手动修复 IAT 乱序)](https://mp.weixin.qq.com/s/Vlto5aGq5KzugIF4447eSg)
 [脱壳 SLVcodeProtector v1.12 （全保护）](https://mp.weixin.qq.com/s/sHKugQPjfaKU9h6CdhzqbA)
-[手脱TMD壳](https://mp.weixin.qq.com/s/r7oQe6xUVkNzEscGgkmjIA)
-[逆向日记p4-脱壳系列 （后顾总结，elf文件格式，dex文件格式，blackdex原理简单介绍，fart）fart没说完 下期继续](https://www.bilibili.com/video/BV1rJ4m1H7wv/)
-
+[手脱 TMD 壳](https://mp.weixin.qq.com/s/r7oQe6xUVkNzEscGgkmjIA)
+[逆向日记 p4-脱壳系列 （后顾总结，elf 文件格式，dex 文件格式，blackdex 原理简单介绍，fart）fart 没说完 下期继续](https://www.bilibili.com/video/BV1rJ4m1H7wv/)
 
 ### UPX/ESP 定律
 

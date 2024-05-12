@@ -329,6 +329,13 @@ arg_1E7FBF= byte ptr  1E7FC7h ; 5.双击这里 进栈按u， 再按F5即可
 
 https://github.com/ioncodes/idacode
 
+### 函数显示中文
+
+```
+1.在ida.cfg文件中搜索Block_CJK_Unified_Ideographs，去掉Block_CJK_Unified_Ideographs这一行前面的注释
+2.将ida.dll文件放入IDA64中，然后字符串搜索[](),*&，将其有下划线这一行nop掉
+```
+
 # plugins
 
 [IDA 插件大赛 2022](https://mp.weixin.qq.com/s/zhjNHLJbTDHdQtoToe0hvg)

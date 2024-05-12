@@ -22,11 +22,12 @@ movzx eax,byte ptr ss:[ebp+edx-0x3C]
 | Ctrl+space          | 恢复修改                                   |
 | Alt+;               | 标记地址                                   | mov rax, ds:[0x00007FF708FEC450] => mov rax, ds:[callHp] |
 | +/-                 | 前进/后退                                  |
+| Ctrl+Enter          | 执行命令/Focus Command                     |
 
 ### Ollydbg 快捷键
 
 ```
-hr esp ;  esp下硬件断点  
+hr esp ;  esp下硬件断点
 ```
 
 ## IDA 地址转 OD 地址
@@ -37,6 +38,24 @@ hr esp ;  esp下硬件断点
 ## Patch
 
 x32dbg/x64dbg 右击补丁 - 补丁文件 - 保存为 x.exe
+
+## 断点
+
+- [Doc](https://help.x64dbg.com/en/latest/introduction/Expression-functions.html?highlight=streq#strings)
+- [条件断点](https://bbs.kanxue.com/thread-251385.htm)
+- [Link2](https://www.cnblogs.com/SunsetR/p/14248852.html)
+
+```sh
+# 所有数字均为16进制 不用0x 也是16进制
+[rax] == 0x202
+(esi==73) && (eax=64)         # 73 64都是16进制数
+streq(utf8(5ffde4), "123456") # 0x5ffde4地址值为123456时断下
+streq(utf8(rax),    "123456") # rax     地址值为123456时断下
+
+# 条件记录断点 Log Text
+## condition为0，Log text设置需要记录的数据，同时将silent项选上。 Log窗口看到记录的数据。
+esi: {esi}; eax: {eax}
+```
 
 # x64dbg
 

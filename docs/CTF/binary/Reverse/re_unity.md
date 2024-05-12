@@ -17,9 +17,16 @@ Il2CppDumper.exe GameAssembly.dll global-metadata.dat ..\output
 Dnspy 打开 Assembly-CSharp.dll, 查看CheckkkkkFlag,  RVA 0x27C1F0
 启动后 x64dbg Attach: baby unity, x64dbg查看符号 FC0000 gameassembly.dll, 如果函数的RVA值为 0x27C1F0, 直接 FC0000 + 0x27C1F0 下断
 
+
+global-metadata.dat 文件头
+```
+AF 1B B1 FA 1D 00 00 00 00 01 00 00 XX B2
+```
+
 ## Article
 
 [XYCTF | baby unity](https://blog.csdn.net/2203_75549399/article/details/138284581)
+[记frida-il2cpp-bridge的使用](https://blog.csdn.net/weixin_44292683/article/details/132125663)
 
 [libil2cpp | andorid | [原创]2023 腾讯游戏安全竞赛初赛题解(安卓) ](https://bbs.kanxue.com/thread-276949.htm)
 

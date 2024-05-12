@@ -12,6 +12,7 @@ https://www.52pojie.cn/thread-1623713-1-1.html finger 符号还原
 
 前置准备
 
+1. 字符串复制到Emeditor过滤 `\tC\t(?=(.*\+){1})(.{18,})}`
 1. 找到密文先用Magic √Intensive Mode, 再尝试Cyberchef xor bruteforce 爆破
 3. AHKMenu-CTF-re_xor_bruteforce (010填.data段位置), 找到明文节点, 确认明文字符。xor爆破明文 grep flag , 通常保存在 `.data`段
 1. 单字节对比类型 - 直接改汇编输出爆破

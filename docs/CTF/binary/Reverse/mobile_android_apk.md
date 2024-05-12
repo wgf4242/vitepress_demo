@@ -15,8 +15,14 @@ fkpt脱壳ROM 找一下
 2.adb pull /storage/emulated/0/Android/data/top.niunaijun.blackdexa32/dump
 2-2
 
-```
+```sh
+# XYCTF2024 Trustme 官方WP
+adb shell pm list packages -3
+adb shell dumpsys window | findstr mCurrentFocus # 然后去 /data/data/xxxxxx/app_payload_dex 里面找 apk
+
 frida-ps -Ua
+# 脱壳
+frida-dexdump -U -f com.swdd.trustme
 frida-dexdump -p 27815 -U
 ```
 ## JADX

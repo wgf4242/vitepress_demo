@@ -1,72 +1,62 @@
 [[toc]]
 2022-04-13-RE-上午.mp4
 
-[hulda | frida加强版](https://github.com/hzzheyang/strongR-frida-android/releases)
+[hulda | frida 加强版](https://github.com/hzzheyang/strongR-frida-android/releases)
 [练习](https://github.com/DERE-ad2001/Frida-Labs)
 
+- [CodeShare](https://codeshare.frida.re/browse)
+- [frida-tips](https://gist.github.com/daniellimws/50b1112cf6408290d9da03398a7aac7f)
 
-## 环境
+## Todo
 
-安装 x64 的 python
+frida 的 cModule
 
-1.**雷电模拟器环境**
 
-> 1.软件设置 - 其他设置 - root 权限 <br> 2.软件设置 - 其他设置 - Adb 调试 - 开启本地连接
+# Quick Start
 
-2.下载 [sdktools](https://developer.android.com/studio/releases/platform-tools) 3.解压添加到环境变量 Path
+## Attach
 
-```
-adb devices
-adb -s emulator-5554 shell
-```
+- Windows
 
-4.[Download Frida](https://github.com/frida/frida/releases) <br>
+```sh
+frida-ls-devices
 
-```
-adb push frida-server /data/local/tmp/
-adb shell
-su
-setprop persist.device_config.runtime_native.usap_pool_enabled false
+# Attach 程序启动
+frida TestAdd.exe
+Process.enumerateNodules()
 
-cd /data/local/tmp
-chmod +x frida_server
-./frida_server &
+frida process_name/pid
+%resume
 ```
 
-5.下载 python <br>
+- Android
 
-```
-pip3 install -U objection
-```
-
-6.安装 hello-app (随便一个 apk)
-
-```
-frida-ps -Ua
-frida-ps -Uai
-#  2568  Hello App com.example.helloapp
-# 启动app后
-frida -U -n "Hello App"
-exit
-
-objection --gadget com.example.helloapp explore
-# 可能要切到桌面再回来才进入交互
-exit
+```sh
+# Attach 到当前进程
+frida -UF
+# spawn process
+frida -Uf com.android.settings
+frida -UN com.android.settings
 ```
 
-### 第一个示例
+## Scripts
 
-1.jadx 打开 apk，右击函数 `复制为frida片段` 2.新建 foo.js 粘贴
+三种方式加载脚本
 
-```js
-Java.perform(function(){
-  // 这里粘贴
-}
+1. `frida [target] -l script.ts/js`
+2. Frida CLI 中 `%load [script]`
+3. Python 代码加载 ts/js 脚本
+
+```bash
+# Windows
+frida.exe -l .\guess_function.js --no-pause .\Newbie_calculations.exe
+
+
+# Android
+## 前台程序运行js
+frida -UF -l app.js
+frida -Uf com.android.settings -l app.js
 ```
-
-3.frida -UF -l foo.js
-
-在手机上点击对应按钮即可
 
 ## Commands
 
@@ -156,38 +146,6 @@ android heap execute 0x60042a a
 
 # 启动activity或者服务
 android intent launch_activity com.droidlearn.activity_travel.FlagActivity
-
-
-```
-
-## Quick Start
-
-Attach 程序启动
-
-```bash
-frida TestAdd.exe
-Process.enumerateNodules()
-
-frida process_name/pid
-```
-
-优先目标启动
-
-```shell
-frida .\TestAdd.exe
-%resume
-```
-
-frida-ls-devices
-
-三种方式加载脚本
-
-1. `frida [target] -l script.ts/js`
-2. Frida CLI 中 `%load [script]`
-3. Python 代码加载 ts/js 脚本
-
-```bash
-frida.exe -l .\guess_function.js --no-pause .\Newbie_calculations.exe
 ```
 
 ## 远程通信 Linux
@@ -282,11 +240,75 @@ https://www.jianshu.com/p/a36f49ed666b
 Frida 常用方法汇总 https://www.996station.com/1030
 https://www.anquanke.com/post/id/195215
 
+# 环境配置/安装
+
+安装 x64 的 python
+
+1.**雷电模拟器环境**
+
+> 1.软件设置 - 其他设置 - root 权限 <br> 2.软件设置 - 其他设置 - Adb 调试 - 开启本地连接
+
+2.下载 [sdktools](https://developer.android.com/studio/releases/platform-tools) 3.解压添加到环境变量 Path
+
+```
+adb devices
+adb -s emulator-5554 shell
+```
+
+4.[Download Frida](https://github.com/frida/frida/releases) <br>
+
+```
+adb push frida-server /data/local/tmp/
+adb shell
+su
+setprop persist.device_config.runtime_native.usap_pool_enabled false
+
+cd /data/local/tmp
+chmod +x frida_server
+./frida_server &
+```
+
+5.下载 python <br>
+
+```
+pip3 install -U objection
+```
+
+6.安装 hello-app (随便一个 apk)
+
+```
+frida-ps -Ua
+frida-ps -Uai
+#  2568  Hello App com.example.helloapp
+# 启动app后
+frida -U -n "Hello App"
+exit
+
+objection --gadget com.example.helloapp explore
+# 可能要切到桌面再回来才进入交互
+exit
+```
+
+### 第一个示例
+
+1.jadx 打开 apk，右击函数 `复制为frida片段` 2.新建 foo.js 粘贴
+
+```js
+Java.perform(function(){
+  // 这里粘贴
+}
+```
+
+3.frida -UF -l foo.js
+
+在手机上点击对应按钮即可
+
 # Article
+
 [练习 | Frida 实战 KGB Messenger](https://mp.weixin.qq.com/s/sZCAlqG-C9GoQzF7k_qINw)
 
 [frida-snippets](https://github.com/iddoeldor/frida-snippets)
-[Frida-Hook-Java层操作大全](https://mp.weixin.qq.com/s/Tef03zO_tgbuqYWng9sz2A)
+[Frida-Hook-Java 层操作大全](https://mp.weixin.qq.com/s/Tef03zO_tgbuqYWng9sz2A)
 [Frida 学习笔记](https://zyzling.gitee.io/2020/05/12/Frida学习笔记/)
 [实用 FRIDA 进阶：内存漫游、hook anywhere、抓包/objection](https://www.anquanke.com/post/id/197657)
 [之前大家私信我 frida 的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm)
@@ -300,7 +322,7 @@ https://www.anquanke.com/post/id/195215
 
 [安卓协议逆向之 frida hook 百例](https://www.52pojie.cn/thread-1711668-1-1.html)
 [安卓协议逆向之 frida hook 百例二](https://www.52pojie.cn/thread-1712752-1-1.html)
-[Done | Hook入门与抓包](https://mp.weixin.qq.com/s/dIKGsYlQQtuWBU-7trLBCA)
+[Done | Hook 入门与抓包](https://mp.weixin.qq.com/s/dIKGsYlQQtuWBU-7trLBCA)
 [『工具使用』Frida 工程师备忘录](https://mp.weixin.qq.com/s/UqJSwsxkV8iTRTbUsS58Kg)
 [Frida 开启 PC 端小程序调试模式](https://mp.weixin.qq.com/s/8p1_s1QoTGdiZ8ocKC-tDA)
 [Android 逆向技术 53——frida stalker 追踪 jni 函数调用](https://mp.weixin.qq.com/s/dd2QJxo4uvKCcPSSjtQVgw)
