@@ -34,6 +34,7 @@ tac ~/.bash_history                  > 02_bash_history.txt
 crontab -l                           > 03_crontab_l.txt
 cat /var/spool/cron/*                > 03_crontab.txt
 last                                 > 05_last.txt
+# Accepted password 为登录成功
 tail -n +1  /var/log/secure  | less  > 06_secure.log
 last                                 > 07_last.log
 lastb                                > 08_lastb.log

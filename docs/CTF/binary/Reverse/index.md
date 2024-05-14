@@ -316,6 +316,7 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
 - [易语言 | 程序分析笔记](https://mp.weixin.qq.com/s/vAApQE_Yg9xo-4An7Sw0_A)
 - [免杀 | CobaltStrike | Execute-Assembly 攻守之道](https://mp.weixin.qq.com/s/IlOAShBMrOUTixhxqGvncQ)
+- [免杀 | 关于PE文件的内存加载分享](https://mp.weixin.qq.com/s/wTNKQuhszAncUayt7sn8ZA)
 
 ## 基础学习
 

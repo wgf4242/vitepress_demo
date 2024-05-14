@@ -3,6 +3,7 @@
 下载地址：https://www.microsoft.com/en-us/download/details.aspx?id=24659
 
 [Example](https://mlichtenberg.wordpress.com/2011/02/03/log-parser-rocks-more-than-50-examples/)
+[『工具使用』日志分析工具之 LogParser](https://mp.weixin.qq.com/s/8QzI8nOYdRev4YZxGRNK6A)
 
 ```sh
 path "C:\Program Files (x86)\Log Parser 2.2";%path%
