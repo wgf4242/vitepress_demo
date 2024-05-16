@@ -233,6 +233,7 @@ https://syst3mfailure.io/
 - [好好说话之 unlink](https://blog.csdn.net/qq_41202237/article/details/108481889)
 - [好好说话之 Chunk Extend/Overlapping](https://blog.csdn.net/qq_41202237/article/details/108320408)
 - [好好说话之 IO_FILE 利用（1）：利用\_IO_2_1_stdout 泄露 libc](https://blog.csdn.net/qq_41202237/article/details/113845320)
+- [『CTF』IO_FILE 利用入门](https://mp.weixin.qq.com/s/2TAF-JjdikLULN3K3MwZsg)
 - [好好说话之 House Of Einherjar](https://blog.csdn.net/qq_41202237/article/details/117112930)
 - [好好说话之 SROP](https://blog.csdn.net/qq_41202237/article/details/107512670)
 - [好好说话之 Large Bin Attack](https://blog.csdn.net/qq_41202237/article/details/112825556)

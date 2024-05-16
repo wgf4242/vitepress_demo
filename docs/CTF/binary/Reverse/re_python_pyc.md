@@ -3,6 +3,7 @@ decompyle3 -- python3.8
 
 https://docs.python.org/3/library/dis.html
 [Python3 字节码详解](https://blog.csdn.net/weixin_46263782/article/details/120930191)
+[利用Python的dis反汇编提取代码对象部分信息](https://mp.weixin.qq.com/s/ds4nHVH1exm727pf3a8mzA)
 [Python 代码保护技术及其破解](https://mp.weixin.qq.com/s/y1atfJ-vf0wZBtMooeSw4A)
 [从 TPCTF 2023 学习 Python 逆向](https://mp.weixin.qq.com/s/0nJHKJjDFrWHgspoVF23xA)
 
