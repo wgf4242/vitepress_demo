@@ -208,6 +208,8 @@ https://syst3mfailure.io/
 [ctfshow-pwn入门-pwn75-栈迁移](https://mp.weixin.qq.com/s/ulUI_GvijiUS2BdNJrWGxg)
 [ctfshow-pwn入门-pwn76-ebp劫持-栈迁移](https://mp.weixin.qq.com/s/1EkQmZMvt3OmX8-ODh1chw)
 [ctfshow-pwn入门-pwn77-变种栈溢出](https://mp.weixin.qq.com/s/E2r8eyC1kM2BqezN4WJPWg)
+[ctfshow-pwn入门-pwn78-64位ret2syscall](https://mp.weixin.qq.com/s/uvSxyb0tvLrrZpesKBGR_Q)
+[ctfshow-pwn入门-pwn79-ret2reg](https://mp.weixin.qq.com/s/0KK3vBy6EOA3bhhUlJTZIg)
 
 ## Untitled
 

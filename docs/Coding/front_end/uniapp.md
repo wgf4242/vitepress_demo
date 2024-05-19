@@ -20,6 +20,11 @@ https://www.bilibili.com/video/BV1kE411J7Bo
 keytool -list -v -keystore test.jks -storepass 123456 
 ```
 
+# Article
+
+[uniApp新模式: 使用Vue3 + Vite4 + Pinia + Axios技术栈构建](https://mp.weixin.qq.com/s/P7h0jlXeHOXxAcLbqnMp7A)
+
+
 # FAQ
 
 ## 回到上一页并刷新
