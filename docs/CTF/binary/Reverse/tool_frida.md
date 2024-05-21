@@ -114,6 +114,7 @@ pip install objection
 objection -g com.ss.android.auto explore
 objection -g 5216 explore  # frida-ps -Ua
 # Hook, jadx查看方法
+android hooking watch class com.example.re11113.jni
 android hooking watch class_method com.hfdcxy.android.by.test.a.a --dump-args --dump-backtrace --dump-return
 android hooking watch class_method com.hfdcxy.android.by.test.a.a --dump-return
 ## remove: 通过 jobs kill [jobID]
@@ -129,6 +130,9 @@ android hooking set return_value com.example.test.rootUtils.isRooted false
 android hooking list class_method com.hfdcxy.android.by.test.a.a
 # 查看调用了哪些函数
 android hooking watch class com.hfdcxy.android.by.test.a.a
+
+# 查看后台工作
+jobs list
 ```
 
 ```shell
@@ -336,10 +340,12 @@ Java.perform(function(){
 [九维团队-绿队（改进）| APP 安全-Frida 联动 BurpSuite 实现自动加解密](https://mp.weixin.qq.com/s/jdeEmwz8fsySUkszFbZwpA)
 
 - 反调试
-  [移动安全之【魔改 frida 自编译去特征】超详细全过程](https://mp.weixin.qq.com/s/4MOTfYm-GMpZQFsLKOOHwQ)
+- [移动安全之【魔改 frida 自编译去特征】超详细全过程](https://mp.weixin.qq.com/s/4MOTfYm-GMpZQFsLKOOHwQ)
+- [魔改frida到绕过检测的思路](https://mp.weixin.qq.com/s/HKf37hcxxgwyZkARvkPgkQ)
+
 
 - Windows
-  [使用 Frida 在 Windows 中拦截 C++函数](https://mp.weixin.qq.com/s/g2p6jGtsTC2GhoyoUYwwhA)
+- [使用 Frida 在 Windows 中拦截 C++函数](https://mp.weixin.qq.com/s/g2p6jGtsTC2GhoyoUYwwhA)
 
 [Frida + IDA 开启小程序 devtools](https://mp.weixin.qq.com/s/hAvFEgYrejYAfFGk9gY50Q)
 

@@ -90,3 +90,4 @@ wininet.dll.InternetConnectA
 
 [通过 x64dbg 脚本功能修复 IAT 表](https://mp.weixin.qq.com/s/ZjxRNJr22H2val27mCeoUg)
 [OD 定位消息-事件](https://mp.weixin.qq.com/s/d57aOp_fN6eqLx6MAl01nQ)
+[让x64dbg支持python脚本](https://mp.weixin.qq.com/s/5o6BtdAlCxaHb-SK1WMhYQ)

@@ -210,6 +210,7 @@ https://syst3mfailure.io/
 [ctfshow-pwn入门-pwn77-变种栈溢出](https://mp.weixin.qq.com/s/E2r8eyC1kM2BqezN4WJPWg)
 [ctfshow-pwn入门-pwn78-64位ret2syscall](https://mp.weixin.qq.com/s/uvSxyb0tvLrrZpesKBGR_Q)
 [ctfshow-pwn入门-pwn79-ret2reg](https://mp.weixin.qq.com/s/0KK3vBy6EOA3bhhUlJTZIg)
+[ctfshow-pwn入门-pwn80-blindrop](https://mp.weixin.qq.com/s/eaWwwD2AECSyTBQdbnbc2w)
 
 ## Untitled
 

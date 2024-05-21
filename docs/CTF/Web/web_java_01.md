@@ -22,6 +22,7 @@ java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 
 curl 192.168.142.1:8080/app3/testConnection/ -d 'Driver=com.tinysoft.jdbc.bridge.client.ClientDriver&url=jdbc:tsserver://127.0.0.1:3306/test'
 # jdbc:tsserver 地址是是从服务器端发起的请求地址.
 ```
+[JDBC反序列化漏洞](https://mp.weixin.qq.com/s/LlMsOyPtk_sfr_s63rc1Lw)
 
 # ysoserial
 

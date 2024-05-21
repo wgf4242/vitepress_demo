@@ -35,6 +35,7 @@
 [泛微 E-Cology SQL注入漏洞利用工具](https://mp.weixin.qq.com/s/s6E0bHmCmVGXENjru0so4w)
 [泛微 | E-Mobile | 6.0远程命令执行漏洞](https://mp.weixin.qq.com/s/z-WN2_MTxdk3z4LvchXkXw)
 [泛微 | 通过emobile打e-cology前台RCE](https://mp.weixin.qq.com/s/MN3x1zmi3dLNKp6_5B68LA)
+[泛微 | 漏洞预警 泛微e-cology OA action.jsp 文件上传漏洞](https://mp.weixin.qq.com/s/o4C05UssVAqAxdN0uqBo5w)
 
 
 [信呼 OA RCE](https://mp.weixin.qq.com/s/s2x28qkAW13DIDFZOdO73g)
