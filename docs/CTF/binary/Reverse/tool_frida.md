@@ -349,6 +349,9 @@ Java.perform(function(){
 
 [Frida + IDA 开启小程序 devtools](https://mp.weixin.qq.com/s/hAvFEgYrejYAfFGk9gY50Q)
 
+## hook实例
+[Frida0A - 拦截okhttp](https://mp.weixin.qq.com/s/nkgunWkiTVXTBD2kOqOIBA)
+[Frida0D - hook JNIEnv 相关函数](https://mp.weixin.qq.com/s/l32U-pCLCXes4jT22CHbuA)
 ## Brida
 
 [[原创]Frida 配合 BurpSuite 的 Brida 插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
