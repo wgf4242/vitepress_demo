@@ -156,10 +156,11 @@ trace load -f <file.trace>
 - [嵌入式设备漏洞挖掘实战](https://mp.weixin.qq.com/s/AxkvdKdfBB_CPS0BadbcmA)
 - [如何快速挖掘设备逻辑洞](https://mp.weixin.qq.com/s/jZd5BpAmwFZOZuNjc4-oqA)
 - [如何进行物联网渗透测试？](https://mp.weixin.qq.com/s/-p9-9ia_4aqXwL9ELW-BYg)
-- [路由器漏洞挖掘系列之未授权访问漏洞及常见绕过技巧](https://mp.weixin.qq.com/s/dQ9GL2wIME35uxAes3LzEg)
+- [路由器 | 漏洞挖掘系列之未授权访问漏洞及常见绕过技巧](https://mp.weixin.qq.com/s/dQ9GL2wIME35uxAes3LzEg)
+- [路由器 | 挖掘基础教程-by-HRP](https://hgreed.vip/2023/08/02/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%8C%96%E6%8E%98%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-by-HRP/)
+- [路由器 | 手把手玩转路由器漏洞挖掘系列 - COAP协议分析](https://mp.weixin.qq.com/s/U2eyLwacyhJzf4kuNHZCrw)
 - [利用 MQTT 协议缺陷攻击内网物联设备](https://mp.weixin.qq.com/s/EtpaAw-fq4XJGyiojUVdiw)
 - [针对基于 mavlink 协议的无人机进行攻击](https://mp.weixin.qq.com/s/HfFqgQcgOyA_rmb3UFXhww)
-- [路由器挖掘基础教程-by-HRP](https://hgreed.vip/2023/08/02/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%8C%96%E6%8E%98%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-by-HRP/)
 - [从命令注入到空指针：IoT 漏洞的挖掘](https://mp.weixin.qq.com/s/clNo72GdFnGShSQXuNHY3g)
 
 ## Coding

@@ -352,6 +352,8 @@ Java.perform(function(){
 ## hook实例
 [Frida0A - 拦截okhttp](https://mp.weixin.qq.com/s/nkgunWkiTVXTBD2kOqOIBA)
 [Frida0D - hook JNIEnv 相关函数](https://mp.weixin.qq.com/s/l32U-pCLCXes4jT22CHbuA)
+[Frida0C - Module相关API](https://mp.weixin.qq.com/s/RYRtMI7xng66JpKmpVP_8g)
+
 ## Brida
 
 [[原创]Frida 配合 BurpSuite 的 Brida 插件自动解密取证 ](https://bbs.pediy.com/thread-263484.htm)
