@@ -1,4 +1,5 @@
 [实战 | 文件上传漏洞之最全代码检测绕过总结](https://mp.weixin.qq.com/s/6ArBgNYpsQH7WkaaJY6GfQ)
+[漏洞挖掘 | 一次上传点解压缩的渗透测试](https://mp.weixin.qq.com/s/AXq2LXpBnPxmRH2ciOOnVw)
 
 # LFI/文件包含
 

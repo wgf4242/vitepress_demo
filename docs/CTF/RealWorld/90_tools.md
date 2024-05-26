@@ -610,6 +610,8 @@ kali$ ssh -CfNg -D 6666 root@172.20.10.4
 
 # 远程主机监听端口 代理为 1.1.1.1:9050
 kali$ ssh tunneluser@1.1.1.1 -R 9050 -N
+## B有互联网,A没有, 映射并创建代理为 A:8080, 可上互联网
+A$ ssh -R 8080:localhost:8080 user@B的IP地址
 ```
 
 - 示例: 三层网络穿透

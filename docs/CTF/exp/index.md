@@ -129,6 +129,7 @@ Weblogic | CVE-2020-2555 反序列化远程命令执行漏洞
 [若依 | 记一次实战之若依SSTI注入绕过玄某盾](https://mp.weixin.qq.com/s/rB-TK7rK300U66gZXsIF6A)
 [若依 | 最新版后台RCE](https://mp.weixin.qq.com/s/e0SvORpUGZmB899TfjyXiQ)
 [若依 | ruoyi框架管理系统漏洞](https://mp.weixin.qq.com/s/Fxa6EKSBfmB59VyfABvxqA)
+[若依 | RuoYi 4.7.8 执行任意SQL语句导致RCE漏洞](https://mp.weixin.qq.com/s/H1-KcAKheDTjFilfo4kyow)
 
 [实战 | 对象存储(OSS)攻防案例](https://mp.weixin.qq.com/s/1xeA2ytbpAdi7VpjmmLSsQ)
 [实战 | 某 OJ 渗透测试记录\_bypass_winapi.h\_\_asm_shellcode_c#\_Online Judge](https://mp.weixin.qq.com/s/hg-NvPcLaqeqYXBdYOrLrQ)
@@ -212,6 +213,8 @@ rw_exp_joomla_CVE-2023-23752
 [DedeCMS-V5.7.109-UTF8 后台可getshell](https://mp.weixin.qq.com/s/FRbVHobj6l9m7YjtRReXTg)
 [Dedecms V110最新版RCE---Tricks](https://mp.weixin.qq.com/s/UM1rFRAIauAdhaZ6vJj9Zw)
 [Dedecms V5.7.112 SP2 RCE, 打开搜ezdede]((https://mp.weixin.qq.com/s/o9hHsqryVgcommIBmynGWA))
+
+[SeaCMS | 【成功复现】SeaCMS海洋影视管理系统SQL注入漏洞(CVE-2024-29275)](https://mp.weixin.qq.com/s/FYBr-0QDDjHWBERXQcSm1Q)
 
 [Zookeeper v9.6.1、9.6.0.1、9.5.1.3、9.0.1.2 和 8.6.4.1 | CVE-2022-36537 未授权 RCE 漏洞复现](https://mp.weixin.qq.com/s/W9VMMC03E7Xh9FwKyaq-HA)
 [Nacos 漏洞利用总结](https://h0ny.github.io/posts/Nacos-%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%80%BB%E7%BB%93/)

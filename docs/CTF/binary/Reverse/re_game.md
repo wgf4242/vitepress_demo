@@ -99,6 +99,7 @@ Galgame
 * [【ARM】GG读取寄存器](https://www.bilibili.com/video/BV1TA411k7uD/)
 * [【ARM】某某少年调用函数实现添加道具](https://www.bilibili.com/video/BV1uT411X7gr/)
 * [【ARM】GG实现注入动态库](https://www.bilibili.com/video/BV1DM411e7yF/)
+* [1.ida和平过检测思路 | GG修改汇编](https://www.bilibili.com/video/BV1ZT421U7Tb/)
 
 ## Game | 游戏安全
 [【逆向安全】快速搜索FPS游戏相机矩阵_矩阵特性1-哔哩哔哩](https://www.bilibili.com/video/BV1s3411D7JU)
