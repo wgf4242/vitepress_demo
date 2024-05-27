@@ -23,6 +23,7 @@ vm.setVerbose(false);  // 设置为true时日志太多
 ```
 
 # Article
+[unidbg入门笔记](https://mp.weixin.qq.com/s/rMShOEZQXl0uXfO5-EvoRw)
 [使用Unidbg在CTF-Android题目的快速解题](https://mp.weixin.qq.com/s/oZjTxpexVn4VkK71YlsUwg)
 [Unidbg + Web = Unidbg-server 手把手教你搭个签名服务器](https://blog.51cto.com/u_15527932/5205378)
 [代码还原的技术: Unidbg调试浮点数运算(一)](https://blog.51cto.com/u_15527932/5205368)

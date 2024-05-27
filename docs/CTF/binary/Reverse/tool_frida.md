@@ -316,6 +316,7 @@ Java.perform(function(){
 [Frida 学习笔记](https://zyzling.gitee.io/2020/05/12/Frida学习笔记/)
 [实用 FRIDA 进阶：内存漫游、hook anywhere、抓包/objection](https://www.anquanke.com/post/id/197657)
 [之前大家私信我 frida 的一些问题，这篇文章以一些例子给大家讲一讲吧 ](https://bbs.pediy.com/thread-275104.htm)
+[[原创]Frida-Hook-Native层操作大全 ](https://bbs.kanxue.com/thread-280812.htm)
 
 [\_[原创]初识 Frida--Android 逆向之 Java 层 hook (一) ](https://bbs.pediy.com/thread-227232.htm)
 [初识 Frida--Android 逆向之 Java 层 hook (二)](https://bbs.pediy.com/thread-227233.htm)
