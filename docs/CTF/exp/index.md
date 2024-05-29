@@ -244,6 +244,7 @@ rw_exp_joomla_CVE-2023-23752
 [Grafana任意文件读取漏洞（CVE-2021-43798）](https://mp.weixin.qq.com/s/WK9dulwM84DVYgn6Ss1AcQ)
 
 [Atlassian Bitbucket 登录绕过漏洞](https://mp.weixin.qq.com/s/w72e1WZKV2Qb7VDloc4DDw)
+[Atlassian Confluence Center Server远程代码执行漏洞(CVE-2024-21683)](https://mp.weixin.qq.com/s/RAJrkqzvyKpirMms7Tn3Sg)
 
 [neo4j | Neo4j 3.4.18 CVE-2021-34371](https://mp.weixin.qq.com/s/Wh-VyKtvw0bsEcZfxS7e_Q)
 

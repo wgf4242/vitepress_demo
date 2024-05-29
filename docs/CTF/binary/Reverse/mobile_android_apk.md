@@ -349,6 +349,9 @@ https://github.com/APKLab/APKLab
 - [Android 逆向 设备指纹 Settings 类对抗终极方案](https://www.bilibili.com/video/BV1hP411s7Js/)
 - [Qual+Android 方案 Unlock 学习 以 Oneplus7Pro 为例](https://mp.weixin.qq.com/s/XFAYXV90y52bYTHYWSFJcA)
 
+### 脱壳
+[APP逆向系列(五)--制作fart脱壳机](https://mp.weixin.qq.com/s/gKCi_OdhynEYpTF70Xvz2w)
+
 ### bypass/反调试
 
 [『杂项』root 绕过的几种方式](https://mp.weixin.qq.com/s/7RZRXjP3zXRX8gvZSkDxqg)
