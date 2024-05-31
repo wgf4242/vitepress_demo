@@ -33,6 +33,12 @@ Graph模式
 
 ---
 x64dbg的默认设置: 系统断点 入口断点 用户TLS回调函数
+
+* 看不到进程
+1. 选项: Engine 选项卡 - Enable Debug Privilege
+2. 管理员身份运行 x64dbg。
+
+
 ## 快捷键
 G Graph,查看图流程 
 Ctrl+Backspace 还原选择
