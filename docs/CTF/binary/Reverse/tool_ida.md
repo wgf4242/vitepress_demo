@@ -10,7 +10,7 @@ Edit - Segments - Create Segments, start:0x96150, end: 0x97150, Segments - Rebas
   - 方式 2 选中地址，按 alt+a，设置 c style 即可
   - Shift+F12, 右击 Rebuild
   - 方式 3 字符串窗口 右键 - Setup - 勾 Unicode C-Style(16 bit)
-- String: 显示16bit:  Shift+F12, 右击 - Setup - × C-Style, √, Unicode C-Style(16bits)
+- String: 显示 16bit: Shift+F12, 右击 - Setup - × C-Style, √, Unicode C-Style(16bits)
 - 加载程序后 选项 - Auto Comments √
 - General - Instruction indentation : 20
 - 关闭自动反汇编: 工具栏 绿色按钮切换/Analysis, 才能方便手动改机器码去花指令
@@ -67,7 +67,8 @@ defs.h
 | v               | convert function to void           |
 | Ctrl+N          | Set ip, 设置下一步走到哪个位置。   |
 | Alt+D           | 修改变量类型                       |
-| Go to Segments  | Ctrl+S                             |
+| Ctrl+S          | Go to Segments                     |
+| Ctrl+G          | Choose Address                     |
 | %               | 跳转括号                           |
 | Ins             | Insert anterior comment            |
 | Shift + Ins     | Insert posterior comment           |
@@ -359,10 +360,13 @@ remote('127.0.0.1', 12345)
 pause()
 # 2. ida attach to process
 ```
-## WinDBG/API hooks
-attach时用 WinDBG
 
-load DMP文件时自动加载
+## WinDBG/API hooks
+
+attach 时用 WinDBG
+
+load DMP 文件时自动加载
+
 ```sh
 WinDBG
 # register
@@ -372,10 +376,13 @@ WinDBG>~
 WinDBG>!for_each_module !chkimg -d @#ModuleName
 WinDBG>!chkimg -d user32.dll
 ```
+
 API attach
-1. vs调试状态下启动程序
-2. ida: Debugger - Attach - Windbg - Debug options - set specific optons  - None Invasive user-mode process attach
-*  右击 Module 窗口的 Debug文件,  Load debug symbol
+
+1. vs 调试状态下启动程序
+2. ida: Debugger - Attach - Windbg - Debug options - set specific optons - None Invasive user-mode process attach
+
+- 右击 Module 窗口的 Debug 文件, Load debug symbol
 
 # Article
 

@@ -1,5 +1,6 @@
 fkpt脱壳ROM 找一下
 
+- 抓包apk SocksDroid.apk，使用之前关闭手机系统代理
 - [函数搜索](http://androidxref.com/)
 - [调试 | 安卓逆向基础知识之动态调试及安卓逆向常规手段](https://mp.weixin.qq.com/s/P86mtJFgJMUyfGD87ncn6g)
 - [练习 | UnCrackable Mobile Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)

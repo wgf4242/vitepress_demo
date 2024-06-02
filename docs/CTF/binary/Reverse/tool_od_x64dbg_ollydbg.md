@@ -6,23 +6,28 @@ movzx eax,byte ptr ss:[ebp+edx-3C]
 movzx eax,byte ptr ss:[ebp+edx-0x3C]
 ```
 
+## 常见视图
+
+左下角转储视图, 右击 - 地址
+
 ## x64dbg 快捷键
 
-| cmd                 | Desc                                       |
-| ------------------- | ------------------------------------------ | -------------------------------------------------------- |
-| F                   | 二进制填充                                 |
-| g                   | 图表                                       |
-| h                   | 点击变量，可以高亮。                       |
-| bp InternetOpenUrlA | 加载后才能用函数名下断点                   |
-| bph esp             | 硬件断点 `bph addr,[rwx],[1/2/4/8]`        |
-| bphc                | 删除硬件断点 `bphc <addr>`不指定时删除全部 |
-| d <addr>            | 跳转                                       |
-| d <function_name>   | d <fn+5> 跳转到 fn+5 处                    |
-| Ctrl + 9            | Nop                                        |
-| Ctrl+space          | 恢复修改                                   |
-| Alt+;               | 标记地址                                   | mov rax, ds:[0x00007FF708FEC450] => mov rax, ds:[callHp] |
-| +/-                 | 前进/后退                                  |
-| Ctrl+Enter          | 执行命令/Focus Command                     |
+| cmd                 | Desc                                                 |                                                          |
+| ------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
+| \*                  | Go to EIP                                            |                                                          |
+| F                   | 二进制填充                                           |                                                          |
+| g                   | 图表                                                 |                                                          |
+| h                   | 点击变量，可以高亮。                                 |                                                          |
+| bp InternetOpenUrlA | 加载后才能用函数名下断点                             |                                                          |
+| bph esp             | 硬件断点 `bph addr,[rwx],[1/2/4/8]` <br> `bph rsp,r` |                                                          |
+| bphc                | 删除硬件断点 `bphc <addr>`不指定时删除全部           |                                                          |
+| d <addr>            | 跳转                                                 |                                                          |
+| d <function_name>   | d <fn+5> 跳转到 fn+5 处                              |                                                          |
+| Ctrl + 9            | Nop                                                  |                                                          |
+| Ctrl+space          | 恢复修改                                             |                                                          |
+| Alt+;               | 标记地址                                             | mov rax, ds:[0x00007FF708FEC450] => mov rax, ds:[callHp] |
+| +/-                 | 前进/后退                                            |                                                          |
+| Ctrl+Enter          | 执行命令/Focus Command                               |                                                          |
 
 ### Ollydbg 快捷键
 
@@ -90,4 +95,4 @@ wininet.dll.InternetConnectA
 
 [通过 x64dbg 脚本功能修复 IAT 表](https://mp.weixin.qq.com/s/ZjxRNJr22H2val27mCeoUg)
 [OD 定位消息-事件](https://mp.weixin.qq.com/s/d57aOp_fN6eqLx6MAl01nQ)
-[让x64dbg支持python脚本](https://mp.weixin.qq.com/s/5o6BtdAlCxaHb-SK1WMhYQ)
+[让 x64dbg 支持 python 脚本](https://mp.weixin.qq.com/s/5o6BtdAlCxaHb-SK1WMhYQ)

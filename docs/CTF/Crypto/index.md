@@ -57,6 +57,7 @@ $$
 * [密码学 ｜ 6.3 椭圆曲线离散对数问题（ECDLP）](https://mp.weixin.qq.com/s/MBE4YC1dJTOYNpQ91IaPYA)
 * [密码学 ｜ 6.3.1 二重加法算法](https://mp.weixin.qq.com/s/c5g13vi9I_ytN8VkIvjoJw)
 * [密码学 ｜ 6.4 椭圆曲线密码学](https://mp.weixin.qq.com/s/CHyo16D7CKHgkGHMidpNHA)
+* [『CTF』一道题目学习 dfs 与 ecc 的阶](https://mp.weixin.qq.com/s/b2WoT6rSV02xqzrrET11EA)
 * [密码学 ｜ 使用z3-solver破解随机数](https://mp.weixin.qq.com/s/UWKmWQnchRyz5a8zQo_HyA)
 * [密码学 ｜ 6.4.2 椭圆Elgamal公钥密码系统](https://mp.weixin.qq.com/s/EjhPlck9-7MzIZvstriaOg)
 * [密码学 ｜ 6.5 公钥密码学的发展](https://mp.weixin.qq.com/s/DsuUBRn7raqAwgfi181S4w)

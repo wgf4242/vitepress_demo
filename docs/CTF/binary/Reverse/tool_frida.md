@@ -382,6 +382,17 @@ Java.perform(function(){
 [目前遇到的最辣鸡的锁机 app](https://www.bilibili.com/video/BV1NN4y1K7yW/)
 [Frida 高频问题：双进程保护该怎么突破：Frida 布道师亲授-哔哩哔哩](https://www.bilibili.com/video/BV1h24y1s7vf)
 
+## bypass
+[strongR-frida-android | hluda](https://github.com/hzzheyang/strongR-frida-android)
+
+
+- [一些APP渗透测试时的小tips](https://mp.weixin.qq.com/s/kxW1GymNM8ECXZyHL4mwXQ)
+1. e10_bypass_01_antiroot.js
+2. e10_bypass_02_frida.py
+3. Shamiko-v0.5.2-120-release.zip
+
+
+
 ## FAQ
 
 1. app Failed to spawn: unexpectedly timed out while waiting for app to launch

@@ -11,3 +11,4 @@ XX财务部5月份员工工资补贴通知
 发现最新XXXX漏洞。或者病毒。。。根据文档大家检查下有没有安全隐患。。
 
 [社工密码字典生成工具|字典工具](https://mp.weixin.qq.com/s/M5u_ErlFoQ6Pz2iSrUv39g)
+[常见网络产品默认口令大全](https://mp.weixin.qq.com/s/25eSuyS9WLtHfV6PDToHXQ)
