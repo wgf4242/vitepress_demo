@@ -248,6 +248,9 @@ https://syst3mfailure.io/
 - [好好说话之 Tcache Attack（3）：tcache stashing unlink attack](https://blog.csdn.net/qq_41202237/article/details/113604261)
 - [PWN 学习之 LLVM 入门](https://mp.weixin.qq.com/s/s7dQyS5DuKmtTZGq4J78iA)
 
+## Shellcode
+[无可执行权限加载 ShellCode 技术原理](https://mp.weixin.qq.com/s/WfEf-lMAXKehX7OOkkVjrQ)
+
 ## Video
 
 https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN

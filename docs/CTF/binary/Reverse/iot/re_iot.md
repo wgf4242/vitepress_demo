@@ -1,3 +1,7 @@
+
+- .bin 文件头是 hsqs 不对时手动修复。
+- 路由器信息提取 [apmib_decode](https://github.com/H4lo/apmibConfigFileDecode) 来提取配置文件config.dat就可以找到用户名和密码 
+ 
 2022 第五空间鸿蒙
 方式 1.
 安装 jefferson # https://blog.csdn.net/u013071014/article/details/122426769
