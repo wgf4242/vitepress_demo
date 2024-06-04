@@ -343,6 +343,7 @@ poc-yaml-go-pprof-leak 访问 /debug/pprof/
 [海康威视代码执行漏洞](https://mp.weixin.qq.com/s/o3A7xOPLbdmo6WAZsygHYQ)
 [海康威视综合安防系统 iVMS-5000 iVMS-8700 任意文件上传漏洞复现（0day）](https://mp.weixin.qq.com/s/Wveo0X3857mBWFzNOcJHJw)
 [海康威视综合安防（Fastjson） iVMS-8700 <= V2.9.2, iSecure Center <= V1.7.0](https://mp.weixin.qq.com/s/b3V-p8eUL1ycJIFKefQryA)
+[海康综合安防管理平台存在20处漏洞合集](https://mp.weixin.qq.com/s/Gr2hstywC_2DI9G8STa8cA)
 
 [任意文件上传漏洞检测工具（某康威视）](https://mp.weixin.qq.com/s/WBpboT8c-P_xZwRiugrfPw)
 [D-Link DCS 密码泄露漏洞](https://mp.weixin.qq.com/s/rbSBjKvX_STXUjxY8TKOOA)

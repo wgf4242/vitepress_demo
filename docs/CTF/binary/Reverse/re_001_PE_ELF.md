@@ -1,6 +1,7 @@
 # PE
 [PE解析思路](https://mp.weixin.qq.com/s/VJBfrR0-53o2MC25LiURNw)
 [逆向-pe文件格式](https://mp.weixin.qq.com/s/SnysHBsWQ48RMmEy2RzziQ)
+[逆向-PE文件的导入表，动态链接库中的函数应该如何导入](https://mp.weixin.qq.com/s/TMq9zgBajVh6ZGOOU6UOFg)
 
 ## 修改段信息、可执行权限、地址随机化
 
