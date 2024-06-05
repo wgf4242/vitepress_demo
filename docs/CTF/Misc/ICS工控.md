@@ -41,13 +41,6 @@
 
 ## Download
 
-[国内 TIA2](https://www.jb51.net/softs/847765.html)
-[Link](https://plc4me.com/download-tia-portal-v18-full-googledrive/)
-[Step 7](https://plc247.com/download-step-7-microwin-smart-v2-7-googledrive/)
-[国内 TIA](https://www.xuezdh.com/pinpai/siemens/1898.html)
-[TIA V17](https://support.industry.siemens.com/cs/document/109784440/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v17-trial-download?dti=0&lc=en-WW)
-[TIA V18](https://support.industry.siemens.com/cs/document/109807109/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v18-trial-download?dti=0&lc=en-WW)
-
 ### pcap 包 Trailer 导出
 
 看一下异常信息的包序号，去查看完整信息。
