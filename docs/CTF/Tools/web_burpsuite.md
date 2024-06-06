@@ -12,12 +12,14 @@ zip -q -d burpsuite_pro_v2022.9.jar chromium-linux64-105.0.5195.102.zip
 
 (Get-ChildItem burp*.jar)[0].Name | %{7z d -r $_ chromium-linux* chromium-macos*}
 ```
-## 条件竞争 
+
+## 条件竞争
+
 ver: 2023.10.3.2
 
-在 Repeater中比如创建 20 请求加到同一个Group, 
+在 Repeater 中比如创建 20 请求加到同一个 Group,
 
-点击  Send 边的箭头 -> Send group by parallel (last-byte sync)
+点击 Send 边的箭头 -> Send group by parallel (last-byte sync)
 
 ## 配置
 
@@ -59,7 +61,6 @@ java -jar <path-to-burp.jar> --install-plugin <path-to-plugin.jar>
 Destination host:  *
 别的正常填上级代理
 ```
-
 
 ## Reading
 
@@ -280,8 +281,11 @@ start attack
 [使用插件加密处理密码](https://mp.weixin.qq.com/s/72S-mYCHEnQZBPEIcKME3Q)
 [服务器端漏洞篇之身份验证专题](https://mp.weixin.qq.com/s/xto4_GFykjYC1it0bgQNJQ)
 [Burpsuite 指纹特征绕过](https://mp.weixin.qq.com/s/GVVZYKQsuWXqRap9zGfFDA)
-[九维团队-绿队（改进）| APP安全-Frida联动BurpSuite实现自动加解密](https://mp.weixin.qq.com/s/jdeEmwz8fsySUkszFbZwpA)
-[2023一整年BurpSuite都更新了什么?](https://mp.weixin.qq.com/s/-YI6Y8rMMBLXr1sBqOas5A)
+[九维团队-绿队（改进）| APP 安全-Frida 联动 BurpSuite 实现自动加解密](https://mp.weixin.qq.com/s/jdeEmwz8fsySUkszFbZwpA)
+[2023 一整年 BurpSuite 都更新了什么?](https://mp.weixin.qq.com/s/-YI6Y8rMMBLXr1sBqOas5A)
+
 ## plugins
-[干货|burpsuite插件整理](https://mp.weixin.qq.com/s/nj0AKKqUmOtAdWIoIqHmkg)
+
+[干货|burpsuite 插件整理](https://mp.weixin.qq.com/s/nj0AKKqUmOtAdWIoIqHmkg)
 [burp 结合 mitmproxy 实战解决网站请求加解密](https://www.bilibili.com/video/BV17u4y1Y7eg/)
+[ autoDecoder | 自动解密请求 | 逆向解密--“神器”插件推荐](https://mp.weixin.qq.com/s/DrjyJRp81U5uH0sY7g9aZA)
