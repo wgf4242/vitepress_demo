@@ -75,6 +75,12 @@ Ethernet - Trailer 字段,要注意有时有信息
 工具 - 模拟运行 - 工程下载 -启动运行。 看用户窗口。。。每个点一下。有没有出问题 的界面。
 或者不模拟的情况下每个窗口看看有没有 奇怪字符。。
 
+## Modbus
+### Modbus poll
+Modbus Poll ：Modbus主机仿真器，用于测试和调试Modbus从设备。该软件支持ModbusRTU、ASCII、TCP/IP。用来帮助开发人员测试Modbus从设备，或者其它Modbus协议的测试和仿真。它支持多文档接口，即，可以同时监视多个从设备/数据域。每个窗口简单地设定从设备ID，功能，地址，大小和轮询间隔。你可以从任意一个窗口读写寄存器和线圈。如果你想改变一个单独的寄存器，简单地双击这个值即可。或者你可以改变多个寄存器/线圈值。提供数据的多种格式方式，比如浮点、双精度、长整型（可以字节序列交换）。
+
+[Download](https://pan.baidu.com/s/1Eyf9SG1tqklbUWkDlu7DZw?pwd=qjlg#qjlg)
+
 ## 常用 PLC 指令
 
 ```ts

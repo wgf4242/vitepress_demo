@@ -21,3 +21,13 @@
 仿真按钮, 先点程序块，再点仿真
 
 ![Alt text](../../public/imgs/tia1.png)
+
+# FAQ
+
+## S7-PLCSIM Advanced, Error Code:-30，LicenseNotFound
+
+打开C盘找到`AX NF ZZ`隐藏文件夹将其删除，并通过SKB重新进行授权
+
+## “Main [OB1]”无法仿真。如果该块为库块，则请使用一个支持仿真功能的库
+
+右击 项目 - 属性 - 保护选项卡 - 块编译时支持仿真。
