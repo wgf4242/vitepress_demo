@@ -90,6 +90,7 @@ $$
 * [密码学基础之Coppersmith](https://mp.weixin.qq.com/s/nZAHJuQLdNVJEOzIma7aBg) [『CTF』手把手教你灵活运用 Coppersmith’s Method](https://mp.weixin.qq.com/s/fvjIaQeUJLRfdH7i0t7TaQ)
 * [CTF-密码学题目解析之格密码](https://mp.weixin.qq.com/s/S18FQq2mSUO6p1vwA1ErAg)
 * [24春第一次例会-Crypto-格密码入门](https://www.bilibili.com/video/BV1Qm421J7KL/)
+* [格密码学习笔记（六）格当中的困难问题](https://mp.weixin.qq.com/s/Lfr_u9ul3M2xeoeTK3bU5A)  密码up
 * [密码学攻击之RSA：惊艳](https://mp.weixin.qq.com/s/S79_EqjJ-gi2zopC0ZT6-Q)
 
 ---

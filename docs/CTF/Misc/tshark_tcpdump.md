@@ -146,3 +146,29 @@ tcpdump -n dst host 145.254.160.237 -r http.cap//只有数据包是这个目标�
 tcpdump -n port 53 -r http.cap//50端口
 tcpdump -nX port 80 -r http.cap//16进制显示80端口的信息
 ```
+
+# tcpreplay 重放攻击 - 经测试不行
+
+```sh
+sudo apt-get install tcpreplay -y
+
+# 1、先使用tcpdump抓取一段syslog的报文 # https://zhuanlan.zhihu.com/p/482617730?utm_id=0
+tcpdump -i eth0 -nn -s0 -v port 502 -w test.pcap 
+# 2. tcprewire重写目标IP地址和MAC地址
+tcprewrite --infile=in.pcapng  --outfile=out.pcapng --srcipmap=192.168.80.1:192.168.80.160  --dstipmap=192.168.80.1:192.168.80.160
+tcprewrite --infile=syslog.pcap --outfile=rsyslog_1.pcap --dstipmap=0.0.0.0/0:192.168.60.106 --enet-dmac=74:d4:35:88:68:e6
+# 3、更新数据包的校验和
+tcprewrite --infile=out.pcapng --outfile=out.pcapng --fixcsum
+# 4、replay
+## tcpreplay --listnics # 获得接口名
+tcpreplay -v -i eth0 modbus.pcap
+tcpreplay -v -i eth0 -M 1000 ./
+```
+# bittwist 重放攻击 - 经测试不行
+```sh
+# dump interface
+bittwist -d
+# -i interface_index/interface_name
+bittwist -i 1 test.pcap
+bittwist -i eth0 test.pcap
+```

@@ -5,8 +5,6 @@ fkpt脱壳ROM 找一下
 - [调试 | 安卓逆向基础知识之动态调试及安卓逆向常规手段](https://mp.weixin.qq.com/s/P86mtJFgJMUyfGD87ncn6g)
 - [练习 | UnCrackable Mobile Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)
 - [OWASP 实战分析 level 3](https://mp.weixin.qq.com/s/_dAnLlSM9eon5_SR0_0imw)
-- [Android NDK 开发](https://gift1a.github.io/2022/09/06/Android-Learning/#Android-NDK%E5%BC%80%E5%8F%91)
-- [移动安全之 NDK 开发学习一](https://mp.weixin.qq.com/s/AGy-lyTYs-gt2wGk-ZNFVg)
 - [Android loadLibrary 动态库加载过程分析](https://mp.weixin.qq.com/s/zj5isP6dGu-mTNpJN1W3BQ)
 - [Android Studio 调试 Smali | 给大家分享一下这几年学习 Android 逆向遇到的环境问题吧，希望大家不要在这上面浪费时间](https://bbs.pediy.com/thread-275251.htm)
 - [移动应用安全与风控——汇编基础](https://mp.weixin.qq.com/s/tU-Aeh-IoVf_sIofD7-4dA)
@@ -349,6 +347,11 @@ https://github.com/APKLab/APKLab
 - [Android 系统内核漏洞利用技术入门](https://mp.weixin.qq.com/s/a8A0g7-S0FiMuRa3YOg89Q)
 - [Android 逆向 设备指纹 Settings 类对抗终极方案](https://www.bilibili.com/video/BV1hP411s7Js/)
 - [Qual+Android 方案 Unlock 学习 以 Oneplus7Pro 为例](https://mp.weixin.qq.com/s/XFAYXV90y52bYTHYWSFJcA)
+### Android NDK
+
+- [Android NDK 开发](https://gift1a.github.io/2022/09/06/Android-Learning/#Android-NDK%E5%BC%80%E5%8F%91)
+- [移动安全之 NDK 开发学习一](https://mp.weixin.qq.com/s/AGy-lyTYs-gt2wGk-ZNFVg)
+- [Android逆向学习69——Android NDK with Rust ASM（By LittleQ）](https://mp.weixin.qq.com/s/sM2kZnpdrPAvdhAp6Q1pFw)
 
 ### 脱壳
 [APP逆向系列(五)--制作fart脱壳机](https://mp.weixin.qq.com/s/gKCi_OdhynEYpTF70Xvz2w)
@@ -390,6 +393,7 @@ https://github.com/APKLab/APKLab
 - [逆向工程技术在移动应用渗透测试的应用](https://mp.weixin.qq.com/s/AyvnUoDKtewiIvExk5Ih0w)
 - [APP sign签名参数分析](https://mp.weixin.qq.com/s/grYRp34tUWytkRfhsm0eOQ)
 - [App渗透 -人脸识别登录绕过](https://mp.weixin.qq.com/s/ELY7rS1yojMw2lO3Z8BGRg)
+- https://space.bilibili.com/362235493
 
 ## 混淆加密
 

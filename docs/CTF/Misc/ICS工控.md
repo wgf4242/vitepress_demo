@@ -41,6 +41,8 @@
 
 ## Download
 
+[组态王(KingView)全套下载链接](https://docs.qq.com/doc/DRFpwaXNhQmRrdFBx)
+
 ### pcap 包 Trailer 导出
 
 看一下异常信息的包序号，去查看完整信息。
