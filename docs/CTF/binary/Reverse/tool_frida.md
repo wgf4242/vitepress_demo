@@ -339,6 +339,8 @@ Java.perform(function(){
 [魔法打败魔法：Frida 过 Frida 检测](https://mp.weixin.qq.com/s/UI0L_tOyv78kNkbAYsObdQ)
 [FD_01.三种方案实现 Frida 脚本持久化研究](https://mp.weixin.qq.com/s/dIv7QZWk5S74emYC6JZZSQ)
 [九维团队-绿队（改进）| APP 安全-Frida 联动 BurpSuite 实现自动加解密](https://mp.weixin.qq.com/s/jdeEmwz8fsySUkszFbZwpA)
+[基于 Frida 对单字节加密验证程序侧信道爆破](https://mp.weixin.qq.com/s/JDK3NvE3Y0631wwPqsRVFw)
+
 
 - 反调试
 - [移动安全之【魔改 frida 自编译去特征】超详细全过程](https://mp.weixin.qq.com/s/4MOTfYm-GMpZQFsLKOOHwQ)

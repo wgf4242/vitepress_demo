@@ -927,6 +927,7 @@ sub dialog_test {
 [CobaltStrike 逆向学习系列(番外篇)-自定义 RDI 功能添加](https://mp.weixin.qq.com/s/k3n6gEU26EO7cvwT1mGoxA)
 - [DLL转发劫持还能这么玩？](https://mp.weixin.qq.com/s/a_om1z4H_PTUjIJAepXTzA)
 - [CobaltStrike 从0到1学习二开（下）](https://mp.weixin.qq.com/s/0ppDpn40DxIuDkYlgkkMUQ)
+- [Cobalt Strike 逆向系列：beacon 指令分析篇](https://mp.weixin.qq.com/s/piREJL8IVmgXyxuTjvXBqQ)
 
 ## 使用帮助
 
