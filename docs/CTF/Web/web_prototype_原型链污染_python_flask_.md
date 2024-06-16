@@ -53,3 +53,6 @@ flask-unsign --decode --cookie "eyJsb2dnZWRfaW4iOmZhbHNlfQ.XDuWxQ.E2Pyb6x3w-NODu
 ## flask 原型链污染获取 PIN 码
 
 [Link](../../../../../blog/text/docs/ctf/scripts/web/web_flask_pin_%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93.zip)
+
+# Article
+[WP | Python原型链污染赛题Sanic解析](https://mp.weixin.qq.com/s/fhMBt6GUTMBR-VSgMjpLAg)
