@@ -7,7 +7,7 @@
 # Download
 
 - [Download](http://himachine.tpddns.cn:61000/%E5%8D%9A%E5%9B%BE/%E5%8D%9A%E9%80%94V16/Portal%20V16/)
-- [Link](https://www.bilibili.com/read/cv9247679/) 公众号“山冰桐雨”，后台输入“PLC大作业”即可获得。 
+- [Link](https://www.bilibili.com/read/cv9247679/) [v16](https://pan.baidu.com/s/1avgu43glPqPyNqYL7AmhdA#f8o4) [Crack](https://pan.baidu.com/s/1MTCJ_lqx-2LEiDCPv7LWYQ#72qg)
 - [国内 TIA2](https://www.jb51.net/softs/847765.html) [V18 | TIA_Portal_STEP7_Prof_Safety_WINCC_Adv_Unified_V18.iso + PLCSIM](https://pan.baidu.com/share/init?surl=V0KfTAitIZuHmepqQvBKMw#ssat) [--Link2](https://pan.baidu.com/s/1zrpufdThWr2YYQm-a-eYcg?pwd=bek7)
 - [V19](https://pan.baidu.com/s/15c2PRYeCYV8z_5ZLi9-gqQ?pwd=92j6)
 - [Link](https://plc4me.com/download-tia-portal-v18-full-googledrive/)
