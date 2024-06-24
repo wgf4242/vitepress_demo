@@ -381,3 +381,8 @@ hashcat -m 1800 -a 3 --force $6$mxuA5cdy$XZRk0CvnPFqOgVopqiPEFAFK72SogKVwwwp7gWa
 |     |          | 122  | macOS v10.4, MacOS v10.5, MacOS v10.6     |
 |     |          | 1722 | macOS v10.7                               |
 |     |          | 7100 | macOS v10.8+ (PBKDF2-SHA512)              |
+
+# FAQ
+
+## hashcat Device #1: Unstable OpenCL driver detected!
+添加 -force
