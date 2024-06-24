@@ -14,6 +14,7 @@ upx --lzma -9 main.exe
 [脱壳 SLVcodeProtector v1.12 （全保护）](https://mp.weixin.qq.com/s/sHKugQPjfaKU9h6CdhzqbA)
 [手脱 TMD 壳](https://mp.weixin.qq.com/s/r7oQe6xUVkNzEscGgkmjIA)
 [逆向日记 p4-脱壳系列 （后顾总结，elf 文件格式，dex 文件格式，blackdex 原理简单介绍，fart）fart 没说完 下期继续](https://www.bilibili.com/video/BV1rJ4m1H7wv/)
+- [VMProtect保护壳爆破步骤详解（入门级）](https://mp.weixin.qq.com/s/sBY-HOGVtN5-hizeXtowrA)
 
 ### UPX/ESP 定律
 

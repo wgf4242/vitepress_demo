@@ -38,6 +38,7 @@
   - 邮件 | `Dear E-Commerce professional` https://spammimic.com/decode.cgi
   - 每 2 个字符换位置
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
+  - ”Kh†”Kh†”Kh†”Kh†”Kh†”K  Python pickle反序列化, 文件头80 04，ascii码是 €
   - 字频统计
   - base64 换表
   - 像 base64 但=号位置不对 `bYeNQXYZXbXZQfW31FGzzD0m0FHQ9RR85FFQYMB9M=lmo2ku11z0uiz=` Caesar Box Cipher 14 后 base64 解
@@ -109,7 +110,7 @@ k 数字 超大数, tupper 自指 https://article.itxueyuan.com/7DyrkD 4. virust
 
 .klr.enc1 - Kaspersky Rescue disk file, 异或 0xef
 
-- ascii chart 文字图用 Akelpad 查看效果不错。
+- ascii chart ， 010 editor 默认用 Droid Sans Mono 看，MS Gothic，楷体，Akelpad都可以试
 
 - [.img 文件](forensics.md#取证题)
 - [拼图 gaps](#拼图-gaps)

@@ -9,6 +9,7 @@ NSSCTF ROUND 4 wasm
 [wasm转c调用实战 | 猿人学2022新春题 | 腾讯视频ckey参数获取](https://www.52pojie.cn/thread-1581887-1-1.html) 
 [JS逆向之wasm逆向(二进制)](https://mp.weixin.qq.com/s/urN5QOX0trRND3z9OsNVoA)
 [[原创]CTF 丛林的秘密：算法分析 ](https://bbs.kanxue.com/thread-280260.htm)
+[爬虫 | 猿人学 |【猿人学爬虫题目详解】 15-备周则意怠-常见则不疑，20-2022新年挑战](https://www.bilibili.com/video/BV1iM4m1S7Ag/)
 
 方式0
 [ghidra-wasm-plugin](https://github.com/nneonneo/ghidra-wasm-plugin)

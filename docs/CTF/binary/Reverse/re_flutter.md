@@ -13,3 +13,4 @@ Flutter： 可以在 assets 目录中找到 flutter_assets 目录以及 libapp.s
 [Flutter抓包绕过](https://mp.weixin.qq.com/s/e8eBfk3nFhmD_bonakEv-A)
 [Flutter 逆向工程和安全分析](https://mp.weixin.qq.com/s/7SSRJj4WvavxhqfXNDODrA)
 [手把手教你逆向Flutter App](https://mp.weixin.qq.com/s/hYkOTAa0AZCvj7Wbn9OWfw)
+- [flutter逆向案例-某某一番赏](https://www.bilibili.com/video/BV1o4421S7JH/)

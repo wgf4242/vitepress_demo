@@ -30,6 +30,7 @@
 [从开发的角度看看ollvm](https://bbs.pediy.com/thread-274996.htm) 
 [OLLVM-deflat 脚本学习](https://mp.weixin.qq.com/s/3ZiBPRK4NcOR_o4gnjO8GQ)
 [自研Unidbg trace工具实战ollvm反混淆](https://mp.weixin.qq.com/s/uzaFsgnuOI8QFoaT_O10MQ)
+[初窥ARM平坦化还原](https://mp.weixin.qq.com/s/5oyumNikQ5m6bq2IOyIrMw)
 
 看雪
 [ollvm分析及反混淆](https://mp.weixin.qq.com/s/ih-ysrNUkxFVXCeaUIcMkQ)
@@ -160,3 +161,17 @@ make -j7
 docker 版
 https://www.bilibili.com/read/cv13148903/
 https://blog.csdn.net/qq_37507251/article/details/118530954
+
+```sh
+# install2
+## 0.
+llvm-as code.ll -o output.bc
+clang output.bc -o elf
+## 1.
+llvm-as code.ll -o output.bc
+llc output.bc -o output.s 
+clang output.s -o executable
+## 2.
+llc code.ll -o llvm.cpp.s
+clang llvm.cpp.s -o llvm.out
+```

@@ -16,6 +16,9 @@
 - [TIA V17](https://support.industry.siemens.com/cs/document/109784440/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v17-trial-download?dti=0&lc=en-WW) [pan](https://pan.baidu.com/s/1YP5xa1SS30H7hoX0LCM6YA?pwd=668K)
 - [TIA V18](https://support.industry.siemens.com/cs/document/109807109/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v18-trial-download?dti=0&lc=en-WW)
 
+- [STEP7 5.7](https://pan.baidu.com/share/init?surl=lBfgPD8Zy_5VGM_tOQMqgQ#ut8b) 解压: www.jb51.net
+
+
 # 工具栏
 
 仿真按钮, 先点程序块，再点仿真

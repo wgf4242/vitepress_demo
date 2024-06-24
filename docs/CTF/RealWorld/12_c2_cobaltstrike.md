@@ -928,6 +928,7 @@ sub dialog_test {
 - [DLL转发劫持还能这么玩？](https://mp.weixin.qq.com/s/a_om1z4H_PTUjIJAepXTzA)
 - [CobaltStrike 从0到1学习二开（下）](https://mp.weixin.qq.com/s/0ppDpn40DxIuDkYlgkkMUQ)
 - [Cobalt Strike 逆向系列：beacon 指令分析篇](https://mp.weixin.qq.com/s/piREJL8IVmgXyxuTjvXBqQ)
+- [一文弄懂Cobalt Strike 通信流程](https://mp.weixin.qq.com/s/_6uvKK3FT3HArly0TUWXxA)
 
 ## 使用帮助
 
