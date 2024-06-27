@@ -1,6 +1,7 @@
-https://mp.weixin.qq.com/s/F1H4ReV71gK7JeoYxV3n5g
-https://github.com/k8gege/Aggressor/releases/tag/cs
-[Cobalt Strike 最实用的 24 条命令（建议收藏）](https://mp.weixin.qq.com/s/8EbrH9LRei_22Z14UDZUmQ)
+- https://mp.weixin.qq.com/s/F1H4ReV71gK7JeoYxV3n5g
+- https://github.com/k8gege/Aggressor/releases/tag/cs
+- [Cobalt Strike 最实用的 24 条命令（建议收藏）](https://mp.weixin.qq.com/s/8EbrH9LRei_22Z14UDZUmQ)
+- [CS 之目标不出网的转发上线](https://mp.weixin.qq.com/s/DzlDqQFWtPltmVVcri_ZtQ)
 
 ## 环境配置
 
@@ -925,10 +926,11 @@ sub dialog_test {
 
 [4.9 | 【第一部分】CobaltStrike v4.9 新功能尝鲜](https://www.bilibili.com/video/BV1pp4y1F7mt/)
 [CobaltStrike 逆向学习系列(番外篇)-自定义 RDI 功能添加](https://mp.weixin.qq.com/s/k3n6gEU26EO7cvwT1mGoxA)
-- [DLL转发劫持还能这么玩？](https://mp.weixin.qq.com/s/a_om1z4H_PTUjIJAepXTzA)
-- [CobaltStrike 从0到1学习二开（下）](https://mp.weixin.qq.com/s/0ppDpn40DxIuDkYlgkkMUQ)
+
+- [DLL 转发劫持还能这么玩？](https://mp.weixin.qq.com/s/a_om1z4H_PTUjIJAepXTzA)
+- [CobaltStrike 从 0 到 1 学习二开（下）](https://mp.weixin.qq.com/s/0ppDpn40DxIuDkYlgkkMUQ)
 - [Cobalt Strike 逆向系列：beacon 指令分析篇](https://mp.weixin.qq.com/s/piREJL8IVmgXyxuTjvXBqQ)
-- [一文弄懂Cobalt Strike 通信流程](https://mp.weixin.qq.com/s/_6uvKK3FT3HArly0TUWXxA)
+- [一文弄懂 Cobalt Strike 通信流程](https://mp.weixin.qq.com/s/_6uvKK3FT3HArly0TUWXxA)
 
 ## 使用帮助
 
@@ -948,7 +950,7 @@ sub dialog_test {
 [CobaltStrike 加载插件](https://mp.weixin.qq.com/s/NtxhTkuMGhhRyLUREnZQcA)
 [免杀 | Arsenal-kit | 聊聊红队攻防中 CobalStrike 的多维度对抗](https://mp.weixin.qq.com/s/fF6frplnurl-rCivYs0fFA)
 [红队工具推荐：Cobalt Strike 的远程桌面](https://mp.weixin.qq.com/s/_cVF-JyTkdeJZznEXZ9uqQ)
-[一款cobalt strike后渗透模块插件 | OLa](https://mp.weixin.qq.com/s/ZBKOHcWiKIRiu8XOS_WS5A)
+[一款 cobalt strike 后渗透模块插件 | OLa](https://mp.weixin.qq.com/s/ZBKOHcWiKIRiu8XOS_WS5A)
 
 ## Vocabulary
 

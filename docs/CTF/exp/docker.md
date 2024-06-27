@@ -59,3 +59,4 @@ echo "ssh-rsa AAAAB3NzaC1yc2......." > authorized_keys
 [一个未公开的容器逃逸方式](https://mp.weixin.qq.com/s/9aUQXGas-dY9i-zAWSCgMg)
 [Docker安全（一）](https://mp.weixin.qq.com/s/qd2WYFhyVzbOEI72SAqNkQ)
 [Docker安全（二）](https://mp.weixin.qq.com/s/D5oZv6ygHTZNrNajjCIMnA)
+- [docker api未授权导致RCE的http方式利用](https://mp.weixin.qq.com/s/t9bTcJcAWxlAQDVB_kXj0Q)

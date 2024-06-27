@@ -285,6 +285,8 @@ rw_exp_宏景ehr sql注入的tamper脚本_ehr_SafeCodeEncode.zip
 [GitLab | 任意用户密码重置漏洞（CVE-2023-7028）](https://mp.weixin.qq.com/s/jnXXOK7lxRG1U-FXZxsy-w)
 [GitLab | CVE-2023-7028 GitLab 任意用户密码重置](https://mp.weixin.qq.com/s/Yn6CmiGticzxB2F8P1X0KA)
 
+[大模型 | Web LLM 攻击技术](https://mp.weixin.qq.com/s/ea_Kcg6GIPlpAjJ9xXANhw)
+
 
 poc-yaml-go-pprof-leak 访问 /debug/pprof/
 
