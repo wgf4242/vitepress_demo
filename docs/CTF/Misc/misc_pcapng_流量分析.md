@@ -3,6 +3,7 @@
 * 追踪流注意单个 66 6c 61 67 -> flag
 * 按长度排序,看不一样长的有问题.
 * 删除的字符串可能是key
+* 查找文件 1.直接搜 C:  2. 用010 Editor 以及Uncode16方式搜
 * 科来网络分析系统 - 查一下包
 * key.log - TLS解密: 编辑 - 首选项 - Protocols - TLS - Master - Secret log filename
 * 过滤关键协议如websocket，整体导出为csv, countif过滤length, 找少的比如只有2个的数据。定位查看。

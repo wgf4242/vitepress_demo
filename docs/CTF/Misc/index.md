@@ -44,6 +44,7 @@
   - 字频统计
   - base64 换表
   - 像 base64 但=号位置不对 `bYeNQXYZXbXZQfW31FGzzD0m0FHQ9RR85FFQYMB9M=lmo2ku11z0uiz=` Caesar Box Cipher 14 后 base64 解
+  - 2个数据时, 一个是字节内容, 一个是顺序号
   - 符合 16 进制 data, base64.encode(data)
   - 逆序试一下
   - 提示逆向，可能是指加密
