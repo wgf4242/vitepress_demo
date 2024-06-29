@@ -1,3 +1,5 @@
+-*- coding: utf-8 -*-
+
 [Wireshark](./wireshark.md)
 
 [tshark](./tshark.md)
@@ -38,7 +40,7 @@
   - 邮件 | `Dear E-Commerce professional` https://spammimic.com/decode.cgi
   - 每 2 个字符换位置
   - 1.CTF.xmind 2. CTF.xmind.md 3.解密总结
-  - ”Kh†”Kh†”Kh†”Kh†”Kh†”K  Python pickle反序列化, 文件头80 04，ascii码是 €
+  - `”Kh†”Kh†”Kh†”Kh†”Kh†”K`  Python pickle反序列化, 文件头80 04，ascii码是 €
   - 字频统计
   - base64 换表
   - 像 base64 但=号位置不对 `bYeNQXYZXbXZQfW31FGzzD0m0FHQ9RR85FFQYMB9M=lmo2ku11z0uiz=` Caesar Box Cipher 14 后 base64 解
