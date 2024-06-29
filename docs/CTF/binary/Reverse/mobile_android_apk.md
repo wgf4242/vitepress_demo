@@ -420,6 +420,7 @@ https://github.com/APKLab/APKLab
 [strong-frida 过常见壳的 Frida 检测](https://www.bilibili.com/video/BV1gp4y1N7Cx/)
 [frida | 对 APP 的检测以及参数计算分析](https://mp.weixin.qq.com/s/x59ZoVGclcjdElxb8Y0R7w)
 [patch 某哩 frida 检测](https://mp.weixin.qq.com/s/cm5kHfE-z2HaBOc-mZUnsw)
+[安卓RPC开发踩坑记录](https://mp.weixin.qq.com/s/yLRBIg7mx_FWksw-MgtQJw)
 
 ## eBPF
 
