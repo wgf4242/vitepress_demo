@@ -254,6 +254,7 @@ https://github.com/APKLab/APKLab
 - [史上最强安卓抓包/逆向/HOOK & 云手机/自动化辅助框架](https://mp.weixin.qq.com/s/533On0ejZXF42GT1KrpfmQ)
 - [【小记】Frida 绕过闲鱼 Spdy 协议进行抓包](https://mp.weixin.qq.com/s/FEIoSB2gWBb9NAAE7i0bXA)
 - [r0capture！安卓应用层抓包通杀脚本](https://mp.weixin.qq.com/s/lCtr6ZZZaiHNodZxxnrLMQ)
+- [当你写爬虫抓不到APP请求包的时候该怎么办？【中级篇】](https://mp.weixin.qq.com/s/ftp4Yv2Z4IMtsOkPli1qmQ)
 
 ## 综合
 
@@ -275,12 +276,16 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十七、你的 RPCvs 佬的 RPC](https://mp.weixin.qq.com/s/5TI4sPbrfdEyIGKqkbWGcQ) [Video](https://www.bilibili.com/video/BV1gA4m1G7vV/)
 - [《安卓逆向这档事》十八、表哥，你也不想你的Frida被检测吧!(上)](https://www.52pojie.cn/thread-1921073-1-1.html) [video](https://www.bilibili.com/video/BV1tC411j7yL/)
 
-
 - [番外篇之安卓 CRC 检测（上）](https://www.bilibili.com/video/BV1Le411Y7Rx/)
 - [番外篇之安卓 CRC 检测（下）](https://www.bilibili.com/video/BV1jN4y1H7FP/)
 
 - [移动应用安全与风控——应用的签名](https://mp.weixin.qq.com/s/Y-UoTIkX0Rid8tBImNsU-g)
 - [Android 逆向技术高阶大法](https://mp.weixin.qq.com/s/zMXOpxW6E5klbsjKVHZudg)
+
+--- Hook番外篇
+- [2023安卓Hook框架源码入门（番外篇之dlopen限制与反射限制）](https://www.bilibili.com/video/BV1NM411Y7V1/?spm_id_from=333.788&vd_source=7631821c3a79f04a4fb0ef78db2c0814)
+- [2023安卓Hook框架源码入门（番外篇 so格式之一windows编译so的三种方式）](https://www.bilibili.com/video/BV18T411Q7LU/?spm_id_from=333.788&vd_source=7631821c3a79f04a4fb0ef78db2c0814)
+- [番外篇之frida检测-利用java层调用栈检测frida（上）](https://www.bilibili.com/video/BV1uM4m1U78J/)
 
 ---
 

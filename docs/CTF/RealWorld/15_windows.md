@@ -25,6 +25,11 @@ netsh advfirewall firewall add rule name="Remote Desktop" protocol=TCP dir=in lo
 
 :: 开启远程
 wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 1
+:: 开启远程 方法2
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server /v fDenyTSConnections /t REG_DWORD /d 0 /f  
+:::: 开启PTH登录 //开启Restricted Admin mode
+REG ADD "HKLM\System\CurrentControlSet\Control\Lsa" /v DisableRestrictedAdmin /t REG_DWORD /d 00000000 /f 
+
 echo 远程桌面端口 port number is 
 REG QUERY "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v PortNumber
 
