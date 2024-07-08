@@ -103,6 +103,12 @@ $$
 * [p-1光滑攻击](https://www.nssctf.cn/note/set/3)    
 * [dp&dq泄漏攻击](https://www.nssctf.cn/note/set/2)    
 
+---
+[CTF-密码学题目解析之SM4](https://mp.weixin.qq.com/s/Ee-iejy5wuUzW4ggZn4ykg)
+---
+[CTF密码学之侧信道攻击出题思路](https://mp.weixin.qq.com/s/K_L2alsQo3LmGIXqmL_PCA)
+
+
 ## RSA
 [『CTF』RSA 已知高位算法攻击扩展](https://mp.weixin.qq.com/s/SysK0jwjbYvu34EqHWmwMA)
 

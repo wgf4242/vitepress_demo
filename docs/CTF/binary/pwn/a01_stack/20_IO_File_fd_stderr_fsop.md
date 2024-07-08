@@ -17,6 +17,7 @@ close（2）关闭了标准错误
 
 # IO_stderr/IO_stdout
 
+- [『CTF』IO_FILE利用入门(2)](https://mp.weixin.qq.com/s/IUcCX6ZyJI1sQwIBtrn5sA)
 看文件 [利用 _IO_2_1_stdout_ 泄露libc](https://www.jianshu.com/p/27152c14e2e7)
 [IOFILE exploit入门](https://mp.weixin.qq.com/s/yrXGg_r-9p9m1qbNolI-5g)
 [IO_file 利用总结](https://mp.weixin.qq.com/s/U4XNbjiaSogo9m91ZKaG3g)

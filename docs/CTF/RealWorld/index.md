@@ -26,6 +26,7 @@ Web漏洞分析
 * 2375端口: docker 未授权
 * 21/2121:  ftp 匿名登录/未授权
 * 6379:     redis/未授权
+* 3269: [ldap](https://mp.weixin.qq.com/s/rltB3DNEVOnB0ESeoZhu7Q)
 * msf > searchsploit thinkphp
 ```shell
   msf > searchsploit thinkphp
@@ -185,3 +186,7 @@ location /xxx/ {
   alias /abc/;
 }
 ```
+
+# Article
+
+[ldap](https://mp.weixin.qq.com/s/rltB3DNEVOnB0ESeoZhu7Q)

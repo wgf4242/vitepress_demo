@@ -40,3 +40,5 @@ AF 1B B1 FA 1D 00 00 00 00 01 00 00 XX B2
 [Android | Il2cpp | 简单回应私信问题\_Il2cpp 类型问题](https://www.bilibili.com/video/BV1Bv421k7PS/)
 [Android | Il2cpp | [Arm]gg 调用 Il2cpp_Object_new 函数分配一个类实例](https://www.bilibili.com/video/BV1F1421U72G/)
 [IL2CPP逆向文档](https://mp.weixin.qq.com/s/4CVHo66-m3R872lLpxp5eQ)
+
+[【Web逆向】浅谈逆向Unity导出的vx小游戏的思路](https://mp.weixin.qq.com/s/fDuQoRWzidfo5G537tWUjQ)

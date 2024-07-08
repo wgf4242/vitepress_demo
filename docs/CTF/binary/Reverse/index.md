@@ -278,6 +278,46 @@ https://bbs.pediy.com/thread-271372.htm
 https://gift1a.github.io/2022/02/13/hgame2022-week3-re/
 https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 
+
+
+## windows
+
+### PEB - Proces Enviroment Block
+
+- Storage for process-specific informationEnvironment variableso
+  - Commandline
+  - Working directory
+  - Module list
+  - Heap pointer
+
+Process creation(kernel)
+
+- Initialize address space
+  - MapKUSER SHARED DATA
+  - Map the executable
+  - Map ntdll.dll
+  - Allocate PEB
+- Create initial thread
+  - Allocate stack
+  - Allocate TEBo
+  - ntdl1.LdrInitializeThunk
+
+### TEB - Thread Environment Block
+
+- Small memory range
+- Storage for thread-specific information
+  - ThreadID
+  - Stack rangeo
+  - `GetLastError`
+  - TLS: `Thread Local Storage`
+- gs:[X] = [IA32_KERNEL_GS_BASE+X]
+
+通过 GS 寄存器访问 TEB
+
+### PDF
+Windows恶意软件常见API一览.pdf
+
+
 # Book
 
 逆向工程核心原理
@@ -330,6 +370,10 @@ https://gift1a.github.io/2022/04/23/DASCTF-FATE-Reverse/#0x01-FakePica
 ## 高级学习/调试/反调试
 
 [无限硬件中断的代码实现](https://mp.weixin.qq.com/s/8mrJFA8Xvf_qfzX2dwpIEQ)
+
+## Windows实战
+
+[记一次某游戏 mod 文件加密逆向过程](https://mp.weixin.qq.com/s/112khoVppmcxHE5E28Wcfg)
 
 ## Windows/dll 注入
 
@@ -429,43 +473,6 @@ so 中 Java_com_example_createso_MainActivity_baby_1xor 地址 为 800.实际地
 .text:00413D1A                 nop
 .text:00413D1B                 call    ds:__imp_exit
 ```
-
-## windows
-
-### PEB - Proces Enviroment Block
-
-- Storage for process-specific informationEnvironment variableso
-  - Commandline
-  - Working directory
-  - Module list
-  - Heap pointer
-
-Process creation(kernel)
-
-- Initialize address space
-  - MapKUSER SHARED DATA
-  - Map the executable
-  - Map ntdll.dll
-  - Allocate PEB
-- Create initial thread
-  - Allocate stack
-  - Allocate TEBo
-  - ntdl1.LdrInitializeThunk
-
-### TEB - Thread Environment Block
-
-- Small memory range
-- Storage for thread-specific information
-  - ThreadID
-  - Stack rangeo
-  - `GetLastError`
-  - TLS: `Thread Local Storage`
-- gs:[X] = [IA32_KERNEL_GS_BASE+X]
-
-通过 GS 寄存器访问 TEB
-
-### PDF
-Windows恶意软件常见API一览.pdf
 
 ## 工具
 

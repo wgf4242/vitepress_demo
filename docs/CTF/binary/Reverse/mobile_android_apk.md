@@ -275,6 +275,7 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十六、是时候学习一下 Frida 一把梭了(终)](https://mp.weixin.qq.com/s/BqqDsxB4u7QyTmBozZjMnw)
 - [《安卓逆向这档事》十七、你的 RPCvs 佬的 RPC](https://mp.weixin.qq.com/s/5TI4sPbrfdEyIGKqkbWGcQ) [Video](https://www.bilibili.com/video/BV1gA4m1G7vV/)
 - [《安卓逆向这档事》十八、表哥，你也不想你的Frida被检测吧!(上)](https://www.52pojie.cn/thread-1921073-1-1.html) [video](https://www.bilibili.com/video/BV1tC411j7yL/)
+- [《安卓逆向这档事》十九、表哥，你也不想你的Frida被检测吧!(下)](https://mp.weixin.qq.com/s/14TpGimgPQ4NJOXaTda7jQ)
 
 - [番外篇之安卓 CRC 检测（上）](https://www.bilibili.com/video/BV1Le411Y7Rx/)
 - [番外篇之安卓 CRC 检测（下）](https://www.bilibili.com/video/BV1jN4y1H7FP/)
@@ -361,6 +362,8 @@ https://github.com/APKLab/APKLab
 
 ### 脱壳
 [APP逆向系列(五)--制作fart脱壳机](https://mp.weixin.qq.com/s/gKCi_OdhynEYpTF70Xvz2w)
+[Flutter逆向-有360壳案例二 （blutter使用 ）](https://www.bilibili.com/video/BV14S411w7HL/)
+
 
 ### bypass/反调试
 
