@@ -870,6 +870,8 @@ gost -L=:8080 -F=socks4://192.168.50.161:43848
 
 https://wbglil.gitbook.io/cobalt-strike/cobalt-strikekuo-zhan/dai-xie#nginx
 
+[Nginx后门集合](https://mp.weixin.qq.com/s/_vtabaOr3BS0SlQzarK9XA)
+
 ## tocks
 
 apt-get install tsocks  

@@ -128,7 +128,8 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [如何利用 NFC 安全漏洞攻破一台特斯拉 Model Y，成功解锁和启动汽车](https://mp.weixin.qq.com/s/OmPycoN_tWEgSD2wMiyqqw)
 - [【车联网安全第一集】适合web宝宝们的车联网入门扫盲](https://www.bilibili.com/video/BV14E421L7uG/)
 - [【车联网】斯柯达大众Superb汽车漏洞挖掘](https://mp.weixin.qq.com/s/y6P1zHxSTTMvtdXaYmc9yw)
-
+- [【车联网】现代汽车Ioniq SEL渗透测试（2）](https://mp.weixin.qq.com/s/5tcauSy75MwZumol60FUJw)
+- [【车联网】通过逆向工程和模拟ECU（瑞萨 RH850）](https://mp.weixin.qq.com/s/gmpwJFg0Z7bx5ByUi9gzYw)
 ## 门卡 m1/ICCard/id
 
 [tools proxmark3 pm3](https://proxmarkbuilds.org/)

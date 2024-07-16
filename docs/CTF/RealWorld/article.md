@@ -70,6 +70,7 @@
 [验证码 | 缺失/绕过](https://mp.weixin.qq.com/s/0_kCK5AggNYHCcNzMSQAtg)
 [验证码 | 关于验证码的那些漏洞](https://mp.weixin.qq.com/s/ZwmI0aoZbZfaZawgqX96yw)
 [验证码 | 验证码渗透最全总结](https://mp.weixin.qq.com/s/I2LvDcpdUH6FGaBKYZJ5vQ)
+[验证码 | 验证码漏洞利用技巧总结](https://mp.weixin.qq.com/s/NVp6zZYR6jl_j35lO1SPFA)
 result.txt | 搜验证码
 [干货 | 漏洞挖掘绕过登录页面的七种常见方法](https://mp.weixin.qq.com/s/L5-uqiRJH9ozSGzXDSu73A)
 
@@ -229,6 +230,7 @@ https?://[^"]+
 [API | 通过分析 JS 源代码来发现 api 漏洞](https://mp.weixin.qq.com/s/Mk-DhFTvLfxgjd1IXXQSmg)
 [API | JWT 渗透姿势](https://mp.weixin.qq.com/s/1e94h4NFiIbVDMiIXtjgGQ)
 [API | JWT 的认证 bypass](https://mp.weixin.qq.com/s/-4XT3rWZs4o-fnzt5plIHA)
+[API | api渗透测试](https://mp.weixin.qq.com/s/dwT4Yp3puaW8D5BRvgcO8w)
 
 ## Java
 

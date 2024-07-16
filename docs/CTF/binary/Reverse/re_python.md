@@ -28,6 +28,13 @@ pyc可以直接python x.pyc运行
 2. 有pyz/pyd文件加密时需要对应的python版本解密, 见下面
 2. 可能要补或改magic code为显示的版本。
          可以看struct文件的第一行
+3. 解析pyc问题交换符要手动修改
+```sh
+S[i] = S[j]
+S[j] = S[i]
+# 修复为
+S[i],S[j] = S[j],S[i]
+```
 
 查看 pyc 对应的python版本 Linux: `file filename.pyc`
 
@@ -160,3 +167,4 @@ PYD是 Cpython实现的文件。看起来和dll一样
 * [python逆向总结-离线也有](https://mp.weixin.qq.com/s/qnT-H-T74Mj8jzG0Xqzq4Q)
 * [Python代码保护技术及其破解](https://mp.weixin.qq.com/s/y1atfJ-vf0wZBtMooeSw4A)
 * [Cython逆向-语言特性分析](https://mp.weixin.qq.com/s/GM7cSDUUMJiUlcAVZEvErg)
+* [Cython 二进制库逆向分析全面指南](https://mp.weixin.qq.com/s/2mjjfuEwSDfMB5ssAQDwKQ)

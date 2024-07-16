@@ -1,6 +1,7 @@
 ### Canary
 [canary的各种姿势----pwn题解版  ](https://www.52pojie.cn/thread-932096-1-1.html)
 [PWN之Canary学习](https://www.jianshu.com/p/85d0f7ae822e)
+[PWN入门——金丝雀风波](https://mp.weixin.qq.com/s/Bbq_1QoUzOC7Nl5y9P2nxw)
 
 * 最后一位是 \x00
 * 格式化字符串绕过

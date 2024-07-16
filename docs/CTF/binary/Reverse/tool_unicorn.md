@@ -6,6 +6,6 @@
 * [Flare-on4第3题解答 - greek_to_me.exe ](https://bbs.kanxue.com/thread-223473.htm)
 * [使用unicorn模拟执行去除混淆](https://mp.weixin.qq.com/s/2w6ElEXXi5mV3UmiR1s_8Q)
 * [安卓逆向(Unidbg调用so 手刃某App的sign值 )](https://www.bilibili.com/video/BV1Nt4y1Z7ss/)
-
+* [How2模拟执行一个不同架构下的elf文件](https://mp.weixin.qq.com/s/SDObMGqun9Ew8GUDPNepTA)
 
 
