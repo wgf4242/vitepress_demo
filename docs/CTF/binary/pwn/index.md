@@ -83,6 +83,8 @@ read(0, name, 0x20uLL);
 [里面找链接](https://faradaysec.com/reverse-engineering-and-game-hacking-resources-2/)
 
 [从新生赛入门 PWN](https://mp.weixin.qq.com/s/kAgrcDO-Dt15eZKo0w0pEw)
+[PWN入门——大闹ASLR](https://mp.weixin.qq.com/s/zzv1wAUg9UsTggHuazXppw)
+
 [Pwn 堆利用学习](https://mp.weixin.qq.com/s/R1LcyFnb9tCDVLP-1ryKYw)
 [【ACTF2022】从 Fuzz 到 XCTF 赛题 | 堆题目](https://mp.weixin.qq.com/s/80jizJsqmrq9dPFE77uzew)
 

@@ -130,6 +130,7 @@ avr-objcopy -I ihex -O binary light.ino.hex c9.bin
 - [【车联网】斯柯达大众Superb汽车漏洞挖掘](https://mp.weixin.qq.com/s/y6P1zHxSTTMvtdXaYmc9yw)
 - [【车联网】现代汽车Ioniq SEL渗透测试（2）](https://mp.weixin.qq.com/s/5tcauSy75MwZumol60FUJw)
 - [【车联网】通过逆向工程和模拟ECU（瑞萨 RH850）](https://mp.weixin.qq.com/s/gmpwJFg0Z7bx5ByUi9gzYw)
+- [【IoT安全】BMC 固件中的漏洞影响 IoT 设备安全-第 1 部分](https://mp.weixin.qq.com/s/cKmdZhbLxX88Dt8ICcDKEw)
 ## 门卡 m1/ICCard/id
 
 [tools proxmark3 pm3](https://proxmarkbuilds.org/)

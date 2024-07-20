@@ -276,6 +276,7 @@ https://github.com/APKLab/APKLab
 - [《安卓逆向这档事》十七、你的 RPCvs 佬的 RPC](https://mp.weixin.qq.com/s/5TI4sPbrfdEyIGKqkbWGcQ) [Video](https://www.bilibili.com/video/BV1gA4m1G7vV/)
 - [《安卓逆向这档事》十八、表哥，你也不想你的Frida被检测吧!(上)](https://www.52pojie.cn/thread-1921073-1-1.html) [video](https://www.bilibili.com/video/BV1tC411j7yL/)
 - [《安卓逆向这档事》十九、表哥，你也不想你的Frida被检测吧!(下)](https://mp.weixin.qq.com/s/14TpGimgPQ4NJOXaTda7jQ)
+- [《安卓逆向这档事》二十课、抓包学得好，牢饭吃得饱(上)](https://mp.weixin.qq.com/s/w4qiV_vuQqf8P2RwctsviA)
 
 - [番外篇之安卓 CRC 检测（上）](https://www.bilibili.com/video/BV1Le411Y7Rx/)
 - [番外篇之安卓 CRC 检测（下）](https://www.bilibili.com/video/BV1jN4y1H7FP/)
@@ -363,6 +364,7 @@ https://github.com/APKLab/APKLab
 ### 脱壳
 [APP逆向系列(五)--制作fart脱壳机](https://mp.weixin.qq.com/s/gKCi_OdhynEYpTF70Xvz2w)
 [Flutter逆向-有360壳案例二 （blutter使用 ）](https://www.bilibili.com/video/BV14S411w7HL/)
+[【某企业版加固 Frida秒退 用Dobby Hook 定位算法-哔哩哔哩】](https://www.bilibili.com/video/BV1vf421q7XS/)
 
 
 ### bypass/反调试

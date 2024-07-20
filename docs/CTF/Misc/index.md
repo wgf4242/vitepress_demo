@@ -204,6 +204,9 @@ arr[$(cat /flag)]
 - png
   - 丢失宽高 crc32, 修改为.data 文件 gimp 打开
   - 10000+个 IDAT 块，可能 IDAT LENGTH 隐写
+  - IDAT有问题时, 
+    - 1. 将其他IDAT块都删除并保存
+    - 2. zlib解压
   - CRC 隐写 - tweakpng 查看 -- 2022 春秋杯 Capture Radiate Chart
 - gif
   - ScreenToGif 查看时间帧, 以及差

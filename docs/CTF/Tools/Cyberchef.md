@@ -80,3 +80,10 @@ AND({'option':'Decimal','string':'127'})
 ### subsection
 
 捕获组，后期替换都会在 subsection 的捕获组里进行处理。
+
+
+### 其他使用
+
+冰蝎4
+
+![alt text](../../public/imgs/Software_cyberchef.png)

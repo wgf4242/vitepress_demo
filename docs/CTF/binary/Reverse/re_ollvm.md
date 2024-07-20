@@ -91,6 +91,9 @@
 [2023安卓逆向工具篇（windows下ollvm的使用）-哔哩哔哩](https://www.bilibili.com/video/BV1824y1s7tP)
 [将 OLLVM 从 LLVM4 移植到 LLVM16](https://mp.weixin.qq.com/s/W-WHuFqmD_W9IhCxIFEIZA)
 [Android逆向技术57——Android Studio配置ollvm编译so](https://mp.weixin.qq.com/s/rYaXi0NyrMwWAw8se2WvdA)
+## Other
+[自实现一个LLVM Pass 以及 OLLVM 简单的魔改](https://mp.weixin.qq.com/s/y9OVevI7jrU-PZyrSj2OUQ)
+
 
 ## 脚本 
 https://github.com/mFallW1nd/deflat

@@ -295,3 +295,7 @@ if and
 [extended_arg](https://docs.python.org/3/library/dis.html#opcode-EXTENDED_ARG)
 EXTENDED_ARG(ext)
 为任意带有大到无法放入默认的单字节的参数的操作码添加前缀。 ext 存放一个附加字节作为参数中的高比特位。 对于每个操作码，最多允许三个 EXTENDED_ARG 前缀，构成两字节到三字节的参数。
+
+
+# Article
+[Python逆向总结](https://mp.weixin.qq.com/s/25eCHseFjRZ2knmbCW3MTw)
